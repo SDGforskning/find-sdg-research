@@ -1,0 +1,66 @@
+{
+  "index": {
+    "title": "Introduction",
+    "type": "page"
+  },
+  "topics": {
+    "title": "Topics",
+    "type": "menu",
+    "items": {
+      "SDG01-query-topic-WoS": {
+        "title": "SDG 01"
+      },
+      "SDG02-query-topic-WoS": {
+        "title": "SDG 02"
+      },
+      "SDG03-query-topic-WoS": {
+        "title": "SDG 03"
+      },
+      "SDG04-query-topic-WoS": {
+        "title": "SDG 04"
+      },
+      "SDG07-query-topic-WoS": {
+        "title": "SDG 07"
+      },
+      "SDG11-query-topic-WoS": {
+        "title": "SDG 11"
+      },
+      "SDG13-query-topic-WoS": {
+        "title": "SDG 13"
+      },
+      "SDG14-query-topic-WoS": {
+        "title": "SDG 14"
+      }
+    }
+  },
+  "actions": {
+    "title": "Actions",
+    "type": "menu",
+    "items": {
+      "SDG01-query-action-WoS": {
+        "title": "SDG 01"
+      },
+      "SDG02_query_action_WoS": {
+        "title": "SDG 02"
+      },
+      "SDG03-query-action-WoS": {
+        "title": "SDG 03"
+      },
+      "SDG04-query-action-WoS": {
+        "title": "SDG 04"
+      },
+      "SDG07-query-action-WoS": {
+        "title": "SDG 07"
+      },
+      "SDG11-query-action-WoS": {
+        "title": "SDG 11"
+      },
+      "SDG13-query-action-WoS": {
+        "title": "SDG 13"
+      },
+      "SDG14-query-action-WoS": {
+        "title": "SDG 14"
+      }
+    }
+  }
+}
