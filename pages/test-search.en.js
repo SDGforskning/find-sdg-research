@@ -1,7 +1,7 @@
 export default function Index() {
   return (
     <>
-      <h1>Jeg er en søkeside - js</h1>
+      <h1>Kan vi få søket på denne siden? Med navbar fra Nextra?</h1>
     </>
   )
 }
