@@ -3,7 +3,22 @@ title: Velkommen
 searchable: false
 ---
 
+import {Cards, Card}  from '../components/card'
+
 # Velkommen
+
+<Cards>
+  <Card 
+    title='Definisjon' 
+    href='/definition'
+  >
+  </Card>
+  <Card 
+    title='Bærekraftsmålene' 
+    href="/sustainable-development-goals"
+  >
+  </Card>
+</Cards>
 
 _Hva_ gjør vi? Målet for prosjektet er å etablere en transparent gjenfinningstjeneste der alle – allmenheten, kommuner, næringslivet, forskere, studenter – kan få en oversikt og få tilgang til vitenskapelige publikasjoner knyttet til FNs Bærekraftsmål. Vi vil tilby forskjellige tilnærminger – snever eller bredd - tilpasset brukerens behov. Metodene vil være godt dokumentert og åpent for gjenbruk eller tilpasning.
 
@@ -11,28 +26,4 @@ _Hvorfor_ gjør vi dette? Tilgang til forskningspublikasjoner knyttet til FNs b�
 
 _Hvem_ er vi? Prosjektet ledes av Universitetsbiblioteket i Bergen, med partnere bibliotekene fra Høyskolen i Bergen og Universitetet i Stavanger. Prosjektet får støtte fra Najsonalbiblioteket. Tjenesten skal komme på plass ila 2022 .
 
-<div className="grid grid-cols-2 gap-5">
-  <div className="rounded overflow-hidden shadow-lg">
-    <img className="w-auto" src="images/image_r4sdg_500x450.png" alt="Definisjon" />
-    <div className="px-6 py-4">
-      <div className="font-bold text-xl mb-2">
-        <a href="/definition">Definisjon</a>
-      </div>
-      <p className="">
-        Hvordan definere hva som er forskning knyttet til bærekraftsmålene? Her finner du en forklaring om utfordringene underveis og våre løsninger.
-      </p>
-    </div>
-  </div>
 
-  <div className="rounded overflow-hidden shadow-lg">
-    <img className="w-auto" src="images/image_barekraftshjulet_500x450.png" alt="Bærekraftsmålene" />
-    <div className="px-6 py-4">
-      <div className="font-bold text-xl mb-2">
-        <a href="/sustainable-development-goals">Bærekraftsmålene</a>
-      </div>
-      <p className="">
-        FNs bærekraftsmål er verdens felles arbeidsplan for å utrydde fattigdom, bekjempe ulikhet og stoppe klimaendringene innen 2030.
-      </p>
-    </div>
-  </div>
-</div>

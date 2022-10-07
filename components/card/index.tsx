@@ -21,23 +21,21 @@ export function Card({ children, title, icon, image, arrow, href, ...props }) {
         <a
           className={cn(
             styles.card,
-            'group flex flex-col justify-start text-current rounded-lg overflow-hidden shadow shadow-gray-200 border border-transparent bg-gray-100 no-underline transition-all duration-200',
-            'hover:border-gray-200 hover:shadow-lg hover:shadow-gray-200'
+            'group flex flex-col justify-start text-current rounded-lg overflow-hidden shadow shadow-gray-200 border border-transparent no-underline transition-all duration-200'
           )}
           {...props}
         >
-          {children}
           <span
             className={cn(
               styles.title,
-              'p-4 text-gray-700 gap-1',
-              'hover:text-gray-900'
+              'p-4 gap-1'
             )}
           >
             {icon}
             {title}
             {animatedArrow}
           </span>
+          {children}
         </a>
       </Link>
     )
@@ -48,16 +46,14 @@ export function Card({ children, title, icon, image, arrow, href, ...props }) {
       <a
         className={cn(
           styles.card,
-          'group flex flex-col justify-start text-current rounded-lg overflow-hidden shadow shadow-transparent border border-transparent bg-gray-100 no-underline transition-all duration-200',
-          'hover:border-gray-200 hover:shadow-md hover:shadow-gray-100'
+          'group flex flex-col justify-start text-current rounded-lg overflow-hidden shadow shadow-transparent border border-transparent no-underline transition-all duration-200'
         )}
         {...props}
       >
         <span
           className={cn(
             styles.title,
-            'p-4 text-gray-700 gap-1',
-            'hover:text-gray-900'
+            'p-4 gap-1'
           )}
         >
           {icon}
