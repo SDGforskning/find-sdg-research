@@ -1,8 +1,4 @@
 {
-  "index": {
-    "title": "Introduction",
-    "type": "page"
-  },
   "topics": {
     "title": "Topics",
     "type": "menu",

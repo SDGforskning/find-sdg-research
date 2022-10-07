@@ -16,7 +16,7 @@ const logo = (
         strokeWidth="2"
       />
     </svg> */}
-    SDG Strings WoS
+    Finn Bærekraftsforskning
     <style jsx>{`
       span {
         padding: 0.5rem 0.5rem 0.5rem 0;
@@ -97,6 +97,10 @@ export default {
   footer: {
     text: `Creative Commons Attribution 4.0 ${new Date().getFullYear()} - SDG Forskning.`
   },
+  i18n: [
+    { locale: "no", text: "Norsk" },
+    { locale: "en", text: "English" },
+  ],
   toc: {
     float: true
   },

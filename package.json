@@ -31,6 +31,14 @@
     "react": "18",
     "react-dom": "18"
   },
+  "dependenciesMeta": {
+    "nextra": {
+      "injected": true
+    },
+    "nextra-theme-docs": {
+      "injected": true
+    }
+  },
   "devDependencies": {
     "@typescript-eslint/parser": "^5.32.0",
     "eslint": "^8.21.0",

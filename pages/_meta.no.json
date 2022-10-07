@@ -1,0 +1,39 @@
+{
+  "index": {
+    "title": "Introduksjon",
+    "type": "page",
+    "hidden": true
+  },
+  "guide": {
+    "title": "Guide",
+    "type": "page"
+  },
+  "wos": {
+    "title": "WoS strings",
+    "type": "page"
+  },
+  "python": {
+    "title": "Python notebooks",
+    "type": "page"
+  },
+  "search_link": {
+    "title": "Søk ↗",
+    "href": "https://sdg-website.vercel.app",
+    "type": "page",
+    "newWindow": true
+  },
+  "404": {
+    "type": "page",
+    "theme": {
+      "timestamp": false,
+      "typesetting": "article"
+    }
+  },
+  "500": {
+    "type": "page",
+    "theme": {
+      "timestamp": false,
+      "typesetting": "article"
+    }
+  }
+}
