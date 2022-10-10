@@ -1,8 +1,8 @@
 {
   "wos": {
-    "title": "WoS strenger"
+    "title": "Web of Science"
   },
-  "python": {
-    "title": "Python notebooks"
+  "jupyter": {
+    "title": "Jupyter notebooks"
   }
 }

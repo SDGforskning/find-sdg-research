@@ -16,6 +16,10 @@
     "title": "Guide",
     "type": "page"
   },
+  "statistics": {
+    "title": "Statistics",
+    "type": "page"
+  },
   "search-strings": {
     "title": "Search strings",
     "type": "page"

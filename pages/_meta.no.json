@@ -16,6 +16,10 @@
     "title": "Guide",
     "type": "page"
   },
+  "statistics": {
+    "title": "Statistikk",
+    "type": "page"
+  },
   "search-strings": {
     "title": "Søkestrenger",
     "type": "page"
