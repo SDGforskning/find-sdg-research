@@ -11,8 +11,8 @@ import {Features, Feature}  from '../components/features'
 
 <div className="flex flex-col divide-y divide-slate-700">
 
-  <Features>
-    <Feature className="flex gap-2 items-center">
+  <div className="flex flex-wrap justify-center">
+    <Feature className="flex gap-2 items-center my-3">
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
         <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
       </svg>
@@ -22,16 +22,50 @@ import {Features, Feature}  from '../components/features'
         </a>
       </h2>
     </Feature>
-  </Features>
+  </div>
   
   <Goals />
 
   <Features>
     <Feature>
-      <h2 className="text-center text-xl font-bold"><a href='/guide/definition'>Definisjon</a></h2>
+      <h2 className="text-center text-xl font-bold">
+        <a href='/guide/sustainable-development-goals'>Bærekraftsmålene</a>
+      </h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </p>
     </Feature>
     <Feature>
-      <h2 className="text-center text-xl font-bold"><a href='/guide/sustainable-development-goals'>Bærekraftsmålene</a></h2>
+      <h2 className="text-center text-xl font-bold">
+        <a href='/statistics'>Statistikk</a>
+      </h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+    </Feature>
+    <Feature>
+      <h2 className="text-center text-xl font-bold">
+        <a href='/guide/help'>Hjelp</a>
+      </h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+    </Feature>
+    <Feature>
+      <h2 className="text-center text-xl font-bold">
+        <a href='/guide/faq'>Ofte stilte spørsmål</a>
+      </h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+    </Feature>
+    <Feature>
+      <h2 className="text-center text-xl font-bold">
+        <a href='/search-strings'>Søkestrenger</a>
+      </h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </p>
     </Feature>
   </Features>
 </div>

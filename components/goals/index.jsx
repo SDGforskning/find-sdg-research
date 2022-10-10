@@ -126,7 +126,7 @@ export function Goals() {
       <h2 className='text-center mt-5 text-xl'>
         {locale === 'en' ? 'Find by SDG goals' : 'Finn forskning etter bærekraftsmålene'}
       </h2>
-      <div className='flex flex-wrap justify-center py-6 gap-5'>
+      <div className='flex justify-center py-6 gap-3'>
         {goalImagePaths
           .filter(goal => goal.disabled != true)
           .map((goal, i) => (

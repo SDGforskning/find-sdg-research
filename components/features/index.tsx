@@ -32,5 +32,5 @@ export function Feature({
 }
 
 export function Features({ children }) {
-  return <div className={`${styles.features} py-6 center`}>{children}</div>
+  return <div className={`${styles.features} gap-5 py-6 center`}>{children}</div>
 }

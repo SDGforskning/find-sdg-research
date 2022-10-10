@@ -1,12 +1,21 @@
 {
+  "help": {
+    "title": "Search help"
+  },
+  "literature": {
+    "title": "Literature"
+  },
   "sustainable-development-goals": {
     "title": "Sustainable Development Goals"
   },
-  "definition": {
-    "title": "Definition"
+  "methods": {
+    "title": "Methods"
   },
-  "goals": {
-    "title": "Goals"
+  "faq": {
+    "title": "FAQ"
+  },
+  "contact": {
+    "title": "Contact"
   },
   "about": {
     "title": "About"

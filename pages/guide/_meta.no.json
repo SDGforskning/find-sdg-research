@@ -1,12 +1,21 @@
 {
+  "help": {
+    "title": "Søkehjelp"
+  },
+  "literature": {
+    "title": "Litteratur"
+  },
   "sustainable-development-goals": {
     "title": "Bærekraftsmålene"
   },
-  "definition": {
-    "title": "Definisjon"
+  "methods": {
+    "title": "Metoder"
   },
-  "goals": {
-    "title": "Målene"
+  "faq": {
+    "title": "Ofte stilte spørsmål"
+  },
+  "contact": {
+    "title": "Kontakt"
   },
   "about": {
     "title": "Om"
