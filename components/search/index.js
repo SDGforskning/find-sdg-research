@@ -14,8 +14,6 @@ import {
   SingleSelectFacet
 } from "@elastic/react-search-ui-views";
 import SDGResultView from './SDGResultView'
-import "@elastic/eui/dist/eui_theme_light.css";
-import "@elastic/eui/dist/eui_theme_dark.css";
 
 const connector = new Connector({});
 
