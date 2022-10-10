@@ -31,9 +31,9 @@
 }
 
 .features {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 2em;
+  display: flex;
+  justify-content: center;
+  gap: 2em;
   font-feature-settings: initial;
 }
 

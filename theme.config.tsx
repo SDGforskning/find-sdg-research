@@ -1,5 +1,10 @@
 import type { DocsThemeConfig } from 'nextra-theme-docs'
 import { useRouter } from 'next/router'
+import { HVLIcon, HVLLogoEng, HVLLogoEngDarkMode, HVLLogoNor, HVLLogoNorDarkMode } from '@components/icons/hvl';
+import { UiOIcon } from '@components/icons/uio';
+import { UiBIcon, UiBLogoEng } from './components/icons/uib';
+import { NBIcon } from '@components/icons/nb';
+import { UiSIcon } from '@components/icons/uis';
 
 const TITLE = {
   en: "Find SDG research",
@@ -19,11 +24,12 @@ export default {
   logo() {
     const { locale } = useRouter();
     return (
-      <>
+      <div className='flex gap-3 justify-center'>
+        <img style={{ width: '24px', height: '24px' }} src='/logo.png' />
         <span className="ltr:ml-2 rtl:mr-2 font-extrabold hidden md:inline select-none">
           {TITLE[locale]}
         </span>
-      </>
+      </div>
     );
   },
   head() {
@@ -43,9 +49,9 @@ export default {
         <meta name="og:title" content={TITLE[locale]} />
         {/* <meta name="og:image" content="" /> */}
         <meta name="apple-mobile-web-app-title" content={TITLE[locale]} />
-        {/* <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-        <link rel="icon" href="/favicon.png" type="image/png" />
-        <link
+        {/* <link rel="icon" href="/favicon.svg" type="image/svg+xml" /> */}
+        <link rel="icon" href="/logo.png" type="image/png" />
+        {/* <link
           rel="icon"
           href="/favicon-dark.svg"
           type="image/svg+xml"
@@ -71,11 +77,39 @@ export default {
     text() {
       const { locale } = useRouter()
       return (
-        <>
-          [HAUGEVIS MED LOGOER]
-          <br />
-          Creative Commons Attribution 4.0 ${new Date().getFullYear()} - {TITLE[locale]}
-        </>
+        <div className='w-full flex flex-row gap-10 justify-between'>
+          <div className='flex flex-col gap-5'>
+            <ul className='flex gap-10'>
+              <ul>
+                <li>
+                  <a href='/guide/about'>{locale === 'en' ? 'About the project' : 'Om prosjektet'}</a>
+                </li>
+                <li>
+                  <a href='/accessibility-statement'>{locale === 'en' ? 'Accessibility statement' : 'Tilgjengelighetserklæring'}</a>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <a href='https://bibliotekutvikling.no/prosjektbank/prosjekt/baerekraftsforskning-for-alle-en-transparent-kartleggings-og-gjenfinningstjeneste/'>
+                    {locale === 'en' ? 'Project application (in norwegian)' : 'Prosjektsøknad'}
+                  </a>
+                </li>
+              </ul>
+            </ul>
+            <div className='text-sm'>
+              {`Creative Commons Attribution 4.0 ${new Date().getFullYear()} - ${TITLE[locale]}`}
+            </div>
+            <div className='flex items-center gap-2 text-sm'>
+              <NBIcon height={32} />
+              {locale === 'en' ? 'The project is supported by the National Library of Norway.' : 'Prosjektet er støttet av Nasjonalbiblioteket i Norge.'}
+            </div>
+          </div>
+          <div className='flex gap-10'>
+            <UiBIcon height={100} />
+            <HVLIcon height={100} />
+            <UiSIcon height={100} />
+          </div>
+        </div>
       )
     }
   },
@@ -87,7 +121,7 @@ export default {
     float: true
   },
   sidebar: {
-    defaultMenuCollapsed: true,
+    defaultMenuCollapsed: false,
     subtitle: ({ title }) => <>{title}</>
   }
 } as DocsThemeConfig

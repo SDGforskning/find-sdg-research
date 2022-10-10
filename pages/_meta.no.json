@@ -4,23 +4,25 @@
     "type": "page",
     "hidden": true
   },
+  "search": {
+    "title": "Søk i datasettet",
+    "type": "page",
+    "layout": "raw",
+    "theme": {
+      "layout": "full"
+    }
+  },
   "guide": {
     "title": "Guide",
     "type": "page"
   },
-  "wos": {
-    "title": "WoS strings",
+  "search-strings": {
+    "title": "Søkestrenger",
     "type": "page"
   },
-  "python": {
-    "title": "Python notebooks",
-    "type": "page"
-  },
-  "search_link": {
-    "title": "Søk ↗",
-    "href": "https://sdg-search.vercel.app",
+  "accessibility-statement": {
     "type": "page",
-    "newWindow": true
+    "hidden": true
   },
   "404": {
     "type": "page",

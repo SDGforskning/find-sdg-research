@@ -3,23 +3,43 @@ title: Welcome
 searchable: false
 ---
 
-# Welcome
+import {Goals}  from '../components/goals'
+import {Cards, Card}  from '../components/card'
+import {Features, Feature}  from '../components/features'
 
-<Cards>
-  <Card 
-    title='Definition' 
-    href='/definition'
-  >
-  </Card>
-  <Card 
-    title='Sustainable development goals' 
-    href="/sustainable-development-goals"
-  >
-  </Card>
-</Cards>
+{<h1 className="text-center font-extrabold sm:text-3xl md:text-5xl lg:text-6xl mt-8">Find SDG research</h1>}
+
+<div className="flex flex-col divide-y divide-slate-700">
+
+  <Features>
+    <Feature className="flex gap-2 items-center">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+      </svg>
+      <h2 className="text-center text-xl font-bold">
+        <a href='/search'>
+        Search the dataset
+        </a>
+        </h2>
+    </Feature>
+  </Features>
+
+  <Goals />
+
+  <Features>
+    <Feature>
+      <h2 className="text-center text-xl font-bold"><a href='/guide/definition'>Definition</a></h2>
+    </Feature>
+    <Feature>
+      <h2 className="text-center text-xl font-bold"><a href='/guide/sustainable-development-goals'>Sustainable development goals</a></h2>
+    </Feature>
+  </Features>
+</div>
 
 _Hva_ gjør vi? Målet for prosjektet er å etablere en transparent gjenfinningstjeneste der alle – allmenheten, kommuner, næringslivet, forskere, studenter – kan få en oversikt og få tilgang til vitenskapelige publikasjoner knyttet til FNs Bærekraftsmål. Vi vil tilby forskjellige tilnærminger – snever eller bredd - tilpasset brukerens behov. Metodene vil være godt dokumentert og åpent for gjenbruk eller tilpasning.
 
 _Hvorfor_ gjør vi dette? Tilgang til forskningspublikasjoner knyttet til FNs bærekraftsmål er viktig for samfunnet, for å åpne opp forskningen, spre kunnskap og dermed nå målene. Det kan derimot være vanskelig å finne disse publikasjonene, særlig for folk utenom akademia. Andre leverandører tilbyr ofte ikke tjeneste sine for allmenheten og inkluderer ikke publikasjoner på norsk eller fra Norge. Tjenesten vår skal gi alle muligheten å få en oversikt og får tilgang til vitenskapelige publikasjoner knyttet til FNs Bærekraftsmål, inkludert publikasjoner på norsk.
 
 _Hvem_ er vi? Prosjektet ledes av Universitetsbiblioteket i Bergen, med partnere bibliotekene fra Høyskolen i Bergen og Universitetet i Stavanger. Prosjektet får støtte fra Najsonalbiblioteket. Tjenesten skal komme på plass ila 2022 .
+
+[Project description](https://www.uib.no/en/ub/148804/sustainable-development-research-all-%E2%80%93-transparent-mapping-and-discovery-tool)

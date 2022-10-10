@@ -4,23 +4,24 @@
     "type": "page",
     "hidden": true
   },
+  "search": {
+    "title": "Search the dataset",
+    "type": "page",
+    "layout": "raw",
+    "theme": {
+      "layout": "full"
+    }
+  },
   "guide": {
     "title": "Guide",
     "type": "page"
   },
-  "wos": {
-    "title": "WoS strenger",
+  "search-strings": {
+    "title": "Search strings",
     "type": "page"
   },
-  "python": {
-    "title": "Python notebooks",
-    "type": "page"
-  },
-  "search_link": {
-    "title": "Search ↗",
-    "href": "https://sdg-search.vercel.app",
-    "type": "page",
-    "newWindow": true
+  "accessibility-statement": {
+    "hidden": true
   },
   "404": {
     "type": "page",

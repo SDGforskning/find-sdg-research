@@ -3,22 +3,38 @@ title: Velkommen
 searchable: false
 ---
 
+import {Goals}  from '../components/goals'
 import {Cards, Card}  from '../components/card'
+import {Features, Feature}  from '../components/features'
 
-# Velkommen
+{<h1 className="text-center font-extrabold sm:text-3xl md:text-5xl lg:text-6xl mt-8">Finn bærekraftsforskning</h1>}
 
-<Cards>
-  <Card 
-    title='Definisjon' 
-    href='/definition'
-  >
-  </Card>
-  <Card 
-    title='Bærekraftsmålene' 
-    href="/sustainable-development-goals"
-  >
-  </Card>
-</Cards>
+<div className="flex flex-col divide-y divide-slate-700">
+
+  <Features>
+    <Feature className="flex gap-2 items-center">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+      </svg>
+      <h2 className="text-center text-xl font-bold">
+        <a href='/search'>
+        Søk i hele datasettet
+        </a>
+      </h2>
+    </Feature>
+  </Features>
+  
+  <Goals />
+
+  <Features>
+    <Feature>
+      <h2 className="text-center text-xl font-bold"><a href='/guide/definition'>Definisjon</a></h2>
+    </Feature>
+    <Feature>
+      <h2 className="text-center text-xl font-bold"><a href='/guide/sustainable-development-goals'>Bærekraftsmålene</a></h2>
+    </Feature>
+  </Features>
+</div>
 
 _Hva_ gjør vi? Målet for prosjektet er å etablere en transparent gjenfinningstjeneste der alle – allmenheten, kommuner, næringslivet, forskere, studenter – kan få en oversikt og få tilgang til vitenskapelige publikasjoner knyttet til FNs Bærekraftsmål. Vi vil tilby forskjellige tilnærminger – snever eller bredd - tilpasset brukerens behov. Metodene vil være godt dokumentert og åpent for gjenbruk eller tilpasning.
 
@@ -26,4 +42,5 @@ _Hvorfor_ gjør vi dette? Tilgang til forskningspublikasjoner knyttet til FNs b�
 
 _Hvem_ er vi? Prosjektet ledes av Universitetsbiblioteket i Bergen, med partnere bibliotekene fra Høyskolen i Bergen og Universitetet i Stavanger. Prosjektet får støtte fra Najsonalbiblioteket. Tjenesten skal komme på plass ila 2022 .
 
+[Prosjektbeskrivelse](https://www.uib.no/ub/148803/b%C3%A6rekraftsforskning-alle-%E2%80%93-en-transparent-kartleggings-og-gjenfinningstjeneste)
 

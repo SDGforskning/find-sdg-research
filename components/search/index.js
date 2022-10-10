@@ -1,21 +1,21 @@
 import Connector from "../../services/APIConnector";
-import Layout from '../../components/layout';
-import Container from '../../components/container';
-import Header from '../../components/header';
 import {
   Facet,
   SearchProvider,
   Results,
   PagingInfo,
+  Paging,
   SearchBox
 } from "@elastic/react-search-ui";
-
 import {
   Layout as SearchLayout,
   SingleLinksFacet,
   BooleanFacet,
   SingleSelectFacet
 } from "@elastic/react-search-ui-views";
+import SDGResultView from './SDGResultView'
+import "@elastic/eui/dist/eui_theme_light.css";
+import "@elastic/eui/dist/eui_theme_dark.css";
 
 const connector = new Connector({});
 
@@ -125,60 +125,73 @@ const config = {
   }
 };
 
-const SearchPage = () => {
+const Search = () => {
   return (
-    <SearchProvider config={config}>
-      <SearchLayout
-        bodyHeader={<PagingInfo />}
-        sideContent={
-          <div>
-            <Facet field="categories.keyword" label="Categories" />
-            <Facet
-              field="designername.keyword"
-              label="Designer"
-              isFilterable={true}
-              show="1000"
+    <div className="w-full">
+      <SearchProvider config={config}>
+        <SearchLayout
+          bodyHeader={
+            <>
+              <PagingInfo />
+              <Paging />
+            </>
+          }
+          sideContent={
+            <div>
+              <Facet field="categories.keyword" label="Categories" />
+              <Facet
+                field="designername.keyword"
+                label="Designer"
+                isFilterable={true}
+                show="1000"
+              />
+              <Facet
+                field="states.keyword"
+                label="States"
+                filterType="any"
+                isFilterable={true}
+              />
+              <Facet
+                field="world_heritage_site.keyword"
+                label="World Heritage Site"
+                view={BooleanFacet}
+              />
+              <Facet field="visitors" label="Visitors" view={SingleLinksFacet} />
+              <Facet
+                field="date_established"
+                label="Date Established"
+                filterType="any"
+              />
+              <Facet field="location" label="Distance" filterType="any" />
+              <Facet field="acres" label="Acres" view={SingleSelectFacet} />
+            </div>
+          }
+          header={
+            <SearchBox
+              autocompleteMinimumCharacters={3}
+              autocompleteResults={{
+                linkTarget: "_blank",
+                sectionTitle: "Results",
+                titleField: "title",
+                urlField: "nps_link",
+                shouldTrackClickThrough: true,
+                clickThroughTags: ["test"]
+              }}
+              autocompleteSuggestions={true}
+              debounceLength={0}
             />
-            <Facet
-              field="states.keyword"
-              label="States"
-              filterType="any"
-              isFilterable={true}
-            />
-            <Facet
-              field="world_heritage_site.keyword"
-              label="World Heritage Site"
-              view={BooleanFacet}
-            />
-            <Facet field="visitors" label="Visitors" view={SingleLinksFacet} />
-            <Facet
-              field="date_established"
-              label="Date Established"
-              filterType="any"
-            />
-            <Facet field="location" label="Distance" filterType="any" />
-            <Facet field="acres" label="Acres" view={SingleSelectFacet} />
-          </div>
-        }
-        header={
-          <SearchBox
-            autocompleteMinimumCharacters={3}
-            autocompleteResults={{
-              linkTarget: "_blank",
-              sectionTitle: "Results",
-              titleField: "title",
-              urlField: "nps_link",
-              shouldTrackClickThrough: true,
-              clickThroughTags: ["test"]
-            }}
-            autocompleteSuggestions={true}
-            debounceLength={0}
-          />
-        }
-        bodyContent={<Results />}
-      />
-    </SearchProvider>
+          }
+          bodyContent={<Results resultView={SDGResultView} />}
+          bodyFooter={
+            <>
+              <PagingInfo />
+              <Paging />
+            </>
+          }
+        />
+      </SearchProvider>
+    </div>
   );
 };
 
-export default SearchPage;
+export default Search;
