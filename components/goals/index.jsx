@@ -87,7 +87,7 @@ const goalImagePaths = [
   },
   {
     label: 'SDG-15',
-    disabled: true,
+    disabled: false,
     image: 'images/sdg/E-WEB-Goal-15.png',
     link: ''
   },
@@ -124,7 +124,7 @@ export function Goals() {
   return (
     <div>
       <h2 className='text-center mt-5 text-xl'>
-        {locale === 'en' ? 'Find by SDG goals' : 'Finn forskning etter bærekraftsmålene'}
+        {locale === 'en' ? '... or browse by SDGs' : '... eller finn forskning per bærekraftsmål'}
       </h2>
       <div className='flex justify-center py-6 gap-3'>
         {goalImagePaths

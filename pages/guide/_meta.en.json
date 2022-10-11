@@ -1,23 +1,23 @@
 {
+  "sustainable-development-goals": {
+    "title": "About the SDGs"
+  },
   "help": {
-    "title": "Search help"
+    "title": "Search tips"
   },
   "literature": {
     "title": "Literature"
   },
-  "sustainable-development-goals": {
-    "title": "Sustainable Development Goals"
+  "faq": {
+    "title": "FAQ"
   },
   "methods": {
     "title": "Methods"
   },
-  "faq": {
-    "title": "FAQ"
+  "about-this-service": {
+    "title": "About this service"
   },
   "contact": {
     "title": "Contact"
-  },
-  "about": {
-    "title": "About"
   }
 }

@@ -1,23 +1,23 @@
 {
+  "sustainable-development-goals": {
+    "title": "Om bærekraftsmålene"
+  },
   "help": {
     "title": "Søkehjelp"
   },
   "literature": {
     "title": "Litteratur"
   },
-  "sustainable-development-goals": {
-    "title": "Bærekraftsmålene"
+  "faq": {
+    "title": "Ofte stilte spørsmål"
   },
   "methods": {
     "title": "Metoder"
   },
-  "faq": {
-    "title": "Ofte stilte spørsmål"
+  "about-this-service": {
+    "title": "Om denne tjenesten"
   },
   "contact": {
     "title": "Kontakt"
-  },
-  "about": {
-    "title": "Om"
   }
 }

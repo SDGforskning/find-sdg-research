@@ -6,9 +6,9 @@ const randomGoals = [
   'sdg14',
 ]
 const randomActions = [
-  'sdg7',
-  'sdg11',
-  'sdg14',
+  'sdg7.1',
+  'sdg11.1',
+  'sdg14.2',
 ]
 
 const CustomResultView = ({
@@ -22,9 +22,9 @@ const CustomResultView = ({
   const { locale } = useRouter()
 
   return (
-    <li className='border rounded dark:border-slate-700 mt-5 pt-3'>
+    <li key={result.id} className='border rounded dark:border-slate-700 mt-5 pt-3'>
       <div>
-        <div className='flex items-end justify-between px-5'>
+        <div className='flex items-end flex-wrap md:flex-nowrap justify-between px-5'>
           <div>
             <h3 className='text-3xl font-bold'>
               {/* Maintain onClickLink to correct track click throughs for analytics*/}
@@ -55,10 +55,10 @@ const CustomResultView = ({
                 {goal}
               </div>
             ))}
-            <div>Actions:</div>
+            <div>Targets:</div>
             {randomActions.map(goal => (
               <div
-                className={`text-xs text-white inline-flex items-center font-bold leading-sm uppercase px-3 py-1 ${goal} dark:text-white rounded-full`}
+                className={`text-xs text-white inline-flex items-center font-bold leading-sm uppercase px-3 py-1 ${goal.split('.')[0]} dark:text-white rounded-full`}
               >
                 {goal}
               </div>
