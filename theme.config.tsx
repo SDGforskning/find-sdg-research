@@ -1,8 +1,7 @@
 import type { DocsThemeConfig } from 'nextra-theme-docs'
 import { useRouter } from 'next/router'
-import { HVLIcon, HVLLogoEng, HVLLogoEngDarkMode, HVLLogoNor, HVLLogoNorDarkMode } from '@components/icons/hvl';
-import { UiOIcon } from '@components/icons/uio';
-import { UiBIcon, UiBLogoEng } from './components/icons/uib';
+import { HVLIcon } from '@components/icons/hvl';
+import { UiBIcon } from './components/icons/uib';
 import { NBIcon } from '@components/icons/nb';
 import { UiSIcon } from '@components/icons/uis';
 
