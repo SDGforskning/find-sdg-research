@@ -1,5 +1,5 @@
-const UiOIcon = ({ height = 200 }: { height?: number }) => (
-	<svg height={height} fill="currentcolor" viewBox="229.89 231.62 231.62 231.63">
+const UiOIcon = () => (
+	<svg fill="currentcolor" viewBox="229.89 231.62 231.62 231.63">
 		<g id="Segl">
 			<g>
 				<g>

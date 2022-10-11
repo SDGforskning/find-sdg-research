@@ -77,7 +77,7 @@ export default {
     text() {
       const { locale } = useRouter()
       return (
-        <div className='w-full flex flex-row gap-10 justify-between'>
+        <div className='w-full flex flex-row gap-10 flex-wrap md:flex-nowrap justify-between'>
           <div className='flex flex-col gap-5'>
             <ul className='flex gap-10'>
               <ul>
@@ -101,13 +101,15 @@ export default {
             </div>
             <div className='flex items-center gap-2 text-sm'>
               <NBIcon height={32} />
-              {locale === 'en' ? 'The project is supported by the National Library of Norway.' : 'Prosjektet er støttet av Nasjonalbiblioteket i Norge.'}
+              {locale === 'en'
+                ? 'The project is supported by the National Library of Norway.'
+                : 'Prosjektet er støttet av Nasjonalbiblioteket i Norge.'}
             </div>
           </div>
-          <div className='flex gap-10'>
-            <UiBIcon height={100} />
-            <HVLIcon height={100} />
-            <UiSIcon height={100} />
+          <div className='flex  gap-5'>
+            <div className='lg:w-32 md:w-24 w-20'><UiBIcon /></div>
+            <div className='lg:w-36 md:w-24 w-20'><HVLIcon /></div>
+            <div className='lg:w-24 md:w-18 w-16'><UiSIcon /></div>
           </div>
         </div>
       )

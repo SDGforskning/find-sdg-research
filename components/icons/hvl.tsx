@@ -75,8 +75,8 @@ const HVLLogoNor = ({ height = 200 }: { height?: number }) => (
   </svg>
 );
 
-const HVLIcon = ({ height = 200 }: { height?: number }) => (
-  <svg height={height} viewBox="0 0 164 143" version="1.1" style={{ fillRule: 'evenodd', clipRule: 'evenodd', strokeLinejoin: 'round', strokeMiterlimit: 2 }}>
+const HVLIcon = () => (
+  <svg viewBox="0 0 164 143" version="1.1" style={{ fillRule: 'evenodd', clipRule: 'evenodd', strokeLinejoin: 'round', strokeMiterlimit: 2 }}>
     <g>
       <path d="M21.613,0.203l-21.577,0l36.007,62.365l10.788,-18.685l-25.218,-43.68Z" style={{ fill: '#00b6c9', fillRule: 'nonzero' }} />
       <path d="M107.209,0.203l-42.798,74.13l-10.788,18.685l28.242,48.917l81.829,-141.732l-56.485,0Z" style={{ fill: '#00b6c9', fillRule: 'nonzero' }} />
