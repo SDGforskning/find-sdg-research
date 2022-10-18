@@ -23,8 +23,11 @@
   },
   "homepage": "https://github.com/SDGforskning/SDGstrings_wos#readme",
   "dependencies": {
-    "@elastic/react-search-ui": "^1.18.0",
-    "@elastic/search-ui-elasticsearch-connector": "^1.18.0",
+    "@elastic/react-search-ui": "^1.18.1",
+    "@elastic/react-search-ui-views": "^1.18.1",
+    "@elastic/search-ui": "^1.18.1",
+    "@elastic/search-ui-app-search-connector": "^1.18.1",
+    "@elastic/search-ui-elasticsearch-connector": "^1.18.1",
     "clsx": "^1.2.1",
     "framer-motion": "^7.3.2",
     "next": "^12.3.1",

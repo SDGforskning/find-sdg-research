@@ -1,9 +1,9 @@
 import ElasticsearchAPIConnector from "@elastic/search-ui-elasticsearch-connector";
 
 const connector = new ElasticsearchAPIConnector({
-  host: "https://search-ui-sandbox.es.us-central1.gcp.cloud.es.io:9243",
-  index: "national-parks",
-  apiKey: "SlUzdWE0QUJmN3VmYVF2Q0F6c0I6TklyWHFIZ3lTbHF6Yzc2eEtyeWFNdw=="
+  host: process.env.ES_SERVICE_URL,
+  index: process.env.ES_SERVICE_INDEX,
+  apiKey: process.env.ES_SERVICE_APIKEY,
 });
 
 export default async function handler(req, res) {

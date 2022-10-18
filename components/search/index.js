@@ -11,7 +11,9 @@ import {
   Layout as SearchLayout,
   SingleLinksFacet,
   BooleanFacet,
-  SingleSelectFacet
+  SingleSelectFacet,
+  MultiCheckboxFacet,
+  Sorting
 } from "@elastic/react-search-ui-views";
 import SDGResultView from './SDGResultView'
 
@@ -22,92 +24,65 @@ const config = {
   alwaysSearchOnInitialLoad: true,
   searchQuery: {
     search_fields: {
-      title: {
-        weight: 3
-      },
-      description: {},
-      states: {}
+      result_title: {},
+      SDG_topic: {},
+      category: {},
     },
     result_fields: {
-      visitors: { raw: {} },
-      world_heritage_site: { raw: {} },
-      location: { raw: {} },
-      acres: { raw: {} },
-      square_km: { raw: {} },
-      title: {
-        snippet: {
-          size: 100,
-          fallback: true
-        }
-      },
-      nps_link: { raw: {} },
-      states: { raw: {} },
-      date_established: { raw: {} },
-      image_url: { raw: {} },
-      description: {
-        snippet: {
-          size: 100,
-          fallback: true
-        }
-      }
+      result_title: { raw: {} },
+      journal: { raw: {} },
+      OA_status_calc: { raw: {} },
+      SDG_action: { raw: {} },
+      SDG_topic: { raw: {} },
+      SDG_target_action: { raw: {} },
+      SDG_target_topic: { raw: {} },
+      category: { raw: {} },
+      doi: { raw: {} },
+      eissn: { raw: {} },
+      fulldoi: { raw: {} },
+      fulltextlink: { raw: {} },
+      language: { raw: {} },
+      mentionsNorway: { raw: {} },
+      mentionsSDG: { raw: {} },
+      nvi_level_historical: { raw: {} },
+      nvi_publication_form: { raw: {} },
+      result_id: { raw: {} },
+      result_title: { raw: {} },
+      scientific_field_npi: { raw: {} },
+      scientific_result: { raw: {} },
+      year: { raw: {} },
     },
     disjunctiveFacets: [
-      "acres",
-      "states.keyword",
-      "date_established",
-      "location"
+      "category.keyword",
+      "SDG_topic.keyword",
+      "SDG_action.keyword",
+      "year.keyword",
+      "mentionsNorway.keyword",
+      "mentionsSDG.keyword"
     ],
     facets: {
-      "world_heritage_site.keyword": { type: "value" },
-      "states.keyword": { type: "value", size: 30, sort: "count" },
-      acres: {
-        type: "range",
-        ranges: [
-          { from: -1, name: "Any" },
-          { from: 0, to: 1000, name: "Small" },
-          { from: 1001, to: 100000, name: "Medium" },
-          { from: 100001, name: "Large" }
-        ]
-      },
-      location: {
-        // San Francisco. In the future, make this the user's current position
-        center: "37.7749, -122.4194",
-        type: "range",
-        unit: "mi",
-        ranges: [
-          { from: 0, to: 100, name: "Nearby" },
-          { from: 100, to: 500, name: "A longer drive" },
-          { from: 500, name: "Perhaps fly?" }
-        ]
-      },
-      visitors: {
-        type: "range",
-        ranges: [
-          { from: 0, to: 10000, name: "0 - 10000" },
-          { from: 10001, to: 100000, name: "10001 - 100000" },
-          { from: 100001, to: 500000, name: "100001 - 500000" },
-          { from: 500001, to: 1000000, name: "500001 - 1000000" },
-          { from: 1000001, to: 5000000, name: "1000001 - 5000000" },
-          { from: 5000001, to: 10000000, name: "5000001 - 10000000" },
-          { from: 10000001, name: "10000001+" }
-        ]
-      }
+      "SDG_topic.keyword": { type: "value" },
+      "SDG_action.keyword": { type: "value" },
+      "category.keyword": { type: "value" },
+      "year.keyword": { type: "value" },
+      "mentionsSDG.keyword": { type: "value" },
+      "mentionsNorway.keyword": { type: "value" },
     }
   },
   autocompleteQuery: {
     results: {
       search_fields: {
-        parks_search_as_you_type: {}
+        search_as_you_type: {}
       },
       resultsPerPage: 5,
       result_fields: {
-        title: {
+        result_title: {
           snippet: {
             size: 100,
             fallback: true
           }
         },
-        nps_link: {
+        result_id: {
           raw: {}
         }
       }
@@ -136,48 +111,51 @@ const Search = () => {
           }
           sideContent={
             <div>
-              <Facet field="categories.keyword" label="Categories" />
               <Facet
-                field="designername.keyword"
-                label="Designer"
-                isFilterable={true}
-                show="1000"
+                field="category.keyword"
+                label="Category"
               />
               <Facet
-                field="states.keyword"
-                label="States"
-                filterType="any"
-                isFilterable={true}
+                field="SDG_topic.keyword"
+                label="SDG Topic"
               />
               <Facet
-                field="world_heritage_site.keyword"
-                label="World Heritage Site"
+                field="SDG_action.keyword"
+                label="SDG Action"
+              />
+              <Facet
+                field="year.keyword"
+                label="Year"
+              />
+              <Facet
+                field="mentionsNorway.keyword"
+                label="Mentions Norway"
                 view={BooleanFacet}
               />
-              <Facet field="visitors" label="Visitors" view={SingleLinksFacet} />
               <Facet
-                field="date_established"
-                label="Date Established"
-                filterType="any"
+                field="mentionsSDG.keyword"
+                label="Mentions SDG"
+                view={BooleanFacet}
               />
-              <Facet field="location" label="Distance" filterType="any" />
-              <Facet field="acres" label="Acres" view={SingleSelectFacet} />
             </div>
           }
           header={
-            <SearchBox
-              autocompleteMinimumCharacters={3}
-              autocompleteResults={{
-                linkTarget: "_blank",
-                sectionTitle: "Results",
-                titleField: "title",
-                urlField: "nps_link",
-                shouldTrackClickThrough: true,
-                clickThroughTags: ["test"]
-              }}
-              autocompleteSuggestions={true}
-              debounceLength={0}
-            />
+            <>
+              <SearchBox
+                autocompleteMinimumCharacters={3}
+                autocompleteResults={{
+                  linkTarget: "_blank",
+                  sectionTitle: "Results",
+                  titleField: "result_title",
+                  urlField: "result_id",
+                  shouldTrackClickThrough: true,
+                  clickThroughTags: ["test"]
+                }}
+                autocompleteSuggestions={true}
+                debounceLength={0}
+              />
+              {/* <Sorting /> */}
+            </>
           }
           bodyContent={<Results resultView={SDGResultView} />}
           bodyFooter={

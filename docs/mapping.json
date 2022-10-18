@@ -1,0 +1,136 @@
+{
+  "properties": {
+    "OA_status_calc": {
+      "type": "keyword"
+    },
+    "SDG_action": {
+      "type": "text",
+      "analyzer": "separate_values",
+      "fields": {
+        "keyword": {
+          "type": "keyword"
+        }
+      }
+    },
+    "SDG_target_action": {
+      "type": "text",
+      "analyzer": "separate_values",
+      "fields": {
+        "keyword": {
+          "type": "keyword"
+        }
+      }
+    },
+    "SDG_target_topic": {
+      "type": "text",
+      "analyzer": "separate_values",
+      "fields": {
+        "keyword": {
+          "type": "keyword"
+        }
+      }
+    },
+    "SDG_topic": {
+      "type": "text",
+      "analyzer": "separate_values",
+      "fields": {
+        "keyword": {
+          "type": "keyword"
+        }
+      }
+    },
+    "category": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword"
+        },
+        "suggest": {
+          "type": "search_as_you_type"
+        }
+      }
+    },
+    "doi": {
+      "type": "keyword"
+    },
+    "eissn": {
+      "type": "keyword"
+    },
+    "fulldoi": {
+      "type": "keyword"
+    },
+    "fulltextlink": {
+      "type": "keyword"
+    },
+    "isbn": {
+      "type": "keyword"
+    },
+    "journal": {
+      "type": "keyword"
+    },
+    "language": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword"
+        }
+      }
+    },
+    "mentionsNorway": {
+      "type": "boolean",
+      "fields": {
+        "keyword": {
+          "type": "keyword"
+        }
+      }
+    },
+    "mentionsSDG": {
+      "type": "boolean",
+      "fields": {
+        "keyword": {
+          "type": "keyword"
+        }
+      }
+    },
+    "nvi_level_historical": {
+      "type": "keyword"
+    },
+    "nvi_publication_form": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword"
+        }
+      }
+    },
+    "result_id": {
+      "type": "keyword"
+    },
+    "result_title": {
+      "type": "text",
+      "fields": {
+        "suggest": {
+          "type": "search_as_you_type"
+        }
+      }
+    },
+    "result_title_anthology": {
+      "type": "keyword"
+    },
+    "scientific_field_npi": {
+      "type": "keyword"
+    },
+    "scientific_result": {
+      "type": "boolean",
+      "fields": {
+        "keyword": {
+          "type": "keyword"
+        }
+      }
+    },
+    "year": {
+      "type": "date",
+      "format": "yyyy-MM-dd HH:mm:ss||yyyy-MM-dd||yyyy-MM||yyyy||epoch_millis"
+    }
+  }
+}
