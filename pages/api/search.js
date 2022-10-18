@@ -8,7 +8,6 @@ const connector = new ElasticsearchAPIConnector({
 
 export default async function handler(req, res) {
   const { requestState, queryConfig } = req.body;
-  console.log(requestState, queryConfig)
   const response = await connector.onSearch(requestState, queryConfig);
   res.json(response);
 }
