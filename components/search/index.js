@@ -16,6 +16,7 @@ import {
   Sorting
 } from "@elastic/react-search-ui-views";
 import SDGResultView from './SDGResultView'
+import ClearFilter from './ClearFilter';
 
 const connector = new Connector({});
 
@@ -26,6 +27,9 @@ const config = {
     search_fields: {
       result_title: {},
       SDG_topic: {},
+      SDG_target_topic: {},
+      SDG_action: {},
+      SDG_target_action: {},
       category: {},
     },
     result_fields: {
@@ -54,15 +58,21 @@ const config = {
     },
     disjunctiveFacets: [
       "category.keyword",
-      "SDG_topic.keyword",
+      /* "SDG_topic.keyword",
+      "SDG_target_topic.keyword",
       "SDG_action.keyword",
+      "SDG_target_action.keyword", */
       "year.keyword",
       "mentionsNorway.keyword",
       "mentionsSDG.keyword"
     ],
     facets: {
-      "SDG_topic.keyword": { type: "value" },
-      "SDG_action.keyword": { type: "value" },
+      "OA_status_calc": { type: "value" },
+      "nvi_level_historical.keyword": { type: "value" },
+      "SDG_topic.keyword": { type: "value", size: 30, sort: "count" },
+      "SDG_target_topic.keyword": { type: "value", size: 30, sort: "count" },
+      "SDG_action.keyword": { type: "value", size: 30, sort: "count" },
+      "SDG_target_action.keyword": { type: "value", size: 30, sort: "count" },
       "category.keyword": { type: "value" },
       "year.keyword": { type: "value" },
       "mentionsSDG.keyword": { type: "value" },
@@ -111,17 +121,18 @@ const Search = () => {
           }
           sideContent={
             <div>
+              <ClearFilter />
               <Facet
-                field="category.keyword"
+                field="OA_status_calc.keyword"
                 label="Category"
               />
               <Facet
-                field="SDG_topic.keyword"
-                label="SDG Topic"
+                field="nvi_level_historical.keyword"
+                label="Category"
               />
               <Facet
-                field="SDG_action.keyword"
-                label="SDG Action"
+                field="category.keyword"
+                label="Category"
               />
               <Facet
                 field="year.keyword"
@@ -136,6 +147,38 @@ const Search = () => {
                 field="mentionsSDG.keyword"
                 label="Mentions SDG"
                 view={BooleanFacet}
+              />
+              <Facet
+                field="SDG_topic.keyword"
+                label="SDG Topic"
+                show={10}
+                view={MultiCheckboxFacet}
+                filterType="any"
+                isFilterable={true}
+              />
+              <Facet
+                field="SDG_target_topic.keyword"
+                label="SDG Topic Target"
+                show={10}
+                view={MultiCheckboxFacet}
+                filterType="any"
+                isFilterable={true}
+              />
+              <Facet
+                field="SDG_action.keyword"
+                label="SDG Action"
+                show={10}
+                view={MultiCheckboxFacet}
+                filterType="any"
+                isFilterable={true}
+              />
+              <Facet
+                field="SDG_target_action.keyword"
+                label="SDG Action Target"
+                show={10}
+                view={MultiCheckboxFacet}
+                filterType="any"
+                isFilterable={true}
               />
             </div>
           }

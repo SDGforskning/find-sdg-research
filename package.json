@@ -28,6 +28,7 @@
     "@elastic/search-ui": "^1.18.1",
     "@elastic/search-ui-app-search-connector": "^1.18.1",
     "@elastic/search-ui-elasticsearch-connector": "^1.18.1",
+    "@heroicons/react": "^2.0.12",
     "clsx": "^1.2.1",
     "framer-motion": "^7.3.2",
     "next": "^12.3.1",
