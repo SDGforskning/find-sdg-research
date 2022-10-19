@@ -86,6 +86,30 @@
         "preserve_trailing": false,
         "ignore_missing": true
       }
+    },
+    {
+      "split": {
+        "field": "SDG_action",
+        "separator": ",",
+        "preserve_trailing": false,
+        "ignore_missing": true
+      }
+    },
+    {
+      "split": {
+        "field": " SDG_target_topic",
+        "separator": ",",
+        "preserve_trailing": false,
+        "ignore_missing": true
+      }
+    },
+    {
+      "split": {
+        "field": "SDG_target_action",
+        "separator": ",",
+        "preserve_trailing": false,
+        "ignore_missing": true
+      }
     }
   ]
 }
