@@ -92,13 +92,13 @@ const CustomResultView = ({
               ))}
             </div>
             <div className='flex gap-2'>
-              {result.SDG_target_topic?.raw && (
+              {result.SDG_target_topic?.raw && [result.SDG_target_topic.raw].map(goal => (
                 <div
-                  className={`text-md text-white inline-flex items-center font-bold leading-sm uppercase px-2 py-1 ${result.SDG_target_topic?.raw.split('_')[0]} dark:text-white rounded`}
+                  className={`text-md text-white inline-flex items-center font-bold leading-sm uppercase px-2 py-1 ${goal.split('_')[0]} dark:text-white rounded`}
                 >
-                  {result.SDG_target_topic.raw}
+                  {goal}
                 </div>
-              )}
+              ))}
             </div>
             {result.SDG_action?.raw && (
               <div>Actions:</div>
@@ -113,13 +113,13 @@ const CustomResultView = ({
               ))}
             </div>
             <div className='flex gap-2'>
-              {result.SDG_target_action?.raw && (
+              {result.SDG_target_action?.raw && result.SDG_target_action.raw.map(goal => (
                 <div
-                  className={`text-md text-white inline-flex items-center font-bold leading-sm uppercase px-2 py-1 ${result.SDG_target_action?.raw.split('_')[0]} dark:text-white rounded`}
+                  className={`text-md text-white inline-flex items-center font-bold leading-sm uppercase px-2 py-1 ${goal.split('_')[0]} dark:text-white rounded`}
                 >
                   {result.SDG_target_action.raw}
                 </div>
-              )}
+              ))}
             </div>
           </div>
         </div>
