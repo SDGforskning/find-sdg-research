@@ -67,7 +67,7 @@ const config = {
       "mentionsSDG.keyword"
     ],
     facets: {
-      "OA_status_calc": { type: "value" },
+      "OA_status_calc.keyword": { type: "value" },
       "nvi_level_historical.keyword": { type: "value" },
       "SDG_topic.keyword": { type: "value", size: 30, sort: "count" },
       "SDG_target_topic.keyword": { type: "value", size: 30, sort: "count" },
