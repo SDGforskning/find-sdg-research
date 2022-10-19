@@ -11,6 +11,16 @@ const TITLE = {
 };
 
 export default {
+  banner: {
+    key: "sdg-v1",
+    text: () => {
+      return (
+        <>
+          SDG dataset v1.0 is released! <a href={`/guide/about-this-service`}>Read more →</a>
+        </>
+      )
+    },
+  },
   project: {
     link: 'https://github.com/SDGforskning/SDGstrings_wos'
   },
