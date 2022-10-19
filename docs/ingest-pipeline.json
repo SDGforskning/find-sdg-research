@@ -1,0 +1,91 @@
+{
+  "description": "Ingest pipeline created by text structure finder",
+  "processors": [
+    {
+      "csv": {
+        "field": "message",
+        "target_fields": [
+          "year",
+          "result_id",
+          "category",
+          "nvi_publication_form",
+          "result_title",
+          "journal",
+          "result_title_anthology",
+          "doi",
+          "fulldoi",
+          "isbn",
+          "eissn",
+          "scientific_field_npi",
+          "OA_status_calc",
+          "nvi_level_historical",
+          "language",
+          "fulltextlink",
+          "scientific_result",
+          "SDG_action",
+          "SDG_topic",
+          "SDG_target_action",
+          "SDG_target_topic",
+          "mentionsNorway",
+          "mentionsSDG"
+        ],
+        "ignore_missing": false
+      }
+    },
+    {
+      "convert": {
+        "field": "mentionsNorway",
+        "type": "boolean",
+        "ignore_missing": true
+      }
+    },
+    {
+      "convert": {
+        "field": "mentionsSDG",
+        "type": "boolean",
+        "ignore_missing": true
+      }
+    },
+    {
+      "convert": {
+        "field": "nvi_level_historical",
+        "type": "double",
+        "ignore_missing": true
+      }
+    },
+    {
+      "convert": {
+        "field": "result_id",
+        "type": "long",
+        "ignore_missing": true
+      }
+    },
+    {
+      "convert": {
+        "field": "scientific_result",
+        "type": "boolean",
+        "ignore_missing": true
+      }
+    },
+    {
+      "convert": {
+        "field": "year",
+        "type": "long",
+        "ignore_missing": true
+      }
+    },
+    {
+      "remove": {
+        "field": "message"
+      }
+    },
+    {
+      "split": {
+        "field": "SDG_topic",
+        "separator": ",",
+        "preserve_trailing": false,
+        "ignore_missing": true
+      }
+    }
+  ]
+}
