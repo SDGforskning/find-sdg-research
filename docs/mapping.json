@@ -1,7 +1,12 @@
 {
   "properties": {
     "OA_status_calc": {
-      "type": "keyword"
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword"
+        }
+      }
     },
     "SDG_action": {
       "type": "text",
@@ -66,7 +71,12 @@
       "type": "keyword"
     },
     "journal": {
-      "type": "keyword"
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword"
+        }
+      }
     },
     "language": {
       "type": "text",
@@ -93,7 +103,12 @@
       }
     },
     "nvi_level_historical": {
-      "type": "keyword"
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword"
+        }
+      }
     },
     "nvi_publication_form": {
       "type": "text",
@@ -118,7 +133,12 @@
       "type": "keyword"
     },
     "scientific_field_npi": {
-      "type": "keyword"
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword"
+        }
+      }
     },
     "scientific_result": {
       "type": "boolean",
@@ -130,7 +150,12 @@
     },
     "year": {
       "type": "date",
-      "format": "yyyy-MM-dd HH:mm:ss||yyyy-MM-dd||yyyy-MM||yyyy||epoch_millis"
+      "format": "yyyy-MM-dd HH:mm:ss||yyyy-MM-dd||yyyy-MM||yyyy||epoch_millis",
+      "fields": {
+        "keyword": {
+          "type": "keyword"
+        }
+      }
     }
   }
 }
