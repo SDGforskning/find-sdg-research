@@ -34,7 +34,7 @@ const CustomResultView = ({
               {result.category?.raw} / {result.nvi_publication_form?.raw}
             </div>
             <h3 className='text-xl font-bold'>
-              <a onClick={onClickLink} href={result.fulltextlink?.raw !== 'No open link found' ? result.fulltextlink.raw : result.doi.raw}>
+              <a onClick={onClickLink} href={result.fulltextlink && result.fulltextlink?.raw !== 'No open link found' ? result.fulltextlink.raw : result.fulldoi?.raw ? result.fulldoi.raw : '#'}>
                 {result.result_title.raw}
               </a>
             </h3>
