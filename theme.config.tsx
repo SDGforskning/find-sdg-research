@@ -91,7 +91,7 @@ export default {
             <ul className='flex gap-10'>
               <ul>
                 <li>
-                  <a href='/guide/about'>{locale === 'en' ? 'About the project' : 'Om prosjektet'}</a>
+                  <a href='/help/about-this-service'>{locale === 'en' ? 'About the service' : 'Om tjenesten'}</a>
                 </li>
                 <li>
                   <a href='/accessibility-statement'>{locale === 'en' ? 'Accessibility statement' : 'Tilgjengelighetserklæring'}</a>
@@ -115,7 +115,7 @@ export default {
                 : 'Prosjektet er støttet av Nasjonalbiblioteket i Norge.'}
             </div>
           </div>
-          <div className='flex  gap-5'>
+          <div className='flex gap-5'>
             <div className='lg:w-32 md:w-24 w-20'><UiBIcon /></div>
             <div className='lg:w-36 md:w-24 w-20'><HVLIcon /></div>
             <div className='lg:w-24 md:w-18 w-16'><UiSIcon /></div>

@@ -63,17 +63,29 @@ const CustomResultView = ({
                   <a href={result.fulltextlink.raw} target="_blank">
                     {result.fulltextlink.raw} <ArrowUpRightIcon className="inline h-4 w-4 text-blue-500" />
                   </a>
+                  {result.fulldoi?.raw && (
+                    <span className='ml-5 text-xs text-gray-600 dark:text-gray-400'>{' '}
+                      <a href={result.fulldoi.raw}>
+                        {result.fulldoi.raw.split('//')[1]}
+                      </a>
+                    </span>
+                  )}
                 </li>
               )}
 
               {(
                 result.fulltextlink?.raw && result.fulltextlink?.raw === 'No open link found')
                 && result.fulldoi?.raw && (
-                  <li>DOI: <a href={result.fulldoi.raw}>{result.doi.raw} <ArrowUpRightIcon className="inline h-4 w-4 text-blue-500" /></a>               {result.fulltextlink?.raw && result.fulltextlink?.raw == 'No open link found' && (
-                    <span className='ml-5 text-xs text-gray-600 dark:text-gray-400'>{' '}
-                      {result.fulltextlink.raw}
-                    </span>
-                  )}</li>
+                  <li>DOI:{' '}
+                    <a href={result.fulldoi.raw}>
+                      {result.doi.raw} <ArrowUpRightIcon className="inline h-4 w-4 text-blue-500" />
+                    </a>
+                    {result.fulltextlink?.raw && result.fulltextlink?.raw == 'No open link found' && (
+                      <span className='ml-5 text-xs text-gray-600 dark:text-gray-400'>{' '}
+                        {result.fulltextlink.raw}
+                      </span>
+                    )}
+                  </li>
                 )}
             </ul>
           </div>
