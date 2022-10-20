@@ -5,23 +5,23 @@
     "hidden": true
   },
   "search": {
-    "title": "Søk i datasettet",
+    "title": "Søk",
     "type": "page",
     "layout": "raw",
     "theme": {
       "layout": "full"
     }
   },
-  "guide": {
-    "title": "Guide",
+  "help": {
+    "title": "Hjelp",
     "type": "page"
   },
   "statistics": {
     "title": "Statistikk",
     "type": "page"
   },
-  "search-strings": {
-    "title": "Søkestrenger",
+  "about": {
+    "title": "Om",
     "type": "page"
   },
   "accessibility-statement": {

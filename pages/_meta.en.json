@@ -5,26 +5,27 @@
     "hidden": true
   },
   "search": {
-    "title": "Search the dataset",
+    "title": "Search",
     "type": "page",
     "layout": "raw",
     "theme": {
       "layout": "full"
     }
   },
-  "guide": {
-    "title": "Guide",
+  "help": {
+    "title": "Help",
     "type": "page"
   },
   "statistics": {
     "title": "Statistics",
     "type": "page"
   },
-  "search-strings": {
-    "title": "Search strings",
+  "about": {
+    "title": "About",
     "type": "page"
   },
   "accessibility-statement": {
+    "type": "page",
     "hidden": true
   },
   "404": {

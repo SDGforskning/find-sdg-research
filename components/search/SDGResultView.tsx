@@ -1,5 +1,5 @@
 import { useRouter } from 'next/router';
-import { ArrowUpRightIcon } from '@heroicons/react/24/solid'
+import { ArrowUpRightIcon, LockClosedIcon, LockOpenIcon } from '@heroicons/react/24/solid'
 
 const localeText = {
   isScientific: {
@@ -30,7 +30,7 @@ const CustomResultView = ({
       <div>
         <div className='flex items-start flex-wrap md:flex-nowrap justify-between px-5 gap-5 md:divide-x'>
           <div className='w-3/4'>
-            <div className={`text-sm leading-sm dark:text-slate-400`}>
+            <div className={`text-sm leading-sm text-gray-600 dark:text-gray-400`}>
               {result.category?.raw} / {result.nvi_publication_form?.raw}
             </div>
             <h3 className='text-xl font-bold'>
@@ -39,13 +39,20 @@ const CustomResultView = ({
               </a>
             </h3>
             {result.journal && (
-              <div className={`text-md leading-sm dark:text-slate-400`}>
+              <div className={`text-md leading-sm text-gray-600 dark:text-gray-400`}>
                 {result.journal.raw} ({result.year?.raw})
+              </div>
+            )}
+            {result.result_id.raw && (
+              <div className={`text-md leading-sm text-gray-600 dark:text-gray-400`}>
+                <a href={`https://app.cristin.no/results/show.jsf?id=${result.result_id.raw}`} target="_blank">
+                  Authors and institutions in CRISTIN <ArrowUpRightIcon className="inline h-4 w-4 text-blue-500" />
+                </a>
               </div>
             )}
 
             {result.result_title_anthology && (
-              <div className={`text-md leading-sm dark:text-slate-400`}>
+              <div className={`text-md leading-sm text-gray-600 dark:text-gray-400`}>
                 {result.result_title_anthology.raw} ({result.year?.raw})
               </div>
             )}
@@ -53,35 +60,26 @@ const CustomResultView = ({
             <ul className='mt-5'>
               {result.fulltextlink?.raw && result.fulltextlink?.raw !== 'No open link found' && (
                 <li>Fulltext:{' '}
-                  <a href={result.fulltextlink.raw}>
+                  <a href={result.fulltextlink.raw} target="_blank">
                     {result.fulltextlink.raw} <ArrowUpRightIcon className="inline h-4 w-4 text-blue-500" />
                   </a>
                 </li>
               )}
-              {result.fulltextlink?.raw && result.fulltextlink?.raw == 'No open link found' && (
-                <li>Fulltext:{' '}
-                  {result.fulltextlink.raw}
-                </li>
-              )}
 
-              {result.fulldoi?.raw && (
-                <li>DOI: <a href={result.fulldoi.raw}>{result.doi.raw} <ArrowUpRightIcon className="inline h-4 w-4 text-blue-500" /></a></li>
-              )}
-
-              {result.result_id.raw && (
-                <li>
-                  <a href={`https://app.cristin.no/results/show.jsf?id=${result.result_id.raw}`} target="_blank">
-                    Information about authors and institutions at CRISTIN <ArrowUpRightIcon className="inline h-4 w-4 text-blue-500" />
-                  </a>
-                </li>
-              )}
+              {(
+                result.fulltextlink?.raw && result.fulltextlink?.raw === 'No open link found')
+                && result.fulldoi?.raw && (
+                  <li>DOI: <a href={result.fulldoi.raw}>{result.doi.raw} <ArrowUpRightIcon className="inline h-4 w-4 text-blue-500" /></a>               {result.fulltextlink?.raw && result.fulltextlink?.raw == 'No open link found' && (
+                    <span className='ml-5 text-xs text-gray-600 dark:text-gray-400'>{' '}
+                      {result.fulltextlink.raw}
+                    </span>
+                  )}</li>
+                )}
             </ul>
           </div>
 
           <div className='flex flex-1 md:flex-col gap-2 w-1/4 md:pl-5'>
-            {result.SDG_topic?.raw && (
-              <div>Topics:</div>
-            )}
+            <div>Topics:</div>
             <div className='flex gap-2'>
               {result.SDG_topic?.raw && result.SDG_topic.raw.map(goal => (
                 <div
@@ -94,15 +92,14 @@ const CustomResultView = ({
             <div className='flex gap-2'>
               {result.SDG_target_topic?.raw && [result.SDG_target_topic.raw].map(goal => (
                 <div
-                  className={`text-md text-white inline-flex items-center font-bold leading-sm uppercase px-2 py-1 ${goal.split('_')[0]} dark:text-white rounded`}
+                  className={`text-xs text-white inline-flex items-center font-bold leading-sm uppercase px-2 py-1 ${goal.split('_')[0]} dark:text-white rounded`}
                 >
-                  {goal}
+                  Target: {goal.split('_')[1]}
                 </div>
               ))}
             </div>
-            {result.SDG_action?.raw && (
-              <div>Actions:</div>
-            )}
+
+            <div>Actions:</div>
             <div className='flex gap-2'>
               {result.SDG_action?.raw && [result.SDG_action.raw].map(goal => (
                 <div
@@ -115,9 +112,9 @@ const CustomResultView = ({
             <div className='flex gap-2'>
               {result.SDG_target_action?.raw && result.SDG_target_action.raw.map(goal => (
                 <div
-                  className={`text-md text-white inline-flex items-center font-bold leading-sm uppercase px-2 py-1 ${goal.split('_')[0]} dark:text-white rounded`}
+                  className={`text-xs text-white inline-flex items-center font-bold leading-sm uppercase px-2 py-1 ${goal.split('_')[0]} dark:text-white rounded`}
                 >
-                  {result.SDG_target_action.raw}
+                  Target: {goal.split('_')[1]}
                 </div>
               ))}
             </div>
@@ -151,21 +148,17 @@ const CustomResultView = ({
         </div>
 
         <div
-          className={`mt-5 w-full rounded-b-sm text-xs inline-flex items-center font-bold leading-sm uppercase px-3 py-1 ${result.scientific_result.raw ? 'bg-green-100 dark:bg-green-400' : 'bg-gray-100'} dark:text-slate-800 gap-3 justify-between`}
+          className={`mt-5 px-5 w-full rounded-b-sm text-xs inline-flex content-center justify-start font-bold leading-sm py-2 ${result.scientific_result.raw ? 'bg-green-200 dark:bg-green-400' : 'bg-gray-100'} dark:text-slate-800 gap-3`}
         >
-          <div className='flex gap-5'>
-            <div>{result.scientific_result.raw === true ? localeText.isScientific[locale] : ''}</div>
-            {result.scientific_field_npi?.raw && (
-              <div>
-                {result.scientific_field_npi.raw}
-              </div>
-            )}
-          </div>
+          <div>{result.OA_status_calc.raw === "NotOA" ? <LockClosedIcon className='w-4 h-4' /> : <LockOpenIcon className='w-4 h-4' />}</div>
 
-          <div className='flex gap-5'>
-            <div>{result.OA_status_calc.raw}</div>
-            <div>NVI level: {result.nvi_level_historical?.raw}</div>
-          </div>
+          <div>{result.scientific_result.raw === true ? `${localeText.isScientific[locale]} (NVI ${result.nvi_level_historical?.raw})` : ''}</div>
+
+          {result.scientific_field_npi?.raw && (
+            <div>
+              {result.scientific_field_npi.raw}
+            </div>
+          )}
         </div>
         {/* <pre>{JSON.stringify(result, null, 2)}</pre> */}
       </div>

@@ -132,7 +132,7 @@ export default {
     float: true
   },
   sidebar: {
-    defaultMenuCollapsed: false,
+    defaultMenuCollapsed: true,
     subtitle: ({ title }) => <>{title}</>
   }
 } as DocsThemeConfig

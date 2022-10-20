@@ -74,6 +74,7 @@ const config = {
       "SDG_action.keyword": { type: "value", size: 30, sort: "count" },
       "SDG_target_action.keyword": { type: "value", size: 30, sort: "count" },
       "category.keyword": { type: "value" },
+      "scientific_field_npi.keyword": { type: "value" },
       "year.keyword": { type: "value" },
       "mentionsSDG.keyword": { type: "value" },
       "mentionsNorway.keyword": { type: "value" },
@@ -124,11 +125,11 @@ const Search = () => {
               <ClearFilter />
               <Facet
                 field="OA_status_calc.keyword"
-                label="Category"
+                label="Open Access Status"
               />
               <Facet
                 field="nvi_level_historical.keyword"
-                label="Category"
+                label="NVI Level"
               />
               <Facet
                 field="category.keyword"
@@ -175,6 +176,14 @@ const Search = () => {
               <Facet
                 field="SDG_target_action.keyword"
                 label="SDG Action Target"
+                show={10}
+                view={MultiCheckboxFacet}
+                filterType="any"
+                isFilterable={true}
+              />
+              <Facet
+                field="scientific_field_npi.keyword"
+                label="Scientific field"
                 show={10}
                 view={MultiCheckboxFacet}
                 filterType="any"
