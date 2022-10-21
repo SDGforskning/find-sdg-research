@@ -16,15 +16,15 @@ export default {
     text: () => {
       return (
         <>
-          SDG dataset v1.0 is released! <a href={`/guide/about-this-service`}>Read more →</a>
+          SDG dataset v1.0 is released!
         </>
       )
     },
   },
   project: {
-    link: 'https://github.com/SDGforskning/SDGstrings_wos'
+    link: 'https://github.com/SDGforskning/find-sdg-research'
   },
-  docsRepositoryBase: 'https://github.com/SDGforskning/SDGstrings_wos/blob/master',
+  docsRepositoryBase: 'https://github.com/SDGforskning/find-sdg-research/blob/master',
   titleSuffix: () => {
     const { route, locale } = useRouter()
     if (route === '/') return ''
