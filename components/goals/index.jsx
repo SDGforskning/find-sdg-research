@@ -122,7 +122,7 @@ function Goal({ image, link }) {
 export function Goals() {
   const { locale } = useRouter()
   return (
-    <div className='xl:-mx-36 border-y border-slate-200 dark:border-slate-700'>
+    <div className='xl:-mx-36'>
       <h2 className='text-center mt-5 text-xl'>
         {locale === 'en' ? '... or browse by SDGs' : '... eller finn forskning per bærekraftsmål'}
       </h2>

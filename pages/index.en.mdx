@@ -6,23 +6,18 @@ searchable: false
 import {Goals}  from '../components/goals'
 import {Cards, Card}  from '../components/card'
 import {Features, Feature}  from '../components/features'
+import {HomeSearchBox} from '../components/search'
 
-{<div className="flex items-center justify-center mt-10 mb-8 gap-5"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-14 h-14"> <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" /> </svg> <h1 className="text-center font-extrabold sm:text-3xl md:text-5xl lg:text-6xl"> <a href='/search' className="">Find SDG research</a> </h1></div>}
+{
+  <div className="flex items-center justify-center mt-10 mb-8 gap-5"> 
+    <h1 className="text-center font-extrabold sm:text-3xl md:text-5xl lg:text-6xl">
+      <h1 className="text-center font-extrabold sm:text-3xl md:text-5xl lg:text-6xl">Find SDG research</h1>
+    </h1>
+  </div>
+}
 
-<div className="flex flex-col divide-y divide-slate-700">
-{/*   <div className="flex flex-wrap justify-center">
-    <Feature className="flex gap-2 items-center my-3">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-        <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
-      </svg>
-      <h2 className="text-center text-xl font-bold">
-        <a href='/search'>
-        Search the dataset
-        </a>
-      </h2>
-    </Feature>
-  </div> */}
-  
+<div className="flex flex-col">
+  <HomeSearchBox />
 
   <Goals />
 
