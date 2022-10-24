@@ -2,7 +2,7 @@
 
 Conserve and sustainably use the oceans, seas and marine resources for sustainable development.
 
-**Current status**: Minor edits can still occur, but the string is mostly a finished version (Sep 2022).
+**Current status**: This string is currently a finished version (1.0.0).
 
 **Contents**
 
@@ -15,18 +15,13 @@ Conserve and sustainably use the oceans, seas and marine resources for sustainab
 
 ## 1. Full query
 
-<details>
-  <summary>Click to show the final copy-pasteable full query for SDG 14</summary>
-
-Not ready yet
-
-</details>
+Results of the full search in its current state can be viewed on Web of Science by clicking here: https://www.webofscience.com/wos/woscc/summary/8d851a1e-d98d-41de-a91e-3dbec467564e-57be146f/relevance/1 (no filters; all years)
 
 ## 2. General notes
 
 This document contains search strings for finding publications related to the actions in the SDG 14 targets and indicators ("action approach"; focus on precision, smaller result set). We also have a version which finds publications related to the topics in the SDG 14 targets and indicators ("topic approach"; focus on recall, larger result set), provided in the same repository as this file. For more explanation, see the Readme in this repository.
 
-This SDG is interpreted to be about the marine environment; however, certain topics are difficult to limit to only this environment without missing large numbers of works. In particular, fisheries research may not always use clear marine words, or may concern both marine and freshwater environments. Some important species move between freshwater and marine habitats (e.g. eel, salmon). Thus, the fishery-related targets (14.4, 14.6 and 14.b) are currently not limited using the *marine terms* below. All other areas are.
+This SDG is interpreted to be about the marine environment; however, certain topics are difficult to limit to only this environment without missing large numbers of works. In particular, fisheries research may not always use clear marine words, or may concern both marine and freshwater environments. Some important species move between freshwater and marine habitats (e.g. eel, salmon). Thus, the fishery-related targets (14.4, 14.6 and 14.b) are currently not limited using the *marine terms* below. Most other phrases are (see notes on individual phrases).
 
 A source of keywords for several targets was OECDs "Marine Protected Areas: Economics, Management and Effective Policy Mixes" (<a id="OECD">[OECD, 2017](#f5)</a>), and FAOs "State of World Fisheries and Aquaculture" (<a id="FAOfish">[FAO, 2018](#f8)</a>). In addition, during editing of this string (2021), we have consulted two other sets of queries for reference: <a id="Aurora">[Aurora Universities network (2020)](#f5)</a> and <a id="Els">[Rivest et al. (2021)](#f6)</a>.
 
@@ -44,16 +39,13 @@ The second part (`SO=`) consists of marine journal titles. Journal search is use
 
 I considered adding the 25 most common marine fisheries species (<a id="FAOfish">[FAO, 2018](#f8)</a>), however this gave few extra relevant results. It introduced a lot more noise with the use of `MPA` in 14.2/14.5, as this is commonly used as a unit of pressure (MPa) when discussing the processing of these species for food. Relevant species include: `"theragra chalcogramma" OR "engraulis ringens" OR "katsuwonus pelamis" OR "sardinella" OR "trachurus" OR "clupea harengus" OR "scomber japonicus" OR "thunnus albacares" OR "gadus morhua" OR "engraulis japonicus" OR "decapterus" OR "sardina pilchardus" OR "trichiurus lepturus" OR "micromesistius poutassou" OR "scomber scombrus" OR "scomberomorus" OR "dosidicus gigas" OR "nemipterus" OR "brevoortia patronus" OR "sprattus sprattus" OR "portunus trituberculatus" OR "acetes japonicus" OR "sardinops melaonstictus" OR "scomber colias" OR "rastrelliger kanagurta"`.
 
-```dart
+```py
 TS=
 (
-  "ocean$" OR "oceanogra*"
-  OR "marine" OR "submarine"
-  OR "seas"
-  OR "seabed" OR "seamount$" OR "hydrothermal vent$" OR "cold seep$"
+  "ocean$" OR "oceanogra*" OR "marine" OR "submarine" OR "seas"
+  OR "seabed" OR "seamount$" OR "hydrothermal vent$" OR "cold seep$" OR "continental shelf" OR "continental shelves" OR "continental slope"
   OR "subtidal" OR "intertidal" OR "deep sea" OR "bathyal" OR "abyssal"
-  OR "rocky shore$" OR "beach*"
-  OR "salt marsh*" OR "mud flat$" OR "mudflat$" OR "*tidal flat" OR "*tidal flats"
+  OR "rocky shore$" OR "beach*" OR "salt marsh*" OR "mud flat$" OR "mudflat$" OR "*tidal flat" OR "*tidal flats"
   OR "estuar*" OR "fjord$"
   OR "sea ice"
 
@@ -181,9 +173,9 @@ The pollution terms and structure are mostly the same between the three phrases;
 
 Action terms: `tackle` is not included as an action term as it could be a type of marine debris.
 
-Pollution terms: `pollution` covers various kinds (e.g. noise pollution). `waste OR discharge` are limited to certain fields as they are such general words (e.g. fish waste, heat waste). In this phrase, some pollutants (e.g. `mercury`) need to be combined with `contamination`, because there are papers discussing their removal from e.g. gases in industrial processes using marine organisms. This phrase does not include `waste management` like the others because it does not fit with these action terms.
+Pollution terms: `pollution` covers various kinds (e.g. noise pollution). `waste OR discharge` are limited to certain fields as they are such general words (e.g. fish waste, heat waste). In this phrase, some pollutants (e.g. `mercury`) need to be combined with `contamination`, because there are papers discussing their removal from e.g. gases in industrial processes using marine organisms. Currently chemical symbols for these metals are not included as it is diffiult to avoid noise, but this can be reconsidered (and they are included in the topic approach). This phrase does not include `waste management` like the others because it does not fit with these action terms.
 
-```dart
+```py
 TS=
 (
   (
@@ -193,7 +185,7 @@ TS=
     OR "remediate" OR "remediation" OR "cleanup" OR "clean up"
     )  
     NEAR/5
-        (  "pollut*"
+        ("pollut*"
         OR "wastewater" OR "waste water" OR "sewage" OR "sewer$"
         OR "eutrophicat*" OR "excess nutrient$" OR "excessive nutrient$"
         OR "effluent$" OR "nutrient runoff" OR "nutrient run off"
@@ -208,10 +200,12 @@ TS=
         OR "plastic$" OR "microplastic$" OR "micro plastic$" OR "nanoplastic$" OR "nano plastic$"
         OR
           (
-            ("heavy metal$" OR "organotin$" OR "tributyltin" OR "TBT" OR "mercury" OR "toxic metal$" OR "mining" OR "mine tailing$" OR "oil")
-            NEAR/15 "contamination"         
+            ("heavy metal$" OR "toxic metal$" OR "mercury" OR "arsenic" OR "cadmium" OR "chromium" OR "copper" OR "nickel" 
+            OR "organotin$" OR "tributyltin" OR "TBT" OR "mining" OR "mine tailing$" OR "oil"
+            )
+            NEAR/15 "contamination"   
           )
-        OR "contaminated" OR "contaminant$" OR "bioaccumula*" OR "ecotox*" OR "toxic chemical$"
+        OR "contaminated" OR "contaminant$" OR "bioaccumula*" OR "bioconcentrat*" OR "ecotox*" OR "toxic chemical$"
         OR "endocrine disrupting chemical$"
         OR "persistent organic pollutant$" OR "pesticide$" OR "herbicide$" OR "polychlorinated biphenyl$" OR "PCB" OR "DDT" OR "hexachlorocyclohexane" OR "hexachlorobenzene" OR "hexachlorobutadiene" OR "pentachlorobenzene" OR "pentachlorophenol" OR "pentachloroanisole" OR "hexabromocyclododecane" OR "polybrominated diphenyl ether$" OR "perflurochemicals" OR "PFAS" OR "endosulfan"
         OR "polycyclic aromatic hydrocarbon$" OR "PAH"
@@ -220,7 +214,6 @@ TS=
   )
   NOT ("PM2.5" OR "PM10" OR "leaf litter")
 )
-
 ```
 
 #### Phrase 2
@@ -231,7 +224,7 @@ The pollution terms and structure are mostly the same between the three phrases;
 
 The development of `indicators` is included as part of prevention (monitoring). `pollution` covers various kinds (e.g. noise pollution). `waste OR discharge` are limited to certain fields as they are such general words (e.g. fish waste, heat waste).
 
-```dart
+```py
 TS=
 (
   (
@@ -268,10 +261,12 @@ TS=
         OR "plastic$" OR "microplastic$" OR "micro plastic$" OR "nanoplastic$" OR "nano plastic$"
         OR
           (
-            ("heavy metal$" OR "organotin$" OR "tributyltin" OR "TBT" OR "mercury" OR "toxic metal$" OR "mining" OR "mine tailing$" OR "oil")
+            ("heavy metal$" OR "toxic metal$" OR "mercury" OR "arsenic" OR "cadmium" OR "chromium" OR "copper" OR "nickel" 
+            OR "organotin$" OR "tributyltin" OR "TBT" OR "mining" OR "mine tailing$" OR "oil"
+            )
             NEAR/15 "contamination"          
           )
-        OR "contaminated" OR "contaminant$" OR "bioaccumula*" OR "ecotox*" OR "toxic chemical$"
+        OR "contaminated" OR "contaminant$" OR "bioaccumula*" OR "bioconcentrat*" OR "ecotox*" OR "toxic chemical$"
         OR "endocrine disrupting chemical$"
         OR "persistent organic pollutant$" OR "pesticide$" OR "herbicide$" OR "polychlorinated biphenyl$" OR "PCB" OR "DDT" OR "hexachlorocyclohexane" OR "hexachlorobenzene" OR "hexachlorobutadiene" OR "pentachlorobenzene" OR "pentachlorophenol" OR "pentachloroanisole" OR "hexabromocyclododecane" OR "polybrominated diphenyl ether$" OR "perflurochemicals" OR "PFAS" OR "endosulfan"
         OR "polycyclic aromatic hydrocarbon$" OR "PAH"
@@ -297,7 +292,7 @@ The pollution terms and structure are mostly the same between the three phrases;
 
 `pollution` covers various kinds (e.g. noise pollution). In this phrase, specific pollutants (e.g. `mercury`) do not need to be combined with `pollution or contamination`, because the action terms are all related to pollution.
 
-```dart
+```py
 TS=
 (
   (
@@ -324,10 +319,9 @@ TS=
         OR "litter" OR "littering" OR "garbage patch"
         OR ("debris" NEAR/5 ("coastal" OR "marine" OR "ocean*"))
         OR "plastic$" OR "microplastic$" OR "micro plastic$" OR "nanoplastic$" OR "nano plastic$"
-        OR "heavy metal$" OR "organotin$" OR "tributyltin" OR "TBT" OR "mercury" OR "toxic metal$"
-        OR "mining" OR "mine tailing$"
-        OR "oil"
-        OR "contaminated" OR "contaminant$" OR "bioaccumula*" OR "ecotox*" OR "toxic chemical$"
+        OR "heavy metal$" OR "toxic metal$" OR "mercury" OR "arsenic" OR "cadmium" OR "chromium" OR "copper" OR "nickel" 
+        OR "organotin$" OR "tributyltin" OR "TBT" OR "mining" OR "mine tailing$" OR "oil"
+        OR "contaminated" OR "contaminant$" OR "bioaccumula*" OR "bioconcentrat*" OR "ecotox*" OR "toxic chemical$"
         OR "endocrine disrupting chemical$"
         OR "persistent organic pollutant$" OR "pesticide$" OR "herbicide$" OR "polychlorinated biphenyl$" OR "PCB" OR "DDT" OR "hexachlorocyclohexane" OR "hexachlorobenzene" OR "hexachlorobutadiene" OR "pentachlorobenzene" OR "Pentachlorophenol" OR "pentachloroanisole" OR "hexabromocyclododecane" OR "polybrominated diphenyl ether$" OR "perflurochemicals" OR "PFAS" OR "endosulfan"
         OR "polycyclic aromatic hydrocarbon$" OR "PAH"
@@ -335,7 +329,6 @@ TS=
   )
   NOT ("PM2.5" OR "PM10")
 )
-
 ```
 
 ### Target 14.2
@@ -358,7 +351,7 @@ This phrase covers the establishment/management of protected areas. The general 
 
 For our interpretation of "protection" we include several types of protected areas (which have different degrees of protection); for example, `no take zone$`, `conservation zone$`, `marine protected area$`. The phrase `"protect*" OR "conservation" NEAR/3 "area*" or "zone"` will cover "marine protected areas" and "marine conservation zones".
 
-```dart
+```py
 TS=
 (
   ("designat*" OR "placement" OR "delineat*" OR "expand*" OR "extend"
@@ -386,7 +379,7 @@ TS=
 
 Phrase 2 covers the establishment/improvement of sustainable management approaches.  The general structure is *action + sustainable management*. **This phrase should be combined with [marine terms](https://github.com/SDGforskning/SDGstrings_wos/blob/main/SDG14_query_action_WoS.md#3-marine-terms-string-for-limiting-certain-phrases-to-the-marine-environment) with `AND`**.
 
-```dart
+```py
 TS=
 (
   ("designat*" OR "placement" OR "delineat*" OR "expand*" OR "extend"
@@ -422,7 +415,7 @@ The *action terms* for this string are challenging because one can talk about "h
 
 Under the *marine ecosystems/elements*, we include habitats, elements of ocean health, elements of production, and some specific pieces of legislation to do with conservation/protection. Terms to do with ocean health include various terms to do with functioning ecosystems and services for humans, diversity at various levels (important for ecosystem functioning, resilience and services),  `key species` and `foundation species` (whose presence is important for ecosystem maintenance), and `water quality` (can be a driver of species loss).`BBNJ` is a concept most often used to highlight the difficulties conserving biodiversity beyond national waters, so any publications mentioning it are assumed to be about protection/management.
 
-```dart
+```py
 TS=
 (
   ("manage" OR "conserve" OR "protect" OR "restore"
@@ -486,7 +479,7 @@ The general structure is *action + impacts + acidification*.
 
 *Impact terms*: In this action-approach, only general impact terms are included (e.g. `impact*`) as these work best with action terms (e.g. `reduc*`). Terms for specific processes that can be affected are not really needed and can cause noise if trying to limit to research talking about how to *minimise* impacts (e.g. "this can reduce effects of OA on calcification" = minimising impact, but "OA reduces calcification" = just an impact). However, for the topic approach, terms for major biological processes that can be impacted are added (`"calcif*" OR "decalcif*" OR "calcium carbonate" OR "dissol*" OR "aragonite" OR "calcite" OR "carbonate saturation" OR "extinction" OR "adaptation" OR "adaptive capacity" OR "competition" OR "recruitment" OR "survival" OR "reproduction"`). 
 
-```dart
+```py
 TS =
 (
   (
@@ -536,11 +529,11 @@ We also consider abandoned, lost and discarded gear to lie under destructive fis
 
 Specific fish species as search terms are not needed in this query because the focus is on fisheries (fisherpeople, fishermen, fishing, fishery, fisheries), not the biology of individual fish species outside of fisheries. Therefore, even publications on specific fish species must use the terms fishery etc.
 
-#### Phrase 1:
+#### Phrase 1
 
 The basic structure is *generic action + overfishing/illegal/destructive fishing*. The *overfishing* terms are the same in phrase 1 and phrase 2, but the action terms differ and are added at a closer distance in phrase 1.
 
-```dart
+```py
 TS=
 (
   ("prevent*" OR "avoid*" OR "stop*" OR "end" OR "ending"
@@ -566,13 +559,13 @@ TS=
 )
 ```
 
-#### Phrase 2:
+#### Phrase 2
 
 The basic structure is *instrument actions + overfishing/illegal/destructive fishing*. The *overfishing* terms are the same in phrase 1 and phrase 2, but the action terms differ and are added at a closer distance in phrase 1.
 
 In this phrase, relevant legislation and organisations which have a focus on reducing illegal/overfishing included as actions, as legislation is a way of inducing action. <a id="FAOfish">[FAO (2018)](#f8)</a> was used as a source of relevant legislation.
 
-```dart
+```py
 TS=
 (
   ("marine stewardship council"
@@ -605,13 +598,13 @@ TS=
 )
 ```  
 
-#### Phrase 3:
+#### Phrase 3
 
 The basic structure is *action + management/restoration + fisheries*. This phrase differs to phrases 1 and 2 in that it focuses on sustainable management, rather than overfishing or IUU fishing.
 
 `management` will find a number of terms, e.g. "science-based management", "ecosystem based (fisheries) management" (EBFM), "area based management", "fisheries management policy" etc. Policies and frameworks which call for good management are included among the *management* terms; <a id="FAOfish">[FAO (2018)](#f8)</a> was used as a source of relevant legislation. Research about both the establishment and avoidance of fishery closures is considered to be relevant to implementing good management, as is research about the max. sustainable yield.
 
-```dart
+```py
 TS=
 (
   (
@@ -645,7 +638,6 @@ TS=
       )
 )
 ```
-
 ### Target 14.5
 
 > **14.5 By 2020, conserve at least 10 per cent of coastal and marine areas, consistent with national and international law and based on the best available scientific information**
@@ -658,7 +650,7 @@ This query consists of 1 phrase. The general structure is *action + protected ar
 
 Conserving areas of the ocean is considered widely to include several types of protected areas (which have different degrees of protection); for example, `no take zone$`, `conservation zone$`, `marine protected area$`. The phrase `"protect*" OR "conservation" NEAR/3 "area*" or "zone"` will cover "marine protected areas" and "marine conservation zones". For the action terms, I tested with `("increas*" NEAR/3 ("cover" OR "area" OR "size" OR "extent" OR "coverage"))` but it mostly gave noise.
 
-```dart
+```py
 TS=
 (
   ("designat*" OR "placement" OR "delineat*" OR "expand*" OR "extend"
@@ -695,12 +687,11 @@ This target is interpreted to cover research about reducing/eliminating fisherie
 This query consists of 2 phrases. 
 
 #### Phrase 1
-
 The general structure is *action + subsidies + fisheries*. 
 
 The generic trm `fishing` will find "IUU fishing". `"larval subsidi*" OR "recruitment subsidi*"` are terms to do with fish population dynamics and are excluded.
 
-```dart
+```py
 TS =
 (
   (
@@ -725,7 +716,7 @@ TS =
 
 The general structure is *ODA/mandates/WTO + fisheries*. Note that this does not include an explicit action - we considered adding action terms too restrictive, as we assume that works on policy/ODA and fisheries are likely to be action-orientated anyway. 
 
-```dart
+```py
 TS=
 (
   ("ODA" OR "official development assistance" OR "doha development agenda" OR "hong kong ministerial" OR "world trade organization" OR "WTO")
@@ -750,7 +741,7 @@ This query consists of 1 phrase. The general structure is *action + economic ben
 
 The terms for Senegal and Anguilla here are truncated differently than standard due to salmon bacteria names including these terms.
 
-```dart
+```py
 TS =
 (
     (
@@ -810,15 +801,15 @@ This target is difficult to interpret, particularly as "increase scientific know
 
 This query consists of 3 phrases.
 
-#### Phrase 1:
+#### Phrase 1
 
 The general structure is *transfer of technology*. This is such a specific term that any publications using it are likely to be highly relevant to the target.
 
-```dart
+```py
 TS= ("transfer of marine technolog*" OR "marine technology transfer")
 ```
 
-#### Phrase 2:
+#### Phrase 2
 
 This phrase covers research about improving, sharing, collaboration or funding for marine scientific knowledge, research capacity & technology. Research about advancing marine science in considered enough to be included.
 
@@ -828,7 +819,7 @@ The *marine science* terms include generic terms for ocean science, terms for re
 
 The terms `build* OR develop*` in the first section will find capacity building/development.
 
-```dart
+```py
 TS=
 (
       ("establish*" OR "build*" OR "develop*" OR "implement*" OR "propos*" OR "design" OR "provide" OR "provision"
@@ -881,7 +872,7 @@ TS=
 )
 ```
 
-#### Phrase 3:
+#### Phrase 3
 
 The general structure is *(blue growth / bioresources/biodiversity + bioeconomy/uses) + developing countries*. **This phrase should be combined with [marine terms](https://github.com/SDGforskning/SDGstrings_wos/blob/main/SDG14_query_action_WoS.md#3-marine-terms-string-for-limiting-certain-phrases-to-the-marine-environment) with `AND`**.
 
@@ -889,7 +880,7 @@ This phrase covers research about the "use/benefits of biodiversity". However, t
 
 `blue growth`, `blue economy` and `marine economy` are used alone with `sustainable` because these terms indicate a use of marine resources for development/economic benefit. `development` is not used alone because it is used in many other contexts (e.g. developmental biology). The `Nagoya protocol` is related to the convention on biological diversity (Nagoya Protocol on Access to Genetic Resources and the Fair and Equitable Sharing of Benefits Arising from their Utilization to the Convention on Biological Diversity).
 
-```dart
+```py
 TS=
 (
   (
@@ -953,7 +944,7 @@ This query consists of 2 phrases.  Again, here, specific fish species as search 
 
 The general structure is *action + access/rights/control + small scale + fishing*. `right$` covers "territorial use rights in fisheries" (TURFs), "territorial rights", "usage rights" etc.. `resource$` (under `access`) covers "marine resources". We do not include `traditional` alone because "traditional fisheries management" normally refers to the management traditions, rather than traditional fisheries.
 
-```dart
+```py
 TS =
 (
   (
@@ -1001,7 +992,7 @@ TS =
 
 The general structure is *regulation + fishing + small scale*.
 
-```dart
+```py
 TS =
 (
   ("governance" OR "planning" OR "legislation" OR "policy" OR "policies" OR "framework" OR "strateg*" OR "legislat*" OR "law" OR "laws" OR "regulations")
@@ -1028,12 +1019,11 @@ This target is interpreted to cover research about the implementation and develo
 This query consists of 2 phrases. Phrase 1 contains specific instruments, while phrase 2 contains generic terms for international law.
 
 #### Phrase 1
-
 The general structure is *action + international law*. **This phrase should be combined with [marine terms](https://github.com/SDGforskning/SDGstrings_wos/blob/main/SDG14_query_action_WoS.md#3-marine-terms-string-for-limiting-certain-phrases-to-the-marine-environment) with `AND`**.
 
 This phrase contains specific international laws relevant to conservation and sustainable use. These terms were taken from 14.1, 14.2 and 14.4. <a id="FAOfish">[FAO (2018)](#f8)</a> was used as a source of relevant legislation. `CITES` is not included as it is also a verb.
 
-```dart
+```py
 TS =
 (
     ("implement*" OR "establish*" OR "introduc*" OR "adopt*" OR "integrat*" OR "design*" OR "propos*" OR "develop*"
@@ -1074,7 +1064,7 @@ The general structure is *action + international law + sustainable use/conservat
 
 Phrase 2 includes general phrases for international law, where sustainable use and conservation must be specified to prevent results about e.g. shipping/territory disputes.  
 
-```dart
+```py
 TS =
 (
   (
@@ -1108,11 +1098,11 @@ TS =
 
 ## 5. Contributions
 
-* v2019.12: CSA, ML, SRM
+* v2019.12: Marta Lorenz, Caroline S. Armitage, Susanne Mikki
 
-* v 1.0.0 CSA (Feb-Jun 2022)
+* v1.0.0 Caroline S. Armitage (Nov 2021-Sep 2022)
 
-* Internal review: ML, HMB (March 2022)
+* Internal review: Marta Lorenz, Håkon Magne Bjerkan (March 2022)
 
 Specialist input: Katja Enberg (Associate professor of fisheries at UiB; review of v2019.12 in 2019), Caroline S. Armitage (PhD in marine ecology).
 

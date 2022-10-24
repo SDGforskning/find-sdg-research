@@ -1,8 +1,9 @@
+
 # Search query for SDG 2 - Zero Hunger, Bergen action-approach.
 
 End hunger, achieve food security and improved nutrition and promote sustainable agriculture.
 
-**Current status**: Minor edits can still occur, but the string is mostly a finished version (Aug 2022).
+**Current status**: This string is currently a finished version (1.0.0).
 
 **Contents**
 
@@ -14,18 +15,7 @@ End hunger, achieve food security and improved nutrition and promote sustainable
 
 ## 1. Full query
 
-Results of the full search in its current state can be viewed on Web of Science by clicking here: (no filters, all years)
-
-Results for Norway from 01.2014-05.2022 can be viewed here: 
-
-<details>
-  <summary>Click to show the final copy-pasteable full query for SDG2</summary>
-
-```
-Not ready yet
-```
-
-</details>
+Results of the full search in its current state can be viewed on Web of Science by clicking here: https://www.webofscience.com/wos/woscc/summary/b3b8d55f-4112-42a3-9c12-de4dc95f8a76-55efa21b/relevance/1 (no filters, all years)
 
 ## 2. General notes
 
@@ -65,14 +55,14 @@ The general structure is *hunger + action*
 
 Hunger is used in phrases (`ending hunger`, `world hunger`) to prevent finding results that are mostly medical/physiological. `feast and famine` refers to bioreactors/selective pressure in microbial cultures (not relevant), and is used in a double NOT to avoid losing relevant results. `Underfeeding` and `starvation` removed as seem to be used mostly in a medical/physiology context, rather than related to food security/supply.
 
-```dart
+```py
 TS=
 (
   (
-      ("end hunger" OR "ending hunger" OR "ends hunger" OR "world hunger"
-      OR "hunger and poverty" OR "poverty and hunger" OR "famine$"
-      OR "food insecurity" OR "nutritional insecurity"
-      )
+    ("end hunger" OR "ending hunger" OR "ends hunger" OR "world hunger"
+    OR "hunger and poverty" OR "poverty and hunger" OR "famine$"
+    OR "food insecurity" OR "nutritional insecurity"
+    )
     NEAR/5
         (   "decreas*" OR "minimi*" OR "reduc*" OR "limit$" OR "limited" OR "limiting"
             OR "alleviat*" OR "tackl*" OR "combat*" OR "fight*"
@@ -90,7 +80,7 @@ TS=
 
 The general structure is *food access/safety/nutrition + action*. `food` should cover mechanisms such as food banks, food stamps, food credits, and descriptions such as good quality food etc. `nutrition* quality` does find some results about animal feed, but a number of them connect their work to food security, reducing food loss, so it is safer not to remove this term. Here we are including `food sovereignty` as it encompasses the ideas of access to safe, adequate and nutritious food, so is included here.
 
-```dart
+```py
 TS=
 (
   ("right to food" OR "right to adequate food" OR "food sovereignty"
@@ -117,10 +107,11 @@ The general structure is *food supply/value + action + humans*.
 
 This phrase covers improving food supply, and is combined with "human terms" to prevent biology/ecology results. The human terms include generic terms signifying a work is about humans as well as some "vulnerable" groups (based on UN sources) considered relevant for this topic (<a id="Blanchard">[Blanchard et al., 2017](#f16)</a>; <a id="UNOHC">[Office of the High Commissioner, n.d.](#f17)</a>). Note that `food supply` will also find works about the food supply chain etc. 
 
-```dart
+```py
 TS=
  (
-    ("food supply" OR "nutritional value" OR "nutrient content" OR "nutritional content")
+    (
+      ("food supply" OR "nutritional value" OR "nutrient content" OR "nutritional content")
       NEAR/5
          ("improv*" OR "enhanc*" OR "increas*" OR "strengthen" OR "attain" OR "achiev*"
          OR "ensur*" OR "guarantee" OR "secure" OR "securing" OR "maintain*" OR "manag*"
@@ -132,7 +123,7 @@ TS=
         OR "children" OR "child" OR "under fives" OR "infant$" OR "toddler$" OR "babies" OR "teenager$" OR "adolescent$" OR "youth$" OR "girls" OR "boys"
         OR "adult$" OR "women" OR "men" OR "woman" OR "man"
         OR "agricultur*" OR "food security" OR "poverty"
-        <!-- OR "the vulnerable" OR "vulnerable group$" OR "vulnerable communit*" OR "marginali?ed group$" OR "marginali$ed communit*" OR "disadvantaged group$" OR "disadvantaged communit*" -->
+        OR "the vulnerable" OR "vulnerable group$" OR "vulnerable communit*" OR "marginali?ed group$" OR "marginali$ed communit*" OR "disadvantaged group$" OR "disadvantaged communit*"
         OR "refugee$" OR "migrant$" OR "immigrant$" OR "asylum*"
         OR "rural" OR "urban" OR "countr*" OR "nation$" OR "develop* state$"
         )
@@ -143,9 +134,9 @@ TS=
 
 > **2.2 By 2030, end all forms of malnutrition, including achieving, by 2025, the internationally agreed targets on stunting and wasting in children under 5 years of age, and address the nutritional needs of adolescent girls, pregnant and lactating women and older persons.**
 >
-> 2.2.1 Prevalence of stunting (height for age \<-2 standard deviation from the median of the World Health Organization (WHO) Child Growth Standards) among children under 5 years of age
+> 2.2.1 Prevalence of stunting (height for age less than -2 standard deviation from the median of the World Health Organization (WHO) Child Growth Standards) among children under 5 years of age
 >
-> 2.2.2 Prevalence of malnutrition (weight for height >+2 or \<-2 standard deviation from the median of the WHO Child Growth Standards) among children under 5 years of age, by type (wasting and overweight)
+> 2.2.2 Prevalence of malnutrition (weight for height more than +2 or less than -2 standard deviation from the median of the WHO Child Growth Standards) among children under 5 years of age, by type (wasting and overweight)
 >
 > 2.2.3 Prevalence of anaemia in women aged 15 to 49 years, by pregnancy status (percentage)
 
@@ -159,7 +150,7 @@ The general structure is *malnutrition + action*
 
 Actions such as `decreas*` will cover formulations such as "to reduce the risk of obesity". `dietary NEAR/3 deficiency` finds a number of specific deficiencies (e.g. dietary selenium deficiency, dietary Zn deficiency). `minerals` is not used - it only adds a few results, and many are from agriculture. `obese` is not included alone, as it tends to be used as a descriptor for a subject group, e.g. "reducing condition x in obese adults", rather than reducing obesity itself. `undernutrition` and other terms are included in phrase 3.
 
-```dart
+```py
 TS=
 (
   (
@@ -198,7 +189,7 @@ The general structure is *nutritional access/quality/status of specific groups +
 
 Research about improving the nutritional status of the groups mentioned in the target is included here. `stability` is not used in combination with food/nutrition as there are results about nutritional stability in processed foods. `nutritio*` should cover terms such as "access to nutritional care". `baby` is not used as it only adds noise about "baby mustard".
 
-```dart
+```py
 TS=
 (
   (
@@ -228,7 +219,7 @@ TS=
 
 The general structure is *undernutrition/food supply + actions + humans*. For the topics `"protein deficiency"  OR "undernourish*" OR "under-nourish*" OR "undernutrition" OR "under-nutrition"` and `food supply` there was a considerable number of papers from animals and therefore they had to be combined with *human terms*. The human terms include generic terms signifying a work is about humans as well as some "vulnerable" groups (based on UN sources) considered relevant for this topic (<a id="Blanchard">[Blanchard et al., 2017](#f16)</a>; <a id="UNOHC">[Office of the High Commissioner, n.d.](#f17)</a>).
 
-```dart
+```py
 TS=
 (
   (
@@ -251,12 +242,11 @@ TS=
       OR "children" OR "child" OR "under fives" OR "infant$" OR "toddler$" OR "babies" OR "teenager$" OR "adolescent$" OR "youth$" OR "girls" OR "boys"
       OR "adult$" OR "women" OR "men" OR "woman" OR "man"
       OR "agricultur*" OR "food security" OR "poverty"
-      OR "the vulnerable" OR "vulnerable group$" OR "vulnerable communit*" OR "marginali?ed group$" OR "marginali$ed communit*" OR "disadvantaged group$" OR "disadvantaged communit*"
+      OR "the vulnerable" OR "vulnerable group$" OR "vulnerable communit*" OR "marginali$ed group" OR "marginali$ed groups" OR "marginali$ed communit*" OR "disadvantaged group$" OR "disadvantaged communit*"
       OR "refugee$" OR "migrant$" OR "immigrant$" OR "asylum*"
       OR "rural" OR "urban" OR "countr*" OR "nation$" OR "develop* state$"
       )
 )
-
 ```
 
 ### Target 2.3
@@ -271,14 +261,13 @@ This target is interpreted to include research about increasing the productivity
 
 This query consists of 1 phrase. The basic structure is *productivity/access etc. + action + small-scale food producers*
 
-For the *small-scale food prodcer terms*, `small scale`+ `farm*` will cover types of farming in two words e.g. forest farming. The phrase may seem complex, but adding the specific types of crops with `production` etc. adds around 300 results over the last 5 years. Types of farming system were expanded using MeSH (NIH) and Emtree (Embase database, Elsevier) subject vocabularies. Specific types of crops and livestock were further expanded using FAO statistical year book (<a id="FAO2013">[FAO, 2013](#f2)</a>). For crops, those listed as major crops or "important food crops" are included, while oil crops were excluded (not being food). Some specific types are covered by generic terms: e.g. Root crops are covered by `crops`, and terms such as `farm*` will cover types of farming in two words e.g. forest farms, family farms, fish farming.
+ For the *small-scale food prodcer terms*, `small scale`+ `farm*` will cover types of farming in two words e.g. forest farming. Types of farming system were expanded using MeSH (NIH) and Emtree (Embase database, Elsevier) subject vocabularies. Specific types of crops and livestock were further expanded using FAO statistical year book (<a id="FAO2013">[FAO, 2013](#f2)</a>). For crops, those listed as major crops or "important food crops" are included, while oil crops were excluded (not being food). Adding different farming types/crops/livestock adds complexity but improves the results. Some specific types are covered by generic terms: e.g. Root crops are covered by `crops`, and terms such as `farm*` will cover types of farming in two words e.g. forest farms, family farms, fish farming.
 
-In the *productivity/access etc. terms*:
+ In the *productivity/access etc. terms*:
+ - `intensification` implies increasing production, but results in some noise when used alone - it can be used in other contexts, and finds many results about the *effects* of agricultural intensification, thus it is combined with other terms which limit it better to works looking at the process itself.
+- Originally `"access*" OR "barrier$"` was combined with many other terms (e.g. access to credit, financial services, markets...) - however we have now cut this combination, as the target is so broad in what should be accessible. So now, papers talking about improving access to anything should be covered. A few irrelevant results are included due to the abstract including an "open access" publishing statement; and a couple from open access to e.g. satellite data. This is hard to exclude as we want "open access fisheries", for example. (Original combination: `"farmland$" OR "land" OR "resources" OR "financial service$" OR "banking" OR "microfinance" OR "credit" OR "microcredit" OR "insurance" OR "microinsurance" OR "market$" OR "marketing" OR "traders" OR "trade" OR "agricultur* input$" OR "farm input$" OR "water" OR "machinery" OR "equipment" OR "technology" OR "farm* experience" OR "information" OR "training" OR "equitab*" OR "inequitab*"`)
 
-- `intensification` implies increasing production, but results in some noise when used alone - it can be used in other contexts, and finds many results about the *effects* of agricultural intensification, thus it is combined with other terms which limit it better to works looking at the process itself.
-- Originally `"access*" OR "barrier$"` was combined with many other terms (e.g. access to credit, financial services, markets...) - however I have now cut this combination, as the target is so broad in what should be accessible. So now, papers talking about improving access to anything should be covered. A few irrelevant results are included due to the abstract including an "open access" publishing statement; and a couple from open access to e.g. satellite data. This is hard to exclude as we want "open access fisheries", for example. (Original combination: `"farmland$" OR "land" OR "resources" OR "financial service$" OR "banking" OR "microfinance" OR "credit" OR "microcredit" OR "insurance" OR "microinsurance" OR "market$" OR "marketing" OR "traders" OR "trade" OR "agricultur* input$" OR "farm input$" OR "water" OR "machinery" OR "equipment" OR "technology" OR "farm* experience" OR "information" OR "training" OR "equitab*" OR "inequitab*"`)
-
-```dart
+```py
 TS= (
       (
         ("intensification" NEAR/5 ("smallhold*" OR "sustainable" OR "agroecolog*" OR "ecolog*"))  
@@ -359,7 +348,7 @@ This query consists of 6 phrases.
 
 The general structure is *food production systems + production + action*. `intensification` implies increasing production, but results in some noise when used alone - it can be used in other contexts, and finds many results about the *effects* of agricultural intensification, thus it is combined with other terms which limit it better to works looking at the process itself.
 
-```dart
+```py
 TS=
 (
   (
@@ -397,7 +386,7 @@ TS=
 
 #### Phrase 2
 
-Phrase 2 and 3 concern reducing vulnerability / increasing resilience. They have the same terms for food production systems, but differ in the terms for resilience: phrase 2 is linked to general terms for resilience, while phrase 3 covers terms need to be connected to disasters/shocks/risks.
+Phrase 2 and 3 concern reducing vulnerability / increasing resilience. They have the same terms for food production systems, but differ in the terms for resilience: phrase 2 is linked to general terms for resilience, while phrase 3 covers terms that need to be connected to disasters/shocks/risks.
 
 Resilience in terms of food production has been described by FAO as:
 > " In the context of sustainable food and agriculture, resilience is the capacity of agro-ecosystems, farming communities, households or individuals to maintain or enhance system productivity by preventing, mitigating or coping with risks, adapting to change, and recovering from shocks" (<a id="FAO2014">[FAO, 2014, p.28](#f7)</a>)
@@ -408,7 +397,7 @@ In the *food production system* terms, production systems and species are includ
 
 In the *resilience* terms, `tolera*` is a particularly influential term that increases results ("drought tolerance" of crops being a common research theme). `climate smart agriculture` is a term used for an approach specifically addressing climate change.
 
-```dart
+```py
 TS=
 (
   (
@@ -456,11 +445,11 @@ TS=
 
 The basic structure of phrase 3 is *food production systems + adaptation/coping/preparedness + action + disaster/climate change*.
 
-The *food production system* terms are the same as phrase 2. These *disaster/climate change* terms include natural disasters, climate, market volatility, civil and political unrest (examples of risks in <a id="FAO2014">[FAO, 2014](#f7)</a>).
+The *food production system* terms are the same as phrase 2.  These *disaster/climate change* terms include natural disasters, climate, market volatility, civil and political unrest (examples of risks in <a id="FAO2014">[FAO, 2014](#f7)</a>).
 
 The *disaster* terms were taken from a standardised list we used across the SDGs, which was developed based on selected hazards listed in <a id="Murray">[Murray et al. (2021)](#f15)</a>.
 
-```dart
+```py
 TS=
 (
   (
@@ -517,13 +506,13 @@ TS=
 
 #### Phrase 4
 
-The general structure is *ecoagriculture + action // food production systems + sustainability + action*.
+The general structure is *(ecoagriculture + action) OR (food production systems + sustainability + action)*.
 
 `ecoagricultur*` is a relatively specialist term for ecology and agriculture and considered narrow enough to use alone.
 
 Other terms suggesting research about sustainable agriculture were combined with the agricultural terms. `agroecolog*` (agroecology, or the agroecological approach) is considered a relevant term for sustainable, being related to ecology and environmental stability as well as social and cultural dimensions (<a id="SFS">[One Planet network Sustainable Food Systems (SFS) Programme, 2020, p. 28](#f8)</a>). Other terms for practices/approaches that can be considered to contribute to "sustainable food production systems" were gathered from <a id="HLPE">[High Level Panel of Experts on Food Security and Nutrition (2019, Appendix 1 and p. 36)](#f14)</a>; some of these also are relevant for soil quality. Other terms from this source are included in other phrases: "sustainable intensification" is covered in phrase 1, "climate smart agriculture" in phrase 2. `organic` must be combined due to use in other contexts (e.g. soil organic matter, organic carbon).
 
-```dart
+```py
 TS=
   (
     ("ecoagricultur*" OR "eco-agricultur*" OR "permaculture"
@@ -576,9 +565,9 @@ TS=
 
 #### Phrase 5
 
-The general structure is *food production systems + ecosystems and soil + action*. - this phrase covers "positives", phrase 6 covers "negatives". Some terms are already covered in phrase 4 (e.g. reduced tillage)
+The general structure is *food production systems + ecosystems and soil + action*. This phrase covers "positives" (soil health, diversity, fertility etc.), phrase 6 covers "negatives" (loss, degradation etc.). Some terms are already covered in phrase 4 (e.g. reduced tillage).
 
-```dart
+```py
 TS=
 (
     ("food production" OR "food grower$" OR "agri food"
@@ -614,11 +603,11 @@ TS=
 
 #### Phrase 6
 
-The general structure is *food production systems + ecosystems and soil + action*. - this phrase covers "negatives", phrase 5 covers "positives".
+The general structure is *food production systems + ecosystems and soil + action*. This phrase covers "negatives" (loss, degradation etc.), phrase 5 covers "positives" (soil health, diversity, fertility etc.). Some terms are already covered in phrase 4 (e.g. reduced tillage).
 
 Types of land/soil degradation are taken from <a id="FAO2014">[FAO (2014)](#f7)</a> and (<a id="SDGindmetadata">[Statistics Division, 2021b (Indicator 2.4.1)](#f9)</a>).
 
-```dart
+```py
 TS=
 (
   ("food production" OR "food grower$" OR "agri food"
@@ -683,11 +672,11 @@ This query consists of 5 phrases.
 
 #### Phrase 1
 
-The general structure is *agricultural diversity/landraces + action* - this phrase covers terms which are used in the context of agricultural diversity. Phrase 2 expands with generic terms for diversity that must be combined with agricultural terms.
+The general structure is *agricultural diversity/landraces/local breeds + action* - this phrase covers terms which are used in the context of agricultural diversity. Phrase 2 expands with generic terms for diversity that must be combined with agricultural terms.
 
 Conserving wild relatives and traditional varieties is considered maintaining genetic diversity. `agrobiodiversity` is wider than only the species used in agriculture - it covers also the non-harvested species that support production and agro-ecosystems (e.g. pollinators, soil-organisms) (<a id="FAO2004">[FAO, 2004](#f10)</a>). It is considered relevant and included, as agrobiodiversity looks at the whole system (i.e. supporting diversity AND agricultural diversity). `conserv*` will cover e.g. conservation breeding, on-farm conservation etc. Note that `pigs` are excluded from the species list due to a large number of results about wild pig hunting in relation to their effect on agricultural land. 
 
-```dart
+```py
 TS=
 (
     ("agricultural diversity" OR "agricultural biodiversity" OR "agrobiodiversity"
@@ -728,7 +717,7 @@ Publications about groups and using terms which also include wild species (e.g. 
 
 Terminology to do with breeding programmes could be included here, but we want research that is about programmes for genetic diversity, and this should already be covered by *diversity + action* - the inclusion of breeding programmes alone finds results about programmes for other objectives (e.g. increased productivity). It also introduces noise around the *use* of genetic resources *for* breeding programmes, whereas we want research about breeding programs *for* genetic diversity. `conserv*` will cover e.g. conservation breeding, on-farm conservation etc..
 
-```dart
+```py
 TS=
 (
         ("increase genetic diversity" OR "improve genetic diversity"
@@ -775,7 +764,7 @@ The *diversity/protection/policy* terms are included to help to filter out publi
 
 For the *gene bank/ex situ* terms, `cryoconservation` and `cryopreservation` are included as in vitro methods of conservation of diversity (<a id="FAO2015">[Commission on Genetic Resources for Food and Agriculture Assessments, 2015](#f11)</a>). For the *agriculture terms*, `domestic*` was removed from this phrase as results were mostly about domestic cats. A `NOT` expression was added for `seed banks` as these can be both human storage of seeds but also natural seed banks in the soil.
 
-```dart
+```py
 TS=
 (
   (
@@ -822,7 +811,7 @@ For the *resource/knowledge* terms, `traditional NEAR knowledge` etc. will cover
 In the *sharing/access* terms, the more generic terms are combined with actions (e.g. increase access) while terms that are more specific to this issues are not (e.g. governance, justice), because it might be unnatural to write about e.g. "increasing justice". `access OR accessing OR accessib*` is used here to prevent "accessions". `biopiracy` is the unfair exploitation of biological resources/traditional knowledge.
 
 
-```dart
+```py
 TS=
 (
   (
@@ -869,9 +858,11 @@ TS=
 
 #### Phrase 5
 
-Phrase 5 is similar to phrase 4, with a focus on research that mentions instruments/treaties related to benefit sharing/access of genetic resources and traditional knowledge. The general structure is *resources/knowledge/rights + agriculture/food + instruments/specific issues*. In this phrase, "rights" was added to `traditional NEAR knowledge` as this worked well with the combination with specific policy instruments.
+Phrase 5 is similar to phrase 4, with a focus on research that mentions instruments/treaties related to benefit sharing/access of genetic resources and traditional knowledge. The general structure is *resources/knowledge/rights + agriculture/food + instruments/specific issues*. Note that generic action terms are not included - we assume that works mentioning specific policy instruments are likely action-oriented. 
 
-```dart
+In this phrase, "rights" was added to `traditional NEAR knowledge` as this worked well with the combination with specific policy instruments.
+
+```py
 TS =
 (
     ("genetic resource$" OR "agrobiodiversity"
@@ -902,9 +893,7 @@ TS =
         OR "Plant Genetic Resources for Food and Agriculture" OR "PGRFA"
         )
 )
-
 ```
-
 
 ### Target 2.a
 
@@ -918,7 +907,7 @@ This target is interpreted to cover research about investment and international 
 
 This query consists of 1 phrase. The general structure is *investment/cooperation + rural infrastructure/technology*. Note that this phrase does not contain an action element as it was considered too difficult/restrictive.
 
-```dart
+```py
 TS =
 (
       ("Agriculture Orientation Index for Government Expenditure$"
@@ -957,13 +946,12 @@ TS =
       OR "low income countr*" OR "low income nation$" OR "lower income countr*" OR "lower income nation$"
       OR "poor countr*" OR "poor nation$" OR "poorer countr*" OR "poorer nation$"
       OR "lmic" OR "lmics" OR "third world" OR "global south" OR "lami countr*" OR "transitional countr*" OR "emerging economies" OR "emerging nation$"
-      OR "Angola*" OR "Benin" OR "beninese" OR "Burkina Faso" OR "Burkina fasso" OR "burkinese" OR "burkinabe" OR "Burundi*" OR "Central African Republic" OR "Chad" OR "Comoros" OR "comoro islands" OR "iles comores" OR "Congo" OR "congolese" OR "Djibouti*" OR "Eritrea*" OR "Ethiopia*" OR "Gambia*" OR "Guinea" OR "Guinea-Bissau" OR "guinean" OR "Lesotho" OR "lesothan*" OR "Liberia*" OR "Madagasca*" OR "Malawi*" OR "Mali" OR "malian" OR "Mauritania*" OR "Mozambique" OR "mozambican$" OR "Niger" OR "Rwanda*" OR "Sao Tome and Principe" OR "Senegal*" OR "Sierra Leone*" OR "Somalia*" OR "South Sudan" OR "Sudan" OR "sudanese" OR "Togo" OR "togolese" OR "tongan" OR "Uganda*" OR "Tanzania*" OR "Zambia*" OR "Cambodia*" OR "Kiribati*" OR "Lao People’s democratic republic" OR "Laos" OR "Myanmar" OR "myanma" OR "Solomon islands" OR "Timor Leste" OR "Tuvalu*" OR "Vanuatu*" OR "Afghanistan" OR "afghan$" OR "Bangladesh*" OR "Bhutan*" OR "Nepal*" OR "Yemen*" OR "Haiti*"
-      OR "Antigua and Barbuda" OR "Antigua & Barbuda" OR "antiguan$" OR "Bahamas" OR "Bahrain" OR "Barbados" OR "Belize" OR "Cabo Verde" OR "Cape Verde" OR "Comoros" OR "comoro islands" OR "iles comores" OR "Cuba" OR "cuban$" OR "Dominica*" OR "Dominican Republic" OR "Micronesia*" OR "Fiji" OR "fijian$" OR "Grenada*" OR "Guinea-Bissau" OR "Guyana*" OR "Haiti*" OR "Jamaica*" OR "Kiribati*" OR "Maldives" OR "maldivian$" OR "Marshall Islands" OR "Mauritius" OR "mauritian$" OR "Nauru*" OR "Palau*" OR "Papua New Guinea*" OR "Saint Kitts and Nevis" OR "st kitts and nevis" OR "Saint Lucia*" OR "St Lucia*" OR "Vincent and the Grenadines" OR "Vincent & the Grenadines" OR "Samoa*" OR "Sao Tome" OR "Seychelles" OR "seychellois*" OR "Singapore*" OR "Solomon Islands" OR "Surinam*" OR "Timor-Leste" OR "timorese" OR "Tonga*" OR "Trinidad and Tobago" OR "Trinidad & Tobago" OR "trinidadian$" OR "tobagonian$" OR "Tuvalu*" OR "Vanuatu*" OR "Anguilla*" OR "Aruba*" OR "Bermuda*" OR "Cayman Islands" OR "Northern Mariana$" OR "Cook Islands" OR "Curacao" OR "French Polynesia*" OR "Guadeloupe*" OR "Guam" OR "Martinique" OR "Montserrat" OR "New Caledonia*" OR "Niue" OR "Puerto Rico" OR "puerto rican" OR "Sint Maarten" OR "Turks and Caicos" OR "Turks & Caicos" OR "Virgin Islands"
-      OR "Afghanistan" OR "afghan*" OR "Armenia*" OR "Azerbaijan*" OR "Bhutan" OR "bhutanese" OR "Bolivia*" OR "Botswana*" OR "Burkina Faso" OR "Burundi" OR "Central African Republic" OR "Chad" OR "Eswatini" OR "eswantian" OR "Ethiopia*" OR "Kazakhstan*" OR "kazakh" OR "Kyrgyzstan" OR "Kyrgyz*" OR "kirghizia" OR "kirgizstan" OR "Lao People´s Democratic Republic" OR "Laos" OR "Lesotho" OR "Malawi" OR "malawian" OR "Mali" OR "Mongolia*" OR "Nepal*" OR "Niger" OR "North Macedonia" OR "Republic of Macedonia" OR "Paraguay" OR "Moldova*" OR "Rwanda$" OR "South Sudan" OR "sudanese" OR "Swaziland" OR "Tajikistan" OR "tadjikistan" OR "tajikistani$" OR "Turkmenistan" OR "Uganda*" OR "Uzbekistan" OR "uzbekistani$" OR "Zambia" OR "zambian$" OR "Zimbabwe*"
-      OR "albania*" OR "algeria*" OR "angola*" OR "argentina*" OR "azerbaijan*" OR "bahrain*" OR "belarus*" OR "byelarus*" OR "belorussia" OR "belize*" OR "honduras" OR "honduran" OR "dahomey" OR "bosnia*" OR "herzegovina*" OR "botswana*" OR "bechuanaland" OR "brazil*" OR "brasil*" OR "bulgaria*" OR "upper volta" OR "kampuchea" OR "khmer republic" OR "cameroon*" OR "cameroun" OR "ubangi shari" OR "chile*" OR "china" OR "chinese" OR "colombia*" OR "costa rica*" OR "cote d’ivoire" OR "cote divoire" OR "cote d ivoire" OR "ivory coast" OR "croatia*" OR "cyprus" OR "cypriot" OR "czech" OR "ecuador*" OR "egypt*" OR "united arab republic" OR "el salvador*" OR "estonia*" OR "eswatini" OR "swaziland" OR "swazi" OR "gabon" OR "gabonese" OR "gabonaise" OR "gambia*" OR "ghana*" OR "gibralta*" OR "greece" OR "greek" OR "honduras" OR "honduran$" OR "hungary" OR "hungarian$" OR "india" OR "indian$" OR "indonesia*" OR "iran" OR "iranian$" OR "iraq" OR "iraqi$" OR "isle of man" OR "jordan" OR "jordanian$" OR "kenya*" OR "korea*" OR "kosovo" OR "kosovan$" OR "latvia*" OR "lebanon" OR "lebanese" OR "libya*" OR "lithuania*" OR "macau" OR "macao" OR "macanese" OR "malagasy" OR "malaysia*" OR "malay federation" OR "malaya federation" OR "malta" OR "maltese" OR "mauritania" OR "mauritanian$" OR "mexico" OR "mexican$" OR "montenegr*" OR "morocco" OR "moroccan$" OR "namibia*" OR "netherlands antilles" OR "nicaragua*" OR "nigeria*" OR "oman" OR "omani$" OR "muscat" OR "pakistan*" OR "panama*" OR "papua new guinea*" OR "peru" OR "peruvian$" OR "philippine$" OR "philipine$" OR "phillipine$" OR "phillippine$" OR "filipino$" OR "filipina$" OR "poland" OR "polish" OR "portugal" OR "portugese" OR "romania*" OR "russia" OR "russian$" OR "polynesia*" OR "saudi arabia*" OR "serbia*" OR "slovakia*" OR "slovak republic" OR "slovenia*" OR "melanesia*" OR "south africa*" OR "sri lanka*" OR "dutch guiana" OR "netherlands guiana" OR "syria" OR "syrian$" OR "thailand" OR "thai" OR "tunisia*" OR "ukraine" OR "ukrainian$" OR "uruguay*" OR "venezuela*" OR "vietnam*" OR "west bank" OR "gaza" OR "palestine" OR "palestinian$" OR "yugoslavia*" OR "turkish" OR "turkey" OR "georgian*"
+      OR  "Angola*" OR "Benin" OR "beninese" OR "Burkina Faso" OR "Burkina fasso" OR "burkinese" OR "burkinabe" OR "Burundi*" OR "Central African Republic" OR "Chad" OR "Comoros" OR "comoro islands" OR "iles comores" OR "Congo" OR "congolese" OR "Djibouti*" OR "Eritrea*" OR "Ethiopia*" OR "Gambia*" OR "Guinea" OR "Guinea-Bissau" OR "guinean" OR "Lesotho" OR "lesothan*" OR "Liberia*" OR "Madagasca*" OR "Malawi*" OR "Mali" OR "malian" OR "Mauritania*" OR "Mozambique" OR "mozambican$" OR "Niger" OR "Rwanda*" OR "Sao Tome and Principe" OR "Senegal*" OR "Sierra Leone*" OR "Somalia*" OR "South Sudan" OR "Sudan" OR "sudanese" OR "Togo" OR "togolese" OR "tongan" OR "Uganda*" OR "Tanzania*" OR "Zambia*" OR "Cambodia*" OR "Kiribati*" OR "Lao People’s democratic republic" OR "Laos" OR "Myanmar" OR "myanma" OR "Solomon islands" OR "Timor Leste" OR "Tuvalu*" OR "Vanuatu*" OR "Afghanistan" OR "afghan$" OR "Bangladesh*" OR "Bhutan*" OR "Nepal*" OR "Yemen*" OR "Haiti*"
+      OR  "Antigua and Barbuda" OR "Antigua & Barbuda" OR "antiguan$" OR "Bahamas" OR "Bahrain" OR "Barbados" OR "Belize" OR "Cabo Verde" OR "Cape Verde" OR "Comoros" OR "comoro islands" OR "iles comores" OR "Cuba" OR "cuban$" OR "Dominica*" OR "Dominican Republic" OR "Micronesia*" OR "Fiji" OR "fijian$" OR "Grenada*" OR "Guinea-Bissau" OR "Guyana*" OR "Haiti*" OR "Jamaica*" OR "Kiribati*" OR "Maldives" OR "maldivian$" OR "Marshall Islands" OR "Mauritius" OR "mauritian$" OR "Nauru*" OR "Palau*" OR "Papua New Guinea*" OR "Saint Kitts and Nevis" OR "st kitts and nevis" OR "Saint Lucia*" OR "St Lucia*" OR "Vincent and the Grenadines" OR "Vincent & the Grenadines" OR "Samoa*" OR "Sao Tome" OR "Seychelles" OR "seychellois*" OR "Singapore*" OR "Solomon Islands" OR "Surinam*" OR "Timor-Leste" OR "timorese" OR "Tonga*" OR "Trinidad and Tobago" OR "Trinidad & Tobago" OR "trinidadian$" OR "tobagonian$" OR "Tuvalu*" OR "Vanuatu*" OR "Anguilla*" OR "Aruba*" OR "Bermuda*" OR "Cayman Islands" OR "Northern Mariana$" OR "Cook Islands" OR "Curacao" OR "French Polynesia*" OR "Guadeloupe*" OR "Guam" OR "Martinique" OR "Montserrat" OR "New Caledonia*" OR "Niue" OR "Puerto Rico" OR "puerto rican" OR "Sint Maarten" OR "Turks and Caicos" OR "Turks & Caicos" OR "Virgin Islands"
+      OR  "Afghanistan" OR "afghan*" OR "Armenia*" OR "Azerbaijan*" OR "Bhutan" OR "bhutanese" OR "Bolivia*" OR "Botswana*" OR "Burkina Faso" OR "Burundi" OR "Central African Republic" OR "Chad" OR "Eswatini" OR "eswantian" OR "Ethiopia*" OR "Kazakhstan*" OR "kazakh" OR "Kyrgyzstan" OR "Kyrgyz*" OR "kirghizia" OR "kirgizstan" OR "Lao People’s Democratic Republic" OR "Laos" OR "Lesotho" OR "Malawi" OR "malawian" OR "Mali" OR "Mongolia*" OR "Nepal*" OR "Niger" OR "North Macedonia" OR "Republic of Macedonia" OR "Paraguay" OR "Moldova*" OR "Rwanda$" OR "South Sudan" OR "sudanese" OR "Swaziland" OR "Tajikistan" OR "tadjikistan" OR "tajikistani$" OR "Turkmenistan" OR "Uganda*" OR "Uzbekistan" OR "uzbekistani$" OR "Zambia" OR "zambian$" OR "Zimbabwe*"
+      OR   "albania*" OR "algeria*" OR "angola*" OR "argentina*" OR "azerbaijan*" OR "bahrain*" OR "belarus*" OR "byelarus*" OR "belorussia" OR "belize*" OR "honduras" OR "honduran" OR "dahomey" OR "bosnia*" OR "herzegovina*" OR "botswana*" OR "bechuanaland" OR "brazil*" OR "brasil*" OR "bulgaria*" OR "upper volta" OR "kampuchea" OR "khmer republic" OR "cameroon*" OR "cameroun" OR "ubangi shari" OR "chile*" OR "china" OR "chinese" OR "colombia*" OR "costa rica*" OR "cote d’ivoire" OR "cote divoire" OR "cote d ivoire" OR "ivory coast" OR "croatia*" OR "cyprus" OR "cypriot" OR "czech" OR "ecuador*" OR "egypt*" OR "united arab republic" OR "el salvador*" OR "estonia*" OR "eswatini" OR "swaziland" OR "swazi" OR "gabon" OR "gabonese" OR "gabonaise" OR "gambia*" OR "ghana*" OR "gibralta*" OR "greece" OR "greek" OR "honduras" OR "honduran$" OR "hungary" OR "hungarian$" OR "india" OR "indian$" OR "indonesia*" OR "iran" OR "iranian$" OR "iraq" OR "iraqi$" OR "isle of man" OR "jordan" OR "jordanian$" OR "kenya*" OR "korea*" OR "kosovo" OR "kosovan$" OR "latvia*" OR "lebanon" OR "lebanese" OR "libya*" OR "lithuania*" OR "macau" OR "macao" OR "macanese" OR "malagasy" OR "malaysia*" OR "malay federation" OR "malaya federation" OR "malta" OR "maltese" OR "mauritania" OR "mauritanian$" OR "mexico" OR "mexican$" OR "montenegr*" OR "morocco" OR "moroccan$" OR "namibia*" OR "netherlands antilles" OR "nicaragua*" OR "nigeria*" OR "oman" OR "omani$" OR "muscat" OR "pakistan*" OR "panama*" OR "papua new guinea*" OR "peru" OR "peruvian$" OR "philippine$" OR "philipine$" OR "phillipine$" OR "phillippine$" OR "filipino$" OR "filipina$" OR "poland" OR "polish" OR "portugal" OR "portugese" OR "romania*" OR "russia" OR "russian$" OR "polynesia*" OR "saudi arabia*" OR "serbia*" OR "slovakia*" OR "slovak republic" OR "slovenia*" OR "melanesia*" OR "south africa*" OR "sri lanka*" OR "dutch guiana" OR "netherlands guiana" OR "syria" OR "syrian$" OR "thailand" OR "thai" OR "tunisia*" OR "ukraine" OR "ukrainian$" OR "uruguay*" OR "venezuela*" OR "vietnam*" OR "west bank" OR "gaza" OR "palestine" OR "palestinian$" OR "yugoslavia*" OR "turkish" OR "turkey" OR "georgian*"
       )
 )
-
 ```
 
 ### Target 2.b
@@ -976,11 +964,11 @@ This target is interpreted to cover research about export subsidies (and equival
 
 This query consists of 2 phrases. Note that these phrases do not contain an action element as it was considered too difficult/restrictive.
 
-#### Phrase 1:
+#### Phrase 1
 
 The basic structure is *export subsidies + agriculture/food*.
 
-```dart
+```py
 TS=
 (
   ("export subsid*" OR "export credit$" OR "export financ*" OR "export competition" OR "export support$")
@@ -988,11 +976,11 @@ TS=
 )
 ```
 
-#### Phrase 2:
+#### Phrase 2
 
 The basic structure is *distortions + agricultural markets/exports*. Specific animals are not included due to results about restrictions in trade due to outbreaks of disease.
 
-```dart
+```py
 TS=
 (
   ("distort*" OR "price-fixing" OR "dumping"
@@ -1016,9 +1004,9 @@ TS=
 
 This target is interpreted to cover research about preventing price volatility in food/agriculture, and about ensuring stable food commodity markets. The basic structure is *action + volatility/stability + agricultural markets/prices*.
 
-#### Phrase 1:
+#### Phrase 1
 
-```dart
+```py
 TS=
 (
   (
@@ -1049,15 +1037,13 @@ TS=
 
 ## 4. Contributions
 
-* v2019.12: CSA, ML, SRM
+* v2019.12: Marta Lorenz, Caroline S. Armitage, Susanne Mikki
 
-* v1.0.0, first draft: CSA (Oct 2021-Feb 2022)
+* v1.0.0 Caroline S. Armitage (Oct 2021-Oct 2022)
 
-* Internal review: EHS, ML (March 2022)
+* Internal review: Eli Heldaas Seland, Marta Lorenz (March 2022)
 
-* v1.0.0, second draft: CSA (April-Aug 2022)
-
-Specialist input: Awaiting specialist input. 
+Specialist input: Awaiting specialist input.
 
 ## 5. Footnotes
 

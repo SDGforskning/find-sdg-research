@@ -3,12 +3,12 @@
 
 Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all.
 
-**Current status**: This string is a first draft. Conversion from action to topic approach is currently being done*
+**Current status**: This string is currently a finished version (1.0.0).
 
 **Contents**
 
 1. Full query in copy-pasteable format
-2. General notes about method for SDG 4
+2. General notes
 3. Documentation and string sections for each target
 4. Contributions
 5. Footnotes
@@ -16,16 +16,11 @@ Ensure inclusive and equitable quality education and promote lifelong learning o
 
 ## 1. Full query
 
-<details>
-  <summary>Click to show the final copy-pasteable full query for SDG 4</summary>
-
-```
-  Test
-```
-
-</details>
+Results of the full search in its current state can be viewed on Web of Science by clicking here: https://www.webofscience.com/wos/woscc/summary/2e99ec3f-2c5d-43c1-ad9d-d57d55757152-57cbd9db/relevance/1 (no filters; all years)
 
 ## 2. General notes
+
+This document contains search strings for finding publications related to the topics in SDG 4 targets and indicators ("topic approach"; focus on recall, larger result set). We also have a version which finds publications related to the actions in SDG 4 targets and indicators ("action approach"; focus on precision, smaller result set), provided in the same repository as this file. For more explanation, see the Readme in this repository.
 
 Targets and Indicators were found from the UN Statistics Division (<a id="SDGT+Is">[Statistics Division, 2021](#f1)</a>). This list includes "the global indicator framework as contained in A/RES/71/313, the refinements agreed by the Statistical Commission at its 49th session in March 2018 (E/CN.3/2018/2, Annex II) and 50th session in March 2019 (E/CN.3/2019/2, Annex II), changes from the 2020 Comprehensive Review (E/CN.3/2020/2, Annex II) and refinements (E/CN.3/2020/2, Annex III) from the 51st session in March 2020, and refinements from the 52nd session in March 2021 (E/CN.3/2021/2, Annex)". (https://unstats.un.org/sdgs/indicators/indicators-list/)
 
@@ -49,13 +44,13 @@ This target is interpreted to cover research about
 
 This query consists of 4 phrases. Phrase 1 and 2 are concerned with completion and dropout rates respectively. Phrase 3 is about access to free and equitable primary and secondary education, and phrase 4 about minimal proficiency in reading and mathematics.
 
-#### Phrase 1:
+#### Phrase 1
 
 The basic structure is *completion + school education*.
 
 In many medical and other studies that are not concerned with education as such, having completed a specific level of education is used as a parameter. To reduce the number of such studies, we have used many variants of the verb complete, but avoided "completed" and "complete*".
 
-```dart
+```py
 TS=
 (
  ("complete" OR "completing" OR "completes" OR "completion" OR "school completion" OR "finish*" OR "graduate" OR "graduation")
@@ -67,13 +62,13 @@ TS=
 )
 ```
 
-#### Phrase 2:
+#### Phrase 2
 
 The basic structure is *dropout + school education*.
 
 In this phrase we reverse the concept of school completion, and focus on dropouts.
 
-```dart
+```py
 TS=
 (
  ("dropout*" OR "drop-out*" OR "drop out" OR "dropping out" OR "quit" OR "early school-leaving")
@@ -84,7 +79,7 @@ TS=
       )
 )
 ```
-#### Phrase 3:
+#### Phrase 3
 
 The basic structure is *access + school + free/equitable/quality*.
 
@@ -93,7 +88,7 @@ The basic structure is *access + school + free/equitable/quality*.
 
 These are all addressed in the subsequent targets, therefore "quality education" is not elaborated on further here.
 
-```dart
+```py
 TS=
 (
  (
@@ -105,15 +100,16 @@ TS=
       )
       NEAR/5 ("free" OR "equit*" OR "quality")
     )
+ )
 )  
 ```
-#### Phrase 4:
+#### Phrase 4
 
 The basic structure is *level + skill + reading and mathematics*.
 
 We considered including terms for primary and secondary education, but too many relevant hits were excluded, and we deem the delimitation unnecessary.
 
-```dart
+```py
 TS=
 (
   (
@@ -143,13 +139,13 @@ This target is interpreted to cover research about
 
 This query consists of 2 phrases.
 
-#### Phrase 1:
+#### Phrase 1
 
 The basic structure is *access + early care*.
 
 The search term "care" is not used alone as it would give too many hits that are only indirectly relevant to readiness for and participation in organized learning. Variants of daycare were considered, but returned too many hits not considered relevant to the target. Some agricultural terms which occur in combinations with "nurser*" had to be excluded with NOT.
 
-```dart
+```py
 TS=
 (
  (
@@ -164,11 +160,11 @@ NOT
 TS= ("pig*" OR "plant*" OR "fish*")
 
 ```
-#### Phrase 2:
+#### Phrase 2
 
 The basic structure is *school readiness / child development + school entry*.
 
-```dart
+```py
 TS=
 (
   "school readiness"
@@ -199,11 +195,11 @@ We have interpreted the target widely, and included search terms to identify res
 
 This query consists of 3 phrases. The first two phrases contain many of the same terms, but they are combined differently to reduce noise. In particular, combinations of `access` with `university or education` can result in a large quantity of articles about open access publishing and universities, which are not relevant here. To avoid this, in phrase 1 "access" is limited by the condition that `university` must be near `admission$ OR enrol*`. In phrase 2, "access" is limited by its combination with terms to do with equality/discrimination, allowing us to also find publications that do not mention enrolment or admission specifically.
 
-#### Phrase 1:
+#### Phrase 1
 
 The basic structure is *access/barriers + higher education*
 
-```dart
+```py
 TS=
 (
   (
@@ -222,11 +218,11 @@ TS=
      )
 )
 ```
-#### Phrase 2:
+#### Phrase 2
 
 The basic structure is *equality + higher education*
 
-```dart
+```py
 TS=
 (
   (
@@ -250,13 +246,13 @@ TS=
 )
 ```
 
-#### Phrase 3:
+#### Phrase 3
 
-```dart
+```py
 TS= "inclusive higher education"
 ```
 
-## Target 4.4
+### Target 4.4
 
 > **4.4 By 2030, substantially increase the number of youth and adults who have relevant skills, including technical and vocational skills, for employment, decent jobs and entrepreneurship**
 >
@@ -269,11 +265,11 @@ This target is interpreted to cover research about
 
 This query consists of 4 phrases. The first two cover skills at an overriding level, the third core skills as defined by the UN International Labor Organisation, and the fourth ICT skills. In order to limit the search to research concerning opportunities for employment, and avoid articles about employees/employers and their (needs for) development in jobs and workplaces, only "employability" and "employment" are used alongside jobs and entrepreneurship. The term "work" is not included as it gives too much noise.
 
-#### Phrase 1:
+#### Phrase 1
 
 The basic structure is *skills + employability/entrepreneurship*
 
-```dart
+```py
 TS=
 (
   (
@@ -283,12 +279,11 @@ TS=
   ("employability*" OR "employment" OR "decent job$" OR "decent work" OR "entrepreneurship$")
 )
 ```
-
-#### Phrase 2:
+#### Phrase 2
 
 This phrase finds research talking about skills, competencies etc. in relation to reducing unemployment. The basic structure is *unemployment + skills*
 
-```dart
+```py
 TS=
 (
   (
@@ -299,13 +294,13 @@ TS=
  )
  ```
 
-#### Phrase 3:
+#### Phrase 3
 
 The basic structure is *core and transferable skills + employability*
 
 Types of skills included here are taken from an ILO publication on youth skills for employability (<a id="iloskills">[Brewer 2013](#f4)</a>). Employment is omitted as a search term here, as it leads to irrelevant results concerned with the use (="employment") of the skills.
 
-```dart
+```py
 TS=
 (
   (
@@ -323,14 +318,13 @@ TS=
   NEAR/15 "employability"
 )
 ```
-
-#### Phrase 4:
+#### Phrase 4
 
 The basic structure is *ICT + skill + employability*.
 
 Some terms used in Phrase 1, like `"abilit*"` and `"entrepreneurship$"` are omitted here to reduce noise from research having to do with conditions within enterprises more generally, and not specifically with individuals' skills or employability
 
-```dart
+```py
 TS=
 (
   (
@@ -355,11 +349,11 @@ This target is interpreted to cover research about
 
 This query consists of 3 phrases.
 
-#### Phrase 1:
+#### Phrase 1
 
 The basic structure is *gender equality + education*
 
-```dart
+```py
 TS=
 (
  (
@@ -371,11 +365,11 @@ TS=
 )
 ```
 
-#### Phrase 2:
+#### Phrase 2
 
 In this phrase, the basic structure is similar to phrase 1, but reversed to search for disparity: *gender disparity + education*
 
-```dart
+```py
 TS=
 (
  (
@@ -389,13 +383,13 @@ TS=
 )
 ```
 
-#### Phrase 3:
+#### Phrase 3
 
 The basic structure is *access + education + vulnerable groups*
 
 "Vulnerable groups" are mentioned in several SDGs, but can be difficult to define for a search string - who is considered vulnerable may depend on the context and situation. To get a general outline of who is considered "vulnerable" we have consulted several UN sources on the topic (<a id="Blanchard">[Blanchard et al., 2017](#f5)</a>; <a id="UNOHC">[Office of the High Commissioner, n.d.](#f6)</a>; <a id="UNracism">[United Nations, n.d.](#f7)</a>). Most terms were taken from these, and adapted so that the terms work combined with terms relevant for SDG4. `rural` was not a term included in the UN documents and need not signify vulnerability, but we found works suggesting that it is a potential hindrance to accessing education, and was therefore included.
 
-```dart
+```py
 TS=
 (
   (
@@ -432,11 +426,11 @@ This is closely related to target 4.1, however, with the second phrase, we find 
 
 This query consists of 2 phrases.
 
-#### Phrase 1:
+#### Phrase 1
 
 The first phrase finds research about skills. The basic structure is *level + skills*.
 
-```dart
+```py
 TS=
 (
     (
@@ -447,11 +441,11 @@ TS=
 )
 ```
 
-#### Phrase 2:
+#### Phrase 2
 
 In the second phrase we search for research about illiteracy, innumeracy and analphabetism. The basic structure is *illiteracy/innumeracy*. 
 
-```dart
+```py
 TS=
  ("illitera*" OR "analfabet*" OR "analphabet*" OR "innumeracy" OR "innumerate*")
 ```
@@ -470,13 +464,13 @@ This target is interpreted to cover research about
 
 This query consists of 3 phrases.
 
-#### Phrase 1:
+#### Phrase 1
 
 The basic structure is *education + sustainability/GCED*.
 
  <a id="unescogced">[UNESCO (n.d.b)](#f8)</a> was used as a source of terms. The search term `GCED` for Global Citizenship Education was tested, but only returned irrelevant hits from medical, mathematical and chemical research. The phrase includes a wide range of terms concerning arenas and aspects of formalized education and learning, such as curriculum, teacher education etc. These are called frameworks in the interpretation above, but the term "framework" is not used in the search, as it leads to too much noise. As does "policy". The last part entails more and less detailed content of ESD and GCED.
 
-```dart
+```py
 TS=
 (
   (
@@ -501,13 +495,13 @@ TS=
 )
 ```
 
-#### Phrase 2:
+#### Phrase 2
 
 The basic structure is *ESD*.
 
 The search phrase `ESD` for Education for Sustainable Development was tested, but used alone returned too many irrelevant hits from other research fields. This phrase contains variants of education for sustainable development (ESD).
 
-```dart
+```py
 TS=
 (
   ("education for sustainab*" OR "education in sustainab*" OR "education on sustainab*" OR "sustainable development education" OR "sustainability education"
@@ -516,11 +510,11 @@ TS=
 )
 ```
 
-#### Phrase 3:
+#### Phrase 3
 
 This phrase is related to searches in SDG 11 about cultural heritage, and likely to have some overlap, yet it is included here as culture's contribution to sustainable development is directly addressed in the target. The basic structure is *culture + sustainable development*.
 
-```dart
+```py
 TS=
 (
   (
@@ -546,11 +540,11 @@ We understand the target to be concerned chiefly with facilities for primary and
 
 This query consists of 3 phrases.
 
-#### Phrase 1:
+#### Phrase 1
 
 This phrase finds research on safe and inclusive schools and education facilities. The basic structure is *school + safe and inclusive*.
 
-```dart
+```py
 TS=
 (
  ("school*" OR "education facilit*")
@@ -560,11 +554,11 @@ TS=
 )
 ```
 
-#### Phrase 2:
+#### Phrase 2
 
 This phrase focuses on effective learning environments in schools. The basic structure is *effective learning environment + school*.
 
-```dart
+```py
 TS=
 (
   (
@@ -578,13 +572,13 @@ TS=
 )
 ```
 
-#### Phrase 3:
+#### Phrase 3
 
 This phrase focuses on access to basic services in schools. The basic structure is *schools + access + basic services*.
 
 The terms for basic services in schools are taken and adapted from <a id="unescotcg">[UNESCO Institute for statistics (2018)](#f11)</a>
 
-```dart
+```py
 TS=
 (
  ("school*" OR "education* facility" OR "education* facilities") 
@@ -605,13 +599,13 @@ This target is interpreted to cover research about the availability of scholarsh
 
 This query consists of 1 phrase.
 
-#### Phrase 1:
+#### Phrase 1
 
 The basic structure is *scholarships + student/education + developing countries/African countries*.
 
 Scholarships must be used in plural form, as it would otherwise also include "work done by scholars", which would confuse the logic of the search.
 
-```dart
+```py
 TS=
 (
   (
@@ -651,25 +645,26 @@ This target is interpreted to include research about
 
 This query consists of 2 phrases.
 
-#### Phrase 1:
+#### Phrase 1
 
 This phrase finds research about teacher supply, shortage etc. Without action terms many of the search terms used in the action approach mainly produce noise. Therefore this search is built using phrases rather than the NEAR operator. 
 
-```dart
+```py
 TS= 
   (
-    ("teacher supply" OR  "supply of teacher$" OR "teacher coverage"  OR "teacher recruit*" OR "recruit* of teacher$" OR "teacher retention" OR "lack of teacher$" OR 
-    "teacher turnover" OR "teacher shortage") 
+    ("teacher supply" OR  "supply of teacher$" OR "teacher coverage" 
+    OR "teacher recruit*" OR "recruit* of teacher$" 
+    OR "lack of teacher$" OR "teacher turnover" OR "teacher shortage" OR "teacher retention" OR "teacher attrition") 
   )
 ```
 
-#### Phrase 2:
+#### Phrase 2
 
 The basic structure is *teacher education + countries*.
 
 This phrase finds articles about teacher education and training in developing countries, including through international cooperation. It proved very difficult to target international cooperation about teacher education specifically without using action terms, and the searches we tested returned either very few or very many hits. We assume that the majority of research that has teacher education in least developed or developing countries as its topic, will be relevant to the target.
 
-```dart
+```py
 TS=
 (
  ( 
@@ -694,14 +689,53 @@ TS=
 )
 ```
 
+### Works mentioning the SDG
+
+This phrase finds research which mentions this SDG. We include this as we consider works mentioning the SDG as relevant, and want to ensure they are found. This was a particularly challenging goal to construct this string for as the term "education" is so broad, therefore "education" is currently combined in phrases. The string includes terms for the goal, and excludes specialist terms that may use the `SDG` acronym. We also attempt to limit the noise from including `learning` by excluding works on machine learning that do not also specifically mention SDG 4.
+
+```py
+TS=
+("SDG 4" OR "SDGs 4" OR "SDG4" OR "sustainable development goal$ 4"
+OR ("sustainable development goal$" AND "goal 4")
+OR
+  (
+    ("sustainable development goal$" OR "SDG$" OR "goal 4")
+    AND ("quality education")
+  )
+OR 
+  (
+    ("sustainable development goal$" OR "SDG$" OR "goal 4")
+    NEAR/15 
+        ("learning" OR "teaching" OR "teacher$" OR "early childhood" OR "child development" 
+        OR "education for sustainable" OR "global citizenship education" OR "transdisciplinary education" OR "inclusive education" 
+        OR "formal education" OR "primary education" OR "secondary education" OR "tertiary education" OR "higher education" OR "right$ to education" OR "access to education" OR "education for all" OR "education sector$"
+        )
+  )
+)
+NOT 
+  TS=("secoisolariciresinol diglycoside"
+  OR "secoisolariciresinol diglucoside"
+  OR "SD-stearic acid"
+  OR "SD-HPMC"
+  OR "short-duration grazing (SDG)"
+  OR "short-duration group (SDG)"
+  OR "set domain group (SDG)"
+  OR "spleen-derived growth factor (SDG)"
+  OR "steel design guide series (SDG)"
+  OR "steel design guide (SDG)"
+  OR "spray-dried gelatin (SDG)"
+  OR "single-display groupware (SDG)"
+  OR (("machine learning" OR "deep learning") NOT ("quality education" OR "SDG 4" OR "SDG4"))
+  )
+```
 
 ## 4. Contributions
 
-* v2022.xx: EHS (Oct 2021-Jun 2022)
+* v1.0.0: Eli Heldaas Seland (Oct 2021-Oct 2022)
 
-* Internal reviews: HMB, CSA (Jan 2022); CSA, ML (March 2022)
+* Internal reviews: Håkon Magne Bjerkan, Caroline S. Armitage (Jan 2022); Caroline S. Armitage, Marta Lorenz (March 2022), Håkon Magne Bjerkan (minor review Oct 2022)
 
-Specialist input: KHH (Professor in Climate change, Sustainability and Education; Jan 2022). Workshops (Feb 2022, Jun 2022).
+Specialist input: Various academic staff from Western Norway University of Applied Sciences, including: A professor in Climate change, Sustainability and Education (Jan 2022); Workshops with 6 educational science academics (Feb 2022, Jun 2022).
 
 ## 5. Footnotes
 <a id="f5"></a> Blanchard et al. (2017). *Words into action guidelines: National Disaster Risk Assessment. Special Topics: K. Consideration of Marginalized and Minority Groups in a National Disaster Risk Assessment*. United Nations Office for Disaster Risk Reduction. https://www.undrr.org/publication/marginalized-and-minority-groups-consideration-ndra. [↩](#Blanchard)

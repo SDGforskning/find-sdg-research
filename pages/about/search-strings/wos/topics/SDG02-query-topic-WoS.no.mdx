@@ -2,7 +2,7 @@
 
 End hunger, achieve food security and improved nutrition and promote sustainable agriculture.
 
-**Current status**: This string is currently being converted from the action version, unstable/not yet working as intended.
+**Current status**: This string is currently a finished version (1.0.0).
 
 **Contents**
 
@@ -14,14 +14,7 @@ End hunger, achieve food security and improved nutrition and promote sustainable
 
 ## 1. Full query
 
-<details>
-  <summary>Click to show the final copy-pasteable full query for SDG2</summary>
-
-```
-Not ready yet
-```
-
-</details>
+Results of the full search in its current state can be viewed on Web of Science by clicking here: https://www.webofscience.com/wos/woscc/summary/68a40973-0972-49f4-848b-cf9452aab0f3-55f01ea3/relevance/1 (no filters, all years)
 
 ## 2. General notes
 
@@ -59,9 +52,9 @@ It consists of 3 phrases. Phrase 3 uses terms which need to be combined with hum
 
 The elements of the phrase are: *hunger*
 
-Hunger is still used in phrases in this approach (`ending hunger`, `world hunger`) to prevent finding results that are mostly medical/physiological. `feast and famine` refers to bioreactors/selective pressure in microbial cultures (not relevant), and is used in a double NOT to avoid losing relevant results. `Underfeeding` and `starvation` removed as seem to be used mostly in a medical/physiology context, rather than related to food security/supply.
+Hunger is used in phrases in this approach (`ending hunger`, `world hunger`) to prevent finding results that are mostly medical/physiological. `feast and famine` refers to bioreactors/selective pressure in microbial cultures (not relevant), and is used in a double NOT to avoid losing relevant results. `Underfeeding` and `starvation` removed as seem to be used mostly in a medical/physiology context, rather than related to food security/supply.
 
-```dart
+```py
 TS=
 (
   ("end hunger" OR "ending hunger" OR "ends hunger" OR "world hunger"
@@ -76,7 +69,7 @@ TS=
 
 The elements of the phrase are: *food access/safety/nutrition*. `food` should cover mechanisms such as food banks, food stamps, food credits, and descriptions such as good quality food etc. `nutrition* quality` does find some results about animal feed, but a number of them connect their work to food security, reducing food loss, so it is safer not to remove this term. Here we are including `food sovereignty` as it encompasses the ideas of access to safe, adequate and nutritious food, so is included here.
 
-```dart
+```py
 TS=
 (
   "right to food" OR "right to adequate food" OR "food sovereignty"
@@ -89,7 +82,7 @@ TS=
 
 The elements of the phrase are: *food supply/nutrient content + humans*. This phrase covers improving food supply, and is combined with "human terms" to prevent biology/ecology results. The human terms include generic terms signifying a work is about humans as well as some "vulnerable" groups (based on UN sources) considered relevant for this topic (<a id="Blanchard">[Blanchard et al., 2017](#f16)</a>; <a id="UNOHC">[Office of the High Commissioner, n.d.](#f17)</a>).
 
-```dart
+```py
 TS=
  (
     ("food supply" OR "nutritional value" OR "nutrient content" OR "nutritional content")  
@@ -98,7 +91,7 @@ TS=
         OR "children" OR "child" OR "under fives" OR "infant$" OR "toddler$" OR "babies" OR "teenager$" OR "adolescent$" OR "youth$" OR "girls" OR "boys"
         OR "adult$" OR "women" OR "men" OR "woman" OR "man"
         OR "agricultur*" OR "food security" OR "poverty"
-        OR "the vulnerable" OR "vulnerable group$" OR "vulnerable communit*" OR "marginali?ed group$" OR "marginali$ed communit*" OR "disadvantaged group$" OR "disadvantaged communit*"
+        OR "the vulnerable" OR "vulnerable group$" OR "vulnerable communit*" OR "marginali$ed group" OR "marginali$ed groups" OR "marginali$ed communit*" OR "disadvantaged group$" OR "disadvantaged communit*"
         OR "refugee$" OR "migrant$" OR "immigrant$" OR "asylum*"
         OR "rural" OR "urban" OR "countr*" OR "nation$" OR "develop* state$"
         )
@@ -109,9 +102,9 @@ TS=
 
 > **2.2 By 2030, end all forms of malnutrition, including achieving, by 2025, the internationally agreed targets on stunting and wasting in children under 5 years of age, and address the nutritional needs of adolescent girls, pregnant and lactating women and older persons.**
 >
-> 2.2.1 Prevalence of stunting (height for age \<-2 standard deviation from the median of the World Health Organization (WHO) Child Growth Standards) among children under 5 years of age
+> 2.2.1 Prevalence of stunting (height for age less than -2 standard deviation from the median of the World Health Organization (WHO) Child Growth Standards) among children under 5 years of age
 >
-> 2.2.2 Prevalence of malnutrition (weight for height >+2 or \<-2 standard deviation from the median of the WHO Child Growth Standards) among children under 5 years of age, by type (wasting and overweight)
+> 2.2.2 Prevalence of malnutrition (weight for height more than +2 or less than -2 standard deviation from the median of the WHO Child Growth Standards) among children under 5 years of age, by type (wasting and overweight)
 >
 > 2.2.3 Prevalence of anaemia in women aged 15 to 49 years, by pregnancy status (percentage)
 
@@ -125,7 +118,7 @@ The elements of the phrase are: *malnutrition*
 
 `dietary NEAR/3 deficiency` finds a number of specific deficiencies (e.g. dietary selenium deficiency, dietary Zn deficiency). `minerals` is not used - it only adds a few results, and many are from agriculture. `undernutrition` and other terms are included in phrase 3.
 
-```dart
+```py
 TS=
 (
   ("malnutrition" OR "malnourish*"
@@ -152,9 +145,9 @@ TS=
 
 The elements of the phrase are: *nutritional access/quality OR nutrition + specific groups*
 
-Research about the nutritional of the groups mentioned in the target is included here. `stability` is not used in combination with food/nutrition as there are results about nutritional stability in processed foods. `nutritio*` should cover terms such as "access to nutritional care". `baby` is not used as it only adds noise about "baby mustard".
+Research about the nutritional status of the groups mentioned in the target is included here. `stability` is not used in combination with food/nutrition as there are results about nutritional stability in processed foods. `nutritio*` should cover terms such as "access to nutritional care". `baby` is not used as it only adds noise about "baby mustard".
 
-```dart
+```py
 TS=
 (
   ("nutritio*" NEAR/5 ("access" OR "safe" OR "unsafe" OR "secure" OR "reliable" OR "reliability"))
@@ -175,7 +168,7 @@ TS=
 
 The elements of the phrase are: *undernutrition/food supply + humans*. For the topics `"protein deficiency"  OR "undernourish*" OR "under-nourish*" OR "undernutrition" OR "under-nutrition"` there was a considerable number of papers from animals and therefore they had to be combined with *human terms*. The human terms include generic terms signifying a work is about humans as well as some "vulnerable" groups (based on UN sources) considered relevant for this topic (<a id="Blanchard">[Blanchard et al., 2017](#f16)</a>; <a id="UNOHC">[Office of the High Commissioner, n.d.](#f17)</a>).
 
-```dart
+```py
 TS=
 (
   ("protein deficiency"
@@ -206,13 +199,13 @@ This target is interpreted to include research about productivity and income of 
 
 This query consists of 1 phrase. The elements of the phrase are: *productivity/access etc. + small-scale food producers*
 
- For the *small-scale food prodcer terms*, `small scale`+ `farm*` will cover types of farming in two words e.g. forest farming. Types of farming system were expanded using MeSH (NIH) and Emtree (Embase database, Elsevier) subject vocabularies. Specific types of crops and livestock were further expanded using FAO statistical year book (<a id="FAO2013">[FAO, 2013](#f2)</a>). For crops, those listed as major crops or "important food crops" are included, while oil crops were excluded (not being food). Some specific types are covered by generic terms: e.g. "Root crops" are covered by `crops`, and terms such as `farm*` will cover types of farming in two words e.g. forest farms, family farms, fish farming.
+ For the *small-scale food prodcer terms*, `small scale`+ `farm*` will cover types of farming in two words e.g. forest farming. Types of farming system were expanded using MeSH (NIH) and Emtree (Embase database, Elsevier) subject vocabularies. Specific types of crops and livestock were further expanded using FAO statistical year book (<a id="FAO2013">[FAO, 2013](#f2)</a>). For crops, those listed as major crops or "important food crops" are included, while oil crops were excluded (not being food). Adding different farming types/crops/livestock adds complexity but improves the results. Some specific types are covered by generic terms: e.g. "Root crops" are covered by `crops`, and terms such as `farm*` will cover types of farming in two words e.g. forest farms, family farms, fish farming.
 
  In the *productivity/access etc. terms*:
  - `intensification` implies increasing production, but results in some noise when used alone - it can be used in other contexts, and finds many results about the *effects* of agricultural intensification, thus it is combined with other terms which limit it better to works looking at the process itself.
-- Originally `"access*" OR "barrier$"` was combined with many other terms (e.g. access to credit, financial services, markets...) - however I have now cut this combination, as the target is so broad in what should be accessible. So now, papers talking about improving access to anything should be covered. A few irrelevant results are included due to the abstract including an "open access" publishing statement; and a couple from open access to e.g. satellite data. This is hard to exclude as we want "open access fisheries", for example. (Original combination: `"farmland$" OR "land" OR "resources" OR "financial service$" OR "banking" OR "microfinance" OR "credit" OR "microcredit" OR "insurance" OR "microinsurance" OR "market$" OR "marketing" OR "traders" OR "trade" OR "agricultur* input$" OR "farm input$" OR "water" OR "machinery" OR "equipment" OR "technology" OR "farm* experience" OR "information" OR "training" OR "equitab*" OR "inequitab*"`)
+- Originally `"access*" OR "barrier$"` was combined with many other terms (e.g. access to credit, financial services, markets...) - however we have now cut this combination, as the target is so broad in what should be accessible. So now, papers talking about improving access to anything should be covered. A few irrelevant results are included due to the abstract including an "open access" publishing statement; and a couple from open access to e.g. satellite data. This is hard to exclude as we want "open access fisheries", for example. (Original combination: `"farmland$" OR "land" OR "resources" OR "financial service$" OR "banking" OR "microfinance" OR "credit" OR "microcredit" OR "insurance" OR "microinsurance" OR "market$" OR "marketing" OR "traders" OR "trade" OR "agricultur* input$" OR "farm input$" OR "water" OR "machinery" OR "equipment" OR "technology" OR "farm* experience" OR "information" OR "training" OR "equitab*" OR "inequitab*"`)
 
-```dart
+```py
   TS=
   (
     (
@@ -276,7 +269,7 @@ This query consists of 6 phrases.
 
 The elements of the phrase are: *food production systems + productivity*. 
 
-```dart
+```py
 TS=
 (
   (
@@ -302,7 +295,7 @@ TS=
 
 #### Phrase 2
 
-Phrase 2 and 3 concern vulnerability / resilience. They have the same terms for food production systems, but differ in the terms for resilience: phrase 2 is linked to general terms for resilience, while phrase 3 covers terms need to be connected to disasters/shocks/risks.
+Phrase 2 and 3 concern vulnerability / resilience. They have the same terms for food production systems, but differ in the terms for resilience: phrase 2 is linked to general terms for resilience, while phrase 3 covers terms that need to be connected to disasters/shocks/risks.
 
 Resilience in terms of food production has been described by FAO as:
 > " In the context of sustainable food and agriculture, resilience is the capacity of agro-ecosystems, farming communities, households or individuals to maintain or enhance system productivity by preventing, mitigating or coping with risks, adapting to change, and recovering from shocks" (<a id="FAO2014">[FAO, 2014, p.28](#f7)</a>)
@@ -313,7 +306,7 @@ In the *food production system* terms, production systems and species are includ
 
 In the *resilience* terms, `tolera*` is a particularly influential term that increases results ("drought tolerance" of crops being a common research theme). `climate smart agriculture` is a term used for an approach specifically addressing climate change.
 
-```dart
+```py
 TS=
 (
   (
@@ -348,7 +341,7 @@ The *food production system* terms are the same as phrase 2.  These *disaster/cl
 
 The *disaster* terms were taken from a standardised list we used across the SDGs, which was developed based on selected hazards listed in <a id="Murray">[Murray et al. (2021)](#f15)</a>.
 
-```dart
+```py
 TS=
 (
   (
@@ -397,13 +390,13 @@ TS=
 
 #### Phrase 4
 
-The elements of the phrase are: *ecoagriculture // food production systems + sustainability*.
+The elements of the phrase are: *ecoagriculture OR (food production systems + sustainability)*.
 
 `ecoagricultur*` is a relatively specialist term for ecology and agriculture and considered narrow enough to use alone.
 
 Other terms suggesting research about sustainable agriculture were combined with the agricultural terms. `agroecolog*` (agroecology, or the agroecological approach) is considered a relevant term for sustainable, being related to ecology and environmental stability as well as social and cultural dimensions (<a id="SFS">[One Planet network Sustainable Food Systems (SFS) Programme, 2020, p. 28](#f8)</a>). Other terms for practices/approaches that can be considered to contribute to "sustainable food production systems" were gathered from <a id="HLPE">[High Level Panel of Experts on Food Security and Nutrition (2019, Appendix 1 and p. 36)](#f14)</a>; some of these also are relevant for soil quality. Other terms from this source are included in other phrases: "sustainable intensification" is covered in phrase 1, "climate smart agriculture" in phrase 2. `organic` must be combined due to use in other contexts (e.g. soil organic matter, organic carbon).
 
-```dart
+```py
 TS=
   ("ecoagricultur*" OR "eco-agricultur*" OR "permaculture"
   OR "conservation agriculture" OR "conservation farming"
@@ -440,9 +433,9 @@ TS=
 
 #### Phrase 5
 
-The elements of the phrase are: *food production systems + ecosystems and soil*. - this phrase covers "positives" (soil health, diversity, fertility etc.), phrase 6 covers "negatives" (loss, degredation etc.). Some terms are already covered in phrase 4 (e.g. reduced tillage)
+The elements of the phrase are: *food production systems + ecosystems and soil*. This phrase covers "positives" (soil health, diversity, fertility etc.), phrase 6 covers "negatives" (loss, degradation etc.). Some terms are already covered in phrase 4 (e.g. reduced tillage)
 
-```dart
+```py
 TS=
 (
     ("food production" OR "food grower$" OR "agri food"
@@ -469,11 +462,11 @@ TS=
 
 #### Phrase 6
 
-The elements of the phrase are: *food production systems + ecosystems and soil* - this phrase covers "negatives" (loss, degredation etc.), phrase 5 covers "positives" (soil health, diversity, fertility etc.). Some terms are already covered in phrase 4 (e.g. reduced tillage).
+The elements of the phrase are: *food production systems + ecosystems and soil*. This phrase covers "negatives" (loss, degradation etc.), phrase 5 covers "positives" (soil health, diversity, fertility etc.). Some terms are already covered in phrase 4 (e.g. reduced tillage).
 
 Types of land/soil degradation are taken from <a id="FAO2014">[FAO (2014)](#f7)</a> and (<a id="SDGindmetadata">[Statistics Division, 2021b (Indicator 2.4.1)](#f9)</a>).
 
-```dart
+```py
 TS=
 (
   ("food production" OR "food grower$" OR "agri food"
@@ -530,13 +523,13 @@ This query consists of 5 phrases.
 
 #### Phrase 1
 
-The elements of the phrase are: *agricultural diversity // traditional varieties/specific species + agriculture // landraces + diversity/conservation* - this phrase covers terms which are used in the context of agricultural diversity. Phrase 2 expands with generic terms for diversity that must be combined with agricultural terms.
+The elements of the phrase are: *agricultural diversity/local breeds OR (traditional varieties/species + agriculture) OR (landraces + diversity/conservation)*. This phrase covers terms which are used in the context of agricultural diversity. Phrase 2 expands with generic terms for diversity that must be combined with agricultural terms.
 
 Conserving wild relatives and traditional varieties is considered maintaining genetic diversity. `agrobiodiversity` is wider than only the species used in agriculture - it covers also the non-harvested species that support production and agro-ecosystems (e.g. pollinators, soil-organisms) (<a id="FAO2004">[FAO, 2004](#f10)</a>). It is considered relevant and included, as agrobiodiversity looks at the whole system (i.e. supporting diversity AND agricultural diversity). 
 
 `landraces` and `varieties` are treated slightly differently here than the other terms: `varieties`is combined with agriculture as "traditional varieties" could refer to varieties of language, art etc. Note that `pigs` are excluded from the species list due to a large number of results about wild pig hunting in relation to their effect on agricultural land. `landraces` is connected to diversity terms to try and avoid technical works on e.g. sperm motility which use landrace/landrace-cross species. 
 
-```dart
+```py
 TS=
 (
     "plant genetic resource$" OR "animal genetic resource$"
@@ -575,7 +568,7 @@ Publications about groups and using terms which also include wild species (e.g. 
 
 Terminology to do with breeding programmes could be included here, but we want research that is about programmes for genetic diversity, and this should already be covered by *diversity* - the inclusion of breeding programmes alone finds results about programmes for other objectives (e.g. increased productivity). It also introduces noise around the *use* of genetic resources *for* breeding programmes, whereas we want research about breeding programs *for* genetic diversity. `conserv*` will cover e.g. conservation breeding, on-farm conservation etc..
 
-```dart
+```py
 TS=
 (
         ("genetic diversity" OR "genetic resource$"
@@ -605,7 +598,7 @@ The *diversity/protection/policy* terms are included to help to filter out publi
 
 For the *gene bank/ex situ* terms, `cryoconservation` and `cryopreservation` are included as in vitro methods of conservation of diversity (<a id="FAO2015">[Commission on Genetic Resources for Food and Agriculture Assessments, 2015](#f11)</a>). For the *agriculture terms*, `domestic*` was removed from this phrase as results were mostly about domestic cats. A `NOT` expression was added for `seed banks` as these can be both human storage of seeds but also natural seed banks in the soil.
 
-```dart
+```py
 TS=
 (
   (
@@ -649,10 +642,10 @@ The elements of the phrase are: *resources/knowledge + sharing/access + agricult
 
 For the *resource/knowledge* terms, `traditional NEAR knowledge` etc. will cover variations such as "traditional agricultural knowledge". The string is set up so that we do not have to define the benefits. Within the CBD/Nagoya protocol, benefits can be monetary/non-monetary (e.g. research results, royalties), related to using/commercialisation of genetic resources. "Using" includes research on genetics/biochemistry, development and biotechnology. (<a id="Garforth">[Garforth, 2018, p.3](#f12)</a>).
 
-In the *sharing/access* terms, the more generic terms are combined with actions (e.g. increase access) while terms that are more specific to this issues are not (e.g. governance, justice), because it might be unnatural to write about e.g. "increasing justice". `access OR accessing OR accessib*` is used here to prevent "accessions". `biopiracy` is the unfair exploitation of biological resources/traditional knowledge.
+`access OR accessing OR accessib*` is used to prevent "accessions". `biopiracy` is the unfair exploitation of biological resources/traditional knowledge.
 
 
-```dart
+```py
 TS=
 (
   (
@@ -690,9 +683,11 @@ TS=
 
 #### Phrase 5
 
-Phrase 5 is similar to phrase 4, with a focus on research that mentions instruments/treaties related to benefit sharing/access of genetic resources and traditional knowledge. The elements of the phrase are: *resources/knowledge/rights + agriculture/food + instruments/specific issues*. In this phrase, "rights" was added to `traditional NEAR knowledge` as this worked well with the combination with specific policy instruments.
+Phrase 5 is similar to phrase 4, with a focus on research that mentions instruments/treaties related to benefit sharing/access of genetic resources and traditional knowledge. The elements of the phrase are: *resources/knowledge/rights + agriculture/food + instruments/specific issues*. This phrase is the same as the action approach - action terms were not included there as we assumed that works mentioning specific policy instruments are likely action-oriented. 
 
-```dart
+In this phrase, "rights" was added to `traditional NEAR knowledge` as this worked well with the combination with specific policy instruments.
+
+```py
 TS =
 (
     ("genetic resource$" OR "agrobiodiversity"
@@ -723,9 +718,7 @@ TS =
         OR "Plant Genetic Resources for Food and Agriculture" OR "PGRFA"
         )
 )
-
 ```
-
 
 ### Target 2.a
 
@@ -739,7 +732,7 @@ This target is interpreted to cover research about investment and international 
 
 This query consists of 1 phrase. The elements of the phrase are: *investment/cooperation + rural infrastructure/technology*.
 
-```dart
+```py
 TS =
 (
       ("Agriculture Orientation Index for Government Expenditure$"
@@ -801,7 +794,7 @@ This query consists of 2 phrases.
 
 The elements of the phrase are: *export subsidies + agriculture/food*.
 
-```dart
+```py
 TS=
 (
   ("export subsid*" OR "export credit$" OR "export financ*" OR "export competition" OR "export support$")
@@ -813,7 +806,7 @@ TS=
 
 The elements of the phrase are: *distortions + agricultural markets/exports*. Specific animals are not included due to results about restrictions in trade due to outbreaks of disease.
 
-```dart
+```py
 TS=
 (
   ("distort*" OR "price-fixing" OR "dumping"
@@ -839,7 +832,7 @@ This target is interpreted to cover research about food prices and markets, stab
 
 #### Phrase 1:
 
-```dart
+```py
 TS=
 (
     ("volatil*" OR "instability" OR "unstable" OR "anomalies" OR "price shock$" OR "price spike$" OR "inflation"
@@ -864,15 +857,49 @@ TS=
 )
 ```
 
+### Works mentioning the SDG
+
+This phrase finds research which mentions this SDG. We include this as we consider works mentioning the SDG as relevant, and want to ensure they are found. It includes terms for the goal, and excludes specialist terms that may use the `SDG` acronym or use `goal 2` from the Millennium development goals.
+
+```py
+TS=
+("SDG 2" OR "SDGs 2" OR "SDG2" OR "sustainable development goal$ 2"
+OR ("sustainable development goal$" AND "goal 2")
+OR 
+  (
+    ("sustainable development goal$" OR "SDG$" OR "goal 2")
+    AND ("zero hunger")
+  )
+OR
+  (
+    ("sustainable development goal$" OR "SDG$" OR "goal 2")
+    NEAR/15 ("hunger" OR "food")
+  )
+)
+NOT 
+  TS=("secoisolariciresinol diglycoside"
+  OR "secoisolariciresinol diglucoside"
+  OR "SD-stearic acid"
+  OR "SD-HPMC"
+  OR "short-duration grazing (SDG)"
+  OR "short-duration group (SDG)"
+  OR "set domain group (SDG)"
+  OR "spleen-derived growth factor (SDG)"
+  OR "steel design guide series (SDG)"
+  OR "steel design guide (SDG)"
+  OR "spray-dried gelatin (SDG)"
+  OR "single-display groupware (SDG)"
+  OR "Millennium Development Goal 2"
+  )
+```
+
 ## 4. Contributions
 
-* v2019.12: CSA, ML, SRM
+* v2019.12: Marta Lorenz, Caroline S. Armitage, Susanne Mikki
 
-* v1.0.0, first draft: CSA (Oct 2021-Feb 2022)
+* v1.0.0 Caroline S. Armitage (Oct 2021-Oct 2022)
 
-* Internal review: EHS, ML (March 2022)
-
-* v1.0.0, second draft: CSA (April-Aug 2022)
+* Internal review: Eli Heldaas Seland, Marta Lorenz (March 2022); Eli Heldaas Seland (minor review Oct 2022)
 
 Specialist input: Awaiting specialist input.
 

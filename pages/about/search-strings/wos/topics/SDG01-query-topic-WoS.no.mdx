@@ -1,6 +1,6 @@
 # Search query for SDG 01 - No Poverty, Bergen topic-approach.
 
-**Current status**: This string is currently being converted from the action version, unstable/not yet working as intended. Unsure of translation of 1.3.
+**Current status**: This string is currently a finished version (1.0.0).
 
 **Contents**
 
@@ -10,17 +10,9 @@
 4. Contributions
 5. Footnotes
 
-
 ## 1. Full query
 
-<details>
-  <summary>Click to show the final copy-pasteable full query for SDG 1</summary>
-
-```
-Not ready yet
-```
-
-</details>
+Results of the full search in its current state can be viewed on Web of Science by clicking here: https://www.webofscience.com/wos/woscc/summary/99f37634-d075-4220-8eff-7c871aea0672-55eef9dd/relevance/1 (no filters; all years)
 
 ## 2. General notes
 
@@ -46,7 +38,7 @@ This query consists of 1 phrase. The elements of the phrase are: *extreme/global
 
 `(("liv*" OR "surviv*" ) NEAR/5 "$1.25 "))` was taken out as adds irrelevant hits (picks up random numbers from abstracts). `international poverty` will cover international poverty line.
 
-```dart
+```py
 TS=
 ("extreme poverty" OR "severe poverty" OR "deep poverty" OR "abject poverty" OR "absolute poverty" OR "destitution" 
 OR "global poverty" OR "international poverty"
@@ -61,16 +53,18 @@ OR "global poverty" OR "international poverty"
 >
 > 1.2.2 Proportion of men, women and children of all ages living in poverty in all its dimensions according to national definitions
 
-This target is interpreted as to cover research about poverty. Research about `decent work` was considered for inclusion, as this is highlighted as a route out of poverty in the High level political forum document <a id="HLPF2017">([UN 2017](#f2))</a>. However we have not included it - it is not necessarily linked to poverty, and articles linking this topic with poverty reduction can be expected to be covered by the phrase below. We have added the term `NOT species poor` to remove biology results found by the combination of `poor` with `communit*`.
+This target is interpreted as to cover research about poverty and poor communities/groups. Research about `decent work` was considered for inclusion, as this is highlighted as a route out of poverty in the High level political forum document <a id="HLPF2017">([UN 2017](#f2))</a>. However we have not included it - it is not necessarily linked to poverty, and articles linking this topic with poverty reduction can be expected to be covered by the phrase below. 
 
-This query consists of 1 phrase. The elements of the phrase are: *poverty/the poor*
+This query consists of 1 phrase. The elements of the phrase are: *poverty/the poor*. 
 
-```dart
+We have added the term `NOT species poor` to remove biology results found by the combination of `poor` with `communit*`.
+
+```py
 TS=
 (
   ("anti-poverty" OR "out of poverty"
-  OR "poverty" OR "the poor" OR "the poorest" OR "rural poor" OR "urban poor" OR "working poor"
-  OR (("poor" OR "poorest") NEAR/3 ("household$" OR "people" OR "communit*"))
+  OR "poverty" OR "rural poor" OR "urban poor" OR "working poor"
+  OR (("poor" OR "poorest") NEAR/3 ("household$" OR "people" OR "communit*" OR "children" OR "relief"))
   )
   NOT "species poor"
 )
@@ -94,7 +88,7 @@ This phrase is about floors, protection systems and welfare systems. The element
 
 As the *social protection* terms include a systemic element (systems, services) they do not need to be combined with groups of people. `welfare state` was considered but excluded as it leads mostly to papers about early welfare states and the history of those.
 
-```dart
+```py
 TS=
 (
   "welfare system$" OR "welfare service$" OR "social security system"
@@ -103,6 +97,7 @@ TS=
 )
 ```  
 
+
 #### Phrase 2
 
 This phrase is also about social floors and systems, but includes the terms which work better when combined with groups of people. The elements of the phrase are:*social protection/social floors + poor/vulnerable*.
@@ -110,7 +105,7 @@ This phrase is also about social floors and systems, but includes the terms whic
 For the *poor and vulnerable* terms, we use general terms for poverty/low income, plus terms for "vulnerable" groups from indicator 1.3.1. We used UN sources to find additional terms and groups that can be considered "vulnerable" (<a id="Blanchard">[Blanchard et al., 2017](#f12)</a>; <a id="UNOHC">[Office of the High Commissioner, n.d.](#f13)</a>; <a id="UNracism">[United Nations, n.d.](#f14)</a>). `"social care service$" OR "social service$"` are sometimes considered a part of social protection <a id="gsdrc">([Carter et al. 2019](#f9))</a> - we include them here, although they do introduce noise as there are many works which mention them as a factor (e.g. a health study that discusses whether participants had access to social care).
 
 
-```dart
+```py
 TS=
 (
   ("social protection$" OR "social security" OR "social benefits" OR "social insurance"
@@ -169,7 +164,7 @@ Sources of terms for *financial services* included <a id="DESA">[Department of E
 
 For the *poor and vulnerable* terms, we use general terms for poverty/low income, plus terms for "vulnerable" groups from indicator 1.3.1. We used UN sources to find additional terms and groups that can be considered "vulnerable" (<a id="Blanchard">[Blanchard et al., 2017](#f12)</a>; <a id="UNOHC">[Office of the High Commissioner, n.d.](#f13)</a>; <a id="UNracism">[United Nations, n.d.](#f14)</a>). We include least developed countries also (on the assumption that the population there as a whole can, on a global scale, be considered poorer or more vulnerable).   
 
-```dart
+```py
 TS= ("financial inclusion" OR "microfinanc*" OR "micro-financ*" OR "microinsurance" OR "micro-insurance" OR "microcredit" OR "micro-credit" OR "microloan$" OR "micro-loan$")
 OR TS=
 (
@@ -215,7 +210,7 @@ This phrase covers access and rights to economic resources, natural resources, l
 
 "security" is used in phrases because otherwise there are many results about food security. For the *poor and vulnerable* terms, we use general terms for poverty/low income, plus terms for "vulnerable" groups from indicator 1.3.1. We used UN sources to find additional terms and groups that can be considered "vulnerable" (<a id="Blanchard">[Blanchard et al., 2017](#f12)</a>; <a id="UNOHC">[Office of the High Commissioner, n.d.](#f13)</a>; <a id="UNracism">[United Nations, n.d.](#f14)</a>). We include least developed countries also (on the assumption that the population there as a whole can, on a global scale, be considered poorer or more vulnerable).   
 
-```dart
+```py
 TS=
 (
   (
@@ -262,7 +257,7 @@ Phrase 3 covers access to basic services. The elements of the phrase are: *acces
 
 For the *poor and vulnerable* terms, we use general terms for poverty/low income, plus terms for "vulnerable" groups from indicator 1.3.1. We used UN sources to find additional terms and groups that can be considered "vulnerable" (<a id="Blanchard">[Blanchard et al., 2017](#f12)</a>; <a id="UNOHC">[Office of the High Commissioner, n.d.](#f13)</a>; <a id="UNracism">[United Nations, n.d.](#f14)</a>).
 
-```dart
+```py
 TS=
 (
   (
@@ -332,7 +327,7 @@ We have used the hazards listed in <a id="disasters">[Murray et al., (2021)](#f4
 
 This query consists of 1 phrase. The elements of the phrase are: *disaster + poor/vulnerable*.
 
-```dart
+```py
 TS=
 (
   (
@@ -408,7 +403,7 @@ TS=
 
 This target is interpreted to cover research about international investment and poverty in developing countries. This query consists of 1 phrase. The elements of the phrase are: *international financing/cooperation + poverty + developing countries*. 
 
-```dart
+```py
 TS=
 (
   (
@@ -453,14 +448,11 @@ This target is interpreted to cover research about policies that can stimulate i
 
 The elements of the phrase are: *policy + antipoverty*. Note that this phrase is the same as the action approach.
 
-```dart
+```py
 TS=
 (
   ("law$" OR "legislat*"
-  OR (
-      ("national" OR "government*" OR "regional" OR "local" OR "international")
-      NEAR/3 ("program*" OR "strateg*" OR "policy" OR "policies" OR "plan" OR "framework$" OR "initiative$")
-     )
+  OR "program*" OR "strateg*" OR "policy" OR "policies" OR "plan" OR "framework$" OR "initiative$"
   OR "investment policy" OR "investment policies"
   )
   NEAR/15
@@ -477,15 +469,42 @@ TS=
 )
 ```
 
+### Works mentioning the SDG
+
+This phrase finds research which mentions this SDG. We include this as we consider works mentioning the SDG as relevant, and want to ensure they are found. It includes terms for the goal, and excludes specialist terms that may use the `SDG` acronym.
+
+```py
+TS=
+("SDG 1" OR "SDGs 1" OR "SDG1" OR "sustainable development goal$ 1"
+OR 
+  (
+    ("sustainable development goal$" OR "SDG$" OR "goal 1")
+    NEAR/50 "poverty"
+  )
+)
+NOT 
+  TS=("secoisolariciresinol diglycoside"
+  OR "secoisolariciresinol diglucoside"
+  OR "SD-stearic acid"
+  OR "SD-HPMC"
+  OR "short-duration grazing (SDG)"
+  OR "short-duration group (SDG)"
+  OR "set domain group (SDG)"
+  OR "spleen-derived growth factor (SDG)"
+  OR "steel design guide series (SDG)"
+  OR "steel design guide (SDG)"
+  OR "spray-dried gelatin (SDG)"
+  OR "single-display groupware (SDG)"
+  )
+```
+
 ## 4. Contributions
 
-* v2019.12: ML, CSA, SRM
+* v2019.12: Marta Lorenz, Caroline S. Armitage, Susanne Mikki
 
-* v1.0.0, first draft: ML (Oct 2021-Feb 2022)
+* v1.0.0: Marta Lorenz (Sep 2021-Apr 2022), Caroline S. Armitage (May 2022-Oct 2022)
 
-* Internal review: HMB, CSA (March 2022)
-
-* v1.0.0,, second draft: ML, CSA (April-Sep 2022)
+* Internal review: Håkon Magne Bjerkan, Caroline S. Armitage (March 2022); Inger Gåsemyr (minor review Oct 2022)
 
 Specialist input: Awaiting specialist input.
 
