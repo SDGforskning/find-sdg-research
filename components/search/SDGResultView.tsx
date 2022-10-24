@@ -1,4 +1,5 @@
 import { useRouter } from 'next/router';
+import { truncateUrl } from '../../lib/truncateUrl'
 import { ArrowUpRightIcon, LockClosedIcon, LockOpenIcon } from '@heroicons/react/24/solid'
 
 const localeText = {
@@ -7,13 +8,6 @@ const localeText = {
     no: "Vitenskapelig"
   }
 }
-
-const TargetBlankIcon = (
-  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-6 h-6">
-    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
-  </svg>
-)
-
 
 const CustomResultView = ({
   result,
@@ -40,11 +34,18 @@ const CustomResultView = ({
                 {result.result_title.raw}
               </a>
             </h3>
+
             {result.journal && (
               <div className={`text-md leading-sm text-gray-600 dark:text-gray-400`}>
                 {result.journal.raw} ({result.year?.raw})
               </div>
             )}
+            {result.result_title_anthology && (
+              <div className={`text-md leading-sm text-gray-600 dark:text-gray-400`}>
+                {result.result_title_anthology.raw} ({result.year?.raw})
+              </div>
+            )}
+
             {result.result_id.raw && (
               <div className={`text-md leading-sm text-gray-600 dark:text-gray-400`}>
                 <a href={`https://app.cristin.no/results/show.jsf?id=${result.result_id.raw}`} target="_blank">
@@ -53,22 +54,16 @@ const CustomResultView = ({
               </div>
             )}
 
-            {result.result_title_anthology && (
-              <div className={`text-md leading-sm text-gray-600 dark:text-gray-400`}>
-                {result.result_title_anthology.raw} ({result.year?.raw})
-              </div>
-            )}
-
             <ul className='mt-5'>
               {result.fulltextlink?.raw && result.fulltextlink?.raw !== 'No open link found' && (
                 <li>Fulltext:{' '}
                   <a href={result.fulltextlink.raw} target="_blank">
-                    {result.fulltextlink.raw} <ArrowUpRightIcon className="inline h-4 w-4 text-blue-500" />
+                    {truncateUrl(result.fulltextlink.raw, 80)} <ArrowUpRightIcon className="inline h-4 w-4 text-blue-500" />
                   </a>
-                  {result.fulldoi?.raw && (
+                  {result.fulldoi?.raw && (result.fulltextlink?.raw !== result.fulldoi?.raw) && (
                     <span className='ml-5 text-xs text-gray-600 dark:text-gray-400'>{' '}
                       <a href={result.fulldoi.raw}>
-                        {result.fulldoi.raw.split('//')[1]}
+                        {result.fulldoi.raw}
                       </a>
                     </span>
                   )}
@@ -80,7 +75,7 @@ const CustomResultView = ({
                 && result.fulldoi?.raw && (
                   <li>DOI:{' '}
                     <a href={result.fulldoi.raw}>
-                      {result.doi.raw} <ArrowUpRightIcon className="inline h-4 w-4 text-blue-500" />
+                      {result.fulldoi.raw} <ArrowUpRightIcon className="inline h-4 w-4 text-blue-500" />
                     </a>
                     {result.fulltextlink?.raw && result.fulltextlink?.raw == 'No open link found' && (
                       <span className='ml-5 text-xs text-gray-600 dark:text-gray-400'>{' '}
