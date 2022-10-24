@@ -8,6 +8,7 @@
           "year",
           "result_id",
           "category",
+          "subcategory",
           "nvi_publication_form",
           "result_title",
           "journal",
@@ -21,6 +22,7 @@
           "nvi_level_historical",
           "language",
           "fulltextlink",
+          "openlinkfound",
           "scientific_result",
           "SDG_action",
           "SDG_topic",
@@ -35,6 +37,13 @@
     {
       "convert": {
         "field": "mentionsNorway",
+        "type": "boolean",
+        "ignore_missing": true
+      }
+    },
+    {
+      "convert": {
+        "field": "openlinkfound",
         "type": "boolean",
         "ignore_missing": true
       }
@@ -82,7 +91,7 @@
     {
       "split": {
         "field": "SDG_topic",
-        "separator": ",",
+        "separator": ",\\s*",
         "preserve_trailing": false,
         "ignore_missing": true
       }
@@ -90,15 +99,15 @@
     {
       "split": {
         "field": "SDG_action",
-        "separator": ",",
+        "separator": ",\\s*",
         "preserve_trailing": false,
         "ignore_missing": true
       }
     },
     {
       "split": {
-        "field": " SDG_target_topic",
-        "separator": ",",
+        "field": "SDG_target_topic",
+        "separator": ",\\s*",
         "preserve_trailing": false,
         "ignore_missing": true
       }
@@ -106,7 +115,7 @@
     {
       "split": {
         "field": "SDG_target_action",
-        "separator": ",",
+        "separator": ",\\s*",
         "preserve_trailing": false,
         "ignore_missing": true
       }
