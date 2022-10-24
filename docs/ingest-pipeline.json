@@ -14,7 +14,8 @@
           "journal",
           "result_title_anthology",
           "doi",
-          "fulldoi",
+          "cleandoi",
+          "fulldoi",          
           "isbn",
           "eissn",
           "scientific_field_npi",
@@ -24,12 +25,13 @@
           "fulltextlink",
           "openlinkfound",
           "scientific_result",
-          "SDG_action",
-          "SDG_topic",
-          "SDG_target_action",
+          "mentionsSDG",
+          "mentionsNorway",          
+          "SDG_target_action",        
           "SDG_target_topic",
-          "mentionsNorway",
-          "mentionsSDG"
+          "SDG_action",
+          "SDG_topic"         
+          
         ],
         "ignore_missing": false
       }
@@ -91,7 +93,7 @@
     {
       "split": {
         "field": "SDG_topic",
-        "separator": ",\\s*",
+        "separator": ",",
         "preserve_trailing": false,
         "ignore_missing": true
       }
@@ -99,7 +101,7 @@
     {
       "split": {
         "field": "SDG_action",
-        "separator": ",\\s*",
+        "separator": ",",
         "preserve_trailing": false,
         "ignore_missing": true
       }
@@ -107,7 +109,7 @@
     {
       "split": {
         "field": "SDG_target_topic",
-        "separator": ",\\s*",
+        "separator": ",",
         "preserve_trailing": false,
         "ignore_missing": true
       }
@@ -115,7 +117,7 @@
     {
       "split": {
         "field": "SDG_target_action",
-        "separator": ",\\s*",
+        "separator": ",",
         "preserve_trailing": false,
         "ignore_missing": true
       }
