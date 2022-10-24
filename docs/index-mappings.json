@@ -55,6 +55,17 @@
         }
       }
     },
+    "subcategory": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword"
+        },
+        "suggest": {
+          "type": "search_as_you_type"
+        }
+      }
+    },
     "doi": {
       "type": "keyword"
     },
@@ -94,6 +105,15 @@
         }
       }
     },
+    "openlinkfound" :
+    {
+      "type": "boolean",
+      "fields": {
+        "keyword": {
+          "type": "keyword"
+        }
+      }
+    },    
     "mentionsSDG": {
       "type": "boolean",
       "fields": {
