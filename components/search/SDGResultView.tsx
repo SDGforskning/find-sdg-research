@@ -25,6 +25,8 @@ const CustomResultView = ({
 
   const { locale } = useRouter()
 
+  /* return <pre>{JSON.stringify(result, null, 2)}</pre>s */
+
   return (
     <li key={result.id} className='border rounded dark:border-slate-700 mt-5 pt-3'>
       <div>
@@ -102,18 +104,18 @@ const CustomResultView = ({
               ))}
             </div>
             <div className='flex gap-2'>
-              {result.SDG_target_topic?.raw && [result.SDG_target_topic.raw].map(goal => (
+              {result.SDG_target_topic?.raw && result.SDG_target_topic.raw.map(goal => (
                 <div
                   className={`text-xs text-white inline-flex items-center font-bold leading-sm uppercase px-2 py-1 ${goal.split('_')[0]} dark:text-white rounded`}
                 >
-                  Target: {goal.split('_')[1]}
+                  {goal.split('_')[1]}
                 </div>
               ))}
             </div>
 
             <div>Actions:</div>
             <div className='flex gap-2'>
-              {result.SDG_action?.raw && [result.SDG_action.raw].map(goal => (
+              {result.SDG_action?.raw && result.SDG_action.raw.map(goal => (
                 <div
                   className={`text-md text-white inline-flex items-center font-bold leading-sm uppercase px-2 py-1 ${goal} dark:text-white rounded`}
                 >
@@ -126,7 +128,7 @@ const CustomResultView = ({
                 <div
                   className={`text-xs text-white inline-flex items-center font-bold leading-sm uppercase px-2 py-1 ${goal.split('_')[0]} dark:text-white rounded`}
                 >
-                  Target: {goal.split('_')[1]}
+                  {goal.split('_')[1]}
                 </div>
               ))}
             </div>
@@ -172,7 +174,6 @@ const CustomResultView = ({
             </div>
           )}
         </div>
-        {/* <pre>{JSON.stringify(result, null, 2)}</pre> */}
       </div>
     </li>
   )
