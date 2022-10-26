@@ -1,19 +1,19 @@
 export const sdgTopicLabelMapping = {
   SDG01: {
-    en: "",
-    no: "",
+    en: "No Poverty",
+    no: "Utrydde Fattigdom",
   },
   SDG02: {
-    en: "",
-    no: "",
+    en: "Zero Hunger",
+    no: "Utrydde Sult",
   },
   SDG03: {
-    en: "",
-    no: "",
+    en: "Good Health",
+    no: "God Helse",
   },
   SDG04: {
-    en: "",
-    no: "",
+    en: "Quality Education",
+    no: "God Utdanning",
   },
   SDG05: {
     en: "",
@@ -24,8 +24,8 @@ export const sdgTopicLabelMapping = {
     no: "",
   },
   SDG07: {
-    en: "",
-    no: "",
+    en: "Clean Energy",
+    no: "Ren Energi",
   },
   SDG08: {
     en: "",
@@ -40,24 +40,95 @@ export const sdgTopicLabelMapping = {
     no: "",
   },
   SDG11: {
-    en: "",
-    no: "",
+    en: "Sustainable Cities",
+    no: "Bærekraftige Byer",
   },
   SDG12: {
     en: "",
     no: "",
   },
   SDG13: {
-    en: "",
-    no: "",
+    en: "Climate Action",
+    no: "Stoppe Klimaendringene",
   },
   SDG14: {
+    en: "Life Below Water",
+    no: "Liv Under Vann",
+  },
+  SDG15: {
+    en: "Life on Land",
+    no: "Liv på Land",
+  },
+  SDG16: {
     en: "",
     no: "",
   },
-  SDG15: {
+  SDG17: {
     en: "",
     no: "",
+  }
+}
+
+export const sdgActionLabelMapping = {
+  SDG01: {
+    en: "No Poverty",
+    no: "Utrydde Fattigdom",
+  },
+  SDG02: {
+    en: "Zero Hunger",
+    no: "Utrydde Sult",
+  },
+  SDG03: {
+    en: "Good Health",
+    no: "God Helse",
+  },
+  SDG04: {
+    en: "Quality Education",
+    no: "God Utdanning",
+  },
+  SDG05: {
+    en: "",
+    no: "",
+  },
+  SDG06: {
+    en: "",
+    no: "",
+  },
+  SDG07: {
+    en: "Clean Energy",
+    no: "Ren Energi",
+  },
+  SDG08: {
+    en: "",
+    no: "",
+  },
+  SDG09: {
+    en: "",
+    no: "",
+  },
+  SDG10: {
+    en: "",
+    no: "",
+  },
+  SDG11: {
+    en: "Sustainable Cities",
+    no: "Bærekraftige Byer",
+  },
+  SDG12: {
+    en: "",
+    no: "",
+  },
+  SDG13: {
+    en: "Climate Action",
+    no: "Stoppe Klimaendringene",
+  },
+  SDG14: {
+    en: "Life Below Water",
+    no: "Liv Under Vann",
+  },
+  SDG15: {
+    en: "Life on Land",
+    no: "Liv på Land",
   },
   SDG16: {
     en: "",
@@ -71,83 +142,121 @@ export const sdgTopicLabelMapping = {
 
 export const sdgTopicTargetLabelMapping = {
   SDG01_01: {
-    en: "",
+    en: "1.1 Extreme poverty",
     no: "",
   },
-}
-export const sdgActionLabelMapping = {
-  SDG01: {
-    en: "",
+  SDG01_02: {
+    en: "1.2 Poverty",
     no: "",
   },
-  SDG02: {
-    en: "",
+  SDG01_03: {
+    en: "1.3 Social protections",
     no: "",
   },
-  SDG03: {
-    en: "",
+  SDG01_04: {
+    en: "1.4 Rights and Access",
     no: "",
   },
-  SDG04: {
-    en: "",
+  SDG01_05: {
+    en: "1.5 Disaster resilience",
     no: "",
   },
-  SDG05: {
-    en: "",
+  SDG01_0a: {
+    en: "1.a Resources",
     no: "",
   },
-  SDG06: {
-    en: "",
+  SDG01_b: {
+    en: "1.b Policy",
     no: "",
   },
-  SDG07: {
-    en: "",
+  SDG02_01: {
+    en: "2.1 Hunger",
+    no: "",
+  },  
+  SDG02_02: {
+    en: "2.2 Malnutrition",
     no: "",
   },
-  SDG08: {
-    en: "",
+  SDG02_03: {
+    en: "2.3 Small-scale food producers",
     no: "",
   },
-  SDG09: {
-    en: "",
+  SDG02_04: {
+    en: "2.4 Sustainable food production",
     no: "",
   },
-  SDG10: {
-    en: "",
+  SDG02_05: {
+    en: "2.5 Genetic resources",
     no: "",
   },
-  SDG11: {
-    en: "",
+  SDG02_0a: {
+    en: "2.a Investment in developing countries",
     no: "",
   },
-  SDG12: {
-    en: "",
+  SDG02_b: {
+    en: "2.b Markets and subsidies",
     no: "",
   },
-  SDG13: {
-    en: "",
+  SDG02_c: {
+    en: "2.c Stable food markets",
     no: "",
   },
-  SDG14: {
-    en: "",
+  SDG03_01: {
+    en: "3.1 Maternal mortality",
     no: "",
   },
-  SDG15: {
-    en: "",
+  SDG03_02: {
+    en: "3.2 Child mortality",
     no: "",
   },
-  SDG16: {
-    en: "",
+  SDG03_03: {
+    en: "3.3 Communicable diseases",
     no: "",
   },
-  SDG17: {
-    en: "",
+  SDG03_04: {
+    en: "3.4 Non-infectious diseases",
     no: "",
-  }
+  },
+  SDG03_05: {
+    en: "3.5 Substance abuse",
+    no: "",
+  },
+  SDG03_06: {
+    en: "3.6 Traffic injuries",
+    no: "",
+  },
+  SDG03_07: {
+    en: "3.7 Reproductive healthcare",
+    no: "",
+  },
+  SDG03_08: {
+    en: "3.8 Universal healthcare",
+    no: "",
+  },
+  SDG03_09: {
+    en: "3.9 Pollution and contamination",
+    no: "",
+  },
+  SDG03_0a: {
+    en: "3.a Tobacco",
+    no: "",
+  },
+  SDG03_b: {
+    en: "3.b Access to medicines and vaccines",
+    no: "",
+  },
+  SDG03_c: {
+    en: "3.c Recruitment in developing countries",
+    no: "",
+  },
+  SDG03_d: {
+    en: "3.d Risk preparedness",
+    no: "",
+  },
 }
 
 export const sdgActionTargetLabelMapping = {
-  SDG01_01: {
+  SDG01_0a: {
     en: "",
     no: "",
   },
