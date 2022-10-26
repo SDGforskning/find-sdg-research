@@ -1,78 +1,154 @@
-export const sdgTopicMapping = {
-  SDG01: "",
-  SDG02: "",
-  SDG03: "",
-  SDG04: "",
-  SDG05: "",
-  SDG06: "",
-  SDG07: "",
-  SDG08: "",
-  SDG09: "",
-  SDG10: "",
-  SDG11: "",
-  SDG12: "",
-  SDG13: "",
-  SDG14: "",
-  SDG15: "",
-  SDG16: "",
-  SDG17: ""
+export const sdgTopicLabelMapping = {
+  SDG01: {
+    en: "",
+    no: "",
+  },
+  SDG02: {
+    en: "",
+    no: "",
+  },
+  SDG03: {
+    en: "",
+    no: "",
+  },
+  SDG04: {
+    en: "",
+    no: "",
+  },
+  SDG05: {
+    en: "",
+    no: "",
+  },
+  SDG06: {
+    en: "",
+    no: "",
+  },
+  SDG07: {
+    en: "",
+    no: "",
+  },
+  SDG08: {
+    en: "",
+    no: "",
+  },
+  SDG09: {
+    en: "",
+    no: "",
+  },
+  SDG10: {
+    en: "",
+    no: "",
+  },
+  SDG11: {
+    en: "",
+    no: "",
+  },
+  SDG12: {
+    en: "",
+    no: "",
+  },
+  SDG13: {
+    en: "",
+    no: "",
+  },
+  SDG14: {
+    en: "",
+    no: "",
+  },
+  SDG15: {
+    en: "",
+    no: "",
+  },
+  SDG16: {
+    en: "",
+    no: "",
+  },
+  SDG17: {
+    en: "",
+    no: "",
+  }
 }
 
-export const sdgTopicTargetMapping = {
-  SDG01_01: "",
-  SDG02_02: "",
-  SDG03_03: "",
-  SDG04_04: "",
-  SDG05_05: "",
-  SDG06_06: "",
-  SDG07_07: "",
-  SDG08_08: "",
-  SDG09_09: "",
-  SDG10_10: "",
-  SDG11_11: "",
-  SDG12_12: "",
-  SDG13_13: "",
-  SDG14_14: "",
-  SDG15_15: "",
-  SDG16_16: "",
-  SDG17_17: ""
+export const sdgTopicTargetLabelMapping = {
+  SDG01_01: {
+    en: "",
+    no: "",
+  },
 }
-export const sdgActionMapping = {
-  SDG01: "",
-  SDG02: "",
-  SDG03: "",
-  SDG04: "",
-  SDG05: "",
-  SDG06: "",
-  SDG07: "",
-  SDG08: "",
-  SDG09: "",
-  SDG10: "",
-  SDG11: "",
-  SDG12: "",
-  SDG13: "",
-  SDG14: "",
-  SDG15: "",
-  SDG16: "",
-  SDG17: ""
+export const sdgActionLabelMapping = {
+  SDG01: {
+    en: "",
+    no: "",
+  },
+  SDG02: {
+    en: "",
+    no: "",
+  },
+  SDG03: {
+    en: "",
+    no: "",
+  },
+  SDG04: {
+    en: "",
+    no: "",
+  },
+  SDG05: {
+    en: "",
+    no: "",
+  },
+  SDG06: {
+    en: "",
+    no: "",
+  },
+  SDG07: {
+    en: "",
+    no: "",
+  },
+  SDG08: {
+    en: "",
+    no: "",
+  },
+  SDG09: {
+    en: "",
+    no: "",
+  },
+  SDG10: {
+    en: "",
+    no: "",
+  },
+  SDG11: {
+    en: "",
+    no: "",
+  },
+  SDG12: {
+    en: "",
+    no: "",
+  },
+  SDG13: {
+    en: "",
+    no: "",
+  },
+  SDG14: {
+    en: "",
+    no: "",
+  },
+  SDG15: {
+    en: "",
+    no: "",
+  },
+  SDG16: {
+    en: "",
+    no: "",
+  },
+  SDG17: {
+    en: "",
+    no: "",
+  }
 }
 
-export const sdgActionTargetMapping = {
-  SDG01_01: "",
-  SDG02_02: "",
-  SDG03_03: "",
-  SDG04_04: "",
-  SDG05_05: "",
-  SDG06_06: "",
-  SDG07_07: "",
-  SDG08_08: "",
-  SDG09_09: "",
-  SDG10_10: "",
-  SDG11_11: "",
-  SDG12_12: "",
-  SDG13_13: "",
-  SDG14_14: "",
-  SDG15_15: "",
-  SDG16_16: "",
-  SDG17_17: ""
+export const sdgActionTargetLabelMapping = {
+  SDG01_01: {
+    en: "",
+    no: "",
+  },
 }
