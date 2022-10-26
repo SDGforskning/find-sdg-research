@@ -1,19 +1,19 @@
 export const sdgTopicLabelMapping = {
   SDG01: {
-    en: "No Poverty",
-    no: "Utrydde Fattigdom",
+    en: "SDG1 No poverty",
+    no: "SDG1 Utrydde fattigdom",
   },
   SDG02: {
-    en: "Zero Hunger",
-    no: "Utrydde Sult",
+    en: "SDG2 Zero hunger",
+    no: "SDG2 Utrydde sult",
   },
   SDG03: {
-    en: "Good Health",
-    no: "God Helse",
+    en: "SDG3 Good health",
+    no: "SDG3 God helse",
   },
   SDG04: {
-    en: "Quality Education",
-    no: "God Utdanning",
+    en: "SDG4 Quality education",
+    no: "SDG4 God utdanning",
   },
   SDG05: {
     en: "",
@@ -24,8 +24,8 @@ export const sdgTopicLabelMapping = {
     no: "",
   },
   SDG07: {
-    en: "Clean Energy",
-    no: "Ren Energi",
+    en: "SDG7 Clean energy",
+    no: "SDG7 Ren energi",
   },
   SDG08: {
     en: "",
@@ -40,24 +40,24 @@ export const sdgTopicLabelMapping = {
     no: "",
   },
   SDG11: {
-    en: "Sustainable Cities",
-    no: "Bærekraftige Byer",
+    en: "SDG11 Sustainable cities",
+    no: "SDG11 Bærekraftige byer",
   },
   SDG12: {
     en: "",
     no: "",
   },
   SDG13: {
-    en: "Climate Action",
-    no: "Stoppe Klimaendringene",
+    en: "SDG13 Climate action",
+    no: "SDG13 Stoppe klimaendringene",
   },
   SDG14: {
-    en: "Life Below Water",
-    no: "Liv Under Vann",
+    en: "SDG14 Life below water",
+    no: "SDG14 Liv under vann",
   },
   SDG15: {
-    en: "Life on Land",
-    no: "Liv på Land",
+    en: "SDG15 Life on land",
+    no: "SDG15 Liv på land",
   },
   SDG16: {
     en: "",
@@ -71,20 +71,20 @@ export const sdgTopicLabelMapping = {
 
 export const sdgActionLabelMapping = {
   SDG01: {
-    en: "No Poverty",
-    no: "Utrydde Fattigdom",
+    en: "SDG1 No poverty",
+    no: "SDG1 Utrydde fattigdom",
   },
   SDG02: {
-    en: "Zero Hunger",
-    no: "Utrydde Sult",
+    en: "SDG2 Zero hunger",
+    no: "SDG2 Utrydde sult",
   },
   SDG03: {
-    en: "Good Health",
-    no: "God Helse",
+    en: "SDG3 Good health",
+    no: "SDG3 God helse",
   },
   SDG04: {
-    en: "Quality Education",
-    no: "God Utdanning",
+    en: "SDG4 Quality education",
+    no: "SDG4 God utdanning",
   },
   SDG05: {
     en: "",
@@ -95,8 +95,8 @@ export const sdgActionLabelMapping = {
     no: "",
   },
   SDG07: {
-    en: "Clean Energy",
-    no: "Ren Energi",
+    en: "SDG7 Clean energy",
+    no: "SDG7 Ren energi",
   },
   SDG08: {
     en: "",
@@ -111,24 +111,24 @@ export const sdgActionLabelMapping = {
     no: "",
   },
   SDG11: {
-    en: "Sustainable Cities",
-    no: "Bærekraftige Byer",
+    en: "SDG11 Sustainable cities",
+    no: "SDG11 Bærekraftige byer",
   },
   SDG12: {
     en: "",
     no: "",
   },
   SDG13: {
-    en: "Climate Action",
-    no: "Stoppe Klimaendringene",
+    en: "SDG13 Climate action",
+    no: "SDG13 Stoppe klimaendringene",
   },
   SDG14: {
-    en: "Life Below Water",
-    no: "Liv Under Vann",
+    en: "SDG14 Life below water",
+    no: "SDG14 Liv under vann",
   },
   SDG15: {
-    en: "Life on Land",
-    no: "Liv på Land",
+    en: "SDG15 Life on land",
+    no: "SDG15 Liv på land",
   },
   SDG16: {
     en: "",
