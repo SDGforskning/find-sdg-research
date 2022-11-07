@@ -172,7 +172,7 @@ export const sdgTopicTargetLabelMapping = {
   SDG02_01: {
     en: "2.1 Hunger",
     no: "",
-  },  
+  },
   SDG02_02: {
     en: "2.2 Malnutrition",
     no: "",
@@ -495,7 +495,7 @@ export const sdgActionTargetLabelMapping = {
   SDG02_01: {
     en: "2.1 Hunger",
     no: "",
-  },  
+  },
   SDG02_02: {
     en: "2.2 Malnutrition",
     no: "",

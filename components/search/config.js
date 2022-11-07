@@ -12,16 +12,19 @@ const config = {
       SDG_action: {},
       SDG_target_action: {},
       category: {},
+      subcategory: {},
     },
     result_fields: {
       result_title: { raw: {} },
       journal: { raw: {} },
+      openlinkfound: { raw: {} },
       OA_status_calc: { raw: {} },
       SDG_action: { raw: {} },
       SDG_topic: { raw: {} },
       SDG_target_action: { raw: {} },
       SDG_target_topic: { raw: {} },
       category: { raw: {} },
+      subcategory: { raw: {} },
       doi: { raw: {} },
       eissn: { raw: {} },
       fulldoi: { raw: {} },
@@ -37,8 +40,11 @@ const config = {
       scientific_result: { raw: {} },
       year: { raw: {} },
     },
+    // OR FACETS!!!!
     disjunctiveFacets: [
       "category.keyword",
+      "subcategory.keyword",
+      "scientific_field_npi.keyword",
       /* "SDG_topic.keyword",
       "SDG_target_topic.keyword",
       "SDG_action.keyword",
@@ -48,6 +54,8 @@ const config = {
       "mentionsSDG.keyword"
     ],
     facets: {
+      "openlinkfound.keyword": { type: "value" },
+      "language.keyword": { type: "value" },
       "OA_status_calc.keyword": { type: "value" },
       "nvi_level_historical.keyword": { type: "value" },
       "SDG_topic.keyword": { type: "value", size: 30, sort: "count" },
@@ -55,13 +63,15 @@ const config = {
       "SDG_action.keyword": { type: "value", size: 30, sort: "count" },
       "SDG_target_action.keyword": { type: "value", size: 30, sort: "count" },
       "category.keyword": { type: "value" },
+      "subcategory.keyword": { type: "value" },
       "scientific_field_npi.keyword": { type: "value" },
+      "scientific_result.keyword": { type: "value" },
       "year.keyword": { type: "value" },
       "mentionsSDG.keyword": { type: "value" },
       "mentionsNorway.keyword": { type: "value" },
     }
   },
-  autocompleteQuery: {
+  /* autocompleteQuery: {
     results: {
       search_fields: {
         search_as_you_type: {}
@@ -87,7 +97,7 @@ const config = {
       },
       size: 4
     }
-  }
+  } */
 };
 
 export default config
