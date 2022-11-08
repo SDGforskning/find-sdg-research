@@ -33,7 +33,7 @@ export const subcategoryMapping = {
   Doktorgradsavhandling: {
     en: "Dissertation (PhD)",
     no: "Doktorgradsavhandling",
-  }
+  },
   Errata: {
     en: "Errata",
     no: "Errata",
