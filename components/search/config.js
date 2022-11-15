@@ -30,6 +30,7 @@ const config = {
       fulldoi: { raw: {} },
       fulltextlink: { raw: {} },
       language: { raw: {} },
+      mentionssdgno: { raw: {} },
       mentionsNorway: { raw: {} },
       mentionsSDG: { raw: {} },
       nvi_level_historical: { raw: {} },
@@ -50,8 +51,9 @@ const config = {
       "SDG_action.keyword",
       "SDG_target_action.keyword", */
       "year.keyword",
-      "mentionsNorway.keyword",
-      "mentionsSDG.keyword"
+      "mentionssdgno.keyword",
+      /* "mentionsNorway.keyword",
+      "mentionsSDG.keyword" */
     ],
     facets: {
       "openlinkfound.keyword": { type: "value" },
@@ -67,8 +69,9 @@ const config = {
       "scientific_field_npi.keyword": { type: "value" },
       "scientific_result.keyword": { type: "value" },
       "year.keyword": { type: "value" },
-      "mentionsSDG.keyword": { type: "value" },
-      "mentionsNorway.keyword": { type: "value" },
+      "mentionssdgno.keyword": { type: "value" },
+      // "mentionsSDG.keyword": { type: "value" },
+      // "mentionsNorway.keyword": { type: "value" },
     }
   },
   /* autocompleteQuery: {
