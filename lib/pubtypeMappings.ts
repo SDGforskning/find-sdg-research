@@ -1,172 +1,168 @@
 export const categoryMapping = {
-  Tidsskriftspublikasjon: {
+  'Tidsskriftspublikasjon': {
     en: "Journal article",
     no: "Tidsskriftspublikasjon",
   },
-  Del av bok/rapport: {
+  'Del av bok/rapport': {
     en: "Chapter in book/report",
     no: "Del av bok/rapport",
   },
-  Rapport/avhandling: {
+  'Rapport/avhandling': {
     en: "Report/dissertation/thesis",
     no: "Rapport/avhandling",
   },
-  Bok: {
+  'Bok': {
     en: "Book",
     no: "Bok",
   }
 }
 
 export const subcategoryMapping = {
-  Anmeldelse: {
+  'Anmeldelse': {
     en: "Book review",
     no: "Anmeldelse",
   },
-  Annet: {
+  'Annet': {
     en: "Other",
     no: "Annet",
   },
-  Brev til redaktøren: {
+  'Brev til redaktøren': {
     en: "Letter to the editor",
     no: "Brev til redaktøren",
   },
-  Doktorgradsavhandling: {
+  'Doktorgradsavhandling': {
     en: "Dissertation (PhD)",
     no: "Doktorgradsavhandling",
   },
-  Errata: {
+  'Errata': {
     en: "Errata",
     no: "Errata",
   },
-  Fagartikkel: {
+  'Fagartikkel': {
     en: "Professional/Trade article",
     no: "Fagartikkel",
   },
-  Fagbok: {
+  'Fagbok': {
     en: "Professional/Trade book",
     no: "Fagbok",
   },
-  Faglig kapittel: {
+  'Faglig kapittel': {
     en: "Professional/Trade chapter",
     no: "Faglig kapittel",
   },
-  Forord: {
+  'Forord': {
     en: "Forword",
     no: "Forord",
   },
-  Forskerlinjeoppgave: {
+  'Forskerlinjeoppgave': {
     en: "Undergraduate Research assignment",
     no: "Forskerlinjeoppgave",
   },
-  Hovedfagsoppgave: {
+  'Hovedfagsoppgave': {
     en: "Hovedfagsoppgave",
     no: "Hovedfagsoppgave",
   },
-  Innledning: {
+  'Innledning': {
     en: "Introduction",
     no: "Innledning",
   },
-  Intervju tidsskrift: {
+  'Intervju tidsskrift': {
     en: "Interview",
     no: "Intervju",
   },
-  Kompendium: {
+  'Kompendium': {
     en: "Compendium",
     no: "Kompendium",
   },
-  Kronikk: {
+  'Kronikk': {
     en: "Opinion/popular article",
     no: "Kronikk",
   },
-  Leder: {
+  'Leder': {
     en: "Editorial",
     no: "Leder",
   },
-  Leksikon: {
+  'Leksikon': {
     en: "Dictionary",
     no: "Leksikon",
   },
-  Leksikonartikkel: {
+  'Leksikonartikkel': {
     en: "Dictionary article",
     no: "Leksikonartikkel",
   },
-  Leserinnlegg: {
+  'Leserinnlegg': {
     en: "Reader's letter",
     no: "Leserinnlegg",
   },
-  Lærebok: {
+  'Lærebok': {
     en: "Textbook",
     no: "Lærebok",
   },
-  Magisteravhandling: {
+  'Magisteravhandling': {
     en: "Magisteravhandling",
     no: "Magisteravhandling",
   },
-  Mastergradsoppgave: {
+  'Mastergradsoppgave': {
     en: "Thesis (Master)",
     no: "Mastergradsoppgave",
   },
-  Oppslagsverk: {
+  'Oppslagsverk': {
     en: "Encyclopedia",
     no: "Oppslagsverk",
   },
-  Lærebok: {
-    en: "Textbook",
-    no: "Lærebok",
-  },
-  Populærvitenskapelig artikkel: {
+  'Populærvitenskapelig artikkel': {
     en: "Popular science article",
     no: "Populærvitenskapelig artikkel",
   },
-  Populærvitenskapelig bok: {
+  'Populærvitenskapelig bok': {
     en: "Popular science book",
     no: "Populærvitenskapelig bok",
   },
-  Populærvitenskapelig kapittel/artikkel: {
+  'Populærvitenskapelig kapittel/artikkel': {
     en: "Popular science chapter",
     no: "Populærvitenskapelig kapittel/artikkel",
   },
-  Rapport: {
+  'Rapport': {
     en: "Report",
     no: "Rapport",
   },
-  Sammendrag/abstract: {
+  'Sammendrag/abstract': {
     en: "Summary",
     no: "Sammendrag/abstract",
   },
-  Short communication: {
+  'Short communication': {
     en: "Short communication",
     no: "Short communication",
   },
-  Utstillingskatalog: {
+  'Utstillingskatalog': {
     en: "Exhibition catalogue",
     no: "Utstillingskatalog",
   },
-  Vitenskapelig Kapittel/Artikkel/Konferanseartikkel: {
+  'Vitenskapelig Kapittel/Artikkel/Konferanseartikkel': {
     en: "Scientific chapter or conference proceedings",
     no: "Vitenskapelig Kapittel/Artikkel/Konferanseartikkel",
   },
-  Vitenskapelig antologi/Konferanseserie: {
+  'Vitenskapelig antologi/Konferanseserie': {
     en: "Scientific anthology",
     no: "Vitenskapelig antologi/Konferanseserie",
   },
-  Vitenskapelig artikkel: {
+  'Vitenskapelig artikkel': {
     en: "Scientific article",
     no: "Vitenskapelig artikkel'",
   },
-  Vitenskapelig kommentarutgave: {
+  'Vitenskapelig kommentarutgave': {
     en: "Scientific textual commentary",
     no: "Vitenskapelig kommentarutgave",
   },
-  Vitenskapelig monografi: {
+  'Vitenskapelig monografi': {
     en: "Scientific book",
     no: "Vitenskapelig monografi",
   },
-  Vitenskapelig oversiktsartikkel/review: {
+  'Vitenskapelig oversiktsartikkel/review': {
     en: "Scientific review article",
     no: "Vitenskapelig oversiktsartikkel",
   },
-  Lisensiatavhandling: {
+  'Lisensiatavhandling': {
     en: "Lisensiatavhandling",
     no: "Lisensiatavhandling",
   }
