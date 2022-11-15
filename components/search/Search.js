@@ -48,6 +48,10 @@ const Search = () => {
                 label="Language"
               />
               <Facet
+                field="mentionssdgno.keyword"
+                label="Mentions"
+              />
+              {/* <Facet
                 field="mentionsNorway.keyword"
                 label="Mentions Norway"
                 view={BooleanFacet}
@@ -56,7 +60,7 @@ const Search = () => {
                 field="mentionsSDG.keyword"
                 label="Mentions SDG"
                 view={BooleanFacet}
-              />
+              /> */}
               <Facet
                 field="SDG_topic.keyword"
                 label="SDG Topic"

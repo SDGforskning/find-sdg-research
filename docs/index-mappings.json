@@ -97,6 +97,15 @@
         }
       }
     },
+    "mentionssdgno": {
+      "type": "text",
+      "analyzer": "separate_values",
+      "fields": {
+        "keyword": {
+          "type": "keyword"
+        }
+      }
+    },
     "mentionsNorway": {
       "type": "boolean",
       "fields": {
@@ -105,15 +114,14 @@
         }
       }
     },
-    "openlinkfound" :
-    {
+    "openlinkfound": {
       "type": "boolean",
       "fields": {
         "keyword": {
           "type": "keyword"
         }
       }
-    },    
+    },
     "mentionsSDG": {
       "type": "boolean",
       "fields": {
