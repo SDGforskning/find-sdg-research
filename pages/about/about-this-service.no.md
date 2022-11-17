@@ -13,3 +13,26 @@ Tjenesten kan brukes for å finne forskningslitteratur som er knyttet til bærek
 Tjenesten ble etablert av Universitetsbiblioteket i Bergen, Universitetsbiblioteket i Stavanger og Biblioteket ved Høgskulen på Vestlandet gjennom et 2-årig prosjekt [LENKE] støttet av Nasjonalbiblioteket. Redaksjonen består av deltakere fra Universitetsbiblioteket i Bergen, Universitetsbiblioteket i Stavanger og Biblioteket ved Høgskulen på Vestlandet. Universitetsbiblioteket i Bergen har ansvaret for teknisk støtte til plattformen. [LENKE KONTAKT]
 
 Det er disse institusjonene samt eksterne bidragsytere som har ansvaret for vedlikehold av søkestrengene som er brukt i tjenesten. For mer informasjon, se Søkestrenger [LENKE].
+
+## Metoder og dekning
+
+### Dekning
+
+Tjenesten dekker i dag ni av bærekraftsmålene (målene 1, 2, 3, 4, 7, 11, 13, 14, 15, med mål 12 på vei inn). Flere mål kan bli lagt til tjenesten, avhengig av kapasitet. 
+For at en publikasjon skal bli inkludert/ være omfattet av tjenesten, må den a) være et skriftlig arbeid, skrevet på norsk eller engelsk, b) ha en forfatter fra en norsk institusjon, og c) være indeksert i [CRISTIN](https://www.cristin.no/) (Current Research Information System in Norway). Dette dekker en stor del av forskningsproduksjonen i Norge. Imidlertid kan noen rapporter og populærvitenskapelige arbeid mangle, siden disse ikke alltid blir registrert i CRISTIN. I tillegg må publikasjonen være knyttet til et bærekraftsmål i tråd med våre kartleggingsmetoder.  
+
+For tiden inneholder tjenesten i hovedsak vitenskapelige artikler skrevet på engelsk. Publikasjoner skrevet på norsk og andre publikasjonstyper vil bli lagt til i løpet av de neste månedene.
+
+### Metoder for tilknytning til bærekraftsmålene
+
+Publikasjonene I tjenesten er knyttet til bærekraftsmålene gjennom en metode vi har kalt «the Bergen approach». Dette omfatter:
+
+1.	Å tolke hva et bærekraftsmål handler om. Hvilke tema og hvilke handlinger er knyttet til målene?
+2.	Å definere hvilken forskning som skal oppfattes som «relatert». Her bruker vi to tilnærminger – i action approach (SDG - handling) blir forskning som er tett knyttet til handlingene i målene, betraktet som relevant, f.eks. «utrydde sult». Denne tilnærmingen tar sikte på å finne en liten kjerne av forskning som direkte bidrar til handlinger spesifisert i målene. I topic approach (SDG - tema) er det tilstrekkelig at forskningen nevner temaene i målene for å bli ansett som relevant, f.eks. «sult». Dette er derfor et større og bredere sett av publikasjoner.
+3.	Å utvikle boolske søkestrenger for å finne denne forskningen, inkludert norsk oversettelse av søkestrengene
+4.	Å dokumentere disse stregene.
+
+Hvis du har tilgang til Web of Science eller kan kjøre Python, er du velkommen til å prøve ut, gjenbruke eller gjøre endringer i våre søkestrenger. Søkestrengene samt all dokumentasjon er tilgjengelig under Søkestrenger [LINK]. 
+
+Metadataene i tjenesten er hentet fra CRISTIN. 
+
