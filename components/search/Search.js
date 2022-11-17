@@ -48,12 +48,12 @@ const Search = () => {
               <Facet
                 field="language.keyword"
                 label="Language"
-                view={MappedLabelsFacet}
-                mapping={mentionsMapping}
               />
               <Facet
                 field="mentionssdgno.keyword"
                 label="Mentions"
+                view={MappedLabelsFacet}
+                mapping={mentionsMapping}
               />
               {/* <Facet
                 field="mentionsNorway.keyword"
@@ -125,7 +125,18 @@ const Search = () => {
               />
               <Facet
                 field="nvi_level_historical.keyword"
-                label="NVI Level"
+                label="NVI"
+                view={MappedLabelsFacet}
+                mapping={{
+                  "1.0": {
+                    en: "Level 1",
+                    en: "Nivå 1",
+                  },
+                  "2.0": {
+                    en: "Level 2",
+                    en: "Nivå 2",
+                  }
+                }}
               />
               <Facet
                 field="scientific_field_npi.keyword"
