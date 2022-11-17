@@ -6,8 +6,8 @@ import { NBIcon } from '@components/icons/nb';
 import { UiSIcon } from '@components/icons/uis';
 
 const TITLE = {
-  en: "Find SDG research",
-  no: "Finn bærekraftsforskning",
+  en: "Find SDG research (beta)",
+  no: "Finn bærekraftsforskning (beta)",
 };
 
 export default {
