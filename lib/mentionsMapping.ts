@@ -1,11 +1,10 @@
 export const mentionsMapping = {
-  'mentionsNorway': {
+  mentionsNorway: {
     en: "Mentions Norway",
     no: "Nevner Norge",
   },
-  'mentionsSDG': {
+  mentionsSDG: {
     en: "Mentions the SDGs",
     no: "Nevner bærekraftsmålene",
   }
 }
-

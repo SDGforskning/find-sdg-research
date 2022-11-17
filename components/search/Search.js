@@ -19,6 +19,8 @@ import MappedLabelsFacet from './MappedLabelsFacet'
 import ClearFilter from './ClearFilter'
 import config from './config'
 import { sdgActionLabelMapping, sdgActionTargetLabelMapping, sdgTopicLabelMapping, sdgTopicTargetLabelMapping } from 'lib/sdgMappings'
+import { mentionsMapping } from 'lib/mentionsMapping'
+
 
 const Search = () => {
   return (
@@ -50,6 +52,8 @@ const Search = () => {
               <Facet
                 field="mentionssdgno.keyword"
                 label="Mentions"
+                view={MappedLabelsFacet}
+                mapping={mentionsMapping}
               />
               {/* <Facet
                 field="mentionsNorway.keyword"
@@ -104,6 +108,7 @@ const Search = () => {
               <Facet
                 field="scientific_result.keyword"
                 label="Scientific (NVI)"
+                view={BooleanFacet}
               />
               {<Facet
                 field="category.keyword"
@@ -120,7 +125,18 @@ const Search = () => {
               />
               <Facet
                 field="nvi_level_historical.keyword"
-                label="NVI Level"
+                label="NVI"
+                view={MappedLabelsFacet}
+                mapping={{
+                  "1.0": {
+                    en: "Level 1",
+                    en: "Nivå 1",
+                  },
+                  "2.0": {
+                    en: "Level 2",
+                    en: "Nivå 2",
+                  }
+                }}
               />
               <Facet
                 field="scientific_field_npi.keyword"
