@@ -19,6 +19,8 @@ import MappedLabelsFacet from './MappedLabelsFacet'
 import ClearFilter from './ClearFilter'
 import config from './config'
 import { sdgActionLabelMapping, sdgActionTargetLabelMapping, sdgTopicLabelMapping, sdgTopicTargetLabelMapping } from 'lib/sdgMappings'
+import { mentionsMapping } from 'lib/mentionsMapping'
+
 
 const Search = () => {
   return (
@@ -46,6 +48,8 @@ const Search = () => {
               <Facet
                 field="language.keyword"
                 label="Language"
+                view={MappedLabelsFacet}
+                mapping={mentionsMapping}
               />
               <Facet
                 field="mentionssdgno.keyword"
@@ -104,6 +108,7 @@ const Search = () => {
               <Facet
                 field="scientific_result.keyword"
                 label="Scientific (NVI)"
+                view={BooleanFacet}
               />
               {<Facet
                 field="category.keyword"
