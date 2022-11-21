@@ -27,4 +27,4 @@ Year the publication was published according to Cristin.
 ### NVI level
 Level of the publication according to NVI (Norsk Vitenskapsindex). This is based on which channel (journal or publisher) the publication was published by. You can read more about NVI levels on the [Norsk Publiseringsindikator webpages](https://npi.hkdir.no/informasjon#nivaainndeling).
 ### Scientific field
-This filter is only available for works considered “scientific” according to NVI. It is based on a subject classification of the channel (journal or publisher) the work was published in. The channels in each field can be browsed on the [Norsk Publiseringsindikator webpages]( (https://npi.hkdir.no/fagfeltoversikt).
+This filter is only available for works considered “scientific” according to NVI. It is based on a subject classification of the channel (journal or publisher) the work was published in. The channels in each field can be browsed on the [Norsk Publiseringsindikator webpages](https://npi.hkdir.no/fagfeltoversikt).
