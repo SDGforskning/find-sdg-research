@@ -6,11 +6,11 @@ Tjenesten kan brukes for å finne forskningslitteratur som er knyttet til bærek
 
 ## Hvorfor bygget vi tjenesten?
 
-Å gi alle enkel tilgang til forskningspublikasjoner relatert til FNs bærekraftsmål er viktig for å spre kunnskap, åpne opp forskningen og for å nå bærekraftsmålene.  Forskningspublikasjonene kan være vanskelige å få tak i, særlig for dem som ikke tilhører en utdannings- eller forskningsinstitusjon. Andre tjenester er ofte ikke tilgjengelige for allmennheten, de har dårlig dekning av norskspråklige publikasjoner, og de mangler dokumentasjon av metodene som er brukt. Vår tjeneste skal gi alle som ønsker det, muligheten til å skaffe seg oversikt over og tilgang til forskningspublikasjoner knyttet til FNs bærekraftsmål, inkludert publikasjoner på norsk. Vi vil sørge for at metodene våre blir godt dokumentert og delt åpent slik at gjenbruk og tilpasninger blir mulig.  
+Å gi alle enkel tilgang til forskningspublikasjoner relatert til FNs bærekraftsmål er viktig for å spre kunnskap, åpne opp forskningen og for å nå bærekraftsmålene.  Forskningspublikasjonene kan være vanskelige å få tak i, særlig for dem som ikke tilhører en utdannings- eller forskningsinstitusjon. Andre tjenester er ofte ikke tilgjengelige for allmennheten, kan ha dårlig dekning av norskspråklige publikasjoner, og har ikke alltid tydelig dokumentasjon av metodene som er brukt. Vår tjeneste skal gi alle som ønsker det, muligheten til å skaffe seg oversikt over og tilgang til forskningspublikasjoner knyttet til FNs bærekraftsmål, inkludert publikasjoner på norsk. Vi vil sørge for at metodene våre blir godt dokumentert og delt åpent slik at gjenbruk og tilpasninger blir mulig.  
 
 ## Organisasjon
 
-Tjenesten ble etablert av Universitetsbiblioteket i Bergen, Universitetsbiblioteket i Stavanger og Biblioteket ved Høgskulen på Vestlandet gjennom et 2-årig prosjekt [LENKE] støttet av Nasjonalbiblioteket. Redaksjonen består av deltakere fra Universitetsbiblioteket i Bergen, Universitetsbiblioteket i Stavanger og Biblioteket ved Høgskulen på Vestlandet. Universitetsbiblioteket i Bergen har ansvaret for teknisk støtte til plattformen. [LENKE KONTAKT]
+Tjenesten ble etablert av Universitetsbiblioteket i Bergen, Universitetsbiblioteket i Stavanger og Biblioteket ved Høgskulen på Vestlandet gjennom et [2-årig prosjekt](https://www.uib.no/ub/148803/b%C3%A6rekraftsforskning-alle-%E2%80%93-en-transparent-kartleggings-og-gjenfinningstjeneste) støttet av Nasjonalbiblioteket. Redaksjonen består av deltakere fra Universitetsbiblioteket i Bergen, Universitetsbiblioteket i Stavanger og Biblioteket ved Høgskulen på Vestlandet. Universitetsbiblioteket i Bergen har ansvaret for teknisk støtte til plattformen. [LENKE KONTAKT]
 
 Det er disse institusjonene samt eksterne bidragsytere som har ansvaret for vedlikehold av søkestrengene som er brukt i tjenesten. For mer informasjon, se Søkestrenger [LENKE].
 
@@ -19,9 +19,9 @@ Det er disse institusjonene samt eksterne bidragsytere som har ansvaret for vedl
 ### Dekning
 
 Tjenesten dekker i dag ni av bærekraftsmålene (målene 1, 2, 3, 4, 7, 11, 13, 14, 15, med mål 12 på vei inn). Flere mål kan bli lagt til tjenesten, avhengig av kapasitet. 
-For at en publikasjon skal bli inkludert/ være omfattet av tjenesten, må den a) være et skriftlig arbeid, skrevet på norsk eller engelsk, b) ha en forfatter fra en norsk institusjon, og c) være indeksert i [CRISTIN](https://www.cristin.no/) (Current Research Information System in Norway). Dette dekker en stor del av forskningsproduksjonen i Norge. Imidlertid kan noen rapporter og populærvitenskapelige arbeid mangle, siden disse ikke alltid blir registrert i CRISTIN. I tillegg må publikasjonen være knyttet til et bærekraftsmål i tråd med våre kartleggingsmetoder.  
+For at en publikasjon skal være omfattet av tjenesten, må den a) være indeksert i [CRISTIN](https://www.cristin.no/) (Current Research Information System in Norway), b) bli skrevet på norsk eller engelsk, og c) blir kategorisert i CRISTIN som *Bok*, *Del av bok/rapport*, *Rapport/avhandling* eller *Tidsskriftpublikasjon*. Dette dekker en stor del av den skriftlige forskningsproduksjonen i Norge. Imidlertid kan noen rapporter og populærvitenskapelige arbeid mangle, siden disse ikke alltid blir registrert i CRISTIN. I tillegg må publikasjonen være knyttet til et bærekraftsmål i tråd med våre kartleggingsmetoder.  
 
-For tiden inneholder tjenesten i hovedsak vitenskapelige artikler skrevet på engelsk. Publikasjoner skrevet på norsk og andre publikasjonstyper vil bli lagt til i løpet av de neste månedene.
+For tiden inneholder tjenesten i hovedsak vitenskapelige artikler skrevet på engelsk, og publikasjoner registrert i CRISTIN med publiseringsår fra og med 2015 (til og med oktober 2022). Publikasjoner skrevet på norsk og andre publikasjonstyper vil bli lagt til i løpet av de neste månedene. 
 
 ### Metoder for tilknytning til bærekraftsmålene
 
@@ -32,7 +32,7 @@ Publikasjonene I tjenesten er knyttet til bærekraftsmålene gjennom en metode v
 3.	Å utvikle boolske søkestrenger for å finne denne forskningen, inkludert norsk oversettelse av søkestrengene
 4.	Å dokumentere disse stregene.
 
-Hvis du har tilgang til Web of Science eller kan kjøre Python, er du velkommen til å prøve ut, gjenbruke eller gjøre endringer i våre søkestrenger. Søkestrengene samt all dokumentasjon er tilgjengelig under Søkestrenger [LINK]. 
+Hvis du har tilgang til Web of Science eller kan kjøre Python, er du velkommen til å prøve ut, gjenbruke eller gjøre endringer i våre søkestrenger. Søkestrengene samt mer detaljert dokumentasjon er tilgjengelig under Søkestrenger [LINK]. 
 
 Metadataene i tjenesten er hentet fra CRISTIN. 
 

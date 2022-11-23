@@ -1,5 +1,6 @@
 # Ofte stilte spørsmål
 
+
 ## Finn forskning
 
 ### Artikkelen jeg ønsker å lese er ikke åpent tilgjengelig for alle. Hva gjør jeg?
@@ -17,14 +18,11 @@ Hvert av FNs bærekraftsmål er delt opp i flere konkrete og mer detaljerte delm
 ### Hva er forskjell på SDG Topic og SDG Action?
 Søkestrengene finnes i to varianter, etter hvor tett forskningen er knyttet opp mot delmålene under bærekraftsmålene. "SDG Action" inkluderer færre resultater enn "SDG Topic". Les mer under [Methods & Coverage].
 
-### Hvorfor får jeg ikke treff på artikkelen jeg har skrevet?
-Det er en forutsetning at artikkelen er indeksert i Cristin etter 2015 og at artikkelens tittel/abstract/emneord er formulert på en slik måte at den fanges opp av våre søkestrenger. I tillegg må publikasjonen være knyttet til et bærekraftsmål i tråd med våre kartleggingsmetoder. Du kan lese mer under [Om tjenesten, Dekning].
+### Hvorfor får jeg ikke treff på publikasjonen jeg har skrevet?
+Det er en forutsetning at publikasjonen er indeksert i Cristin etter 2015 og at publikasjonens tittel/abstract/emneord er formulert på en slik måte at den fanges opp av våre søkestrenger. I tillegg må publikasjonen være knyttet til et bærekraftsmål i tråd med våre kartleggingsmetoder. Du kan lese mer under [Om tjenesten, Dekning].
 
 ### Hvorfor får jeg irrelevante treff?
 Du vil kunne oppleve dette fordi det å utvikle søkestrenger er komplisert og irrelevante treff vil forekomme. Om du velger "SDG action" framfor "SDG topic" vil du normalt få mer relevante treff. Om du vil gi tilbakemelding om noe som ikke ser riktig ut, tar [kontakt].
-
-### Hvor finner jeg flere rapporter og andre vitenskapelig arbeid? 
-[Lenke til egen resurssamling]
 
 ### Hvordan ser overlapp mellom ulike bærekraftsmål?
 I filter mulighetene til venstre, velg to bærekraftsmål (under enten "SDG Topic" eller "SDG Action", avhengig om du ønsker å ha mindre eller mer spisset resultater). Da får du se publikasjoner som faller inn under begge to bærekraftsmål. 
@@ -38,15 +36,11 @@ Du kan fint bruke søkestrengene i andre søkemotorer, men du vil da måtte gjø
 ### Hvordan er søkestrengene utviklet?
 Du finner informasjon om dette her: [lenke til Kartleggingsmetoder / Metoder for tilknytning til bærekraftsmålene] 
 
+
 ## Statistikk og analyser
 
 Statistikk om SDG-forskning i Norge er under arbeid, og blir lansert etter at datasettet er komplett (estimert tidlig 2023). 
 
-Hvordan er statistikken beregnet?
-
-Hvilke datakilder er brukt?
-
-Kan jeg gjenbruke statistikken?
 
 ## Om tjenesten
 
