@@ -1,6 +1,6 @@
 # Bærekraftsmålene
 
-FNs 17 bærekraftsmål omtales som «verdens felles arbeidsplan for å utrydde fattigdom, bekjempe ulikhet og stoppe klimaendringene innen 2030» (https://www.fn.no/om-fn/fns-baerekraftsmaal).De 17 målene, med sine 169 delmål og 232 indikatorer ble vedtatt av generalforsamlingen i 2015. De utgjør en plan som alle verdens land har sagt de vil jobbe for å oppfylle. 
+FNs 17 bærekraftsmål omtales som «verdens felles arbeidsplan for å utrydde fattigdom, bekjempe ulikhet og stoppe klimaendringene innen 2030» (https://www.fn.no/om-fn/fns-baerekraftsmaal). De 17 målene, med sine 169 delmål og 232 indikatorer ble vedtatt av generalforsamlingen i 2015. De utgjør en plan som alle verdens land har sagt de vil jobbe for å oppfylle. 
 
 Bærekraftsmålene avløste FNs tusenårsmål, som handlet om sosial og økonomisk utvikling i verden i perioden mellom 2000 og 2015. Bærekraftsmålene er flere, mer ambisiøse, og søker å adressere årsakene til fattigdom, ulikhet og klimaendringer i større grad enn tusensårsmålene gjorde. 
 
