@@ -18,10 +18,10 @@ Each of the SDGs consists of several more detailed targets. You can read more ab
 We map publications using two approaches, which differ in how closely related research has to be to the SDGs to be included. "SDG Action" includes fewer results that "SDG Topic". You can read more about these under [Methods & Coverage].
 
 ### Why can't I find a specific publication?
-The publication has to be indexed in CRISTIN with a publication date from 2015 to be included in this service. The title/abstract/keywords also have to include terms that allow it to be mapped as "SDG-relevant" by our mapping. Det er en forutsetning at artikkelen er indeksert i Cristin etter 2015 og at artikkelens tittel/abstract/emneord er formulert på en slik måte at den fanges opp av våre søkestrenger. You can read more under [About this service,Coverage].
+The publication has to be indexed in CRISTIN with a publication date from 2015 to be included in this service. The title/abstract/keywords also have to include terms that allow it to be mapped as "SDG-relevant" by our mapping. You can read more under [About this service,Coverage].
 
 ### Why can I see some results that look irrelevant?
-Some irrelevant results will likely make it into the service because mapping via search strings (our method) is not 100 % reliable. If you are finding this problematic, you can choose to filter using "SDG Action" (a narrower definition of relevance) instead of "SDG Topic" (broader). If you would like to give us feedback about something that does not look right/irrelavnt results, please [contact us].
+Some irrelevant results will likely make it into the service because mapping via search strings (our method) is not 100 % reliable. If you are finding this problematic, you can choose to filter using "SDG Action" (a narrower definition of relevance) instead of "SDG Topic" (broader). If you would like to give us feedback about something that does not look right/irrelevant results, please [contact us].
 
 ### Can I see results that are relevant to multiple SDGs?
 In the filter options to the left, choose two or more SDGs (either using "SDG Topic" or "SDG Action", dependent on whether you want a broader or narrower set of results). The results will show publications which are mapped to the SDGs you have chosen. 
@@ -47,7 +47,7 @@ Statistics about SDG research in Norway are under development, and will be publi
 We currently cover 9 SDGs (SDGs 1, 2, 3, 4, 7, 11, 13, 14, 15, with SDG 12 under development). More can be added to the service, depending on our capacity. 
 
 ### What do you consider SDG-"relevant"? How did you decide which publciations to cover?
-We consider research publications "relevant" if we can related them to one of the SDG targets. You can read more about our interpretation and method under [About this service].
+We consider research publications "relevant" if we can relate them to one of the SDG targets. You can read more about our interpretation and method under [About this service].
 
 ### How have you found these publications? 
 Our methods are described under [About].
