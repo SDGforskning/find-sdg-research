@@ -18,7 +18,7 @@ The search strings used to map SDG-related research are maintained by these inst
 
 ### Coverage
 
-We currently cover nine of the Sustainable Development Goals (SDGs 1, 2, 3, 4, 7, 11, 13, 14, 15, with SDG 12 on the way). Additional SDGs can be added, depending on capacity. For a publication to be in our total dataset, it must a) be indexed in [CRISTIN](https://www.cristin.no/) (Current Research Information System in Norway), b) be written in English or Norwegian, c) be categorised in CRISTIN as a *book*, *part of a book/report*, *report/dissertation* or *journal publication*. This covers a relatively large proportion of scientific outputs in Norway. However, coverage of reports or popular works (which researchers do not always register in CRISTIN) may vary. Finally, to be included in the service, a publication must be related to an SDG according to our SDG-mapping method.
+We currently cover nine of the Sustainable Development Goals (SDGs 1, 2, 3, 4, 7, 11, 13, 14, 15, with SDG 12 on the way). Additional SDGs can be added, depending on capacity. For a publication to be in our total dataset, it must a) be indexed in [CRISTIN](https://www.cristin.no/) (Current Research Information System in Norway), b) be written in English or Norwegian, and c) be categorised in CRISTIN as a *book*, *part of a book/report*, *report/dissertation* or *journal publication*. This covers a relatively large proportion of scientific outputs in Norway. However, coverage of reports or popular works (which researchers do not always register in CRISTIN) may vary. Finally, to be included in the service, a publication must be related to an SDG according to our SDG-mapping method.
 
 Currently the website indexes mostly English scientific articles, registered in CRISTIN as being published in 2015 or later (up to October 2022). A wider range of publication types and works written in Norwegian will be added in the next few months.
 
@@ -29,7 +29,7 @@ The research publications in this service were mapped to SDGs using a method we 
 1)	Interpreting what an SDG target is about. What are the themes? What is the action?
 2)	Defining what research should be considered “related”. Here we use two approaches – in the action approach, research mentioning the actions of the targets is considered relevant (e.g. “end hunger”) – this aims to find a small, core set of action-oriented research. In the topic approach, it is enough for research to mention the topics of the target to be considered relevant (e.g. “hunger”) – this is therefore a larger, broader set.
 3)	Creating Boolean search strings to find this research, including Norwegian translations.
-4)	Documenting these steps
+4)	Documenting these steps.
 
 If you have access to Web of Science or can run Python, you are welcome to try out, reuse or modify our strings. The strings, together with more detailed documentation, are available under Search Strings [LINK]. 
 
