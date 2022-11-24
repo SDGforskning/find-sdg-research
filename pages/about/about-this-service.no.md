@@ -19,18 +19,18 @@ Det er disse institusjonene samt eksterne bidragsytere som har ansvaret for vedl
 ### Dekning
 
 Tjenesten dekker i dag ni av bærekraftsmålene (målene 1, 2, 3, 4, 7, 11, 13, 14, 15, med mål 12 på vei inn). Flere mål kan bli lagt til tjenesten, avhengig av kapasitet. 
-For at en publikasjon skal være omfattet av tjenesten, må den a) være indeksert i [CRISTIN](https://www.cristin.no/) (Current Research Information System in Norway), b) bli skrevet på norsk eller engelsk, og c) blir kategorisert i CRISTIN som *Bok*, *Del av bok/rapport*, *Rapport/avhandling* eller *Tidsskriftpublikasjon*. Dette dekker en stor del av den skriftlige forskningsproduksjonen i Norge. Imidlertid kan noen rapporter og populærvitenskapelige arbeid mangle, siden disse ikke alltid blir registrert i CRISTIN. I tillegg må publikasjonen være knyttet til et bærekraftsmål i tråd med våre kartleggingsmetoder.  
+For at en publikasjon skal være omfattet av tjenesten, må den være a) indeksert i [CRISTIN](https://www.cristin.no/) (Current Research Information System in Norway), b) skrevet på norsk eller engelsk, og c) kategorisert i CRISTIN som *Bok*, *Del av bok/rapport*, *Rapport/avhandling* eller *Tidsskriftpublikasjon*. Dette dekker en stor del av den skriftlige forskningsproduksjonen i Norge. Imidlertid kan noen rapporter og populærvitenskapelige arbeider mangle, siden disse ikke alltid blir registrert i CRISTIN. I tillegg må publikasjonen være knyttet til et bærekraftsmål i tråd med våre kartleggingsmetoder.  
 
 For tiden inneholder tjenesten i hovedsak vitenskapelige artikler skrevet på engelsk, og publikasjoner registrert i CRISTIN med publiseringsår fra og med 2015 (til og med oktober 2022). Publikasjoner skrevet på norsk og andre publikasjonstyper vil bli lagt til i løpet av de neste månedene. 
 
 ### Metoder for tilknytning til bærekraftsmålene
 
-Publikasjonene I tjenesten er knyttet til bærekraftsmålene gjennom en metode vi har kalt «the Bergen approach». Dette omfatter:
+Publikasjonene i tjenesten er knyttet til bærekraftsmålene gjennom en metode vi har kalt «the Bergen approach». Dette omfatter:
 
 1.	Å tolke hva et bærekraftsmål handler om. Hvilke tema og hvilke handlinger er knyttet til målene?
-2.	Å definere hvilken forskning som skal oppfattes som «relatert». Her bruker vi to tilnærminger – i action approach (SDG - handling) blir forskning som er tett knyttet til handlingene i målene, betraktet som relevant, f.eks. «utrydde sult». Denne tilnærmingen tar sikte på å finne en liten kjerne av forskning som direkte bidrar til handlinger spesifisert i målene. I topic approach (SDG - tema) er det tilstrekkelig at forskningen nevner temaene i målene for å bli ansett som relevant, f.eks. «sult». Dette er derfor et større og bredere sett av publikasjoner.
-3.	Å utvikle boolske søkestrenger for å finne denne forskningen, inkludert norsk oversettelse av søkestrengene
-4.	Å dokumentere disse stregene.
+2.	Å definere hvilken forskning som skal oppfattes som «relatert». Her bruker vi to tilnærminger – i action approach (SDG - handling) blir forskning som er tett knyttet til handlingene i målene betraktet som relevant, f.eks. «utrydde sult». Denne tilnærmingen tar sikte på å finne en liten kjerne av forskning som direkte bidrar til handlinger spesifisert i målene. I topic approach (SDG - tema) er det tilstrekkelig at forskningen nevner temaene i målene for å bli ansett som relevant, f.eks. «sult». Dette er derfor et større og bredere sett av publikasjoner.
+3.	Å utvikle boolske søkestrenger for å finne denne forskningen, inkludert norsk oversettelse av søkestrengene.
+4.	Å dokumentere disse strengene.
 
 Hvis du har tilgang til Web of Science eller kan kjøre Python, er du velkommen til å prøve ut, gjenbruke eller gjøre endringer i våre søkestrenger. Søkestrengene samt mer detaljert dokumentasjon er tilgjengelig under Søkestrenger [LINK]. 
 
