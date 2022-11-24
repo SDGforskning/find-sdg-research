@@ -9,7 +9,7 @@ Du kan kontakte ditt nærmeste offentlige bibliotek. De kan skaffe deg en kopi a
 ### Jeg får for mange treff
 Prøv å avgrense søket ditt med bruk av filter til venstre, for eksempel velg bestemte år eller søk kun i ett bærekraftsmål om gangen. Søker du i "SDG Action" får du færre treff enn om du søker i "SDG Topic". 
 
-### Jeg har for få treff
+### Jeg får for få treff
 Om du har brukt søk, sjekk at du har stavet ordene riktig. Du kan også prøve å søke på mer generelle ord. Om du har søkt med norske ord, prøv ett søk til på engelsk. Om du har avgrenset til ett bærekraftsmål med bruk av filter, kan du utvide søket ved å bruke "SDG Topic" heller enn "SDG Action".
 
 ### Hva er "targets" (delmål)?
