@@ -2,12 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-.dark nav>a[href='/search'] {
+.dark nav>a[href='/sok'] {
   font-weight: 800;
   color: white !important;
 }
 
-nav>a[href='/search'] {
+nav>a[href='/sok'] {
   font-weight: 800;
   color: black !important;
 }

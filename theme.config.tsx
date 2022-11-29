@@ -91,17 +91,10 @@ export default {
             <ul className='flex gap-10'>
               <ul>
                 <li>
-                  <a href='/help/about-this-service'>{locale === 'en' ? 'About the service' : 'Om tjenesten'}</a>
+                  <a href='/om/om-tjenesten'>{locale === 'en' ? 'About the service' : 'Om tjenesten'}</a>
                 </li>
                 <li>
-                  <a href='/accessibility-statement'>{locale === 'en' ? 'Accessibility statement' : 'Tilgjengelighetserklæring'}</a>
-                </li>
-              </ul>
-              <ul>
-                <li>
-                  <a href='https://bibliotekutvikling.no/prosjektbank/prosjekt/baerekraftsforskning-for-alle-en-transparent-kartleggings-og-gjenfinningstjeneste/'>
-                    {locale === 'en' ? 'Project application (in norwegian)' : 'Prosjektsøknad'}
-                  </a>
+                  <a href='/tilgjengelighetserklaring'>{locale === 'en' ? 'Accessibility statement' : 'Tilgjengelighetserklæring'}</a>
                 </li>
               </ul>
             </ul>
