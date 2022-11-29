@@ -97,13 +97,6 @@ export default {
                   <a href='/tilgjengelighetserklaring'>{locale === 'en' ? 'Accessibility statement' : 'Tilgjengelighetserklæring'}</a>
                 </li>
               </ul>
-              <ul>
-                <li>
-                  <a href='https://bibliotekutvikling.no/prosjektbank/prosjekt/baerekraftsforskning-for-alle-en-transparent-kartleggings-og-gjenfinningstjeneste/'>
-                    {locale === 'en' ? 'Project application (in norwegian)' : 'Prosjektsøknad'}
-                  </a>
-                </li>
-              </ul>
             </ul>
             <div className='text-sm'>
               {`Creative Commons Attribution 4.0 ${new Date().getFullYear()} - ${TITLE[locale]}`}
