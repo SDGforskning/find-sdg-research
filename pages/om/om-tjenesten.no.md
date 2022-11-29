@@ -1,6 +1,6 @@
 # Om denne tjenesten
 
-Målet med denne tjenesten er at alle – allmennheten, offentlig sektor, næringslivet, forskere, studenter – enkelt kan få oversikt over forskningspublikasjoner som er knyttet til FNs bærekraftsmål. Der det er mulig gir tjenesten også tilgang til publikasjonene i fulltekst. Primært dekker tjenesten litteratur knyttet til delmålene under bærekraftsmålene. Les mer om bærekraftsmålene og delmålene her [LINK].
+Målet med denne tjenesten er at alle – allmennheten, offentlig sektor, næringslivet, forskere, studenter – enkelt kan få oversikt over forskningspublikasjoner som er knyttet til FNs bærekraftsmål. Der det er mulig gir tjenesten også tilgang til publikasjonene i fulltekst. Primært dekker tjenesten litteratur knyttet til delmålene under bærekraftsmålene. Les mer om bærekraftsmålene og delmålene under [Om Bærekraftsmålene](/om/om-baerekraftsmalene).
 
 Tjenesten kan brukes for å finne forskningslitteratur som er knyttet til bærekraftsmålene og som har forfattere fra norske institusjoner. Man kan filtrere på bærekraftsmål og justere treffmengden ved å velge et sett av publikasjoner å søke i: Snevre inn ved å søke kun etter forskning som er tett knyttet til handlingene i delmålene («SDG - handling»), eller utvide søket ved å søke i et større sett knyttet til generelle tema i delmålene («SDG - tema»). Les mer om våre metoder og dekning under. [Se hjelpesider for søkehjelp](/hjelp/sokehjelp).
 

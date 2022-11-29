@@ -1,6 +1,6 @@
 # About this service
 
-The aim of this service is to allow anyone – those working in academia, public and private sectors, students, and the general public – to find Norwegian publications related to the UN’s Sustainable Development Goals, and, when possible, access to the full text. It primarily covers literature that is related to the targets of the SDGs. Read more about the Sustainable Development Goals (SDGs) and their targets here [LINK].
+The aim of this service is to allow anyone – those working in academia, public and private sectors, students, and the general public – to find Norwegian publications related to the UN’s Sustainable Development Goals, and, when possible, access to the full text. It primarily covers literature that is related to the targets of the SDGs. Read more about the Sustainable Development Goals (SDGs) and their targets under [About the SDGs](/om/om-baerekraftsmalene)
 
 You can use this service to find SDG-related research literature from Norwegian institutions. You can filter by SDG, and adjust the number of results you get by choosing a set to search in: You can narrow down your search by searching only for research closely related to actions in the targets ("SDG - action"), or widen out your search by looking at research related to the topics in the targets ("SDG - topic"). Methods and coverage are described in more detail below. [See here for help using the search](/hjelp/sokehjelp).
 

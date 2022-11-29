@@ -13,9 +13,9 @@ Language the publication is written in.
 ### Mentions
 If we have found that the publication mentions either Norway or the SDGs themselves. For example, a publication titled “Improving education in an Oslo school” would count as mentioning Norway; one titled “SDG 3: Where to next?” would count as mentioning the SDGs.
 ### SDG Topic, SDG Topic Target
-This is where you can filter publications related to certain SDGs and SDG targets, using the “topic” approach. The topic approach finds a wide set of results that mention topics in the SDG targets (e.g. “hunger”). Use this (rather than “SDG action”) if you want a wider set of results. See [About this service] for more information.
+This is where you can filter publications related to certain SDGs and SDG targets, using the “topic” approach. The topic approach finds a wide set of results that mention topics in the SDG targets (e.g. “hunger”). Use this (rather than “SDG action”) if you want a wider set of results. See [About this service](/om/om-tjenesten) for more information.
 ### SDG Action, SDG Action Target 
-This is the mapping of publications to SDGs and SDG targets, using the “action” approach. The action approach finds a narrower set of results that mention actions in the SDG targets (e.g. “end hunger”). Use this (rather than “SDG topic”) if you want a smaller set of results. See [About this service] for more information.
+This is the mapping of publications to SDGs and SDG targets, using the “action” approach. The action approach finds a narrower set of results that mention actions in the SDG targets (e.g. “end hunger”). Use this (rather than “SDG topic”) if you want a smaller set of results. See [About this service](/om/om-tjenesten) for more information.
 ### Scientific (NVI) 
 If the publication is considered “scientific” according to the criteria in NVI, which can be read on the [Norsk Publiseringsindikator webpages](https://npi.hkdir.no/informasjon#definisjoner). This includes that the channel should have procedures for peer review.
 ### Publication type
