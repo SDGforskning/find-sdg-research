@@ -1,8 +1,6 @@
 import { SearchBox, SearchProvider } from '@elastic/react-search-ui';
 import config from './config';
 
-const SEARCH_PAGE = '/search'
-
 const HomeSearchBox = () => {
   return (
     <SearchProvider
@@ -13,7 +11,7 @@ const HomeSearchBox = () => {
     >
       <SearchBox
         onSubmit={(searchTerm) => {
-          window.location.href = `/search?q=${searchTerm}`;
+          window.location.href = `/sok?q=${searchTerm}`;
         }}
       /* autocompleteMinimumCharacters={3}
       autocompleteResults={{

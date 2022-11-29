@@ -1,14 +1,14 @@
 {
-  "sustainable-development-goals": {
+  "om-baerekraftsmalene": {
     "title": "About the SDGs"
   },
-  "about-this-service": {
+  "om-tjenesten": {
     "title": "About this service"
   },
-  "search-strings": {
+  "sokestreng": {
     "title": "Search strings"
   },
-  "contact": {
+  "kontakt": {
     "title": "Contact"
   }
 }

@@ -4,7 +4,7 @@
     "type": "page",
     "hidden": true
   },
-  "search": {
+  "sok": {
     "title": "Search",
     "type": "page",
     "layout": "raw",
@@ -12,19 +12,19 @@
       "layout": "full"
     }
   },
-  "help": {
+  "hjelp": {
     "title": "Help",
     "type": "page"
   },
-  "statistics": {
+  "statistikk": {
     "title": "Statistics",
     "type": "page"
   },
-  "about": {
+  "om": {
     "title": "About",
     "type": "page"
   },
-  "accessibility-statement": {
+  "tilgjengelighetserklaring": {
     "type": "page",
     "hidden": true
   },
