@@ -20,6 +20,8 @@ import ClearFilter from './ClearFilter'
 import config from './config'
 import { sdgActionLabelMapping, sdgActionTargetLabelMapping, sdgTopicLabelMapping, sdgTopicTargetLabelMapping } from 'lib/sdgMappings'
 import { mentionsMapping } from 'lib/mentionsMapping'
+import { npifagfeltMapping } from 'lib/npifagfeltMapping'
+import { categoryMapping, subcategoryMapping } from 'lib/pubtypeMappings'
 
 
 const Search = () => {
@@ -113,10 +115,14 @@ const Search = () => {
               {<Facet
                 field="category.keyword"
                 label="Publication type"
+                view={MappedLabelsFacet}
+                mapping={categoryMapping}
               />}
               <Facet
                 field="subcategory.keyword"
                 label="Publication subtype"
+                view={MappedLabelsFacet}
+                mapping={subcategoryMapping}
                 show={5}
               />
               <Facet
@@ -125,16 +131,16 @@ const Search = () => {
               />
               <Facet
                 field="nvi_level_historical.keyword"
-                label="NVI"
+                label="NVI level"
                 view={MappedLabelsFacet}
                 mapping={{
                   "1.0": {
-                    en: "Level 1",
-                    en: "Nivå 1",
+                    en: "1",
+                    no: "1",
                   },
                   "2.0": {
-                    en: "Level 2",
-                    en: "Nivå 2",
+                    en: "2",
+                    no: "2",
                   }
                 }}
               />
@@ -142,7 +148,8 @@ const Search = () => {
                 field="scientific_field_npi.keyword"
                 label="Scientific field"
                 show={10}
-                view={MultiCheckboxFacet}
+                view={MappedLabelsFacet}
+                mapping={npifagfeltMapping}
                 filterType="any"
                 isFilterable={true}
               />
