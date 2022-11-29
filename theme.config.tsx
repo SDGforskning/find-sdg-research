@@ -17,7 +17,7 @@ export default {
       const { locale } = useRouter()
       return (
         <>
-          <a href='https://skjemaker.app.uib.no/view.php?id=13744102'>{locale === 'en' ? 'Do you have a few minutes to give us feedback on this service? Click here' : 'Har du mulighet å gi oss tilbakemelding på tjenesten? Klikk her'}</a>
+          <a className='underline underline-offset-8' href='https://skjemaker.app.uib.no/view.php?id=13744102'>{locale === 'en' ? 'Do you have a few minutes to give us feedback on this service? Click here' : 'Har du mulighet å gi oss tilbakemelding på tjenesten? Klikk her'}</a>
         </>
       )
     },
