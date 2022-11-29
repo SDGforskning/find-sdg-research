@@ -10,7 +10,7 @@ Tjenesten kan brukes for å finne forskningslitteratur som er knyttet til bærek
 
 ## Organisasjon
 
-Tjenesten ble etablert av Universitetsbiblioteket i Bergen, Universitetsbiblioteket i Stavanger og Biblioteket ved Høgskulen på Vestlandet gjennom et [2-årig prosjekt](https://www.uib.no/ub/148803/b%C3%A6rekraftsforskning-alle-%E2%80%93-en-transparent-kartleggings-og-gjenfinningstjeneste) støttet av Nasjonalbiblioteket. Redaksjonen består av deltakere fra Universitetsbiblioteket i Bergen, Universitetsbiblioteket i Stavanger og Biblioteket ved Høgskulen på Vestlandet. Universitetsbiblioteket i Bergen har ansvaret for teknisk støtte til plattformen. [LENKE KONTAKT]
+Tjenesten ble etablert av Universitetsbiblioteket i Bergen, Universitetsbiblioteket i Stavanger og Biblioteket ved Høgskulen på Vestlandet gjennom et [2-årig prosjekt](https://www.uib.no/ub/148803/b%C3%A6rekraftsforskning-alle-%E2%80%93-en-transparent-kartleggings-og-gjenfinningstjeneste) støttet av Nasjonalbiblioteket ([se prosjektet i Prosjektbank her](https://bibliotekutvikling.no/prosjektbank/prosjekt/baerekraftsforskning-for-alle-en-transparent-kartleggings-og-gjenfinningstjeneste/)). Redaksjonen består av deltakere fra Universitetsbiblioteket i Bergen, Universitetsbiblioteket i Stavanger og Biblioteket ved Høgskulen på Vestlandet. Universitetsbiblioteket i Bergen har ansvaret for teknisk støtte til plattformen. [LENKE KONTAKT]
 
 Det er disse institusjonene samt eksterne bidragsytere som har ansvaret for vedlikehold av søkestrengene som er brukt i tjenesten. For mer informasjon, se Søkestrenger [LENKE].
 
