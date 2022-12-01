@@ -22,6 +22,7 @@ import { sdgActionLabelMapping, sdgActionTargetLabelMapping, sdgTopicLabelMappin
 import { mentionsMapping } from 'lib/mentionsMapping'
 import { npifagfeltMapping } from 'lib/npifagfeltMapping'
 import { categoryMapping, subcategoryMapping } from 'lib/pubtypeMappings'
+import { languageMapping } from 'lib/languageMapping'
 
 
 const Search = () => {
@@ -40,7 +41,7 @@ const Search = () => {
               <ClearFilter />
               <Facet
                 field="openlinkfound.keyword"
-                label="Fulltext found"
+                label="Fulltext found / Fulltekst funnet"
                 view={BooleanFacet}
               />
               {/* <Facet
@@ -49,11 +50,13 @@ const Search = () => {
               /> */}
               <Facet
                 field="language.keyword"
-                label="Language"
+                label="Language / Språk"
+                view={MappedLabelsFacet}
+                mapping={languageMapping}
               />
               <Facet
                 field="mentionssdgno.keyword"
-                label="Mentions"
+                label="Mentions / Nevner"
                 view={MappedLabelsFacet}
                 mapping={mentionsMapping}
               />
@@ -69,7 +72,7 @@ const Search = () => {
               /> */}
               <Facet
                 field="SDG_topic.keyword"
-                label="SDG Topic"
+                label="SDG Topic / SDG tema"
                 show={20}
                 /* view={MultiCheckboxFacet} */
                 view={MappedLabelsFacet}
@@ -79,7 +82,7 @@ const Search = () => {
               />
               <Facet
                 field="SDG_target_topic.keyword"
-                label="SDG Topic Target"
+                label="SDG Topic, targets / SDG tema, delmål"
                 show={5}
                 /* view={MultiCheckboxFacet} */
                 view={MappedLabelsFacet}
@@ -89,7 +92,7 @@ const Search = () => {
               />
               <Facet
                 field="SDG_action.keyword"
-                label="SDG Action"
+                label="SDG Action / SDG handling"
                 show={20}
                 /* view={MultiCheckboxFacet} */
                 view={MappedLabelsFacet}
@@ -99,7 +102,7 @@ const Search = () => {
               />
               <Facet
                 field="SDG_target_action.keyword"
-                label="SDG Action Target"
+                label="SDG Action, targets / SDG handling, delmål"
                 show={5}
                 /* view={MultiCheckboxFacet} */
                 view={MappedLabelsFacet}
@@ -109,44 +112,44 @@ const Search = () => {
               />
               <Facet
                 field="scientific_result.keyword"
-                label="Scientific (NVI)"
+                label="Scientific (NVI) / Vitenskapelig (NVI)"
                 view={BooleanFacet}
               />
               {<Facet
                 field="category.keyword"
-                label="Publication type"
+                label="Publication type / Publikasjonstype"
                 view={MappedLabelsFacet}
                 mapping={categoryMapping}
               />}
               <Facet
                 field="subcategory.keyword"
-                label="Publication subtype"
+                label="Publication subtype / Underkategori"
                 view={MappedLabelsFacet}
                 mapping={subcategoryMapping}
                 show={5}
               />
               <Facet
                 field="year.keyword"
-                label="Year"
+                label="Year / År"
               />
               <Facet
                 field="nvi_level_historical.keyword"
-                label="NVI level"
+                label="NVI level / NVI nivå"
                 view={MappedLabelsFacet}
                 mapping={{
                   "1.0": {
-                    en: "1",
-                    no: "1",
+                    en: "Level 1",
+                    no: "Nivå 1",
                   },
                   "2.0": {
-                    en: "2",
-                    no: "2",
+                    en: "Level 2",
+                    no: "Nivå 2",
                   }
                 }}
               />
               <Facet
                 field="scientific_field_npi.keyword"
-                label="Scientific field"
+                label="Scientific field / Fagfelt (NPI)"
                 show={10}
                 view={MappedLabelsFacet}
                 mapping={npifagfeltMapping}
