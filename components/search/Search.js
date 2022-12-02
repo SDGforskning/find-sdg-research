@@ -23,9 +23,11 @@ import { mentionsMapping } from 'lib/mentionsMapping'
 import { npifagfeltMapping } from 'lib/npifagfeltMapping'
 import { categoryMapping, subcategoryMapping } from 'lib/pubtypeMappings'
 import { languageMapping } from 'lib/languageMapping'
+import { useRouter } from 'next/router'
 
 
 const Search = () => {
+  const { locale } = useRouter()
   return (
     <div className="w-full">
       <SearchProvider config={config}>
@@ -41,7 +43,7 @@ const Search = () => {
               <ClearFilter />
               <Facet
                 field="openlinkfound.keyword"
-                label="Fulltext found / Fulltekst funnet"
+                label={locale === 'en' ? "Fulltext found" : "Fulltekst funnet"}
                 view={BooleanFacet}
               />
               {/* <Facet
@@ -50,13 +52,13 @@ const Search = () => {
               /> */}
               <Facet
                 field="language.keyword"
-                label="Language / Språk"
+                label={locale === 'en' ? "Language" : "Språk"}
                 view={MappedLabelsFacet}
                 mapping={languageMapping}
               />
               <Facet
                 field="mentionssdgno.keyword"
-                label="Mentions / Nevner"
+                label={locale === 'en' ? "Mentions" : "Nevner"}
                 view={MappedLabelsFacet}
                 mapping={mentionsMapping}
               />
@@ -72,7 +74,7 @@ const Search = () => {
               /> */}
               <Facet
                 field="SDG_topic.keyword"
-                label="SDG Topic / SDG tema"
+                label={locale === 'en' ? "SDG Topic" : "SDG tema"}
                 show={20}
                 /* view={MultiCheckboxFacet} */
                 view={MappedLabelsFacet}
@@ -82,7 +84,7 @@ const Search = () => {
               />
               <Facet
                 field="SDG_target_topic.keyword"
-                label="SDG Topic, targets / SDG tema, delmål"
+                label={locale === 'en' ? "SDG Topic, targets" : "SDG tema, delmål"}
                 show={5}
                 /* view={MultiCheckboxFacet} */
                 view={MappedLabelsFacet}
@@ -92,7 +94,7 @@ const Search = () => {
               />
               <Facet
                 field="SDG_action.keyword"
-                label="SDG Action / SDG handling"
+                label={locale === 'en' ? "SDG Action" : "SDG handling"}
                 show={20}
                 /* view={MultiCheckboxFacet} */
                 view={MappedLabelsFacet}
@@ -102,7 +104,7 @@ const Search = () => {
               />
               <Facet
                 field="SDG_target_action.keyword"
-                label="SDG Action, targets / SDG handling, delmål"
+                label={locale === 'en' ? "SDG Action, targets" : "SDG handling, delmål"}
                 show={5}
                 /* view={MultiCheckboxFacet} */
                 view={MappedLabelsFacet}
@@ -112,29 +114,29 @@ const Search = () => {
               />
               <Facet
                 field="scientific_result.keyword"
-                label="Scientific (NVI) / Vitenskapelig (NVI)"
+                label={locale === 'en' ? "Scientific (NVI)" : "Vitenskapelig (NVI)"}
                 view={BooleanFacet}
               />
               {<Facet
                 field="category.keyword"
-                label="Publication type / Publikasjonstype"
+                label={locale === 'en' ? "Publication type" : "Publikasjonstype"}
                 view={MappedLabelsFacet}
                 mapping={categoryMapping}
               />}
               <Facet
                 field="subcategory.keyword"
-                label="Publication subtype / Underkategori"
+                label={locale === 'en' ? "Publication subtype" : "Underkategori"}
                 view={MappedLabelsFacet}
                 mapping={subcategoryMapping}
                 show={5}
               />
               <Facet
                 field="year.keyword"
-                label="Year / År"
+                label={locale === 'en' ? "Year" : "År"}
               />
               <Facet
                 field="nvi_level_historical.keyword"
-                label="NVI level / NVI nivå"
+                label={locale === 'en' ? "NVI level" : "NVI nivå"}
                 view={MappedLabelsFacet}
                 mapping={{
                   "1.0": {
@@ -149,7 +151,7 @@ const Search = () => {
               />
               <Facet
                 field="scientific_field_npi.keyword"
-                label="Scientific field / Fagfelt (NPI)"
+                label={locale === 'en' ? "Scientific field" : "Fagfelt (NPI)"}
                 show={10}
                 view={MappedLabelsFacet}
                 mapping={npifagfeltMapping}
