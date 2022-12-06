@@ -4,6 +4,8 @@ Målet med denne tjenesten er at alle – allmennheten, offentlig sektor, nærin
 
 Tjenesten kan brukes for å finne forskningslitteratur som er knyttet til bærekraftsmålene og som har forfattere fra norske institusjoner. Man kan filtrere på bærekraftsmål og justere treffmengden ved å velge et sett av publikasjoner å søke i: Snevre inn ved å søke kun etter forskning som er tett knyttet til handlingene i delmålene («SDG - handling»), eller utvide søket ved å søke i et større sett knyttet til generelle tema i delmålene («SDG - tema»). Les mer om våre metoder og dekning under. [Se hjelpesider for søkehjelp](/hjelp/sokehjelp).
 
+**Tjenesten er for tiden en "beta versjon" (under arbeid)**. Det er noen deler som ikke er på plass enda i betaversjonen. Det ene er bredden av dekket forskning – for tiden ligger det mest tidsskriftsartikler skrevet på engelsk i tjenesten. Publikasjoner skrevet på norsk og andre publikasjonstyper kommer litt seinere. Statistikk over tema i forskningen er heller ikke på plass enda. Nettadressen (find-sdg-research.vercel.app) er midlertidig, og blir oppdatert etter hvert.  
+
 ## Hvorfor bygget vi tjenesten?
 
 Å gi alle enkel tilgang til forskningspublikasjoner relatert til FNs bærekraftsmål er viktig for å spre kunnskap, åpne opp forskningen og for å nå bærekraftsmålene.  Forskningspublikasjonene kan være vanskelige å få tak i, særlig for dem som ikke tilhører en utdannings- eller forskningsinstitusjon. Andre tjenester er ofte ikke tilgjengelige for allmennheten, kan ha dårlig dekning av norskspråklige publikasjoner, og har ikke alltid tydelig dokumentasjon av metodene som er brukt. Vår tjeneste skal gi alle som ønsker det, muligheten til å skaffe seg oversikt over og tilgang til forskningspublikasjoner knyttet til FNs bærekraftsmål, inkludert publikasjoner på norsk. Vi vil sørge for at metodene våre blir godt dokumentert og delt åpent slik at gjenbruk og tilpasninger blir mulig.  
@@ -21,7 +23,7 @@ Det er disse institusjonene samt eksterne bidragsytere som har ansvaret for vedl
 Tjenesten dekker i dag ni av bærekraftsmålene (målene 1, 2, 3, 4, 7, 11, 13, 14, 15, med mål 12 på vei inn). Flere mål kan bli lagt til tjenesten, avhengig av kapasitet. 
 For at en publikasjon skal være omfattet av tjenesten, må den være a) indeksert i [CRISTIN](https://www.cristin.no/) (Current Research Information System in Norway), b) skrevet på norsk eller engelsk, og c) kategorisert i CRISTIN som *Bok*, *Del av bok/rapport*, *Rapport/avhandling* eller *Tidsskriftpublikasjon*. Dette dekker en stor del av den skriftlige forskningsproduksjonen i Norge. Imidlertid kan noen rapporter og populærvitenskapelige arbeider mangle, siden disse ikke alltid blir registrert i CRISTIN. I tillegg må publikasjonen være knyttet til et bærekraftsmål i tråd med våre kartleggingsmetoder.  
 
-For tiden inneholder tjenesten i hovedsak vitenskapelige artikler skrevet på engelsk, og publikasjoner registrert i CRISTIN med publiseringsår fra og med 2015 (til og med oktober 2022). Publikasjoner skrevet på norsk og andre publikasjonstyper vil bli lagt til i løpet av de neste månedene. 
+**Tjenesten er for tiden en "beta versjon" (under arbeid)**. For tiden inneholder tjenesten i hovedsak vitenskapelige artikler skrevet på engelsk, og publikasjoner registrert i CRISTIN med publiseringsår fra og med 2015 (til og med oktober 2022). Publikasjoner skrevet på norsk og andre publikasjonstyper vil bli lagt til i løpet av de neste månedene. 
 
 ### Metoder for tilknytning til bærekraftsmålene
 
