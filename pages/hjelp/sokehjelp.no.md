@@ -17,3 +17,16 @@ Om publikasjonen nevner enten Norge eller selve bærekraftsmålet. For eksempel 
 Her kan du filtrere på publikasjoner relatert til særskilte bærekraftsmål og -delmål, ved å bruke «topic approach». Denne varianten gir et større antall treff som nevner temaene i delmålene, f.eks. «Sult». Bruk dette filteret (fremfor «SDG action») hvis du ønsker et stort antall treff. Se [Om denne tjenesten] for mer informasjon.
 ### SDG handling og SDG handling-delmål  
 Her er publikasjonene knyttet til bærekraftsmål og -delmål gjennom «action approach». Denne varianten gir et mindre antall treff som nevner handlingene i bærekraftsmålene, f.eks. «Utrydde sult». Bruk dette filteret (fremfor «SDG topic») når du ønsker et mindre antall treff. Se [Om denne tjenesten] for mer informasjon.
+
+### Vitenskapelig 
+Hvorvidt publikasjonen betraktes som «vitenskapelig» i henhold til definisjonen på nettsidene til Norsk publiseringsindikator. Ett av kravene er at publiseringskanalen har rutiner for fagfellevurdering. 
+## Publikasjonstype 
+Publikasjonstype i tråd med inkluderte kategorier fra Cristin.
+## Underkategori 
+Underkategori i tråd med inkluderte underkategorier fra Cristin.
+## År
+Publikasjonsår ifølge Cristin.
+## Nivåinndeling
+Nivå på publikasjonen i henhold til NVI (Norsk vitenskapsindeks). Det er publiseringskanalen (tidsskriftet eller forlaget) som avgjør nivået på publikasjonen. Du kan lese mer om nivåinndeling på nettsidene til Norsk publiseringsindikator.
+## Fagfelt 
+Filteret er tilgjengelig bare for publikasjoner merket «vitenskapelig» i henhold til NVI. Kategoriseringen er basert på emneinndeling av publiseringskanalen (tidsskriftet eller forlaget). Nettsidene til Norsk publiseringsindikator gir en oversikt over publiseringskanalene innenfor hvert fagfelt.
