@@ -19,12 +19,12 @@ This is the mapping of publications to SDGs and SDG targets, using the “action
 ### Scientific (NVI) 
 If the publication is considered “scientific” according to the criteria in NVI, which can be read on the [Norsk Publiseringsindikator webpages](https://npi.hkdir.no/informasjon#definisjoner). This includes that the channel should have procedures for peer review.
 ### Publication type
-Publication format
+Publication format, from Cristin.
 ### Publication Subtype
-A detailed breakdown of publication formats.
+A detailed breakdown of publication formats, from Cristin.
 ### Year
 Year the publication was published according to Cristin. 
 ### NVI level
-Level of the publication according to NVI (Norsk Vitenskapsindex). This is based on which channel (journal or publisher) the publication was published by. You can read more about NVI levels on the [Norsk Publiseringsindikator webpages](https://npi.hkdir.no/informasjon#nivaainndeling).
-### Scientific field
+Level of the publication according to NVI (Norsk Vitenskapsindex). The level is based on which channel (journal or publisher) the publication was published by. You can read more about NVI levels on the [Norsk Publiseringsindikator webpages](https://npi.hkdir.no/informasjon#nivaainndeling).
+### Scientific field (NPI)
 This filter is only available for works considered “scientific” according to NVI. It is based on a subject classification of the channel (journal or publisher) the work was published in. The channels in each field can be browsed on the [Norsk Publiseringsindikator webpages](https://npi.hkdir.no/fagfeltoversikt).
