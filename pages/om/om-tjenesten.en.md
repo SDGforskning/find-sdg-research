@@ -4,6 +4,8 @@ The aim of this service is to allow anyone – those working in academia, public
 
 You can use this service to find SDG-related research literature from Norwegian institutions. You can filter by SDG, and adjust the number of results you get by choosing a set to search in: You can narrow down your search by searching only for research closely related to actions in the targets ("SDG - action"), or widen out your search by looking at research related to the topics in the targets ("SDG - topic"). Methods and coverage are described in more detail below. [See here for help using the search](/hjelp/sokehjelp).
 
+The service is currently a **beta version** (under development). The beta version is missing a few features that will be added over time. Currently, the dataset covers mostly journal publications written in English – other publication types, and publications written in Norwegian, will be added over the next few months. Summary statistics about the research are also coming later. In addition, the web address (find-sdg-research.vercel.app) is only a temporary address.  
+
 ## Why did we set up this service?
 
 Access to research which is relevant to the SDGs is important across society, for spreading knowledge, opening-up science, and achieving the goals. However, this research can be difficult to find, especially for those outside academia. Other services which map SDG related publications vary in whether they offer their services to the public, have good coverage of local or Norwegian-language publications, or provide sufficient explanation for their methods. Our service aims to be an easy entry point to research, including local and Norwegian-language publications, with well-documented methods that can be reused and modified.
@@ -20,7 +22,7 @@ The search strings used to map SDG-related research are maintained by these inst
 
 We currently cover nine of the Sustainable Development Goals (SDGs 1, 2, 3, 4, 7, 11, 13, 14, 15, with SDG 12 on the way). Additional SDGs can be added, depending on capacity. For a publication to be in our total dataset, it must a) be indexed in [CRISTIN](https://www.cristin.no/) (Current Research Information System in Norway), b) be written in English or Norwegian, and c) be categorised in CRISTIN as a *book*, *part of a book/report*, *report/dissertation* or *journal publication*. This covers a relatively large proportion of scientific outputs in Norway. However, coverage of reports or popular works (which researchers do not always register in CRISTIN) may vary. Finally, to be included in the service, a publication must be related to an SDG according to our SDG-mapping method.
 
-Currently the website indexes mostly English scientific articles, registered in CRISTIN as being published in 2015 or later (up to October 2022). A wider range of publication types and works written in Norwegian will be added in the next few months.
+Currently the website is a **beta version** (under development). Current coverage is mostly restricted to English scientific articles, registered in CRISTIN as being published in 2015 or later (up to October 2022). A wider range of publication types and works written in Norwegian will be added in the next few months.
 
 ### SDG-mapping methodology
 
