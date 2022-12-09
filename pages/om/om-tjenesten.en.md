@@ -4,7 +4,7 @@ The aim of this service is to allow anyone – those working in academia, public
 
 You can use this service to find SDG-related research literature from Norwegian institutions. You can filter by SDG, and adjust the number of results you get by choosing a set to search in: You can narrow down your search by searching only for research closely related to actions in the targets ("SDG - action"), or widen out your search by looking at research related to the topics in the targets ("SDG - topic"). Methods and coverage are described in more detail below. [See here for help using the search](/hjelp/sokehjelp).
 
-The service is currently a **beta version** (under development). The beta version is missing a few features that will be added over time. Currently, the dataset covers mostly journal publications written in English – other publication types, and publications written in Norwegian, will be added over the next few months. Summary statistics about the research are also coming later. In addition, the web address (find-sdg-research.vercel.app) is only a temporary address.  
+The service is currently a **beta version** (under development). The beta version is missing a few features that will be added over time. Currently, the dataset covers mostly journal publications written in English – other publication types, and publications written in Norwegian, will be added over the next few months. Summary statistics about the research are also coming later. 
 
 ## Why did we set up this service?
 
