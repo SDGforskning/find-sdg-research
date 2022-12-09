@@ -4,7 +4,7 @@ Målet med denne tjenesten er at alle – allmennheten, offentlig sektor, nærin
 
 Tjenesten kan brukes for å finne forskningslitteratur som er knyttet til bærekraftsmålene og som har forfattere fra norske institusjoner. Man kan filtrere på bærekraftsmål og justere treffmengden ved å velge et sett av publikasjoner å søke i: Snevre inn ved å søke kun etter forskning som er tett knyttet til handlingene i delmålene («SDG - handling»), eller utvide søket ved å søke i et større sett knyttet til generelle tema i delmålene («SDG - tema»). Les mer om våre metoder og dekning under. [Se hjelpesider for søkehjelp](/hjelp/sokehjelp).
 
-**Tjenesten er for tiden en "betaversjon" (under arbeid)**. Det er noen deler som ikke er på plass enda i betaversjonen. Det ene er bredden av dekket forskning – for tiden ligger det mest tidsskriftsartikler skrevet på engelsk i tjenesten. Publikasjoner skrevet på norsk og andre publikasjonstyper kommer litt seinere. Statistikk over tema i forskningen er heller ikke på plass enda. Nettadressen (find-sdg-research.vercel.app) er midlertidig, og blir oppdatert etter hvert.  
+**Tjenesten er for tiden en "betaversjon" (under arbeid)**. Det er noen deler som ikke er på plass enda i betaversjonen. Det ene er bredden av dekket forskning – for tiden ligger det mest tidsskriftsartikler skrevet på engelsk i tjenesten. Publikasjoner skrevet på norsk og andre publikasjonstyper kommer litt seinere. Statistikk over tema i forskningen er heller ikke på plass enda. 
 
 ## Hvorfor bygget vi tjenesten?
 
