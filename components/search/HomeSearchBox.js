@@ -13,6 +13,9 @@ const HomeSearchBox = () => {
         onSubmit={(searchTerm) => {
           window.location.href = `/sok?q=${searchTerm}`;
         }}
+        inputProps={{
+          placeholder: "Search within publication title, e.g. wind power / vindkraft"
+        }}
       /* autocompleteMinimumCharacters={3}
       autocompleteResults={{
         linkTarget: "_blank",
