@@ -176,7 +176,7 @@ const Search = () => {
                 debounceLength={0} */
                 // TODO heller ha eksempel
                 inputProps={{
-                  placeholder: "e.g. wind power"
+                  placeholder: "Search within publication title, e.g. wind power / vindkraft"
                 }}
               />
               {/* <Sorting /> */}
