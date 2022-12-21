@@ -1,0 +1,22 @@
+# SearchKit test
+
+## Tester en beta versjon av SearchKit v4.
+
+import { InstantSearch, DynamicWidgets, CurrentRefinements, Stats, Panel, RefinementList, SearchBox, Hits } from "react-instantsearch-dom";
+import {searchkitClient} from '../components/search/searchkitConfig'
+import {SearchKitHitView} from '../components/search/SearchKitHitView'
+
+  <InstantSearch
+    searchClient={searchkitClient}
+    indexName="sdg"
+  >
+    <SearchBox />
+    <DynamicWidgets maxValuesPerFacet={5} fallbackWidget={RefinementList}>
+      <Panel header="SDG Action">
+        <RefinementList attribute="SDG_action" />
+      </Panel>
+    </DynamicWidgets>
+    <Stats />
+    <CurrentRefinements />
+    <Hits hitComponent={SearchKitHitView} />
+  </InstantSearch>
