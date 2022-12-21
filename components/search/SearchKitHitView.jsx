@@ -24,7 +24,7 @@ export const SearchKitHitView = (props) => {
             </div>
             <h3 className='text-md md:text-lg font-bold'>
               <a href={props.hit.fulltextlink && props.hit.fulltextlink !== 'No open link found' ? props.hit.fulltextlink : props.hit.fulldoi ? props.hit.fulldoi : '#'} target='_blank' rel="noopener noreferrer">
-                {props.hit.result_title}
+                <Highlight hit={props.hit} attribute="result_title" />
               </a>
             </h3>
 

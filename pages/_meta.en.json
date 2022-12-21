@@ -12,6 +12,14 @@
       "layout": "full"
     }
   },
+  "search": {
+    "title": "Kit",
+    "type": "page",
+    "layout": "raw",
+    "theme": {
+      "layout": "full"
+    }
+  },
   "hjelp": {
     "title": "Help",
     "type": "page"

@@ -7,7 +7,9 @@ const client = Client({
   },
   search_settings: {
     highlight_attributes: ["result_title"],
-    search_attributes: ["result_title"],
+    search_attributes: [
+      "result_title",
+    ],
     result_attributes: [
       "result_title",
       "journal",
@@ -36,8 +38,20 @@ const client = Client({
       "year",
     ],
     facet_attributes: [
-      { attribute: "SDG_topic", field: "SDG_topic.keyword", "type": "string" },
-      { attribute: "SDG_action", field: "SDG_action.keyword", "type": "string" },
+      { attribute: "openlinkfound", field: "openlinkfound.keyword", type: "string" },
+      { attribute: "language", field: "language.keyword", type: "string" },
+      { attribute: "OA_status_calc", field: "OA_status_calc.keyword", type: "string" },
+      { attribute: "nvi_level_historical", field: "nvi_level_historical.keyword", type: "string" },
+      { attribute: "SDG_topic", field: "SDG_topic.keyword", type: "string" },
+      { attribute: "SDG_target_topic", field: "SDG_target_topic.keyword", type: "string" },
+      { attribute: "SDG_action", field: "SDG_action.keyword", type: "string" },
+      { attribute: "SDG_target_action", field: "SDG_target_action.keyword", type: "string" },
+      { attribute: "category", field: "category.keyword", type: "string" },
+      { attribute: "subcategory", field: "subcategory.keyword", type: "string" },
+      { attribute: "scientific_field_npi", field: "scientific_field_npi.keyword", type: "string" },
+      { attribute: "scientific_result", field: "scientific_result.keyword", type: "string" },
+      { attribute: "year", field: "year.keyword", type: "string" },
+      { attribute: "mentionssdgno", field: "mentionssdgno.keyword", type: "string" },
     ],
   },
 });
