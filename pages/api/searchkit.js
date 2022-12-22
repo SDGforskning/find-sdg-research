@@ -2,8 +2,8 @@ import Client from "@searchkit/api";
 
 const client = Client({
   connection: {
-    host: "https://sdg-sok.ubbe.no/search",
-    apiKey: "WDZlSDVZTUJTWThvLTI2VjdmSUM6SHR1bG5BQzNUMnVFc2FBbXUwYTBnZw==",
+    host: process.env.ES_HOST,
+    apiKey: process.env.ES_APIKEY,
   },
   search_settings: {
     highlight_attributes: ["result_title"],

@@ -28,7 +28,7 @@ export default function SearchKit() {
           <ClearRefinements />
 
           <Panel header="Openlink found">
-            {/* <RefinementList attribute="openlinkfound" /> */}
+
             <ToggleRefinement
               attribute="openlinkfound"
               label="Openlink found"
