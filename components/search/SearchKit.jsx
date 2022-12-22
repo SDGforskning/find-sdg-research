@@ -25,10 +25,11 @@ export default function SearchKit() {
       <SearchBox />
       <div className="flex gap-5">
         <div className="w-1/4">
-          <ClearRefinements />
+          <div className='mb-5'>
+            <ClearRefinements />
+          </div>
 
           <Panel header="Openlink found">
-
             <ToggleRefinement
               attribute="openlinkfound"
               label="Openlink found"
@@ -60,7 +61,6 @@ export default function SearchKit() {
           <Panel header="SDG Topics">
             <RefinementList
               attribute="SDG_topic"
-              sear
               transformItems={items => items.map(item => {
                 return {
                   ...item,
@@ -74,6 +74,7 @@ export default function SearchKit() {
               attribute="SDG_target_topic"
               searchable
               showMore={true}
+              showMoreLimit={50}
               transformItems={items => items.map(item => {
                 return {
                   ...item,
@@ -98,6 +99,7 @@ export default function SearchKit() {
               attribute="SDG_target_action"
               searchable
               showMore={true}
+              showMoreLimit={50}
               transformItems={items => items.map(item => {
                 return {
                   ...item,
@@ -144,6 +146,9 @@ export default function SearchKit() {
           <Panel header="Scientific field">
             <RefinementList
               attribute="scientific_field_npi"
+              searchable
+              showMore={true}
+              showMoreLimit={50}
               transformItems={items => items.map(item => {
                 return {
                   ...item,
