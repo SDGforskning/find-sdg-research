@@ -2,6 +2,8 @@ import { SearchBox, SearchProvider } from '@elastic/react-search-ui';
 import config from './config';
 
 const HomeSearchBox = () => {
+  const { locale } = useRouter();
+
   return (
     <SearchProvider
       config={{
