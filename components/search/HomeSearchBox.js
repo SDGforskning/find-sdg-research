@@ -1,4 +1,5 @@
 import { SearchBox, SearchProvider } from '@elastic/react-search-ui';
+import { useRouter } from 'next/router';
 import config from './config';
 
 const HomeSearchBox = () => {
