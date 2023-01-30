@@ -176,7 +176,9 @@ const Search = () => {
                 debounceLength={0} */
                 // TODO heller ha eksempel
                 inputProps={{
-                  placeholder: "Search within publication title, e.g. wind power / vindkraft"
+                  placeholder: locale === 'en'
+                    ? "Search within publication title, e.g. wind power"
+                    : "Søk i publikasjonstittel, f.eks. vindkraft"
                 }}
               />
               {/* <Sorting /> */}
