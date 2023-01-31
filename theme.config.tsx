@@ -26,16 +26,19 @@ export default {
     link: 'https://github.com/SDGforskning/find-sdg-research'
   },
   docsRepositoryBase: 'https://github.com/SDGforskning/find-sdg-research/blob/master',
-  titleSuffix: () => {
-    const { route, locale } = useRouter()
-    if (route === '/') return ''
-    return ` – ${TITLE[locale]}`
+  useNextSeoProps() {
+    const { asPath, locale } = useRouter()
+    if (asPath !== '/') {
+      return {
+        titleTemplate: `%s – ${TITLE[locale]}`
+      }
+    }
   },
   logo() {
     const { locale } = useRouter();
     return (
       <div className='flex gap-3 justify-center'>
-        <img style={{ width: '24px', height: '24px' }} src='/logo.png' />
+        <img style={{ width: '24px', height: '24px' }} src='/logo.png' alt='' />
         <span className="ltr:ml-2 rtl:mr-2 font-extrabold hidden md:inline select-none">
           {TITLE[locale]}
         </span>
@@ -126,7 +129,7 @@ export default {
     float: true
   },
   sidebar: {
-    defaultMenuCollapsed: true,
-    subtitle: ({ title }) => <>{title}</>
+    defaultMenuCollapseLevel: 2,
+    titleComponent: ({ title }) => <>{title}</>
   }
 } as DocsThemeConfig

@@ -3,7 +3,7 @@ import { goals } from '../../lib/goals'
 
 function Goal({ image, link, label }) {
   return (
-    <div className='w-1/6'>
+    <div className='w-1/4 md:w-1/6'>
       {link && (
         <a href={link}><img src={image} alt={label} /></a>
       )}
@@ -18,7 +18,7 @@ function Goal({ image, link, label }) {
 export function Goals() {
   const { locale } = useRouter()
   return (
-    <div className='xl:-mx-36'>
+    <div className='xl:-mx-42'>
       <h2 className='text-center mt-5 text-3xl font-bold'>
         {locale === 'en' ? 'Browse by SDGs' : 'Finn forskning per bærekraftsmål'}
       </h2>
