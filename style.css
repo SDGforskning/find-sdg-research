@@ -237,8 +237,8 @@ code.text-\[\.9em\] {
 }
 
 @media (max-width: 800px) {
-  .sui-layout-sidebar-toggle {
-    display: block;
+  button.sui-layout-sidebar-toggle {
+    display: block !important;
     width: 100%;
     margin-top: 20px;
     padding: 10px;

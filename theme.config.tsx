@@ -26,10 +26,13 @@ export default {
     link: 'https://github.com/SDGforskning/find-sdg-research'
   },
   docsRepositoryBase: 'https://github.com/SDGforskning/find-sdg-research/blob/master',
-  titleSuffix: () => {
-    const { route, locale } = useRouter()
-    if (route === '/') return ''
-    return ` – ${TITLE[locale]}`
+  useNextSeoProps() {
+    const { asPath, locale } = useRouter()
+    if (asPath !== '/') {
+      return {
+        titleTemplate: `%s – ${TITLE[locale]}`
+      }
+    }
   },
   logo() {
     const { locale } = useRouter();
@@ -126,7 +129,7 @@ export default {
     float: true
   },
   sidebar: {
-    defaultMenuCollapsed: true,
-    subtitle: ({ title }) => <>{title}</>
+    defaultMenuCollapseLevel: 2,
+    titleComponent: ({ title }) => <>{title}</>
   }
 } as DocsThemeConfig
