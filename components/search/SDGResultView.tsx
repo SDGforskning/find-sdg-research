@@ -29,11 +29,11 @@ const CustomResultView = ({
             <div className={`text-sm leading-sm text-gray-600 dark:text-gray-400`}>
               {result.category?.raw} / {result.nvi_publication_form?.raw}
             </div>
-            <h3 className='text-md md:text-lg font-bold'>
+            <h2 className='text-md md:text-lg font-bold'>
               <a onClick={onClickLink} href={result.fulltextlink && result.fulltextlink?.raw !== 'No open link found' ? result.fulltextlink.raw : result.fulldoi?.raw ? result.fulldoi.raw : '#'}>
                 {result.result_title.raw}
               </a>
-            </h3>
+            </h2>
 
             {result.journal && (
               <div className={`text-md leading-sm text-gray-600 dark:text-gray-400`}>
@@ -94,7 +94,7 @@ const CustomResultView = ({
                 <div className='flex gap-2'>
                   {result.SDG_topic?.raw && result.SDG_topic.raw.map(goal => (
                     <div
-                      className={`text-md text-white inline-flex items-center font-bold leading-sm uppercase px-2 lg:py-1 ${goal} dark:text-white rounded`}
+                      className={`text-md inline-flex items-center font-bold leading-sm uppercase px-2 lg:py-1 ${goal} rounded`}
                     >
                       {goal}
                     </div>
@@ -103,7 +103,7 @@ const CustomResultView = ({
                 <div className='flex gap-2'>
                   {result.SDG_target_topic.raw.map(goal => (
                     <div
-                      className={`text-xs text-white inline-flex items-center font-bold leading-sm uppercase px-2 lg:py-1 ${goal.split('_')[0]} dark:text-white rounded`}
+                      className={`text-xs  inline-flex items-center font-bold leading-sm uppercase px-2 lg:py-1 ${goal.split('_')[0]} rounded`}
                     >
                       {goal.split('_')[1]}
                     </div>
@@ -120,7 +120,7 @@ const CustomResultView = ({
                 <div className='flex gap-2'>
                   {result.SDG_action.raw.map(goal => (
                     <div
-                      className={`text-md text-white inline-flex items-center font-bold leading-sm uppercase px-2 lg:py-1 ${goal} dark:text-white rounded`}
+                      className={`text-md inline-flex items-center font-bold leading-sm uppercase px-2 lg:py-1 ${goal} rounded`}
                     >
                       {goal}
                     </div>
@@ -129,7 +129,7 @@ const CustomResultView = ({
                 <div className='flex gap-2'>
                   {result.SDG_target_action?.raw && result.SDG_target_action.raw.map(goal => (
                     <div
-                      className={`text-xs text-white inline-flex items-center font-bold leading-sm uppercase px-2 lg:py-1 ${goal.split('_')[0]} dark:text-white rounded`}
+                      className={`text-xs  inline-flex items-center font-bold leading-sm uppercase px-2 lg:py-1 ${goal.split('_')[0]} rounded`}
                     >
                       {goal.split('_')[1]}
                     </div>

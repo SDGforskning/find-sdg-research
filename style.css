@@ -62,14 +62,17 @@ code.text-\[\.9em\] {
 
 .SDG01 {
   background-color: rgb(229, 36, 59);
+  color: black;
 }
 
 .SDG02 {
   background-color: rgb(221, 166, 58);
+  color: black;
 }
 
 .SDG03 {
   background-color: rgb(76, 159, 56);
+  color: black;
 }
 
 .SDG04 {
@@ -78,14 +81,17 @@ code.text-\[\.9em\] {
 
 .SDG05 {
   background-color: rgb(255, 58, 33);
+  color: black;
 }
 
 .SDG06 {
   background-color: rgb(38, 189, 226);
+  color: black;
 }
 
 .SDG07 {
   background-color: rgb(252, 195, 11);
+  color: black;
 }
 
 .SDG08 {
@@ -94,6 +100,7 @@ code.text-\[\.9em\] {
 
 .SDG09 {
   background-color: rgb(253, 105, 37);
+  color: black;
 }
 
 .SDG10 {
@@ -102,22 +109,27 @@ code.text-\[\.9em\] {
 
 .SDG11 {
   background-color: rgb(253, 157, 36);
+  color: black;
 }
 
 .SDG12 {
   background-color: rgb(191, 139, 46);
+  color: black;
 }
 
 .SDG13 {
   background-color: rgb(63, 126, 68);
+  color: white;
 }
 
 .SDG14 {
   background-color: rgb(10, 151, 217);
+  color: black;
 }
 
 .SDG15 {
   background-color: rgb(86, 192, 43);
+  color: black;
 }
 
 .SDG16 {
@@ -595,11 +607,11 @@ code.text-\[\.9em\] {
 }
 
 .rc-pagination-item-active a {
-  /* color: #fff; */
+  color: #fff;
 }
 
 .rc-pagination-item-active:hover a {
-  /* color: #fff; */
+  color: #fff;
 }
 
 .rc-pagination-jump-prev:after,
@@ -895,26 +907,29 @@ code.text-\[\.9em\] {
 }
 
 .sui-paging .rc-pagination-disabled a {
-  color: #ccc;
+  color: white;
   opacity: 0.5;
 }
 
 .sui-paging .rc-pagination-item a {
-  color: #3a56e4;
+  color: #cbd1ee;
+  background: #3f3f3f;
+  padding: 5px 8px;
   text-decoration: none;
 }
 
 .sui-paging .rc-pagination-item:hover {
-  background: #f8f8f8;
+  background: #161616;
 }
 
 .sui-paging .rc-pagination-item:hover a {
-  color: #3a56e4;
+  background: #161616;
+  color: white;
   text-decoration: none;
 }
 
 .sui-paging .rc-pagination-item-active a {
-  color: #4f4f4f;
+  color: white;
   font-weight: 700;
 }
 
