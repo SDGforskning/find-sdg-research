@@ -2,7 +2,7 @@
   "index": {
     "title": "Introduksjon",
     "type": "page",
-    "hidden": true
+    "display": "hidden"
   },
   "sok": {
     "title": "Søk",
@@ -26,7 +26,7 @@
   },
   "tilgjengelighetserklaring": {
     "type": "page",
-    "hidden": true
+    "display": "hidden"
   },
   "404": {
     "type": "page",
