@@ -38,7 +38,7 @@ export default {
     const { locale } = useRouter();
     return (
       <div className='flex gap-3 justify-center'>
-        <img style={{ width: '24px', height: '24px' }} src='/logo.png' />
+        <img style={{ width: '24px', height: '24px' }} src='/logo.png' alt='' />
         <span className="ltr:ml-2 rtl:mr-2 font-extrabold hidden md:inline select-none">
           {TITLE[locale]}
         </span>
