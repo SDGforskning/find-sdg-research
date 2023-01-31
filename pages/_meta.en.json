@@ -7,7 +7,6 @@
   "sok": {
     "title": "Search",
     "type": "page",
-    "layout": "raw",
     "theme": {
       "layout": "full"
     }
