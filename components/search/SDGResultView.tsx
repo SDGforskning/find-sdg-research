@@ -94,6 +94,7 @@ const CustomResultView = ({
                 <div className='flex gap-2'>
                   {result.SDG_topic?.raw && result.SDG_topic.raw.map(goal => (
                     <div
+                      key={goal}
                       className={`text-md inline-flex items-center font-bold leading-sm uppercase px-2 lg:py-1 ${goal} rounded`}
                     >
                       {goal}
@@ -103,6 +104,7 @@ const CustomResultView = ({
                 <div className='flex gap-2'>
                   {result.SDG_target_topic.raw.map(goal => (
                     <div
+                      key={goal}
                       className={`text-xs  inline-flex items-center font-bold leading-sm uppercase px-2 lg:py-1 ${goal.split('_')[0]} rounded`}
                     >
                       {goal.split('_')[1]}
@@ -120,6 +122,7 @@ const CustomResultView = ({
                 <div className='flex gap-2'>
                   {result.SDG_action.raw.map(goal => (
                     <div
+                      key={goal}
                       className={`text-md inline-flex items-center font-bold leading-sm uppercase px-2 lg:py-1 ${goal} rounded`}
                     >
                       {goal}
@@ -129,6 +132,7 @@ const CustomResultView = ({
                 <div className='flex gap-2'>
                   {result.SDG_target_action?.raw && result.SDG_target_action.raw.map(goal => (
                     <div
+                      key={goal}
                       className={`text-xs  inline-flex items-center font-bold leading-sm uppercase px-2 lg:py-1 ${goal.split('_')[0]} rounded`}
                     >
                       {goal.split('_')[1]}
