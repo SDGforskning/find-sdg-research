@@ -16,11 +16,29 @@ const HomeSearchBox = () => {
         onSubmit={(searchTerm) => {
           window.location.href = `/sok?q=${searchTerm}`;
         }}
-        inputProps={{
-          placeholder: locale === 'en'
-            ? "Search within publication title, e.g. wind power"
-            : "Søk i publikasjonstittel, f.eks. vindkraft"
-        }}
+        view={({ value, onChange, onSubmit }) => (
+          <div >
+            <form className='w-full flex gap-2' onSubmit={onSubmit}>
+              <input
+                className='flex-grow border border-white rounded p-3'
+                type="text"
+                value={value}
+                placeholder={locale === 'en'
+                  ? "Search within publication title, e.g. wind power"
+                  : "Søk i publikasjonstittel, f.eks. vindkraft"}
+                onChange={(e) => onChange(e.target.value)}
+              />
+              <button
+                className='!bg-blue-700 text-white font-bold border-white rounded py-3 px-5'
+                type="submit"
+              >
+                {locale === 'en'
+                  ? "Search"
+                  : "Søk"}
+              </button>
+            </form>
+          </div>
+        )}
       />
     </SearchProvider>
   )
