@@ -231,7 +231,7 @@ const Search = () => {
                   <div>
                     <form className='w-full flex gap-2' onSubmit={onSubmit}>
                       <input
-                        className='flex-grow border border-white rounded p-3'
+                        className='flex-grow border border-gray-400 dark:border-white rounded p-3'
                         type="text"
                         value={value}
                         placeholder={locale === 'en'
