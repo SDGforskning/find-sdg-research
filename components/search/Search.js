@@ -42,7 +42,7 @@ const Search = () => {
             <div>
               <ClearFilter />
               <Facet
-                field="openlinkfound.keyword"
+                field="fulltext_found.keyword"
                 label={locale === 'en' ? "Fulltext found" : "Fulltekst funnet"}
                 view={BooleanFacet}
               />
@@ -50,114 +50,167 @@ const Search = () => {
                 field="OA_status_calc.keyword"
                 label="Open Access Status"
               /> */}
-              <Facet
-                field="language.keyword"
-                label={locale === 'en' ? "Language" : "Språk"}
-                view={MappedLabelsFacet}
-                mapping={languageMapping}
-              />
-              <Facet
-                field="mentionssdgno.keyword"
-                label={locale === 'en' ? "Mentions" : "Nevner"}
-                view={MappedLabelsFacet}
-                mapping={mentionsMapping}
-              />
-              {/* <Facet
-                field="mentionsNorway.keyword"
-                label="Mentions Norway"
-                view={BooleanFacet}
-              />
-              <Facet
-                field="mentionsSDG.keyword"
-                label="Mentions SDG"
-                view={BooleanFacet}
-              /> */}
-              <Facet
-                field="SDG_topic.keyword"
-                label={locale === 'en' ? "SDG Topic" : "SDG tema"}
-                show={20}
-                /* view={MultiCheckboxFacet} */
-                view={MappedLabelsFacet}
-                mapping={sdgTopicLabelMapping}
-                filterType="any"
-              //isFilterable={true}
-              />
-              <Facet
-                field="SDG_target_topic.keyword"
-                label={locale === 'en' ? "SDG Topic, targets" : "SDG tema, delmål"}
-                show={5}
-                /* view={MultiCheckboxFacet} */
-                view={MappedLabelsFacet}
-                mapping={sdgTopicTargetLabelMapping}
-                filterType="any"
-                isFilterable={true}
-              />
-              <Facet
-                field="SDG_action.keyword"
-                label={locale === 'en' ? "SDG Action" : "SDG handling"}
-                show={20}
-                /* view={MultiCheckboxFacet} */
-                view={MappedLabelsFacet}
-                mapping={sdgActionLabelMapping}
-                filterType="any"
-              //isFilterable={true}
-              />
-              <Facet
-                field="SDG_target_action.keyword"
-                label={locale === 'en' ? "SDG Action, targets" : "SDG handling, delmål"}
-                show={5}
-                /* view={MultiCheckboxFacet} */
-                view={MappedLabelsFacet}
-                mapping={sdgActionTargetLabelMapping}
-                filterType="any"
-                isFilterable={true}
-              />
-              <Facet
-                field="scientific_result.keyword"
-                label={locale === 'en' ? "Scientific (NVI)" : "Vitenskapelig (NVI)"}
-                view={BooleanFacet}
-              />
-              {<Facet
-                field="category.keyword"
-                label={locale === 'en' ? "Publication type" : "Publikasjonstype"}
-                view={MappedLabelsFacet}
-                mapping={categoryMapping}
-              />}
-              <Facet
-                field="subcategory.keyword"
-                label={locale === 'en' ? "Publication subtype" : "Underkategori"}
-                view={MappedLabelsFacet}
-                mapping={subcategoryMapping}
-                show={5}
-              />
-              <Facet
-                field="year.keyword"
-                label={locale === 'en' ? "Year" : "År"}
-              />
-              <Facet
-                field="nvi_level_historical.keyword"
-                label={locale === 'en' ? "NVI level" : "NVI nivå"}
-                view={MappedLabelsFacet}
-                mapping={{
-                  "1.0": {
-                    en: "Level 1",
-                    no: "Nivå 1",
-                  },
-                  "2.0": {
-                    en: "Level 2",
-                    no: "Nivå 2",
-                  }
-                }}
-              />
-              <Facet
-                field="scientific_field_npi.keyword"
-                label={locale === 'en' ? "Scientific field" : "Fagfelt (NPI)"}
-                show={10}
-                view={MappedLabelsFacet}
-                mapping={npifagfeltMapping}
-                filterType="any"
-                isFilterable={true}
-              />
+              {locale === 'en' ? (
+                <>
+                  <Facet
+                    field="language_en.keyword"
+                    label="Language"
+                    view={MultiCheckboxFacet}
+                  />
+                  <Facet
+                    field="mentions_en.keyword"
+                    label="Mentions"
+                    view={MultiCheckboxFacet}
+                  />
+                  <Facet
+                    field="SDG_topic_en.keyword"
+                    label="SDG Topic"
+                    show={20}
+                    view={MultiCheckboxFacet}
+                    filterType="any"
+                  //isFilterable={true}
+                  />
+                  <Facet
+                    field="SDG_target_topic_en.keyword"
+                    label={"SDG Topic, targets"}
+                    show={5}
+                    view={MultiCheckboxFacet}
+                    filterType="any"
+                    isFilterable={true}
+                  />
+
+                  <Facet
+                    field="SDG_action_en.keyword"
+                    label={"SDG Action"}
+                    show={20}
+                    view={MultiCheckboxFacet}
+                    filterType="any"
+                  //isFilterable={true}
+                  />
+                  <Facet
+                    field="SDG_target_action_en.keyword"
+                    label={"SDG Action, targets"}
+                    show={5}
+                    view={MultiCheckboxFacet}
+                    filterType="any"
+                    isFilterable={true}
+                  />
+                  <Facet
+                    field="scientific_result.keyword"
+                    label={"Scientific (NVI)"}
+                    view={BooleanFacet}
+                  />
+                  {<Facet
+                    field="publication_type_en.keyword"
+                    label={"Publication type"}
+                    view={MultiCheckboxFacet}
+                  />}
+                  <Facet
+                    field="publication_subtype_en.keyword"
+                    label={"Publication subtype"}
+                    view={MultiCheckboxFacet}
+                    show={5}
+                  />
+                  <Facet
+                    field="year.keyword"
+                    label={"Year"}
+                  />
+                  <Facet
+                    field="nvi_level_en.keyword"
+                    label={"NVI level"}
+                    view={MultiCheckboxFacet}
+                  />
+                  <Facet
+                    field="scientific_field_NPI_en.keyword"
+                    label={"Scientific field"}
+                    view={MultiCheckboxFacet}
+                    show={10}
+                    filterType="any"
+                    isFilterable={true}
+                  />
+                </>
+
+              ) : (
+                <>
+                  <Facet
+                    field="language_no.keyword"
+                    label="Språk"
+                    view={MultiCheckboxFacet}
+                  />
+                  <Facet
+                    field="mentions_no.keyword"
+                    label="Nevner"
+                    view={MultiCheckboxFacet}
+                  />
+                  <Facet
+                    field="SDG_topic_no.keyword"
+                    label="SDG tema"
+                    show={20}
+                    view={MultiCheckboxFacet}
+                    filterType="any"
+                  //isFilterable={true}
+                  />
+                  <Facet
+                    field="SDG_target_topic_no.keyword"
+                    label={"SDG tema, delmål"}
+                    show={5}
+                    view={MultiCheckboxFacet}
+                    filterType="any"
+                    isFilterable={true}
+                  />
+
+                  <Facet
+                    field="SDG_action_no.keyword"
+                    label={"SDG handling"}
+                    show={20}
+                    view={MultiCheckboxFacet}
+                    filterType="any"
+                  //isFilterable={true}
+                  />
+                  <Facet
+                    field="SDG_target_action_no.keyword"
+                    label={"SDG handling, delmål"}
+                    show={5}
+                    view={MultiCheckboxFacet}
+                    filterType="any"
+                    isFilterable={true}
+                  />
+                  <Facet
+                    field="scientific_result.keyword"
+                    label={"Vitenskapelig (NVI)"}
+                    view={BooleanFacet}
+                  />
+                  {<Facet
+                    field="publication_type_no.keyword"
+                    label={"Publikasjonstype"}
+                    view={MultiCheckboxFacet}
+                  />}
+                  <Facet
+                    field="publication_subtype_no.keyword"
+                    label={locale === 'en' ? "Publication subtype" : "Underkategori"}
+                    view={MultiCheckboxFacet}
+                    show={5}
+                  />
+                  <Facet
+                    field="year.keyword"
+                    label={"År"}
+                  />
+                  <Facet
+                    field="nvi_level_historical.keyword"
+                    label={"NVI nivå"}
+                    view={MultiCheckboxFacet}
+                  />
+                  <Facet
+                    field="scientific_field_NPI_no.keyword"
+                    label={"Fagfelt (NPI)"}
+                    show={10}
+                    view={MultiCheckboxFacet}
+                    filterType="any"
+                    isFilterable={true}
+                  />
+                </>
+
+              )}
             </div>
           }
           header={
@@ -175,10 +228,10 @@ const Search = () => {
                 autocompleteSuggestions={true}
                 debounceLength={0} */
                 view={({ value, onChange, onSubmit }) => (
-                  <div >
+                  <div>
                     <form className='w-full flex gap-2' onSubmit={onSubmit}>
                       <input
-                        className='flex-grow border border-white rounded p-3'
+                        className='flex-grow border border-gray-400 dark:border-white rounded p-3'
                         type="text"
                         value={value}
                         placeholder={locale === 'en'
