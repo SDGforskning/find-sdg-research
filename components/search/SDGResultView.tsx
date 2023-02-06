@@ -2,12 +2,11 @@ import { useRouter } from 'next/router';
 import { truncateUrl } from '../../lib/truncateUrl'
 import { ArrowUpRightIcon, LockClosedIcon, LockOpenIcon } from '@heroicons/react/24/solid'
 
-const localeText = {
-  isScientific: {
-    en: 'Scientific',
-    no: "Vitenskapelig"
-  }
+const isScientific = {
+  en: 'Scientific',
+  no: "Vitenskapelig"
 }
+
 
 const CustomResultView = ({
   result,
@@ -203,7 +202,7 @@ const CustomResultView = ({
               key={i}
               className={`mt-3 text-xs text-white inline-flex items-center font-bold leading-sm uppercase px-3 py-1 bg-gray-600 dark:text-white rounded-full`}
             >
-              {m.raw}
+              {m}
             </div>
           ))}
 
@@ -214,7 +213,7 @@ const CustomResultView = ({
         >
           <div>{data[locale].OA_status_calc.raw === "NotOA" ? <LockClosedIcon className='w-4 h-4' /> : <LockOpenIcon className='w-4 h-4' />}</div>
 
-          <div>{data[locale].scientific_result.raw === true ? `${localeText.isScientific[locale]} (NVI ${data[locale].nvi_level?.raw})` : ''}</div>
+          <div>{data[locale].scientific_result.raw === true ? `${isScientific[locale]} (NVI ${data[locale].NVI_level?.raw})` : ''}</div>
 
           {data[locale].scientific_field_NPI?.raw && (
             <div>
