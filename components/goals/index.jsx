@@ -26,7 +26,7 @@ export function Goals() {
         {goals
           .filter(goal => goal.disabled != true)
           .map((goal, i) => (
-            <Goal key={i} label={goal.label} image={goal.image} link={goal.link} />
+            <Goal key={i} label={goal.label} image={goal.image[locale]} link={goal.link[locale]} />
           ))
         }
       </div>

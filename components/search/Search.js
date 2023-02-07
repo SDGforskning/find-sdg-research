@@ -13,18 +13,14 @@ import {
   /* SingleSelectFacet, */
   MultiCheckboxFacet,
   /* Sorting */
+
 } from "@elastic/react-search-ui-views"
 import SDGResultView from './SDGResultView'
-import MappedLabelsFacet from './MappedLabelsFacet'
 import ClearFilter from './ClearFilter'
 import config from './config'
-import { sdgActionLabelMapping, sdgActionTargetLabelMapping, sdgTopicLabelMapping, sdgTopicTargetLabelMapping } from 'lib/sdgMappings'
-import { mentionsMapping } from 'lib/mentionsMapping'
-import { npifagfeltMapping } from 'lib/npifagfeltMapping'
-import { categoryMapping, subcategoryMapping } from 'lib/pubtypeMappings'
-import { languageMapping } from 'lib/languageMapping'
 import { useRouter } from 'next/router'
-
+import Link from 'next/link'
+import { InformationCircleIcon } from '@heroicons/react/24/solid'
 
 const Search = () => {
   const { locale } = useRouter()
@@ -41,17 +37,23 @@ const Search = () => {
           sideContent={
             <div>
               <ClearFilter />
-              <Facet
-                field="fulltext_found.keyword"
-                label={locale === 'en' ? "Fulltext found" : "Fulltekst funnet"}
-                view={BooleanFacet}
-              />
-              {/* <Facet
-                field="OA_status_calc.keyword"
-                label="Open Access Status"
-              /> */}
               {locale === 'en' ? (
                 <>
+                  <Facet
+                    field="fulltext_found.keyword"
+                    label={"Fulltext found"}
+                    view={BooleanFacet}
+                  />
+
+                  <Facet
+                    field="scientific_result.keyword"
+                    label={"Scientific (NVI)"}
+                    view={BooleanFacet}
+                  />
+                  <p className='mb-8 -mt-1 text-xs'>
+                    <InformationCircleIcon className='w-4 h-4 inline' /> <Link href="/en/hjelp/sokehjelp#scientific-nvi" target={'_blank'} rel={'noreferrer'}>What does this mean?</Link>
+                  </p>
+
                   <Facet
                     field="language_en.keyword"
                     label="Language"
@@ -70,15 +72,17 @@ const Search = () => {
                     filterType="any"
                   //isFilterable={true}
                   />
+                  <p className='mb-8 -mt-1 text-xs'>
+                    <InformationCircleIcon className='w-4 h-4 inline' /> <Link href="/en/hjelp/sokehjelp#sdg-topic-sdg-topic-target" target={'_blank'} rel={'noreferrer'}>What does this mean?</Link>
+                  </p>
                   <Facet
                     field="SDG_target_topic_en.keyword"
                     label={"SDG Topic, targets"}
-                    show={5}
+                    show={10}
                     view={MultiCheckboxFacet}
                     filterType="any"
                     isFilterable={true}
                   />
-
                   <Facet
                     field="SDG_action_en.keyword"
                     label={"SDG Action"}
@@ -87,24 +91,22 @@ const Search = () => {
                     filterType="any"
                   //isFilterable={true}
                   />
+                  <p className='mb-8 -mt-1 text-xs'>
+                    <InformationCircleIcon className='w-4 h-4 inline' /> <Link href="/en/hjelp/sokehjelp#sdg-action-sdg-action-target" target={'_blank'} rel={'noreferrer'}>What does this mean?</Link>
+                  </p>
                   <Facet
                     field="SDG_target_action_en.keyword"
                     label={"SDG Action, targets"}
-                    show={5}
+                    show={10}
                     view={MultiCheckboxFacet}
                     filterType="any"
                     isFilterable={true}
                   />
                   <Facet
-                    field="scientific_result.keyword"
-                    label={"Scientific (NVI)"}
-                    view={BooleanFacet}
-                  />
-                  {<Facet
                     field="publication_type_en.keyword"
                     label={"Publication type"}
                     view={MultiCheckboxFacet}
-                  />}
+                  />
                   <Facet
                     field="publication_subtype_en.keyword"
                     label={"Publication subtype"}
@@ -129,9 +131,22 @@ const Search = () => {
                     isFilterable={true}
                   />
                 </>
-
               ) : (
                 <>
+                  <Facet
+                    field="fulltext_found.keyword"
+                    label={"Fulltekst funnet"}
+                    view={BooleanFacet}
+                  />
+                  <Facet
+                    field="scientific_result.keyword"
+                    label={"Vitenskapelig (NVI)"}
+                    view={BooleanFacet}
+                  />
+                  <p className='mb-8 -mt-1 text-xs'>
+                    <InformationCircleIcon className='w-4 h-4 inline' /> <Link href="/hjelp/sokehjelp#vitenskapelig-nvi" target={'_blank'} rel={'noreferrer'}>Hva betyr dette?</Link>
+                  </p>
+
                   <Facet
                     field="language_no.keyword"
                     label="Språk"
@@ -150,15 +165,17 @@ const Search = () => {
                     filterType="any"
                   //isFilterable={true}
                   />
+                  <p className='mb-8 -mt-1 text-xs'>
+                    <InformationCircleIcon className='w-4 h-4 inline' /> <Link href="/hjelp/sokehjelp#sdg-tema-og-tema-delmål" target={'_blank'} rel={'noreferrer'}>Hva betyr dette?</Link>
+                  </p>
                   <Facet
                     field="SDG_target_topic_no.keyword"
                     label={"SDG tema, delmål"}
-                    show={5}
+                    show={10}
                     view={MultiCheckboxFacet}
                     filterType="any"
                     isFilterable={true}
                   />
-
                   <Facet
                     field="SDG_action_no.keyword"
                     label={"SDG handling"}
@@ -167,24 +184,22 @@ const Search = () => {
                     filterType="any"
                   //isFilterable={true}
                   />
+                  <p className='mb-8 -mt-1 text-xs'>
+                    <InformationCircleIcon className='w-4 h-4 inline' /> <Link href="/hjelp/sokehjelp#sdg-handling-og-handling-delmål" target={'_blank'} rel={'noreferrer'}>Hva betyr dette?</Link>
+                  </p>
                   <Facet
                     field="SDG_target_action_no.keyword"
                     label={"SDG handling, delmål"}
-                    show={5}
+                    show={10}
                     view={MultiCheckboxFacet}
                     filterType="any"
                     isFilterable={true}
                   />
                   <Facet
-                    field="scientific_result.keyword"
-                    label={"Vitenskapelig (NVI)"}
-                    view={BooleanFacet}
-                  />
-                  {<Facet
                     field="publication_type_no.keyword"
                     label={"Publikasjonstype"}
                     view={MultiCheckboxFacet}
-                  />}
+                  />
                   <Facet
                     field="publication_subtype_no.keyword"
                     label={locale === 'en' ? "Publication subtype" : "Underkategori"}

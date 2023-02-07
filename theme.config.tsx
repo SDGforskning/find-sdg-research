@@ -4,6 +4,10 @@ import { HVLIcon } from '@components/icons/hvl';
 import { UiBIcon } from './components/icons/uib';
 import { NBIcon } from '@components/icons/nb';
 import { UiSIcon } from '@components/icons/uis';
+import { UIBUBLeftEngLogo } from '@components/logos/UIBUBLeftEngLogo';
+import { UIBUBLeftNorLogo } from '@components/logos/UIBUBLeftNorLogo';
+import { HVLLeftEngLogo } from '@components/logos/HVLLeftEngLogo';
+import { HVLLeftNorLogo } from '@components/logos/HVLLeftNorLogo';
 
 const TITLE = {
   en: "Find SDG research (beta)",
@@ -90,32 +94,53 @@ export default {
     text() {
       const { locale } = useRouter()
       return (
-        <div className='w-full flex flex-row gap-10 flex-wrap md:flex-nowrap justify-between'>
-          <div className='flex flex-col gap-5'>
-            <ul className='flex gap-10'>
-              <ul>
-                <li>
-                  <a href='/om/om-tjenesten'>{locale === 'en' ? 'About the service' : 'Om tjenesten'}</a>
-                </li>
-                <li>
-                  <a href='/tilgjengelighetserklaring'>{locale === 'en' ? 'Accessibility statement' : 'Tilgjengelighetserklæring'}</a>
-                </li>
+        <div className='w-full flex flex-col gap-10 flex-wrap md:flex-nowrap justify-between'>
+          <div className='flex flex-row gap-5'>
+            <div className='w-2/4'>
+              <ul className='flex gap-10'>
+                <ul>
+                  <li>
+                    <a href='/om/om-tjenesten'>{locale === 'en' ? 'About the service' : 'Om tjenesten'}</a>
+                  </li>
+                  <li>
+                    <a href='/tilgjengelighetserklaring'>{locale === 'en' ? 'Accessibility statement' : 'Tilgjengelighetserklæring'}</a>
+                  </li>
+                </ul>
               </ul>
-            </ul>
-            <div className='text-sm'>
-              {`Creative Commons Attribution 4.0 ${new Date().getFullYear()} - ${TITLE[locale]}`}
+              <div className='text-sm mt-3'>
+                {`Creative Commons Attribution 4.0 ${new Date().getFullYear()} - ${TITLE[locale]}`}
+              </div>
             </div>
-            <div className='flex items-center gap-2 text-sm'>
-              <NBIcon height={32} />
-              {locale === 'en'
-                ? 'The project is supported by the National Library of Norway.'
-                : 'Prosjektet er støttet av Nasjonalbiblioteket i Norge.'}
+
+            <div className='w-2/4 flex items-center gap-2'>
+              <div className='flex items-center gap-2 text-sm'>
+                <img style={{ width: '24px', height: '24px' }} src='/logo.png' alt='' />
+                {locale === 'en'
+                  ? 'Bærekraftsforskning.no supports the Sustainable Development Goals'
+                  : 'Bærekraftsforskning.no støtter FNs bærekraftsmål'}
+              </div>
+              <div className='flex items-center gap-2 text-sm'>
+                <NBIcon height={32} />
+                {locale === 'en'
+                  ? 'The project is supported by the National Library of Norway.'
+                  : 'Prosjektet er støttet av Nasjonalbiblioteket i Norge.'}
+              </div>
             </div>
           </div>
-          <div className='flex gap-5'>
-            <div className='lg:w-32 md:w-24 w-20'><UiBIcon /></div>
-            <div className='lg:w-36 md:w-24 w-20'><HVLIcon /></div>
-            <div className='lg:w-24 md:w-18 w-16'><UiSIcon /></div>
+          <div className='flex gap-16'>
+            <div className='md:w-2/6 w-full'>
+              {locale === 'en' ? <UIBUBLeftEngLogo /> : <UIBUBLeftNorLogo />}
+            </div>
+            <div className='md:w-2/6 w-full'>
+              {locale === 'en' ? <HVLLeftEngLogo /> : <HVLLeftNorLogo />}
+            </div>
+            <div className='md:w-2/6 w-full'>
+              {
+                locale === 'en'
+                  ? <img src="/images/UiS_liggende_logo_negativ_RGB.jpg" alt='' />
+                  : <img src="/images/UiS_landscape_logo_negative_RGB_English.jpg" alt='' />
+              }
+            </div>
           </div>
         </div>
       )
