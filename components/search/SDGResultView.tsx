@@ -116,9 +116,9 @@ const CustomResultView = ({
 
           <div className='flex gap-10 mt-3'>
             {data[locale].SDG_topic?.raw && (
-              <div>
+              <div className='flex flex-col gap-1'>
                 <div className='text-sm sm:text-gray-600 dark:text-gray-400'>Topics:</div>
-                <div className='flex gap-2'>
+                <div className='flex flex-wrap gap-2'>
                   {data[locale].SDG_topic?.raw && data[locale].SDG_topic.raw.map(goal => (
                     <div
                       key={goal}
@@ -128,11 +128,11 @@ const CustomResultView = ({
                     </div>
                   ))}
                 </div>
-                <div className='flex gap-2'>
+                <div className='flex flex-wrap gap-2'>
                   {data[locale].SDG_target_topic?.raw.map(goal => (
                     <div
                       key={goal}
-                      className={`text-xs inline-flex  items-center font-bold leading-sm uppercase px-2 lg:py-1 ${goal.split(' ')[0]} rounded`}
+                      className={`text-xs inline-flex  items-center font-bold leading-sm uppercase px-2 lg:py-1 border-2 border-neutral-400 ${goal.split(' ')[0]} rounded`}
                     >
                       {goal.split(' ')[0]}
                     </div>
@@ -144,9 +144,9 @@ const CustomResultView = ({
             {/* <div style={{ flexBasis: '100%', height: 0 }}></div> */}
 
             {data[locale].SDG_action?.raw && (
-              <div>
+              <div className='flex flex-col gap-1'>
                 <div className='text-sm text-gray-600 dark:text-gray-400'>Actions:</div>
-                <div className='flex gap-2'>
+                <div className='flex flex-wrap gap-2'>
                   {data[locale].SDG_action.raw.map(goal => (
                     <div
                       key={goal}
@@ -156,11 +156,11 @@ const CustomResultView = ({
                     </div>
                   ))}
                 </div>
-                <div className='flex gap-2'>
+                <div className='flex flex-wrap gap-2'>
                   {data[locale].SDG_target_action?.raw && data[locale].SDG_target_action.raw.map(goal => (
                     <div
                       key={goal}
-                      className={`text-xs inline-flex items-center font-bold leading-sm uppercase px-2 lg:py-1 ${goal.split(' ')[0]} rounded`}
+                      className={`text-xs inline-flex items-center font-bold leading-sm uppercase px-2 lg:py-1 border-2 border-neutral-400 ${goal.split(' ')[0]} rounded`}
                     >
                       {goal.split(' ')[0]}
                     </div>
@@ -171,7 +171,7 @@ const CustomResultView = ({
           </div>
         </div>
 
-        <div className='flex md:flex-1 md:flex-col-reverse gap-10 md:gap-2 md:pl-5 md:w-2/6 w-full flex-wrap'>
+        <div className='flex md:flex-1 md:flex-col-reverse sm:gap-10 md:gap-2 md:pl-5 md:w-2/6 w-full flex-wrap'>
           <div className='md:flex md:flex-col-reverse'>
             {data[locale].scientific_result?.raw && (
               <div className='px-2 py-1 border-2 border-green-700 font-bold rounded'>
