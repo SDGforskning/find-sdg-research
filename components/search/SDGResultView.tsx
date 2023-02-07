@@ -72,8 +72,8 @@ const CustomResultView = ({
 
   return (
     <li key={data[locale].id} className='border rounded dark:border-slate-700 mt-5 py-3 px-4'>
-      <div className='flex items-start flex-wrap md:flex-nowrap justify-between gap-5 md:divide-x'>
-        <div className='w-3/4'>
+      <div className='flex flex-auto items-start flex-wrap md:flex-nowrap justify-between gap-5 md:divide-x'>
+        <div className='w-full md:w-4/6'>
           <div className={`text-sm leading-sm text-gray-600 dark:text-gray-400`}>
             {data[locale].publication_type?.raw} / {data[locale].publication_subtype?.raw}
           </div>
@@ -171,7 +171,20 @@ const CustomResultView = ({
           </div>
         </div>
 
-        <div className='flex md:flex-1 flex-wrap md:flex-col gap-2 md:pl-5 w-1/4 max-sm:w-full'>
+        <div className='flex md:flex-1 md:flex-col-reverse gap-10 md:gap-2 md:pl-5 md:w-2/6 w-full flex-wrap'>
+          <div className='md:flex md:flex-col-reverse'>
+            {data[locale].scientific_result?.raw && (
+              <div className='px-2 py-1 border-2 border-green-700 font-bold rounded'>
+                {`${isScientific[locale]} (NVI ${data[locale].NVI_level?.raw})`}
+              </div>
+            )}
+
+            {data[locale].scientific_field_NPI?.raw && (
+              <div>
+                {data[locale].scientific_field_NPI.raw}
+              </div>
+            )}
+          </div>
           <ul>
             {data[locale].result_id.raw && (
               <li className={`text-md leading-sm`}>
@@ -195,8 +208,7 @@ const CustomResultView = ({
                     </span>
                   )} */}
               </li>
-            )
-            }
+            )}
 
             {data[locale].fulldoi?.raw && (
               <li>
@@ -212,13 +224,6 @@ const CustomResultView = ({
             )}
           </ul>
 
-          <div>{data[locale].scientific_result.raw === true ? `${isScientific[locale]} (NVI ${data[locale].NVI_level?.raw})` : ''}</div>
-
-          {data[locale].scientific_field_NPI?.raw && (
-            <div>
-              {data[locale].scientific_field_NPI.raw}
-            </div>
-          )}
 
         </div>
       </div>

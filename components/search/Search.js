@@ -50,7 +50,7 @@ const Search = () => {
                     label={"Scientific (NVI)"}
                     view={BooleanFacet}
                   />
-                  <p className='mb-8 -mt-2 text-xs'>
+                  <p className='mb-8 -mt-1 text-xs'>
                     <InformationCircleIcon className='w-4 h-4 inline' /> <Link href="/en/hjelp/sokehjelp#scientific-nvi" target={'_blank'} rel={'noreferrer'}>What does this mean?</Link>
                   </p>
 
@@ -72,7 +72,7 @@ const Search = () => {
                     filterType="any"
                   //isFilterable={true}
                   />
-                  <p className='mb-8 -mt-2 text-xs'>
+                  <p className='mb-8 -mt-1 text-xs'>
                     <InformationCircleIcon className='w-4 h-4 inline' /> <Link href="/en/hjelp/sokehjelp#sdg-topic-sdg-topic-target" target={'_blank'} rel={'noreferrer'}>What does this mean?</Link>
                   </p>
                   <Facet
@@ -91,7 +91,7 @@ const Search = () => {
                     filterType="any"
                   //isFilterable={true}
                   />
-                  <p className='mb-8 -mt-2 text-xs'>
+                  <p className='mb-8 -mt-1 text-xs'>
                     <InformationCircleIcon className='w-4 h-4 inline' /> <Link href="/en/hjelp/sokehjelp#sdg-action-sdg-action-target" target={'_blank'} rel={'noreferrer'}>What does this mean?</Link>
                   </p>
                   <Facet
@@ -143,7 +143,7 @@ const Search = () => {
                     label={"Vitenskapelig (NVI)"}
                     view={BooleanFacet}
                   />
-                  <p className='mb-8 -mt-2 text-xs'>
+                  <p className='mb-8 -mt-1 text-xs'>
                     <InformationCircleIcon className='w-4 h-4 inline' /> <Link href="/hjelp/sokehjelp#vitenskapelig-nvi" target={'_blank'} rel={'noreferrer'}>Hva betyr dette?</Link>
                   </p>
 
@@ -165,7 +165,7 @@ const Search = () => {
                     filterType="any"
                   //isFilterable={true}
                   />
-                  <p className='mb-8 -mt-2 text-xs'>
+                  <p className='mb-8 -mt-1 text-xs'>
                     <InformationCircleIcon className='w-4 h-4 inline' /> <Link href="/hjelp/sokehjelp#sdg-tema-og-tema-delmål" target={'_blank'} rel={'noreferrer'}>Hva betyr dette?</Link>
                   </p>
                   <Facet
@@ -184,7 +184,7 @@ const Search = () => {
                     filterType="any"
                   //isFilterable={true}
                   />
-                  <p className='mb-8 -mt-2 text-xs'>
+                  <p className='mb-8 -mt-1 text-xs'>
                     <InformationCircleIcon className='w-4 h-4 inline' /> <Link href="/hjelp/sokehjelp#sdg-handling-og-handling-delmål" target={'_blank'} rel={'noreferrer'}>Hva betyr dette?</Link>
                   </p>
                   <Facet
