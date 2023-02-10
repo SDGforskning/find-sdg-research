@@ -1,13 +1,12 @@
 import type { DocsThemeConfig } from 'nextra-theme-docs'
 import { useRouter } from 'next/router'
-import { HVLIcon } from '@components/icons/hvl';
-import { UiBIcon } from './components/icons/uib';
 import { NBIcon } from '@components/icons/nb';
-import { UiSIcon } from '@components/icons/uis';
 import { UIBUBLeftEngLogo } from '@components/logos/UIBUBLeftEngLogo';
 import { UIBUBLeftNorLogo } from '@components/logos/UIBUBLeftNorLogo';
 import { HVLLeftEngLogo } from '@components/logos/HVLLeftEngLogo';
 import { HVLLeftNorLogo } from '@components/logos/HVLLeftNorLogo';
+import { UiSLeftNorLogo } from '@components/logos/UiSLeftNorLogo';
+import { UiSLeftEngLogo } from '@components/logos/UiSLeftEngLogo';
 
 const TITLE = {
   en: "Find SDG research (beta)",
@@ -127,7 +126,7 @@ export default {
               </div>
             </div>
           </div>
-          <div className='flex gap-16'>
+          <div className='flex items-baseline gap-16'>
             <div className='md:w-2/6 w-full'>
               {locale === 'en' ? <UIBUBLeftEngLogo /> : <UIBUBLeftNorLogo />}
             </div>
@@ -137,8 +136,8 @@ export default {
             <div className='md:w-2/6 w-full'>
               {
                 locale === 'en'
-                  ? <img src="/images/UiS_liggende_logo_negativ_RGB.jpg" alt='' />
-                  : <img src="/images/UiS_landscape_logo_negative_RGB_English.jpg" alt='' />
+                  ? <UiSLeftEngLogo />
+                  : <UiSLeftNorLogo />
               }
             </div>
           </div>
