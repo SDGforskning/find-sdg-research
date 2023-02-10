@@ -126,13 +126,13 @@ export default {
           </div>
 
           <div className='md:flex contents md:flex-row items-baseline gap15 md:gap-16'>
-            <div className='md:w-2/6 w-3/4'>
+            <div className='md:w-5/12 w-full -ml-3'>
               {locale === 'en' ? <UIBUBLeftEngLogo /> : <UIBUBLeftNorLogo />}
             </div>
-            <div className='md:w-2/6 w-2/4'>
+            <div className='md:w-4/12 w-2/4'>
               {locale === 'en' ? <HVLLeftEngLogo /> : <HVLLeftNorLogo />}
             </div>
-            <div className='md:w-2/6 w-2/4'>
+            <div className='md:w-3/12 w-6/12'>
               {locale === 'en' ? <UiSLeftEngLogo /> : <UiSLeftNorLogo />}
             </div>
           </div>
