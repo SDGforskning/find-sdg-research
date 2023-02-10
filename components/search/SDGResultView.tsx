@@ -1,6 +1,5 @@
 import { useRouter } from 'next/router';
-import { truncateUrl } from '../../lib/truncateUrl'
-import { ArrowUpRightIcon, LockClosedIcon, LockOpenIcon } from '@heroicons/react/24/solid'
+import { ArrowUpRightIcon, LockClosedIcon, LockOpenIcon, UserGroupIcon } from '@heroicons/react/24/solid'
 
 const isScientific = {
   en: 'Scientific',
@@ -101,18 +100,7 @@ const CustomResultView = ({
             </div>
           )}
 
-          {data[locale].mentions?.raw && (
-            <div className='flex gap-3'>
-              {data[locale].mentions?.raw.map((m: string, i: number) => (
-                <div
-                  key={i}
-                  className={`mt-3 text-xs text-white inline-flex items-center font-bold leading-sm uppercase px-3 py-1 bg-gray-600 dark:text-white rounded`}
-                >
-                  {m}
-                </div>
-              ))}
-            </div>
-          )}
+
 
           <div className='flex gap-10 mt-3'>
             {data[locale].SDG_topic?.raw && (
@@ -169,19 +157,32 @@ const CustomResultView = ({
               </div>
             )}
           </div>
+          {data[locale].mentions?.raw && (
+            <div className='flex gap-3'>
+              {data[locale].mentions?.raw.map((m: string, i: number) => (
+                <div
+                  key={i}
+                  className={`mt-3 text-xs inline-flex items-center  leading-sm  px-3 py-1 bg-gray-100 dark:text-white rounded`}
+                >
+                  {m}
+                </div>
+              ))}
+            </div>
+          )}
         </div>
 
         <div className='flex md:flex-1 md:flex-col-reverse sm:gap-10 md:gap-2 md:pl-5 md:w-2/6 w-full flex-wrap'>
           <div className='md:flex md:flex-col-reverse'>
-            {data[locale].scientific_result?.raw && (
-              <div className='px-2 py-1 border-2 border-green-700 font-bold rounded'>
-                {`${isScientific[locale]} (NVI ${data[locale].NVI_level?.raw})`}
-              </div>
-            )}
-
-            {data[locale].scientific_field_NPI?.raw && (
-              <div>
-                {data[locale].scientific_field_NPI.raw}
+            {(data[locale].scientific_result?.raw || data[locale].scientific_field_NPI?.raw) && (
+              <div className='px-3 py-2 rounded mb-4 sm:mb-0  sm:mt-3 text-sm bg-neutral-100'>
+                <div className='font-bold'>
+                  {`${isScientific[locale]} (NVI ${data[locale].NVI_level?.raw})`}
+                </div>
+                {data[locale].scientific_field_NPI?.raw && (
+                  <div>
+                    {data[locale].scientific_field_NPI.raw}
+                  </div>
+                )}
               </div>
             )}
           </div>
@@ -189,7 +190,7 @@ const CustomResultView = ({
             {data[locale].result_id.raw && (
               <li className={`text-md leading-sm`}>
                 <a href={`https://app.cristin.no/results/show.jsf?id=${data[locale].result_id.raw}`} target="_blank" rel="nonreferrer">
-                  Authors and institutions in CRISTIN <ArrowUpRightIcon className="inline h-4 w-4 text-blue-500" />
+                  <UserGroupIcon className='inline w-4 h-4 -mt-1' /> {locale === 'en' ? 'Authors and more information' : 'Forfattere og mer informasjon'}<ArrowUpRightIcon className="inline h-4 w-4 text-blue-500" />
                 </a>
               </li>
             )}
