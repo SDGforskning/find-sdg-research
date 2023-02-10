@@ -266,7 +266,20 @@ const Search = () => {
                   </div>
                 )}
               />
-              {/* <Sorting /> */}
+              {/* <Sorting
+              sortOptions={[
+                {
+                  name: "Relevance",
+                  value: "",
+                  direction: ""
+                },
+                {
+                  name: locale === 'en' ? "Title (A-Z)" : "Tittel (A-Å)",
+                  value: "title",
+                  direction: "asc"
+                }
+              ]}
+               /> */}
             </>
           }
           bodyContent={<Results resultView={SDGResultView} />}
