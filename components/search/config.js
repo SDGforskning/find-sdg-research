@@ -61,8 +61,6 @@ const config = {
       "publication_subtype_en.keyword",
       "scientific_field_NPI_no.keyword",
       "scientific_field_NPI_en.keyword",
-      "mentions_no.keyword",
-      "mentions_en.keyword",
     ],
     facets: {
       "fulltext_found.keyword": { type: "value" },
