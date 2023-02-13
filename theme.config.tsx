@@ -25,9 +25,7 @@ export default {
       )
     },
   },
-  project: {
-    link: 'https://github.com/SDGforskning/find-sdg-research'
-  },
+  project: { /* link: 'https://github.com/SDGforskning/find-sdg-research' */ },
   docsRepositoryBase: 'https://github.com/SDGforskning/find-sdg-research/blob/master',
   useNextSeoProps() {
     const { asPath, locale } = useRouter()
@@ -93,9 +91,9 @@ export default {
     text() {
       const { locale } = useRouter()
       return (
-        <div className='w-full flex flex-col gap-10 flex-wrap md:flex-nowrap justify-between'>
-          <div className='flex flex-row gap-5'>
-            <div className='w-2/4'>
+        <div className='w-full flex flex-col gap-4 md:gap-10 flex-wrap md:flex-nowrap justify-between'>
+          <div className='flex flex-col md:flex-row gap-5'>
+            <div className='w-full md:w-2/4'>
               <ul className='flex gap-10'>
                 <ul>
                   <li>
@@ -111,7 +109,7 @@ export default {
               </div>
             </div>
 
-            <div className='w-2/4 flex items-center gap-2'>
+            <div className='w-full md:w-2/4 flex flex-col just-between gap-2'>
               <div className='flex items-center gap-2 text-sm'>
                 <img style={{ width: '24px', height: '24px' }} src='/logo.png' alt='' />
                 {locale === 'en'
@@ -126,19 +124,16 @@ export default {
               </div>
             </div>
           </div>
-          <div className='flex items-baseline gap-16'>
-            <div className='md:w-2/6 w-full'>
+
+          <div className='md:flex contents md:flex-row items-baseline gap15 md:gap-16'>
+            <div className='md:w-5/12 w-full -ml-3'>
               {locale === 'en' ? <UIBUBLeftEngLogo /> : <UIBUBLeftNorLogo />}
             </div>
-            <div className='md:w-2/6 w-full'>
+            <div className='md:w-4/12 w-2/4'>
               {locale === 'en' ? <HVLLeftEngLogo /> : <HVLLeftNorLogo />}
             </div>
-            <div className='md:w-2/6 w-full'>
-              {
-                locale === 'en'
-                  ? <UiSLeftEngLogo />
-                  : <UiSLeftNorLogo />
-              }
+            <div className='md:w-3/12 w-6/12'>
+              {locale === 'en' ? <UiSLeftEngLogo /> : <UiSLeftNorLogo />}
             </div>
           </div>
         </div>
