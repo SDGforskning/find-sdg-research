@@ -162,7 +162,7 @@ const CustomResultView = ({
               {data[locale].mentions?.raw.map((m: string, i: number) => (
                 <div
                   key={i}
-                  className={`mt-3 text-xs inline-flex items-center  leading-sm  px-3 py-1 bg-gray-100 dark:text-white rounded`}
+                  className={`mt-3 text-xs inline-flex items-center  leading-sm  px-3 py-1 bg-gray-100 dark:bg-neutral-800 dark:text-white rounded`}
                 >
                   {m}
                 </div>
@@ -174,7 +174,7 @@ const CustomResultView = ({
         <div className='flex md:flex-1 md:flex-col-reverse sm:gap-10 md:gap-2 md:pl-5 md:w-2/6 w-full flex-wrap'>
           <div className='md:flex md:flex-col-reverse'>
             {(data[locale].scientific_result?.raw || data[locale].scientific_field_NPI?.raw) && (
-              <div className='px-3 py-2 rounded mb-4 sm:mb-0  sm:mt-3 text-sm bg-neutral-100'>
+              <div className='px-3 py-2 rounded mb-4 sm:mb-0  sm:mt-3 text-sm bg-neutral-100 dark:bg-neutral-800'>
                 <div className='font-bold'>
                   {`${isScientific[locale]} (NVI ${data[locale].NVI_level?.raw})`}
                 </div>
