@@ -176,7 +176,8 @@ const CustomResultView = ({
             {(data[locale].scientific_result?.raw || data[locale].scientific_field_NPI?.raw) && (
               <div className='px-3 py-2 rounded mb-4 sm:mb-0  sm:mt-3 text-sm bg-neutral-100 dark:bg-neutral-800'>
                 <div className='font-bold'>
-                  {`${isScientific[locale]} (NVI ${data[locale].NVI_level?.raw})`}
+                  {data[locale].scientific_result?.raw === true ? isScientific[locale] : ''}
+                  {data[locale].NVI_level?.raw ? ` (NVI ${data[locale].NVI_level.raw})` : ''}
                 </div>
                 {data[locale].scientific_field_NPI?.raw && (
                   <div>
