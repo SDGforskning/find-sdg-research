@@ -199,7 +199,6 @@ const CustomResultView = ({
             {data[locale].fulltextlink?.raw !== 'No open link found' && (
               <li>
                 <a href={data[locale].fulltextlink.raw} target="_blank" rel="nonreferrer">
-                  {/* {truncateUrl(data[locale].fulltextlink.raw, 10)} */}
                   <LockOpenIcon className='inline w-4 h-4 -mt-1' /> Fulltext <ArrowUpRightIcon className="inline h-4 w-4 text-blue-500" />
                 </a>
                 {/* {data[locale].fulldoi?.raw && (data[locale].fulltextlink?.raw !== data[locale].fulldoi?.raw) && (
