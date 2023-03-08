@@ -1,11 +1,8 @@
 {
-  "introduksjon": {
-    "title": "Introduction"
-  },
   "actions": {
-    "title": "Actions"
+    "title": "Action"
   },
   "topics": {
-    "title": "Topics"
+    "title": "Topic"
   }
 }
