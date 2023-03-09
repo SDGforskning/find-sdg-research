@@ -1,8 +1,11 @@
 {
+  "introduksjon": {
+    "title": "Introduksjon"
+  },
   "wos": {
-    "title": "Web of Science"
+    "title": "Web of Science søkestreng"
   },
   "jupyter": {
-    "title": "Jupyter notebooks"
+    "title": "Python søkestreng"
   }
 }

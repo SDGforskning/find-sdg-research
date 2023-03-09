@@ -1,11 +1,11 @@
 {
-  "SDG01-query-action-WoS": "Action: SDG 01",
-  "SDG02-query-action-WoS": "Action: SDG 02",
-  "SDG03-query-action-WoS": "Action: SDG 03",
-  "SDG04-query-action-WoS": "Action: SDG 04",
-  "SDG07-query-action-WoS": "Action: SDG 07",
-  "SDG11-query-action-WoS": "Action: SDG 11",
-  "SDG13-query-action-WoS": "Action: SDG 13",
-  "SDG14-query-action-WoS": "Action: SDG 14",
-  "SDG15-query-action-WoS": "Action: SDG 15"
+  "SDG01_query_action_WoS": "Action: SDG 01",
+  "SDG02_query_action_WoS": "Action: SDG 02",
+  "SDG03_query_action_WoS": "Action: SDG 03",
+  "SDG04_query_action_WoS": "Action: SDG 04",
+  "SDG07_query_action_WoS": "Action: SDG 07",
+  "SDG11_query_action_WoS": "Action: SDG 11",
+  "SDG13_query_action_WoS": "Action: SDG 13",
+  "SDG14_query_action_WoS": "Action: SDG 14",
+  "SDG15_query_action_WoS": "Action: SDG 15"
 }
