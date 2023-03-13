@@ -3,13 +3,13 @@
 ## Find research
 
 ### The publication I want to read does not have a full text link. How can I get access?
-You can contact your local public library, who can get you a copy. 
+If you are affiliated with a research or educational institution with a library, your institutional library can help you get access. If you are not affiliated with an institution, you can see if your local public library can help. You can also consider contacting the authors of the publication directly - researchers are often happy to share copies of their work with interested readers! 
 
 ### My search gets too many results for me to handle
 Try to limit your search by using the filters on the left, for example you could look at publications from a certain year, or search in one SDG at a time. If you use "SDG Action" to limit by SDG, you will get fewer results than if you use "SDG Topic". 
 
 ### My search gets hardly any results
-Sometimes the problem can be that you have spelled your search terms incorrectly. You can also try a new search with a more general search term, try a different synonym. If you have searched with Norwegian search terms, you can try and search in English. You can also check which filters you have used - are there some you could widen? If you have limited to a certain SDG using the "SDG Action" filter, try using "SDG Topic" instead. 
+Try a new search with a more general search term, try a different synonym, or try singular and plural variants. It can also be worth double checking if your term is spelled correctly. If you have searched with Norwegian search terms, try an English search term - you will likely get more results if you search in English. You can also check which filters you have used - are there some you could drop? If you have limited to a certain SDG using the "SDG Action" filter, use "SDG Topic" instead. 
 
 ### What are "targets"?
 Each of the SDGs consists of several more detailed targets. You can read more about these under [About the SDGs](/om/om-baerekraftsmalene). 
