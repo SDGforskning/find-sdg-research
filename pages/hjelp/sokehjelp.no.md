@@ -2,9 +2,9 @@
 
 ## Søk
 * Søk blir utført i tittelfeltet. Et resultat blir inkludert hvis et ord i tittelen samsvarer med ditt søkeord.
-* Søk med ufullstendige ord gir treff også på det fullstendige ordet. For eksempel vil søk etter «barn» inkludere resultater med «barnehage» i tittelen.  
 * Et søk med flere ord, for eksempel "ren energi", gir en treffliste der de første resultatene inneholder begge ordene i tittelen. Lenger nede i trefflisten finner du resultater som inneholder bare ett av ordene.  
-* Søket er ikke flerspråklig. Hvis du søker med et norsk ord, får du kun resultater som har det norske ordet i tittelen. Et søk med det norske ordet "fattigdom"  vil ikke finne publikasjoner med "poverty" i tittelen (eller omvendt).  
+* Søk med ufullstendige ord gir treff også på det fullstendige ordet, når man søker med **et** begrep. For eksempel vil søk etter «barn» inkludere resultater med "barnehage" eller "barnevernet" i tittelen. Imidlertigig vil et søk etter "barn skole" kun finner resultater med "barn" (eller "skole") i tittelen. 
+* Søket er ikke flerspråklig. Hvis du søker med et norsk ord, får du kun resultater som har det norske ordet i tittelen. Et søk med det norske ordet "fattigdom" vil ikke finne publikasjoner med "poverty" i tittelen (eller omvendt).  
 
 ## Filtrering
 ### Fulltekst funnet
