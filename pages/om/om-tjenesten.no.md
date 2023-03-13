@@ -14,14 +14,14 @@ Tjenesten kan brukes for å finne forskningslitteratur som er knyttet til bærek
 
 Tjenesten ble etablert av Universitetsbiblioteket i Bergen, Universitetsbiblioteket i Stavanger og Biblioteket ved Høgskulen på Vestlandet gjennom et [2-årig prosjekt](https://www.uib.no/ub/148803/b%C3%A6rekraftsforskning-alle-%E2%80%93-en-transparent-kartleggings-og-gjenfinningstjeneste) støttet av Nasjonalbiblioteket ([se prosjektet i Prosjektbank her](https://bibliotekutvikling.no/prosjektbank/prosjekt/baerekraftsforskning-for-alle-en-transparent-kartleggings-og-gjenfinningstjeneste/)). Redaksjonen består av deltakere fra Universitetsbiblioteket i Bergen, Universitetsbiblioteket i Stavanger og Biblioteket ved Høgskulen på Vestlandet. Universitetsbiblioteket i Bergen har ansvaret for teknisk støtte til plattformen. [Kontakte oss her](/om/kontakt).
 
-Det er disse institusjonene samt eksterne bidragsytere som har ansvaret for vedlikehold av søkestrengene som er brukt i tjenesten. For mer informasjon, [se Søkestreng dokumentasjon](/om/sokestreng/wos/introduksjon).
+Det er disse institusjonene samt eksterne bidragsytere som har ansvaret for vedlikehold av søkestrengene som er brukt i tjenesten. For mer informasjon, [se Søkestreng dokumentasjon](/om/sokestreng/introduksjon).
 
 ## Metoder og dekning
 
 ### Dekning
 
 Tjenesten dekker i dag ni av bærekraftsmålene (målene 1, 2, 3, 4, 7, 11, 13, 14, 15, med mål 12 på vei inn). Flere mål kan bli lagt til tjenesten, avhengig av kapasitet. 
-For at en publikasjon skal være omfattet av tjenesten, må den være a) indeksert i [CRISTIN](https://www.cristin.no/) (Current Research Information System in Norway), b) skrevet på norsk eller engelsk, og c) kategorisert i CRISTIN som *Bok*, *Del av bok/rapport*, *Rapport/avhandling* eller *Tidsskriftpublikasjon*, men ikke i underkategoriene "Anmeldelse", "Errata", "Abstract" eller "Annet". Dette dekker en stor del av den skriftlige forskningsproduksjonen i Norge. Imidlertid kan noen rapporter og populærvitenskapelige arbeider mangle, siden disse ikke alltid blir registrert i CRISTIN. I tillegg må publikasjonen være knyttet til et bærekraftsmål i tråd med våre kartleggingsmetoder.  
+For at en publikasjon skal være omfattet av tjenesten, må den være a) indeksert i [CRISTIN](https://www.cristin.no/) (Current Research Information System in Norway), b) skrevet på norsk eller engelsk, og c) kategorisert i CRISTIN som *Bok*, *Del av bok/rapport*, *Rapport/avhandling* eller *Tidsskriftpublikasjon*, men ikke i underkategoriene *anmeldelse*, *errata*, *abstract* eller *annet*. Dette dekker en stor del av den skriftlige forskningsproduksjonen i Norge. Imidlertid kan noen rapporter og populærvitenskapelige arbeider mangle, siden disse ikke alltid blir registrert i CRISTIN. I tillegg må publikasjonen være knyttet til et bærekraftsmål i tråd med våre kartleggingsmetoder.  
 
 Den dekker arbeider publisert fra 2015 til 2021. Noen publikasjoner fra 2022 er også med, disse vil bli supplert i løpet av 2023. 
 
@@ -36,7 +36,7 @@ Publikasjonene i tjenesten er knyttet til bærekraftsmålene gjennom en metode v
 3.	Å utvikle boolske søkestrenger for å finne denne forskningen, inkludert norsk oversettelse av søkestrengene.
 4.	Å dokumentere disse strengene.
 
-Hvis du har tilgang til Web of Science eller kan kjøre Python, er du velkommen til å prøve ut, gjenbruke eller gjøre endringer i våre søkestrenger. Søkestrengene samt mer detaljert dokumentasjon er tilgjengelig [under Søkestrenger (English only)](/om/sokestreng/wos/introduksjon).
+Hvis du har tilgang til Web of Science eller kan kjøre Python, er du velkommen til å prøve ut, gjenbruke eller gjøre endringer i våre søkestrenger. Søkestrengene samt mer detaljert dokumentasjon er tilgjengelig [under Søkestrenger (English only)](/om/sokestreng/introduksjon).
 
 Metadataene i tjenesten er hentet fra CRISTIN. 
 
