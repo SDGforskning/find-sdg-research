@@ -19,9 +19,6 @@ export function Goals() {
   const { locale } = useRouter()
   return (
     <div className='xl:-mx-42'>
-      <h2 className='text-center mt-5 text-3xl font-bold'>
-        {locale === 'en' ? 'Browse by SDGs' : 'Finn forskning per bærekraftsmål'}
-      </h2>
       <div className='flex flex-wrap justify-center py-6 gap-3'>
         {goals
           .filter(goal => goal.disabled != true)
