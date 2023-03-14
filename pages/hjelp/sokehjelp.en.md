@@ -3,7 +3,7 @@
 ## Searching
 * Searches are carried out in the title of the results – a result with show up if it has a word in the title that matches your search term
 * If you search with multiple search terms, for example “wind power”, the first results you will see are those which contain both terms in the title. Then, as you move down the results list and there are no more that contain both terms, you will start to see results that contain just one of the terms. 
-* Searching for partial words will match several possible full words, when searching with **one** search term. For example, searching for "fisher" will also show you results with "fisher", "fisheries" or "fishery" in the title. However, searching for "fisher cod" (two search terms) will only find results containing "fisher" (or "cod").
+* Searching for partial words will match several possible full words, when searching with **one** search term. For example, searching for "fisher" will show you results with "fisher", "fisheries" or "fishery" in the title. However, searching for "fisher cod" (two search terms) will only find results containing "fisher" (or "cod").
 * The search is not multilingual – if you search with a Norwegian term, you will get results with that Norwegian word in the title. For example, a search with the Norwegian term “fattigdom” will not find English works with “poverty” in the title (or vice versa).  
 ## Filters
 ### Fulltext found
