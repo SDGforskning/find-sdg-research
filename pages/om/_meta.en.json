@@ -1,9 +1,9 @@
 {
-  "om-baerekraftsmalene": {
-    "title": "About the SDGs"
-  },
   "om-tjenesten": {
     "title": "About this service"
+  },
+  "om-baerekraftsmalene": {
+    "title": "About the SDGs"
   },
   "sokestreng": {
     "title": "Search strings"

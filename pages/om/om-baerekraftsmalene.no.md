@@ -8,7 +8,7 @@ Begrepet «bærekraftig utvikling» har vært i bruk siden Verdenskommisjonen fo
 
 ## Delmål
 
-Alle de 17 bærekraftsmålene har ett overordnet mål og flere delmål, for eksempel:
+Alle de 17 bærekraftsmålene (også kjent som "Sustainable development goals" eller "SDGs") har ett overordnet mål og flere delmål, for eksempel:
 * SDG 2 er «Utrydde sult», og det overordnete målet er oppsummert slik: "Utrydde sult, oppnå matsikkerhet og bedre ernæring, og fremme bærekraftig landbruk» 
 * Delmål 2.4 er ett av åtte delmål under SDG 2: «Innen 2030 sikre at det finnes bærekraftige systemer for matproduksjon, og innføre robuste metoder som gir økt produktivitet og produksjon, som bidrar til å opprettholde økosystemene, som styrker evnen til tilpasning til klimaendringer, ekstremvær, tørke, oversvømmelse og andre katastrofer, og som gradvis bedrer arealenes og jordas kvalitet» (https://www.fn.no/om-fn/fns-baerekraftsmaal/utrydde-sult)
 

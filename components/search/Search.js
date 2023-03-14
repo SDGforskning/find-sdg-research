@@ -250,8 +250,8 @@ const Search = () => {
                         type="text"
                         value={value}
                         placeholder={locale === 'en'
-                          ? "Search within publication title, e.g. wind power"
-                          : "Søk i publikasjonstittel, f.eks. vindkraft"}
+                          ? "Search within publication title, e.g. fiskeri fishery fisheries"
+                          : "Søk i publikasjonstittel, f.eks. fiskeri fishery fisheries"}
                         onChange={(e) => onChange(e.target.value)}
                       />
                       <button

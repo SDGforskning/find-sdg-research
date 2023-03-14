@@ -3,8 +3,8 @@
 
 ## Finn forskning
 
-### Artikkelen jeg ønsker å lese er ikke åpent tilgjengelig for alle. Hva gjør jeg?
-Du kan kontakte ditt nærmeste offentlige bibliotek. De kan skaffe deg en kopi av artikkelen du er interessert i.
+### Publikasjonen jeg ønsker å lese har ingen fulltekstlenke. Hva gjør jeg?
+Hvis du er tilknyttet en forsknings- eller utdanningsinstitusjon med et bibliotek, kan biblioteket antakelig hjelpe deg med å skaffe den. Hvis du ikke er ansatt eller elev/student ved en slik institusjon, kan du prøve å spørre ditt lokale bibliotek. Du kan også tenke på å kontakte forfatteren av publikasjonen direkte, mange forskere blir glade for å få spørsmål om å dele resultatene sine med interesserte lesere!
 
 ### Jeg får for mange treff
 Prøv å avgrense søket ditt med bruk av filter til venstre, for eksempel velg bestemte år eller søk kun i ett bærekraftsmål om gangen. Søker du i "SDG Action" får du færre treff enn om du søker i "SDG Topic". 
