@@ -15,6 +15,10 @@
     "title": "Hjelp",
     "type": "page"
   },
+  "sokestreng": {
+    "title": "Søkestrenger",
+    "type": "page"
+  },
   "statistikk": {
     "title": "Statistikk",
     "type": "page"
