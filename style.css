@@ -8,12 +8,12 @@ body {
   font-family: "Noto Sans", sans-serif;
 }
 
-.dark nav>a[href='/sok'] {
+.dark nav>a[href='/sok'], .dark nav>a[href='/en/sok'] {
   font-weight: 800;
   color: white !important;
 }
 
-nav>a[href='/sok'] {
+nav>a[href='/sok'], nav>a[href='/en/sok'] {
   font-weight: 800;
   color: black !important;
 }
