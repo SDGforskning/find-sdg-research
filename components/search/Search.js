@@ -83,7 +83,7 @@ const Search = () => {
                     filterType="any"
                     isFilterable={true}
                   />
-                  <Facet
+                  {/* <Facet
                     field="SDG_action_en.keyword"
                     label={"SDG Action"}
                     show={20}
@@ -93,7 +93,7 @@ const Search = () => {
                   />
                   <p className='mb-8 -mt-1 text-xs'>
                     <InformationCircleIcon className='w-4 h-4 inline' /> <Link href="/en/hjelp/sokehjelp#sdg-action-sdg-action-target" target={'_blank'} rel={'noreferrer'}>What does this mean?</Link>
-                  </p>
+                  </p> */}
                   <Facet
                     field="SDG_target_action_en.keyword"
                     label={"SDG Action, targets"}
@@ -176,7 +176,7 @@ const Search = () => {
                     filterType="any"
                     isFilterable={true}
                   />
-                  <Facet
+                  {/*  <Facet
                     field="SDG_action_no.keyword"
                     label={"SDG handling"}
                     show={20}
@@ -186,7 +186,7 @@ const Search = () => {
                   />
                   <p className='mb-8 -mt-1 text-xs'>
                     <InformationCircleIcon className='w-4 h-4 inline' /> <Link href="/hjelp/sokehjelp#sdg-handling-og-handling-delmål" target={'_blank'} rel={'noreferrer'}>Hva betyr dette?</Link>
-                  </p>
+                  </p> */}
                   <Facet
                     field="SDG_target_action_no.keyword"
                     label={"SDG handling, delmål"}
