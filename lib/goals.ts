@@ -7,8 +7,8 @@ export const goals = [
       no: 'images/sdg/no/E-WEB-Goal-01.png'
     },
     link: {
-      en: 'sok?size=n_20_n&filters%5B0%5D%5Bfield%5D=SDG_topic_en.keyword&filters%5B0%5D%5Bvalues%5D%5B0%5D=SDG1%20No%20poverty&filters%5B0%5D%5Btype%5D=any',
-      no: 'sok?size=n_20_n&filters%5B0%5D%5Bfield%5D=SDG_topic_no.keyword&filters%5B0%5D%5Bvalues%5D%5B0%5D=SDG1%20Utrydde%20fattigdom&filters%5B0%5D%5Btype%5D=any'
+      en: 'sok?size=n_20_n&filters%5B0%5D%5Bfield%5D=fulltext_found.keyword&filters%5B0%5D%5Bvalues%5D%5B0%5D=true&filters%5B0%5D%5Btype%5D=all&filters%5B1%5D%5Bfield%5D=SDG_topic_en.keyword&filters%5B1%5D%5Bvalues%5D%5B0%5D=SDG1%20No%20poverty&filters%5B1%5D%5Btype%5D=any',
+      no: 'sok?size=n_20_n&filters%5B0%5D%5Bfield%5D=SDG_topic_no.keyword&filters%5B0%5D%5Bvalues%5D%5B0%5D=SDG1%20Utrydde%20fattigdom&filters%5B0%5D%5Btype%5D=any&filters%5B1%5D%5Bfield%5D=fulltext_found.keyword&filters%5B1%5D%5Bvalues%5D%5B0%5D=true&filters%5B1%5D%5Btype%5D=all'
     }
   },
   {
@@ -19,8 +19,8 @@ export const goals = [
       no: 'images/sdg/no/E-WEB-Goal-02.png'
     },
     link: {
-      en: 'sok?size=n_20_n&filters%5B0%5D%5Bfield%5D=SDG_topic_en.keyword&filters%5B0%5D%5Bvalues%5D%5B0%5D=SDG2%20Zero%20hunger&filters%5B0%5D%5Btype%5D=any',
-      no: 'sok?size=n_20_n&filters%5B0%5D%5Bfield%5D=SDG_topic_no.keyword&filters%5B0%5D%5Bvalues%5D%5B0%5D=SDG2%20Utrydde%20sult&filters%5B0%5D%5Btype%5D=any'
+      en: 'sok?size=n_20_n&filters%5B0%5D%5Bfield%5D=fulltext_found.keyword&filters%5B0%5D%5Bvalues%5D%5B0%5D=true&filters%5B0%5D%5Btype%5D=all&filters%5B1%5D%5Bfield%5D=SDG_topic_en.keyword&filters%5B1%5D%5Bvalues%5D%5B0%5D=SDG2%20Zero%20hunger&filters%5B1%5D%5Btype%5D=any',
+      no: 'sok?size=n_20_n&filters%5B0%5D%5Bfield%5D=fulltext_found.keyword&filters%5B0%5D%5Bvalues%5D%5B0%5D=true&filters%5B0%5D%5Btype%5D=all&filters%5B1%5D%5Bfield%5D=SDG_topic_no.keyword&filters%5B1%5D%5Bvalues%5D%5B0%5D=SDG2%20Utrydde%20sult&filters%5B1%5D%5Btype%5D=any'
     }
   },
   {
@@ -31,8 +31,8 @@ export const goals = [
       no: 'images/sdg/no/E-WEB-Goal-03.png'
     },
     link: {
-      en: 'sok?size=n_20_n&filters%5B0%5D%5Bfield%5D=SDG_topic_en.keyword&filters%5B0%5D%5Bvalues%5D%5B0%5D=SDG3%20Good%20health&filters%5B0%5D%5Btype%5D=any',
-      no: 'sok?size=n_20_n&filters%5B0%5D%5Bfield%5D=SDG_topic_no.keyword&filters%5B0%5D%5Bvalues%5D%5B0%5D=SDG3%20God%20helse&filters%5B0%5D%5Btype%5D=any'
+      en: 'sok?size=n_20_n&filters%5B0%5D%5Bfield%5D=fulltext_found.keyword&filters%5B0%5D%5Bvalues%5D%5B0%5D=true&filters%5B0%5D%5Btype%5D=all&filters%5B1%5D%5Bfield%5D=SDG_topic_en.keyword&filters%5B1%5D%5Bvalues%5D%5B0%5D=SDG3%20Good%20health&filters%5B1%5D%5Btype%5D=any',
+      no: 'sok?size=n_20_n&filters%5B0%5D%5Bfield%5D=fulltext_found.keyword&filters%5B0%5D%5Bvalues%5D%5B0%5D=true&filters%5B0%5D%5Btype%5D=all&filters%5B1%5D%5Bfield%5D=SDG_topic_no.keyword&filters%5B1%5D%5Bvalues%5D%5B0%5D=SDG3%20God%20helse&filters%5B1%5D%5Btype%5D=any'
     }
   },
   {
@@ -43,8 +43,8 @@ export const goals = [
       no: 'images/sdg/no/E-WEB-Goal-04.png'
     },
     link: {
-      en: 'sok?size=n_20_n&filters%5B0%5D%5Bfield%5D=SDG_topic_en.keyword&filters%5B0%5D%5Bvalues%5D%5B0%5D=SDG4%20Quality%20education&filters%5B0%5D%5Btype%5D=any',
-      no: 'sok?size=n_20_n&filters%5B0%5D%5Bfield%5D=SDG_topic_no.keyword&filters%5B0%5D%5Bvalues%5D%5B0%5D=SDG4%20God%20utdanning&filters%5B0%5D%5Btype%5D=any'
+      en: 'ok?size=n_20_n&filters%5B0%5D%5Bfield%5D=fulltext_found.keyword&filters%5B0%5D%5Bvalues%5D%5B0%5D=true&filters%5B0%5D%5Btype%5D=all&filters%5B1%5D%5Bfield%5D=SDG_topic_en.keyword&filters%5B1%5D%5Bvalues%5D%5B0%5D=SDG4%20Quality%20education&filters%5B1%5D%5Btype%5D=any',
+      no: 'sok?size=n_20_n&filters%5B0%5D%5Bfield%5D=fulltext_found.keyword&filters%5B0%5D%5Bvalues%5D%5B0%5D=true&filters%5B0%5D%5Btype%5D=all&filters%5B1%5D%5Bfield%5D=SDG_topic_no.keyword&filters%5B1%5D%5Bvalues%5D%5B0%5D=SDG4%20God%20utdanning&filters%5B1%5D%5Btype%5D=any'
     }
   },
   {
@@ -79,8 +79,8 @@ export const goals = [
       no: 'images/sdg/no/E-WEB-Goal-07.png'
     },
     link: {
-      en: 'sok?size=n_20_n&filters%5B0%5D%5Bfield%5D=SDG_topic_en.keyword&filters%5B0%5D%5Bvalues%5D%5B0%5D=SDG7%20Clean%20energy&filters%5B0%5D%5Btype%5D=any',
-      no: 'sok?size=n_20_n&filters%5B0%5D%5Bfield%5D=SDG_topic_no.keyword&filters%5B0%5D%5Bvalues%5D%5B0%5D=SDG7%20Ren%20energi&filters%5B0%5D%5Btype%5D=any'
+      en: 'sok?size=n_20_n&filters%5B0%5D%5Bfield%5D=fulltext_found.keyword&filters%5B0%5D%5Bvalues%5D%5B0%5D=true&filters%5B0%5D%5Btype%5D=all&filters%5B1%5D%5Bfield%5D=SDG_topic_en.keyword&filters%5B1%5D%5Bvalues%5D%5B0%5D=SDG7%20Clean%20energy&filters%5B1%5D%5Btype%5D=any',
+      no: 'sok?size=n_20_n&filters%5B0%5D%5Bfield%5D=fulltext_found.keyword&filters%5B0%5D%5Bvalues%5D%5B0%5D=true&filters%5B0%5D%5Btype%5D=all&filters%5B1%5D%5Bfield%5D=SDG_topic_no.keyword&filters%5B1%5D%5Bvalues%5D%5B0%5D=SDG7%20Ren%20energi&filters%5B1%5D%5Btype%5D=any'
     }
   },
   {
@@ -127,8 +127,8 @@ export const goals = [
       no: 'images/sdg/no/E-WEB-Goal-11.png'
     },
     link: {
-      en: 'sok?size=n_20_n&filters%5B0%5D%5Bfield%5D=SDG_topic_en.keyword&filters%5B0%5D%5Bvalues%5D%5B0%5D=SDG11%20Sustainable%20cities&filters%5B0%5D%5Btype%5D=any',
-      no: 'sok?size=n_20_n&filters%5B0%5D%5Bfield%5D=SDG_topic_no.keyword&filters%5B0%5D%5Bvalues%5D%5B0%5D=SDG11%20Bærekraftige%20byer&filters%5B0%5D%5Btype%5D=any'
+      en: 'sok?size=n_20_n&filters%5B0%5D%5Bfield%5D=fulltext_found.keyword&filters%5B0%5D%5Bvalues%5D%5B0%5D=true&filters%5B0%5D%5Btype%5D=all&filters%5B1%5D%5Bfield%5D=SDG_topic_en.keyword&filters%5B1%5D%5Bvalues%5D%5B0%5D=SDG11%20Sustainable%20cities&filters%5B1%5D%5Btype%5D=any',
+      no: 'sok?size=n_20_n&filters%5B0%5D%5Bfield%5D=fulltext_found.keyword&filters%5B0%5D%5Bvalues%5D%5B0%5D=true&filters%5B0%5D%5Btype%5D=all&filters%5B1%5D%5Bfield%5D=SDG_topic_no.keyword&filters%5B1%5D%5Bvalues%5D%5B0%5D=SDG11%20Bærekraftige%20byer&filters%5B1%5D%5Btype%5D=any'
     }
   },
   {
@@ -151,8 +151,8 @@ export const goals = [
       no: 'images/sdg/no/E-WEB-Goal-13.png'
     },
     link: {
-      en: 'sok?size=n_20_n&filters%5B0%5D%5Bfield%5D=SDG_topic_en.keyword&filters%5B0%5D%5Bvalues%5D%5B0%5D=SDG13%20Climate%20action&filters%5B0%5D%5Btype%5D=any',
-      no: 'sok?size=n_20_n&filters%5B0%5D%5Bfield%5D=SDG_topic_no.keyword&filters%5B0%5D%5Bvalues%5D%5B0%5D=SDG13%20Stoppe%20klimaendringene&filters%5B0%5D%5Btype%5D=any'
+      en: 'sok?size=n_20_n&filters%5B0%5D%5Bfield%5D=fulltext_found.keyword&filters%5B0%5D%5Bvalues%5D%5B0%5D=true&filters%5B0%5D%5Btype%5D=all&filters%5B1%5D%5Bfield%5D=SDG_topic_en.keyword&filters%5B1%5D%5Bvalues%5D%5B0%5D=SDG13%20Climate%20action&filters%5B1%5D%5Btype%5D=any',
+      no: 'sok?size=n_20_n&filters%5B0%5D%5Bfield%5D=fulltext_found.keyword&filters%5B0%5D%5Bvalues%5D%5B0%5D=true&filters%5B0%5D%5Btype%5D=all&filters%5B1%5D%5Bfield%5D=SDG_topic_no.keyword&filters%5B1%5D%5Bvalues%5D%5B0%5D=SDG13%20Stoppe%20klimaendringene&filters%5B1%5D%5Btype%5D=any'
     }
   },
   {
@@ -163,8 +163,8 @@ export const goals = [
       no: 'images/sdg/no/E-WEB-Goal-14.png'
     },
     link: {
-      en: 'sok?size=n_20_n&filters%5B0%5D%5Bfield%5D=SDG_topic_en.keyword&filters%5B0%5D%5Bvalues%5D%5B0%5D=SDG14%20Life%20below%20water&filters%5B0%5D%5Btype%5D=any',
-      no: 'sok?size=n_20_n&filters%5B0%5D%5Bfield%5D=SDG_topic_no.keyword&filters%5B0%5D%5Bvalues%5D%5B0%5D=SDG14%20Liv%20under%20vann&filters%5B0%5D%5Btype%5D=any'
+      en: 'sok?size=n_20_n&filters%5B0%5D%5Bfield%5D=fulltext_found.keyword&filters%5B0%5D%5Bvalues%5D%5B0%5D=true&filters%5B0%5D%5Btype%5D=all&filters%5B1%5D%5Bfield%5D=SDG_topic_en.keyword&filters%5B1%5D%5Bvalues%5D%5B0%5D=SDG14%20Life%20below%20water&filters%5B1%5D%5Btype%5D=any',
+      no: 'sok?size=n_20_n&filters%5B0%5D%5Bfield%5D=fulltext_found.keyword&filters%5B0%5D%5Bvalues%5D%5B0%5D=true&filters%5B0%5D%5Btype%5D=all&filters%5B1%5D%5Bfield%5D=SDG_topic_no.keyword&filters%5B1%5D%5Bvalues%5D%5B0%5D=SDG14%20Liv%20under%20vann&filters%5B1%5D%5Btype%5D=any'
     }
   },
   {
@@ -175,8 +175,8 @@ export const goals = [
       no: 'images/sdg/no/E-WEB-Goal-15.png'
     },
     link: {
-      en: 'sok?size=n_20_n&filters%5B0%5D%5Bfield%5D=SDG_topic_en.keyword&filters%5B0%5D%5Bvalues%5D%5B0%5D=SDG15%20Life%20on%20land&filters%5B0%5D%5Btype%5D=any',
-      no: 'sok?size=n_20_n&filters%5B0%5D%5Bfield%5D=SDG_topic_no.keyword&filters%5B0%5D%5Bvalues%5D%5B0%5D=SDG15%20Liv%20på%20land&filters%5B0%5D%5Btype%5D=any'
+      en: 'sok?size=n_20_n&filters%5B0%5D%5Bfield%5D=fulltext_found.keyword&filters%5B0%5D%5Bvalues%5D%5B0%5D=true&filters%5B0%5D%5Btype%5D=all&filters%5B1%5D%5Bfield%5D=SDG_topic_en.keyword&filters%5B1%5D%5Bvalues%5D%5B0%5D=SDG15%20Life%20on%20land&filters%5B1%5D%5Btype%5D=any',
+      no: 'sok?size=n_20_n&filters%5B0%5D%5Bfield%5D=fulltext_found.keyword&filters%5B0%5D%5Bvalues%5D%5B0%5D=true&filters%5B0%5D%5Btype%5D=all&filters%5B1%5D%5Bfield%5D=SDG_topic_no.keyword&filters%5B1%5D%5Bvalues%5D%5B0%5D=SDG15%20Liv%20på%20land&filters%5B1%5D%5Btype%5D=any'
     }
   },
   {
