@@ -1,5 +1,5 @@
 import { useRouter } from 'next/router';
-import { ArrowUpRightIcon, LockClosedIcon, LockOpenIcon, UserGroupIcon } from '@heroicons/react/24/solid'
+import { ArrowUpRightIcon, LockClosedIcon, LockOpenIcon, PencilIcon, UserGroupIcon } from '@heroicons/react/24/solid'
 
 const isScientific = {
   en: 'Scientific',
@@ -72,21 +72,21 @@ const CustomResultView = ({
   return (
     <li key={data[locale].id} className='border rounded dark:border-slate-700 mt-5 py-3 px-4'>
       <div className='flex flex-auto items-start flex-wrap md:flex-nowrap justify-between gap-5 md:divide-x'>
-        <div className='w-full md:w-4/6'>
+        <div className='w-full md:w-7/12'>
           <div className={`text-sm leading-sm text-gray-600 dark:text-gray-400`}>
             {data[locale].publication_type?.raw} / {data[locale].publication_subtype?.raw}
           </div>
           <h2 className='text-md md:text-lg font-bold'>
-            <a
+            {/* <a
               onClick={onClickLink}
               href={data[locale].fulltextlink?.raw !== 'No open link found'
                 ? data[locale].fulltextlink.raw
-                : data[locale].fulldoi?.raw ? data[locale].fulldoi.raw : `https://app.cristin.no/results/show.jsf?id=${data[locale].result_id.raw}`}
+                : data[locale].fulldoi?.raw ? data[locale].fulldoi.raw : ''}
               target="_blank"
               rel="nonreferrer"
-            >
-              {data[locale].result_title.raw}
-            </a>
+            > */}
+            {data[locale].result_title.raw}
+            {/* </a> */}
           </h2>
 
           {data[locale].journal && (
@@ -171,59 +171,64 @@ const CustomResultView = ({
           )}
         </div>
 
-        <div className='flex md:flex-1 md:flex-col-reverse sm:gap-10 md:gap-2 md:pl-5 md:w-2/6 w-full flex-wrap'>
-          <div className='md:flex md:flex-col-reverse'>
-            {(data[locale].scientific_result?.raw || data[locale].scientific_field_NPI?.raw) && (
-              <div className='px-3 py-2 rounded mb-4 sm:mb-0  sm:mt-3 text-sm bg-neutral-100 dark:bg-neutral-800'>
-                <div className='font-bold'>
-                  {data[locale].scientific_result?.raw === true ? isScientific[locale] : ''}
-                  {data[locale].NVI_level?.raw ? ` (NVI ${data[locale].NVI_level.raw})` : ''}
-                </div>
-                {data[locale].scientific_field_NPI?.raw && (
-                  <div>
-                    {data[locale].scientific_field_NPI.raw}
-                  </div>
-                )}
-              </div>
-            )}
-          </div>
+        <div className='flex md:flex-1 gap-3 md:gap-2 md:pl-5 md:w-5/12 w-full flex-wrap'>
+          {data[locale].fulltextlink?.raw !== 'No open link found' ? (
+            <div className='px-3 py-2 text-white font-bold bg-green-500 rounded'>
+              <a href={data[locale].fulltextlink.raw} target="_blank" rel="nonreferrer">
+                <LockOpenIcon className='inline w-4 h-4 -mt-1' /> {locale === 'en' ? 'Read the publication' : 'Les publikasjonen'} <ArrowUpRightIcon className="inline h-4 w-4 text-white" />
+              </a>
+              {/* {data[locale].fulldoi?.raw && (data[locale].fulltextlink?.raw !== data[locale].fulldoi?.raw) && (
+                  <span className='ml-5 text-xs text-gray-600 dark:text-gray-400'>{' '}
+                          <a href={data[locale].fulldoi.raw} target="_blank" rel="nonreferrer">
+                          {data[locale].fulldoi.raw}
+                          </a>
+                          </span>
+                        )} */}
+            </div>
+          ) : (
+            <div className='px-3 py-2 text-sm font-bold bg-neutral-200 dark:bg-neutral-800 rounded'>
+              {locale === 'en' ? 'No fulltext found' : 'Ingen fulltekst funnet'}
+            </div>
+          )}
+
+
           <ul>
             {data[locale].result_id.raw && (
               <li className={`text-md leading-sm`}>
                 <a href={`https://app.cristin.no/results/show.jsf?id=${data[locale].result_id.raw}`} target="_blank" rel="nonreferrer">
-                  <UserGroupIcon className='inline w-4 h-4 -mt-1' /> {locale === 'en' ? 'Authors and more information' : 'Forfattere og mer informasjon'}<ArrowUpRightIcon className="inline h-4 w-4 text-blue-500" />
+                  <PencilIcon className='inline w-4 h-4 -mt-1' /> {locale === 'en' ? 'Authors and more information' : 'Forfattere og mer informasjon'}<ArrowUpRightIcon className="inline h-4 w-4 text-black" />
                 </a>
               </li>
             )}
 
-            {data[locale].fulltextlink?.raw !== 'No open link found' && (
-              <li>
-                <a href={data[locale].fulltextlink.raw} target="_blank" rel="nonreferrer">
-                  <LockOpenIcon className='inline w-4 h-4 -mt-1' /> Fulltext <ArrowUpRightIcon className="inline h-4 w-4 text-blue-500" />
-                </a>
-                {/* {data[locale].fulldoi?.raw && (data[locale].fulltextlink?.raw !== data[locale].fulldoi?.raw) && (
-                    <span className='ml-5 text-xs text-gray-600 dark:text-gray-400'>{' '}
-                    <a href={data[locale].fulldoi.raw} target="_blank" rel="nonreferrer">
-                    {data[locale].fulldoi.raw}
-                    </a>
-                    </span>
-                  )} */}
-              </li>
-            )}
 
             {data[locale].fulldoi?.raw && (
               <li>
                 <a href={data[locale].fulldoi.raw} target="_blank" rel="nonreferrer">
-                  {/* {data[locale].fulldoi.raw} */}{data[locale].OA_status_calc.raw === "NotOA" ? <LockClosedIcon className='inline w-4 h-4 -mt-1' /> : <LockOpenIcon className='inline w-4 h-4 -mt-1' />}  DOI <ArrowUpRightIcon className="inline h-4 w-4 text-blue-500" />
+                  {/* {data[locale].fulldoi.raw} */}{data[locale].OA_status_calc.raw === "NotOA" ? <LockClosedIcon className='inline w-4 h-4 -mt-1' /> : <LockOpenIcon className='inline w-4 h-4 -mt-1' />}  {locale === 'en' ? 'View at publisher' : 'Se hos utgiver'} <ArrowUpRightIcon className="inline h-4 w-4 text-black" />
                 </a>
                 {/* {data[locale].fulltextlink?.raw && data[locale].fulltextlink?.raw == 'No open link found' && (
-                    <span className='ml-5 text-xs text-gray-600 dark:text-gray-400'>{' '}
-                    {data[locale].fulltextlink.raw}
-                    </span>
+                  <span className='ml-5 text-xs text-gray-600 dark:text-gray-400'>{' '}
+                  {data[locale].fulltextlink.raw}
+                  </span>
                   )} */}
               </li>
             )}
           </ul>
+
+          {(data[locale].scientific_result?.raw || data[locale].scientific_field_NPI?.raw) && (
+            <div className='px-3 py-2 rounded text-sm bg-neutral-100 dark:bg-neutral-800'>
+              <div className='font-bold'>
+                {data[locale].scientific_result?.raw === true ? isScientific[locale] : ''}
+                {data[locale].NVI_level?.raw ? ` (NVI ${data[locale].NVI_level.raw})` : ''}
+              </div>
+              {data[locale].scientific_field_NPI?.raw && (
+                <div>
+                  {data[locale].scientific_field_NPI.raw}
+                </div>
+              )}
+            </div>
+          )}
 
 
         </div>

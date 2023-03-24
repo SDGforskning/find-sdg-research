@@ -7,6 +7,8 @@ import { HVLLeftEngLogo } from '@components/logos/HVLLeftEngLogo';
 import { HVLLeftNorLogo } from '@components/logos/HVLLeftNorLogo';
 import { UiSLeftNorLogo } from '@components/logos/UiSLeftNorLogo';
 import { UiSLeftEngLogo } from '@components/logos/UiSLeftEngLogo';
+import { format } from 'date-fns'
+import { enGB, nb } from 'date-fns/locale'
 
 const TITLE = {
   en: "Find SDG research (beta)",
@@ -84,9 +86,26 @@ export default {
     prev: true,
     next: true
   },
-  /* editLink: {
-    text: 'Edit this page on GitHub'
-  }, */
+  editLink: {
+    text() {
+      const { locale } = useRouter()
+      return (
+        <>
+          {locale === 'en' ? 'Edit this page' : 'Rediger denne siden'}
+        </>
+      )
+    }
+  },
+  feedback: {
+    content() {
+      const { locale } = useRouter()
+      return (
+        <>
+          {locale === 'en' ? 'Question? Give us feedback →' : 'Spørsmål? Gi oss tilbakemelding →'}
+        </>
+      )
+    }
+  },
   footer: {
     text() {
       const { locale } = useRouter()
@@ -145,7 +164,23 @@ export default {
     { locale: "en", text: "English" },
   ],
   toc: {
-    float: true
+    title: () => {
+      const { locale } = useRouter()
+      return (
+        <>
+          {locale === 'en' ? 'On this page' : 'På denne siden'}
+        </>
+      )
+    },
+    float: true,
+  },
+  gitTimestamp({ timestamp }) {
+    const { locale } = useRouter()
+    return (
+      <>
+        {locale === 'en' ? `Last updated ${format(timestamp, 'LLLL d, yyyy', { locale: enGB })}` : `Sist oppdatert ${format(timestamp, 'd. LLLL yyyy', { locale: nb })}`}
+      </>
+    )
   },
   sidebar: {
     defaultMenuCollapseLevel: 2,
