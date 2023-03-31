@@ -66,7 +66,7 @@ const Search = () => {
                   />
                   <Facet
                     field="SDG_topic_en.keyword"
-                    label="SDG Topic"
+                    label="SDG"
                     show={20}
                     view={MultiCheckboxFacet}
                     filterType="any"
@@ -77,31 +77,39 @@ const Search = () => {
                   </p>
                   <Facet
                     field="SDG_target_topic_en.keyword"
-                    label={"SDG Topic, targets"}
+                    label={"SDG targets"}
                     show={10}
                     view={MultiCheckboxFacet}
                     filterType="any"
                     isFilterable={true}
                   />
-                  <Facet
-                    field="SDG_action_en.keyword"
-                    label={"SDG Action"}
-                    show={20}
-                    view={MultiCheckboxFacet}
-                    filterType="any"
-                  //isFilterable={true}
-                  />
-                  <p className='mb-8 -mt-1 text-xs'>
-                    <InformationCircleIcon className='w-4 h-4 inline' /> <Link href="/en/hjelp/sokehjelp#sdg-action-sdg-action-target" target={'_blank'} rel={'noreferrer'}>What does this mean?</Link>
-                  </p>
-                  <Facet
-                    field="SDG_target_action_en.keyword"
-                    label={"SDG Action, targets"}
-                    show={10}
-                    view={MultiCheckboxFacet}
-                    filterType="any"
-                    isFilterable={true}
-                  />
+
+                  <details className='mt-4 mb-8 bg-neutral-100 p-2 rounded'>
+                    <summary className='text-sm'>More SDG filtering options
+                      <p className='text-xs pt-1'>
+                        <InformationCircleIcon className='w-4 h-4 inline' /> <Link href="/en/hjelp/sokehjelp#sdg-action-sdg-action-target" target={'_blank'} rel={'noreferrer'}>What does this mean?</Link>
+                      </p>
+                    </summary>
+                    <div className='mt-4'>
+                      <Facet
+                        field="SDG_action_en.keyword"
+                        label={"SDG Action"}
+                        show={20}
+                        view={MultiCheckboxFacet}
+                        filterType="any"
+                      //isFilterable={true}
+                      />
+                      <Facet
+                        field="SDG_target_action_en.keyword"
+                        label={"SDG Action, targets"}
+                        show={10}
+                        view={MultiCheckboxFacet}
+                        filterType="any"
+                        isFilterable={true}
+                      />
+                    </div>
+                  </details>
+
                   <Facet
                     field="publication_type_en.keyword"
                     label={"Publication type"}
@@ -159,7 +167,7 @@ const Search = () => {
                   />
                   <Facet
                     field="SDG_topic_no.keyword"
-                    label="SDG tema"
+                    label="Bærekraftsmål"
                     show={20}
                     view={MultiCheckboxFacet}
                     filterType="any"
@@ -170,31 +178,38 @@ const Search = () => {
                   </p>
                   <Facet
                     field="SDG_target_topic_no.keyword"
-                    label={"SDG tema, delmål"}
+                    label={"Delmål"}
                     show={10}
                     view={MultiCheckboxFacet}
                     filterType="any"
                     isFilterable={true}
                   />
-                  <Facet
-                    field="SDG_action_no.keyword"
-                    label={"SDG handling"}
-                    show={20}
-                    view={MultiCheckboxFacet}
-                    filterType="any"
-                  //isFilterable={true}
-                  />
-                  <p className='mb-8 -mt-1 text-xs'>
-                    <InformationCircleIcon className='w-4 h-4 inline' /> <Link href="/hjelp/sokehjelp#sdg-handling-og-handling-delmål" target={'_blank'} rel={'noreferrer'}>Hva betyr dette?</Link>
-                  </p>
-                  <Facet
-                    field="SDG_target_action_no.keyword"
-                    label={"SDG handling, delmål"}
-                    show={10}
-                    view={MultiCheckboxFacet}
-                    filterType="any"
-                    isFilterable={true}
-                  />
+                  <details className='mt-4 mb-8 bg-neutral-100 p-2 rounded'>
+                    <summary className='text-sm'>Flere bærekraftsmål filter
+                      <p className='text-xs pt-1'>
+                        <InformationCircleIcon className='w-4 h-4 inline' /> <Link href="/hjelp/sokehjelp#sdg-handling-og-handling-delmål" target={'_blank'} rel={'noreferrer'}>Hva betyr dette?</Link>
+                      </p>
+                    </summary>
+                    <div className='mt-4'>
+
+                      <Facet
+                        field="SDG_action_no.keyword"
+                        label={"SDG handling"}
+                        show={20}
+                        view={MultiCheckboxFacet}
+                        filterType="any"
+                      //isFilterable={true}
+                      />
+                      <Facet
+                        field="SDG_target_action_no.keyword"
+                        label={"SDG handling, delmål"}
+                        show={10}
+                        view={MultiCheckboxFacet}
+                        filterType="any"
+                        isFilterable={true}
+                      />
+                    </div>
+                  </details>
                   <Facet
                     field="publication_type_no.keyword"
                     label={"Publikasjonstype"}
