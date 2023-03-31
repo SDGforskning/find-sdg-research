@@ -11,8 +11,8 @@ import { format } from 'date-fns'
 import { enGB, nb } from 'date-fns/locale'
 
 const TITLE = {
-  en: "Find SDG research (beta)",
-  no: "Finn bærekraftsforskning (beta)",
+  en: "Find SDG research",
+  no: "Finn bærekraftsforskning",
 };
 
 export default {
@@ -41,10 +41,11 @@ export default {
     const { locale } = useRouter();
     return (
       <div className='flex gap-3 justify-center'>
-        <img style={{ width: '24px', height: '24px' }} src='/logo.png' alt='' />
-        <span className="ltr:ml-2 rtl:mr-2 font-extrabold hidden md:inline select-none">
+        <span className="font-extrabold select-none uppercase">
           {TITLE[locale]}
         </span>
+        <div className='border-r border-neutral-700'>{<>&nbsp;</>}</div>
+        <img style={{ width: '24px', height: '24px' }} src='/logo.png' alt='' />
       </div>
     );
   },
