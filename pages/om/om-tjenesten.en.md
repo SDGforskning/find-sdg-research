@@ -14,7 +14,7 @@ Access to research which is relevant to the SDGs is important across society, fo
 
 This service was established by the University of Bergen Library, Western Norway University of Applied Sciences Library, and University of Stavanger Library, in a [2-year project](https://www.uib.no/en/ub/148804/sustainable-development-research-all-%E2%80%93-transparent-mapping-and-discovery-tool) with support from a grant from the National Library of Norway ([see the project in the National Library Project Bank (Norwegian only)](https://bibliotekutvikling.no/prosjektbank/prosjekt/baerekraftsforskning-for-alle-en-transparent-kartleggings-og-gjenfinningstjeneste/)). Representatives from the University of Bergen Library, Western Norway University of Applied Sciences Library, and University of Stavanger Library form the editorial committee for the service. Technical support for the platform is provided by the University of Bergen Library. [Contact us here](/om/kontakt).
 
-The search strings used to map SDG-related research are maintained by these institutions and additional collaborators. For more information about contributors to the mappings, see [Search string documentation](/om/sokestreng/introduksjon).
+The search strings used to map SDG-related research are maintained by these institutions and additional collaborators. For more information about contributors to the mappings, see [Search string documentation](/sokestreng/introduksjon).
 
 ## Methods and coverage
 
@@ -35,6 +35,6 @@ The research publications in this service were mapped to SDGs using a method we 
 3)	Creating Boolean search strings to find this research, including Norwegian translations.
 4)	Documenting these steps.
 
-If you have access to Web of Science or can run Python, you are welcome to try out, reuse or modify our strings. The strings, together with more detailed documentation, are available under [Search Strings](/om/sokestreng/introduksjon). 
+If you have access to Web of Science or can run Python, you are welcome to try out, reuse or modify our strings. The strings, together with more detailed documentation, are available under [Search Strings](/sokestreng/introduksjon). 
 
 The metadata provided in the service is from CRISTIN. 
