@@ -14,7 +14,7 @@ Tjenesten kan brukes for å finne forskningslitteratur som er knyttet til bærek
 
 Tjenesten ble etablert av Universitetsbiblioteket i Bergen, Universitetsbiblioteket i Stavanger og Biblioteket ved Høgskulen på Vestlandet gjennom et [2-årig prosjekt](https://www.uib.no/ub/148803/b%C3%A6rekraftsforskning-alle-%E2%80%93-en-transparent-kartleggings-og-gjenfinningstjeneste) støttet av Nasjonalbiblioteket ([se prosjektet i Prosjektbank her](https://bibliotekutvikling.no/prosjektbank/prosjekt/baerekraftsforskning-for-alle-en-transparent-kartleggings-og-gjenfinningstjeneste/)). Redaksjonen består av deltakere fra Universitetsbiblioteket i Bergen, Universitetsbiblioteket i Stavanger og Biblioteket ved Høgskulen på Vestlandet. Universitetsbiblioteket i Bergen har ansvaret for teknisk støtte til plattformen. [Kontakte oss her](/om/kontakt).
 
-Det er disse institusjonene samt eksterne bidragsytere som har ansvaret for vedlikehold av søkestrengene som er brukt i tjenesten. For mer informasjon, [se Søkestreng dokumentasjon (English only)](/om/sokestreng/introduksjon).
+Det er disse institusjonene samt eksterne bidragsytere som har ansvaret for vedlikehold av søkestrengene som er brukt i tjenesten. For mer informasjon, [se Søkestreng dokumentasjon (English only)](/sokestreng/introduksjon).
 
 ## Metoder og dekning
 
@@ -36,7 +36,7 @@ Publikasjonene i tjenesten er knyttet til bærekraftsmålene gjennom en metode v
 3.	Å utvikle boolske søkestrenger for å finne denne forskningen, inkludert norsk oversettelse av søkestrengene.
 4.	Å dokumentere disse strengene.
 
-Hvis du har tilgang til Web of Science eller kan kjøre Python, er du velkommen til å prøve ut, gjenbruke eller gjøre endringer i våre søkestrenger. Søkestrengene samt mer detaljert dokumentasjon er tilgjengelig [under Søkestrenger (English only)](/om/sokestreng/introduksjon).
+Hvis du har tilgang til Web of Science eller kan kjøre Python, er du velkommen til å prøve ut, gjenbruke eller gjøre endringer i våre søkestrenger. Søkestrengene samt mer detaljert dokumentasjon er tilgjengelig [under Søkestrenger (English only)](/sokestreng/introduksjon).
 
 Metadataene i tjenesten er hentet fra CRISTIN. 
 
