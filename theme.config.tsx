@@ -133,8 +133,8 @@ export default {
               <div className='flex items-center gap-2 text-sm'>
                 <img style={{ width: '24px', height: '24px' }} src='/logo.png' alt='' />
                 {locale === 'en'
-                  ? 'Bærekraftsforskning.no supports the Sustainable Development Goals'
-                  : 'Bærekraftsforskning.no støtter FNs bærekraftsmål'}
+                  ? 'Find SDG Research supports the Sustainable Development Goals'
+                  : 'Finn Bærekraftsforskning støtter FNs bærekraftsmål'}
               </div>
               <div className='flex items-center gap-2 text-sm'>
                 <NBIcon height={32} />
