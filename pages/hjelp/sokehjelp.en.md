@@ -16,7 +16,7 @@ Language the publication is written in.
 ### Mentions
 If we have found that the publication mentions either Norway or the SDGs themselves. For example, a publication titled “Improving education in an Oslo school” would count as mentioning Norway; one titled “SDG 3: Where to next?” would count as mentioning the SDGs.
 ### SDG and SDG targets
-This is where you can filter publications related to certain SDGs and SDG targets. The filters called *SDG* and *SDG targets* find results that mention topics in the SDGs (e.g. “hunger”). You can filter by whole SDG (*SDG* filter) or by specific themes in the targets of the SDGs (*SDG targets* filter).
+This is where you can filter publications related to certain SDGs and SDG targets. The filters called *SDG* and *SDG targets* find results that mention topics in the SDGs (e.g. “hunger”). You can filter by whole goal (*SDG* filter) or by specific themes in the targets of each goal (*SDG targets* filter).
 If you have too many results, or want results that are more targeted towards action, use the filters under "More SDG filtering options" (*SDG action* and *SDG targets, action*). These work the same as the previous filters, but find a narrower set of publications which are connected to actions in the SDGs (e.g. "ending hunger"). See [About this service](/om/om-tjenesten) for more information.
 ### Publication Subtype
 A detailed breakdown of publication formats, from Cristin.
