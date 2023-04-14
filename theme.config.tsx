@@ -40,8 +40,8 @@ export default {
   logo() {
     const { locale } = useRouter();
     return (
-      <div className='flex gap-3 justify-center'>
-        <span className="font-extrabold select-none uppercase">
+      <div className='flex gap-3 justify-center items-center'>
+        <span className="font-extrabold select-none uppercase max-sm:leading-[1.1]">
           {TITLE[locale]}
         </span>
         <div className='border-r border-neutral-700'>{<>&nbsp;</>}</div>
