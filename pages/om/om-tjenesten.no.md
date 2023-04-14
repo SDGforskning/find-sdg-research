@@ -2,7 +2,7 @@
 
 Målet med **Finn Bærekraftsforskning** er at alle – allmennheten, offentlig sektor, næringslivet, forskere, studenter – enkelt kan få oversikt over forskningspublikasjoner som er knyttet til FNs bærekraftsmål (også kjent som "Sustainable development goals" eller "SDGs"). Der det er mulig gir tjenesten også tilgang til publikasjonene i fulltekst. Primært dekker tjenesten litteratur knyttet til delmålene under bærekraftsmålene. Les mer om bærekraftsmålene og delmålene under [Om Bærekraftsmålene](/om/om-baerekraftsmalene).
 
-Tjenesten kan brukes for å finne forskningslitteratur som er knyttet til bærekraftsmålene og som har forfattere fra norske institusjoner. Man kan filtrere på bærekraftsmål og justere treffmengden ved å velge et sett av publikasjoner å søke i: Snevre inn ved å søke kun etter forskning som er tett knyttet til handlingene i delmålene («SDG - handling»), eller utvide søket ved å søke i et større sett knyttet til generelle tema i delmålene («SDG - tema»). Les mer om våre metoder og dekning under. [Se hjelpesider for søkehjelp](/hjelp/sokehjelp).
+Tjenesten kan brukes for å finne forskningslitteratur som er knyttet til bærekraftsmålene og som har forfattere fra norske institusjoner. Man kan filtrere på bærekraftsmål og justere treffmengden ved å velge et sett av publikasjoner å søke i: Søk i et større sett knyttet til generelle tema i delmålene (filter: «Bærekraftsmål») eller snevre inn ved å søke kun etter forskning som er tett knyttet til handlingene i delmålene (filter: «Bærekraftsmål, handling»). Les mer om våre metoder og dekning under. [Se hjelpesider for søkehjelp](/hjelp/sokehjelp).
 
 **Tjenesten er for tiden en "betaversjon" (under arbeid)**. Statistikk over tema i forskningen er under utvikling. 
 
@@ -32,7 +32,7 @@ Den dekker arbeider publisert fra 2015 til 2021. Noen publikasjoner fra 2022 er 
 Publikasjonene i tjenesten er knyttet til bærekraftsmålene gjennom en metode vi har kalt «the Bergen approach». Dette omfatter:
 
 1.	Å tolke hva et bærekraftsmål handler om. Hvilke tema og hvilke handlinger er knyttet til målene?
-2.	Å definere hvilken forskning som skal oppfattes som «relatert». Her bruker vi to tilnærminger – i action approach (SDG - handling) blir forskning som er tett knyttet til handlingene i målene betraktet som relevant, f.eks. «utrydde sult». Denne tilnærmingen tar sikte på å finne en liten kjerne av forskning som direkte bidrar til handlinger spesifisert i målene. I topic approach (SDG - tema) er det tilstrekkelig at forskningen nevner temaene i målene for å bli ansett som relevant, f.eks. «sult». Dette er derfor et større og bredere sett av publikasjoner.
+2.	Å definere hvilken forskning som skal oppfattes som «relatert». Her bruker vi to tilnærminger – i action approach ("Bærekraftsmål, handling") blir forskning som er tett knyttet til handlingene i målene betraktet som relevant, f.eks. «utrydde sult». Denne tilnærmingen tar sikte på å finne en liten kjerne av forskning som direkte bidrar til handlinger spesifisert i målene. I en breddere approach (kjent kun som "Bærekraftsmål" i tjenesten, og "topic" i søkestrengene) er det tilstrekkelig at forskningen nevner temaene i målene for å bli ansett som relevant, f.eks. «sult». Dette er derfor et større og bredere sett av publikasjoner.
 3.	Å utvikle boolske søkestrenger for å finne denne forskningen, inkludert norsk oversettelse av søkestrengene.
 4.	Å dokumentere disse strengene.
 

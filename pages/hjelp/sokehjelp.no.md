@@ -15,10 +15,9 @@ Hvorvidt publikasjonen betraktes som «vitenskapelig» i henhold til [definisjon
 Språket som publikasjonen er skrevet på.
 ### Nevner 
 Om publikasjonen nevner enten Norge eller selve bærekraftsmålet. For eksempel vil en publikasjon med tittelen «Improving education in an Oslo school» telle som en publikasjon som nevner Norge, mens en publikasjon med tittelen «SDG 3: Where to next?» vil telle som en publikasjon som nevner et bærekraftsmål. 
-### SDG tema og tema, delmål 
-Her kan du filtrere på publikasjoner relatert til særskilte bærekraftsmål og -delmål, ved å bruke «topic approach». Denne varianten gir et større antall treff som nevner temaene i delmålene, f.eks. «Sult». Bruk dette filteret (fremfor «SDG action») hvis du ønsker et stort antall treff. Se [Om denne tjenesten](/om/om-tjenesten) for mer informasjon.
-### SDG handling og handling, delmål  
-Her er publikasjonene knyttet til bærekraftsmål og -delmål gjennom «action approach». Denne varianten gir et mindre antall treff som nevner handlingene i bærekraftsmålene, f.eks. «Utrydde sult». Bruk dette filteret (fremfor «SDG topic») når du ønsker et mindre antall treff. Se [Om denne tjenesten](/om/om-tjenesten) for mer informasjon.
+### Bærekraftsmål og Delmål filter
+Filter på publikasjoner relatert til særskilte bærekraftsmål og -delmål. Filtrene som heter *Bærekraftsmål* og *Delmål* finner publikasjoner som nevner temaene i bærekraftsmålene (for eksempel "sult"). Man kan filter etter et mål (filter: *Bærekraftsmål*), eller filtrer ned på spesifikke tema i et (eller flere) delmål (filter: *Delmål*).
+Hvis du trenger et mindre antall treff, eller resultater som er spisset mot handling, bruk filtrene under "Bærekraftsmål - flere filter" (*Bærekraftsmål, handling* eller *Delmål, handling*). Disse fungerer som de andre, men finner publikasjoner knyttet til handling (f.eks. «utrydde sult»). Se [Om denne tjenesten](/om/om-tjenesten) for mer informasjon.
 ### Underkategori 
 Publikasjonstype i tråd med inkluderte underkategorier fra Cristin.
 ### År

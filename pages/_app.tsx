@@ -15,7 +15,7 @@ export default function Nextra({
           rel='stylesheet'
         />
       </Head>
-      <Component {...pageProps} />)
+      <Component {...pageProps} />
     </>
   )
 }

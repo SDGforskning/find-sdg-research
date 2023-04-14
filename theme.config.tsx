@@ -11,8 +11,8 @@ import { format } from 'date-fns'
 import { enGB, nb } from 'date-fns/locale'
 
 const TITLE = {
-  en: "Find SDG research (beta)",
-  no: "Finn bærekraftsforskning (beta)",
+  en: "Find SDG research",
+  no: "Finn bærekraftsforskning",
 };
 
 export default {
@@ -40,11 +40,12 @@ export default {
   logo() {
     const { locale } = useRouter();
     return (
-      <div className='flex gap-3 justify-center'>
-        <img style={{ width: '24px', height: '24px' }} src='/logo.png' alt='' />
-        <span className="ltr:ml-2 rtl:mr-2 font-extrabold hidden md:inline select-none">
+      <div className='flex gap-3 justify-center items-center'>
+        <span className="font-extrabold select-none uppercase max-sm:leading-[1.1]">
           {TITLE[locale]}
         </span>
+        <div className='border-r border-neutral-700'>{<>&nbsp;</>}</div>
+        <img style={{ width: '24px', height: '24px' }} src='/logo.png' alt='' />
       </div>
     );
   },
@@ -132,8 +133,8 @@ export default {
               <div className='flex items-center gap-2 text-sm'>
                 <img style={{ width: '24px', height: '24px' }} src='/logo.png' alt='' />
                 {locale === 'en'
-                  ? 'Bærekraftsforskning.no supports the Sustainable Development Goals'
-                  : 'Bærekraftsforskning.no støtter FNs bærekraftsmål'}
+                  ? 'Find SDG Research supports the Sustainable Development Goals'
+                  : 'Finn Bærekraftsforskning støtter FNs bærekraftsmål'}
               </div>
               <div className='flex items-center gap-2 text-sm'>
                 <NBIcon height={32} />
