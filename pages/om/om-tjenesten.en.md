@@ -22,7 +22,7 @@ The search strings used to map SDG-related research are maintained by these inst
 
 We currently cover nine of the Sustainable Development Goals (SDGs 1, 2, 3, 4, 7, 11, 13, 14, 15, with SDG 12 on the way). Additional SDGs can be added, depending on capacity. For a publication to be in our total dataset, it must a) be indexed in [CRISTIN](https://www.cristin.no/) (Current Research Information System in Norway), b) be written in English or Norwegian, and c) be categorised in CRISTIN as a *book*, *part of a book/report*, *report/dissertation* or *journal publication*, but not in the subcategories *book review*, *errata*, *abstract* or *other*. This covers a relatively large proportion of written scientific outputs in Norway. However, researchers do not always register outputs such as popular works or reports in CRISTIN, so coverage of these may vary. Finally, to be included in the service, a publication must be related to an SDG according to our SDG-mapping method.
 
-We cover works published from 2015 to mid-2022; more recent works will be added in 2023.
+We currently cover works published from 2015 to 2022, with partial coverage of 2023.
 
 Currently the website is a **beta version** (under development). 
 
