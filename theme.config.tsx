@@ -139,8 +139,8 @@ export default {
               <div className='flex items-center gap-2 text-sm'>
                 <NBIcon height={32} />
                 {locale === 'en'
-                  ? 'The project is supported by the National Library of Norway.'
-                  : 'Prosjektet er støttet av Nasjonalbiblioteket i Norge.'}
+                  ? 'The project is supported by the National Library of Norway'
+                  : 'Prosjektet er støttet av Nasjonalbiblioteket'}
               </div>
             </div>
           </div>
