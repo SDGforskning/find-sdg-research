@@ -8,7 +8,7 @@ const TableauNoSSR = dynamic(() => import('@stoddabr/react-tableau-embed-live').
  * @returns 
  */
 export const Tableau = (
-  { hostUrl, height = '100%', width = '100%', toolbar = 'hidden', device = 'tablet' }: { hostUrl: string, height?: number | string, width?: number | string, toolbar?: 'top' | 'bottom' | 'hidden', device?: 'default' | 'desktop' | 'tablet' | 'phone' }) => {
+  { hostUrl, height, width = '100%', toolbar = 'hidden', device = 'default' }: { hostUrl: string, height?: number | string, width?: number | string, toolbar?: 'top' | 'bottom' | 'hidden', device?: 'default' | 'desktop' | 'tablet' | 'phone' }) => {
   return (
     <div className={`mx-auto w-full bg-slate-100 rounded p-1 my-3 overflow-scroll`}>
       <TableauNoSSR
