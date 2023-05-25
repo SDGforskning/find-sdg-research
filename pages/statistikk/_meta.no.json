@@ -1,5 +1,8 @@
 {
   "om-statistikk": {
-    "title": "Om statistikk"
+    "title": "Om statistikk",
+    "theme": {
+      "layout": "full"
+    }
   }
 }

@@ -29,6 +29,7 @@
     "@elastic/search-ui-app-search-connector": "^1.19.0",
     "@elastic/search-ui-elasticsearch-connector": "^1.18.1",
     "@heroicons/react": "^2.0.12",
+    "@stoddabr/react-tableau-embed-live": "^0.3.22",
     "clsx": "^1.2.1",
     "date-fns": "^2.29.3",
     "framer-motion": "^7.3.2",
@@ -36,7 +37,8 @@
     "nextra": "^2.2.19",
     "nextra-theme-docs": "^2.2.19",
     "react": "18",
-    "react-dom": "18"
+    "react-dom": "18",
+    "tableau-api": "^2.2.3"
   },
   "dependenciesMeta": {
     "nextra": {
