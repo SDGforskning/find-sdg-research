@@ -1,3 +1,4 @@
+'use client'
 import { SearchBox, SearchProvider } from '@elastic/react-search-ui';
 import { useRouter } from 'next/router';
 import config from './config';
@@ -27,10 +28,12 @@ const HomeSearchBox = () => {
                   ? "Search within publication title, e.g. fiskeri fishery fisheries"
                   : "Søk i publikasjonstittel, f.eks. fiskeri fishery fisheries"}
                 onChange={(e) => onChange(e.target.value)}
+                aria-labelledby='search-button'
               />
               <button
                 className='!bg-blue-700 text-white font-bold border-white rounded py-3 px-5'
                 type="submit"
+                id='search-button'
               >
                 {locale === 'en'
                   ? "Search"
