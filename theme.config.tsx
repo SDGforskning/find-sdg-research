@@ -184,5 +184,8 @@ export default {
   sidebar: {
     defaultMenuCollapseLevel: 2,
     titleComponent: ({ title }) => <>{title}</>
+  },
+  search: {
+    component: () => null,
   }
 } as DocsThemeConfig
