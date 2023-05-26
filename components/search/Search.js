@@ -84,11 +84,8 @@ const Search = () => {
                     isFilterable={true}
                   />
 
-                  <details className='mt-4 mb-8 bg-neutral-100 p-2 rounded'>
+                  <details className='mt-4 mb-8 bg-neutral-100 dark:bg-neutral-800 p-2 rounded'>
                     <summary className='text-sm'>More SDG filtering options
-                      <p className='text-xs pt-1'>
-                        <InformationCircleIcon className='w-4 h-4 inline' /> <Link href="/en/hjelp/sokehjelp#sdg-and-sdg-targets" target={'_blank'} rel={'noreferrer'}>What does this mean?</Link>
-                      </p>
                     </summary>
                     <div className='mt-4'>
                       <Facet
@@ -184,11 +181,8 @@ const Search = () => {
                     filterType="any"
                     isFilterable={true}
                   />
-                  <details className='mt-4 mb-8 bg-neutral-100 p-2 rounded'>
+                  <details className='mt-4 mb-8 bg-neutral-100 dark:bg-neutral-800 p-2 rounded'>
                     <summary className='text-sm'>Bærekraftsmål - flere filter
-                      <p className='text-xs pt-1'>
-                        <InformationCircleIcon className='w-4 h-4 inline' /> <Link href="/hjelp/sokehjelp#bærekraftsmål-og-delmål-filter" target={'_blank'} rel={'noreferrer'}>Hva betyr dette?</Link>
-                      </p>
                     </summary>
                     <div className='mt-4'>
 
