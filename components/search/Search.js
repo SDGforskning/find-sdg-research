@@ -104,6 +104,9 @@ const Search = () => {
                         filterType="any"
                         isFilterable={true}
                       />
+                      <p className='text-xs pt-1'>
+                        <InformationCircleIcon className='w-4 h-4 inline' /> <Link href="/en/hjelp/sokehjelp#sdg-and-sdg-targets" target={'_blank'} rel={'noreferrer'}>What does this mean?</Link>
+                      </p>
                     </div>
                   </details>
 
@@ -202,6 +205,9 @@ const Search = () => {
                         filterType="any"
                         isFilterable={true}
                       />
+                      <p className='text-xs pt-1'>
+                        <InformationCircleIcon className='w-4 h-4 inline' /> <Link href="/hjelp/sokehjelp#bærekraftsmål-og-delmål-filter" target={'_blank'} rel={'noreferrer'}>Hva betyr dette?</Link>
+                      </p>
                     </div>
                   </details>
                   <Facet
@@ -262,10 +268,12 @@ const Search = () => {
                           ? "Search within publication title, e.g. fiskeri fishery fisheries"
                           : "Søk i publikasjonstittel, f.eks. fiskeri fishery fisheries"}
                         onChange={(e) => onChange(e.target.value)}
+                        aria-labelledby='search-button'
                       />
                       <button
                         className='!bg-blue-700 text-white font-bold border-white rounded py-3 px-5'
                         type="submit"
+                        id='search-button'
                       >
                         {locale === 'en'
                           ? "Search"
