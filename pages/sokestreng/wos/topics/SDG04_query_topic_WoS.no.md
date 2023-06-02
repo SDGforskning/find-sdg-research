@@ -1,3 +1,4 @@
+<div lang="en">
 
 # Search query for SDG 4 - Quality Education, Bergen topic-approach.
 
@@ -759,3 +760,5 @@ Specialist input: Various academic staff from Western Norway University of Appli
 <a id="f10"></a> United Nations. (2016, 2017, 2018, 2019, 2020, 2021). *World Economic Situation and Prospects; Statistical Annex*. https://www.un.org/development/desa/dpad/document_gem/global-economic-monitoring-unit/world-economic-situation-and-prospects-wesp-report/. [↩](#UNLDCs)
 
 <a id="f7"></a> United Nations (n.d.) *Fight racism. Vulnerable groups, who are they?*. https://www.un.org/en/fight-racism/vulnerable-groups?gclid=EAIaIQobChMI9ODI_PvC9wIVV53VCh3pQgZCEAAYASAAEgInB_D_BwE (accessed Jun 2022). [↩](#UNracism)
+
+</div>

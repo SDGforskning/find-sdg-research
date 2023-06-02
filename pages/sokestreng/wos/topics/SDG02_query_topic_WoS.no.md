@@ -1,3 +1,5 @@
+<div lang="en">
+
 # Search query for SDG 2 - Zero Hunger, Bergen topic-approach.
 
 End hunger, achieve food security and improved nutrition and promote sustainable agriculture.
@@ -939,3 +941,5 @@ of the UN Committee on World Food Security, Rome. https://www.fao.org/cfs/cfs-hl
 <a id="f4"></a> WHO. (2021, June 9). *Malnutrition*. [Fact sheet]. https://www.who.int/news-room/fact-sheets/detail/malnutrition. [↩](#WHOmalnut)
 
 <a id="f13"></a> Information and External Relations Division of the WTO Secretariat. (n.d.). *Export subsidies and other export support measures* [Fact sheet]. World Trade Organization. https://www.wto.org/english/tratop_e/agric_e/factsheetagric17_e.htm [accessed 31 Dec 2021] [↩](#WTOexport)
+
+</div>
