@@ -1,6 +1,15 @@
 {
   "om-statistikk": {
-    "title": "Om statistikk",
+    "title": "Om statistikk"
+  },
+  "nasjonal-statistikk": {
+    "title": "Nasjonal statistikk",
+    "theme": {
+      "layout": "full"
+    }
+  },
+  "aktorer-statistikk": {
+    "title": "Enkelte aktører",
     "theme": {
       "layout": "full"
     }
