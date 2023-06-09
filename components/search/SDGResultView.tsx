@@ -76,7 +76,7 @@ const CustomResultView = ({
           <div className={`text-sm leading-sm text-gray-600 dark:text-gray-400`}>
             {data[locale].publication_type?.raw} / {data[locale].publication_subtype?.raw}
           </div>
-          <h2 className='text-md md:text-lg font-bold'>
+          <h3 className='text-md md:text-lg font-bold'>
             {/* <a
               onClick={onClickLink}
               href={data[locale].fulltextlink?.raw !== 'No open link found'
@@ -87,7 +87,7 @@ const CustomResultView = ({
             > */}
             {data[locale].result_title.raw}
             {/* </a> */}
-          </h2>
+          </h3>
 
           {data[locale].journal && (
             <div className={`text-md leading-sm text-gray-600 dark:text-gray-400`}>

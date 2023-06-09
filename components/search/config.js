@@ -4,6 +4,7 @@ const connector = new Connector({});
 const config = {
   apiConnector: connector,
   alwaysSearchOnInitialLoad: true,
+  hasA11yNotifications: true,
   searchQuery: {
     search_fields: {
       result_title: {},

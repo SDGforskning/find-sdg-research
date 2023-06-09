@@ -26,16 +26,61 @@ const Search = () => {
   const { locale } = useRouter()
   return (
     <div className="w-full">
-      <SearchProvider config={config}>
+      <SearchProvider config={{
+        a11yNotificationMessages: {
+          searchResults: ({ start, end, totalResults, searchTerm }) => {
+            if (locale === 'en') {
+              return `Searching for "${searchTerm}". Showing ${start} to ${end} results out of ${totalResults}.`
+            }
+            if (locale === 'no') {
+              return `Søker for "${searchTerm}". Viser ${start} til ${end} resultat av totalt ${totalResults} treff.`
+            }
+          }
+        },
+        ...config,
+      }}>
         <SearchLayout
           bodyHeader={
             <>
-              <PagingInfo />
-              <Paging />
+              <PagingInfo
+                view={({ start, end, totalResults }) => (
+                  <div className="paging-info">
+                    {locale === 'en' ? `Showing ${start} - ${end} out of ${totalResults}` : `Viser ${start} - ${end} av totalt ${totalResults} treff.`}
+                  </div>
+                )}
+              />
+              <Paging locale={locale === 'en' ?
+                {
+                  items_per_page: '/ page',
+                  jump_to: 'Go to',
+                  jump_to_confirm: 'confirm',
+                  page: 'Page',
+                  prev_page: 'Previous Page',
+                  next_page: 'Next Page',
+                  prev_5: 'Previous 5 Pages',
+                  next_5: 'Next 5 Pages',
+                  prev_3: 'Previous 3 Pages',
+                  next_3: 'Next 3 Pages',
+                  page_size: 'Page Size',
+                } : {
+                  items_per_page: '/ side',
+                  jump_to: 'Gå til side',
+                  page: 'Side',
+                  prev_page: 'Forrige side',
+                  next_page: 'Neste side',
+                  prev_5: '5 forrige',
+                  next_5: '5 neste',
+                  prev_3: '3 forrige',
+                  next_3: '3 neste',
+                  page_size: 'sidestørrelse',
+                }}
+              />
             </>
           }
           sideContent={
-            <div>
+            <div id='filters'>
+              <h2 className='md:text-lg font-bold'>{locale === 'en' ? 'Filters' : 'Filter'}</h2>
+              <a href="#hits" className='not-sr-only'>{locale === 'en' ? 'Skip to results' : 'Gå til resultatene'}</a>
               <ClearFilter />
               {locale === 'en' ? (
                 <>
@@ -244,7 +289,7 @@ const Search = () => {
             </div>
           }
           header={
-            <>
+            <div lang={locale === 'en' ? 'en' : 'no'}>
               <SearchBox
                 /* autocompleteMinimumCharacters={3}
                 autocompleteResults={{
@@ -271,7 +316,7 @@ const Search = () => {
                         aria-labelledby='search-button'
                       />
                       <button
-                        className='!bg-blue-700 text-white font-bold border-white rounded py-3 px-5'
+                        className='!bg-green-700 text-white font-bold border-white rounded py-3 px-5'
                         type="submit"
                         id='search-button'
                       >
@@ -297,13 +342,49 @@ const Search = () => {
                 }
               ]}
                /> */}
-            </>
+            </div>
           }
-          bodyContent={<Results resultView={SDGResultView} />}
+          bodyContent={
+            <div  >
+              <h2 id="hits" className='sr-only' style={{ position: 'relative', top: '-150px' }}>{locale === 'en' ? 'Search results' : 'Søkeresultater'}</h2>
+              <Results resultView={SDGResultView} />
+            </div>
+          }
           bodyFooter={
             <>
-              <PagingInfo />
-              <Paging />
+              <PagingInfo
+                view={({ start, end, totalResults }) => (
+                  <div className="paging-info">
+                    {locale === 'en' ? `Showing ${start} - ${end} out of ${totalResults}` : `Viser ${start} - ${end} av totalt ${totalResults} treff.`}
+                  </div>
+                )}
+              />
+              <Paging locale={locale === 'en' ?
+                {
+                  items_per_page: '/ page',
+                  jump_to: 'Go to',
+                  jump_to_confirm: 'confirm',
+                  page: 'Page',
+                  prev_page: 'Previous Page',
+                  next_page: 'Next Page',
+                  prev_5: 'Previous 5 Pages',
+                  next_5: 'Next 5 Pages',
+                  prev_3: 'Previous 3 Pages',
+                  next_3: 'Next 3 Pages',
+                  page_size: 'Page Size',
+                } : {
+                  items_per_page: '/ side',
+                  jump_to: 'Gå til side',
+                  page: 'Side',
+                  prev_page: 'Forrige side',
+                  next_page: 'Neste side',
+                  prev_5: '5 forrige',
+                  next_5: '5 neste',
+                  prev_3: '3 forrige',
+                  next_3: '3 neste',
+                  page_size: 'sidestørrelse',
+                }}
+              />
             </>
           }
         />

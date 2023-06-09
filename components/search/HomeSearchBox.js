@@ -31,7 +31,7 @@ const HomeSearchBox = () => {
                 aria-labelledby='search-button'
               />
               <button
-                className='!bg-blue-700 text-white font-bold border-white rounded py-3 px-5'
+                className='!bg-green-700 text-white font-bold border-white rounded py-3 px-5'
                 type="submit"
                 id='search-button'
               >

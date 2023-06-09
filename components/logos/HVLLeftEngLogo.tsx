@@ -12,7 +12,7 @@ export const HVLLeftEngLogo = (props: SVGProps<SVGSVGElement>) => (
     }}
     {...props}
   >
-
+    <title>Western Norway University of Applied Sciences</title>
     <path
       d="M32.134 0H0l53.807 93.265 16.141-27.95L32.134 0ZM160.074 0l-63.97 110.901-15.992 27.8 42.148 73.237L244.521 0h-84.447Z"
       style={{
