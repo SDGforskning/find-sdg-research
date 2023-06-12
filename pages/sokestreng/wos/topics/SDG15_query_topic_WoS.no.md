@@ -1,3 +1,5 @@
+<div lang="en">
+
 # Search query for SDG 15 - Life on Land, Bergen topic-approach.
 
 Protect, restore and promote sustainable use of terrestrial ecosystems, sustainably manage forests, combat desertification, and halt and reverse land degradation and halt biodiversity loss.
@@ -1360,3 +1362,5 @@ Specialist input: Awaiting
 <a id="f2"></a> United Nations. (2016, 2017, 2018, 2019, 2020, 2021). *World Economic Situation and Prospects; Statistical Annex*. https://www.un.org/development/desa/dpad/document_gem/global-economic-monitoring-unit/world-economic-situation-and-prospects-wesp-report/ [↩](#UNLDCs)
 
 <a id="f16"></a> Päivinen, Risto; Petrokofsky, Gillian; Käär, Liisa; Harvey, William; Petrokofsky, Leo; Puttonen, Pasi; Kangas, Jyrki; Mikkola, Eero; Byholm Leena (2021) *International Status of Finnish Forest Research*. Tapio research. [Unpublished report] [↩](#stateforest)
+
+</div>

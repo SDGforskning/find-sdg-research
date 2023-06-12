@@ -1,3 +1,5 @@
+<div lang="en">
+
 # Search query for SDG 14 - Life below water, Bergen topic-approach.
 
 Conserve and sustainably use the oceans, seas and marine resources for sustainable development.
@@ -888,3 +890,5 @@ Specialist input: Katja Enberg (Associate professor of fisheries at UiB; review 
 <a id="f4"></a> UN Environment Programme. (n.d.). *Addressing Land-Based Pollution*. United Nations. https://www.unep.org/explore-topics/oceans-seas/what-we-do/addressing-land-based-pollution [Accessed 22 November 2021]. [↩](#marinepollUN)
 
 <a id="f10"></a> Willer, D. F., Brian, J. I., Derrick, C. J., Hicks, M., Pacay, A., McCarthy, A. H., Benbow, S., Brooks, H., Hazin, C., Mukherjee, N., McOwen, C. J., Walker, J., & Steadman, D. (2022). ‘Destructive fishing’—A ubiquitously used but vague term? Usage and impacts across academic research, media and policy. Fish and Fisheries, 00, 1– 16. https://doi.org/10.1111/faf.12668 . [↩](#destructive)
+
+</div>

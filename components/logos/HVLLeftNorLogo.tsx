@@ -12,6 +12,7 @@ export const HVLLeftNorLogo = (props: SVGProps<SVGSVGElement>) => (
     }}
     {...props}
   >
+    <title>Høgskulen på Vestlandet</title>
     <style>{".st0{fill:#00afba}.st1{fill:#004357}"}</style>
     <path
       className="st0"
