@@ -119,7 +119,7 @@ export default {
                   <a href='/om/om-tjenesten'>{locale === 'en' ? 'About the service' : 'Om tjenesten'}</a>
                 </li>
                 <li>
-                  <a href='/tilgjengelighetserklaring'>{locale === 'en' ? 'Accessibility statement' : 'Tilgjengelighetserklæring'}</a>
+                  <a href='https://uustatus.no/nb/erklaringer/publisert/20b383fa-3a0f-4835-98c4-44ccf0a1bcb7'>{locale === 'en' ? 'Accessibility statement' : 'Tilgjengelighetserklæring'}</a>
                 </li>
               </ul>
               <div className='text-sm mt-3'>
