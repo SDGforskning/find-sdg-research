@@ -85,7 +85,7 @@ const Search = () => {
               {locale === 'en' ? (
                 <>
                   <Facet
-                    field="fulltext_found.keyword"
+                    field="openlinkfound.keyword"
                     label={"Fulltext found"}
                     view={BooleanFacet}
                   />
@@ -187,7 +187,7 @@ const Search = () => {
               ) : (
                 <>
                   <Facet
-                    field="fulltext_found.keyword"
+                    field="openlinkfound.keyword"
                     label={"Fulltekst funnet"}
                     view={BooleanFacet}
                   />
@@ -353,11 +353,18 @@ const Search = () => {
           bodyFooter={
             <>
               <PagingInfo
-                view={({ start, end, totalResults }) => (
-                  <div className="paging-info">
-                    {locale === 'en' ? `Showing ${start} - ${end} out of ${totalResults}` : `Viser ${start} - ${end} av totalt ${totalResults} treff.`}
-                  </div>
-                )}
+                view={({ start, end, totalResults }) => {
+                  if (totalResults === 0) return (
+                    <div className="paging-info">
+                      {locale === 'en' ? `No hits` : `ingen treff`}
+                    </div>
+                  )
+                  return (
+                    <div className="paging-info">
+                      {locale === 'en' ? `Showing ${start} - ${end} out of ${totalResults}` : `Viser ${start} - ${end} av totalt ${totalResults} treff.`}
+                    </div>
+                  )
+                }}
               />
               <Paging locale={locale === 'en' ?
                 {

@@ -2,7 +2,7 @@ import ElasticsearchAPIConnector from "@elastic/search-ui-elasticsearch-connecto
 
 const connector = new ElasticsearchAPIConnector({
   host: process.env.ES_HOST,
-  index: 'sdg-20230614073359',
+  index: 'sdg-20230614111831',
   apiKey: process.env.ES_APIKEY,
 });
 
