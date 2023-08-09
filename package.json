@@ -33,11 +33,11 @@
     "clsx": "^1.2.1",
     "date-fns": "^2.29.3",
     "framer-motion": "^7.3.2",
-    "next": "^13.1.6",
+    "next": "^13.4.12",
     "nextra": "^2.2.19",
     "nextra-theme-docs": "^2.2.19",
-    "react": "18",
-    "react-dom": "18",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "tableau-api": "^2.2.3"
   },
   "dependenciesMeta": {
