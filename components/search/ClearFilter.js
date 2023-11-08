@@ -14,9 +14,6 @@ function ClearFilters({ filters, clearFilters }) {
           : `Fjern ${filters.length} filter`
         }
       </button>
-      <p>
-        {JSON.stringify(locale, null, 2)}
-      </p>
     </div>
   );
 }
