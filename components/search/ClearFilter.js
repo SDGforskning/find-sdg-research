@@ -2,7 +2,7 @@ import { withSearch } from "@elastic/react-search-ui";
 import { useRouter } from 'next/router';
 
 function ClearFilters({ filters, clearFilters }) {
-  const locale = useRouter();
+  const { locale } = useRouter();
   return (
     <div className='my-3'>
       <button
@@ -14,6 +14,9 @@ function ClearFilters({ filters, clearFilters }) {
           : `Fjern ${filters.length} filter`
         }
       </button>
+      <p>
+        {JSON.stringify(locale, null, 2)}
+      </p>
     </div>
   );
 }
