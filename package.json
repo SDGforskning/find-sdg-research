@@ -30,7 +30,7 @@
     "@elastic/search-ui-app-search-connector": "^1.20.2",
     "@elastic/search-ui-elasticsearch-connector": "^1.20.2",
     "@heroicons/react": "^2.0.18",
-    "@stoddabr/react-tableau-embed-live": "^0.3.22",
+    "@stoddabr/react-tableau-embed-live": "^0.3.26",
     "clsx": "^1.2.1",
     "date-fns": "^2.29.3",
     "framer-motion": "^10.16.4",
