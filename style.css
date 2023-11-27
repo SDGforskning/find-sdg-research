@@ -18,11 +18,6 @@ nav>a[href='/sok'], nav>a[href='/en/sok'] {
   color: black !important;
 }
 
-.light .nextra-search,
-.dark .nextra-search {
-  display: none;
-}
-
 .home-content p {
   margin-top: 1.5em;
   line-height: 1.75em;

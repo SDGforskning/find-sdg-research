@@ -1,3 +1,5 @@
+<div lang="en">
+
 # Search query for SDG13 - Climate Action, Bergen topic-approach.
 
 Take urgent action to combat climate change and its impacts.
@@ -423,3 +425,5 @@ Specialist input: Camilla A. Borrevik (PhD in Pacific climate leadership; May 20
 <a id="f2"></a> United Nations Development Group (2017) Capacity Development, UNDAF companion guidance. https://unsdg.un.org/resources/capacity-development-undaf-companion-guidance [accessed 19.12.2019] [↩](#UNDGcapacity)
 
 <a id="f7"></a> World Meteorological Organization (2021) State of the Global Climate 2020. https://library.wmo.int/doc_num.php?explnum_id=10618 [accessed 19.02.2022] [↩](#wmo)
+
+</div>

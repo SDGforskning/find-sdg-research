@@ -1,3 +1,5 @@
+<div lang="en">
+
 # Search query for SDG 7 - Affordable and clean energy, Bergen topic-approach.
 
 **Current status**: This string is currently a finished version.
@@ -656,3 +658,5 @@ Specialist input: Shayan Shokrgozar (PhD candidate in energy transitions researc
 New York, September 2021. https://www.un.org/en/conferences/energy2021/RESOURCES [Accessed 03.03.2022]. [↩](#UNThemereport)
 
 <a id="f3"></a> UN High level political forum on Sustainable Development. (2018). *2018 HLPF Review of SDG implementation: SDG 7- Ensure access to affordable, reliable, sustainable and modern energy for all*. https://sustainabledevelopment.un.org/content/documents/195532018_background_notes_SDG_7Final1.pdf [Accessed 06.01.2022]
+
+</div>

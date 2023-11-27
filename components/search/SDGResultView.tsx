@@ -76,7 +76,7 @@ const CustomResultView = ({
           <div className={`text-sm leading-sm text-gray-600 dark:text-gray-400`}>
             {data[locale].publication_type?.raw} / {data[locale].publication_subtype?.raw}
           </div>
-          <h2 className='text-md md:text-lg font-bold'>
+          <h3 className='text-md md:text-lg font-bold'>
             {/* <a
               onClick={onClickLink}
               href={data[locale].fulltextlink?.raw !== 'No open link found'
@@ -87,7 +87,7 @@ const CustomResultView = ({
             > */}
             {data[locale].result_title.raw}
             {/* </a> */}
-          </h2>
+          </h3>
 
           {data[locale].journal && (
             <div className={`text-md leading-sm text-gray-600 dark:text-gray-400`}>
@@ -173,7 +173,7 @@ const CustomResultView = ({
 
         <div className='flex md:flex-1 gap-3 md:gap-2 md:pl-5 md:w-5/12 w-full flex-wrap'>
           {data[locale].fulltextlink?.raw !== 'No open link found' ? (
-            <div className='px-3 py-2 text-white font-bold bg-green-500 rounded'>
+            <div className='px-3 py-2 text-white font-bold bg-green-700 rounded'>
               <a href={data[locale].fulltextlink.raw} target="_blank" rel="nonreferrer">
                 <LockOpenIcon className='inline w-4 h-4 -mt-1' /> {locale === 'en' ? 'Read the publication' : 'Les publikasjonen'} <ArrowUpRightIcon className="inline h-4 w-4 text-white" />
               </a>

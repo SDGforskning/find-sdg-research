@@ -1,3 +1,5 @@
+<div lang="en">
+
 # Search query for SDG 3 - Good health and well-being, Bergen topic-approach.
 
 Ensure healthy lives and promote well-being for all at all ages.
@@ -1177,3 +1179,5 @@ Specialist input: Awaiting
 <a id="f8"></a> World Health Organization. (n.d. d). *Health Equity*. https://www.who.int/topics/health_equity/en/ [accessed 29.11.2019] [↩](#WHOequity)
 
 <a id="f17"></a> World Trade Organization. (n.d.). *The Doha Declaration explained*. https://www.wto.org/english/tratop_e/dda_e/dohaexplained_e.htm [accessed 11.11.2021] [↩](#WTOdoha)
+
+</div>

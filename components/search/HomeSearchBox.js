@@ -1,3 +1,4 @@
+'use client'
 import { SearchBox, SearchProvider } from '@elastic/react-search-ui';
 import { useRouter } from 'next/router';
 import config from './config';
@@ -14,7 +15,7 @@ const HomeSearchBox = () => {
     >
       <SearchBox
         onSubmit={(searchTerm) => {
-          window.location.href = locale === 'en' ? `/sok?q=${searchTerm}&size=n_20_n&filters%5B0%5D%5Bfield%5D=fulltext_found.keyword&filters%5B0%5D%5Bvalues%5D%5B0%5D=true&filters%5B0%5D%5Btype%5D=all` : `/sok?q=${searchTerm}&size=n_20_n&filters%5B0%5D%5Bfield%5D=fulltext_found.keyword&filters%5B0%5D%5Bvalues%5D%5B0%5D=true&filters%5B0%5D%5Btype%5D=all`;
+          window.location.href = locale === 'en' ? `/sok?q=${searchTerm}&size=n_20_n&filters%5B0%5D%5Bfield%5D=openlinkfound.keyword&filters%5B0%5D%5Bvalues%5D%5B0%5D=true&filters%5B0%5D%5Btype%5D=all` : `/sok?q=${searchTerm}&size=n_20_n&filters%5B0%5D%5Bfield%5D=openlinkfound.keyword&filters%5B0%5D%5Bvalues%5D%5B0%5D=true&filters%5B0%5D%5Btype%5D=all`;
         }}
         view={({ value, onChange, onSubmit }) => (
           <div >
@@ -27,10 +28,12 @@ const HomeSearchBox = () => {
                   ? "Search within publication title, e.g. fiskeri fishery fisheries"
                   : "Søk i publikasjonstittel, f.eks. fiskeri fishery fisheries"}
                 onChange={(e) => onChange(e.target.value)}
+                aria-labelledby='search-button'
               />
               <button
-                className='!bg-blue-700 text-white font-bold border-white rounded py-3 px-5'
+                className='!bg-green-700 text-white font-bold border-white rounded py-3 px-5'
                 type="submit"
+                id='search-button'
               >
                 {locale === 'en'
                   ? "Search"

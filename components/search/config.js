@@ -4,6 +4,7 @@ const connector = new Connector({});
 const config = {
   apiConnector: connector,
   alwaysSearchOnInitialLoad: true,
+  hasA11yNotifications: true,
   searchQuery: {
     search_fields: {
       result_title: {},
@@ -23,7 +24,7 @@ const config = {
       result_id: { raw: {} },
       result_title: { raw: {} },
       journal: { raw: {} },
-      fulltext_found: { raw: {} },
+      openlinkfound: { raw: {} },
       OA_status_calc: { raw: {} },
       SDG_action_no: { raw: {} },
       SDG_action_en: { raw: {} },
@@ -63,7 +64,7 @@ const config = {
       "scientific_field_NPI_en.keyword",
     ],
     facets: {
-      "fulltext_found.keyword": { type: "value" },
+      "openlinkfound.keyword": { type: "value" },
       "language_no.keyword": { type: "value" },
       "language_en.keyword": { type: "value" },
       "OA_status_calc.keyword": { type: "value" },

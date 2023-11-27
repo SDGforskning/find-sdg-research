@@ -114,15 +114,13 @@ export default {
         <div className='w-full flex flex-col gap-4 md:gap-10 flex-wrap md:flex-nowrap justify-between'>
           <div className='flex flex-col md:flex-row gap-5'>
             <div className='w-full md:w-2/4'>
-              <ul className='flex gap-10'>
-                <ul>
-                  <li>
-                    <a href='/om/om-tjenesten'>{locale === 'en' ? 'About the service' : 'Om tjenesten'}</a>
-                  </li>
-                  <li>
-                    <a href='/tilgjengelighetserklaring'>{locale === 'en' ? 'Accessibility statement' : 'Tilgjengelighetserklæring'}</a>
-                  </li>
-                </ul>
+              <ul>
+                <li>
+                  <a href='/om/om-tjenesten'>{locale === 'en' ? 'About the service' : 'Om tjenesten'}</a>
+                </li>
+                <li>
+                  <a href='https://uustatus.no/nb/erklaringer/publisert/20b383fa-3a0f-4835-98c4-44ccf0a1bcb7'>{locale === 'en' ? 'Accessibility statement' : 'Tilgjengelighetserklæring'}</a>
+                </li>
               </ul>
               <div className='text-sm mt-3'>
                 {`Creative Commons Attribution 4.0 ${new Date().getFullYear()} - ${TITLE[locale]}`}
@@ -186,5 +184,8 @@ export default {
   sidebar: {
     defaultMenuCollapseLevel: 2,
     titleComponent: ({ title }) => <>{title}</>
+  },
+  search: {
+    component: () => null,
   }
 } as DocsThemeConfig
