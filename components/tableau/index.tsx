@@ -1,6 +1,5 @@
 'use client'
 import { TableauEmbed } from "@stoddabr/react-tableau-embed-live";
-import { Suspense } from 'react';
 
 /**
  * Tableau component that takes in a hostUrl and renders a Tableau widget
