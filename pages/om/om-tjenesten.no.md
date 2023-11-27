@@ -4,7 +4,6 @@ Målet med **Finn Bærekraftsforskning** er at alle – allmennheten, offentlig 
 
 Tjenesten kan brukes for å finne forskningslitteratur som er knyttet til bærekraftsmålene og som har forfattere fra norske institusjoner. Man kan filtrere på bærekraftsmål og justere treffmengden ved å velge et sett av publikasjoner å søke i: Søk i et større sett knyttet til generelle tema i delmålene (filter: «Bærekraftsmål») eller snevre inn ved å søke kun etter forskning som er tett knyttet til handlingene i delmålene (filter: «Bærekraftsmål, handling»). Les mer om våre metoder og dekning under. [Se hjelpesider for søkehjelp](/hjelp/sokehjelp).
 
-**Tjenesten er for tiden en "betaversjon" (under arbeid)**. Statistikk over tema i forskningen er under utvikling. 
 
 ## Hvorfor bygget vi tjenesten?
 
@@ -12,7 +11,7 @@ Tjenesten kan brukes for å finne forskningslitteratur som er knyttet til bærek
 
 ## Organisasjon
 
-Tjenesten ble etablert av Universitetsbiblioteket i Bergen, Universitetsbiblioteket i Stavanger og Biblioteket ved Høgskulen på Vestlandet gjennom et [2-årig prosjekt](https://www.uib.no/ub/148803/b%C3%A6rekraftsforskning-alle-%E2%80%93-en-transparent-kartleggings-og-gjenfinningstjeneste) støttet av Nasjonalbiblioteket ([se prosjektet i Prosjektbank her](https://bibliotekutvikling.no/prosjektbank/prosjekt/baerekraftsforskning-for-alle-en-transparent-kartleggings-og-gjenfinningstjeneste/)). Redaksjonen består av deltakere fra Universitetsbiblioteket i Bergen, Universitetsbiblioteket i Stavanger og Biblioteket ved Høgskulen på Vestlandet. Universitetsbiblioteket i Bergen har ansvaret for teknisk støtte til plattformen. [Kontakte oss her](/om/kontakt).
+Tjenesten ble etablert av Universitetsbiblioteket i Bergen, Universitetsbiblioteket i Stavanger og Biblioteket ved Høgskulen på Vestlandet gjennom et [2-årig prosjekt](https://www.uib.no/ub/148803/b%C3%A6rekraftsforskning-alle-%E2%80%93-en-transparent-kartleggings-og-gjenfinningstjeneste) støttet av Nasjonalbiblioteket ([se prosjektet i Prosjektbank her](https://bibliotekutvikling.no/prosjektbank/prosjekt/baerekraftsforskning-for-alle-en-transparent-kartleggings-og-gjenfinningstjeneste/)). Redaksjonen består av deltakere fra Universitetsbiblioteket i Bergen, Universitetsbiblioteket i Stavanger og Biblioteket ved Høgskulen på Vestlandet. Universitetsbiblioteket i Bergen har ansvaret for teknisk støtte til plattformen. [Kontakt oss her](/om/kontakt).
 
 Det er disse institusjonene samt eksterne bidragsytere som har ansvaret for vedlikehold av søkestrengene som er brukt i tjenesten. For mer informasjon, [se Søkestreng dokumentasjon (English only)](/sokestreng/introduksjon).
 
@@ -20,19 +19,17 @@ Det er disse institusjonene samt eksterne bidragsytere som har ansvaret for vedl
 
 ### Dekning
 
-Tjenesten dekker i dag ni av bærekraftsmålene (målene 1, 2, 3, 4, 7, 11, 13, 14, 15, med mål 12 på vei inn). Flere mål kan bli lagt til tjenesten, avhengig av kapasitet. 
+Tjenesten dekker i dag ti av bærekraftsmålene (målene 1, 2, 3, 4, 7, 11, 12, 13, 14, 15). Flere mål kan bli lagt til tjenesten, avhengig av kapasitet. 
 For at en publikasjon skal være omfattet av tjenesten, må den være a) indeksert i [CRISTIN](https://www.cristin.no/) (Current Research Information System in Norway), b) skrevet på norsk eller engelsk, og c) kategorisert i CRISTIN som *Bok*, *Del av bok/rapport*, *Rapport/avhandling* eller *Tidsskriftpublikasjon*, men ikke i underkategoriene *anmeldelse*, *errata*, *abstract* eller *annet*. Dette dekker en stor del av den skriftlige forskningsproduksjonen i Norge. Imidlertid kan noen rapporter og populærvitenskapelige arbeider mangle, siden disse ikke alltid blir registrert i CRISTIN. I tillegg må publikasjonen være knyttet til et bærekraftsmål i tråd med våre kartleggingsmetoder.  
 
 Tjenesten dekker arbeider publisert fra 2015 til 2022. Noen publikasjoner fra 2023 er også med, disse vil bli supplert.
-
-**Tjenesten er for tiden en "betaversjon" (under arbeid)**. 
 
 ### Metoder for tilknytning til bærekraftsmålene
 
 Publikasjonene i tjenesten er knyttet til bærekraftsmålene gjennom en metode vi har kalt «the Bergen approach». Dette omfatter:
 
 1.	Å tolke hva et bærekraftsmål handler om. Hvilke tema og hvilke handlinger er knyttet til målene?
-2.	Å definere hvilken forskning som skal oppfattes som «relatert». Her bruker vi to tilnærminger – i action approach ("Bærekraftsmål, handling") blir forskning som er tett knyttet til handlingene i målene betraktet som relevant, f.eks. «utrydde sult». Denne tilnærmingen tar sikte på å finne en liten kjerne av forskning som direkte bidrar til handlinger spesifisert i målene. I en breddere approach (kjent kun som "Bærekraftsmål" i tjenesten, og "topic" i søkestrengene) er det tilstrekkelig at forskningen nevner temaene i målene for å bli ansett som relevant, f.eks. «sult». Dette er derfor et større og bredere sett av publikasjoner.
+2.	Å definere hvilken forskning som skal oppfattes som «relatert». Her bruker vi to tilnærminger – i action approach ("Bærekraftsmål, handling") blir forskning som er tett knyttet til handlingene i målene betraktet som relevant, f.eks. «utrydde sult». Denne tilnærmingen tar sikte på å finne en liten kjerne av forskning som direkte bidrar til handlinger spesifisert i målene. I en bredere approach (kjent kun som "Bærekraftsmål" i tjenesten, og "topic" i søkestrengene) er det tilstrekkelig at forskningen nevner temaene i målene for å bli ansett som relevant, f.eks. «sult». Dette er derfor et større og bredere sett av publikasjoner.
 3.	Å utvikle boolske søkestrenger for å finne denne forskningen, inkludert norsk oversettelse av søkestrengene.
 4.	Å dokumentere disse strengene.
 
