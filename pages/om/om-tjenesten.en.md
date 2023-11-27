@@ -4,7 +4,6 @@ The aim of **Find SDG Research** is to allow anyone – those working in academi
 
 You can use this service to find SDG-related research literature from Norwegian institutions. You can filter by SDG, and adjust the number of results you get by choosing a set to search in:  You can look at a broader set of results by finding research related to the topics in the targets (using the "SDG" filter), or you can narrow down your search by searching only for research closely related to actions in the targets ("SDG, action"). Methods and coverage are described in more detail below. [See here for help using the search](/hjelp/sokehjelp).
 
-The service is currently a **beta version** (under development). Summary statistics about the research are under development. 
 
 ## Why did we set up this service?
 
@@ -24,7 +23,6 @@ We currently cover nine of the Sustainable Development Goals (SDGs 1, 2, 3, 4, 7
 
 We currently cover works published from 2015 to 2022, with partial coverage of 2023.
 
-Currently the website is a **beta version** (under development). 
 
 ### SDG-mapping methodology
 
