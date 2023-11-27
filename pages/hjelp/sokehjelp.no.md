@@ -16,7 +16,7 @@ Språket som publikasjonen er skrevet på.
 ### Nevner 
 Om publikasjonen nevner enten Norge eller selve bærekraftsmålet. For eksempel vil en publikasjon med tittelen «Improving education in an Oslo school» telle som en publikasjon som nevner Norge, mens en publikasjon med tittelen «SDG 3: Where to next?» vil telle som en publikasjon som nevner et bærekraftsmål. 
 ### Bærekraftsmål og Delmål filter
-Filter på publikasjoner relatert til særskilte bærekraftsmål og -delmål. Filtrene som heter *Bærekraftsmål* og *Delmål* finner publikasjoner som nevner temaene i bærekraftsmålene (for eksempel "sult"). Man kan filter etter et mål (filter: *Bærekraftsmål*), eller filtrer ned på spesifikke tema i et (eller flere) delmål (filter: *Delmål*).
+Filter på publikasjoner relatert til særskilte bærekraftsmål og -delmål. Filtrene som heter *Bærekraftsmål* og *Delmål* finner publikasjoner som nevner temaene i bærekraftsmålene (for eksempel "sult"). Man kan filtrere etter et mål (filter: *Bærekraftsmål*), eller filtrere ned på spesifikke tema i ett (eller flere) delmål (filter: *Delmål*).
 Hvis du trenger et mindre antall treff, eller resultater som er spisset mot handling, bruk filtrene under "Bærekraftsmål - flere filter" (*Bærekraftsmål, handling* eller *Delmål, handling*). Disse fungerer som de andre, men finner publikasjoner knyttet til handling (f.eks. «utrydde sult»). Se [Om denne tjenesten](/om/om-tjenesten) for mer informasjon.
 ### Underkategori 
 Publikasjonstype i tråd med inkluderte underkategorier fra Cristin.
