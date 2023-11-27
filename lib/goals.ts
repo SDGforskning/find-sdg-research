@@ -139,8 +139,8 @@ export const goals = [
       no: 'images/sdg/no/E-WEB-Goal-12.png'
     },
     link: {
-      en: 'sok?size=n_20_n&filters%5B0%5D%5Bfield%5D=openlinkfound.keyword&filters%5B0%5D%5Bvalues%5D%5B0%5D=true&filters%5B0%5D%5Btype%5D=all&filters%5B1%5D%5Bfield%5D=SDG_topic_no.keyword&filters%5B1%5D%5Bvalues%5D%5B0%5D=SDG12%20Ansvarlig%20forbruk%20og%20produksjon&filters%5B1%5D%5Btype%5D=any',
-      no: 'sok?size=n_20_n&filters%5B0%5D%5Bvalues%5D%5B0%5D=true&filters%5B0%5D%5Btype%5D=all&filters%5B0%5D%5Bfield%5D=openlinkfound.keyword&filters%5B1%5D%5Bfield%5D=SDG_topic_en.keyword&filters%5B1%5D%5Bvalues%5D%5B0%5D=SDG12%20Responsible%20consumption%20and%20production&filters%5B1%5D%5Btype%5D=any'
+      en: 'sok?size=n_20_n&filters%5B0%5D%5Bvalues%5D%5B0%5D=true&filters%5B0%5D%5Btype%5D=all&filters%5B0%5D%5Bfield%5D=openlinkfound.keyword&filters%5B1%5D%5Bfield%5D=SDG_topic_en.keyword&filters%5B1%5D%5Bvalues%5D%5B0%5D=SDG12%20Responsible%20consumption%20and%20production&filters%5B1%5D%5Btype%5D=any',
+      no: 'sok?size=n_20_n&filters%5B0%5D%5Bfield%5D=openlinkfound.keyword&filters%5B0%5D%5Bvalues%5D%5B0%5D=true&filters%5B0%5D%5Btype%5D=all&filters%5B1%5D%5Bfield%5D=SDG_topic_no.keyword&filters%5B1%5D%5Bvalues%5D%5B0%5D=SDG12%20Ansvarlig%20forbruk%20og%20produksjon&filters%5B1%5D%5Btype%5D=any'
     }
   },
   {
