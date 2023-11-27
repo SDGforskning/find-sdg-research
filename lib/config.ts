@@ -1,4 +1,4 @@
-export const indexName = 'sdg-20231127104415'
+export const indexName = 'sdg-20231127142315'
 
 export const host = assertValue(
   process.env.ES_HOST,
