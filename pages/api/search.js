@@ -1,9 +1,10 @@
 import ElasticsearchAPIConnector from "@elastic/search-ui-elasticsearch-connector";
+import { indexName, host, apikey } from "../../lib/config";
 
 const connector = new ElasticsearchAPIConnector({
-  host: process.env.ES_HOST,
-  index: 'sdg-20230614111831',
-  apiKey: process.env.ES_APIKEY,
+  host: host,
+  index: indexName,
+  apiKey: apikey,
 });
 
 export default async function handler(req, res) {
