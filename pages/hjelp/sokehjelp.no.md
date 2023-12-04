@@ -1,5 +1,9 @@
 # Hjelp og tips ved søking
 
+<a href="/files/Brukerveiledning_baerekraftsforskningno_2023-11-30.pdf" alt="alt text" target="_blank" rel="noopener noreferrer">Veiledning - hvordan bruker Bærekraftsforskning.no (pdf)</a>
+
+[Veiledning - hvordan bruker Bærekraftsforskning.no (pdf)](https://github.com/SDGforskning/find-sdg-research/public/files/Brukerveiledning_baerekraftsforskningno_2023-11-30.pdf)
+
 ## Søk
 * Søk blir utført i tittelfeltet. Et resultat blir inkludert hvis et ord i tittelen samsvarer med ditt søkeord.
 * Et søk med flere ord, for eksempel "ren energi", gir en treffliste der de første resultatene inneholder begge ordene i tittelen. Lenger nede i trefflisten finner du resultater som inneholder bare ett av ordene.  
