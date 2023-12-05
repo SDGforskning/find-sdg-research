@@ -4,7 +4,6 @@ searchable: false
 ---
 
 import {Goals}  from '../components/goals'
-import {Cards, Card}  from '../components/card'
 import {Features, Feature}  from '../components/features'
 import {HomeSearchBox} from '../components/search'
 import {SDGNor} from '../components/logos/SDGNor'
@@ -21,63 +20,52 @@ import {SDGNor} from '../components/logos/SDGNor'
   
   <Goals />
 
-  <iframe src="https://uib.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=2ac55850-39e4-4810-9818-b0ce00e476fc&autoplay=false&offerviewer=false&showtitle=false&showbrand=false&captions=false&interactivity=none" 
-  height="281" 
-  width="500" 
-  allowfullscreen 
-  allow="autoplay" 
-  aria-label="Panopto Embedded Video Player"
-  title='Videoveiledning for hvordan bruker bærekraftsforskning.no'
-  ></iframe>
+  <div className='overflow-hidden relative w-full'>
+    <iframe src="https://uib.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=2ac55850-39e4-4810-9818-b0ce00e476fc&autoplay=false&offerviewer=false&showtitle=false&showbrand=false&captions=false&interactivity=none" 
+      className='mx-auto my-10 px-0 md:px-10 aspect-video'
+      width={'100%'}
+      allowFullScreen 
+      aria-label="Panopto Embedded Video Player"
+      title='Videoveiledning for hvordan bruker bærekraftsforskning.no'
+    />
+  </div>
 
   <Features>
     <Feature>
-      <h2 className="text-center text-xl font-bold">
+      <h2 className="text-xl font-bold">
         <a href='/om/om-tjenesten'>Om denne tjenesten</a>
       </h2>
-      <p className="text-center">
-        Les om tjenesten, hvordan den er satt opp, og hva den dekker.
-      </p>
+      Les om tjenesten, hvordan den er satt opp, og hva den dekker.
     </Feature>
     <Feature>
-      <h2 className="text-center text-xl font-bold">
+      <h2 className="text-xl font-bold">
         <a href='/om/om-baerekraftsmalene'>Bærekraftsmålene</a>
       </h2>
-      <p className="text-center">
-        Mer om FNs bærekraftsmål og delmålene, samt nyttige verktøy og ressurser.
-      </p>
+      Mer om FNs bærekraftsmål og delmålene, samt nyttige verktøy og ressurser.
     </Feature>
     <Feature>
-      <h2 className="text-center text-xl font-bold">
+      <h2 className="text-xl font-bold">
         <a href='statistikk/om-statistikk'>Statistikk</a>
       </h2>
-      <p className="text-center">
-        Se statistikk om Norges forskning som er knyttet til bærekraftsmålene.
-      </p>
+      Se statistikk om Norges forskning som er knyttet til bærekraftsmålene.
     </Feature>
     <Feature>
-      <h2 className="text-center text-xl font-bold">
+      <h2 className="text-xl font-bold">
         <a href='/hjelp/sokehjelp'>Hjelp</a>
       </h2>
-      <p className="text-center">
-        Tips og veiledning for å bruke tjenesten, og å finne vitenskapelig litteratur.
-      </p>
+      Tips og veiledning for å bruke tjenesten, og å finne vitenskapelig litteratur.
     </Feature>
     <Feature>
-      <h2 className="text-center text-xl font-bold">
+      <h2 className="text-xl font-bold">
         <a href='/hjelp/ofte-stilte-sporsmal'>Ofte stilte spørsmål</a>
       </h2>
-      <p className="text-center">
-        Finn svar på vanlige spørsmål om tjenesten og søk etter bærekraftsforskning.
-      </p>
+      Finn svar på vanlige spørsmål om tjenesten og søk etter bærekraftsforskning.
     </Feature>
     <Feature>
-      <h2 className="text-center text-xl font-bold">
+      <h2 className="text-xl font-bold">
         <a href='/sokestreng/introduksjon'>Søkestrenger</a>
       </h2>
-      <p className="text-center">
-        Dokumentasjon og søkestreng brukt for å finne publikasjoner knyttet til bærekraftsmålene. 
-      </p>
+      Dokumentasjon og søkestreng brukt for å finne publikasjoner knyttet til bærekraftsmålene. 
     </Feature>
   </Features>
 </div>
