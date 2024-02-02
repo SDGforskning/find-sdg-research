@@ -37,15 +37,10 @@ Du kan fint bruke søkestrengene i andre søkemotorer, men du vil da måtte gjø
 Du finner informasjon om dette her: [Søkestreng dokumentasjon](/sokestreng/introduksjon).
 
 
-## Statistikk og analyser
-
-Statistikk om SDG-forskning i Norge er under arbeid, og blir lansert etter at datasettet er komplett (estimert tidlig 2023). 
-
-
 ## Om tjenesten
 
 ### Hvorfor dekker dere ikke alle SDGene?
-Tjenesten dekker i dag ni av bærekraftsmålene (målene 1, 2, 3, 4, 7, 11, 13, 14, 15, med mål 12 på vei inn). Flere mål kan bli lagt til tjenesten, avhengig av kapasitet.
+Tjenesten dekker i dag ti av bærekraftsmålene (målene 1, 2, 3, 4, 7, 11, 12, 13, 14, 15). Flere mål kan bli lagt til tjenesten, avhengig av kapasitet.
 
 ### Hva menes med SDG-relevant? Hvordan bestemmer dere hva som skal vurderes som "relevant"?
 Vi vurderer forskning som "relevant" om den omhandler ett av bærekraftsmålenes delmål. Du kan lese mer under [Om tjenesten](/om/om-tjenesten).
