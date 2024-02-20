@@ -1,0 +1,8 @@
+export { default as BaerekraftsforskningOneLineEng } from './deprecated/BaerekraftsforskningOneLineEng'
+export { default as BaerekraftsforskningOneLineNor } from './deprecated/BaerekraftsforskningOneLineNor'
+export { default as BaerekraftsforskningTwoLineEng } from './deprecated/BaerekraftsforskningTwoLineEng'
+export { default as BaerekraftsforskningTwoLineNor } from './deprecated/BaerekraftsforskningTwoLineNor'
+export { default as BaerekraftsforskningEnLinjeHvitEn } from './BaerekraftsforskningEnLinjeHvitEn'
+export { default as BaerekraftsforskningEnLinjeHvitNo } from './BaerekraftsforskningEnLinjeHvitNo'
+export { default as BaerekraftsforskningToLinjerHvitEn } from './BaerekraftsforskningToLinjerHvitEn'
+export { default as BaerekraftsforskningToLinjerHvitNo } from './BaerekraftsforskningToLinjerHvitNo'
