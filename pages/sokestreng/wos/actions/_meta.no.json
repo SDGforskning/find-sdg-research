@@ -1,11 +1,52 @@
 {
-  "SDG01_query_action_WoS": "Action: SDG 01",
-  "SDG02_query_action_WoS": "Action: SDG 02",
-  "SDG03_query_action_WoS": "Action: SDG 03",
-  "SDG04_query_action_WoS": "Action: SDG 04",
-  "SDG07_query_action_WoS": "Action: SDG 07",
-  "SDG11_query_action_WoS": "Action: SDG 11",
-  "SDG13_query_action_WoS": "Action: SDG 13",
-  "SDG14_query_action_WoS": "Action: SDG 14",
-  "SDG15_query_action_WoS": "Action: SDG 15"
+  "SDG01_query_action_WoS": {
+    "title": "Action: SDG 1",
+    "href": "https://github.com/SDGforskning/sdg-strings/blob/v2.0.0/SDG01_query_action_WoS.md",
+    "newWindow": true
+  },
+  "SDG02_query_action_WoS": {
+    "title": "Action: SDG 2",
+    "href": "https://github.com/SDGforskning/sdg-strings/blob/v2.0.0/SDG02_query_action_WoS.md",
+    "newWindow": true
+  },
+  "SDG03_query_action_WoS": {
+    "title": "Action: SDG 3",
+    "href": "https://github.com/SDGforskning/sdg-strings/blob/v2.0.0/SDG03_query_action_WoS.md",
+    "newWindow": true
+  },
+  "SDG04_query_action_WoS": {
+    "title": "Action: SDG 4",
+    "href": "https://github.com/SDGforskning/sdg-strings/blob/v2.0.0/SDG04_query_action_WoS.md",
+    "newWindow": true
+  },
+  "SDG07_query_action_WoS": {
+    "title": "Action: SDG 7",
+    "href": "https://github.com/SDGforskning/sdg-strings/blob/v2.0.0/SDG07_query_action_WoS.md",
+    "newWindow": true
+  },
+  "SDG11_query_action_WoS": {
+    "title": "Action: SDG 11",
+    "href": "https://github.com/SDGforskning/sdg-strings/blob/v2.0.0/SDG11_query_action_WoS.md",
+    "newWindow": true
+  },
+  "SDG12_query_action_WoS": {
+    "title": "Action: SDG 12",
+    "href": "https://github.com/SDGforskning/sdg-strings/blob/v2.0.0/SDG12_query_action_WoS.md",
+    "newWindow": true
+  },
+  "SDG13_query_action_WoS": {
+    "title": "Action: SDG 13",
+    "href": "https://github.com/SDGforskning/sdg-strings/blob/v2.0.0/SDG13_query_action_WoS.md",
+    "newWindow": true
+  },
+  "SDG14_query_action_WoS": {
+    "title": "Action: SDG 14",
+    "href": "https://github.com/SDGforskning/sdg-strings/blob/v2.0.0/SDG14_query_action_WoS.md",
+    "newWindow": true
+  },
+  "SDG15_query_action_WoS": {
+    "title": "Action: SDG 15",
+    "href": "https://github.com/SDGforskning/sdg-strings/blob/v2.0.0/SDG15_query_action_WoS.md",
+    "newWindow": true
+  }
 }

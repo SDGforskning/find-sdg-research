@@ -24,7 +24,7 @@ const config = {
       result_id: { raw: {} },
       result_title: { raw: {} },
       journal: { raw: {} },
-      fulltext_found: { raw: {} },
+      openlinkfound: { raw: {} },
       OA_status_calc: { raw: {} },
       SDG_action_no: { raw: {} },
       SDG_action_en: { raw: {} },
@@ -64,7 +64,7 @@ const config = {
       "scientific_field_NPI_en.keyword",
     ],
     facets: {
-      "fulltext_found.keyword": { type: "value" },
+      "openlinkfound.keyword": { type: "value" },
       "language_no.keyword": { type: "value" },
       "language_en.keyword": { type: "value" },
       "OA_status_calc.keyword": { type: "value" },

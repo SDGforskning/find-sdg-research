@@ -1,12 +1,12 @@
 {
   "python github_link": {
     "title": "Topic: All SDGs (markdown)",
-    "href": "https://github.com/SDGforskning/sdg-strings/blob/v1.2.0/SDGs_query_topic_python.md",
+    "href": "https://github.com/SDGforskning/sdg-strings/blob/v2.0.0/SDGs_query_topic_python.md",
     "newWindow": true
   },
   "python github_link2": {
     "title": "Topic: All SDGs (ipynb)",
-    "href": "https://github.com/SDGforskning/sdg-strings/blob/v1.2.0/SDGs_query_topic_python.ipynb",
+    "href": "https://github.com/SDGforskning/sdg-strings/blob/v2.0.0/SDGs_query_topic_python.ipynb",
     "newWindow": true
   }
 }

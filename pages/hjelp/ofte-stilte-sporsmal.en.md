@@ -36,15 +36,10 @@ You are welcome to use them in other databases, but you will have to edit them t
 You can find information about this here: [Search string documentation](/sokestreng/introduksjon).
 
 
-## Statistics
-
-Statistics about SDG research in Norway are under development, and will be published after the dataset is complete (estimated 2023). 
-
-
 ## About this service
 
 ### Which SDGs do you cover?
-We currently cover 9 SDGs (SDGs 1, 2, 3, 4, 7, 11, 13, 14, 15, with SDG 12 under development). More can be added to the service, depending on our capacity. 
+We currently cover 10 SDGs (SDGs 1, 2, 3, 4, 7, 11, 12, 13, 14, 15). More can be added to the service, depending on our capacity. 
 
 ### What do you consider SDG-"relevant"? How did you decide which publciations to cover?
 We consider research publications "relevant" if we can relate them to one of the SDG targets. You can read more about our interpretation and method under [About this service](/om/om-tjenesten).
