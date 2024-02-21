@@ -14,9 +14,9 @@ Users are free to use these as inspiration to write their own variants, or to me
 
 - [Printable flyers (PDF)](https://github.com/SDGforskning/communication-materials/raw/main/flyer-twosided-english-norwegian.pdf) (can be printed two-sided on A4 paper, Norwegian on one side and English on the back)
 - [Printable A3 posters (download zipped folder with PDFs)](https://github.com/SDGforskning/communication-materials/raw/main/a3posters.zip) - one variant with all SDGs, and 3 thematic variants on climate, energy and cities (English and Norwegian)
-- [Digital posters for an information screen (download zipped folder with PDFs)](https://github.com/SDGforskning/communication-materials/raw/main/Infoscreen.zip) - portrait and landscape format, English and Norwegian
+- [Digital posters for an information screen (download zipped folder with PDFs)](https://github.com/SDGforskning/communication-materials/raw/main/Infoscreen.zip) - portrait and landscape format (Norwegian only)
 
 ## Audio
 
-- [Short audio clip about the service (download WAV file)](https://github.com/SDGforskning/communication-materials/raw/main/audioclip-about.wav) - for example for podcasts, Norwegian only
+- [Short audio clip (download WAV file - if this doesn't work, right click on this link and click "Save link as" to download the file)](https://github.com/SDGforskning/communication-materials/raw/main/audioclip-about.wav) - Short audio clip about the service that can be used, for example, for podcasts (Norwegian only)
 
