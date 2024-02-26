@@ -4,6 +4,8 @@ Målet med **Finn Bærekraftsforskning** er at alle – allmennheten, offentlig 
 
 Tjenesten kan brukes for å finne forskningslitteratur som er knyttet til bærekraftsmålene og som har forfattere fra norske institusjoner. Man kan filtrere på bærekraftsmål og justere treffmengden ved å velge et sett av publikasjoner å søke i: Søk i et større sett knyttet til generelle tema i delmålene (filter: «Bærekraftsmål») eller snevre inn ved å søke kun etter forskning som er tett knyttet til handlingene i delmålene (filter: «Bærekraftsmål, handling»). Les mer om våre metoder og dekning under. [Se hjelpesider for søkehjelp](/hjelp/sokehjelp).
 
+Under [Formidlingspakke](/om/formidling) kan du finne tekster, plakater og mer som kan lastes ned og brukes.
+
 
 ## Hvorfor bygget vi tjenesten?
 
