@@ -4,7 +4,7 @@ The aim of **Find SDG Research** is to allow anyone – those working in academi
 
 You can use this service to find SDG-related research literature from Norwegian institutions. You can filter by SDG, and adjust the number of results you get by choosing a set to search in:  You can look at a broader set of results by finding research related to the topics in the targets (using the "SDG" filter), or you can narrow down your search by searching only for research closely related to actions in the targets ("SDG, action"). Methods and coverage are described in more detail below. [See here for help using the search](/hjelp/sokehjelp).
 
-Under [Communication materials](/om/formidling) you can find texts, posters and more available for download and use.
+Under [Communication materials](/om/formidling) you can find texts, posters, flyers and more available for download.
 
 ## Why did we set up this service?
 
