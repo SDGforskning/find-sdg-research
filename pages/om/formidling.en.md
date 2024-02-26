@@ -12,7 +12,7 @@ Users are free to use these as inspiration to write their own variants, or to me
 
 ## Flyers, posters and info-screen
 
-- [Printable flyers (PDF)](https://github.com/SDGforskning/communication-materials/raw/main/flyer-twosided-english-norwegian.pdf) (can be printed two-sided on A4 paper, Norwegian on one side and English on the back)
+- [Printable flyers (PDF)](https://github.com/SDGforskning/communication-materials/raw/main/flyer-twosided-english-norwegian.pdf) (can be printed two-sided on A4 paper, Norwegian on one side and English on the other)
 - [Printable A3 posters (download zipped folder with PDFs)](https://github.com/SDGforskning/communication-materials/raw/main/a3posters.zip) - one variant with all SDGs, and 3 thematic variants on climate, energy and cities (English and Norwegian)
 - [Digital posters for an information screen (download zipped folder with PDFs)](https://github.com/SDGforskning/communication-materials/raw/main/Infoscreen.zip) - portrait and landscape format (Norwegian only)
 
