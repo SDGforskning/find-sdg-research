@@ -24,7 +24,7 @@ Det er disse institusjonene samt eksterne bidragsytere som har ansvaret for vedl
 Tjenesten dekker i dag ti av bærekraftsmålene (målene 1, 2, 3, 4, 7, 11, 12, 13, 14, 15). Flere mål kan bli lagt til tjenesten, avhengig av kapasitet. 
 For at en publikasjon skal være omfattet av tjenesten, må den være a) indeksert i [CRISTIN](https://www.cristin.no/) (Current Research Information System in Norway), b) skrevet på norsk eller engelsk, og c) kategorisert i CRISTIN som *Bok*, *Del av bok/rapport*, *Rapport/avhandling* eller *Tidsskriftpublikasjon*, men ikke i underkategoriene *anmeldelse*, *errata*, *abstract* eller *annet*. Dette dekker en stor del av den skriftlige forskningsproduksjonen i Norge. Imidlertid kan noen rapporter og populærvitenskapelige arbeider mangle, siden disse ikke alltid blir registrert i CRISTIN. I tillegg må publikasjonen være knyttet til et bærekraftsmål i tråd med våre kartleggingsmetoder.  
 
-Tjenesten dekker arbeider publisert fra 2015 til 2023. Noen publikasjoner fra 2024 er også med, disse vil bli supplert.
+Tjenesten dekker arbeider publisert fra 2015 til 2024. Noen publikasjoner fra 2025 er også med, disse vil bli supplert.
 
 ### Metoder for tilknytning til bærekraftsmålene
 
