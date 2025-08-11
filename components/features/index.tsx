@@ -12,11 +12,7 @@ export function Feature({
   ...props
 }) {
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      viewport={{ once: true, margin: '-20px' }}
-      transition={{ duration: 0.5, delay: 0.1 }}
+    <div
       className={cn(
         styles.feature,
         large && styles.large,
@@ -26,8 +22,15 @@ export function Feature({
       )}
       {...props}
     >
-      {children}
-    </motion.div>
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true, margin: '-20px' }}
+        transition={{ duration: 0.5, delay: 0.1 }}
+      >
+        {children}
+      </motion.div>
+    </div>
   )
 }
 
