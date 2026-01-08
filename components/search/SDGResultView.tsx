@@ -195,7 +195,7 @@ const CustomResultView = ({
           <ul>
             {data[locale].result_id.raw && (
               <li className={`text-md leading-sm`}>
-                <a href={`https://app.cristin.no/results/show.jsf?id=${data[locale].result_id.raw}`} target="_blank" rel="nonreferrer">
+                <a href={`https://nva.sikt.no/filter?cristinIdentifier=${data[locale].result_id.raw}`} target="_blank" rel="nonreferrer">
                   <PencilIcon className='inline w-4 h-4 -mt-1' /> {locale === 'en' ? 'Authors and more information' : 'Forfattere og mer informasjon'}<ArrowUpRightIcon className="inline h-4 w-4 text-black" />
                 </a>
               </li>
