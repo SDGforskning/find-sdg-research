@@ -22,7 +22,8 @@
   },
   "statistikk": {
     "title": "Statistics",
-    "type": "page"
+    "type": "page",
+    "display": "hidden"
   },
   "om": {
     "title": "About",
