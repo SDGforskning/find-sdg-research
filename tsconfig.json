@@ -15,20 +15,27 @@
     "incremental": true,
     "esModuleInterop": true,
     "isolatedModules": true,
-    "moduleResolution": "node",
-    "jsx": "preserve",
+    "moduleResolution": "bundler",
+    "jsx": "react-jsx",
     "module": "esnext",
     "resolveJsonModule": true,
     "paths": {
       "@components/*": [
         "components/*"
       ]
-    }
+    },
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
   },
   "include": [
     "next-env.d.ts",
     "**/*.ts",
-    "**/*.tsx"
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    ".next/dev/types/**/*.ts"
   ],
   "exclude": [
     "node_modules"

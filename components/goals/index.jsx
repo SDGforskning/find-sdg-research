@@ -1,5 +1,8 @@
-import { useRouter } from 'next/router'
+'use client'
+
+import { usePathname } from 'next/navigation'
 import { goals } from '../../lib/goals'
+import { getLocaleFromPathname } from '../../lib/locale'
 
 function Goal({ image, link, label }) {
   return (
@@ -15,7 +18,7 @@ function Goal({ image, link, label }) {
 }
 
 export function Goals() {
-  const { locale } = useRouter()
+  const locale = getLocaleFromPathname(usePathname())
   return (
     <div className='xl:-mx-42'>
       <div className='flex flex-wrap justify-center py-6 gap-3'>

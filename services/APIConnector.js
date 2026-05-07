@@ -23,7 +23,7 @@ class APIConnector {
   }
 
   async onAutocomplete(requestState, queryConfig) {
-    const response = await fetch("api/autocomplete", {
+    const response = await fetch("/api/autocomplete", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"

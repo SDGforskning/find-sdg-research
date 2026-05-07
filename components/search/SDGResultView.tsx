@@ -1,5 +1,8 @@
-import { useRouter } from 'next/router';
+'use client'
+
+import { usePathname } from 'next/navigation';
 import { ArrowUpRightIcon, LockClosedIcon, LockOpenIcon, PencilIcon, UserGroupIcon } from '@heroicons/react/24/solid'
+import { getLocaleFromPathname } from '../../lib/locale';
 
 const isScientific = {
   en: 'Scientific',
@@ -14,7 +17,7 @@ const CustomResultView = ({
   onClickLink: () => void;
 }) => {
 
-  const { locale } = useRouter()
+  const locale = getLocaleFromPathname(usePathname())
 
   const {
     SDG_topic_en,

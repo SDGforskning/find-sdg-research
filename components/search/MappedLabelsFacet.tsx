@@ -28,7 +28,8 @@ function appendClassName(
 }
 
 import type { FieldValue } from "@elastic/search-ui";
-import { useRouter } from 'next/router';
+import { usePathname } from 'next/navigation';
+import { getLocaleFromPathname } from '../../lib/locale';
 
 function MappedLabelsFacet({
   className,
@@ -43,7 +44,7 @@ function MappedLabelsFacet({
   searchPlaceholder,
   mapping
 }) {
-  const { locale } = useRouter()
+  const locale = getLocaleFromPathname(usePathname())
 
   return (
     <fieldset className={appendClassName("sui-facet", className)}>

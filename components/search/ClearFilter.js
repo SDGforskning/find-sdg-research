@@ -1,8 +1,9 @@
 import { withSearch } from "@elastic/react-search-ui";
-import { useRouter } from 'next/router';
+import { usePathname } from 'next/navigation';
+import { getLocaleFromPathname } from '../../lib/locale';
 
 function ClearFilters({ filters, clearFilters }) {
-  const { locale } = useRouter();
+  const locale = getLocaleFromPathname(usePathname());
 
   if (filters?.length === 0) return (
     <div className='my-3'>

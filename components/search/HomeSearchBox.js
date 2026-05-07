@@ -1,10 +1,11 @@
 'use client'
 import { SearchBox, SearchProvider } from '@elastic/react-search-ui';
-import { useRouter } from 'next/router';
+import { usePathname } from 'next/navigation';
 import config from './config';
+import { getLocaleFromPathname } from '../../lib/locale';
 
 const HomeSearchBox = () => {
-  const { locale } = useRouter();
+  const locale = getLocaleFromPathname(usePathname());
 
   return (
     <SearchProvider

@@ -1,3 +1,5 @@
+'use client'
+
 import {
   Facet,
   SearchProvider,
@@ -18,12 +20,13 @@ import {
 import SDGResultView from './SDGResultView'
 import ClearFilter from './ClearFilter'
 import config from './config'
-import { useRouter } from 'next/router'
+import { usePathname } from 'next/navigation'
 import Link from 'next/link'
 import { InformationCircleIcon } from '@heroicons/react/24/solid'
+import { getLocaleFromPathname } from '../../lib/locale'
 
 const Search = () => {
-  const { locale } = useRouter()
+  const locale = getLocaleFromPathname(usePathname())
   return (
     <div className="w-full">
       <SearchProvider config={{

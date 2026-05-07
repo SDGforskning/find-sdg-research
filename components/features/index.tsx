@@ -1,5 +1,4 @@
 import cn from 'clsx'
-import { motion } from 'framer-motion'
 
 import styles from './style.module.css'
 
@@ -22,14 +21,7 @@ export function Feature({
       )}
       {...props}
     >
-      <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        viewport={{ once: true, margin: '-20px' }}
-        transition={{ duration: 0.5, delay: 0.1 }}
-      >
-        {children}
-      </motion.div>
+      {children}
     </div>
   )
 }

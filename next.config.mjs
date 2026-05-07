@@ -1,8 +1,8 @@
 import nextra from 'nextra'
 
 const withNextra = nextra({
-  theme: 'nextra-theme-docs',
-  themeConfig: './theme.config.tsx',
+  // Keep existing docs URLs rooted at site root.
+  contentDirBasePath: '/',
 })
 
 export default withNextra({
@@ -10,7 +10,7 @@ export default withNextra({
   i18n: {
     // These are all the locales you want to support in
     // your application
-    locales: ['no', 'en',],
+    locales: ['no', 'en'],
     // This is the default locale you want to be used when visiting
     // a non-locale prefixed path e.g. `/hello`
     defaultLocale: 'no',
