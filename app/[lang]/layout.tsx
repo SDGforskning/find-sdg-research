@@ -11,7 +11,7 @@ import { UiSLeftEngLogo } from '@components/logos/UiSLeftEngLogo'
 import { UiSLeftNorLogo } from '@components/logos/UiSLeftNorLogo'
 import { getPageMap } from 'nextra/page-map'
 import { Footer, LastUpdated, Layout, LocaleSwitch, Navbar } from 'nextra-theme-docs'
-import { Banner } from 'nextra/components/banner/index'
+import { Banner, Head } from 'nextra/components'
 
 export const TITLE = {
   en: 'Find SDG research',
@@ -43,6 +43,7 @@ export default async function RootLayout({ children, params }) {
 
   return (
     <html lang={lang} dir="ltr" suppressHydrationWarning>
+      <Head />
       <body className={notoSans.className}>
         <Banner storageKey="sdg-feedback">
           <a className="underline underline-offset-8" href="https://skjemaker.app.uib.no/view.php?id=13744102">
