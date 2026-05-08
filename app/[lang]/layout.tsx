@@ -25,7 +25,7 @@ const notoSans = Noto_Sans({
 
 export default async function RootLayout({ children, params }) {
   const { lang } = await params
-  let pageMap = await getPageMap(`/${lang}`)
+  const pageMap = await getPageMap(`/${lang}`)
 
   const navbar = (
     <Navbar

@@ -7,10 +7,15 @@ export default {
       toc: false,
     }
   },
+  sok_link: {
+    title: "Search",
+    type: "page",
+    href: "/en/sok?size=n_20_n&filters%5B0%5D%5Bfield%5D=openlinkfound.keyword&filters%5B0%5D%5Bvalues%5D%5B0%5D=true&filters%5B0%5D%5Btype%5D=all"
+  },
   sok: {
     title: "Search",
     type: "page",
-    href: "/sok?size=n_20_n&filters%5B0%5D%5Bfield%5D=openlinkfound.keyword&filters%5B0%5D%5Bvalues%5D%5B0%5D=true&filters%5B0%5D%5Btype%5D=all"
+    display: "hidden"
   },
   hjelp: {
     title: "Help",

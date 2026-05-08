@@ -1,8 +1,7 @@
 'use client'
 
-import { usePathname } from 'next/navigation'
+import { useParams } from 'next/navigation'
 import { goals } from '../../lib/goals'
-import { getLocaleFromPathname } from '../../lib/locale'
 
 function Goal({ image, link, label }) {
   return (
@@ -18,14 +17,15 @@ function Goal({ image, link, label }) {
 }
 
 export function Goals() {
-  const locale = getLocaleFromPathname(usePathname())
+  const params = useParams();
+  const locale = params.lang || 'no'
   return (
     <div className='xl:-mx-42'>
       <div className='flex flex-wrap justify-center py-6 gap-3'>
         {goals
           .filter(goal => goal.disabled !== true)
           .map((goal, i) => (
-            <Goal key={i} label={goal.label[locale]} image={goal.image[locale]} link={goal.link[locale]} />
+            <Goal key={i} label={goal.label[locale]} image={goal.image[locale]} link={`/${locale}/${goal.link[locale]}`} />
           ))
         }
       </div>
