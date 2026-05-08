@@ -1,5 +1,6 @@
 @import 'tailwindcss';
 @import 'nextra-theme-docs/style.css';
+/* @import "@elastic/react-search-ui-views/lib/styles/styles.css"; */
 
 @variant dark (&:where(.dark *));
 
@@ -617,12 +618,14 @@ code.text-\[\.9em\] {
 
 .rc-pagination-jump-prev:after,
 .rc-pagination-jump-next:after {
-  content: "•••";
-  display: block;
-  letter-spacing: 2px;
-  /* color: #ccc; */
+  content: "...";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.08em;
   font-size: 12px;
-  margin-top: 1px;
+  line-height: 1;
+  height: 100%;
 }
 
 .rc-pagination-jump-prev:hover:after,
@@ -630,12 +633,9 @@ code.text-\[\.9em\] {
   color: #2db7f5;
 }
 
-.rc-pagination-jump-prev:hover:after {
-  content: "«";
-}
-
+.rc-pagination-jump-prev:hover:after,
 .rc-pagination-jump-next:hover:after {
-  content: "»";
+  content: "...";
 }
 
 .rc-pagination-jump-prev-custom-icon,
@@ -652,13 +652,14 @@ code.text-\[\.9em\] {
   left: 0;
   margin: auto;
   transition: all 0.2s;
-  content: "•••";
+  content: "...";
   opacity: 1;
-  display: block;
-  letter-spacing: 2px;
-  /* color: #ccc; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.08em;
   font-size: 12px;
-  margin-top: 1px;
+  line-height: 1;
 }
 
 .rc-pagination-jump-prev-custom-icon .custom-icon-jump-prev,
@@ -721,11 +722,6 @@ code.text-\[\.9em\] {
   font-size: 18px;
 }
 
-.rc-pagination-prev a,
-.rc-pagination-next a {
-  /* color: #666; */
-}
-
 .rc-pagination-prev a:after,
 .rc-pagination-next a:after {
   margin-top: -1px;
@@ -733,10 +729,6 @@ code.text-\[\.9em\] {
 
 .rc-pagination-disabled {
   cursor: not-allowed;
-}
-
-.rc-pagination-disabled a {
-  /* color: #ccc; */
 }
 
 .rc-pagination-disabled .rc-pagination-item,
@@ -749,12 +741,6 @@ code.text-\[\.9em\] {
 .rc-pagination-disabled .rc-pagination-prev:hover,
 .rc-pagination-disabled .rc-pagination-next:hover {
   border-color: #d9d9d9;
-}
-
-.rc-pagination-disabled .rc-pagination-item:hover a,
-.rc-pagination-disabled .rc-pagination-prev:hover a,
-.rc-pagination-disabled .rc-pagination-next:hover a {
-  /* color: #d9d9d9; */
 }
 
 .rc-pagination-disabled .rc-pagination-jump-prev,
@@ -919,6 +905,30 @@ code.text-\[\.9em\] {
   text-decoration: none;
 }
 
+.sui-paging .rc-pagination-jump-prev,
+.sui-paging .rc-pagination-jump-next,
+.sui-paging .rc-pagination-prev,
+.sui-paging .rc-pagination-next,
+.sui-paging .rc-pagination-item {
+  width: 28px;
+  min-width: 28px;
+  height: 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0;
+  line-height: 28px;
+}
+
+.sui-paging .rc-pagination-jump-prev:after,
+.sui-paging .rc-pagination-jump-next:after {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 28px;
+  line-height: 1;
+}
+
 .sui-paging .rc-pagination-item:hover {
   background: #161616;
 }
@@ -944,42 +954,24 @@ code.text-\[\.9em\] {
   cursor: not-allowed;
 }
 
-.sui-paging .rc-pagination-next:hover {
-  background: #f8f8f8;
-}
-
-.sui-paging .rc-pagination-next:hover a {
-  color: #3a56e4;
-}
-
-.sui-paging .rc-pagination-jump-next:hover {
-  background: #f8f8f8;
-}
-
-.sui-paging .rc-pagination-jump-next:hover a {
-  color: #3a56e4;
-}
-
-.sui-paging .rc-pagination-jump-next:hover:after {
-  color: #3a56e4;
-  content: "»";
-  font-size: 16px;
-  line-height: 1.5;
-}
-
+.sui-paging .rc-pagination-next:hover,
+.sui-paging .rc-pagination-jump-next:hover,
 .sui-paging .rc-pagination-jump-prev:hover {
-  background: #f8f8f8;
+  background: #2a2a2a;
 }
 
-.sui-paging .rc-pagination-jump-prev:hover a {
-  color: #3a56e4;
-}
-
+.sui-paging .rc-pagination-next:hover a,
+.sui-paging .rc-pagination-jump-next:hover a,
+.sui-paging .rc-pagination-jump-prev:hover a,
+.sui-paging .rc-pagination-jump-next:hover:after,
 .sui-paging .rc-pagination-jump-prev:hover:after {
-  color: #3a56e4;
-  content: "«";
-  font-size: 16px;
-  line-height: 1.5;
+  color: #ffffff;
+}
+
+.dark .sui-paging .rc-pagination-next:hover,
+.dark .sui-paging .rc-pagination-jump-next:hover,
+.dark .sui-paging .rc-pagination-jump-prev:hover {
+  background: #4a4a4a;
 }
 
 .sui-paging-info {
