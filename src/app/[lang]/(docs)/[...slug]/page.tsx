@@ -34,8 +34,7 @@ export default async function Page(props: PageProps<'/[lang]/[...slug]'>) {
 }
 
 export async function generateStaticParams() {
-  // Index MDX (`slug: []`) is served by `(home)/page.tsx` at `/[lang]`. Including it here
-  // makes Next try to prerender `/en` and `/no` for this catch-all and fails (path mismatch).
+  // `slug: []` index pages are `/[lang]` via `(home)/page.tsx`, not this catch-all.
   return source.generateParams().filter((entry) => entry.slug.length > 0);
 }
 
