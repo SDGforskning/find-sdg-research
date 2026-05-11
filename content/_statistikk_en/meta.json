@@ -1,0 +1,20 @@
+{
+  "om-statistikk": {
+    "title": "About these statistics",
+    "hidden": true
+  },
+  "nasjonal-statistikk": {
+    "title": "National statistics (Norway)",
+    "theme": {
+      "layout": "full"
+    },
+    "hidden": true
+  },
+  "aktorer-statistikk": {
+    "title": "Institutional statistics",
+    "theme": {
+      "layout": "full"
+    },
+    "hidden": true
+  }
+}

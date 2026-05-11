@@ -1,0 +1,10 @@
+{
+  "title": "About",
+  "pages": [
+    "om-tjenesten",
+    "om-baerekraftsmalene",
+    "formidling",
+    "kontakt"
+  ],
+  "root": true
+}

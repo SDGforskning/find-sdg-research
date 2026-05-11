@@ -1,18 +1,10 @@
-import nextra from 'nextra'
+import { createMDX } from 'fumadocs-mdx/next';
 
-const withNextra = nextra({
-  theme: 'nextra-theme-docs',
-  themeConfig: './theme.config.tsx',
-})
+const withMDX = createMDX();
 
-export default withNextra({
+/** @type {import('next').NextConfig} */
+const config = {
   reactStrictMode: true,
-  i18n: {
-    // These are all the locales you want to support in
-    // your application
-    locales: ['no', 'en',],
-    // This is the default locale you want to be used when visiting
-    // a non-locale prefixed path e.g. `/hello`
-    defaultLocale: 'no',
-  },
-})
+};
+
+export default withMDX(config);

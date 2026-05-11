@@ -1,0 +1,68 @@
+---
+title: Welcome
+---
+
+import { Goals } from '@/components/goals/index'
+import { Feature } from '@/components/features/index'
+import HomeSearchBox from '@/components/search/HomeSearchBox'
+import BaerekraftsforskningEnLinjeHvitEn from '@/components/logos/sdg/BaerekraftsforskningEnLinjeHvitEn'
+
+<div className="flex flex-col items-center justify-center mt-10 mb-8 gap-8"> 
+  <BaerekraftsforskningEnLinjeHvitEn className="text-black dark:text-white center" />
+  <h1 className="sr-only">Find SDG research</h1>
+  <p className="text-left text-lg sm:text-xl md:text-xl lg:text-lg">Explore SDG-related research from Norway by searching or clicking on one of the icons below</p>
+</div>
+
+<div className="flex flex-col">
+  <HomeSearchBox />
+
+  <Goals />
+
+  <div className="grid gap-3 grid-cols-4 lg:gap-4">
+    <div className='overflow-hidden relative col-span-4 md:col-span-3 md:row-span-2'>
+      <iframe src="https://uib.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=39ee6c38-b374-4a14-83fa-b09600e94bc2&autoplay=false&offerviewer=false&showtitle=false&showbrand=false&captions=false&interactivity=none"
+        className='aspect-video'
+        width={'100%'}
+        allowFullScreen 
+        aria-label="Panopto Embedded Video Player"
+        title='Videoveiledning for hvordan bruker bærekraftsforskning.no'
+      />
+    </div>
+    <Feature className='col-span-4 xs:col-span-2 md:col-span-1'>
+      <h2 className="text-xl font-bold">
+        <a href='/om/om-tjenesten'>About this service</a>
+      </h2>
+      Find out more about this service and what it covers.
+    </Feature>
+    <Feature className='col-span-4 xs:col-span-2 md:col-span-1'>
+      <h2 className="text-xl font-bold">
+        <a href='/om/om-baerekraftsmalene'>SDGs</a>
+      </h2>
+      Information about the Sustainable Development Goals and their targets, with tools and resources.
+    </Feature>
+    <Feature className='col-span-4 xs:col-span-2 md:col-span-1'>
+      <h2 className="text-xl font-bold">
+        <a href='/statistikk/om-statistikk'>Statistics</a>
+      </h2>
+      See summary statistics for Norway’s SDG-related scientific production.
+    </Feature>
+    <Feature className='col-span-4 xs:col-span-2 md:col-span-1'>
+      <h2 className="text-xl font-bold">
+        <a href='/hjelp/sokehjelp'>Help</a>
+      </h2>
+      Tips and guidance for using the service and finding literature.
+    </Feature>
+    <Feature className='col-span-4 xs:col-span-2 md:col-span-1'>
+      <h2 className="text-xl font-bold">
+        <a href='/hjelp/ofte-stilte-sporsmal'>FAQ</a>
+      </h2>
+      Questions? Find answers to frequently asked questions about the service and finding publications.
+    </Feature>
+    <Feature className='col-span-4 xs:col-span-2 md:col-span-1'>
+      <h2 className="text-xl font-bold">
+        <a href='/sokestreng/introduksjon'>Search strings</a>
+      </h2>
+      Documentation and search strings used to find SDG-related publications.
+    </Feature>
+  </div>
+</div>

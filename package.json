@@ -1,75 +1,50 @@
 {
   "name": "find-sdg-research",
-  "version": "1.0.0",
+  "private": true,
+  "version": "2.0.0",
   "description": "",
-  "main": "index.js",
-  "directories": {
-    "doc": "docs"
-  },
-  "scripts": {
-    "dev": "next",
-    "start": "next start",
-    "build": "next build",
-    "postbuild": "next-sitemap",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/SDGforskning/find-sdg-research.git"
   },
-  "author": "",
-  "license": "ISC",
+  "license": "CC BY 4.0",
   "bugs": {
     "url": "https://github.com/SDGforskning/find-sdg-research/issues"
   },
   "homepage": "https://github.com/SDGforskning/find-sdg-research#readme",
-  "dependencies": {
-    "@elastic/react-search-ui": "^1.20.2",
-    "@elastic/react-search-ui-views": "^1.20.2",
-    "@elastic/search-ui": "^1.20.2",
-    "@elastic/search-ui-app-search-connector": "^1.20.2",
-    "@elastic/search-ui-elasticsearch-connector": "^1.20.2",
-    "@heroicons/react": "^2.0.18",
-    "@stoddabr/react-tableau-embed-live": "^0.3.26",
-    "clsx": "^1.2.1",
-    "date-fns": "^2.29.3",
-    "framer-motion": "^10.16.4",
-    "next": "14.2.35",
-    "next-sitemap": "^4.2.3",
-    "nextra": "^2.13.2",
-    "nextra-theme-docs": "^2.13.2",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+  "scripts": {
+    "build": "next build",
+    "dev": "next dev",
+    "start": "next start",
+    "types:check": "fumadocs-mdx && next typegen && tsc --noEmit",
+    "postinstall": "fumadocs-mdx",
+    "lint": "biome check",
+    "format": "biome format --write"
   },
-  "dependenciesMeta": {
-    "nextra": {
-      "injected": true
-    },
-    "nextra-theme-docs": {
-      "injected": true
-    }
+  "dependencies": {
+    "@elastic/react-search-ui": "^1.24.2",
+    "@elastic/react-search-ui-views": "^1.24.2",
+    "@elastic/search-ui": "^1.24.2",
+    "@elastic/search-ui-elasticsearch-connector": "^1.24.2",
+    "@stoddabr/react-tableau-embed-live": "^0.3.34",
+    "fumadocs-core": "16.8.8",
+    "fumadocs-mdx": "15.0.0",
+    "fumadocs-ui": "16.8.8",
+    "lucide-react": "^1.14.0",
+    "next": "16.2.4",
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5",
+    "tailwind-merge": "^3.5.0"
   },
   "devDependencies": {
-    "@types/node": "20.10.3",
-    "@typescript-eslint/parser": "^6.13.2",
-    "autoprefixer": "^10.4.16",
-    "eslint": "^8.55.0",
-    "eslint-plugin-typescript-sort-keys": "^3.1.0",
-    "postcss": "^8.4.32",
-    "prettier": "^3.1.0",
-    "prettier-plugin-tailwindcss": "^0.5.7",
-    "svgo-autocrop": "^1.1.2",
-    "tailwindcss": "^3.3.6",
-    "typescript": "5.3.2"
-  },
-  "prettier": {
-    "semi": false,
-    "singleQuote": true,
-    "trailingComma": "none",
-    "arrowParens": "avoid"
-  },
-  "engines": {
-    "node": ">=22.0.0"
-  },
-  "packageManager": "npm@10.9.0"
+    "@tailwindcss/postcss": "^4.2.4",
+    "@types/mdx": "^2.0.13",
+    "@types/node": "^25.6.0",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "postcss": "^8.5.13",
+    "tailwindcss": "^4.2.4",
+    "typescript": "^6.0.3",
+    "@biomejs/biome": "^2.4.14"
+  }
 }

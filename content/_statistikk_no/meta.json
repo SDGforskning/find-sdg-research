@@ -1,0 +1,20 @@
+{
+  "om-statistikk": {
+    "title": "Om statistikk",
+    "hidden": true
+  },
+  "nasjonal-statistikk": {
+    "title": "Nasjonal statistikk",
+    "theme": {
+      "layout": "full"
+    },
+    "hidden": true
+  },
+  "aktorer-statistikk": {
+    "title": "Enkelte institusjoner",
+    "theme": {
+      "layout": "full"
+    },
+    "hidden": true
+  }
+}
