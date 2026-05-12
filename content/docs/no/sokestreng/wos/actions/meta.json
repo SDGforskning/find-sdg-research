@@ -1,14 +1,14 @@
 {
   "pages": [
-    "[Action: SDG 1](https://github.com/SDGforskning/sdg-strings/blob/v2.0.0/SDG01_query_action_WoS.md)",
-    "[Action: SDG 2](https://github.com/SDGforskning/sdg-strings/blob/v2.0.0/SDG02_query_action_WoS.md)",
-    "[Action: SDG 3](https://github.com/SDGforskning/sdg-strings/blob/v2.0.0/SDG03_query_action_WoS.md)",
-    "[Action: SDG 4](https://github.com/SDGforskning/sdg-strings/blob/v2.0.0/SDG04_query_action_WoS.md)",
-    "[Action: SDG 7](https://github.com/SDGforskning/sdg-strings/blob/v2.0.0/SDG07_query_action_WoS.md)",
-    "[Action: SDG 11](https://github.com/SDGforskning/sdg-strings/blob/v2.0.0/SDG11_query_action_WoS.md)",
-    "[Action: SDG 12](https://github.com/SDGforskning/sdg-strings/blob/v2.0.0/SDG12_query_action_WoS.md)",
-    "[Action: SDG 13](https://github.com/SDGforskning/sdg-strings/blob/v2.0.0/SDG13_query_action_WoS.md)",
-    "[Action: SDG 14](https://github.com/SDGforskning/sdg-strings/blob/v2.0.0/SDG14_query_action_WoS.md)",
-    "[Action: SDG 15](https://github.com/SDGforskning/sdg-strings/blob/v2.0.0/SDG15_query_action_WoS.md)"
+    "external[Action: SDG 1](https://github.com/SDGforskning/sdg-strings/blob/v2.0.0/SDG01_query_action_WoS.md)",
+    "external[Action: SDG 2](https://github.com/SDGforskning/sdg-strings/blob/v2.0.0/SDG02_query_action_WoS.md)",
+    "external[Action: SDG 3](https://github.com/SDGforskning/sdg-strings/blob/v2.0.0/SDG03_query_action_WoS.md)",
+    "external[Action: SDG 4](https://github.com/SDGforskning/sdg-strings/blob/v2.0.0/SDG04_query_action_WoS.md)",
+    "external[Action: SDG 7](https://github.com/SDGforskning/sdg-strings/blob/v2.0.0/SDG07_query_action_WoS.md)",
+    "external[Action: SDG 11](https://github.com/SDGforskning/sdg-strings/blob/v2.0.0/SDG11_query_action_WoS.md)",
+    "external[Action: SDG 12](https://github.com/SDGforskning/sdg-strings/blob/v2.0.0/SDG12_query_action_WoS.md)",
+    "external[Action: SDG 13](https://github.com/SDGforskning/sdg-strings/blob/v2.0.0/SDG13_query_action_WoS.md)",
+    "external[Action: SDG 14](https://github.com/SDGforskning/sdg-strings/blob/v2.0.0/SDG14_query_action_WoS.md)",
+    "external[Action: SDG 15](https://github.com/SDGforskning/sdg-strings/blob/v2.0.0/SDG15_query_action_WoS.md)"
   ]
 }

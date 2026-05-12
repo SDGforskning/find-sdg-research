@@ -1,6 +1,6 @@
 {
   "pages": [
-    "[Topic: All SDGs (markdown)](https://github.com/SDGforskning/sdg-strings/blob/v2.0.0/SDGs_query_topic_python.md)",
-    "[Topic: All SDGs (ipynb)](https://github.com/SDGforskning/sdg-strings/blob/v2.0.0/SDGs_query_topic_python.ipynb)"
+    "external:[Topic: All SDGs (markdown)](https://github.com/SDGforskning/sdg-strings/blob/v2.0.0/SDGs_query_topic_python.md)",
+    "external:[Topic: All SDGs (ipynb)](https://github.com/SDGforskning/sdg-strings/blob/v2.0.0/SDGs_query_topic_python.ipynb)"
   ]
 }

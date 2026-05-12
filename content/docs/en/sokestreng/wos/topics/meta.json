@@ -1,14 +1,14 @@
 {
   "pages": [
-    "[Topic: SDG 1](https://github.com/SDGforskning/sdg-strings/blob/v2.0.0/SDG01_query_topic_WoS.md)",
-    "[Topic: SDG 2](https://github.com/SDGforskning/sdg-strings/blob/v2.0.0/SDG02_query_topic_WoS.md)",
-    "[Topic: SDG 3](https://github.com/SDGforskning/sdg-strings/blob/v2.0.0/SDG03_query_topic_WoS.md)",
-    "[Topic: SDG 4](https://github.com/SDGforskning/sdg-strings/blob/v2.0.0/SDG04_query_topic_WoS.md)",
-    "[Topic: SDG 7](https://github.com/SDGforskning/sdg-strings/blob/v2.0.0/SDG07_query_topic_WoS.md)",
-    "[Topic: SDG 11](https://github.com/SDGforskning/sdg-strings/blob/v2.0.0/SDG11_query_topic_WoS.md)",
-    "[Topic: SDG 12](https://github.com/SDGforskning/sdg-strings/blob/v2.0.0/SDG12_query_topic_WoS.md)",
-    "[Topic: SDG 13](https://github.com/SDGforskning/sdg-strings/blob/v2.0.0/SDG13_query_topic_WoS.md)",
-    "[Topic: SDG 14](https://github.com/SDGforskning/sdg-strings/blob/v2.0.0/SDG14_query_topic_WoS.md)",
-    "[Topic: SDG 15](https://github.com/SDGforskning/sdg-strings/blob/v2.0.0/SDG15_query_topic_WoS.md)"
+    "external:[Topic: SDG 1](https://github.com/SDGforskning/sdg-strings/blob/v2.0.0/SDG01_query_topic_WoS.md)",
+    "external:[Topic: SDG 2](https://github.com/SDGforskning/sdg-strings/blob/v2.0.0/SDG02_query_topic_WoS.md)",
+    "external:[Topic: SDG 3](https://github.com/SDGforskning/sdg-strings/blob/v2.0.0/SDG03_query_topic_WoS.md)",
+    "external:[Topic: SDG 4](https://github.com/SDGforskning/sdg-strings/blob/v2.0.0/SDG04_query_topic_WoS.md)",
+    "external:[Topic: SDG 7](https://github.com/SDGforskning/sdg-strings/blob/v2.0.0/SDG07_query_topic_WoS.md)",
+    "external:[Topic: SDG 11](https://github.com/SDGforskning/sdg-strings/blob/v2.0.0/SDG11_query_topic_WoS.md)",
+    "external:[Topic: SDG 12](https://github.com/SDGforskning/sdg-strings/blob/v2.0.0/SDG12_query_topic_WoS.md)",
+    "external:[Topic: SDG 13](https://github.com/SDGforskning/sdg-strings/blob/v2.0.0/SDG13_query_topic_WoS.md)",
+    "external:[Topic: SDG 14](https://github.com/SDGforskning/sdg-strings/blob/v2.0.0/SDG14_query_topic_WoS.md)",
+    "external:[Topic: SDG 15](https://github.com/SDGforskning/sdg-strings/blob/v2.0.0/SDG15_query_topic_WoS.md)"
   ]
 }
