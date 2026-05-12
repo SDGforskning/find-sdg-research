@@ -3,6 +3,16 @@
   "private": true,
   "version": "2.0.0",
   "description": "",
+  "author": [
+    {
+      "name": "SDGForskning",
+      "url": "https://github.com/SDGforskning"
+    },
+    {
+      "name": "Tarje Lavik",
+      "url": "https://github.com/tarjelavik"
+    }
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/SDGforskning/find-sdg-research.git"
@@ -11,7 +21,11 @@
   "bugs": {
     "url": "https://github.com/SDGforskning/find-sdg-research/issues"
   },
-  "homepage": "https://github.com/SDGforskning/find-sdg-research#readme",
+  "homepage": "https://baerekraftsforskning.no",
+  "engines": {
+    "node": ">=24.0.0",
+    "npm": ">=10.0.0"
+  },
   "scripts": {
     "build": "next build",
     "dev": "next dev",
