@@ -20,7 +20,7 @@ export function Goals() {
   const params = useParams();
   const locale = params.lang || 'no'
   return (
-    <div className='w-full py-10 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-5'>
+    <div className='w-full py-10 grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-5'>
       {goals
         .filter(goal => goal.disabled !== true)
         .map((goal, i) => (
