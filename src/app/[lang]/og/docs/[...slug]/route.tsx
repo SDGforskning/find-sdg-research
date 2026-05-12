@@ -1,21 +1,25 @@
-import { getPageImage, source } from '@/lib/source';
-import { notFound } from 'next/navigation';
-import { ImageResponse } from 'next/og';
-import { generate as DefaultImage } from 'fumadocs-ui/og';
+import { notFound } from "next/navigation";
+import { ImageResponse } from "next/og";
+import { getPageImage, source } from "@/lib/source";
+import { generate, getImageResponseOptions } from "./generate";
 
 export const revalidate = false;
 
-export async function GET(_req: Request, { params }: RouteContext<'/[lang]/og/docs/[...slug]'>) {
+export async function GET(
+  _req: Request,
+  { params }: RouteContext<"/[lang]/og/docs/[...slug]">,
+) {
   const { lang, slug } = await params;
   const page = source.getPage(slug.slice(0, -1), lang);
   if (!page) notFound();
 
   return new ImageResponse(
-    <DefaultImage title={page.data.title} description={page.data.description} site={lang === 'no' ? 'Finn bærekraftsforskning' : 'Find SDG research'} />,
-    {
-      width: 1200,
-      height: 630,
-    },
+    generate({
+      title: page.data.title,
+      description: page.data.description,
+      lang,
+    }),
+    getImageResponseOptions(),
   );
 }
 
