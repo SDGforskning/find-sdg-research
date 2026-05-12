@@ -1,0 +1,9 @@
+{
+  "title": "Søkestrenger",
+  "pages": [
+    "introduksjon",
+    "wos",
+    "jupyter"
+  ],
+  "root": true
+}

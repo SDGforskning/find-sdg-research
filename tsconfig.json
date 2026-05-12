@@ -1,7 +1,6 @@
 {
   "compilerOptions": {
-    "baseUrl": "./",
-    "target": "es5",
+    "target": "ESNext",
     "lib": [
       "dom",
       "dom.iterable",
@@ -9,26 +8,37 @@
     ],
     "allowJs": true,
     "skipLibCheck": true,
-    "strict": false,
+    "strict": true,
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
-    "incremental": true,
     "esModuleInterop": true,
-    "isolatedModules": true,
-    "moduleResolution": "node",
-    "jsx": "preserve",
     "module": "esnext",
+    "moduleResolution": "bundler",
     "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "react-jsx",
+    "incremental": true,
     "paths": {
-      "@components/*": [
-        "components/*"
+      "@/*": [
+        "./src/*"
+      ],
+      "collections/*": [
+        "./.source/*"
       ]
-    }
+    },
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
   },
   "include": [
     "next-env.d.ts",
     "**/*.ts",
-    "**/*.tsx"
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    ".next/dev/types/**/*.ts",
+    "src/components/tableau/index.jsx"
   ],
   "exclude": [
     "node_modules"
