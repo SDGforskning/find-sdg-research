@@ -1,4 +1,5 @@
 import { Search } from '@/components/search';
+import { DynamicLink } from 'fumadocs-core/dynamic-link';
 
 export default async function SokPage({ params }: PageProps<'/[lang]/sok'>) {
   const { lang } = await params;
@@ -29,17 +30,17 @@ export default async function SokPage({ params }: PageProps<'/[lang]/sok'>) {
 
       <p className="mb-8 text-base leading-7">
         {isEnglish ? 'If you need help, take a look at ' : 'Om du trenger hjelp, sjekk '}
-        <a className="underline" href="/hjelp/sokehjelp">
+        <DynamicLink className="underline" href="/[lang]/hjelp/sokehjelp">
           {isEnglish ? 'Search tips' : 'Søkeveiledning'}
-        </a>
+        </DynamicLink>
         ,{' '}
-        <a className="underline" href="/hjelp/ofte-stilte-sporsmal">
+        <DynamicLink className="underline" href="/[lang]/hjelp/ofte-stilte-sporsmal">
           {isEnglish ? 'FAQ' : 'Ofte stilte spørsmål'}
-        </a>
+        </DynamicLink>
         , {isEnglish ? 'or ' : 'eller '}
-        <a className="underline" href="/om/om-tjenesten">
+        <DynamicLink className="underline" href="/[lang]/om/om-tjenesten">
           {isEnglish ? 'About this service' : 'Om tjenesten'}
-        </a>
+        </DynamicLink>
         .
       </p>
 

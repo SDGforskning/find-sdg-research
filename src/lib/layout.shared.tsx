@@ -27,7 +27,7 @@ export function baseOptions(locale: string): BaseLayoutProps {
       },
       {
         type: 'main',
-        text: locale === 'no' ? 'Sokestrenger' : 'Search strings',
+        text: locale === 'no' ? 'Søkestrenger' : 'Search strings',
         url: `/${locale}/sokestreng/introduksjon`,
       },
     ],

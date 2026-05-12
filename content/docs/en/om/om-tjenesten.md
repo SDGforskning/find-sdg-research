@@ -2,11 +2,11 @@
 title: About this service
 ---
 
-The aim of **Find SDG Research** is to allow anyone – those working in academia, public and private sectors, students, and the general public – to find Norwegian publications related to the UN’s Sustainable Development Goals, and, when possible, access to the full text. It primarily covers literature that is related to the targets of the SDGs. Read more about the Sustainable Development Goals (SDGs) and their targets under [About the SDGs](/om/om-baerekraftsmalene)
+The aim of **Find SDG Research** is to allow anyone – those working in academia, public and private sectors, students, and the general public – to find Norwegian publications related to the UN’s Sustainable Development Goals, and, when possible, access to the full text. It primarily covers literature that is related to the targets of the SDGs. Read more about the Sustainable Development Goals (SDGs) and their targets under [About the SDGs](/en/om/om-baerekraftsmalene)
 
-You can use this service to find SDG-related research literature from Norwegian institutions. You can filter by SDG, and adjust the number of results you get by choosing a set to search in:  You can look at a broader set of results by finding research related to the topics in the targets (using the "SDG" filter), or you can narrow down your search by searching only for research closely related to actions in the targets ("SDG, action"). Methods and coverage are described in more detail below. [See here for help using the search](/hjelp/sokehjelp).
+You can use this service to find SDG-related research literature from Norwegian institutions. You can filter by SDG, and adjust the number of results you get by choosing a set to search in:  You can look at a broader set of results by finding research related to the topics in the targets (using the "SDG" filter), or you can narrow down your search by searching only for research closely related to actions in the targets ("SDG, action"). Methods and coverage are described in more detail below. [See here for help using the search](/en/hjelp/sokehjelp).
 
-Under [Communication materials](/om/formidling) you can find texts, posters, flyers and more available for download.
+Under [Communication materials](/en/om/formidling) you can find texts, posters, flyers and more available for download.
 
 ## Why did we set up this service?
 
@@ -14,9 +14,9 @@ Access to research which is relevant to the SDGs is important across society, fo
 
 ## Organisation
 
-This service was established by the University of Bergen Library, Western Norway University of Applied Sciences Library, and University of Stavanger Library, in a [2-year project](https://www.uib.no/en/ub/148804/sustainable-development-research-all-%E2%80%93-transparent-mapping-and-discovery-tool) with support from a grant from the National Library of Norway ([see the project in the National Library Project Bank (Norwegian only)](https://bibliotekutvikling.no/prosjektbank/prosjekt/baerekraftsforskning-for-alle-en-transparent-kartleggings-og-gjenfinningstjeneste/)). Representatives from the University of Bergen Library, Western Norway University of Applied Sciences Library, and University of Stavanger Library form the editorial committee for the service. Technical support for the platform is provided by the University of Bergen Library. [Contact us here](/om/kontakt).
+This service was established by the University of Bergen Library, Western Norway University of Applied Sciences Library, and University of Stavanger Library, in a [2-year project](https://www.uib.no/en/ub/148804/sustainable-development-research-all-%E2%80%93-transparent-mapping-and-discovery-tool) with support from a grant from the National Library of Norway ([see the project in the National Library Project Bank (Norwegian only)](https://bibliotekutvikling.no/prosjektbank/prosjekt/baerekraftsforskning-for-alle-en-transparent-kartleggings-og-gjenfinningstjeneste/)). Representatives from the University of Bergen Library, Western Norway University of Applied Sciences Library, and University of Stavanger Library form the editorial committee for the service. Technical support for the platform is provided by the University of Bergen Library. [Contact us here](/en/om/kontakt).
 
-The search strings used to map SDG-related research are maintained by these institutions and additional collaborators. For more information about contributors to the mappings, see [Search string documentation](/sokestreng/introduksjon).
+The search strings used to map SDG-related research are maintained by these institutions and additional collaborators. For more information about contributors to the mappings, see [Search string documentation](/en/sokestreng/introduksjon).
 
 ## Methods and coverage
 
@@ -36,6 +36,6 @@ The research publications in this service were mapped to SDGs using a method we 
 3)	Creating Boolean search strings to find this research, including Norwegian translations.
 4)	Documenting these steps.
 
-If you have access to Web of Science or can run Python, you are welcome to try out, reuse or modify our strings. The strings, together with more detailed documentation, are available under [Search Strings](/sokestreng/introduksjon). 
+If you have access to Web of Science or can run Python, you are welcome to try out, reuse or modify our strings. The strings, together with more detailed documentation, are available under [Search Strings](/en/sokestreng/introduksjon). 
 
 The metadata provided in the service is from CRISTIN. 
