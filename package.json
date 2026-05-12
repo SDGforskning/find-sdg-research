@@ -3,6 +3,16 @@
   "private": true,
   "version": "2.0.0",
   "description": "",
+  "author": [
+    {
+      "name": "SDGForskning",
+      "url": "https://github.com/SDGforskning"
+    },
+    {
+      "name": "Tarje Lavik",
+      "url": "https://github.com/tarjelavik"
+    }
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/SDGforskning/find-sdg-research.git"
@@ -11,10 +21,14 @@
   "bugs": {
     "url": "https://github.com/SDGforskning/find-sdg-research/issues"
   },
-  "homepage": "https://github.com/SDGforskning/find-sdg-research#readme",
+  "homepage": "https://baerekraftsforskning.no",
+  "engines": {
+    "node": ">=24.0.0",
+    "npm": ">=10.0.0"
+  },
   "scripts": {
-    "build": "next build",
-    "dev": "next dev",
+    "build": "dotenvx run -- next build",
+    "dev": "dotenvx run -- next dev",
     "start": "next start",
     "types:check": "fumadocs-mdx && next typegen && tsc --noEmit",
     "postinstall": "fumadocs-mdx",
@@ -22,6 +36,7 @@
     "format": "biome format --write"
   },
   "dependencies": {
+    "@dotenvx/dotenvx": "1.65.0",
     "@elastic/react-search-ui": "^1.24.2",
     "@elastic/react-search-ui-views": "^1.24.2",
     "@elastic/search-ui": "^1.24.2",
@@ -37,6 +52,7 @@
     "tailwind-merge": "^3.5.0"
   },
   "devDependencies": {
+    "@biomejs/biome": "^2.4.14",
     "@tailwindcss/postcss": "^4.2.4",
     "@types/mdx": "^2.0.13",
     "@types/node": "^25.6.0",
@@ -44,7 +60,6 @@
     "@types/react-dom": "^19.2.3",
     "postcss": "^8.5.13",
     "tailwindcss": "^4.2.4",
-    "typescript": "^6.0.3",
-    "@biomejs/biome": "^2.4.14"
+    "typescript": "^6.0.3"
   }
 }
