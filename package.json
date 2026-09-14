@@ -27,8 +27,9 @@
     "npm": ">=10.0.0"
   },
   "scripts": {
+    "dotenvx": "dotenvx",
+    "dev": "dotenvx run -- next dev --turbo",
     "build": "dotenvx run -- next build",
-    "dev": "dotenvx run -- next dev",
     "start": "dotenvx run -- next start",
     "types:check": "fumadocs-mdx && next typegen && tsc --noEmit",
     "postinstall": "fumadocs-mdx",
@@ -36,7 +37,7 @@
     "format": "biome format --write"
   },
   "dependencies": {
-    "@dotenvx/dotenvx": "1.65.0",
+    "@dotenvx/dotenvx": "2.24.1",
     "@dotenvx/next-env": "2.2.3",
     "@elastic/react-search-ui": "^1.24.2",
     "@elastic/react-search-ui-views": "^1.24.2",
