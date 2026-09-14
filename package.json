@@ -29,7 +29,7 @@
   "scripts": {
     "build": "dotenvx run -- next build",
     "dev": "dotenvx run -- next dev",
-    "start": "next start",
+    "start": "dotenvx run -- next start",
     "types:check": "fumadocs-mdx && next typegen && tsc --noEmit",
     "postinstall": "fumadocs-mdx",
     "lint": "biome check",
@@ -37,6 +37,7 @@
   },
   "dependencies": {
     "@dotenvx/dotenvx": "1.65.0",
+    "@dotenvx/next-env": "2.2.3",
     "@elastic/react-search-ui": "^1.24.2",
     "@elastic/react-search-ui-views": "^1.24.2",
     "@elastic/search-ui": "^1.24.2",
@@ -46,7 +47,7 @@
     "fumadocs-mdx": "15.0.0",
     "fumadocs-ui": "16.8.8",
     "lucide-react": "^1.14.0",
-    "next": "16.2.4",
+    "next": "16.3.5",
     "react": "^19.2.5",
     "react-dom": "^19.2.5",
     "tailwind-merge": "^3.5.0"
@@ -61,5 +62,8 @@
     "postcss": "^8.5.13",
     "tailwindcss": "^4.2.4",
     "typescript": "^6.0.3"
+  },
+  "overrides": {
+    "@next/env": "npm:@dotenvx/next-env"
   }
 }
