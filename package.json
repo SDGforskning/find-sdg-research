@@ -28,7 +28,7 @@
   },
   "scripts": {
     "build": "dotenvx run -- next build",
-    "dev": "dotenvx run -- next dev",
+    "dev": "dotenvx run -f .env.development -- next dev",
     "start": "next start",
     "types:check": "fumadocs-mdx && next typegen && tsc --noEmit",
     "postinstall": "fumadocs-mdx",
@@ -46,7 +46,7 @@
     "fumadocs-mdx": "15.0.0",
     "fumadocs-ui": "16.8.8",
     "lucide-react": "^1.14.0",
-    "next": "16.2.4",
+    "next": "16.3.5",
     "react": "^19.2.5",
     "react-dom": "^19.2.5",
     "tailwind-merge": "^3.5.0"
