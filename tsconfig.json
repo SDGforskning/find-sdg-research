@@ -38,7 +38,8 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts",
-    "src/components/tableau/index.jsx"
+    "src/components/tableau/index.jsx",
+    ".next/dev/dev/types/**/*.ts"
   ],
   "exclude": [
     "node_modules"
