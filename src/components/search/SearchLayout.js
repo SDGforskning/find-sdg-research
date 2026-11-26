@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useRef, useState } from "react";
 
 function joinClass(...parts) {
   return parts.filter(Boolean).join(" ");
@@ -8,21 +8,35 @@ function joinClass(...parts) {
 
 function Sidebar({ className, children, showLabel, hideLabel }) {
   const [open, setOpen] = useState(false);
+  const openButtonRef = useRef(null);
+
+  function close() {
+    setOpen(false);
+    openButtonRef.current?.focus();
+  }
 
   return (
     <>
       <button
+        ref={openButtonRef}
         type="button"
         className="sui-layout-sidebar-toggle"
-        onClick={() => setOpen((value) => !value)}
+        aria-expanded={open}
+        aria-controls="search-filters"
+        onClick={() => setOpen(true)}
       >
         {showLabel}
       </button>
-      <div className={joinClass(className, open && `${className}--toggled`)}>
+      <div
+        id="search-filters"
+        className={joinClass(className, open && `${className}--toggled`)}
+      >
         <button
           type="button"
           className="sui-layout-sidebar-toggle"
-          onClick={() => setOpen((value) => !value)}
+          aria-expanded={open}
+          aria-controls="search-filters"
+          onClick={close}
         >
           {hideLabel}
         </button>

@@ -35,7 +35,7 @@
     "postinstall": "fumadocs-mdx",
     "prepare": "lefthook install",
     "lint": "biome check",
-    "lint:links": "bun ./scripts/lint.ts",
+    "lint:links": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON ./scripts/lint.ts",
     "format": "biome format --write",
     "test:unit": "vitest run",
     "test:e2e": "playwright test",

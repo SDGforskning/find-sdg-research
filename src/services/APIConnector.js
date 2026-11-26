@@ -20,7 +20,7 @@ class APIConnector {
       }),
     });
     const body = await response.json().catch(() => null);
-    if (!response.ok || body?.error) {
+    if (!response.ok || body == null || body.error) {
       throw new Error("search-failed");
     }
     return body;
