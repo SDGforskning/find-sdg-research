@@ -12,7 +12,7 @@ Playwright starts the app on port **3005** so a local `next dev` is left alone. 
 
 Set `CI=1` in pipelines for retries, a single worker, and an HTML report without auto-open.
 
-GitHub Actions job **`a11y`** (`.github/workflows/ci.yml`) runs `npm run build` and `npm run test:a11y` on pull requests and `main`, but only when **`tarjelavik`** triggered the workflow (`github.actor`). The HTML report is saved as a workflow artifact. The build decrypts `.env` with the `DOTENV_PRIVATE_KEY` repository secret.
+GitHub Actions job **`a11y`** (`.github/workflows/ci.yml`) runs `next build` and `npm run test:a11y` on pull requests and `main`, but only when **`tarjelavik`** triggered the workflow (`github.actor`). The HTML report is saved as a workflow artifact. The job sets placeholder `ES_HOST` and `ES_APIKEY` values. It does not decrypt `.env`. Real Elasticsearch credentials stay in Vercel.
 
 ## What is covered
 

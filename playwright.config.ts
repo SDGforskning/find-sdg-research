@@ -32,7 +32,11 @@ export default defineConfig({
   webServer: skipWebServer
     ? undefined
     : {
-        command: `npm run start -- --port ${port}`,
+        // CI provides ES_HOST and ES_APIKEY and has no dotenv private key.
+        // Local runs still go through dotenvx so .env.keys can decrypt .env.
+        command: process.env.CI
+          ? `npx next start --port ${port}`
+          : `npm run start -- --port ${port}`,
         url: baseURL,
         reuseExistingServer: !process.env.CI,
         timeout: 180_000,
