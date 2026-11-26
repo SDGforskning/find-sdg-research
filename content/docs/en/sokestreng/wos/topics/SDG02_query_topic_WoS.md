@@ -29,9 +29,10 @@ Our classification of countries as least developed countries (LDCs), small islan
 During editing of this string (2021), we have consulted two other sets of queries for reference: <a id="Aurora">[Aurora Universities network (2020)](#f5)</a> and <a id="Els">[Rivest et al. (2021)](#f6)</a>.
 
 **Abbreviations**
-* FAO - Food and Agriculture Organization of the United organizations
-* WHO - World Health Organization
-* MeSH - Medical Subject Headings - https://www.ncbi.nlm.nih.gov/mesh/
+
+- FAO - Food and Agriculture Organization of the United organizations
+- WHO - World Health Organization
+- MeSH - Medical Subject Headings - https://www.ncbi.nlm.nih.gov/mesh/
 
 ## 3. Targets
 
@@ -44,15 +45,16 @@ During editing of this string (2021), we have consulted two other sets of querie
 > 2.1.2 Prevalence of moderate or severe food insecurity in the population, based on the Food Insecurity Experience Scale (FIES)
 
 This target is interpreted to cover research about
-* Hunger/lack of food and food insecurity
-* Access/right to food, food supplies and food supply chains
-* Safety and nutritional value of food
+
+- Hunger/lack of food and food insecurity
+- Access/right to food, food supplies and food supply chains
+- Safety and nutritional value of food
 
 It consists of 3 phrases. Phrase 3 uses terms which need to be combined with human terms.
 
 #### Phrase 1
 
-The elements of the phrase are: *hunger*
+The elements of the phrase are: _hunger_
 
 Hunger is used in phrases in this approach (`ending hunger`, `world hunger`) to prevent finding results that are mostly medical/physiological. `feast and famine` refers to bioreactors/selective pressure in microbial cultures (not relevant), and is used in a double NOT to avoid losing relevant results. `Underfeeding` and `starvation` removed as seem to be used mostly in a medical/physiology context, rather than related to food security/supply.
 
@@ -69,7 +71,7 @@ TS=
 
 #### Phrase 2
 
-The elements of the phrase are: *food access/safety/nutrition*. `food` should cover mechanisms such as food banks, food stamps, food credits, and descriptions such as good quality food etc. `nutrition* quality` does find some results about animal feed, but a number of them connect their work to food security, reducing food loss, so it is safer not to remove this term. Here we are including `food sovereignty` as it encompasses the ideas of access to safe, adequate and nutritious food, so is included here.
+The elements of the phrase are: _food access/safety/nutrition_. `food` should cover mechanisms such as food banks, food stamps, food credits, and descriptions such as good quality food etc. `nutrition* quality` does find some results about animal feed, but a number of them connect their work to food security, reducing food loss, so it is safer not to remove this term. Here we are including `food sovereignty` as it encompasses the ideas of access to safe, adequate and nutritious food, so is included here.
 
 ```py
 TS=
@@ -78,11 +80,11 @@ TS=
   OR "nutrition* security" OR "nutrition* quality" OR "nutrition sensitive agriculture"
   OR ("food" NEAR/5 ("access" OR "safety" OR "unsafe" OR "secure" OR "security" OR "reliable" OR "reliability"))
 )
-```   
+```
 
 #### Phrase 3
 
-The elements of the phrase are: *food supply/nutrient content + humans*. This phrase covers improving food supply, and is combined with "human terms" to prevent biology/ecology results. The human terms include generic terms signifying a work is about humans as well as some "vulnerable" groups (based on UN sources) considered relevant for this topic (<a id="Blanchard">[Blanchard et al., 2017](#f16)</a>; <a id="UNOHC">[Office of the High Commissioner, n.d.](#f17)</a>).
+The elements of the phrase are: _food supply/nutrient content + humans_. This phrase covers improving food supply, and is combined with "human terms" to prevent biology/ecology results. The human terms include generic terms signifying a work is about humans as well as some "vulnerable" groups (based on UN sources) considered relevant for this topic (<a id="Blanchard">[Blanchard et al., 2017](#f16)</a>; <a id="UNOHC">[Office of the High Commissioner, n.d.](#f17)</a>).
 
 ```py
 TS=
@@ -116,7 +118,7 @@ This query consists of 3 phrases. Phrase 3 is for terms which need to be combine
 
 #### Phrase 1
 
-The elements of the phrase are: *malnutrition*
+The elements of the phrase are: _malnutrition_
 
 `dietary NEAR/3 deficiency` finds a number of specific deficiencies (e.g. dietary selenium deficiency, dietary Zn deficiency). `minerals` is not used - it only adds a few results, and many are from agriculture. `undernutrition` and other terms are included in phrase 3.
 
@@ -145,7 +147,7 @@ TS=
 
 #### Phrase 2
 
-The elements of the phrase are: *nutritional access/quality OR nutrition + specific groups*
+The elements of the phrase are: _nutritional access/quality OR nutrition + specific groups_
 
 Research about the nutritional status of the groups mentioned in the target is included here. `stability` is not used in combination with food/nutrition as there are results about nutritional stability in processed foods. `nutritio*` should cover terms such as "access to nutritional care". `baby` is not used as it only adds noise about "baby mustard".
 
@@ -168,7 +170,7 @@ TS=
 
 #### Phrase 3
 
-The elements of the phrase are: *undernutrition/food supply + humans*. For the topics `"protein deficiency"  OR "undernourish*" OR "under-nourish*" OR "undernutrition" OR "under-nutrition"` there was a considerable number of papers from animals and therefore they had to be combined with *human terms*. The human terms include generic terms signifying a work is about humans as well as some "vulnerable" groups (based on UN sources) considered relevant for this topic (<a id="Blanchard">[Blanchard et al., 2017](#f16)</a>; <a id="UNOHC">[Office of the High Commissioner, n.d.](#f17)</a>).
+The elements of the phrase are: _undernutrition/food supply + humans_. For the topics `"protein deficiency"  OR "undernourish*" OR "under-nourish*" OR "undernutrition" OR "under-nutrition"` there was a considerable number of papers from animals and therefore they had to be combined with _human terms_. The human terms include generic terms signifying a work is about humans as well as some "vulnerable" groups (based on UN sources) considered relevant for this topic (<a id="Blanchard">[Blanchard et al., 2017](#f16)</a>; <a id="UNOHC">[Office of the High Commissioner, n.d.](#f17)</a>).
 
 ```py
 TS=
@@ -199,12 +201,13 @@ TS=
 
 This target is interpreted to include research about productivity and income of small-scale food producers (terrestrial and aquatic). Specific ways to improve this are mentioned (securing access, rights, and opportunities for non-farm employment/value addition), so these are included too.
 
-This query consists of 1 phrase. The elements of the phrase are: *productivity/access etc. + small-scale food producers*
+This query consists of 1 phrase. The elements of the phrase are: _productivity/access etc. + small-scale food producers_
 
- For the *small-scale food prodcer terms*, `small scale`+ `farm*` will cover types of farming in two words e.g. forest farming. Types of farming system were expanded using MeSH (NIH) and Emtree (Embase database, Elsevier) subject vocabularies. Specific types of crops and livestock were further expanded using FAO statistical year book (<a id="FAO2013">[FAO, 2013](#f2)</a>). For crops, those listed as major crops or "important food crops" are included, while oil crops were excluded (not being food). Adding different farming types/crops/livestock adds complexity but improves the results. Some specific types are covered by generic terms: e.g. "Root crops" are covered by `crops`, and terms such as `farm*` will cover types of farming in two words e.g. forest farms, family farms, fish farming.
+For the _small-scale food prodcer terms_, `small scale`+ `farm*` will cover types of farming in two words e.g. forest farming. Types of farming system were expanded using MeSH (NIH) and Emtree (Embase database, Elsevier) subject vocabularies. Specific types of crops and livestock were further expanded using FAO statistical year book (<a id="FAO2013">[FAO, 2013](#f2)</a>). For crops, those listed as major crops or "important food crops" are included, while oil crops were excluded (not being food). Adding different farming types/crops/livestock adds complexity but improves the results. Some specific types are covered by generic terms: e.g. "Root crops" are covered by `crops`, and terms such as `farm*` will cover types of farming in two words e.g. forest farms, family farms, fish farming.
 
- In the *productivity/access etc. terms*:
- - `intensification` implies increasing production, but results in some noise when used alone - it can be used in other contexts, and finds many results about the *effects* of agricultural intensification, thus it is combined with other terms which limit it better to works looking at the process itself.
+In the _productivity/access etc. terms_:
+
+- `intensification` implies increasing production, but results in some noise when used alone - it can be used in other contexts, and finds many results about the _effects_ of agricultural intensification, thus it is combined with other terms which limit it better to works looking at the process itself.
 - Originally `"access*" OR "barrier$"` was combined with many other terms (e.g. access to credit, financial services, markets...) - however we have now cut this combination, as the target is so broad in what should be accessible. So now, papers talking about improving access to anything should be covered. A few irrelevant results are included due to the abstract including an "open access" publishing statement; and a couple from open access to e.g. satellite data. This is hard to exclude as we want "open access fisheries", for example. (Original combination: `"farmland$" OR "land" OR "resources" OR "financial service$" OR "banking" OR "microfinance" OR "credit" OR "microcredit" OR "insurance" OR "microinsurance" OR "market$" OR "marketing" OR "traders" OR "trade" OR "agricultur* input$" OR "farm input$" OR "water" OR "machinery" OR "equipment" OR "technology" OR "farm* experience" OR "information" OR "training" OR "equitab*" OR "inequitab*"`)
 
 ```py
@@ -246,7 +249,7 @@ This query consists of 1 phrase. The elements of the phrase are: *productivity/a
             )
           )
 )
-```   
+```
 
 ### Target 2.4
 
@@ -255,12 +258,14 @@ This query consists of 1 phrase. The elements of the phrase are: *productivity/a
 > 2.4.1 Proportion of agricultural area under productive and sustainable agriculture
 
 This target is interpreted to cover research about
-*  productivity of food production systems (phrase 1)
-* resilient food production systems/agricultural practices, including adaptation and preparedness of food production systems/species to climate change and disasters (phrases 2,3)
-* sustainable food production systems/practices (outside of resilience; phrase 4)
-* food production systems and soil quality/ecosystems (phrase 5,6)
+
+-  productivity of food production systems (phrase 1)
+- resilient food production systems/agricultural practices, including adaptation and preparedness of food production systems/species to climate change and disasters (phrases 2,3)
+- sustainable food production systems/practices (outside of resilience; phrase 4)
+- food production systems and soil quality/ecosystems (phrase 5,6)
 
 Increasing productivity of all food production systems (i.e. without reference to sustainable/resilient practices) was not considered relevant in v1. However, the SDG indicator metadata clearly classes increased productivity as part of sustainability. Thus, it is included now.
+
 > "Maintaining or improving the output over time relative to the area of land used is an important aspect in  sustainability  for  a  range  of  reasons.  [...]. In a broader sense, an increase in the level of  land  productivity  enables  higher  production  while  reducing  pressure  on  increasingly  scarce  land  resources,  commonly  linked  to  deforestation  and  associated  losses  of  ecosystem  services  and biodiversity." (<a id="SDGindmetadata">[Statistics Division, 2021b, Indicator 2.4.1](#f9)</a>).
 
 Under "food production systems" we include types of agriculture, fishing and aquaculture. We do not include processing, storage, distribution, and markets, which can be considered part of a wider "sustainable food system" (<a id="SFS">[e.g. Annex 2, Annex 3 in One Planet network Sustainable Food Systems (SFS) Programme, 2020](#f8)</a>). Thus concepts such as food sovereignty are too wide. Types of farming system were expanded using MeSH (NIH) and Emtree (Embase database, Elsevier) subject vocabularies. Specific types of crops and livestock were further expanded using FAO statistical year book (<a id="FAO2013">[FAO, 2013](#f2)</a>). For crops, those listed as major crops or "important food crops" are included, while oil crops were excluded (not being food). Some specific types are covered by generic terms: e.g. Root crops are covered by `crops`, and terms such as `farm*` will cover types of farming in two words e.g. forest farms, family farms, fish farming.
@@ -269,7 +274,7 @@ This query consists of 6 phrases.
 
 #### Phrase 1
 
-The elements of the phrase are: *food production systems + productivity*. 
+The elements of the phrase are: _food production systems + productivity_.
 
 ```py
 TS=
@@ -293,20 +298,21 @@ TS=
   )
   NOT ("solar farm*" OR "wind farm*" OR "power farm*")
 )
-```  
+```
 
 #### Phrase 2
 
 Phrase 2 and 3 concern vulnerability / resilience. They have the same terms for food production systems, but differ in the terms for resilience: phrase 2 is linked to general terms for resilience, while phrase 3 covers terms that need to be connected to disasters/shocks/risks.
 
 Resilience in terms of food production has been described by FAO as:
+
 > " In the context of sustainable food and agriculture, resilience is the capacity of agro-ecosystems, farming communities, households or individuals to maintain or enhance system productivity by preventing, mitigating or coping with risks, adapting to change, and recovering from shocks" (<a id="FAO2014">[FAO, 2014, p.28](#f7)</a>)
 
-The elements of the phrase are: *food production systems + resilience/vulnerability*.
+The elements of the phrase are: _food production systems + resilience/vulnerability_.
 
-In the *food production system* terms, production systems and species are included (i.e. species are split from production where possible so that both resilience for the species and the production system will be covered). Some species remain linked to production to avoid irrelevant results (e.g. vegetable intake and psychological resilience). `pastoral*` is limited in this phrase, as it finds results from other uses (pastoral care, religion studies).
+In the _food production system_ terms, production systems and species are included (i.e. species are split from production where possible so that both resilience for the species and the production system will be covered). Some species remain linked to production to avoid irrelevant results (e.g. vegetable intake and psychological resilience). `pastoral*` is limited in this phrase, as it finds results from other uses (pastoral care, religion studies).
 
-In the *resilience* terms, `tolera*` is a particularly influential term that increases results ("drought tolerance" of crops being a common research theme). `climate smart agriculture` is a term used for an approach specifically addressing climate change.
+In the _resilience_ terms, `tolera*` is a particularly influential term that increases results ("drought tolerance" of crops being a common research theme). `climate smart agriculture` is a term used for an approach specifically addressing climate change.
 
 ```py
 TS=
@@ -333,15 +339,15 @@ TS=
   )
   NOT ("solar farm*" OR "wind farm*" OR "power farm*" OR "wild pig$")
 )
-```  
+```
 
 #### Phrase 3
 
-The elements of the phrase are: *food production systems + adaptation/coping/preparedness + disaster/climate change*.
+The elements of the phrase are: _food production systems + adaptation/coping/preparedness + disaster/climate change_.
 
-The *food production system* terms are the same as phrase 2.  These *disaster/climate change* terms include natural disasters, climate, market volatility, civil and political unrest (examples of risks in <a id="FAO2014">[FAO, 2014](#f7)</a>).
+The _food production system_ terms are the same as phrase 2. These _disaster/climate change_ terms include natural disasters, climate, market volatility, civil and political unrest (examples of risks in <a id="FAO2014">[FAO, 2014](#f7)</a>).
 
-The *disaster* terms were taken from a standardised list we used across the SDGs, which was developed based on selected hazards listed in <a id="Murray">[Murray et al. (2021)](#f15)</a>.
+The _disaster_ terms were taken from a standardised list we used across the SDGs, which was developed based on selected hazards listed in <a id="Murray">[Murray et al. (2021)](#f15)</a>.
 
 ```py
 TS=
@@ -392,7 +398,7 @@ TS=
 
 #### Phrase 4
 
-The elements of the phrase are: *ecoagriculture OR (food production systems + sustainability)*.
+The elements of the phrase are: _ecoagriculture OR (food production systems + sustainability)_.
 
 `ecoagricultur*` is a relatively specialist term for ecology and agriculture and considered narrow enough to use alone.
 
@@ -435,7 +441,7 @@ TS=
 
 #### Phrase 5
 
-The elements of the phrase are: *food production systems + ecosystems and soil*. This phrase covers "positives" (soil health, diversity, fertility etc.), phrase 6 covers "negatives" (loss, degradation etc.). Some terms are already covered in phrase 4 (e.g. reduced tillage)
+The elements of the phrase are: _food production systems + ecosystems and soil_. This phrase covers "positives" (soil health, diversity, fertility etc.), phrase 6 covers "negatives" (loss, degradation etc.). Some terms are already covered in phrase 4 (e.g. reduced tillage)
 
 ```py
 TS=
@@ -464,7 +470,7 @@ TS=
 
 #### Phrase 6
 
-The elements of the phrase are: *food production systems + ecosystems and soil*. This phrase covers "negatives" (loss, degradation etc.), phrase 5 covers "positives" (soil health, diversity, fertility etc.). Some terms are already covered in phrase 4 (e.g. reduced tillage).
+The elements of the phrase are: _food production systems + ecosystems and soil_. This phrase covers "negatives" (loss, degradation etc.), phrase 5 covers "positives" (soil health, diversity, fertility etc.). Some terms are already covered in phrase 4 (e.g. reduced tillage).
 
 Types of land/soil degradation are taken from <a id="FAO2014">[FAO (2014)](#f7)</a> and (<a id="SDGindmetadata">[Statistics Division, 2021b (Indicator 2.4.1)](#f9)</a>).
 
@@ -502,7 +508,7 @@ TS=
         )
       )
 )
-```  
+```
 
 ### Target 2.5
 
@@ -513,9 +519,10 @@ TS=
 > 2.5.2 Proportion of local breeds classified as being at risk of extinction
 
 This target is interpreted to cover research about:
-* The diversity of farmed species/wild relatives (phrases 1,2).
-* Agricultural genetic banks and preservation of tissue (seed, plant, animal) related to conservation (phrase 3).
-* Access and benefit sharing for genetic resources and traditional knowledge related to food and agriculture (phrases 4,5).
+
+- The diversity of farmed species/wild relatives (phrases 1,2).
+- Agricultural genetic banks and preservation of tissue (seed, plant, animal) related to conservation (phrase 3).
+- Access and benefit sharing for genetic resources and traditional knowledge related to food and agriculture (phrases 4,5).
 
 The FAO Second Global Assessment of Animal Genetic Resources was used as a source of terms (<a id="FAO2015">[Commission on Genetic Resources for Food and Agriculture Assessments, 2015](#f11)</a>). Central instruments are The Treaty on Plant Genetic Resources for Food and Agriculture, the Convention on Biological Diversity and elaborations in the Nagoya Protocol.
 
@@ -525,11 +532,11 @@ This query consists of 5 phrases.
 
 #### Phrase 1
 
-The elements of the phrase are: *agricultural diversity/local breeds OR (traditional varieties/species + agriculture) OR (landraces + diversity/conservation)*. This phrase covers terms which are used in the context of agricultural diversity. Phrase 2 expands with generic terms for diversity that must be combined with agricultural terms.
+The elements of the phrase are: _agricultural diversity/local breeds OR (traditional varieties/species + agriculture) OR (landraces + diversity/conservation)_. This phrase covers terms which are used in the context of agricultural diversity. Phrase 2 expands with generic terms for diversity that must be combined with agricultural terms.
 
-Conserving wild relatives and traditional varieties is considered maintaining genetic diversity. `agrobiodiversity` is wider than only the species used in agriculture - it covers also the non-harvested species that support production and agro-ecosystems (e.g. pollinators, soil-organisms) (<a id="FAO2004">[FAO, 2004](#f10)</a>). It is considered relevant and included, as agrobiodiversity looks at the whole system (i.e. supporting diversity AND agricultural diversity). 
+Conserving wild relatives and traditional varieties is considered maintaining genetic diversity. `agrobiodiversity` is wider than only the species used in agriculture - it covers also the non-harvested species that support production and agro-ecosystems (e.g. pollinators, soil-organisms) (<a id="FAO2004">[FAO, 2004](#f10)</a>). It is considered relevant and included, as agrobiodiversity looks at the whole system (i.e. supporting diversity AND agricultural diversity).
 
-`landraces` and `varieties` are treated slightly differently here than the other terms: `varieties`is combined with agriculture as "traditional varieties" could refer to varieties of language, art etc. Note that `pigs` are excluded from the species list due to a large number of results about wild pig hunting in relation to their effect on agricultural land. `landraces` is connected to diversity terms to try and avoid technical works on e.g. sperm motility which use landrace/landrace-cross species. 
+`landraces` and `varieties` are treated slightly differently here than the other terms: `varieties`is combined with agriculture as "traditional varieties" could refer to varieties of language, art etc. Note that `pigs` are excluded from the species list due to a large number of results about wild pig hunting in relation to their effect on agricultural land. `landraces` is connected to diversity terms to try and avoid technical works on e.g. sperm motility which use landrace/landrace-cross species.
 
 ```py
 TS=
@@ -564,11 +571,11 @@ TS=
 
 #### Phrase 2
 
-The elements of the phrase are: *diversity + agriculture* - this phrase covers diversity terms which can be used outside the context of agricultural diversity. Complement to phrase 1.
+The elements of the phrase are: _diversity + agriculture_ - this phrase covers diversity terms which can be used outside the context of agricultural diversity. Complement to phrase 1.
 
 Publications about groups and using terms which also include wild species (e.g. agricultural "seeds", cultivated "plants", farmed "fish") should be found by their use of `"agricultur*" OR "domestic*" OR "farming" OR "farm$" OR "farmed" OR "farmer$" OR "cultiva*"`.
 
-Terminology to do with breeding programmes could be included here, but we want research that is about programmes for genetic diversity, and this should already be covered by *diversity* - the inclusion of breeding programmes alone finds results about programmes for other objectives (e.g. increased productivity). It also introduces noise around the *use* of genetic resources *for* breeding programmes, whereas we want research about breeding programs *for* genetic diversity. `conserv*` will cover e.g. conservation breeding, on-farm conservation etc..
+Terminology to do with breeding programmes could be included here, but we want research that is about programmes for genetic diversity, and this should already be covered by _diversity_ - the inclusion of breeding programmes alone finds results about programmes for other objectives (e.g. increased productivity). It also introduces noise around the _use_ of genetic resources _for_ breeding programmes, whereas we want research about breeding programs _for_ genetic diversity. `conserv*` will cover e.g. conservation breeding, on-farm conservation etc..
 
 ```py
 TS=
@@ -594,11 +601,11 @@ TS=
 
 #### Phrase 3
 
-The elements of the phrase are: *gene banks/ex situ + diversity/protection/policy + agriculture*
+The elements of the phrase are: _gene banks/ex situ + diversity/protection/policy + agriculture_
 
-The *diversity/protection/policy* terms are included to help to filter out publications which mention genebanks that were used in research (i.e. samples were taken from...). They ensure that the work relates to conservation, genetic diversity, or gene bank policies in some way. Action terms are not used because multiple angles can be relevant - research about establishment of gene banks for maintaining diversity, research about farmers' use of gene banks, research about how best to store samples in gene banks, etc.
+The _diversity/protection/policy_ terms are included to help to filter out publications which mention genebanks that were used in research (i.e. samples were taken from...). They ensure that the work relates to conservation, genetic diversity, or gene bank policies in some way. Action terms are not used because multiple angles can be relevant - research about establishment of gene banks for maintaining diversity, research about farmers' use of gene banks, research about how best to store samples in gene banks, etc.
 
-For the *gene bank/ex situ* terms, `cryoconservation` and `cryopreservation` are included as in vitro methods of conservation of diversity (<a id="FAO2015">[Commission on Genetic Resources for Food and Agriculture Assessments, 2015](#f11)</a>). For the *agriculture terms*, `domestic*` was removed from this phrase as results were mostly about domestic cats. A `NOT` expression was added for `seed banks` as these can be both human storage of seeds but also natural seed banks in the soil.
+For the _gene bank/ex situ_ terms, `cryoconservation` and `cryopreservation` are included as in vitro methods of conservation of diversity (<a id="FAO2015">[Commission on Genetic Resources for Food and Agriculture Assessments, 2015](#f11)</a>). For the _agriculture terms_, `domestic*` was removed from this phrase as results were mostly about domestic cats. A `NOT` expression was added for `seed banks` as these can be both human storage of seeds but also natural seed banks in the soil.
 
 ```py
 TS=
@@ -640,12 +647,11 @@ TS=
 
 #### Phrase 4
 
-The elements of the phrase are: *resources/knowledge + sharing/access + agriculture/food*.
+The elements of the phrase are: _resources/knowledge + sharing/access + agriculture/food_.
 
-For the *resource/knowledge* terms, `traditional NEAR knowledge` etc. will cover variations such as "traditional agricultural knowledge". The string is set up so that we do not have to define the benefits. Within the CBD/Nagoya protocol, benefits can be monetary/non-monetary (e.g. research results, royalties), related to using/commercialisation of genetic resources. "Using" includes research on genetics/biochemistry, development and biotechnology. (<a id="Garforth">[Garforth, 2018, p.3](#f12)</a>).
+For the _resource/knowledge_ terms, `traditional NEAR knowledge` etc. will cover variations such as "traditional agricultural knowledge". The string is set up so that we do not have to define the benefits. Within the CBD/Nagoya protocol, benefits can be monetary/non-monetary (e.g. research results, royalties), related to using/commercialisation of genetic resources. "Using" includes research on genetics/biochemistry, development and biotechnology. (<a id="Garforth">[Garforth, 2018, p.3](#f12)</a>).
 
 `access OR accessing OR accessib*` is used to prevent "accessions". `biopiracy` is the unfair exploitation of biological resources/traditional knowledge.
-
 
 ```py
 TS=
@@ -685,7 +691,7 @@ TS=
 
 #### Phrase 5
 
-Phrase 5 is similar to phrase 4, with a focus on research that mentions instruments/treaties related to benefit sharing/access of genetic resources and traditional knowledge. The elements of the phrase are: *resources/knowledge/rights + agriculture/food + instruments/specific issues*. This phrase is the same as the action approach - action terms were not included there as we assumed that works mentioning specific policy instruments are likely action-oriented. 
+Phrase 5 is similar to phrase 4, with a focus on research that mentions instruments/treaties related to benefit sharing/access of genetic resources and traditional knowledge. The elements of the phrase are: _resources/knowledge/rights + agriculture/food + instruments/specific issues_. This phrase is the same as the action approach - action terms were not included there as we assumed that works mentioning specific policy instruments are likely action-oriented.
 
 In this phrase, "rights" was added to `traditional NEAR knowledge` as this worked well with the combination with specific policy instruments.
 
@@ -732,7 +738,7 @@ TS =
 
 This target is interpreted to cover research about investment and international collaboration in rural infrastructure, agricultural research & technology, and gene banks in developing countries.
 
-This query consists of 1 phrase. The elements of the phrase are: *investment/cooperation + rural infrastructure/technology*.
+This query consists of 1 phrase. The elements of the phrase are: _investment/cooperation + rural infrastructure/technology_.
 
 ```py
 TS =
@@ -794,7 +800,7 @@ This query consists of 2 phrases.
 
 #### Phrase 1:
 
-The elements of the phrase are: *export subsidies + agriculture/food*.
+The elements of the phrase are: _export subsidies + agriculture/food_.
 
 ```py
 TS=
@@ -806,7 +812,7 @@ TS=
 
 #### Phrase 2:
 
-The elements of the phrase are: *distortions + agricultural markets/exports*. Specific animals are not included due to results about restrictions in trade due to outbreaks of disease.
+The elements of the phrase are: _distortions + agricultural markets/exports_. Specific animals are not included due to results about restrictions in trade due to outbreaks of disease.
 
 ```py
 TS=
@@ -830,7 +836,7 @@ TS=
 >
 > 2.c.1 Indicator of food price anomalies
 
-This target is interpreted to cover research about food prices and markets, stable food prices, and stable food markets. The elements of the phrase are: *volatility/stability + agricultural markets/prices OR food prices + markets*.
+This target is interpreted to cover research about food prices and markets, stable food prices, and stable food markets. The elements of the phrase are: _volatility/stability + agricultural markets/prices OR food prices + markets_.
 
 #### Phrase 1:
 
@@ -897,47 +903,47 @@ NOT
 
 ## 4. Contributions
 
-* v2019.12: Marta Lorenz, Caroline S. Armitage, Susanne Mikki
+- v2019.12: Marta Lorenz, Caroline S. Armitage, Susanne Mikki
 
-* v1.0.0 Caroline S. Armitage (Oct 2021-Oct 2022)
+- v1.0.0 Caroline S. Armitage (Oct 2021-Oct 2022)
 
-* Internal review: Eli Heldaas Seland, Marta Lorenz (March 2022); Eli Heldaas Seland (minor review Oct 2022)
+- Internal review: Eli Heldaas Seland, Marta Lorenz (March 2022); Eli Heldaas Seland (minor review Oct 2022)
 
 Specialist input: Awaiting specialist input.
 
 ## 5. Footnotes
 
-<a id="f5"></a> Aurora Universities Network. (2020). *Search Queries for “Mapping Research Output to the Sustainable Development Goals (SDGs)”* v5.0. [Dataset]. doi:10.5281/zenodo.3817445. [↩](#Aurora)
+<a id="f5"></a> Aurora Universities Network. (2020). _Search Queries for “Mapping Research Output to the Sustainable Development Goals (SDGs)”_ v5.0. [Dataset]. doi:10.5281/zenodo.3817445. [↩](#Aurora)
 
-<a id="f16"></a> Blanchard et al. (2017). *Words into action guidelines: National Disaster Risk Assessment. Special Topics: K. Consideration of Marginalized and Minority Groups in a National Disaster Risk Assessment*. United Nations Office for Disaster Risk Reduction. https://www.undrr.org/publication/marginalized-and-minority-groups-consideration-ndra. [↩](#Blanchard)
+<a id="f16"></a> Blanchard et al. (2017). _Words into action guidelines: National Disaster Risk Assessment. Special Topics: K. Consideration of Marginalized and Minority Groups in a National Disaster Risk Assessment_. United Nations Office for Disaster Risk Reduction. https://www.undrr.org/publication/marginalized-and-minority-groups-consideration-ndra. [↩](#Blanchard)
 
-<a id="f11"></a> Commission on Genetic Resources for Food and Agriculture Assessments. (2015). *The Second Report on the State of the World’s Animal Genetic Resources for Food and Agriculture*. FAO. https://www.fao.org/publications/sowangr/en/
+<a id="f11"></a> Commission on Genetic Resources for Food and Agriculture Assessments. (2015). _The Second Report on the State of the World’s Animal Genetic Resources for Food and Agriculture_. FAO. https://www.fao.org/publications/sowangr/en/
 
-<a id="f10"></a> FAO. (2004). *What is Agrobiodiversity?* in "Building on Gender, Agrobiodiversity and Local Knowledge" [Training manual]. https://www.fao.org/3/y5609e/y5609e.pdf [↩](#FAO2004)
+<a id="f10"></a> FAO. (2004). _What is Agrobiodiversity?_ in "Building on Gender, Agrobiodiversity and Local Knowledge" [Training manual]. https://www.fao.org/3/y5609e/y5609e.pdf [↩](#FAO2004)
 
-<a id="f2"></a> FAO statistical year book. (2013). *Part 3 Feeding the world*. ISBN: 9789251073964. http://www.fao.org/publications/card/en/c/1d6e6a08-4937-5c7d-8665-3e0ed6f29244
+<a id="f2"></a> FAO statistical year book. (2013). _Part 3 Feeding the world_. ISBN: 9789251073964. http://www.fao.org/publications/card/en/c/1d6e6a08-4937-5c7d-8665-3e0ed6f29244
 
-<a id="f7"></a> FAO. (2014). *Building a Common Vision for Sustainable Food and Agriculture. Principles and Approaches*. https://www.fao.org/3/a-i3940e.pdf [↩](#FAO2014)
+<a id="f7"></a> FAO. (2014). _Building a Common Vision for Sustainable Food and Agriculture. Principles and Approaches_. https://www.fao.org/3/a-i3940e.pdf [↩](#FAO2014)
 
-<a id="f12"></a> Garforth, C. (2018). "An Introduction to the Nagoya Protocol on Access to Genetic Resources and the Fair and Equitable Sharing of Benefits Arising from their Utilization" in *Proceedings of the International Workshop on Access and Benefit-sharing for Genetic Resources for Food and Agriculture*. FAO. https://www.fao.org/3/CA0099EN/ca0099en.pdf [↩](#Garforth)
+<a id="f12"></a> Garforth, C. (2018). "An Introduction to the Nagoya Protocol on Access to Genetic Resources and the Fair and Equitable Sharing of Benefits Arising from their Utilization" in _Proceedings of the International Workshop on Access and Benefit-sharing for Genetic Resources for Food and Agriculture_. FAO. https://www.fao.org/3/CA0099EN/ca0099en.pdf [↩](#Garforth)
 
-<a id="f14"></a> High Level Panel of Experts on Food Security and Nutrition. (2019). *Agroecological and other innovative approaches for sustainable agriculture and food systems that enhance food security and nutrition*. A report by the High Level Panel of Experts on Food Security and Nutrition
+<a id="f14"></a> High Level Panel of Experts on Food Security and Nutrition. (2019). _Agroecological and other innovative approaches for sustainable agriculture and food systems that enhance food security and nutrition_. A report by the High Level Panel of Experts on Food Security and Nutrition
 of the UN Committee on World Food Security, Rome. https://www.fao.org/cfs/cfs-hlpe/hlpe-reports/report-14-elaboration-process/en/ [accessed 03 Jan 2022] [↩](#HLPE)
 
 <a id="f15"></a> Murray, V. et al. (2021) Hazard Information Profiles: Supplement to UNDRR-ISC Hazard Definition & Classification Review: Technical Report: Geneva, Switzerland, United Nations Office for Disaster Risk Reduction; Paris, France, International Science Council. DOI: 10.24948/2021.05 (https://council.science/publications/hazard-information-profiles/). [↩](#Murray)
 
-<a id="f17"></a> Office of the High Commissioner (n.d.) *Non-discrimination: Groups in vulnerable situations. Special Rapporteur on the right to health*. United Nations Human Rights. https://www.ohchr.org/en/special-procedures/sr-health/non-discrimination-groups-vulnerable-situations (accessed Jun 2022). [↩](#UNOHC)
+<a id="f17"></a> Office of the High Commissioner (n.d.) _Non-discrimination: Groups in vulnerable situations. Special Rapporteur on the right to health_. United Nations Human Rights. https://www.ohchr.org/en/special-procedures/sr-health/non-discrimination-groups-vulnerable-situations (accessed Jun 2022). [↩](#UNOHC)
 
-<a id="f8"></a> One Planet network Sustainable Food Systems (SFS) Programme. (2020). *Towards a Common Understanding of Sustainable Food Systems. Key approaches, concepts, and terms*. https://www.oneplanetnetwork.org/knowledge-centre/resources/towards-common-understanding-sustainable-food-systems-key-approaches [↩](#SFS)
+<a id="f8"></a> One Planet network Sustainable Food Systems (SFS) Programme. (2020). _Towards a Common Understanding of Sustainable Food Systems. Key approaches, concepts, and terms_. https://www.oneplanetnetwork.org/knowledge-centre/resources/towards-common-understanding-sustainable-food-systems-key-approaches [↩](#SFS)
 
-<a id="f6"></a> Rivest, Maxime; Kashnitsky, Yury; Bédard-Vallée, Alexandre; Campbell, David; Khayat, Paul; Labrosse, Isabelle; Pinheiro, Henrique; Provençal, Simon; Roberge, Guillaume; James, Chris. (2021). *Improving the Scopus and Aurora queries to identify research that supports the United Nations Sustainable Development Goals (SDGs) 2021* V3. [Dataset]. doi: 10.17632/9sxdykm8s4.3 [↩](#Els)
+<a id="f6"></a> Rivest, Maxime; Kashnitsky, Yury; Bédard-Vallée, Alexandre; Campbell, David; Khayat, Paul; Labrosse, Isabelle; Pinheiro, Henrique; Provençal, Simon; Roberge, Guillaume; James, Chris. (2021). _Improving the Scopus and Aurora queries to identify research that supports the United Nations Sustainable Development Goals (SDGs) 2021_ V3. [Dataset]. doi: 10.17632/9sxdykm8s4.3 [↩](#Els)
 
-<a id="f1"></a> Statistics Division. (2021a). *Global indicator framework for the Sustainable Development Goals and targets of the 2030 Agenda for Sustainable Development*. A/RES/71/313, E/CN.3/2018/2, E/CN.3/2019/2, E/CN.3/2020/2, E/CN.3/2021/2. Department of Economic and Social Affairs, United Nations. https://unstats.un.org/sdgs/indicators/Global%20Indicator%20Framework%20after%202021%20refinement_Eng.pdf [accessed 8 August 2021] [↩](#SDGT+Is)
+<a id="f1"></a> Statistics Division. (2021a). _Global indicator framework for the Sustainable Development Goals and targets of the 2030 Agenda for Sustainable Development_. A/RES/71/313, E/CN.3/2018/2, E/CN.3/2019/2, E/CN.3/2020/2, E/CN.3/2021/2. Department of Economic and Social Affairs, United Nations. https://unstats.un.org/sdgs/indicators/Global%20Indicator%20Framework%20after%202021%20refinement_Eng.pdf [accessed 8 August 2021] [↩](#SDGT+Is)
 
-<a id="f9"></a> Statistics Division. (2021b). *SDG Indicators Metadata Repository*. Department of Economic and Social Affairs, United Nations. https://unstats.un.org/sdgs/metadata/ [accessed 8 December 2021] [↩](#SDGindmetadata)
+<a id="f9"></a> Statistics Division. (2021b). _SDG Indicators Metadata Repository_. Department of Economic and Social Affairs, United Nations. https://unstats.un.org/sdgs/metadata/ [accessed 8 December 2021] [↩](#SDGindmetadata)
 
-<a id="f3"></a> United Nations. (2016, 2017, 2018, 2019, 2020, 2021). *World Economic Situation and Prospects; Statistical Annex*. https://www.un.org/development/desa/dpad/document_gem/global-economic-monitoring-unit/world-economic-situation-and-prospects-wesp-report/ [↩](#UNLDCs)
+<a id="f3"></a> United Nations. (2016, 2017, 2018, 2019, 2020, 2021). _World Economic Situation and Prospects; Statistical Annex_. https://www.un.org/development/desa/dpad/document_gem/global-economic-monitoring-unit/world-economic-situation-and-prospects-wesp-report/ [↩](#UNLDCs)
 
-<a id="f4"></a> WHO. (2021, June 9). *Malnutrition*. [Fact sheet]. https://www.who.int/news-room/fact-sheets/detail/malnutrition. [↩](#WHOmalnut)
+<a id="f4"></a> WHO. (2021, June 9). _Malnutrition_. [Fact sheet]. https://www.who.int/news-room/fact-sheets/detail/malnutrition. [↩](#WHOmalnut)
 
-<a id="f13"></a> Information and External Relations Division of the WTO Secretariat. (n.d.). *Export subsidies and other export support measures* [Fact sheet]. World Trade Organization. https://www.wto.org/english/tratop_e/agric_e/factsheetagric17_e.htm [accessed 31 Dec 2021] [↩](#WTOexport)
+<a id="f13"></a> Information and External Relations Division of the WTO Secretariat. (n.d.). _Export subsidies and other export support measures_ [Fact sheet]. World Trade Organization. https://www.wto.org/english/tratop_e/agric_e/factsheetagric17_e.htm [accessed 31 Dec 2021] [↩](#WTOexport)

@@ -2,8 +2,10 @@
   display: flex;
   justify-content: space-around;
   gap: 0.5rem;
-  grid-template-columns: repeat(auto-fill,
-      minmax(max(250px, calc((100% - 1rem * 2) / 3)), 1fr));
+  grid-template-columns: repeat(
+      auto-fill,
+      minmax(max(250px, calc((100% - 1rem * 2) / 3)), 1fr)
+    );
 }
 
 .card:hover svg {
@@ -27,7 +29,7 @@
 }
 
 :global(.dark) .card {
-  background-color: hsl(var(--nextra-primary-hue) 10% 12%/0.9);
+  background-color: hsl(var(--nextra-primary-hue) 10% 12% / 0.9);
 }
 
 :global(.dark) .card:hover {

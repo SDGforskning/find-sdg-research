@@ -1,23 +1,27 @@
-'use client'
+"use client";
 
-import { usePathname } from 'next/navigation';
-import { ArrowUpRightIcon, LockIcon, LockOpenIcon, PencilIcon } from 'lucide-react'
-import { getLocaleFromPathname } from '../../lib/locale';
+import {
+  ArrowUpRightIcon,
+  LockIcon,
+  LockOpenIcon,
+  PencilIcon,
+} from "lucide-react";
+import { usePathname } from "next/navigation";
+import { getLocaleFromPathname } from "../../lib/locale";
 
 const isScientific = {
-  en: 'Scientific',
-  no: "Vitenskapelig"
-}
+  en: "Scientific",
+  no: "Vitenskapelig",
+};
 
 const CustomResultView = ({
   result,
-  onClickLink
+  onClickLink,
 }: {
   result: any;
   onClickLink: () => void;
 }) => {
-
-  const locale = getLocaleFromPathname(usePathname())
+  const locale = getLocaleFromPathname(usePathname());
 
   const {
     SDG_topic_en,
@@ -41,9 +45,9 @@ const CustomResultView = ({
     language_no,
     NVI_level_no,
     ...rest
-  } = result
+  } = result;
 
-  let data = {
+  const data = {
     en: {
       SDG_topic: SDG_topic_en,
       SDG_target_topic: SDG_target_topic_en,
@@ -55,7 +59,7 @@ const CustomResultView = ({
       mentions: mentions_en,
       language: language_en,
       NVI_level: NVI_level_en,
-      ...rest
+      ...rest,
     },
     no: {
       SDG_topic: SDG_topic_no,
@@ -68,18 +72,24 @@ const CustomResultView = ({
       mentions: mentions_no,
       language: language_no,
       NVI_level: NVI_level_no,
-      ...rest
-    }
-  }
+      ...rest,
+    },
+  };
 
   return (
-    <li key={data[locale].id} className='border rounded dark:border-slate-700 mt-5 py-3 px-4'>
-      <div className='flex flex-auto items-start flex-wrap md:flex-nowrap justify-between gap-5 md:divide-x'>
-        <div className='w-full md:w-7/12'>
-          <div className={`text-sm leading-sm text-gray-600 dark:text-gray-400`}>
-            {data[locale].publication_type?.raw} / {data[locale].publication_subtype?.raw}
+    <li
+      key={data[locale].id}
+      className="border rounded dark:border-slate-700 mt-5 py-3 px-4"
+    >
+      <div className="flex flex-auto items-start flex-wrap md:flex-nowrap justify-between gap-5 md:divide-x">
+        <div className="w-full md:w-7/12">
+          <div
+            className={`text-sm leading-sm text-gray-600 dark:text-gray-400`}
+          >
+            {data[locale].publication_type?.raw} /{" "}
+            {data[locale].publication_subtype?.raw}
           </div>
-          <h3 className='text-md md:text-lg font-bold'>
+          <h3 className="text-md md:text-lg font-bold">
             {/* <a
               onClick={onClickLink}
               href={data[locale].fulltextlink?.raw !== 'No open link found'
@@ -93,39 +103,45 @@ const CustomResultView = ({
           </h3>
 
           {data[locale].journal && (
-            <div className={`text-md leading-sm text-gray-600 dark:text-gray-400`}>
+            <div
+              className={`text-md leading-sm text-gray-600 dark:text-gray-400`}
+            >
               {data[locale].journal.raw} ({data[locale].year?.raw})
             </div>
           )}
           {data[locale].result_title_anthology && (
-            <div className={`text-md leading-sm text-gray-600 dark:text-gray-400`}>
-              {data[locale].result_title_anthology.raw} ({data[locale].year?.raw})
+            <div
+              className={`text-md leading-sm text-gray-600 dark:text-gray-400`}
+            >
+              {data[locale].result_title_anthology.raw} (
+              {data[locale].year?.raw})
             </div>
           )}
 
-
-
-          <div className='flex gap-10 mt-3'>
+          <div className="flex gap-10 mt-3">
             {data[locale].SDG_topic?.raw && (
-              <div className='flex flex-col gap-1'>
-                <div className='text-sm sm:text-gray-600 dark:text-gray-400'>Topics:</div>
-                <div className='flex flex-wrap gap-2'>
-                  {data[locale].SDG_topic?.raw && data[locale].SDG_topic.raw.map((goal: string) => (
-                    <div
-                      key={goal}
-                      className={`text-sm inline-flex items-center font-bold leading-sm uppercase px-2 lg:py-1 ${goal.split(' ')[0]} rounded`}
-                    >
-                      {goal.split(' ')[0]}
-                    </div>
-                  ))}
+              <div className="flex flex-col gap-1">
+                <div className="text-sm sm:text-gray-600 dark:text-gray-400">
+                  Topics:
                 </div>
-                <div className='flex flex-wrap gap-2'>
+                <div className="flex flex-wrap gap-2">
+                  {data[locale].SDG_topic?.raw &&
+                    data[locale].SDG_topic.raw.map((goal: string) => (
+                      <div
+                        key={goal}
+                        className={`text-sm inline-flex items-center font-bold leading-sm uppercase px-2 lg:py-1 ${goal.split(" ")[0]} rounded`}
+                      >
+                        {goal.split(" ")[0]}
+                      </div>
+                    ))}
+                </div>
+                <div className="flex flex-wrap gap-2">
                   {data[locale].SDG_target_topic?.raw.map((goal: string) => (
                     <div
                       key={goal}
-                      className={`text-xs inline-flex  items-center font-bold leading-sm uppercase px-2 lg:py-1 border-2 border-neutral-400 ${goal.split(' ')[0]} rounded`}
+                      className={`text-xs inline-flex  items-center font-bold leading-sm uppercase px-2 lg:py-1 border-2 border-neutral-400 ${goal.split(" ")[0]} rounded`}
                     >
-                      {goal.split(' ')[0]}
+                      {goal.split(" ")[0]}
                     </div>
                   ))}
                 </div>
@@ -135,36 +151,39 @@ const CustomResultView = ({
             {/* <div style={{ flexBasis: '100%', height: 0 }}></div> */}
 
             {data[locale].SDG_action?.raw && (
-              <div className='flex flex-col gap-1'>
-                <div className='text-sm text-gray-600 dark:text-gray-400'>Actions:</div>
-                <div className='flex flex-wrap gap-2'>
+              <div className="flex flex-col gap-1">
+                <div className="text-sm text-gray-600 dark:text-gray-400">
+                  Actions:
+                </div>
+                <div className="flex flex-wrap gap-2">
                   {data[locale].SDG_action.raw.map((goal: string) => (
                     <div
                       key={goal}
-                      className={`text-sm inline-flex items-center font-bold leading-sm uppercase px-2 lg:py-1 ${goal.split(' ')[0]} rounded`}
+                      className={`text-sm inline-flex items-center font-bold leading-sm uppercase px-2 lg:py-1 ${goal.split(" ")[0]} rounded`}
                     >
-                      {goal.split(' ')[0]}
+                      {goal.split(" ")[0]}
                     </div>
                   ))}
                 </div>
-                <div className='flex flex-wrap gap-2'>
-                  {data[locale].SDG_target_action?.raw && data[locale].SDG_target_action.raw.map((goal: string) => (
-                    <div
-                      key={goal}
-                      className={`text-xs inline-flex items-center font-bold leading-sm uppercase px-2 lg:py-1 border-2 border-neutral-400 ${goal.split(' ')[0]} rounded`}
-                    >
-                      {goal.split(' ')[0]}
-                    </div>
-                  ))}
+                <div className="flex flex-wrap gap-2">
+                  {data[locale].SDG_target_action?.raw &&
+                    data[locale].SDG_target_action.raw.map((goal: string) => (
+                      <div
+                        key={goal}
+                        className={`text-xs inline-flex items-center font-bold leading-sm uppercase px-2 lg:py-1 border-2 border-neutral-400 ${goal.split(" ")[0]} rounded`}
+                      >
+                        {goal.split(" ")[0]}
+                      </div>
+                    ))}
                 </div>
               </div>
             )}
           </div>
           {data[locale].mentions?.raw && (
-            <div className='flex gap-3'>
-              {data[locale].mentions?.raw.map((m: string, i: number) => (
+            <div className="flex gap-3">
+              {data[locale].mentions?.raw.map((m: string) => (
                 <div
-                  key={i}
+                  key={m}
                   className={`mt-3 text-xs inline-flex items-center  leading-sm  px-3 py-1 bg-gray-100 dark:bg-neutral-800 dark:text-white rounded`}
                 >
                   {m}
@@ -174,11 +193,17 @@ const CustomResultView = ({
           )}
         </div>
 
-        <div className='flex md:flex-1 gap-3 md:gap-2 md:pl-5 md:w-5/12 w-full flex-wrap'>
-          {data[locale].fulltextlink?.raw !== 'No open link found' ? (
-            <div className='px-3 py-2 text-white font-bold bg-green-700 rounded'>
-              <a href={data[locale].fulltextlink.raw} target="_blank" rel="nonreferrer">
-                <LockOpenIcon className='inline w-4 h-4 -mt-1' /> {locale === 'en' ? 'Read the publication' : 'Les publikasjonen'} <ArrowUpRightIcon className="inline h-4 w-4 text-white" />
+        <div className="flex md:flex-1 gap-3 md:gap-2 md:pl-5 md:w-5/12 w-full flex-wrap">
+          {data[locale].fulltextlink?.raw !== "No open link found" ? (
+            <div className="px-3 py-2 text-white font-bold bg-green-700 rounded">
+              <a
+                href={data[locale].fulltextlink.raw}
+                target="_blank"
+                rel="noopener nonreferrer"
+              >
+                <LockOpenIcon className="inline w-4 h-4 -mt-1" />{" "}
+                {locale === "en" ? "Read the publication" : "Les publikasjonen"}{" "}
+                <ArrowUpRightIcon className="inline h-4 w-4 text-white" />
               </a>
               {/* {data[locale].fulldoi?.raw && (data[locale].fulltextlink?.raw !== data[locale].fulldoi?.raw) && (
                   <span className='ml-5 text-xs text-gray-600 dark:text-gray-400'>{' '}
@@ -189,26 +214,43 @@ const CustomResultView = ({
                         )} */}
             </div>
           ) : (
-            <div className='px-3 py-2 text-sm font-bold bg-neutral-200 dark:bg-neutral-800 rounded'>
-              {locale === 'en' ? 'No fulltext found' : 'Ingen fulltekst funnet'}
+            <div className="px-3 py-2 text-sm font-bold bg-neutral-200 dark:bg-neutral-800 rounded">
+              {locale === "en" ? "No fulltext found" : "Ingen fulltekst funnet"}
             </div>
           )}
-
 
           <ul>
             {data[locale].result_id.raw && (
               <li className={`text-md leading-sm`}>
-                <a href={`https://nva.sikt.no/filter?cristinIdentifier=${data[locale].result_id.raw}`} target="_blank" rel="nonreferrer">
-                  <PencilIcon className='inline w-4 h-4 -mt-1' /> {locale === 'en' ? 'Authors and more information' : 'Forfattere og mer informasjon'}<ArrowUpRightIcon className="inline h-4 w-4 text-black" />
+                <a
+                  href={`https://nva.sikt.no/filter?cristinIdentifier=${data[locale].result_id.raw}`}
+                  target="_blank"
+                  rel="noopener nonreferrer"
+                >
+                  <PencilIcon className="inline w-4 h-4 -mt-1" />{" "}
+                  {locale === "en"
+                    ? "Authors and more information"
+                    : "Forfattere og mer informasjon"}
+                  <ArrowUpRightIcon className="inline h-4 w-4 text-black" />
                 </a>
               </li>
             )}
 
-
             {data[locale].fulldoi?.raw && (
               <li>
-                <a href={data[locale].fulldoi.raw} target="_blank" rel="nonreferrer">
-                  {/* {data[locale].fulldoi.raw} */}{data[locale].OA_status_calc.raw === "NotOA" ? <LockIcon className='inline w-4 h-4 -mt-1' /> : <LockOpenIcon className='inline w-4 h-4 -mt-1' />}  {locale === 'en' ? 'View at publisher' : 'Se hos utgiver'} <ArrowUpRightIcon className="inline h-4 w-4 text-black" />
+                <a
+                  href={data[locale].fulldoi.raw}
+                  target="_blank"
+                  rel="noopener nonreferrer"
+                >
+                  {/* {data[locale].fulldoi.raw} */}
+                  {data[locale].OA_status_calc.raw === "NotOA" ? (
+                    <LockIcon className="inline w-4 h-4 -mt-1" />
+                  ) : (
+                    <LockOpenIcon className="inline w-4 h-4 -mt-1" />
+                  )}{" "}
+                  {locale === "en" ? "View at publisher" : "Se hos utgiver"}{" "}
+                  <ArrowUpRightIcon className="inline h-4 w-4 text-black" />
                 </a>
                 {/* {data[locale].fulltextlink?.raw && data[locale].fulltextlink?.raw == 'No open link found' && (
                   <span className='ml-5 text-xs text-gray-600 dark:text-gray-400'>{' '}
@@ -219,25 +261,26 @@ const CustomResultView = ({
             )}
           </ul>
 
-          {(data[locale].scientific_result?.raw || data[locale].scientific_field_NPI?.raw) && (
-            <div className='px-3 py-2 rounded text-sm bg-neutral-100 dark:bg-neutral-800'>
-              <div className='font-bold'>
-                {data[locale].scientific_result?.raw === true ? isScientific[locale] : ''}
-                {data[locale].NVI_level?.raw ? ` (NVI ${data[locale].NVI_level.raw})` : ''}
+          {(data[locale].scientific_result?.raw ||
+            data[locale].scientific_field_NPI?.raw) && (
+            <div className="px-3 py-2 rounded text-sm bg-neutral-100 dark:bg-neutral-800">
+              <div className="font-bold">
+                {data[locale].scientific_result?.raw === true
+                  ? isScientific[locale]
+                  : ""}
+                {data[locale].NVI_level?.raw
+                  ? ` (NVI ${data[locale].NVI_level.raw})`
+                  : ""}
               </div>
               {data[locale].scientific_field_NPI?.raw && (
-                <div>
-                  {data[locale].scientific_field_NPI.raw}
-                </div>
+                <div>{data[locale].scientific_field_NPI.raw}</div>
               )}
             </div>
           )}
-
-
         </div>
       </div>
     </li>
-  )
-}
+  );
+};
 
-export default CustomResultView
+export default CustomResultView;

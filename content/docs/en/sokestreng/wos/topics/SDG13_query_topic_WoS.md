@@ -34,17 +34,17 @@ During editing of this string (2021), we have consulted another set of queries f
 
 > **13.1 Strengthen resilience and adaptive capacity to climate-related hazards and natural disasters in all countries**
 >
->13.1.1 Number of deaths, missing persons and directly affected persons attributed to disasters per 100,000 population
+> 13.1.1 Number of deaths, missing persons and directly affected persons attributed to disasters per 100,000 population
 >
->13.1.2 Number of countries that adopt and implement national disaster risk reduction strategies in line with the Sendai Framework for Disaster Risk Reduction 2015–2030
+> 13.1.2 Number of countries that adopt and implement national disaster risk reduction strategies in line with the Sendai Framework for Disaster Risk Reduction 2015–2030
 >
->13.1.3 Proportion of local governments that adopt and implement local disaster risk reduction strategies in line with national disaster risk reduction strategies
+> 13.1.3 Proportion of local governments that adopt and implement local disaster risk reduction strategies in line with national disaster risk reduction strategies
 
 This target is interpreted to cover research about resilience, adapation and migitation of impacts for climate-related hazards and natural disasters. Research mentioning disaster/risk strategies, plans and programmes and climate-related hazards/natural disasters is also considered relevant, related to indicator 13.1.3.
 
-This query consists of 1 phrase. The elements of the phrase are: *resilience/mitigation/plans + disasters*. For the topic approach, some actions (e.g. `mitigat*`) are retained for the combination with `impacts or vulnerab`, since this target is interpreted to be about resilience and adaptation, not impacts in themselves.  
+This query consists of 1 phrase. The elements of the phrase are: _resilience/mitigation/plans + disasters_. For the topic approach, some actions (e.g. `mitigat*`) are retained for the combination with `impacts or vulnerab`, since this target is interpreted to be about resilience and adaptation, not impacts in themselves.
 
-The terms for *disasters* contain both general terms and specific disaster types. We have used the hazards listed in <a id="disasters">[Murray et al., (2021)](#f5)</a> to make a list of disasters based on their classification of hazards into hydrological/meteorological, geohazards, environmental, chemical, biological, technological, and societal. We have included the hydrological and geohazards under "natural" disasters.
+The terms for _disasters_ contain both general terms and specific disaster types. We have used the hazards listed in <a id="disasters">[Murray et al., (2021)](#f5)</a> to make a list of disasters based on their classification of hazards into hydrological/meteorological, geohazards, environmental, chemical, biological, technological, and societal. We have included the hydrological and geohazards under "natural" disasters.
 
 ```py
 TS=
@@ -88,16 +88,17 @@ TS=
 
 > **13.2 Integrate climate change measures into national policies, strategies and planning**
 >
->13.2.1 Number of countries with nationally determined contributions, long-term strategies, national adaptation plans and adaptation communications, as reported to the secretariat of the United Nations Framework Convention on Climate Change
+> 13.2.1 Number of countries with nationally determined contributions, long-term strategies, national adaptation plans and adaptation communications, as reported to the secretariat of the United Nations Framework Convention on Climate Change
 >
->13.2.2 Total greenhouse gas emissions per year		
+> 13.2.2 Total greenhouse gas emissions per year		
 
 This target is interpreted to cover research about:
-  - climate change, climate action, mitigation and adaptation (including greenhouse gases), and national policy++ (phrase 1)
-  - the indicators/impacts of climate change and national policy++ (phrase 2)
-  - international climate frameworks and national policy++ (phrase 3)
 
-We consider [nationally determined contributions](https://www.un.org/en/climatechange/all-about-ndcs) (Paris agreement) and adaptation communications to be a form of "national policies, strategies and planning". `sectoral plans` are also included - although sectoral is not the same as national, it may be used to refer to a plan on a national level for a sector. Similarly, `multi level` can be used in the literature to describe how policy/plans interact between levels, often including the national level.  
+- climate change, climate action, mitigation and adaptation (including greenhouse gases), and national policy++ (phrase 1)
+- the indicators/impacts of climate change and national policy++ (phrase 2)
+- international climate frameworks and national policy++ (phrase 3)
+
+We consider [nationally determined contributions](https://www.un.org/en/climatechange/all-about-ndcs) (Paris agreement) and adaptation communications to be a form of "national policies, strategies and planning". `sectoral plans` are also included - although sectoral is not the same as national, it may be used to refer to a plan on a national level for a sector. Similarly, `multi level` can be used in the literature to describe how policy/plans interact between levels, often including the national level.
 
 Carbon capture/storage technology can contribute to climate mitigation (i.e. reduction of green house gases (GHG)) but in order to be consistent with our interpretation method, any papers concerning it must relate the work to climate mitigation or reductions of GHG to be included. The same would apply to reforestation or other mitigation measures. Thus these are not included as individual search terms but assumed to be included in the given phrases.
 
@@ -105,9 +106,9 @@ This query consists of 3 phrases. If comparing the action and topic approaches, 
 
 #### Phrase 1
 
-This phrase covers national policies, strategies and planning related to climate change mitigation and adaptation. The elements of the phrase are: *climate change/GHGs + national plans + climate*.
+This phrase covers national policies, strategies and planning related to climate change mitigation and adaptation. The elements of the phrase are: _climate change/GHGs + national plans + climate_.
 
-We include reduction of greenhouse gases as a mitigation action as national policies, strategies and planning related to reduction of GHGs are one of the main climate mitigation routes according to the 2014 IPCC Synthesis Report (<a id="IPCC2014">[IPCC 2014](#f3)</a>) UNEP definition. We use six main greenhouse gases (covered by the Kyoto Protocol) as search terms (<a id="IPCC2014">[IPCC 2014](#f3)</a>). The final `AND` phrase containing general *climate* terms is necessary as these gases, when used alone with `reduc*`, find some chemical results (e.g. a reaction for methane reduction).
+We include reduction of greenhouse gases as a mitigation action as national policies, strategies and planning related to reduction of GHGs are one of the main climate mitigation routes according to the 2014 IPCC Synthesis Report (<a id="IPCC2014">[IPCC 2014](#f3)</a>) UNEP definition. We use six main greenhouse gases (covered by the Kyoto Protocol) as search terms (<a id="IPCC2014">[IPCC 2014](#f3)</a>). The final `AND` phrase containing general _climate_ terms is necessary as these gases, when used alone with `reduc*`, find some chemical results (e.g. a reaction for methane reduction).
 
 ```py
 TS=
@@ -139,7 +140,7 @@ TS=
 
 #### Phrase 2
 
-This phrase covers national policies, strategies and planning related to climate change indicators and their impacts. The elements of the phrase are: *climate change indicators + national plans*. This string has been widened out from the action approach by removing terms to do with directions (i.e. rising sea-level, increasing temperature > sea-level, temperature).
+This phrase covers national policies, strategies and planning related to climate change indicators and their impacts. The elements of the phrase are: _climate change indicators + national plans_. This string has been widened out from the action approach by removing terms to do with directions (i.e. rising sea-level, increasing temperature > sea-level, temperature).
 
 Indicators of climate change are changes that can be observed and measured (selected terms taken from <a id="wmo">[World Meteorological Organization (2021)](#f7)</a>: global mean surface temperature, global ocean heat content, state of ocean acidification, glacier mass balance, Arctic and Antarctic sea-ice extent, global CO2 fraction and global mean sea level).
 
@@ -170,7 +171,7 @@ TS=
 
 #### Phrase 3
 
-This phrase covers national policies, strategies and planning related to specific frameworks for mitigation and adaptation. The elements of the phrase are: *frameworks + national plans*. Compared to the action approach, an element generally about climate change has been removed because these results will now be covered by phrase 1.
+This phrase covers national policies, strategies and planning related to specific frameworks for mitigation and adaptation. The elements of the phrase are: _frameworks + national plans_. Compared to the action approach, an element generally about climate change has been removed because these results will now be covered by phrase 1.
 
 Some of the frameworks for action (e.g. COP) pick up some results to do with energy transitions, but generally as related to climate. We do not include nationally determined contributions etc. when combining with frameworks for action as these terms are from these frameworks - as such, the results can be very general.
 
@@ -197,18 +198,19 @@ TS=
 
 > **13.3 Improve education, awareness-raising and human and institutional capacity on climate change mitigation, adaptation, impact reduction and early warning**
 >
->13.3.1 Extent to which (i) global citizenship education and (ii) education for sustainable development are mainstreamed in (a) national education policies; (b) curricula; (c) teacher education; and (d) student assessment
+> 13.3.1 Extent to which (i) global citizenship education and (ii) education for sustainable development are mainstreamed in (a) national education policies; (b) curricula; (c) teacher education; and (d) student assessment
 
 This target is considered to cover research about education, awareness and capacity about climate change mitigation, adaptation, impact reduction and early warning.
 
-This query consists of 1 phrase. The elements of the phrase are: *education/awareness/capacity + climate mit/adapt/warning*
+This query consists of 1 phrase. The elements of the phrase are: _education/awareness/capacity + climate mit/adapt/warning_
 
 Interpretation of what should be considered as contributing to raising "human and institutional capacity" is challenging - according to the UNDG definition, it concerns anything that would increase the ability of people and institutions to successfully manage the situation. We have interpreted this to include improvements in areas such as technology, infrastructure, research, skills, and knowledge, in addition to institutional structures, practices and resources. Allocation, awareness or understanding of responsibilities can also be important in capacity. Awareness is included explicitly in some definitions.
-* Definition of "capacity": "[...] the ability of people, organizations and society as a whole to manage their affairs successfully" (<a id="UNDGcapacity">[United Nations Development Group 2017](#f2)</a>).
-* Definition of "capacity development": "the process whereby people, organizations and society as a whole unleash, strengthen, create, adapt, and maintain capacity over time, in order to achieve development results" (<a id="UNDGcapacity">[United Nations Development Group 2017](#f2)</a>).
-* "Awareness raising and knowledge building about the expected impacts of a changing climate and the need to adapt are normally starting point of capacity building efforts". (On capacity building for adaptation; <a id="climateADAPT">[Climate-ADAPT 2019](#f6)</a>).
 
-For the *climate* terms, we include general terms about climate change mitigation/ adaption/ impact reduction/ early warning as well as the reduction of greenhouse gases (as a main method of climate change mitigation).
+- Definition of "capacity": "[...] the ability of people, organizations and society as a whole to manage their affairs successfully" (<a id="UNDGcapacity">[United Nations Development Group 2017](#f2)</a>).
+- Definition of "capacity development": "the process whereby people, organizations and society as a whole unleash, strengthen, create, adapt, and maintain capacity over time, in order to achieve development results" (<a id="UNDGcapacity">[United Nations Development Group 2017](#f2)</a>).
+- "Awareness raising and knowledge building about the expected impacts of a changing climate and the need to adapt are normally starting point of capacity building efforts". (On capacity building for adaptation; <a id="climateADAPT">[Climate-ADAPT 2019](#f6)</a>).
+
+For the _climate_ terms, we include general terms about climate change mitigation/ adaption/ impact reduction/ early warning as well as the reduction of greenhouse gases (as a main method of climate change mitigation).
 
 ```py
 TS=
@@ -255,13 +257,13 @@ TS=
 
 > **13.a Implement the commitment undertaken by developed-country parties to the United Nations Framework Convention on Climate Change to a goal of mobilizing jointly $100 billion annually by 2020 from all sources to address the needs of developing countries in the context of meaningful mitigation actions and transparency on implementation and fully operationalize the Green Climate Fund through its capitalization as soon as possible**
 >
->13.a.1 Amounts provided and mobilized in United States dollars per year in relation to the continued existing collective mobilization goal of the $100 billion commitment through to 2025
+> 13.a.1 Amounts provided and mobilized in United States dollars per year in relation to the continued existing collective mobilization goal of the $100 billion commitment through to 2025
 
 This target is interpreted to cover research about the international supply of climate financing. This covers research about climate financing, including transparency and allocation. We also interpret it to include research about climate financing in relation to developing countries or donor countries.
 
-This query consists of 1 phrase. The elements of the phrase are: *transparency/aspects of provision/countries + climate financing + climate*.
+This query consists of 1 phrase. The elements of the phrase are: _transparency/aspects of provision/countries + climate financing + climate_.
 
-The term `investment$ OR investing` were tried, but created mostly noise from climate being used metaphorically ("investment climate"). The *climate* terms at the end of the phrase are added to try and reduce these. We also tested out including some aid agencies (e.g. DFID, USAid, GIZ, NORAD) but there were no results.
+The term `investment$ OR investing` were tried, but created mostly noise from climate being used metaphorically ("investment climate"). The _climate_ terms at the end of the phrase are added to try and reduce these. We also tested out including some aid agencies (e.g. DFID, USAid, GIZ, NORAD) but there were no results.
 
 ```py
 TS=
@@ -314,14 +316,15 @@ TS=
 
 > **13.b Promote mechanisms for raising capacity for effective climate change-related planning and management in least developed countries and small island developing States, including focusing on women, youth and local and marginalized communities**
 >
->13.b.1 Number of least developed countries and small island developing States with nationally determined contributions, long-term strategies, national adaptation plans and adaptation communications, as reported to the secretariat of the United Nations Framework Convention on Climate Change
+> 13.b.1 Number of least developed countries and small island developing States with nationally determined contributions, long-term strategies, national adaptation plans and adaptation communications, as reported to the secretariat of the United Nations Framework Convention on Climate Change
 
 This target is considered to cover research about least developed countries and small island developing states, about
-* planning for climate change
-* managing climate change
-* capacity for climate adaptation, mitigation, impact reduction, and early warning, as in 13.3; we also use that definition of capacity. We consider research talking about funds specifically aimed at improving climate change adaptation/responses (e.g. the [Least developed countries fund](https://www.thegef.org/what-we-do/topics/least-developed-countries-fund-ldcf)) to be relevant.
 
-This query consists of 1 phrase. The elements of the phrase are: *(climate planning/management funding // capacity + climate management) + LDCs/SIDS*
+- planning for climate change
+- managing climate change
+- capacity for climate adaptation, mitigation, impact reduction, and early warning, as in 13.3; we also use that definition of capacity. We consider research talking about funds specifically aimed at improving climate change adaptation/responses (e.g. the [Least developed countries fund](https://www.thegef.org/what-we-do/topics/least-developed-countries-fund-ldcf)) to be relevant.
+
+This query consists of 1 phrase. The elements of the phrase are: _(climate planning/management funding // capacity + climate management) + LDCs/SIDS_
 
 Terms such as `climat* NEAR/5 plan` should cover e.g. climate local action plan, climate education strategy for youth etc. We do not need to include terms for women, youth, marginalised communities because research about these groups should be included in the results anyway.
 
@@ -400,17 +403,17 @@ NOT
 
 ## 4. Contributions
 
-* v2019.12: Marta Lorenz, Caroline S. Armitage, Susanne Mikki
+- v2019.12: Marta Lorenz, Caroline S. Armitage, Susanne Mikki
 
-* v1.0.0: Marta Lorenz (Oct 2021-Apr 2022), Caroline S. Armitage (Apr-Sep 2022)
+- v1.0.0: Marta Lorenz (Oct 2021-Apr 2022), Caroline S. Armitage (Apr-Sep 2022)
 
-* Internal review: Eli Heldaas Seland, Caroline S. Armitage (March 2022), Eli Heldaas Seland (minor review Oct 2022)
+- Internal review: Eli Heldaas Seland, Caroline S. Armitage (March 2022), Eli Heldaas Seland (minor review Oct 2022)
 
 Specialist input: Camilla A. Borrevik (PhD in Pacific climate leadership; May 2022), Rafael Rosales (PhD candidate in urban climate governance; Jun 2022), Marta Lorenz (PhD in climate geoscience).
 
 ## 5. Footnotes
 
-<a id="f4"></a> Aurora Universities Network. (2020). *Search Queries for “Mapping Research Output to the Sustainable Development Goals (SDGs)”* v5.0. [Dataset]. doi:10.5281/zenodo.3817445. [↩](#Aurora)
+<a id="f4"></a> Aurora Universities Network. (2020). _Search Queries for “Mapping Research Output to the Sustainable Development Goals (SDGs)”_ v5.0. [Dataset]. doi:10.5281/zenodo.3817445. [↩](#Aurora)
 
 <a id="f6"></a> Climate-ADAPT. (2019, last updated 2021). Capacity building on climate change adaptation. European Environment Agency & European Commission. (https://climate-adapt.eea.europa.eu/metadata/adaptation-options/capacity-building-on-climate-change-adaptation/) [accessed 6 May 2022].[↩](#climateADAPT)
 
@@ -418,9 +421,9 @@ Specialist input: Camilla A. Borrevik (PhD in Pacific climate leadership; May 20
 
 <a id="f5"></a> Murray, V. et al. (2021) Hazard Information Profiles: Supplement to UNDRR-ISC Hazard Definition & Classification Review: Technical Report: Geneva, Switzerland, United Nations Office for Disaster Risk Reduction; Paris, France, International Science Council. https://council.science/publications/hazard-information-profiles/. [↩](#disasters)
 
-<a id="f1"></a> Statistics Division. (2021). *Global indicator framework for the Sustainable Development Goals and targets of the 2030 Agenda for Sustainable Development*. A/RES/71/313, E/CN.3/2018/2, E/CN.3/2019/2, E/CN.3/2020/2, E/CN.3/2021/2. Department of Economic and Social Affairs, United Nations. https://unstats.un.org/sdgs/indicators/Global%20Indicator%20Framework%20after%202021%20refinement_Eng.pdf [accessed 8 August 2021] [↩](#SDGT+Is)
+<a id="f1"></a> Statistics Division. (2021). _Global indicator framework for the Sustainable Development Goals and targets of the 2030 Agenda for Sustainable Development_. A/RES/71/313, E/CN.3/2018/2, E/CN.3/2019/2, E/CN.3/2020/2, E/CN.3/2021/2. Department of Economic and Social Affairs, United Nations. https://unstats.un.org/sdgs/indicators/Global%20Indicator%20Framework%20after%202021%20refinement_Eng.pdf [accessed 8 August 2021] [↩](#SDGT+Is)
 
-<a id="f8"></a> United Nations. (2016, 2017, 2018, 2019, 2020, 2021). *World Economic Situation and Prospects; Statistical Annex*. https://www.un.org/development/desa/dpad/document_gem/global-economic-monitoring-unit/world-economic-situation-and-prospects-wesp-report/. [↩](#UNLDCs)
+<a id="f8"></a> United Nations. (2016, 2017, 2018, 2019, 2020, 2021). _World Economic Situation and Prospects; Statistical Annex_. https://www.un.org/development/desa/dpad/document_gem/global-economic-monitoring-unit/world-economic-situation-and-prospects-wesp-report/. [↩](#UNLDCs)
 
 <a id="f2"></a> United Nations Development Group (2017) Capacity Development, UNDAF companion guidance. https://unsdg.un.org/resources/capacity-development-undaf-companion-guidance [accessed 19.12.2019] [↩](#UNDGcapacity)
 

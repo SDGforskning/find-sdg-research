@@ -1,0 +1,56 @@
+# Local git hooks. Installs via `npm install` (prepare → lefthook install).
+# Skip a commit: LEFTHOOK=0 git commit
+# Skip the pre-push audit: LEFTHOOK_EXCLUDE=audit git push
+# Personal overrides: lefthook-local.yml (gitignored)
+
+glob_matcher: doublestar
+
+pre-commit:
+  parallel: true
+  skip:
+    - merge
+    - rebase
+  jobs:
+    - name: lint-links
+      glob:
+        - "content/**/*.{md,mdx,json}"
+        - "public/**/*"
+        - "scripts/lint.ts"
+        - "scripts/code-quality-report.ts"
+        - "src/lib/i18n.ts"
+      run: npm run lint:links
+
+    - name: unit
+      glob:
+        - "src/**/*.{ts,tsx}"
+        - "scripts/**/*.ts"
+        - "vitest.config.mts"
+      run: npm run test:unit
+
+    - name: lint
+      glob:
+        - "src/**/*.{ts,tsx,js,mjs}"
+        - "scripts/**/*.{ts,js,mjs}"
+        - "e2e/**/*.ts"
+        - "biome.json"
+        - "vitest.config.mts"
+        - "playwright.config.ts"
+      run: npm run lint
+
+    - name: typecheck
+      glob:
+        - "src/**/*.{ts,tsx}"
+        - "scripts/**/*.ts"
+        - "e2e/**/*.ts"
+        - "tsconfig.json"
+      run: npm run types:check
+
+# Advisory dependency vulnerability scan before pushing.
+# Non-blocking for moderate/low (only fails on high/critical).
+# Skip with: LEFTHOOK_EXCLUDE=audit git push
+pre-push:
+  jobs:
+    - name: audit
+      tags:
+        - audit
+      run: npm audit --omit=dev --audit-level=high

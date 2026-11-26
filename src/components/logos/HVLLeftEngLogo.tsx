@@ -1,4 +1,4 @@
-import { SVGProps } from "react"
+import type { SVGProps } from "react";
 
 export const HVLLeftEngLogo = (props: SVGProps<SVGSVGElement>) => (
   <svg
@@ -28,4 +28,4 @@ export const HVLLeftEngLogo = (props: SVGProps<SVGSVGElement>) => (
       }}
     />
   </svg>
-)
+);

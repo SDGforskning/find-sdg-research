@@ -1,32 +1,36 @@
-'use client'
+"use client";
 
-import { useParams } from 'next/navigation'
-import { goals } from '../../lib/goals'
+import { useParams } from "next/navigation";
+import { goals } from "../../lib/goals";
 
 function Goal({ image, link, label }) {
   return (
-    <div className=''>
+    <div className="">
       {link && (
-        <a href={link} className='inline-block'><img src={image} alt={label} title={label} /></a>
+        <a href={link} className="inline-block">
+          <img src={image} alt={label} title={label} />
+        </a>
       )}
-      {!link && (
-        <img src={image} alt={label} title={label} />
-      )}
+      {!link && <img src={image} alt={label} title={label} />}
     </div>
-  )
+  );
 }
 
 export function Goals() {
   const params = useParams();
-  const locale = params.lang || 'no'
+  const locale = params.lang || "no";
   return (
-    <div className='w-full py-10 grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-5'>
+    <div className="w-full py-10 grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-5">
       {goals
-        .filter(goal => goal.disabled !== true)
-        .map((goal, i) => (
-          <Goal key={i} label={goal.label[locale]} image={goal.image[locale]} link={`/${locale}/${goal.link[locale]}`} />
-        ))
-      }
+        .filter((goal) => goal.disabled !== true)
+        .map((goal) => (
+          <Goal
+            key={goal.label.en}
+            label={goal.label[locale]}
+            image={goal.image[locale]}
+            link={`/${locale}/${goal.link[locale]}`}
+          />
+        ))}
     </div>
-  )
+  );
 }

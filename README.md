@@ -1,4 +1,5 @@
 # find-sdg-research
+
 Website and search interface for baerekraftsforskning.no.
 
 This is a Next.js application generated with

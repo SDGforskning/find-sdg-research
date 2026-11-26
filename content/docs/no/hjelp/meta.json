@@ -1,8 +1,5 @@
 {
   "title": "Hjelp",
-  "pages": [
-    "sokehjelp",
-    "ofte-stilte-sporsmal"
-  ],
+  "pages": ["sokehjelp", "ofte-stilte-sporsmal"],
   "root": true
 }

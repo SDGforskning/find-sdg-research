@@ -66,8 +66,8 @@ export const sdgTopicLabelMapping = {
   SDG17: {
     en: "",
     no: "",
-  }
-}
+  },
+};
 
 export const sdgActionLabelMapping = {
   SDG01: {
@@ -137,8 +137,8 @@ export const sdgActionLabelMapping = {
   SDG17: {
     en: "",
     no: "",
-  }
-}
+  },
+};
 
 export const sdgTopicTargetLabelMapping = {
   SDG01_01: {
@@ -461,7 +461,7 @@ export const sdgTopicTargetLabelMapping = {
     en: "15.c Poaching and livlihoods",
     no: "",
   },
-}
+};
 
 export const sdgActionTargetLabelMapping = {
   SDG01_01: {
@@ -784,4 +784,4 @@ export const sdgActionTargetLabelMapping = {
     en: "15.c Poaching and livlihoods",
     no: "",
   },
-}
+};

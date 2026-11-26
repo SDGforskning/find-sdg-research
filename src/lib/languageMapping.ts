@@ -6,5 +6,5 @@ export const languageMapping = {
   English: {
     en: "English",
     no: "Engelsk",
-  }
-}
+  },
+};

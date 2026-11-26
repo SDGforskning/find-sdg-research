@@ -1,4 +1,5 @@
 import Connector from "../../services/APIConnector";
+
 const connector = new Connector({});
 
 const config = {
@@ -76,8 +77,16 @@ const config = {
       "SDG_target_topic_en.keyword": { type: "value", size: 30, sort: "count" },
       "SDG_action_no.keyword": { type: "value", size: 30, sort: "count" },
       "SDG_action_en.keyword": { type: "value", size: 30, sort: "count" },
-      "SDG_target_action_no.keyword": { type: "value", size: 30, sort: "count" },
-      "SDG_target_action_en.keyword": { type: "value", size: 30, sort: "count" },
+      "SDG_target_action_no.keyword": {
+        type: "value",
+        size: 30,
+        sort: "count",
+      },
+      "SDG_target_action_en.keyword": {
+        type: "value",
+        size: 30,
+        sort: "count",
+      },
       "publication_type_no.keyword.keyword": { type: "value" },
       "publication_type_en.keyword.keyword": { type: "value" },
       "publication_subtype_no.keyword": { type: "value" },
@@ -88,7 +97,7 @@ const config = {
       "year.keyword": { type: "value" },
       "mentions_no.keyword": { type: "value" },
       "mentions_en.keyword": { type: "value" },
-    }
+    },
   },
   /* autocompleteQuery: {
     results: {
@@ -119,4 +128,4 @@ const config = {
   } */
 };
 
-export default config
+export default config;

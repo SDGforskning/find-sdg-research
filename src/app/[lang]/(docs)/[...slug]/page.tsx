@@ -1,16 +1,20 @@
-import { getPageImage, source } from '@/lib/source';
 import {
   DocsBody,
   DocsDescription,
   DocsPage,
   DocsTitle,
-} from 'fumadocs-ui/layouts/notebook/page';
-import { notFound } from 'next/navigation';
-import { getMDXComponents } from '@/components/mdx';
-import type { Metadata } from 'next';
-import { createRelativeLink } from 'fumadocs-ui/mdx';
+} from "fumadocs-ui/layouts/notebook/page";
+import { createRelativeLink } from "fumadocs-ui/mdx";
+import type { Metadata } from "next";
+import { notFound } from "next/navigation";
+import { getMDXComponents } from "@/components/mdx";
+import {
+  docsPageFocusProps,
+  docsTocLandmarkProps,
+} from "@/components/skip-nav";
+import { getPageImage, source } from "@/lib/source";
 
-export default async function Page(props: PageProps<'/[lang]/[...slug]'>) {
+export default async function Page(props: PageProps<"/[lang]/[...slug]">) {
   const params = await props.params;
   const page = source.getPage(params.slug, params.lang);
   if (!page) notFound();
@@ -18,9 +22,16 @@ export default async function Page(props: PageProps<'/[lang]/[...slug]'>) {
   const MDX = page.data.body;
 
   return (
-    <DocsPage toc={page.data.toc} full={page.data.full}>
+    <DocsPage
+      {...docsPageFocusProps}
+      tableOfContent={docsTocLandmarkProps}
+      toc={page.data.toc}
+      full={page.data.full}
+    >
       <DocsTitle>{page.data.title}</DocsTitle>
-      <DocsDescription className="mb-0">{page.data.description}</DocsDescription>
+      <DocsDescription className="mb-0">
+        {page.data.description}
+      </DocsDescription>
       <DocsBody>
         <MDX
           components={getMDXComponents({
@@ -38,7 +49,9 @@ export async function generateStaticParams() {
   return source.generateParams().filter((entry) => entry.slug.length > 0);
 }
 
-export async function generateMetadata(props: PageProps<'/[lang]/[...slug]'>): Promise<Metadata> {
+export async function generateMetadata(
+  props: PageProps<"/[lang]/[...slug]">,
+): Promise<Metadata> {
   const params = await props.params;
   const page = source.getPage(params.slug, params.lang);
   if (!page) notFound();

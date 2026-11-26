@@ -1,15 +1,17 @@
-import * as React from 'react'
-const SvgBaerekraftsforskningEnLinjeHvitEn = props => (
+import * as React from "react";
+
+const SvgBaerekraftsforskningEnLinjeHvitEn = (props) => (
   <svg
     id="Baerekraftsforskning_en-linje_hvit_EN_svg__B\xE6rekraftsforskning_en_linje_hvit(EN)_svg__Layer_2"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="1 0 606 122"
     {...props}
   >
+    <title>Find SDG research</title>
     <defs>
       <style>
         {
-          '.B\xE6rekraftsforskning_en_linje_hvit(EN) _svg__cls-13{stroke-width:0px}.B\xE6rekraftsforskning_en_linje_hvit(EN) _svg__cls-13{fill:#fff}'
+          ".B\xE6rekraftsforskning_en_linje_hvit(EN) _svg__cls-13{stroke-width:0px}.B\xE6rekraftsforskning_en_linje_hvit(EN) _svg__cls-13{fill:#fff}"
         }
       </style>
     </defs>
@@ -333,5 +335,5 @@ const SvgBaerekraftsforskningEnLinjeHvitEn = props => (
       />
     </g>
   </svg>
-)
-export default SvgBaerekraftsforskningEnLinjeHvitEn
+);
+export default SvgBaerekraftsforskningEnLinjeHvitEn;

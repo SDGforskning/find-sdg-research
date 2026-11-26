@@ -17,7 +17,6 @@
 
 .feature h3 {
   position: relative;
-  font-size: 28px;
   font-size: min(28px, max(3vw, 24px));
   font-weight: 600;
   line-height: 1.25;

@@ -30,27 +30,29 @@ The attempt to limit the search to terrestrial and freshwater environments only 
 Targets and Indicators were found from the UN Statistics Division (<a id="SDGT+Is">[UN Statistics Division, 2021](#f1)</a>). This list includes "the global indicator framework as contained in A/RES/71/313, the refinements agreed by the Statistical Commission at its 49th session in March 2018 (E/CN.3/2018/2, Annex II) and 50th session in March 2019 (E/CN.3/2019/2, Annex II), changes from the 2020 Comprehensive Review (E/CN.3/2020/2, Annex II) and refinements (E/CN.3/2020/2, Annex III) from the 51st session in March 2020, and refinements from the 52nd session in March 2021 (E/CN.3/2021/2, Annex)". (https://unstats.un.org/sdgs/indicators/indicators-list/)
 
 Abbreviations used:
-* UN - United Nations
-* DESA - Department of Economic and Social Affairs
-* FAO - Food and Agriculture Organization
-* CBD - Convention on Biological Diversity
-* CITES - Convention on International Trade in Endangered Species of Wild Fauna and Flora
+
+- UN - United Nations
+- DESA - Department of Economic and Social Affairs
+- FAO - Food and Agriculture Organization
+- CBD - Convention on Biological Diversity
+- CITES - Convention on International Trade in Endangered Species of Wild Fauna and Flora
 
 ## 3. Terrestrial and freshwater terms: String for limiting certain phrases to the terrestrial and freshwater environment
 
 This string is referred to as **terrestrial and freshwater terms**, and is used in sets **15.1, 15.5, 15.6, 15.7, 15.8, 15.9, 15.a** and **15.c** to limit the results to terrestrial and freshwater environment.
 
-In some phrases, these terms are combined to the string with `AND` while in others a double `NOT` is used (`NOT marine NOT terrestrial/freshwater`). 
-- Phrases which consist of more general terms are more likely to return results about topics irrelevant to the targets of SDG15 or natural environments, so these were combined with terrestrial/freshwater terms with `AND` to focus only on works which mention one of the terrestrial or freshwater terms. 
-- Phrases which contain more specific ecological terms are more likely to already be focused on works about either marine, terrestrial or freshwater habitats/organisms, and only the pure marine works need to be excluded. `NOT marine NOT terrestrial/freshwater` was used for these as it excludes works using marine terms *unless* they also contain one of the terrestrial of freshwater terms. This "double NOT" strategy is commonly employed in the medical sciences to find human studies and exclude animal studies, while ensuring that animal studies are still included if they *also* mention humans. We use this strategy when possible as it has slightly better recall - for example, a work may be about a species of grass, but not use generic terms for terrestrial habitats - this work would likely be caught by the double `NOT` strategy, but be missed by the `AND` strategy. 
+In some phrases, these terms are combined to the string with `AND` while in others a double `NOT` is used (`NOT marine NOT terrestrial/freshwater`).
+
+- Phrases which consist of more general terms are more likely to return results about topics irrelevant to the targets of SDG15 or natural environments, so these were combined with terrestrial/freshwater terms with `AND` to focus only on works which mention one of the terrestrial or freshwater terms.
+- Phrases which contain more specific ecological terms are more likely to already be focused on works about either marine, terrestrial or freshwater habitats/organisms, and only the pure marine works need to be excluded. `NOT marine NOT terrestrial/freshwater` was used for these as it excludes works using marine terms _unless_ they also contain one of the terrestrial of freshwater terms. This "double NOT" strategy is commonly employed in the medical sciences to find human studies and exclude animal studies, while ensuring that animal studies are still included if they _also_ mention humans. We use this strategy when possible as it has slightly better recall - for example, a work may be about a species of grass, but not use generic terms for terrestrial habitats - this work would likely be caught by the double `NOT` strategy, but be missed by the `AND` strategy.
 
 Term `mangrove` is added only when the string is used with `NOT marine`.
 
 Although mentioned in the definition for inland waters in the SDG indicator metadata for indicator 15.1.1 (<a id="SDGmetarep">[UN Statistics Division 2022](#f3)</a>; https://unstats.un.org/sdgs/metadata/files/Metadata-15-01-01.pdf), the terms `reservoirs` `canals` `dams` are not included in the string. Combined with management and water, they would be likely to bring many irrelevant results on water supply management etc.
 
-Terms `land` and `fields` were initially in the phrase, but were removed to exclude many irrelevant results due to the broad meaning and use of these terms (e.g. *scientific fields, magnetic field, Netherlands, England*).
+Terms `land` and `fields` were initially in the phrase, but were removed to exclude many irrelevant results due to the broad meaning and use of these terms (e.g. _scientific fields, magnetic field, Netherlands, England_).
 
-`fells` are combined with Lapland because independently they brought a lot of noise (*fell* has many other meanings). Initially they were also combined with Scotland, but due to many irrelevant results, Scotland was left out.
+`fells` are combined with Lapland because independently they brought a lot of noise (_fell_ has many other meanings). Initially they were also combined with Scotland, but due to many irrelevant results, Scotland was left out.
 
 ```py
 TS=
@@ -82,7 +84,7 @@ TS=
 >
 > 15.1.2 Proportion of important sites for terrestrial and freshwater biodiversity that are covered by protected areas, by ecosystem type
 
-This target is interpreted to cover research about a) conservation of terrestrial and inland freshwater ecosystems, b) restoring these ecosystems and c) using these ecosystems and their services sustainably. Sustainable management is understood to be a part of sustainable use. The action approach versions of these phrases are directed more towards promoting/implementing/increasing the protection of ecosystems, whereas the aim of the topic approach versions is towards any papers about protection of ecosystems. The topic here is considered to be `protection/conservation of ecosystems´, not just anything about ecosystems. 
+This target is interpreted to cover research about a) conservation of terrestrial and inland freshwater ecosystems, b) restoring these ecosystems and c) using these ecosystems and their services sustainably. Sustainable management is understood to be a part of sustainable use. The action approach versions of these phrases are directed more towards promoting/implementing/increasing the protection of ecosystems, whereas the aim of the topic approach versions is towards any papers about protection of ecosystems. The topic here is considered to be `protection/conservation of ecosystems´, not just anything about ecosystems.
 
 Even though forests, wetlands, mountains and drylands are highlighted in the target description, they are not specified in the phrases since they are already included in the **Terrestrial and freshwater terms**, which are combined with all the phrases of this target either directly with `AND` or indirectly with `NOT marine` unless a terrestrial or freshwater habitat is mentioned.
 
@@ -94,7 +96,7 @@ While testing the phrases it was noticed that marine papers mentioning `seagrass
 
 This phrase aims to find research outputs about the protection of habitats and biotopes, and protected areas. It is limited by the exclusion of `marine` habitats (except when a **terrestrial or freshwater term** is mentioned) and some other terms which were detected to bring irrelevant results.
 
-The elements of the phrase are *protected areas/protection + habitats*.
+The elements of the phrase are _protected areas/protection + habitats_.
 
 ```py
 TS=
@@ -119,7 +121,7 @@ TS=(("marine" OR "ocean$" OR "seafloor" OR "coral" OR "kelp forest$" OR "kelp-fo
 
 This phrase aims to find research outputs about protecting ecosystems and specific habitats.
 
-The elements of the phrase are *protect + ecosystem/habitats/areas*. In order to specify to the terrestrial and freshwater ecosystems the phrase is combined with **Terrestrial and freshwater terms** with `AND`.
+The elements of the phrase are _protect + ecosystem/habitats/areas_. In order to specify to the terrestrial and freshwater ecosystems the phrase is combined with **Terrestrial and freshwater terms** with `AND`.
 
 ```py
 TS=
@@ -142,7 +144,7 @@ AND TS=("terrestrial" OR "soil" OR "soils" OR "forest$" OR "woodland$" OR "taiga
 
 #### Phrase 3
 
-This phrase aims to find research about managing, protecting and restoring terrestrial and freshwater ecosystems, communities and biodiversity. 
+This phrase aims to find research about managing, protecting and restoring terrestrial and freshwater ecosystems, communities and biodiversity.
 
 Compared to the action approach version, this phrase has been edited to topic approach only partly. The topic here is understood to be not just ecosystems but more specifically the conservation of ecosystem. This is why the phrase has been edited only by lifting the action terms which limit the management/conservation/protection etc. string.
 
@@ -150,7 +152,7 @@ Under the ecosystems/elements, we include diversity at various levels (important
 
 As the use of term `ecosystem` by others than natural sciences brings irrelevant results, it was combined with terms refering to species and habitats.
 
-The elements of this phrase are *conservation + ecosystems/elements*. It is limited by the exclusion of `marine` habitats (except when a **terrestrial or freshwater term** is mentioned) and some other terms which were detected to bring irrelevant results. Terms about human microbiome and terms which are related to diseases were added to `double NOT` string in order to exclude articles about those. The medical terms were picked from a set of irrelevant papers found when testing the phrases and are not chosen systematically. It is possible that terms like `parasite` `infection` or `immunology` will exclude also relevant results.
+The elements of this phrase are _conservation + ecosystems/elements_. It is limited by the exclusion of `marine` habitats (except when a **terrestrial or freshwater term** is mentioned) and some other terms which were detected to bring irrelevant results. Terms about human microbiome and terms which are related to diseases were added to `double NOT` string in order to exclude articles about those. The medical terms were picked from a set of irrelevant papers found when testing the phrases and are not chosen systematically. It is possible that terms like `parasite` `infection` or `immunology` will exclude also relevant results.
 
 ```py
 TS=
@@ -179,21 +181,22 @@ TS=(("marine" OR "ocean$" OR "seafloor" OR "coral" OR "kelp forest$" OR "kelp-fo
 
 This phrase aims to retrieve research about the sustainable use of terrestrial and freshwater ecosystems and their services. For better recall, some ecosystem services are specified, most of these found from the UN HLPF Background note for SDG 15 (<a>[UN-DESA/DSDG et al. 2018](#f4)</a>), UN topic page for Forests (<a id="forests">[UN DESA n.d.a](#f5)</a>) and SDG indicator metadata for indicator 15.3.1 (<a id="SDGmetarep">[UN Statistics Division 2022](#f3)</a>; https://unstats.un.org/sdgs/metadata/files/Metadata-15-03-01.pdf).
 
-The elements of this phrase are *sustainability/sustainable use + natural resources/ecosystem services*. It is limited by the exclusion of `marine` habitats (except when a **terrestrial or freshwater term** is mentioned) and some other terms which were detected to bring irrelevant results. `KBAs` are combined with a string of species terms to exclude other meanings of the acronym KBA.
+The elements of this phrase are _sustainability/sustainable use + natural resources/ecosystem services_. It is limited by the exclusion of `marine` habitats (except when a **terrestrial or freshwater term** is mentioned) and some other terms which were detected to bring irrelevant results. `KBAs` are combined with a string of species terms to exclude other meanings of the acronym KBA.
 
 Some ecosystem services mentioned in indicator 15.3.1 metadata were not included in the phrase because they would be likely to return many results which are not relevant to the SDG 15:
-* Cultural heritage
-* Regional climate regulation
-* Climate change mitigation
-* Disaster risk reduction (flood, drought, soil erosion)
-* Regulation of pests and diseases
-* Water regulation
-* Pollination
-* Medicinal resources
-* Primary production
-* Nutrient cycling
-* Water cycling
-* Soil formation
+
+- Cultural heritage
+- Regional climate regulation
+- Climate change mitigation
+- Disaster risk reduction (flood, drought, soil erosion)
+- Regulation of pests and diseases
+- Water regulation
+- Pollination
+- Medicinal resources
+- Primary production
+- Nutrient cycling
+- Water cycling
+- Soil formation
 
 ```py
 TS=
@@ -235,9 +238,9 @@ TS=(("marine" OR "ocean$" OR "seafloor" OR "coral" OR "kelp forest$" OR "kelp-fo
 
 #### Phrase 5
 
-This phrase aims to find research about the conservation/restoration of terrestrial and freshwater ecosystems specifically in relation to the international agreements or actions. Most of the agreements and treaties included by name are mentioned in the UN HLPF Background note SDG 15 (<a>[UN-DESA/DSDG et al. 2018](#f4)</a>). Two agreements concerning the use of genetic resources are included (*Nagoya Protocol* and *The Treaty on Plant Genetic Resources for Food and Agriculture*) assuming that mentioning these agreements in the context of terrestrial of freshwater terms implies actions towards the targets of SDG 15.1.
+This phrase aims to find research about the conservation/restoration of terrestrial and freshwater ecosystems specifically in relation to the international agreements or actions. Most of the agreements and treaties included by name are mentioned in the UN HLPF Background note SDG 15 (<a>[UN-DESA/DSDG et al. 2018](#f4)</a>). Two agreements concerning the use of genetic resources are included (_Nagoya Protocol_ and _The Treaty on Plant Genetic Resources for Food and Agriculture_) assuming that mentioning these agreements in the context of terrestrial of freshwater terms implies actions towards the targets of SDG 15.1.
 
-The elements of this phrase are *international agreements/instruments*. It is limited by the exclusion of `marine` habitats (except when a **terrestrial or freshwater term** is mentioned) and some other terms which were detected to bring irrelevant results. The term `CITES` is combined to a string of species terms (including particularly susceptable species from UN's World Wildlife Crime Report; <a id="wwc">[UNODC, 2020](#f13)</a>) in order to exclude irrelevant articles which use cite as a verb. The UN Convention on climate change `UNFCCC` is combined to a string of ecosystem terms to specify to conserving ecosystems (rather than reducing emissions in general). 
+The elements of this phrase are _international agreements/instruments_. It is limited by the exclusion of `marine` habitats (except when a **terrestrial or freshwater term** is mentioned) and some other terms which were detected to bring irrelevant results. The term `CITES` is combined to a string of species terms (including particularly susceptable species from UN's World Wildlife Crime Report; <a id="wwc">[UNODC, 2020](#f13)</a>) in order to exclude irrelevant articles which use cite as a verb. The UN Convention on climate change `UNFCCC` is combined to a string of ecosystem terms to specify to conserving ecosystems (rather than reducing emissions in general).
 
 ```py
 TS=
@@ -276,13 +279,13 @@ TS=(("marine" OR "ocean$" OR "seafloor" OR "coral" OR "kelp forest$" OR "kelp-fo
 
 This target is interpreted to cover research about sustainable forest management, deforestation, and research which contributes to increasing forest covered land area globally. `Silvicultures` are included in the phrases because the SDG indicator metadata for indicator 15.1.1 (<a id="SDGmetarep">[UN Statistics Division 2022](#f3)</a>; https://unstats.un.org/sdgs/metadata/files/Metadata-15-01-01.pdf) does not limit forests to just natural ones. However including `arboricultures` is more debatable, by the indicators definition agricultural production systems (e.g. fruit tree or oil palm plantations) should not be included as forest for SDG 15. A machine learning algorithm "Random forests" brings irrelevant results not related to forests. Excluding these is not possible without missing relevant papers since "Random forests" can be applied also in forest research.
 
-Specific forest management terms (methods, etc.) were found mainly from FAO’s Agrovoc thesaurus (<a id="agrovoc">[FAO, n.d.](#f15)</a>) and from a search query prepared in an earlier project for capturing forestry literature (<a id="stateforest">[Päivinen et al. (2021); International Status of Finnish Forest Research, Tapio research](#f16)</a>). 
+Specific forest management terms (methods, etc.) were found mainly from FAO’s Agrovoc thesaurus (<a id="agrovoc">[FAO, n.d.](#f15)</a>) and from a search query prepared in an earlier project for capturing forestry literature (<a id="stateforest">[Päivinen et al. (2021); International Status of Finnish Forest Research, Tapio research](#f16)</a>).
 
 This query consists of 3 phrases. Terrestrial and freshwater terms are **not** combined with the phrases 15.2.
 
 #### Phrase 1
 
-This phrase aims to find research about sustainable forest management, with some of the management practices specified. The elements of this phrase are *sustainable use/practises/strategies & goals + forests*.
+This phrase aims to find research about sustainable forest management, with some of the management practices specified. The elements of this phrase are _sustainable use/practises/strategies & goals + forests_.
 
 ```py
 TS=
@@ -323,7 +326,7 @@ TS=
 ```
 #### Phrase 2
 
-This phrase aims to find research about forest loss and degradation. The elements of the phrase are *forests + loss*. REDD is Reducing Emissions from Deforestation and forest Degradation.
+This phrase aims to find research about forest loss and degradation. The elements of the phrase are _forests + loss_. REDD is Reducing Emissions from Deforestation and forest Degradation.
 
 ```py
 TS=
@@ -342,7 +345,7 @@ TS=
 
 #### Phrase 3
 
-This phrase aims to find research about increasing forest covered land area, and about afforestation, reforestation and restoring forests. The elements of the phrase are *increase area/restoration + forests / forestation*.
+This phrase aims to find research about increasing forest covered land area, and about afforestation, reforestation and restoring forests. The elements of the phrase are _increase area/restoration + forests / forestation_.
 
 ```py
 TS=
@@ -367,20 +370,22 @@ OR TS=("afforestr*" OR "reforestr*")
 > 15.3.1 Proportion of land that is degraded over total land area
 
 This target is interpreted to cover research about desertifiction and about degradation of land and soil. It also covers research about land degradation neutrality (LDN). Land degradation neutrality is defined in the SDG indicator metadata for indicator 15.3.1:
+
 > "a state whereby the amount and quality of land resources necessary to support ecosystem functions and services and enhance food security remain stable or increase within specified temporal and spatial scales and ecosystems" (<a id="SDGmetarep">[UN Statistics Division 2022](#f3)</a>; https://unstats.un.org/sdgs/metadata/files/Metadata-15-03-01.pdf).
 
 It is somewhat unclear to us whether the phrases should cover all land degradation or just land degradation related to deserification, drought and floods. Our interpretation on this is done separetely for each phrase. Phrase 2 is more tightly limited to searching for lands degraded by desertification, drought or floods, whereas phrase 3 includes the degradation of all lands. Phrase 4 is limited only to drylands conserning soil productivity but to all lands conserning LDN.
 
-Sources used for definitions and specifying terms for deserts and drylands (in phrases 3 & 4): 
-* 2018 UN HLPF Background note for SDG 15 (<a>[UN-DESA/DSDG et al. 2018](#f4)</a>) 
-* CBD web pages for Dry and Sub-humid Lands (<a id="drylands">[CBD, Jun 2022](#f8)</a>)
-* UN topic page for Desertification, Land degradation and Drought (<a id="desertification">[CBD, Jun 2022](#f6)</a>)
+Sources used for definitions and specifying terms for deserts and drylands (in phrases 3 & 4):
+
+- 2018 UN HLPF Background note for SDG 15 (<a>[UN-DESA/DSDG et al. 2018](#f4)</a>)
+- CBD web pages for Dry and Sub-humid Lands (<a id="drylands">[CBD, Jun 2022](#f8)</a>)
+- UN topic page for Desertification, Land degradation and Drought (<a id="desertification">[CBD, Jun 2022](#f6)</a>)
 
 This query consists of 4 phrases. Terrestrial and freshwater terms are **not** combined with the phrases 15.3.
 
 #### Phrase 1
 
-This phrase aims to find research about desertification. The elements of the phrase are *desertification // UN agreements to combat desertification*.
+This phrase aims to find research about desertification. The elements of the phrase are _desertification // UN agreements to combat desertification_.
 
 ```py
 TS=
@@ -398,7 +403,7 @@ TS=
 
 #### Phrase 2
 
-This phrase aims to find research about land and soil degraded by desertification, drought or floods. The elements of the phrase are *desertification/drought/flood + degraded land or soils/quality of soil*.
+This phrase aims to find research about land and soil degraded by desertification, drought or floods. The elements of the phrase are _desertification/drought/flood + degraded land or soils/quality of soil_.
 
 In addition to articles about the effects agriforestry has on soils, this phrase also returns some articles about the effect of soil quality on agricultural productivity. These may still be concidered relevant to the target, since LDN by definition covers also land resources necessary for enhancing food security.
 
@@ -419,8 +424,7 @@ TS=
 
 This phrase aims to find research about land degradation processes and effects. The terms for degradation processes are picked mainly from the SDG indicator metadata description for 15.3.1 (<a id="SDGmetarep">[UN Statistics Division 2022](#f3)</a>; https://unstats.un.org/sdgs/metadata/files/Metadata-15-03-01.pdf).
 
-The elements of the phrase are *land degradation processes OR effects of land degradation + deserts/drylands/soils*.
-
+The elements of the phrase are _land degradation processes OR effects of land degradation + deserts/drylands/soils_.
 
 ```py
 TS=
@@ -464,7 +468,7 @@ TS=
 
 This phrase aims to find research about land degradation neutrality (LDN) of all lands, and land productivity of dry lands. There is uncertainty about whether this phrase should cover LDN on drylands only, and whether land productivity should be covered for all lands of limited to drylands only. The phrase is now limited only to drylands when searching for soil productivity but to all lands when searching for LDN.
 
-The elements of the phrase are *deserts/drylands + land productivity OR Land Degradation Neutrality*.
+The elements of the phrase are _deserts/drylands + land productivity OR Land Degradation Neutrality_.
 
 ```py
 TS=
@@ -495,7 +499,7 @@ This target is interpreted to cover research about the conservation of mountain 
 
 Specifying terms for the Mountain Green Cover Index are mentioned in the SDG metadata for indicator 15.4.2 (<a id="SDGmetarep">[UN Statistics Division 2022](#f3)</a>; https://unstats.un.org/sdgs/metadata/files/Metadata-15-04-02.pdf) and terms for Coverage by protected areas in the SDG metadata for indicator 15.4.1 (<a id="SDGmetarep">[UN Statistics Division 2022](#f3)</a>; https://unstats.un.org/sdgs/metadata/files/Metadata-15-04-01.pdf).
 
-`fells` are combined with Lapland because independently they brought a lot of noise (*fell* has many other meanings). Initially they were also combined with Scotland, but due to many irrelevant results, Scotland was left out.
+`fells` are combined with Lapland because independently they brought a lot of noise (_fell_ has many other meanings). Initially they were also combined with Scotland, but due to many irrelevant results, Scotland was left out.
 
 The phrases return some articles which mention `mountain` in a name of a species (e.g. Mountain hare, Mountain zebra, Mountain tapir). Some of these articles might not be about mountains, but identifying and excluding them without losing relevant articles would be quite challenging.
 
@@ -505,9 +509,9 @@ This query consists of 2 phrases. Terrestrial and freshwater terms are **not** c
 
 This phrase aims to find research about the conservation/management of or changes in mountain ecosystems and their biodiversity. It includes research about protected areas, key biodiversity areas and vegetation covered areas of the mountains (Mountain Green Cover Index). Specifying terms for areas counted as green cover for the Mountain Green Cover Index `forest` `shrubs` `trees` `pasture` `cropland` `grassland` `wetland` are mentioned in the SDG metadata for indicator 15.4.2 (<a id="SDGmetarep">[UN Statistics Division 2022](#f3)</a>; https://unstats.un.org/sdgs/metadata/files/Metadata-15-04-02.pdf). `KBA` is not freely truncated due to noise from "kbar" (a unit).
 
-Even though this is the topic approach version, the phrase still contains the element of action as the target is concidered to be `conservation of mountain ecosystems` not everything about mountain ecosystems. Compared to the action approach version, in this phrase the action terms which limit the management of mountain ecosystems (designat/placement/expand/) have been removed. The management/conservation string has not been removed to keep the topic about `conservation of ecosystems`. A string of action terms is added alongside with management/conservation terms to reach relevant articles which do not mention conservation (e.g. about `decline` of biodiversity on mountain areas). 
+Even though this is the topic approach version, the phrase still contains the element of action as the target is concidered to be `conservation of mountain ecosystems` not everything about mountain ecosystems. Compared to the action approach version, in this phrase the action terms which limit the management of mountain ecosystems (designat/placement/expand/) have been removed. The management/conservation string has not been removed to keep the topic about `conservation of ecosystems`. A string of action terms is added alongside with management/conservation terms to reach relevant articles which do not mention conservation (e.g. about `decline` of biodiversity on mountain areas).
 
-The elements of this phrase are: *(management/conservation + ecosystems/bidiversity OR action + ecosystems/bidiversity OR instruments) + mountains*. Protected areas/Natural monuments etc. are included in the first part of the phrase to combine them with ecosystem terms. The aim of this is to exclude protecting human communities, architecture etc.  
+The elements of this phrase are: _(management/conservation + ecosystems/bidiversity OR action + ecosystems/bidiversity OR instruments) + mountains_. Protected areas/Natural monuments etc. are included in the first part of the phrase to combine them with ecosystem terms. The aim of this is to exclude protecting human communities, architecture etc.
 
 ```py
 TS=
@@ -553,7 +557,7 @@ TS=
 
 #### Phrase 2
 
-This phrase aims to find research about sustainable use of the services/benefits provided by the mountain ecosystems. The elements of this phrase are *sustainable use + ecosystem services + mountains*
+This phrase aims to find research about sustainable use of the services/benefits provided by the mountain ecosystems. The elements of this phrase are _sustainable use + ecosystem services + mountains_
 
 ```py
 TS=
@@ -589,7 +593,7 @@ This query consists of 4 phrases.
 
 #### Phrase 1
 
-This phrase aims to find research about the degradation of terrestrial habitats. The elements of the phrase are *degratation + habitats*. In order to specify to the terrestrial and freshwater ecosystems the phrase is combined with **Terrestrial and freshwater terms** with `AND`.
+This phrase aims to find research about the degradation of terrestrial habitats. The elements of the phrase are _degratation + habitats_. In order to specify to the terrestrial and freshwater ecosystems the phrase is combined with **Terrestrial and freshwater terms** with `AND`.
 
 ```py
 TS=
@@ -606,7 +610,7 @@ TS=("terrestrial" OR "soil" OR "soils" OR "*forest*" OR "woodland$" OR "taiga" O
 
 #### Phrase 2
 
-This phrase aims to find research about the loss of biodiversity. The elements of the phrase are *loss + biodiversity*. In order to specify to the terrestrial and freshwater ecosystems the phrase is combined with **Terrestrial and freshwater terms** with `AND`.
+This phrase aims to find research about the loss of biodiversity. The elements of the phrase are _loss + biodiversity_. In order to specify to the terrestrial and freshwater ecosystems the phrase is combined with **Terrestrial and freshwater terms** with `AND`.
 
 ```py
 TS=
@@ -623,14 +627,15 @@ TS=("terrestrial" OR "soil" OR "soils" OR "*forest*" OR "woodland$" OR "taiga" O
 
 #### Phrase 3
 
-This phrase aims to find research about protecting biodiversity and threatened species. It also aims to find articles which contribute to protecting biodiversity more indirectly (e.g. articles which mention enhancing/reducing/evaluating biodiversity). 
+This phrase aims to find research about protecting biodiversity and threatened species. It also aims to find articles which contribute to protecting biodiversity more indirectly (e.g. articles which mention enhancing/reducing/evaluating biodiversity).
 
 Even though this is the topic approach version, the phrase still contains the element of action as the target is concidered to be `protecting biodiversity` not anything about biodiversity. Compared to the action approach version, in this phrase the action terms which limit the management/conservation of biodiversity (promote/restor/etc.) have been removed. The management/conservation string has not been removed to keep the topic about "protecting biodiversity". A broader string of action terms is added alongside protecting/conserving to find relevant articles which do not mention protecting (e.g. articles about enhancing/reducing/evaluating biodiversity). The relation between action terms and biodiversity is looser in this phrase than in the action approach version of the phrase (combined with `AND` instead of `NEAR`).
 
-The concept of *threatened species* is interpreted according to the classification of the SDG metadata for indicator 15.5.1 (<a id="SDGmetarep">[UN Statistics Division 2022](#f3)</a>; https://unstats.un.org/sdgs/metadata/files/Metadata-15-05-01.pdf): 
+The concept of _threatened species_ is interpreted according to the classification of the SDG metadata for indicator 15.5.1 (<a id="SDGmetarep">[UN Statistics Division 2022](#f3)</a>; https://unstats.un.org/sdgs/metadata/files/Metadata-15-05-01.pdf):
+
 > "Threatened species are those listed on The IUCN Red List of Threatened Species in the categories Vulnerable, Endangered, or Critically Endangered (i.e., species that are facing a high, very high, or extremely high risk of extinction in the wild in the medium-term future)."
 
-The elements of the phrase are *action + biodiversity/key biodiversity areas/threatened species*. It is limited by the exclusion of `marine` habitats (except when a **terrestrial or freshwater term** is mentioned) and some other terms which were detected to bring irrelevant results. Terms about human microbiome and terms which are related to diseases were added to `NOT` string in order to exclude articles about those. The medical terms were picked from a set of irrelevant papers found when testing the phrases and are not chosen systematically. It is possible that terms like `parasite` `infection` or `immunology` will exclude also relevant results.
+The elements of the phrase are _action + biodiversity/key biodiversity areas/threatened species_. It is limited by the exclusion of `marine` habitats (except when a **terrestrial or freshwater term** is mentioned) and some other terms which were detected to bring irrelevant results. Terms about human microbiome and terms which are related to diseases were added to `NOT` string in order to exclude articles about those. The medical terms were picked from a set of irrelevant papers found when testing the phrases and are not chosen systematically. It is possible that terms like `parasite` `infection` or `immunology` will exclude also relevant results.
 
 ```py
 TS=
@@ -671,7 +676,7 @@ NOT TS=(("marine" OR "ocean$" OR "seafloor" OR "coral" OR "kelp forest$" OR "kel
 
 #### Phrase 4
 
-This phrase aims to find research about the extinction of threatened species. The elements of the phrase are *extinction/protection + vulnerable/protected species*. It is limited by the exclusion of `marine` habitats (except when a **terrestrial or freshwater term** is mentioned) and some other terms which were detected to bring irrelevant results.
+This phrase aims to find research about the extinction of threatened species. The elements of the phrase are _extinction/protection + vulnerable/protected species_. It is limited by the exclusion of `marine` habitats (except when a **terrestrial or freshwater term** is mentioned) and some other terms which were detected to bring irrelevant results.
 
 ```py
 TS=
@@ -694,7 +699,7 @@ NOT TS=(("marine" OR "ocean$" OR "seafloor" OR "coral" OR "kelp forest$" OR "kel
 
 This target is interpreted to cover research about the sharing of benefits arising from using genetic resources of terrestrial and freshwater organisms, as well as fair access to benefits from these resources. Benefits are defined according to the CBD factsheet on Access and Benefit-Sharing (ABS) (<a id="abs">[CBD, n.d.](#f10)</a>). They range from basic research to development of products. By the definition of the CBD, benefit sharing applies also to benefits arising from the use of traditional knowledge of indigenous and local communities associated with genetic resources.
 
-*The Nagoya Protocol on Access to Genetic Resources and the Fair and Equitable Sharing of Benefits Arising from their Utilization to the Convention on Biological Diversity* is an essential agreement related to this target. CBD webpages on Nagoya protocol (<a id="nagoya">[CBD, Aug 2022](#f9)</a>) were used to define the aims and scope of this target.
+_The Nagoya Protocol on Access to Genetic Resources and the Fair and Equitable Sharing of Benefits Arising from their Utilization to the Convention on Biological Diversity_ is an essential agreement related to this target. CBD webpages on Nagoya protocol (<a id="nagoya">[CBD, Aug 2022](#f9)</a>) were used to define the aims and scope of this target.
 
 In addition to papers about the use of terrestrial and freshwater resources, this query also returns some agricultural papers. They are not excluded from the results since the indicator 15.6.1 includes "Countries that are contracting Parties to the International Treaty on Plant Genetic Resources for Food and Agriculture (PGRFA)" (<a id="SDGmetarep">[UN Statistics Division 2022](#f3)</a>; https://unstats.un.org/sdgs/metadata/files/Metadata-15-06-01.pdf).
 
@@ -702,7 +707,7 @@ This query consists of 3 phrases. The phrases are limited by the exclusion of `m
 
 #### Phrase 1
 
-This phrase aims to find research about sharing of genetic resources, including traditional knowledge of the indigenous and local communities. The elements of the phrase are *sharing/access + resources/knowledge*. It is limited by the exclusion of `marine` habitats (except when a **terrestrial or freshwater term** is mentioned) and some other terms which were detected to bring irrelevant results.
+This phrase aims to find research about sharing of genetic resources, including traditional knowledge of the indigenous and local communities. The elements of the phrase are _sharing/access + resources/knowledge_. It is limited by the exclusion of `marine` habitats (except when a **terrestrial or freshwater term** is mentioned) and some other terms which were detected to bring irrelevant results.
 
 ```py
 TS=
@@ -722,10 +727,9 @@ TS=(("marine" OR "ocean$" OR "seafloor" OR "coral" OR "kelp forest$" OR "kelp-fo
 
 #### Phrase 2
 
-This phrase aims to find research about sharing of/access to benefits derived from utilizing genetic resources, including traditional knowledge of the indigenous and local communities. The elements of the phrase are *sharing/access + resources/knowledge + use + benefits*. It is limited by the exclusion of `marine` habitats (except when a **terrestrial or freshwater term** is mentioned) and some other terms which were detected to bring irrelevant results.
+This phrase aims to find research about sharing of/access to benefits derived from utilizing genetic resources, including traditional knowledge of the indigenous and local communities. The elements of the phrase are _sharing/access + resources/knowledge + use + benefits_. It is limited by the exclusion of `marine` habitats (except when a **terrestrial or freshwater term** is mentioned) and some other terms which were detected to bring irrelevant results.
 
 While testing the phrase, it was noticed that `knowledge` combined with `local` or `traditional` brings some irrelevant results about various fields (transport, business, education).
-
 
 ```py
 TS=
@@ -758,9 +762,9 @@ TS=(("marine" OR "ocean$" OR "seafloor" OR "coral" OR "kelp forest$" OR "kelp-fo
 
 #### Phrase 3
 
-This phrase aims to find research about the instruments/treaties/agreements for promoting benefit sharing and access to genetic resources and traditional knowledge. The action approach version of this phrase is not limited by actions (promoting or using), since works mentioning the relevant international instruments/agreements are assumed to be related to promoting this target. Therefore this phrase is identical to the action approach version of it. 
+This phrase aims to find research about the instruments/treaties/agreements for promoting benefit sharing and access to genetic resources and traditional knowledge. The action approach version of this phrase is not limited by actions (promoting or using), since works mentioning the relevant international instruments/agreements are assumed to be related to promoting this target. Therefore this phrase is identical to the action approach version of it.
 
-The elements of the phrase are *resources/knowledge + instruments*. It is limited by the exclusion of `marine` habitats (except when a **terrestrial or freshwater term** is mentioned) and some other terms which were detected to bring irrelevant results.
+The elements of the phrase are _resources/knowledge + instruments_. It is limited by the exclusion of `marine` habitats (except when a **terrestrial or freshwater term** is mentioned) and some other terms which were detected to bring irrelevant results.
 
 ```py
 TS=
@@ -798,7 +802,7 @@ This phrase aims to find research about poaching and trafficking of protected sp
 
 While testing the phrase it was noticed that the combination of `trafficking` and `animal` returns some irrelevant results about animal physiology (receptor trafficking, etc.). These are hard to exclude without losing relevant results.
 
-The elements of the phrase are *poaching/trafficking + protected species*. It is limited by the exclusion of marine habitats (except when a **terrestrial or freshwater term** is mentioned) and some other terms which were detected to bring irrelevant results.
+The elements of the phrase are _poaching/trafficking + protected species_. It is limited by the exclusion of marine habitats (except when a **terrestrial or freshwater term** is mentioned) and some other terms which were detected to bring irrelevant results.
 
 ```py
 TS=
@@ -819,7 +823,7 @@ TS=(("marine" OR "ocean$" OR "seafloor" OR "coral" OR "kelp forest$" OR "kelp-fo
 
 This phrase aims to find research about the markets/trade for illegal wildlife products. In the action approach version of this phrase no action terms are combined with the markets (reduced demand & supply). Therefore this phrase is similar to the action approach version of it, but a wider NEAR distance/AND is used.
 
-The elements of the phrase are *protected species + illegal products + markets*. It is limited by the exclusion of `marine` habitats (except when a **terrestrial or freshwater term** is mentioned) and some other terms which were detected to bring irrelevant results.
+The elements of the phrase are _protected species + illegal products + markets_. It is limited by the exclusion of `marine` habitats (except when a **terrestrial or freshwater term** is mentioned) and some other terms which were detected to bring irrelevant results.
 
 ```py
 TS=
@@ -846,7 +850,7 @@ TS=(("marine" OR "ocean$" OR "seafloor" OR "coral" OR "kelp forest$" OR "kelp-fo
 
 #### Phrase 3
 
-This phrase aims to find research about protected/endangered species mentioning *The Convention on International Trade in Endangered Species of Wild Fauna and Flora (CITES)*. The elements of the phrase are *protected species + CITES*. It is limited by the exclusion of `marine` habitats (except when a **terrestrial or freshwater term** is mentioned) and some other terms which were detected to bring irrelevant results.
+This phrase aims to find research about protected/endangered species mentioning _The Convention on International Trade in Endangered Species of Wild Fauna and Flora (CITES)_. The elements of the phrase are _protected species + CITES_. It is limited by the exclusion of `marine` habitats (except when a **terrestrial or freshwater term** is mentioned) and some other terms which were detected to bring irrelevant results.
 
 No action terms are combined with the action approach version of this phrase since it could be assumed that articles mentioning protected/endangered species and CITES are action-oriented. Hence this phrase is identical to the action approach version of it.
 
@@ -879,6 +883,7 @@ TS=(("marine" OR "ocean$" OR "seafloor" OR "coral" OR "kelp forest$" OR "kelp-fo
 This target is interpreted to cover research about the introduction of alien species to terrestrial and freshwater ecosystems and about controlling and eradicating them. It also covers research about the impact of alien species. The impacts are specified as defined in the SDG metadata for indicator 15.8.1 (<a id="SDGmetarep">[UN Statistics Division 2022](#f3)</a>; https://unstats.un.org/sdgs/metadata/files/Metadata-15-08-01.pdf).
 
 By the definition of the Convention on Biological Diversity (CBD), from webpages from the CBD:
+
 > "Invasive alien species are plants, animals, pathogens and other organisms that are non-native to an ecosystem, and which may cause economic or environmental harm or adversely affect human health" (<a id="aliens">[CBD, May 2021](#f11)</a>)
 
 Not all alien species are invasive, and not all papers about invasive species necessarily mention the term alien. Terms `invasive` and `invasive alien` are sometimes used inconsistently. These phrases are designed to find research about preventing the introduction of any alien or invasive species to the ecosystems, and the negative impacts of them.
@@ -891,7 +896,7 @@ This query consists of 3 phrases. The phrases are limited by the exclusion of `m
 
 #### Phrase 1
 
-This phrase aims to find research about the introduction/spread of alien/invasive species. The elements of the phrase are *introduction + alien species*. It is limited by the exclusion of `marine` habitats (except when a **terrestrial or freshwater term** is mentioned) and some other terms which were detected to bring irrelevant results.
+This phrase aims to find research about the introduction/spread of alien/invasive species. The elements of the phrase are _introduction + alien species_. It is limited by the exclusion of `marine` habitats (except when a **terrestrial or freshwater term** is mentioned) and some other terms which were detected to bring irrelevant results.
 
 ```py
 TS=
@@ -909,7 +914,7 @@ TS=(("marine" OR "ocean$" OR "seafloor" OR "coral" OR "kelp forest$" OR "kelp-fo
 
 #### Phrase 2
 
-This phrase aims to find research about the impact of alien or invasive species on ecosystems. The elements of the phrase are *alien species + impact*. It is limited by the exclusion of `marine` habitats (except when a **terrestrial or freshwater term** is mentioned) and some other terms which were detected to bring irrelevant results.
+This phrase aims to find research about the impact of alien or invasive species on ecosystems. The elements of the phrase are _alien species + impact_. It is limited by the exclusion of `marine` habitats (except when a **terrestrial or freshwater term** is mentioned) and some other terms which were detected to bring irrelevant results.
 
 ```py
 TS=
@@ -938,7 +943,7 @@ TS=(("marine" OR "ocean$" OR "seafloor" OR "coral" OR "kelp forest$" OR "kelp-fo
 
 #### Phrase 3
 
-This phrase aims to find research about controlling and eradicating invasive or alien species. The elements of the phrase are *reduction + alien species*. It is limited by the exclusion of `marine` habitats (except when a **terrestrial or freshwater term** is mentioned) and some other terms which were detected to bring irrelevant results. This string is the same as the action approach. 
+This phrase aims to find research about controlling and eradicating invasive or alien species. The elements of the phrase are _reduction + alien species_. It is limited by the exclusion of `marine` habitats (except when a **terrestrial or freshwater term** is mentioned) and some other terms which were detected to bring irrelevant results. This string is the same as the action approach.
 
 ```py
 TS=
@@ -954,7 +959,6 @@ NOT
 TS=(("marine" OR "ocean$" OR "seafloor" OR "coral" OR "kelp forest$" OR "kelp-forest$" OR "random forest$" OR "IOT" OR "urban ecosystem") NOT ("terrestrial" OR "soil" OR "soils" OR "woodland$" OR "taiga" OR "jungle" OR "mangrove$" OR "peatland$" OR "bog$" OR "mire$" OR "fen$" OR "swamp*" OR "wetland$" OR "marsh*" OR "paludal" OR "farmland$" OR "agricultural land$" OR "cropland$" OR "pasture$" OR "rangeland$" OR "bush*" OR "shrub*" OR "meadow*" OR "savanna*" OR "plain$" OR "grassland$" OR "prairie$" OR "dryland$" OR "dry land" OR "desert*" OR "mountain*" OR "highland$" OR "alpine*" OR ("fell$" NEAR/15 "Lapland") OR "tundra" OR "freshwater" OR "limnic" OR "inland fish*" OR "lake*" OR "pond$" OR "river*" OR "stream$" OR "brook$" OR "creek$"))
 ```
 
-
 ### Target 15.9
 
 > **15.9 By 2020, integrate ecosystem and biodiversity values into national and local planning, development processes, poverty reduction strategies and accounts**
@@ -963,15 +967,15 @@ TS=(("marine" OR "ocean$" OR "seafloor" OR "coral" OR "kelp forest$" OR "kelp-fo
 > Strategic Plan for Biodiversity 2011–2020 in their national biodiversity strategy and action plans and the progress reported towards these targets;
 > and (b) integration of biodiversity into national accounting and reporting systems, defined as implementation of the System of Environmental-Economic Accountings
 
-This target is interpreted to cover research about national or local strategies/accounting/reporting and ecosystem values, conserving biodiversity, or the CBD Aichi Biodiversity Target 2 (CBD webpages; <a id="aichi">[CBD, Sep 2020](#f12)</a>). This covers research about national plans in context of *Aichi biodiversity targets* and *System of Environmental-Economic Accounting* which are mentioned in the SDG metadata for indicator 15.9.1 (<a id="SDGmetarep">[UN Statistics Division 2022](#f3)</a>; https://unstats.un.org/sdgs/metadata/files/Metadata-15-09-01.pdf). Biodiversity and ecosystem values are interpreted to be about protecting and conserving biodiversity and ecosystems. Even though the target specifies development processes and poverty reduction, `strategies` and `plans` in the phrases are not limited to just these. 
+This target is interpreted to cover research about national or local strategies/accounting/reporting and ecosystem values, conserving biodiversity, or the CBD Aichi Biodiversity Target 2 (CBD webpages; <a id="aichi">[CBD, Sep 2020](#f12)</a>). This covers research about national plans in context of _Aichi biodiversity targets_ and _System of Environmental-Economic Accounting_ which are mentioned in the SDG metadata for indicator 15.9.1 (<a id="SDGmetarep">[UN Statistics Division 2022](#f3)</a>; https://unstats.un.org/sdgs/metadata/files/Metadata-15-09-01.pdf). Biodiversity and ecosystem values are interpreted to be about protecting and conserving biodiversity and ecosystems. Even though the target specifies development processes and poverty reduction, `strategies` and `plans` in the phrases are not limited to just these.
 
-Articles about ecosystem and biodiversity values in national planning were assumed to be related to promoting the implementation of these. Hence, no action terms (such as promote, enable, etc.) were combined with the action approach version of this phrase. This phrase is identical to the action approach phrase. 
+Articles about ecosystem and biodiversity values in national planning were assumed to be related to promoting the implementation of these. Hence, no action terms (such as promote, enable, etc.) were combined with the action approach version of this phrase. This phrase is identical to the action approach phrase.
 
-This query consists of 1 phrase. It is limited by the exclusion of `marine` habitats (except when a **terrestrial or freshwater term** is mentioned) and some other terms which were detected to bring irrelevant results. 
+This query consists of 1 phrase. It is limited by the exclusion of `marine` habitats (except when a **terrestrial or freshwater term** is mentioned) and some other terms which were detected to bring irrelevant results.
 
 #### Phrase 1
 
-The elements of this phrase are *Aichi/biodiversity values + conservation + ecosystem/biodiversity + national targets/strategies*. It is limited by the exclusion of `marine` habitats (except when a **terrestrial or freshwater term** is mentioned) and some other terms which were detected to bring irrelevant results, e.g. `public health` `epidemiology` `national health` `healthcare` `health effects` `archaeology` `architecture*`. A set of medical terms about human microbiome and diseases was also added to exclude noise found in some cases when `diversity` is combined with `biological` etc. These were picked from a set of irrelevant papers found when testing the phrases and are not chosen systematically. It is possible that terms like `parasite` `infection` or `immunology` will exclude also relevant results.
+The elements of this phrase are _Aichi/biodiversity values + conservation + ecosystem/biodiversity + national targets/strategies_. It is limited by the exclusion of `marine` habitats (except when a **terrestrial or freshwater term** is mentioned) and some other terms which were detected to bring irrelevant results, e.g. `public health` `epidemiology` `national health` `healthcare` `health effects` `archaeology` `architecture*`. A set of medical terms about human microbiome and diseases was also added to exclude noise found in some cases when `diversity` is combined with `biological` etc. These were picked from a set of irrelevant papers found when testing the phrases and are not chosen systematically. It is possible that terms like `parasite` `infection` or `immunology` will exclude also relevant results.
 
 While testing the phrase it was noticed that the term `environment` will bring a lot noise due to its use on various fields (business environment, cultural environment, learning environment, etc.). To exclude these, `environment` was combined with a string of species & habitat terms.
 
@@ -1026,15 +1030,15 @@ TS=(("marine" OR "ocean$" OR "seafloor" OR "coral" OR "kelp forest$" OR "kelp-fo
 >
 > 15.a.1 (a) Official development assistance on conservation and sustainable use of biodiversity; and (b) revenue generated and finance mobilized from biodiversity-relevant economic instruments
 
-This target is interpreted to cover research about financing the conservation and sustainable use of biodiversity and ecosystems. Financial resources include development assistance and finance mobilized from economic instruments, including incentives mentioned in the SDG metadata for indicator 15.a.1  (<a id="SDGmetarep">[UN Statistics Division 2022](#f3)</a>; https://unstats.un.org/sdgs/metadata/files/Metadata-15-0a-01.pdf) and financial instruments or capacity building initiatives mentioned in the HLPF Background note for SDG 15 (<a>[UN-DESA/DSDG et al. 2018](#f4)</a>).
+This target is interpreted to cover research about financing the conservation and sustainable use of biodiversity and ecosystems. Financial resources include development assistance and finance mobilized from economic instruments, including incentives mentioned in the SDG metadata for indicator 15.a.1 (<a id="SDGmetarep">[UN Statistics Division 2022](#f3)</a>; https://unstats.un.org/sdgs/metadata/files/Metadata-15-0a-01.pdf) and financial instruments or capacity building initiatives mentioned in the HLPF Background note for SDG 15 (<a>[UN-DESA/DSDG et al. 2018](#f4)</a>).
 
-We assume that all research about financial resources for conserving and sustainable use of biodiversity and ecosystem is relatively action-oriented. Hence, no additional action terms (such as increase, enhance, etc.) were combined with this query and thus this topic version is the same as the action version. 
+We assume that all research about financial resources for conserving and sustainable use of biodiversity and ecosystem is relatively action-oriented. Hence, no additional action terms (such as increase, enhance, etc.) were combined with this query and thus this topic version is the same as the action version.
 
 This query consists of 1 phrase. It is limited by the exclusion of `marine` habitats (except when a **terrestrial or freshwater term** is mentioned) and some other terms which were detected to bring irrelevant results.
 
 #### Phrase 1
 
-The elements of this phrase are *protection/sustainable use + ecosystem/biodiversity + financing/instruments*. The phrase is limited by the exclusion of `marine` habitats (except when a **terrestrial or freshwater term** is mentioned) and some other terms which were detected to bring irrelevant results. A set of medical terms about human microbiome and diseases was also added to exclude noise found in some cases when `diversity` is combined with `species` etc. These were picked from a set of irrelevant papers found when testing the phrases and are not chosen systematically. It is possible that terms like `parasite` `infection` or `immunology` will exclude also relevant results.
+The elements of this phrase are _protection/sustainable use + ecosystem/biodiversity + financing/instruments_. The phrase is limited by the exclusion of `marine` habitats (except when a **terrestrial or freshwater term** is mentioned) and some other terms which were detected to bring irrelevant results. A set of medical terms about human microbiome and diseases was also added to exclude noise found in some cases when `diversity` is combined with `species` etc. These were picked from a set of irrelevant papers found when testing the phrases and are not chosen systematically. It is possible that terms like `parasite` `infection` or `immunology` will exclude also relevant results.
 
 As the use of term `ecosystem` by others than natural sciences brings irrelevant results, it was combined with a string of species and habitat terms. Terms `community` `area` and `zone` were left out from the phrase in order to exclude irrelevant results.
 
@@ -1093,7 +1097,7 @@ This query consists of 2 phrases. Terrestrial and freshwater terms are **not** c
 
 #### Phrase 1
 
-This phrase aims to find research about financing and incentives for sustainable forest management. The elements of the phrase are *financing/incentives/instruments + sustainable use/practises/strategies/goals + forests*. Part of the phrase (aiming for sustainable forest management) is similar to the 15.2 phrase 1, but the specified management practises are left out of the phrase to exclude results which might be less about sustainability and more about forestry as a business. 
+This phrase aims to find research about financing and incentives for sustainable forest management. The elements of the phrase are _financing/incentives/instruments + sustainable use/practises/strategies/goals + forests_. Part of the phrase (aiming for sustainable forest management) is similar to the 15.2 phrase 1, but the specified management practises are left out of the phrase to exclude results which might be less about sustainability and more about forestry as a business.
 
 ```py
 TS=
@@ -1137,7 +1141,7 @@ TS=
 
 #### Phrase 2
 
-This phrase aims to find research about incentives to developing countries for reforestation and conservation of forests. The elements of the phrase are *financing/incentives/instruments + reforestation/conservation + forests + developing countries*.
+This phrase aims to find research about incentives to developing countries for reforestation and conservation of forests. The elements of the phrase are _financing/incentives/instruments + reforestation/conservation + forests + developing countries_.
 
 Terms `planting trees` and `tree plantations` are added to this string, but not used in the strings of 15.2. In the context of this phrase these terms are likely to return relevant results. Whereas in the strings of 15.2 without the connection to incentives, they might bring noise.
 
@@ -1202,9 +1206,9 @@ This query consists of 2 phrases. Both phrases are limited by the exclusion of `
 
 #### Phrase 1
 
-The elements of the phrase are *action/capacity building/instruments + poaching/trafficking + protected species*. The phrase is limited by the exclusion of `marine` habitats (except when a **terrestrial or freshwater term** is mentioned) and some other terms which were detected to bring irrelevant results.
+The elements of the phrase are _action/capacity building/instruments + poaching/trafficking + protected species_. The phrase is limited by the exclusion of `marine` habitats (except when a **terrestrial or freshwater term** is mentioned) and some other terms which were detected to bring irrelevant results.
 
-This phrase is similar to target 15.7 phrase 1, but is focused on finding research about the support and capacity building (including financing) to fight against poaching and trafficking of protected species. As in target 15.7, the combination of `trafficking` and `animal` return some irrelevant results about animal physiology (receptor trafficking, etc.). These are hard to exclude without losing relevant results. 
+This phrase is similar to target 15.7 phrase 1, but is focused on finding research about the support and capacity building (including financing) to fight against poaching and trafficking of protected species. As in target 15.7, the combination of `trafficking` and `animal` return some irrelevant results about animal physiology (receptor trafficking, etc.). These are hard to exclude without losing relevant results.
 
 ```py
 TS=
@@ -1242,7 +1246,7 @@ TS=(("marine" OR "ocean$" OR "seafloor" OR "coral" OR "kelp forest$" OR "kelp-fo
 
 This phrase aims to find research about poaching and trafficking of protected species in relation to sustainable livelihood opportunities of the local communities. `CITES` is added as an alternative to poaching or trafficking of protected species because often the implications to the local communities follow from the application of CITES decisions (<a id="cites">[CITES & General Secretariat of the Organization of American States, 2015](#f14)</a>).
 
-The elements of the phrase are *CITES/poaching/trafficking + protected species + livelihood of local communities*. In order to specify to the terrestrial and freshwater species, the phrase is combined with **Terrestrial and freshwater terms** with `AND`.
+The elements of the phrase are _CITES/poaching/trafficking + protected species + livelihood of local communities_. In order to specify to the terrestrial and freshwater species, the phrase is combined with **Terrestrial and freshwater terms** with `AND`.
 
 ```py
 TS=
@@ -1319,46 +1323,46 @@ NOT
 
 ## 5. Contributions
 
-* v1.0.0: Leena Byholm (Dec 2021-Sep 2022)
+- v1.0.0: Leena Byholm (Dec 2021-Sep 2022)
 
-* Internal review: Caroline S. Armitage (May 2022, minor review Oct 2022)
+- Internal review: Caroline S. Armitage (May 2022, minor review Oct 2022)
 
 Specialist input: Awaiting
 
 ## 6. Footnotes
 
-<a id="f10"></a> CBD (n.d.). *Access and Benefit-Sharing (ABS)* [Factsheet]. https://www.cbd.int/abs/doc/protocol/factsheets/abs-en.pdf (Accessed 15 Aug. 2022). [↩](#abs)
+<a id="f10"></a> CBD (n.d.). _Access and Benefit-Sharing (ABS)_ [Factsheet]. https://www.cbd.int/abs/doc/protocol/factsheets/abs-en.pdf (Accessed 15 Aug. 2022). [↩](#abs)
 
-<a id="f12"></a> CBD (edited Sep 2020). *Aichi Biodiversity Targets*. https://www.cbd.int/sp/targets/ (Accessed 15 Aug. 2022). [↩](#aichi)
+<a id="f12"></a> CBD (edited Sep 2020). _Aichi Biodiversity Targets_. https://www.cbd.int/sp/targets/ (Accessed 15 Aug. 2022). [↩](#aichi)
 
-<a id="f11"></a> CBD (edited May 2021). *What are Invasive Alien Species?*. https://www.cbd.int/idb/2009/about/what/ (Accessed 15 Aug. 2022). [↩](#aliens)
+<a id="f11"></a> CBD (edited May 2021). _What are Invasive Alien Species?_. https://www.cbd.int/idb/2009/about/what/ (Accessed 15 Aug. 2022). [↩](#aliens)
 
-<a id="f8"></a> CBD (edited Jun 2022). *Dry and Sub-humid Lands Biodiversity*. https://www.cbd.int/drylands/  (Accessed 15 Aug. 2022). [↩](#drylands)
+<a id="f8"></a> CBD (edited Jun 2022). _Dry and Sub-humid Lands Biodiversity_. https://www.cbd.int/drylands/ (Accessed 15 Aug. 2022). [↩](#drylands)
 
-<a id="f9"></a> CBD (edited Aug 2022). *The Nagoya Protocol on Access and Benefit-sharing*. https://www.cbd.int/abs/ (Accessed 15 Aug. 2022). [↩](#nagoya)
+<a id="f9"></a> CBD (edited Aug 2022). _The Nagoya Protocol on Access and Benefit-sharing_. https://www.cbd.int/abs/ (Accessed 15 Aug. 2022). [↩](#nagoya)
 
-<a id="f14"></a> CITES & General Secretariat of the Organization of American States (2015). *Handbook on CITES and livelihoods: Part II Addressing and mitigating the effects of the application of CITES decisions on livelihoods in poor rural communities*. United Nations. https://cites.org/sites/default/files/eng/prog/Livelihoods/Guia_PART2_CITES_ENG_FINAL.pdf. [↩](#cites)
+<a id="f14"></a> CITES & General Secretariat of the Organization of American States (2015). _Handbook on CITES and livelihoods: Part II Addressing and mitigating the effects of the application of CITES decisions on livelihoods in poor rural communities_. United Nations. https://cites.org/sites/default/files/eng/prog/Livelihoods/Guia_PART2_CITES_ENG_FINAL.pdf. [↩](#cites)
 
-<a id="f15"></a> FAO (n.d.). *AGROVOC Multilingual Thesaurus*. United Nations. https://agrovoc.fao.org/browse/agrovoc/en/page/c_16129  (Accessed 15 Aug. 2022). [↩](#agrovoc)
+<a id="f15"></a> FAO (n.d.). _AGROVOC Multilingual Thesaurus_. United Nations. https://agrovoc.fao.org/browse/agrovoc/en/page/c_16129 (Accessed 15 Aug. 2022). [↩](#agrovoc)
 
-<a id="f5"></a> UN DESA (n.d.a). *Topics: Forests*. United Nations. https://sdgs.un.org/topics/forests (Accessed 15 Aug. 2022). [↩](#forests)
+<a id="f5"></a> UN DESA (n.d.a). _Topics: Forests_. United Nations. https://sdgs.un.org/topics/forests (Accessed 15 Aug. 2022). [↩](#forests)
 
-<a id="f6"></a> UN DESA (n.d.b). *Topics: Desertification, land degradation and drought*. United Nations. https://sdgs.un.org/topics/desertification-land-degradation-and-drought (Accessed 15 Aug. 2022). [↩](#desertification)
+<a id="f6"></a> UN DESA (n.d.b). _Topics: Desertification, land degradation and drought_. United Nations. https://sdgs.un.org/topics/desertification-land-degradation-and-drought (Accessed 15 Aug. 2022). [↩](#desertification)
 
-<a id="f5"></a> UN DESA (n.d.c). *Topics: Mountains*. United Nations. https://sdgs.un.org/topics/mountains (Accessed 15. Aug. 2022). [↩](#mountains)
+<a id="f5"></a> UN DESA (n.d.c). _Topics: Mountains_. United Nations. https://sdgs.un.org/topics/mountains (Accessed 15. Aug. 2022). [↩](#mountains)
 
-<a id="f4"></a> UN DESA/DSDG et al. (2018). *2018 HLPF Review of SDGs implementation: SDG 15 - Protect, restore and promote sustainable use of terrestrial ecosystems, sustainably manage forests, combat deforestation and halt and reverse land degradation and biodiversity loss*. United Nations, Expert Group Meeting on Sustainable Development Goal 15: Progress and Prospects, New York. https://sdgs.un.org/sites/default/files/documents/196552018backgroundnotesSDG15.pdf
+<a id="f4"></a> UN DESA/DSDG et al. (2018). _2018 HLPF Review of SDGs implementation: SDG 15 - Protect, restore and promote sustainable use of terrestrial ecosystems, sustainably manage forests, combat deforestation and halt and reverse land degradation and biodiversity loss_. United Nations, Expert Group Meeting on Sustainable Development Goal 15: Progress and Prospects, New York. https://sdgs.un.org/sites/default/files/documents/196552018backgroundnotesSDG15.pdf
 
-<a id="f13"></a> UNODC (2020). *World Wildlife Crime Report 2020: Trafficking in Protected Species*. United Nations. https://www.unodc.org/documents/data-and-analysis/wildlife/2020/World_Wildlife_Report_2020_9July.pdf. [↩](#wwc)
+<a id="f13"></a> UNODC (2020). _World Wildlife Crime Report 2020: Trafficking in Protected Species_. United Nations. https://www.unodc.org/documents/data-and-analysis/wildlife/2020/World_Wildlife_Report_2020_9July.pdf. [↩](#wwc)
 
 <a id="f17"></a> UN Statistics Division (2020). SDG 15 Life on land. https://unstats.un.org/sdgs/report/2020/goal-15/. [↩](#Life2020)
 
-<a id="f1"></a> UN Statistics Division. (2021). *Global indicator framework for the Sustainable Development Goals and targets of the 2030 Agenda for Sustainable Development*. A/RES/71/313, E/CN.3/2018/2, E/CN.3/2019/2, E/CN.3/2020/2, E/CN.3/2021/2. Department of Economic and Social Affairs, United Nations. https://unstats.un.org/sdgs/indicators/Global%20Indicator%20Framework%20after%202021%20refinement_Eng.pdf [accessed 8 August 2021] [↩](#SDGT+Is)
+<a id="f1"></a> UN Statistics Division. (2021). _Global indicator framework for the Sustainable Development Goals and targets of the 2030 Agenda for Sustainable Development_. A/RES/71/313, E/CN.3/2018/2, E/CN.3/2019/2, E/CN.3/2020/2, E/CN.3/2021/2. Department of Economic and Social Affairs, United Nations. https://unstats.un.org/sdgs/indicators/Global%20Indicator%20Framework%20after%202021%20refinement_Eng.pdf [accessed 8 August 2021] [↩](#SDGT+Is)
 
 <a id="f18"></a> UN Statistics Division (2021). SDG 15 Life on land. https://unstats.un.org/sdgs/report/2021/goal-15/. [↩](#Life2021)
 
 <a id="f3"></a> UN Statistics Division (2022). SDG Indicators Metadata Repository. https://unstats.un.org/sdgs/metadata
 
-<a id="f2"></a> United Nations. (2016, 2017, 2018, 2019, 2020, 2021). *World Economic Situation and Prospects; Statistical Annex*. https://www.un.org/development/desa/dpad/document_gem/global-economic-monitoring-unit/world-economic-situation-and-prospects-wesp-report/ [↩](#UNLDCs)
+<a id="f2"></a> United Nations. (2016, 2017, 2018, 2019, 2020, 2021). _World Economic Situation and Prospects; Statistical Annex_. https://www.un.org/development/desa/dpad/document_gem/global-economic-monitoring-unit/world-economic-situation-and-prospects-wesp-report/ [↩](#UNLDCs)
 
-<a id="f16"></a> Päivinen, Risto; Petrokofsky, Gillian; Käär, Liisa; Harvey, William; Petrokofsky, Leo; Puttonen, Pasi; Kangas, Jyrki; Mikkola, Eero; Byholm Leena (2021) *International Status of Finnish Forest Research*. Tapio research. [Unpublished report] [↩](#stateforest)
+<a id="f16"></a> Päivinen, Risto; Petrokofsky, Gillian; Käär, Liisa; Harvey, William; Petrokofsky, Leo; Puttonen, Pasi; Kangas, Jyrki; Mikkola, Eero; Byholm Leena (2021) _International Status of Finnish Forest Research_. Tapio research. [Unpublished report] [↩](#stateforest)

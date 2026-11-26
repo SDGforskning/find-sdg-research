@@ -1,11 +1,13 @@
-import * as React from 'react'
-const SvgBaerekraftsforskningTwoLineNor = props => (
+import * as React from "react";
+
+const SvgBaerekraftsforskningTwoLineNor = (props) => (
   <svg
     id="baerekraftsforskning_two_line_nor_svg__Layer_2"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 686 155"
     {...props}
   >
+    <title>Finn bærekraftsforskning</title>
     <defs />
     <g id="baerekraftsforskning_two_line_nor_svg__Layer_1-2">
       <g
@@ -72,103 +74,103 @@ const SvgBaerekraftsforskningTwoLineNor = props => (
         <path
           d="m615.85,111.5l-5.33,28.57s10.17,2.42,20.64,0l-5.47-28.57s-5,.48-9.84,0Z"
           style={{
-            fill: '#fd6925'
+            fill: "#fd6925",
           }}
         />
         <path
           d="m629.69,110.44l5.4,28.55s10.35-1.43,19.23-7.49l-15.46-24.64s-4.49,2.27-9.17,3.57Z"
           style={{
-            fill: '#a21942'
+            fill: "#a21942",
           }}
         />
         <path
           d="m642,104.73l15.38,24.65s9.13-5.09,15.21-13.95l-23.34-17.36s-3.36,3.74-7.26,6.65Z"
           style={{
-            fill: '#fcc30b'
+            fill: "#fcc30b",
           }}
         />
         <path
           d="m651.5,95.16l23.45,17.17s6.58-8.12,8.93-18.6l-28.12-7.43s-1.73,4.72-4.26,8.87Z"
           style={{
-            fill: '#26bde2'
+            fill: "#26bde2",
           }}
         />
         <path
           d="m656.55,82.22l28.08,7.49s3.19-9.95,1.58-20.58l-28.9,3.27s.1,5.02-.75,9.81Z"
           style={{
-            fill: '#ff3a21'
+            fill: "#ff3a21",
           }}
         />
         <path
           d="m656.72,68.65l28.88-3.19s-.63-10.43-5.99-19.75l-25.75,13.52s1.91,4.65,2.86,9.42Z"
           style={{
-            fill: '#c5192d'
+            fill: "#c5192d",
           }}
         />
         <path
           d="m652.99,56.01l25.99-13s-4.21-9.57-12.46-16.45l-19.47,21.61s3.41,3.69,5.94,7.85Z"
           style={{
-            fill: '#4c9f38'
+            fill: "#4c9f38",
           }}
         />
         <path
           d="m643.97,45.65l19.26-21.76s-7.48-7.3-17.7-10.61l-10,27.31s4.54,2.16,8.44,5.06Z"
           style={{
-            fill: '#dda63a'
+            fill: "#dda63a",
           }}
         />
         <path
           d="m631.99,39.71l10.04-27.27s-9.62-4.09-20.35-3.46l.6,29.08s5.01.36,9.7,1.65Z"
           style={{
-            fill: '#e5243b'
+            fill: "#e5243b",
           }}
         />
         <path
           d="m618.48,37.92l-.54-29.05s-10.45-.32-20.22,4.16l11.12,26.88s4.8-1.48,9.64-1.98Z"
           style={{
-            fill: '#19486a'
+            fill: "#19486a",
           }}
         />
         <path
           d="m605.08,41.24l-10.98-26.9s-9.86,3.47-17.36,11.17l20.06,21.06s3.94-3.11,8.28-5.33Z"
           style={{
-            fill: '#00689d'
+            fill: "#00689d",
           }}
         />
         <path
           d="m594.16,49.3l-19.98-21.1s-7.93,6.8-12.13,16.7l26.33,12.36s2.55-4.33,5.79-7.96Z"
           style={{
-            fill: '#56c02b'
+            fill: "#56c02b",
           }}
         />
         <path
           d="m586.95,59.99l-25.64-13.68s-5.37,8.97-6.21,19.68l28.89,3.38s1.04-4.92,2.96-9.39Z"
           style={{
-            fill: '#0a97d9'
+            fill: "#0a97d9",
           }}
         />
         <path
           d="m583.69,73.17l-28.85-3.46s-1.76,10.3,1.34,20.6l28.15-7.31s-.81-4.96-.64-9.82Z"
           style={{
-            fill: '#3f7e44'
+            fill: "#3f7e44",
           }}
         />
         <path
           d="m585.2,86.56l-28.07,7.52s2.2,10.22,8.9,18.62l23.41-17.26s-2.59-4.3-4.25-8.88Z"
           style={{
-            fill: '#bf8b2e'
+            fill: "#bf8b2e",
           }}
         />
         <path
           d="m592.12,98.6l-23.43,17.19s5.76,8.72,15.05,14.12l15.56-24.57s-3.98-3.07-7.18-6.73Z"
           style={{
-            fill: '#fd9d24'
+            fill: "#fd9d24",
           }}
         />
         <path
           d="m602.59,107.24l-15.61,24.51s8.53,6.04,19.15,7.71l5.59-28.54s-4.82-1.42-9.13-3.68Z"
           style={{
-            fill: '#dd1367'
+            fill: "#dd1367",
           }}
         />
       </g>
@@ -177,13 +179,13 @@ const SvgBaerekraftsforskningTwoLineNor = props => (
         x2={509.67}
         y2={150}
         style={{
-          fill: 'currentcolor',
-          stroke: 'currentcolor',
+          fill: "currentcolor",
+          stroke: "currentcolor",
           strokeMiterlimit: 10,
-          strokeWidth: '.75px'
+          strokeWidth: ".75px",
         }}
       />
     </g>
   </svg>
-)
-export default SvgBaerekraftsforskningTwoLineNor
+);
+export default SvgBaerekraftsforskningTwoLineNor;
