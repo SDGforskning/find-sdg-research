@@ -1,6 +1,6 @@
 ---
-title: Formidlingspakke
----
+
+## title: Formidlingspakke
 
 På denne siden finner du tekster og bilder som kan brukes til å markedsføre baerekraftsforskning.no, for eksempel i en epost eller nyhetssak, i sosiale medier, eller på et fysisk sted som et bibliotek.
 
@@ -9,6 +9,7 @@ Det meste er tilgjengelig i både en norsk og en engelsk variant.
 Brukere står fritt til å bruke dette som inspirasjon til å skrive egne versjoner, eller til å nevne baerekraftsforskning.no i sammenheng med arrangementer eller initiativer i egen organisasjon, under forutsetning av at det ikke fremstår som bærekraftsforskning.no/Finn Bærekraftsforskning står bak eller har gitt sin tilslutning til disse variantene.
 
 ## Tekstsnutter og innlegg til sosiale medier
+
 - [Kortere og lengre tekster om tjenesten (last ned ODT-fil)](https://github.com/SDGforskning/communication-materials/raw/main/information-short-articles.odt) - til bruk i nyhetssaker, på nettsider og blogger (inkluderer bilder og lenker, engelsk og norsk)
 - [Innlegg til sosiale medier (last ned ODT-fil)](https://github.com/SDGforskning/communication-materials/raw/main/social-media-days.odt) - disse inneholder generiske innlegg om tjenesten og innlegg knyttet til spesielle dager i FNs kalender (inkluderer bilder og lenker, engelsk og norsk)
 

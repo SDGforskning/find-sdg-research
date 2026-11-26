@@ -1,25 +1,42 @@
-import { Search } from '@/components/search';
-import { DynamicLink } from 'fumadocs-core/dynamic-link';
+import { DynamicLink } from "fumadocs-core/dynamic-link";
+import type { Metadata } from "next";
+import { Search } from "@/components/search";
 
-export default async function SokPage({ params }: PageProps<'/[lang]/sok'>) {
+export async function generateMetadata(
+  props: PageProps<"/[lang]/sok">,
+): Promise<Metadata> {
+  const { lang } = await props.params;
+  const isEnglish = lang === "en";
+
+  return {
+    title: isEnglish ? "Search" : "Søk",
+    description: isEnglish
+      ? "Find publications from Norway related to the Sustainable Development Goals."
+      : "Søk etter forskning fra Norge knyttet til bærekraftsmålene.",
+  };
+}
+
+export default async function SokPage({ params }: PageProps<"/[lang]/sok">) {
   const { lang } = await params;
-  const isEnglish = lang === 'en';
+  const isEnglish = lang === "en";
 
   return (
     <main className="mx-auto w-full max-w-7xl px-4 py-8 md:py-10">
-      <h1 className="mb-4 text-3xl font-bold">{isEnglish ? 'Search' : 'Søk'}</h1>
+      <h1 className="mb-4 text-3xl font-bold">
+        {isEnglish ? "Search" : "Søk"}
+      </h1>
 
       <p className="mb-4 text-base leading-7">
         {isEnglish
-          ? 'Find publications from Norway related to the Sustainable Development Goals. We currently cover works published from 2015 to 2024, with partial coverage of 2025.'
+          ? "Find publications from Norway related to the Sustainable Development Goals. We currently cover works published from 2015 to 2024, with partial coverage of 2025."
           : 'Søk etter forskning fra Norge knyttet til bærekraftsmålene (også kjent som "SDGs"). Tjenesten dekker arbeider publisert fra 2015 til 2024. Noen publikasjoner fra 2025 er også med, disse vil bli supplert.'}
       </p>
 
       <ul className="mb-4 list-disc space-y-2 pl-6 text-base leading-7">
         <li>
           {isEnglish
-            ? 'Search using English or Norwegian terms - but search terms are not translated, so search in both languages to get more results.'
-            : 'Du kan søke med engelske og/eller norske ord - men søkeordene blir ikke oversatt, så bruk begge språk for å få flest mulig resultater.'}
+            ? "Search using English or Norwegian terms - but search terms are not translated, so search in both languages to get more results."
+            : "Du kan søke med engelske og/eller norske ord - men søkeordene blir ikke oversatt, så bruk begge språk for å få flest mulig resultater."}
         </li>
         <li>
           {isEnglish
@@ -29,17 +46,22 @@ export default async function SokPage({ params }: PageProps<'/[lang]/sok'>) {
       </ul>
 
       <p className="mb-8 text-base leading-7">
-        {isEnglish ? 'If you need help, take a look at ' : 'Om du trenger hjelp, sjekk '}
+        {isEnglish
+          ? "If you need help, take a look at "
+          : "Om du trenger hjelp, sjekk "}
         <DynamicLink className="underline" href="/[lang]/hjelp/sokehjelp">
-          {isEnglish ? 'Search tips' : 'Søkeveiledning'}
+          {isEnglish ? "Search tips" : "Søkeveiledning"}
         </DynamicLink>
-        ,{' '}
-        <DynamicLink className="underline" href="/[lang]/hjelp/ofte-stilte-sporsmal">
-          {isEnglish ? 'FAQ' : 'Ofte stilte spørsmål'}
+        ,{" "}
+        <DynamicLink
+          className="underline"
+          href="/[lang]/hjelp/ofte-stilte-sporsmal"
+        >
+          {isEnglish ? "FAQ" : "Ofte stilte spørsmål"}
         </DynamicLink>
-        , {isEnglish ? 'or ' : 'eller '}
+        , {isEnglish ? "or " : "eller "}
         <DynamicLink className="underline" href="/[lang]/om/om-tjenesten">
-          {isEnglish ? 'About this service' : 'Om tjenesten'}
+          {isEnglish ? "About this service" : "Om tjenesten"}
         </DynamicLink>
         .
       </p>

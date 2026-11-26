@@ -27,5 +27,5 @@ export function OptionTable({ options }: { options: [string, string, any] }) {
         </tbody>
       </table>
     </div>
-  )
+  );
 }

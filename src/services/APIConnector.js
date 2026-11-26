@@ -1,5 +1,5 @@
 class APIConnector {
-  constructor() { }
+  constructor() {}
 
   onResultClick() {
     // optional. Called when a result has been clicked
@@ -12,12 +12,12 @@ class APIConnector {
     const response = await fetch("/api/es/search", {
       method: "POST",
       headers: {
-        "Content-Type": "application/json"
+        "Content-Type": "application/json",
       },
       body: JSON.stringify({
         requestState,
-        queryConfig
-      })
+        queryConfig,
+      }),
     });
     return response.json();
   }
@@ -26,12 +26,12 @@ class APIConnector {
     const response = await fetch("/api/es/autocomplete", {
       method: "POST",
       headers: {
-        "Content-Type": "application/json"
+        "Content-Type": "application/json",
       },
       body: JSON.stringify({
         requestState,
-        queryConfig
-      })
+        queryConfig,
+      }),
     });
     return response.json();
   }

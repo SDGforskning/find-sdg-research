@@ -1,6 +1,6 @@
 ---
-title: Search query for SDG 4 - Quality Education, Bergen action-approach.
----
+
+## title: Search query for SDG 4 - Quality Education, Bergen action-approach.
 
 Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all.
 
@@ -38,15 +38,15 @@ Our classification of countries as least developed countries (LDCs), small islan
 
 This target is interpreted to cover research about
 
-* Increasing completion of primary and secondary education			
-* Ensuring access to quality primary and secondary education that is free and equitable			
-* Achieving minimal proficiency in reading and mathematics			
+- Increasing completion of primary and secondary education
+- Ensuring access to quality primary and secondary education that is free and equitable
+- Achieving minimal proficiency in reading and mathematics
 
 This query consists of 4 phrases. Phrase 1 and 2 are concerned with increasing completion and reducing dropout rates respectively. Phrase 3 is about ensuring access to free and equitable primary and secondary education, and phrase 4 about achieving minimal proficiency in reading and mathematics.
 
 #### Phrase 1
 
-The basic structure is *action + completion + school education*.
+The basic structure is _action + completion + school education_.
 
 In many medical and other studies that are not concerned with education as such, having completed a specific level of education is used as a parameter. To reduce the number of such studies, we have used many variants of the verb complete, but avoided "completed" and "complete*".
 
@@ -68,7 +68,7 @@ TS=
 
 #### Phrase 2
 
-The basic structure is *action + dropout + school education*.
+The basic structure is _action + dropout + school education_.
 
 In this phrase we reverse the concept of increasing school completion, and focus on reducing dropouts.
 
@@ -89,9 +89,10 @@ TS=
 ```
 #### Phrase 3
 
-The basic structure is *action + access + school + free/equitable/quality*.
+The basic structure is _action + access + school + free/equitable/quality_.
 
-"Quality education" is a broad term, and the short name of SDG 4.  As specified by UNESCO in its SDG Resources for Educators (<a id="unescoquality">[UNESCO, n.d.a](#f2)</a>):
+"Quality education" is a broad term, and the short name of SDG 4. As specified by UNESCO in its SDG Resources for Educators (<a id="unescoquality">[UNESCO, n.d.a](#f2)</a>):
+
 > "Quality education specifically entails issues such as appropriate skills development, gender parity, provision of relevant school infrastructure, equipment, educational materials and resources, scholarships or teaching force."
 
 These are all addressed in the subsequent targets, therefore "quality education" is not elaborated on further here.
@@ -117,7 +118,7 @@ TS=
 ```
 #### Phrase 4
 
-The basic structure is *action + level + skill + reading and mathematics*.
+The basic structure is _action + level + skill + reading and mathematics_.
 
 We considered including terms for primary and secondary education, but too many relevant hits were excluded, and we deem the delimitation unnecessary.
 
@@ -149,14 +150,14 @@ TS=
 
 This target is interpreted to cover research about
 
-* Ensuring access to institutionalized, early childhood education (and care)
-* Readiness for primary education
+- Ensuring access to institutionalized, early childhood education (and care)
+- Readiness for primary education
 
 This query consists of 2 phrases.
 
 #### Phrase 1
 
-The basic structure is *action + access + early care*.
+The basic structure is _action + access + early care_.
 
 The search term "care" is not used alone as it would give too many hits that are only indirectly relevant to readiness for and participation in organized learning. Variants of daycare were considered, but returned too many hits not considered relevant to the target. The basic structure is improve access / remove obstacles + early childhood education and care. Some agricultural terms which occur in combinations with "nurser*" had to be excluded with NOT.
 
@@ -182,7 +183,7 @@ TS= ("pig*" OR "plant*" OR "fish*")
 ```
 #### Phrase 2
 
-The basic structure is *school readiness // child development + school entry*.
+The basic structure is _school readiness // child development + school entry_.
 
 ```py
 TS=
@@ -209,7 +210,8 @@ TS=
 > 4.3.1 Participation rate of youth and adults in formal and non-formal education and training in the previous 12 months, by sex
 
 This target is interpreted to cover research about:
-* Equal access for all to technical, vocational and tertiary education, including universities
+
+- Equal access for all to technical, vocational and tertiary education, including universities
 
 We have interpreted the target widely, and included search terms to identify research on discrimination, barriers etc. that may prevent or hinder access. We have also included post-secondary education, a level between upper secondary and tertiary education which does not necessarily give access to tertiary education, and is often practically or vocationally, as opposed to theoretically or generally, oriented (according to UNESCO's International Standard Classification of Education (ISCED); <a id="isced">[UNESCO, 2012](#f3)</a>).
 
@@ -217,7 +219,7 @@ This query consists of 3 phrases. The first two phrases contain many of the same
 
 #### Phrase 1
 
-The basic structure is *action + access + higher education*
+The basic structure is _action + access + higher education_
 
 ```py
 TS=
@@ -253,7 +255,7 @@ TS=
 ```
 #### Phrase 2
 
-The basic structure is *action + equality + higher education*
+The basic structure is _action + equality + higher education_
 
 ```py
 TS=
@@ -303,14 +305,14 @@ TS= "inclusive higher education"
 
 This target is interpreted to cover research about
 
-* Increasing the number of youths and adults who have relevant skills for employment and entrepreneurship
-* Improvement of ICT skills and employability
+- Increasing the number of youths and adults who have relevant skills for employment and entrepreneurship
+- Improvement of ICT skills and employability
 
 This query consists of 4 phrases. The first two cover skills at an overriding level, the third core skills as defined by the UN International Labor Organisation, and the fourth ICT skills. In order to limit the search to research concerning opportunities for employment, and avoid articles about employees/employers and their (needs for) development in jobs and workplaces, only "employability" and "employment" are used alongside jobs and entrepreneurship. The term "work" is not included as it gives too much noise.
 
 #### Phrase 1
 
-The basic structure is *action + skills + employability/entrepreneurship*
+The basic structure is _action + skills + employability/entrepreneurship_
 
 ```py
 TS=
@@ -325,7 +327,7 @@ TS=
 ```
 #### Phrase 2
 
-This phrase finds research talking about skills, competencies etc. in relation to reducing unemployment. The basic structure is *action + unemployment + skills*
+This phrase finds research talking about skills, competencies etc. in relation to reducing unemployment. The basic structure is _action + unemployment + skills_
 
 ```py
 TS=
@@ -337,11 +339,11 @@ TS=
   )
   NEAR/5 ("skill$" OR "abilit*" OR "competenc*" OR "literac*" OR "literate")
  )
- ```
+```
 
 #### Phrase 3
 
-The basic structure is *core and transferable skills + employability*
+The basic structure is _core and transferable skills + employability_
 
 Types of skills included here are taken from an ILO publication on youth skills for employability (<a id="iloskills">[Brewer 2013](#f4)</a>). Employment is omitted as a search term here, as it leads to irrelevant results concerned with the use (="employment") of the skills.
 
@@ -365,7 +367,7 @@ TS=
 ```
 #### Phrase 4
 
-The basic structure is *action + ICT + skill + employability*.
+The basic structure is _action + ICT + skill + employability_.
 
 Some terms used in Phrase 1, like `"abilit*"` and `"entrepreneurship$"` are omitted here to reduce noise from research having to do with conditions within enterprises more generally, and not specifically with individuals' skills or employability
 
@@ -392,14 +394,15 @@ TS=
 > 4.5.1 Parity indices (female/male, rural/urban, bottom/top wealth quintile and others such as disability status, indigenous peoples and conflict-affected, as data become available) for all education indicators on this list that can be disaggregated
 
 This target is interpreted to cover research about
-* Reducing gender disparities in education
-* Securing access to education and vocational training for vulnerable persons, including persons with disabilities and indigenous peoples
+
+- Reducing gender disparities in education
+- Securing access to education and vocational training for vulnerable persons, including persons with disabilities and indigenous peoples
 
 This query consists of 3 phrases.
 
 #### Phrase 1
 
-The basic structure is *action + gender equality + education*
+The basic structure is _action + gender equality + education_
 
 ```py
 TS=
@@ -419,7 +422,7 @@ TS=
 
 #### Phrase 2
 
-In this phrase, the basic structure is similar to phrase 1, but reversed to search for reduction of disparity: *action + gender disparity + education*
+In this phrase, the basic structure is similar to phrase 1, but reversed to search for reduction of disparity: _action + gender disparity + education_
 
 ```py
 TS=
@@ -446,7 +449,7 @@ TS=
 
 #### Phrase 3
 
-The basic structure is *action + access + education + vulnerable groups*
+The basic structure is _action + access + education + vulnerable groups_
 
 "Vulnerable groups" are mentioned in several SDGs, but can be difficult to define for a search string - who is considered vulnerable may depend on the context and situation. To get a general outline of who is considered "vulnerable" we have consulted several UN sources on the topic (<a id="Blanchard">[Blanchard et al., 2017](#f5)</a>; <a id="UNOHC">[Office of the High Commissioner, n.d.](#f6)</a>; <a id="UNracism">[United Nations, n.d.](#f7)</a>). Most terms were taken from these, and adapted so that the terms work combined with terms relevant for SDG4. `rural` was not a term included in the UN documents and need not signify vulnerability, but we found works suggesting that it is a potential hindrance to accessing education, and was therefore included.
 
@@ -508,7 +511,7 @@ This query consists of 2 phrases.
 
 #### Phrase 1
 
-The first phrase finds research about improving skills. The basic structure is *action + level + skills*.
+The first phrase finds research about improving skills. The basic structure is _action + level + skills_.
 
 ```py
 TS=
@@ -527,7 +530,7 @@ TS=
 
 #### Phrase 2
 
-In the second phrase we reverse the question and search for research about decreasing illiteracy, innumeracy and analphabetism. The basic structure is *decrease + illiteracy*. 
+In the second phrase we reverse the question and search for research about decreasing illiteracy, innumeracy and analphabetism. The basic structure is _decrease + illiteracy_.
 
 ```py
 TS=
@@ -549,17 +552,17 @@ TS=
 
 This target is interpreted to cover research about
 
-* Frameworks for education for sustainable development (ESD) and global citizenship (GCED)
-* Education in and about sustainable development, sustainable lifestyles, human rights, gender equality, peace, non-violence, global citizenship and cultural diversity
-* Culture's contribution to sustainable development
+- Frameworks for education for sustainable development (ESD) and global citizenship (GCED)
+- Education in and about sustainable development, sustainable lifestyles, human rights, gender equality, peace, non-violence, global citizenship and cultural diversity
+- Culture's contribution to sustainable development
 
 This query consists of 3 phrases.
 
 #### Phrase 1
 
-The basic structure is *action + education + sustainability/GCED*.
+The basic structure is _action + education + sustainability/GCED_.
 
- <a id="unescogced">[UNESCO (n.d.b)](#f8)</a> was used as a source of terms. The search term `GCED` for Global Citizenship Education was tested, but only returned irrelevant hits from medical, mathematical and chemical research. After action terms, the phrase includes a wide range of terms concerning arenas and aspects of formalized education and learning, such as curriculum, teacher education etc. These are called frameworks in the interpretation above, but the term "framework" is not used in the search, as it leads to too much noise. As does "policy". The last part entails more and less detailed content of ESD and GCED.
+<a id="unescogced">[UNESCO (n.d.b)](#f8)</a> was used as a source of terms. The search term `GCED` for Global Citizenship Education was tested, but only returned irrelevant hits from medical, mathematical and chemical research. After action terms, the phrase includes a wide range of terms concerning arenas and aspects of formalized education and learning, such as curriculum, teacher education etc. These are called frameworks in the interpretation above, but the term "framework" is not used in the search, as it leads to too much noise. As does "policy". The last part entails more and less detailed content of ESD and GCED.
 
 ```py
 TS=
@@ -595,7 +598,7 @@ TS=
 
 #### Phrase 2
 
-The basic structure is *action + ESD*.
+The basic structure is _action + ESD_.
 
 The search phrase `ESD` for Education for Sustainable Development was tested, but used alone returned too many irrelevant hits from other research fields. This phrase contains variants of education for sustainable development (ESD).
 
@@ -612,7 +615,7 @@ TS=
 
 #### Phrase 3
 
-This phrase is related to searches in SDG 11 about cultural heritage, and likely to have some overlap, yet it is included here as culture's contribution to sustainable development is directly addressed in the target. The basic structure is *culture + contribution + sustainable development*.
+This phrase is related to searches in SDG 11 about cultural heritage, and likely to have some overlap, yet it is included here as culture's contribution to sustainable development is directly addressed in the target. The basic structure is _culture + contribution + sustainable development_.
 
 ```py
 TS=
@@ -625,7 +628,6 @@ TS=
 )
 ```
 
-
 ### Target 4.a
 
 > **4.a Build and upgrade education facilities that are child, disability and gender sensitive and provide safe, non-violent, inclusive and effective learning environments for all**
@@ -633,9 +635,10 @@ TS=
 > 4.a.1 Proportion of schools offering basic services, by type of service
 
 This target is interpreted to cover research about
-* Safe and inclusive education facilities
-* Effective learning environments in schools
-* Access to basic services such as electricity, internet, drinking water and sanitation facilities in schools
+
+- Safe and inclusive education facilities
+- Effective learning environments in schools
+- Access to basic services such as electricity, internet, drinking water and sanitation facilities in schools
 
 We understand the target to be concerned chiefly with facilities for primary and secondary education. We do not include higher education, education and learning taking place in other contexts such as hospitals, prisons, or workplaces, or virtual/online learning arenas.
 
@@ -643,7 +646,7 @@ This query consists of 3 phrases.
 
 #### Phrase 1
 
-This phrase finds research on ensuring safe and inclusive schools and education facilities. The basic structure is *action + school + safe and inclusive*.
+This phrase finds research on ensuring safe and inclusive schools and education facilities. The basic structure is _action + school + safe and inclusive_.
 
 ```py
 TS=
@@ -662,7 +665,7 @@ TS=
 
 #### Phrase 2
 
-This phrase focuses on effective learning environments in schools. The basic structure is *provide + effective learning environment + school*.
+This phrase focuses on effective learning environments in schools. The basic structure is _provide + effective learning environment + school_.
 
 ```py
 TS=
@@ -682,7 +685,7 @@ TS=
 
 #### Phrase 3
 
-This phrase focuses on improving access to basic services in schools. The basic structure is *action + access + basic services + schools*.
+This phrase focuses on improving access to basic services in schools. The basic structure is _action + access + basic services + schools_.
 
 The terms for basic services in schools are taken and adapted from <a id="unescotcg">[UNESCO Institute for statistics (2018)](#f11)</a>
 
@@ -716,7 +719,7 @@ This query consists of 1 phrase.
 
 #### Phrase 1
 
-The basic structure is *scholarships + student/education + developing countries/African countries*.
+The basic structure is _scholarships + student/education + developing countries/African countries_.
 
 There are no actions terms included, as there are so few results they are considered to be of potential interest even without action terms. Scholarships must be used in plural form, as it would otherwise also include "work done by scholars", which would confuse the logic of the search.
 
@@ -755,14 +758,15 @@ AND
 > 4.c.1 Proportion of teachers with the minimum required qualifications, by education level
 
 This target is interpreted to include research about
-* Increasing the number of qualified teachers and reducing teacher attrition / shortage
-* Increasing/improving teacher training in developing countries, including via international cooperation for teacher training
+
+- Increasing the number of qualified teachers and reducing teacher attrition / shortage
+- Increasing/improving teacher training in developing countries, including via international cooperation for teacher training
 
 This query consists of 3 phrases.
 
 #### Phrase 1
 
-The basic structure is *action + teachers/qualified teachers*.
+The basic structure is _action + teachers/qualified teachers_.
 
 This phrase finds research about increasing the number of qualified teachers.
 
@@ -780,7 +784,7 @@ TS=
 
 #### Phrase 2
 
-The basic structure is *action + unqualified teachers/teacher shortage*.
+The basic structure is _action + unqualified teachers/teacher shortage_.
 
 This phrase finds research about reducing teacher turnover, attrition and shortage
 
@@ -796,7 +800,7 @@ TS=
 #### Phrase 3
 
 This phrase finds research about improving teacher education in developing countries, including through international cooperation. As there are few hits, and they are hard to capture, we use a wide version of action terms in this string, not strictly limited to verbs.
-The basic structure is *action OR cooperation + teacher education + countries*.
+The basic structure is _action OR cooperation + teacher education + countries_.
 
 ```py
 TS=
@@ -834,31 +838,32 @@ TS=
 
 ## 4. Contributions
 
-* v1.0.0: Eli Heldaas Seland (Oct 2021-Oct 2022)
+- v1.0.0: Eli Heldaas Seland (Oct 2021-Oct 2022)
 
-* Internal reviews: Håkon Magne Bjerkan, Caroline S. Armitage (Jan 2022); Caroline S. Armitage, Marta Lorenz (March 2022)
+- Internal reviews: Håkon Magne Bjerkan, Caroline S. Armitage (Jan 2022); Caroline S. Armitage, Marta Lorenz (March 2022)
 
 Specialist input: Various academic staff from Western Norway University of Applied Sciences, including: A professor in Climate change, Sustainability and Education (Jan 2022); Workshops with 6 educational science academics (Feb 2022, Jun 2022).
 
 ## 5. Footnotes
-<a id="f5"></a> Blanchard et al. (2017). *Words into action guidelines: National Disaster Risk Assessment. Special Topics: K. Consideration of Marginalized and Minority Groups in a National Disaster Risk Assessment*. United Nations Office for Disaster Risk Reduction. https://www.undrr.org/publication/marginalized-and-minority-groups-consideration-ndra. [↩](#Blanchard)
 
-<a id="f4"></a> Brewer, L. (2013). *Enhancing youth employability: What? Why? and How? Guide to core work skills*. International Labour Office, Skills and Employability Department. https://www.ilo.org/wcmsp5/groups/public/@ed_emp/@ifp_skills/documents/publication/wcms_213452.pdf [↩](#iloskills)
+<a id="f5"></a> Blanchard et al. (2017). _Words into action guidelines: National Disaster Risk Assessment. Special Topics: K. Consideration of Marginalized and Minority Groups in a National Disaster Risk Assessment_. United Nations Office for Disaster Risk Reduction. https://www.undrr.org/publication/marginalized-and-minority-groups-consideration-ndra. [↩](#Blanchard)
 
-<a id="f6"></a> Office of the High Commissioner (n.d.) *Non-discrimination: Groups in vulnerable situations. Special Rapporteur on the right to health*. United Nations Human Rights. https://www.ohchr.org/en/special-procedures/sr-health/non-discrimination-groups-vulnerable-situations (accessed Jun 2022). [↩](#UNOHC)
+<a id="f4"></a> Brewer, L. (2013). _Enhancing youth employability: What? Why? and How? Guide to core work skills_. International Labour Office, Skills and Employability Department. https://www.ilo.org/wcmsp5/groups/public/@ed_emp/@ifp_skills/documents/publication/wcms_213452.pdf [↩](#iloskills)
 
-<a id="f9"></a> Pienaar, E., Grobler, L., Busgeeth, K., Eisinga, A. and Siegfried, N. (2011). *Developing a geographic search filter to identify randomised controlled trials in Africa: finding the optimal balance between sensitivity and precision*. Health Information & Libraries Journal, 28: 210-215. https://doi.org/10.1111/j.1471-1842.2011.00936.x. [↩](#Africancountries)
+<a id="f6"></a> Office of the High Commissioner (n.d.) _Non-discrimination: Groups in vulnerable situations. Special Rapporteur on the right to health_. United Nations Human Rights. https://www.ohchr.org/en/special-procedures/sr-health/non-discrimination-groups-vulnerable-situations (accessed Jun 2022). [↩](#UNOHC)
 
-<a id="f1"></a> Statistics Division (2021). *Global indicator framework for the Sustainable Development Goals and targets of the 2030 Agenda for Sustainable Development*. A/RES/71/313, E/CN.3/2018/2, E/CN.3/2019/2, E/CN.3/2020/2, E/CN.3/2021/2. Department of Economic and Social Affairs, United Nations. https://unstats.un.org/sdgs/indicators/Global%20Indicator%20Framework%20after%202021%20refinement_Eng.pdf [accessed 8 August 2021] [↩](#SDGT+Is)
+<a id="f9"></a> Pienaar, E., Grobler, L., Busgeeth, K., Eisinga, A. and Siegfried, N. (2011). _Developing a geographic search filter to identify randomised controlled trials in Africa: finding the optimal balance between sensitivity and precision_. Health Information & Libraries Journal, 28: 210-215. https://doi.org/10.1111/j.1471-1842.2011.00936.x. [↩](#Africancountries)
 
-<a id="f3"></a> UNESCO (2012). *International Standard Classification of education ISCED 2011*. http://uis.unesco.org/en/topic/international-standard-classification-education-isced [↩](#isced)
+<a id="f1"></a> Statistics Division (2021). _Global indicator framework for the Sustainable Development Goals and targets of the 2030 Agenda for Sustainable Development_. A/RES/71/313, E/CN.3/2018/2, E/CN.3/2019/2, E/CN.3/2020/2, E/CN.3/2021/2. Department of Economic and Social Affairs, United Nations. https://unstats.un.org/sdgs/indicators/Global%20Indicator%20Framework%20after%202021%20refinement_Eng.pdf [accessed 8 August 2021] [↩](#SDGT+Is)
 
-<a id="f2"></a> UNESCO (n.d.a). *SDG Resources for Educators - Quality Education*. https://en.unesco.org/themes/education/sdgs/material/04 [accessed Jun 2022] [↩](#unescoquality)
+<a id="f3"></a> UNESCO (2012). _International Standard Classification of education ISCED 2011_. http://uis.unesco.org/en/topic/international-standard-classification-education-isced [↩](#isced)
 
-<a id="f8"></a> UNESCO (n.d.b). *ESD for 2030 toolbox: Implementation*. https://en.unesco.org/themes/education-sustainable-development/toolbox/implementation#esd-impl-46 [accessed Jun 2022] [↩](#unescogced)
+<a id="f2"></a> UNESCO (n.d.a). _SDG Resources for Educators - Quality Education_. https://en.unesco.org/themes/education/sdgs/material/04 [accessed Jun 2022] [↩](#unescoquality)
 
-<a id="f11"></a> UNESCO Institute for Statistics. (2018). *Metadata for the global and thematic indicators for the follow-up of SDG 4 and Education 2030*. http://uis.unesco.org/sites/default/files/documents/metadata-global-thematic-indicators-sdg4-education2030-2017-en_1.pdf [↩](#unescotcg)
+<a id="f8"></a> UNESCO (n.d.b). _ESD for 2030 toolbox: Implementation_. https://en.unesco.org/themes/education-sustainable-development/toolbox/implementation#esd-impl-46 [accessed Jun 2022] [↩](#unescogced)
 
-<a id="f10"></a> United Nations. (2016, 2017, 2018, 2019, 2020, 2021). *World Economic Situation and Prospects; Statistical Annex*. https://www.un.org/development/desa/dpad/document_gem/global-economic-monitoring-unit/world-economic-situation-and-prospects-wesp-report/. [↩](#UNLDCs)
+<a id="f11"></a> UNESCO Institute for Statistics. (2018). _Metadata for the global and thematic indicators for the follow-up of SDG 4 and Education 2030_. http://uis.unesco.org/sites/default/files/documents/metadata-global-thematic-indicators-sdg4-education2030-2017-en_1.pdf [↩](#unescotcg)
 
-<a id="f7"></a> United Nations (n.d.) *Fight racism. Vulnerable groups, who are they?*. https://www.un.org/en/fight-racism/vulnerable-groups?gclid=EAIaIQobChMI9ODI_PvC9wIVV53VCh3pQgZCEAAYASAAEgInB_D_BwE (accessed Jun 2022). [↩](#UNracism)
+<a id="f10"></a> United Nations. (2016, 2017, 2018, 2019, 2020, 2021). _World Economic Situation and Prospects; Statistical Annex_. https://www.un.org/development/desa/dpad/document_gem/global-economic-monitoring-unit/world-economic-situation-and-prospects-wesp-report/. [↩](#UNLDCs)
+
+<a id="f7"></a> United Nations (n.d.) _Fight racism. Vulnerable groups, who are they?_. https://www.un.org/en/fight-racism/vulnerable-groups?gclid=EAIaIQobChMI9ODI_PvC9wIVV53VCh3pQgZCEAAYASAAEgInB_D_BwE (accessed Jun 2022). [↩](#UNracism)

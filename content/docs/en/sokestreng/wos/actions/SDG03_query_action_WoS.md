@@ -1,6 +1,6 @@
 ---
-title: Search query for SDG 3 - Good health and well-being, Bergen action-approach.
----
+
+## title: Search query for SDG 3 - Good health and well-being, Bergen action-approach.
 
 Ensure healthy lives and promote well-being for all at all ages.
 
@@ -13,7 +13,6 @@ Ensure healthy lives and promote well-being for all at all ages.
 3. Documentation and string sections for each target
 4. Contributions
 5. Footnotes
-
 
 ## 1. Full query
 
@@ -30,8 +29,9 @@ Our classification of countries as least developed countries (LDCs), small islan
 During editing of this string (2021), we have consulted two other sets of queries for reference: <a id="Aurora">[Aurora Universities network (2020)](#f29)</a> and <a id="Els">[Rivest et al. (2021)](#f30)</a>.
 
 **Abbreviations**
-* WHO - World Health Organization
-* MeSH - Medical Subject Headings - https://www.ncbi.nlm.nih.gov/mesh/
+
+- WHO - World Health Organization
+- MeSH - Medical Subject Headings - https://www.ncbi.nlm.nih.gov/mesh/
 
 ## 3. Targets
 
@@ -43,17 +43,17 @@ During editing of this string (2021), we have consulted two other sets of querie
 >
 > 3.1.2 Proportion of births attended by skilled health personnel
 
-The target is interpreted as covering research about reducing the maternal mortality rate. The interpretation is limited to reducing mortality as this is what is stated in both targets, rather than care/health generally -  attendance of skilled health personnel is interpreted as one way to limit mortality, and should be covered if authors connect their work to this aim.
+The target is interpreted as covering research about reducing the maternal mortality rate. The interpretation is limited to reducing mortality as this is what is stated in both targets, rather than care/health generally - attendance of skilled health personnel is interpreted as one way to limit mortality, and should be covered if authors connect their work to this aim.
 
 This query consists of 1 phrase.
 
 #### Phrase 1
 
-The basic structure is *mothers/birth* + *mortality* + *action* + *excluding livestock*. Originally, a second phrase was added for "improve survival", but this mostly added noise - many results were about babies rather than mothers, and others were about "maternal" effects in animals.
+The basic structure is _mothers/birth_ + _mortality_ + _action_ + _excluding livestock_. Originally, a second phrase was added for "improve survival", but this mostly added noise - many results were about babies rather than mothers, and others were about "maternal" effects in animals.
 
-Some of the *mothers/birth* terms may find results concerning newborn mortality, this is difficult to avoid and may lead to some overlap with 3.2. Many works also talk about both maternal and neonatal mortality together. As both are in the same SDG this should not be an issue for SDG sets.
+Some of the _mothers/birth_ terms may find results concerning newborn mortality, this is difficult to avoid and may lead to some overlap with 3.2. Many works also talk about both maternal and neonatal mortality together. As both are in the same SDG this should not be an issue for SDG sets.
 
-For the *action* terms: Having some terms with a wide `NEAR/15` interval helps to find results which talk reducing mortality via a factor: e.g. "xyz is a leading cause of maternal mortality. We examine how xyz can be prevented....". `lower`, `limited` and `limits` are not included in the action terms due to general use (e.g. "limited understanding"). `mortality` is paired with `improve` due to the formulation "improved mortality rates". `prevent*` is not used to reduce results generally talking about "preventable deaths", rather than prevention.
+For the _action_ terms: Having some terms with a wide `NEAR/15` interval helps to find results which talk reducing mortality via a factor: e.g. "xyz is a leading cause of maternal mortality. We examine how xyz can be prevented....". `lower`, `limited` and `limits` are not included in the action terms due to general use (e.g. "limited understanding"). `mortality` is paired with `improve` due to the formulation "improved mortality rates". `prevent*` is not used to reduce results generally talking about "preventable deaths", rather than prevention.
 
 A double `NOT` expression is included to help remove results referring to mortality of livestock, but retain those referring to these animals as models for humans. Rats and mice are not in the `NOT` statement as these are usually animal models for humans.
 
@@ -99,7 +99,7 @@ This query consists of 2 phrases.
 
 #### Phrase 1
 
-The basic structure is *children/babies* + *mortality* + *action* + *excluding livestock*. `prevent*`, `preterm` and `premature` are not used, as they generally (when used without reference to births/newborns) refer to "preventable deaths"/"premature death".
+The basic structure is _children/babies_ + _mortality_ + _action_ + _excluding livestock_. `prevent*`, `preterm` and `premature` are not used, as they generally (when used without reference to births/newborns) refer to "preventable deaths"/"premature death".
 
 ```py
 TS=
@@ -130,7 +130,7 @@ TS=
 
 #### Phrase 2
 
-Phrase 2 finds publications using the opposite terminology of phrase 1 (i.e. reduce mortality = increase survival). The basic structure is *children/babies* + *survival* + *action* + *excluding livestock*. The term "survivor" is a bit tricky, as it is used about reducing mortality (e.g. "cancer survivors") but also in the context of abuse ("child abuse survivor"). Thus results around this topic may also be included; we did not consider them far enough from the interpretation to warrant using a NOT search that could potentially lose relevant results.
+Phrase 2 finds publications using the opposite terminology of phrase 1 (i.e. reduce mortality = increase survival). The basic structure is _children/babies_ + _survival_ + _action_ + _excluding livestock_. The term "survivor" is a bit tricky, as it is used about reducing mortality (e.g. "cancer survivors") but also in the context of abuse ("child abuse survivor"). Thus results around this topic may also be included; we did not consider them far enough from the interpretation to warrant using a NOT search that could potentially lose relevant results.
 
 ```py
 TS=
@@ -149,7 +149,6 @@ TS=
 )
 ```
 
-
 ### Target 3.3
 
 > **3.3 By 2030, end the epidemics of AIDS, tuberculosis, malaria and neglected tropical diseases and combat hepatitis, water-borne diseases and other communicable diseases.**
@@ -164,7 +163,7 @@ TS=
 >
 > 3.3.5 Number of people requiring interventions against neglected tropical diseases
 
-The target is interpreted to include research which talks about combating / end epidemics of communicable and waterborne diseases. We interpret "ending epidemics", to include research on ending epidemics/pandemics, along with general works about controlling spread/transmission. We interpret "combating" to mean reducing the occurrence and effects of these diseases, i.e. research about improving control, reducing transmission, preventing, treating, and developing novel treatments/vaccines. 
+The target is interpreted to include research which talks about combating / end epidemics of communicable and waterborne diseases. We interpret "ending epidemics", to include research on ending epidemics/pandemics, along with general works about controlling spread/transmission. We interpret "combating" to mean reducing the occurrence and effects of these diseases, i.e. research about improving control, reducing transmission, preventing, treating, and developing novel treatments/vaccines.
 
 This query consists of 3 phrases.
 
@@ -172,7 +171,7 @@ Action terms: `limited` was removed from the action terms, as it was used often 
 
 #### Phrase 1
 
-This covers communicable diseases as a category. The basic structure is *communicable diseases + (action OR action + epidemics/interventions)*. The search terms here are difficult, as `communicable` will also find `non communicable`, thus this term is covered in its own phrase where a double `NOT` expression is used to remove publications mentioning non-communciable disease without also mentioning infectious, communicable and tropical diseases ("non communicable" seems to be the term causing the most problems; others, such as `non-infectious` seem to be used in papers about both, i.e. together with `infectious` - these are covered in phrase 2). This cuts the results for the last 5 years by about 75 %, compared to allowing "non-communicable" to be found.
+This covers communicable diseases as a category. The basic structure is _communicable diseases + (action OR action + epidemics/interventions)_. The search terms here are difficult, as `communicable` will also find `non communicable`, thus this term is covered in its own phrase where a double `NOT` expression is used to remove publications mentioning non-communciable disease without also mentioning infectious, communicable and tropical diseases ("non communicable" seems to be the term causing the most problems; others, such as `non-infectious` seem to be used in papers about both, i.e. together with `infectious` - these are covered in phrase 2). This cuts the results for the last 5 years by about 75 %, compared to allowing "non-communicable" to be found.
 
 `prevent*` is not used to reduce results generally talking about "preventable deaths", rather than prevention.
 
@@ -201,20 +200,20 @@ TS =
   )
   NOT ("non communicable" NOT ("infectious disease$" OR "tropical disease$" OR "non communicable and communicable" OR "communicable and non communicable"))
 )
-```  
+```
 
 #### Phrase 2
 
-The general structure is *communicable diseases + generic action*. In this phrase, specific diseases and groups of diseases are covered. The *disease* terms are the same as in phrase 3.
+The general structure is _communicable diseases + generic action_. In this phrase, specific diseases and groups of diseases are covered. The _disease_ terms are the same as in phrase 3.
 
-In the *communicable disease* terms, specific diseases were added from sources outlined below, plus a WHOs factsheet on leading causes of death in 2019 (<a id="WHOFStop10">[WHO, 2020c](#f23)</a>).
+In the _communicable disease_ terms, specific diseases were added from sources outlined below, plus a WHOs factsheet on leading causes of death in 2019 (<a id="WHOFStop10">[WHO, 2020c](#f23)</a>).
+
 - The first section covers communicable and waterborne diseases as a category (see also Phrase 1).
 - The second section covers specific communicable & vaccine-preventable diseases. `hepatitis`, `tuberculosis`, `HIV`, `malaria` are taken directly from the target. The term `aids` is combined with `prevent aids` as it is used as a verb. We then used WHO Global Health Observatory data for adding specific communicable (<a id="WHOGHO">[WHO, n.d. a](#f2)</a>) and vaccine-preventable diseases (<a id="WHOGHOb">[WHO, n.d. b](#f2a)</a>). Here, they are listed according to SDG target; those under target 3.3. were included. This also included the category sexually transmitted infections. Diseases were also added from a WHO list of epidemic and pandemic-prone diseases (<a id="WHOepipan">[Regional Office for the Eastern Mediterranean, n.d.](#f24)</a>). `SARS` covers also "SARS-CoV-2" (covid-19).
 - The third section is for waterborne diseases. A definitive list of prioritised "waterborne diseases" was not found and the MeSH term has no specific diseases; as a way to improve the query, we have used 11 diseases/pathogens prioritised by the U.S. Centers for Disease Control and Prevention, Waterborne Diseases Prevention Branch (<a id="CDCwaterborne">[Centers for Disease Control and Prevention, 2021](#f13)</a>).
 - The fourth section lists neglected tropical diseases, as mentioned in the target. The 20 diseases/disease groups currently prioritised by WHO in their 2021-2030 roadmap are included (p. 2, <a id="WHONTD">[WHO, 2020a](#f3)</a>).
 
 A number of these diseases also occur in animals (e.g. Feline/Simian Acquired Immunodeficiency Syndrome, Canine hepatitis, Avian malaria, Bovine tuberculosis). We do not attempt to exclude them, as it is considered that work on them can inform human prevention/treatment, or prevent zoonotic transmission. `prevent*` is not used to reduce results generally talking about "preventable deaths", rather than prevention.
-
 
 ```py
 TS =
@@ -294,11 +293,11 @@ TS =
       )
 )
 
-```   
+```
 
 #### Phrase 3
 
-The general structure is *communicable diseases + action + epidemics/interventions*. This phrase is a complement to phrase 2, where the same diseases but *generic actions* are covered. This phrase is separated from phrase 2 because the *epidemic/intervention* can be combined with `AND` rather than needing `NEAR`. `prevent*` is not used to reduce results generally talking about "preventable deaths", rather than prevention.
+The general structure is _communicable diseases + action + epidemics/interventions_. This phrase is a complement to phrase 2, where the same diseases but _generic actions_ are covered. This phrase is separated from phrase 2 because the _epidemic/intervention_ can be combined with `AND` rather than needing `NEAR`. `prevent*` is not used to reduce results generally talking about "preventable deaths", rather than prevention.
 
 ```py
 TS =
@@ -393,7 +392,7 @@ TS =
         )
       )
 )
-```   
+```
 
 ### Target 3.4
 
@@ -409,9 +408,9 @@ This query consists of 3 phrases. Phrase 1 focuses on the "non-communicable dise
 
 #### Phrase 1
 
-The structure is *non-communicable diseases + mortality + action*. We added diseases from the WHO factsheet on non-communicable diseases (<a id="WHOFSnoncomm">[WHO, 2018](#f4)</a>) and a WHO factsheet on leading causes of death in 2019 (<a id="WHOFStop10">[WHO, 2020c](#f23)</a>). Cancer terms were based on "The Cancer Dictionary" in the WHO Cancer Mortality Database (<a id="WHOcancer">[International Agency for Research on Cancer, 2019](#f5)</a>) and using nomenclature as explained by the U.S. National Cancer Institute SEER training modules (<a id="NIHcancer">[National Cancer Institute, n.d.](#f6)</a>).
+The structure is _non-communicable diseases + mortality + action_. We added diseases from the WHO factsheet on non-communicable diseases (<a id="WHOFSnoncomm">[WHO, 2018](#f4)</a>) and a WHO factsheet on leading causes of death in 2019 (<a id="WHOFStop10">[WHO, 2020c](#f23)</a>). Cancer terms were based on "The Cancer Dictionary" in the WHO Cancer Mortality Database (<a id="WHOcancer">[International Agency for Research on Cancer, 2019](#f5)</a>) and using nomenclature as explained by the U.S. National Cancer Institute SEER training modules (<a id="NIHcancer">[National Cancer Institute, n.d.](#f6)</a>).
 
- A tighter `NEAR` distance is used for some action terms due to other uses (e.g. `lower` needs a tighter combination to avoid e.g. "cancer of the lower intestine"). `prevent*` is not used to reduce results generally talking about "preventable deaths", rather than prevention.
+A tighter `NEAR` distance is used for some action terms due to other uses (e.g. `lower` needs a tighter combination to avoid e.g. "cancer of the lower intestine"). `prevent*` is not used to reduce results generally talking about "preventable deaths", rather than prevention.
 
 ```py
 TS=
@@ -452,11 +451,11 @@ TS=
       )
 )
 
-```  
+```
 
 #### Phrase 2
 
-This phrase focuses on non-communicable mental illnesses/diseases. The general structure is *disease + prevention/treatment + action*.
+This phrase focuses on non-communicable mental illnesses/diseases. The general structure is _disease + prevention/treatment + action_.
 
 Generic categories and specific conditions are included. `suicid*` was mentioned specifically in the indicators. We used WHO factsheets to add types of mental disorders (<a id="WHOFSmental">[WHO, 2019a](#f7)</a>). As the focus this phrase is illness, we did not include developmental disorders. `prevent*` is not used to reduce results generally talking about "preventable deaths", rather than prevention.
 
@@ -498,9 +497,9 @@ TS=
 
 #### Phrase 3
 
-This phrase focuses on the promotion of well-being. The general structure is *well-being* + *promoting/action+services*.
+This phrase focuses on the promotion of well-being. The general structure is _well-being_ + _promoting/action+services_.
 
-`wellbeing` is used alone, rather than qualified with "mental" - well-being seems to be used to convey a sense of overall health, which should include the mental/psychosocial aspect. `quality of life` was tested, but this adds a lot of results which seem to be more medical (i.e.  quality of life could be improved after intervention x for condition y). `increas*` was removed as an action term for `mental health` as it tends to be used in other ways (e.g. "increasing demand for services", "increasingly in focus").
+`wellbeing` is used alone, rather than qualified with "mental" - well-being seems to be used to convey a sense of overall health, which should include the mental/psychosocial aspect. `quality of life` was tested, but this adds a lot of results which seem to be more medical (i.e. quality of life could be improved after intervention x for condition y). `increas*` was removed as an action term for `mental health` as it tends to be used in other ways (e.g. "increasing demand for services", "increasingly in focus").
 
 ```py
 TS=
@@ -521,7 +520,7 @@ TS=
           )
       )  
 )
-```  
+```
 
 ### Target 3.5
 
@@ -533,11 +532,12 @@ TS=
 
 This target was interpreted to include research about strengthening the prevention and treatment of harmful uses of alcohol and drugs. It does not cover all use of alcohol/drugs. We also interpret this to be mainly limited to works about reducing use, rather than e.g. controlling supply of illicit drugs.
 
-This query consists of 1 phrase. The basic structure is *harmful use + action/prevention OR harmful use + action + treatment*.
+This query consists of 1 phrase. The basic structure is _harmful use + action/prevention OR harmful use + action + treatment_.
 
 Terms were added from the National Institutes of Health "Commonly Used Drugs Charts" (although this is a USA-centric source we assume it will cover many types; <a id="NIHdrugs">[National Institute on Drug Abuse, 2020](#f14)</a>). Drug/substances were also expanded using MeSH terms:
-* Under "opioid-related disorders" (D000079524), `heroin`, `morphine`, `opiate` and `opium` are listed.
-* Under "substance-related disorders" (D019966), a number of specific substances are listed, including `amphetamine`, `cocaine`, `inhalent`, `tobacco` etc.
+
+- Under "opioid-related disorders" (D000079524), `heroin`, `morphine`, `opiate` and `opium` are listed.
+- Under "substance-related disorders" (D019966), a number of specific substances are listed, including `amphetamine`, `cocaine`, `inhalent`, `tobacco` etc.
 
 `addiction` and `dependence` were considered as terms that can indicate harmful use. A number of drugs are combined with these terms because either a) they can be used in non-abuse contexts as treatments, or b) there is a lot of research about their effects (e.g. "cocaine can reduce the heart's...").
 
@@ -629,11 +629,11 @@ TS=
 
 This target is interpreted to cover research about reducing deaths and injuries from road traffic accidents. Improvement to road/vehicle safety generally is not considered relevant unless it is connected to health - the reducing injury/death focus is evident in the target and the High-level Political Forum thematic review for SDG 3 (<a id="HLPF">[ECESA plus members, 2017](#f21)</a>). Improving road safety generally is covered in SDG 11.2.
 
-This query consists of 1 phrase. Originally, a second phrase was included about improving `survival` , however the relevant results are minimal; the majority discussing `survival` are not about road traffic safety (instead about e.g. biomedical, or  wildlife).
+This query consists of 1 phrase. Originally, a second phrase was included about improving `survival` , however the relevant results are minimal; the majority discussing `survival` are not about road traffic safety (instead about e.g. biomedical, or wildlife).
 
-The basic structure is *traffic/road users + mortality/morbidity + action*
+The basic structure is _traffic/road users + mortality/morbidity + action_
 
-In the *action* terms, `limit$` is not included (only `limiting`) as mostly used for city limits or speed limits. `improv*` was added as an action term - although the focus is on reducing accidents, a number of works talk about e.g. "improving mortality outcomes". `prevent*` is not used to reduce results generally talking about "preventable deaths", rather than prevention. In the *traffic* terms, `vehicle OR driver OR car OR cars` are combined with `accident OR crash...` because these terms are used in a biomedical or general context not to do with traffic (e.g. "xyz works as a vehicle for delivery of the drug"; "car T cells"; "x is a driver of y"). `intersection$` was considered but removed as it mostly added noise from metaphorical use of intersection (e.g. between two subject areas).
+In the _action_ terms, `limit$` is not included (only `limiting`) as mostly used for city limits or speed limits. `improv*` was added as an action term - although the focus is on reducing accidents, a number of works talk about e.g. "improving mortality outcomes". `prevent*` is not used to reduce results generally talking about "preventable deaths", rather than prevention. In the _traffic_ terms, `vehicle OR driver OR car OR cars` are combined with `accident OR crash...` because these terms are used in a biomedical or general context not to do with traffic (e.g. "xyz works as a vehicle for delivery of the drug"; "car T cells"; "x is a driver of y"). `intersection$` was considered but removed as it mostly added noise from metaphorical use of intersection (e.g. between two subject areas).
 
 ```py
 TS =
@@ -670,7 +670,6 @@ TS =
 
 ```
 
-
 ### Target 3.7
 
 > **3.7 By 2030, ensure universal access to sexual and reproductive health-care services, including for family planning, information and education, and the integration of reproductive health into national strategies and programmes**
@@ -680,17 +679,18 @@ TS =
 > 3.7.2 Adolescent birth rate (aged 10–14 years; aged 15–19 years) per 1,000 women in that age group
 
 This target is interpreted to cover research about:
-* improving access to sexual health services and family planning
-* improving access to education and information about sexual health and family planning
-* the coverage/implementation of reproductive health/sexual health in national strategies and programmes.
+
+- improving access to sexual health services and family planning
+- improving access to education and information about sexual health and family planning
+- the coverage/implementation of reproductive health/sexual health in national strategies and programmes.
 
 This query consists of 2 phrases.
 
 #### Phrase 1
 
-The basic structure is *reproductive health/education + access + action*
+The basic structure is _reproductive health/education + access + action_
 
-Originally, *reproductive health* terms were combined with *service/information* terms (`"support" OR "service$" OR "program*" OR "right$" OR "facility" OR "facilities" OR "hospital$" OR "clinic$" OR "treatment" OR "checkup$" OR "check up$" OR "healthcare" OR "care" OR "aftercare" OR "information" OR "education"`). However, a wide variety of terms are used, and sometimes no terms at all. When *reproductive health* terms are combined with *access* terms, the results are mostly discussing some sort of service/education/communication, so the *service/information* terms were dropped as an unnecessary restriction.
+Originally, _reproductive health_ terms were combined with _service/information_ terms (`"support" OR "service$" OR "program*" OR "right$" OR "facility" OR "facilities" OR "hospital$" OR "clinic$" OR "treatment" OR "checkup$" OR "check up$" OR "healthcare" OR "care" OR "aftercare" OR "information" OR "education"`). However, a wide variety of terms are used, and sometimes no terms at all. When _reproductive health_ terms are combined with _access_ terms, the results are mostly discussing some sort of service/education/communication, so the _service/information_ terms were dropped as an unnecessary restriction.
 
 Terms such as `reproductive health` will cover `reproductive health care / health services` etc.. `abortion` is included as part of reproductive health, according to WHO ("Access to legal, safe and comprehensive abortion care, including post-abortion care, is essential for the attainment of the highest possible level of sexual and reproductive health"; (<a id="WHOabortion">[WHO, n.d. c](#f15)</a>).
 
@@ -732,7 +732,7 @@ TS =
 
 #### Phrase 2
 
-The basic structure is *reproductive health + national programmes + action*. Here we have included LMICs and LDCs as "synonyms" for national; this provides over double the number of relevant results, as works often refer to e.g. "...implementation of a reproductive health programme in Tunisia".
+The basic structure is _reproductive health + national programmes + action_. Here we have included LMICs and LDCs as "synonyms" for national; this provides over double the number of relevant results, as works often refer to e.g. "...implementation of a reproductive health programme in Tunisia".
 
 ```py
 TS =
@@ -772,7 +772,7 @@ This target is interpreted to include research about 1) Achieving universal heal
 
 #### Phrase 1
 
-This phrase covers achieving universal health coverage. The basic structure is *universal health coverage + action*.
+This phrase covers achieving universal health coverage. The basic structure is _universal health coverage + action_.
 
 "Achieving" is interpreted broadly to cover both establishment, expansion, maintenance and obstacles. `for universal health coverage` finds a variety of phrases which are related to this, e.g. "policies for", "legal framework for", "tool for".
 
@@ -796,9 +796,9 @@ TS =
 
 #### Phrase 2
 
-This phrase covers access to healthcare, essential medicines and vaccines. The basic structure is *health care/medications + access/affordability/quality + action*
+This phrase covers access to healthcare, essential medicines and vaccines. The basic structure is _health care/medications + access/affordability/quality + action_
 
-`treatment` is not used alone, as there are technical biomedical works about e.g. barrier treatments. Under *access* terms, we have included `health equity` and `vaccine equity`, as we consider it to cover the idea of "medicines and vaccines for all".
+`treatment` is not used alone, as there are technical biomedical works about e.g. barrier treatments. Under _access_ terms, we have included `health equity` and `vaccine equity`, as we consider it to cover the idea of "medicines and vaccines for all".
 
 ```py
 TS =
@@ -847,22 +847,22 @@ This query consists of 2 phrases. The phrases are similar, but phrase 2 includes
 The target is interpreted to cover research about reducing deaths and illnesses due to pollution/contamination of water, air or soil with chemicals/substances or pathogens. In light of indicator 3.9.2, we also include research about deaths and illnesses and poor sanitation (e.g. contamination in the water source, or spread of disease between people due to lack of WASH facilities).
 
 We were slightly unsure whether food poisoning/contaminated food should be included - it is not air, soil or water, but is related to hygiene/sanitation. So far, it is included. The High-level Political Forum thematic review for SDG 3 (<a id="HLPF">[ECESA plus members, 2017](#f21)</a>) mentions food in reference to WASH:
->"These services need to be accompanied by adequate hygiene practices such as handwashing after defecation or before food preparation and intake..."
+
+> "These services need to be accompanied by adequate hygiene practices such as handwashing after defecation or before food preparation and intake..."
 
 #### Phrase 1
 
-The basic structure is *contamination/toxins* + *disease/mortality* + *action*.
+The basic structure is _contamination/toxins_ + _disease/mortality_ + _action_.
 
 In the disease/mortality terms, only terms for mortality are included. `survival` is not - there are few results and they often concern animals.
 
-Specific types of air pollution were added from WHO factsheets on ambient air pollution (<a id="WHOambientairpoll">[WHO, 2021a](#f22)</a>) and household air pollution  (<a id="WHOhouseairpoll">[WHO, 2021b](#f25)</a>). `air pollution` will find both ambient and indoor/household air pollution. Note that `pollution` alone is covered in phrase 2.
+Specific types of air pollution were added from WHO factsheets on ambient air pollution (<a id="WHOambientairpoll">[WHO, 2021a](#f22)</a>) and household air pollution (<a id="WHOhouseairpoll">[WHO, 2021b](#f25)</a>). `air pollution` will find both ambient and indoor/household air pollution. Note that `pollution` alone is covered in phrase 2.
 
-`poisoning*` reflects a disease/mortality/health outcome, thus is included with the *disease/mortality* terms. This improves the results by vastly increasing recall of those about reducing carbon monoxide poisoning. `unintentional OR accidental NEAR/3 poisoning$` is additionally included in the *contamination/toxins* terms; thus the string will find e.g. "reducing accidental poisonings", "preventing unintentional child poisoning" or "treating accidental drug poisonings".
+`poisoning*` reflects a disease/mortality/health outcome, thus is included with the _disease/mortality_ terms. This improves the results by vastly increasing recall of those about reducing carbon monoxide poisoning. `unintentional OR accidental NEAR/3 poisoning$` is additionally included in the _contamination/toxins_ terms; thus the string will find e.g. "reducing accidental poisonings", "preventing unintentional child poisoning" or "treating accidental drug poisonings".
 
 The combination of gases with `NEAR/15 "pollution" OR "poisoning$"` is necessary because there are medical papers that discuss gases in terms of diagnosis or treatment (e.g. diffusion lung capacity of CO). The chemical abbreviations for the gases (e.g. `SO2`) are not used, as they result in technical articles where sorbents or fuel cells can be "poisoned".
 
 `hygiene` is not used alone as there are many results about oral hygiene which are probably too broad (not to do with pollution/contamination). `sanitation` is also limited here, to remove animal results, and included more broadly in phrase 2.
-
 
 ```py
 TS =
@@ -906,14 +906,13 @@ TS =
 
 #### Phrase 2
 
-The basic structure is *pollutants/contamination + disease/mortality + action + humans*.
+The basic structure is _pollutants/contamination + disease/mortality + action + humans_.
 
 This phrase was created as certain pollutants/contamination terms often give results for animals; thus they are combined with terms for humans. Certain diseases are also included in these terms for humans, because they are nearly always used in the context of humans and relevant for this topic.
 
-Specific chemicals were added from the WHO list of chemicals of major public health concern (<a id="WHOchem">[WHO, 2020b](#f11)</a>). Although the list specifies "highly hazardous pesticides", pesticides generally are searched for (research on limiting the health effects of all pesticides is considered relevant). `lead` must be searched for as part of a phrase, due to its use as a verb. Additional terms were added from the SDG topic page for chemicals and waste (<a id="SDGKPchem">[Sustainable Development Goals Knowledge Platform, n.d.](#f20)</a>). `contamination` is limited to `water contamination` and `soil contamination` (+ variants) to limit to the environment. Contamination of drinking water is covered in phrase 1 (here `water` alone is sufficient, due to the *human* terms). `heavy metals` as a general term is not included - many results seemed to be toxicity in plants, despite the *human* terms.
+Specific chemicals were added from the WHO list of chemicals of major public health concern (<a id="WHOchem">[WHO, 2020b](#f11)</a>). Although the list specifies "highly hazardous pesticides", pesticides generally are searched for (research on limiting the health effects of all pesticides is considered relevant). `lead` must be searched for as part of a phrase, due to its use as a verb. Additional terms were added from the SDG topic page for chemicals and waste (<a id="SDGKPchem">[Sustainable Development Goals Knowledge Platform, n.d.](#f20)</a>). `contamination` is limited to `water contamination` and `soil contamination` (+ variants) to limit to the environment. Contamination of drinking water is covered in phrase 1 (here `water` alone is sufficient, due to the _human_ terms). `heavy metals` as a general term is not included - many results seemed to be toxicity in plants, despite the _human_ terms.
 
 `poisoning$ OR poisoned` and `*toxicity` (covers gene/neuro/gonadotoxicity) were added to the mortality terms, as, in combination with the human terms, they are mostly used in the context of human illnesses. `fluorosis`, is a disease from excess fluoride.
-
 
 ```py
 TS =
@@ -980,7 +979,7 @@ TS = ("Framework convention on tobacco control" OR "WHO FCTC")
 
 #### Phrase 2
 
-This phrase finds works about strengthening/implementing reduction and preventative measures around tobacco. The basic structure is *tobacco + reduction/control + action*
+This phrase finds works about strengthening/implementing reduction and preventative measures around tobacco. The basic structure is _tobacco + reduction/control + action_
 
 We do not limit terminology to tobacco "use", as the FCTC also refers to tobacco control and reduction in supply, advertising, packaging regulation etc. `tobacco OR smoking OR cigarette$` will cover many terms here (e.g. cigarette packaging, smoking cessation, tobacco use/consumption/advertising).
 
@@ -1018,7 +1017,7 @@ TS =
 
 #### Phrase 3
 
-This phrase covers research about alternatives to tobacco production. The basic structure is *tobacco farming + alternatives + action*.
+This phrase covers research about alternatives to tobacco production. The basic structure is _tobacco farming + alternatives + action_.
 
 ```py
 TS=
@@ -1038,7 +1037,6 @@ TS=
 )
 ```
 
-
 ### Target 3.b
 
 > **3.b Support the research and development of vaccines and medicines for the communicable and non‑communicable diseases that primarily affect developing countries, provide access to affordable essential medicines and vaccines, in accordance with the Doha Declaration on the TRIPS Agreement and Public Health, which affirms the right of developing countries to use to the full the provisions in the Agreement on Trade-Related Aspects of Intellectual Property Rights regarding flexibilities to protect public health, and, in particular, provide access to medicines for all**
@@ -1050,14 +1048,15 @@ TS=
 > 3.b.3 Proportion of health facilities that have a core set of relevant essential medicines available and affordable on a sustainable basis
 
 This target is interpreted to cover research about:
-* Support for development of medicines/vaccines for diseases in developing countries or for diseases "primarily affecting" them. For the query, we have interpreted this as neglected tropical diseases. For other diseases it is harder to decide if they are neglected or who they primarily affect. We interpret "support" as financial support as well as cooperation and research partnerships  (phrase 1).
-* Access to affordable essential medicines and vaccines on a broad scale in accordance with Doha/TRIPS (phrase 2).
+
+- Support for development of medicines/vaccines for diseases in developing countries or for diseases "primarily affecting" them. For the query, we have interpreted this as neglected tropical diseases. For other diseases it is harder to decide if they are neglected or who they primarily affect. We interpret "support" as financial support as well as cooperation and research partnerships (phrase 1).
+- Access to affordable essential medicines and vaccines on a broad scale in accordance with Doha/TRIPS (phrase 2).
 
 This query consists of 2 phrases.
 
 #### Phrase 1
 
-The general structure is *support + vaccine/medicine development + developing countries*. Under *support* we include terms for financial resources, development partnerships, assistance and sharing. Note that here, `development` is combined within phrases (e.g. `development aid OR development fund`) because it is also a part of "vaccine development".
+The general structure is _support + vaccine/medicine development + developing countries_. Under _support_ we include terms for financial resources, development partnerships, assistance and sharing. Note that here, `development` is combined within phrases (e.g. `development aid OR development fund`) because it is also a part of "vaccine development".
 
 ```py
 TS =
@@ -1133,9 +1132,10 @@ TS =
 #### Phrase 2
 
 This phrase concerns access to essential medicines and vaccines. The TRIPS agreement is the Agreement on Trade-Related Aspects of Intellectual Property Rights for all members of the WTO. The Doha declaration was an interpretative statement for TRIPS, added later in 2001, which covers several aspects of its implementation. This includes "compulsory licensing", which can be used to produce medicines without the agreement of the patent holder under certain circumstances. About health, from <a id="WTOdoha">[World Trade Organization, n.d.](#f17)</a>:
+
 > "In the declaration, ministers stress that it is important to implement and interpret the TRIPS Agreement in a way that supports public health — by promoting both access to existing medicines and the creation of new medicines.[...]. It emphasizes that the TRIPS Agreement does not and should not prevent member governments from acting to protect public health."
 
-The structure is *agreements/IPR + medicines + access*. `patents` is used in the plural as when singular it tends to have specific/biomedical uses. `vaccine inequity` is included as a  term that often refers to inequity in access to vaccines on a global scale (particularly in reference to covid19).
+The structure is _agreements/IPR + medicines + access_. `patents` is used in the plural as when singular it tends to have specific/biomedical uses. `vaccine inequity` is included as a term that often refers to inequity in access to vaccines on a global scale (particularly in reference to covid19).
 
 ```py
 TS =
@@ -1166,7 +1166,7 @@ This query consists of 2 phrases.
 
 #### Phrase 1
 
-The basic structure is *action + retention/training + health workers + countries*
+The basic structure is _action + retention/training + health workers + countries_
 
 Types of health worker were supplemented from the subcategories under the MeSH category "Health Personnel" (MeSH ID D006282). `training` and `education` are separated out as there are many results about "training to improve outcomes..." rather than improving the training itself.
 
@@ -1219,7 +1219,7 @@ TS =
 
 #### Phrase 2
 
-The basic structure is *action + financing + health sector + countries*. This is difficult to get accurate with action terms as there are a lot of results about e.g. funding improving coverage.
+The basic structure is _action + financing + health sector + countries_. This is difficult to get accurate with action terms as there are a lot of results about e.g. funding improving coverage.
 
 ```py
 TS =
@@ -1272,11 +1272,12 @@ TS =
 > 3.d.2 Percentage of bloodstream infections due to selected antimicrobial-resistant organisms
 
 This target is interpreted to refer to research about establishing/strengthening health emergency preparedness, particularly in reference to the IHR. From <a id="WHOGHO">[The Global Health Observatory (n.d.)](#f18)</a>:
->"Under the IHR, States Parties are obliged to develop and maintain minimum core capacities for surveillance and response, including at points of entry, in order to early detect, assess, notify, and respond to any potential public health events of international concern. [...]. The 13 core capacities are: (1) Legislation and financing; (2) IHR Coordination and National Focal Point Functions; (3) Zoonotic events and the Human-Animal Health Interface; (4) Food safety; (5) Laboratory; (6) Surveillance; (7) Human resources; (8) National Health Emergency Framework; (9) Health Service Provision; (10) Risk communication; (11) Points of entry; (12) Chemical events; (13) Radiation emergencies."
+
+> "Under the IHR, States Parties are obliged to develop and maintain minimum core capacities for surveillance and response, including at points of entry, in order to early detect, assess, notify, and respond to any potential public health events of international concern. [...]. The 13 core capacities are: (1) Legislation and financing; (2) IHR Coordination and National Focal Point Functions; (3) Zoonotic events and the Human-Animal Health Interface; (4) Food safety; (5) Laboratory; (6) Surveillance; (7) Human resources; (8) National Health Emergency Framework; (9) Health Service Provision; (10) Risk communication; (11) Points of entry; (12) Chemical events; (13) Radiation emergencies."
 
 There are also 19 technical areas from the Joint External Evaluation tool, which in addition to the 13 above include antimicrobial resistance, immunization, "national laboratory system", biosafety and biosecurity, "emergency preparedness", "emergency response operations", linking public health and security authorities, medical countermeasures and personnel deployment (<a id="WHOJEE">[WHO 2019b](#f19)</a>). A number of search terms are taken from this document.
 
-This query consists of 1 phrase. The general structure is *health emergencies + preparedness + action*
+This query consists of 1 phrase. The general structure is _health emergencies + preparedness + action_
 
 `national action plan` is a term used in relation to antimicrobial resistance. `emergency response` covers emergency response plans, etc. `health risk` is a very general term, so here is limited to national and global health risks, as stated in the target. `health emergency` is more unambiguously about emergency situations, so is not limited. The `NOT` statement is required to eliminate results for e.g. crop epidemics.
 
@@ -1324,66 +1325,66 @@ TS =
 
 ## 4. Contributions
 
-* v2019.12: Marta Lorenz, Caroline S. Armitage, Susanne Mikki
+- v2019.12: Marta Lorenz, Caroline S. Armitage, Susanne Mikki
 
-* v1.0.0 Caroline S. Armitage (Oct 2021-Oct 2022)
+- v1.0.0 Caroline S. Armitage (Oct 2021-Oct 2022)
 
-* Internal review: Marta Lorenz, Håkon Magne Bjerkan (March 2022)
+- Internal review: Marta Lorenz, Håkon Magne Bjerkan (March 2022)
 
 Specialist input: Awaiting
 
 ## 5. Footnotes
 
-<a id="f29"></a> Aurora Universities Network. (2020). *Search Queries for “Mapping Research Output to the Sustainable Development Goals (SDGs)”* v5.0. [Dataset]. doi:10.5281/zenodo.3817445. [↩](#Aurora)
+<a id="f29"></a> Aurora Universities Network. (2020). _Search Queries for “Mapping Research Output to the Sustainable Development Goals (SDGs)”_ v5.0. [Dataset]. doi:10.5281/zenodo.3817445. [↩](#Aurora)
 
-<a id="f13"></a> Centers for Disease Control and Prevention. (2021). *Waterborne Disease Prevention Branch*. https://www.cdc.gov/ncezid/dfwed/waterborne/ [Accessed 15.10.2021] [↩](#CDCwaterborne)
+<a id="f13"></a> Centers for Disease Control and Prevention. (2021). _Waterborne Disease Prevention Branch_. https://www.cdc.gov/ncezid/dfwed/waterborne/ [Accessed 15.10.2021] [↩](#CDCwaterborne)
 
-<a id="f21"></a> ECESA plus members. (2017). *2017 HLPF Thematic Review of SDG3: Ensure healthy lives and promote well-being for all at all ages*. United Nations. https://sustainabledevelopment.un.org/content/documents/14367SDG3format-rev_MD_OD.pdf [accessed 12.11.2021] (#HLPF)
+<a id="f21"></a> ECESA plus members. (2017). _2017 HLPF Thematic Review of SDG3: Ensure healthy lives and promote well-being for all at all ages_. United Nations. https://sustainabledevelopment.un.org/content/documents/14367SDG3format-rev_MD_OD.pdf [accessed 12.11.2021] (#HLPF)
 
-<a id="f5"></a> International Agency for Research on Cancer. (2019). *The Cancer Dictionary*. World Health Organization. http://www-dep.iarc.fr/WHOdb/WHOdb.htm [accessed 15.11.2019] [↩](#WHOcancer)
+<a id="f5"></a> International Agency for Research on Cancer. (2019). _The Cancer Dictionary_. World Health Organization. http://www-dep.iarc.fr/WHOdb/WHOdb.htm [accessed 15.11.2019] [↩](#WHOcancer)
 
-<a id="f6"></a> National Cancer Institute. (n.d.). *Cancer Classification*. National Institutes of Health. https://training.seer.cancer.gov/disease/categories/classification.html [accessed 15.11.2019] [↩](#NIHcancer)
+<a id="f6"></a> National Cancer Institute. (n.d.). _Cancer Classification_. National Institutes of Health. https://training.seer.cancer.gov/disease/categories/classification.html [accessed 15.11.2019] [↩](#NIHcancer)
 
-<a id="f14"></a> National Institute on Drug Abuse. (2020, August). *Commonly Used Drugs Charts*. National Institutes of Health. https://www.drugabuse.gov/drug-topics/commonly-used-drugs-charts [Accessed 26.10.2021] [↩](#NIHdrugs)
+<a id="f14"></a> National Institute on Drug Abuse. (2020, August). _Commonly Used Drugs Charts_. National Institutes of Health. https://www.drugabuse.gov/drug-topics/commonly-used-drugs-charts [Accessed 26.10.2021] [↩](#NIHdrugs)
 
-<a id="f24"></a> Regional Office for the Eastern Mediterranean. (n.d.). *Epidemic and pandemic-prone diseases*. World Health Organization. http://www.emro.who.int/pandemic-epidemic-diseases/health-topics/related-health-topics.html [Accessed 18.11.2021] [↩](#WHOepipan)
+<a id="f24"></a> Regional Office for the Eastern Mediterranean. (n.d.). _Epidemic and pandemic-prone diseases_. World Health Organization. http://www.emro.who.int/pandemic-epidemic-diseases/health-topics/related-health-topics.html [Accessed 18.11.2021] [↩](#WHOepipan)
 
-<a id="f16"></a> Regional Office for Europe. (n.d.). *WHO Framework Convention on Tobacco Control (WHO FCTC)*. World Health Organization. https://www.euro.who.int/en/health-topics/disease-prevention/tobacco/publications/key-policy-documents/who-framework-convention-on-tobacco-control-who-fctc [accessed 10.11.2021].[↩](#WHOFCTC)
+<a id="f16"></a> Regional Office for Europe. (n.d.). _WHO Framework Convention on Tobacco Control (WHO FCTC)_. World Health Organization. https://www.euro.who.int/en/health-topics/disease-prevention/tobacco/publications/key-policy-documents/who-framework-convention-on-tobacco-control-who-fctc [accessed 10.11.2021].[↩](#WHOFCTC)
 
-<a id="f30"></a> Rivest, Maxime; Kashnitsky, Yury; Bédard-Vallée, Alexandre; Campbell, David; Khayat, Paul; Labrosse, Isabelle; Pinheiro, Henrique; Provençal, Simon; Roberge, Guillaume; James, Chris. (2021). *Improving the Scopus and Aurora queries to identify research that supports the United Nations Sustainable Development Goals (SDGs) 2021* V3. [Dataset]. doi: 10.17632/9sxdykm8s4.3 [↩](#Els)
+<a id="f30"></a> Rivest, Maxime; Kashnitsky, Yury; Bédard-Vallée, Alexandre; Campbell, David; Khayat, Paul; Labrosse, Isabelle; Pinheiro, Henrique; Provençal, Simon; Roberge, Guillaume; James, Chris. (2021). _Improving the Scopus and Aurora queries to identify research that supports the United Nations Sustainable Development Goals (SDGs) 2021_ V3. [Dataset]. doi: 10.17632/9sxdykm8s4.3 [↩](#Els)
 
-<a id="f1"></a> Statistics Division. (2021). *Global indicator framework for the Sustainable Development Goals and targets of the 2030 Agenda for Sustainable Development*. A/RES/71/313, E/CN.3/2018/2, E/CN.3/2019/2, E/CN.3/2020/2, E/CN.3/2021/2. Department of Economic and Social Affairs, United Nations. https://unstats.un.org/sdgs/indicators/Global%20Indicator%20Framework%20after%202021%20refinement_Eng.pdf [accessed 8 August 2021] [↩](#SDGT+Is)
+<a id="f1"></a> Statistics Division. (2021). _Global indicator framework for the Sustainable Development Goals and targets of the 2030 Agenda for Sustainable Development_. A/RES/71/313, E/CN.3/2018/2, E/CN.3/2019/2, E/CN.3/2020/2, E/CN.3/2021/2. Department of Economic and Social Affairs, United Nations. https://unstats.un.org/sdgs/indicators/Global%20Indicator%20Framework%20after%202021%20refinement_Eng.pdf [accessed 8 August 2021] [↩](#SDGT+Is)
 
-<a id="f20"></a> Sustainable Development Goals Knowledge Platform. (n.d.). *Chemicals and waste*. https://sustainabledevelopment.un.org/topics/chemicalsandwaste [accessed 12.11.2021] [↩](#SDGKPchem)
+<a id="f20"></a> Sustainable Development Goals Knowledge Platform. (n.d.). _Chemicals and waste_. https://sustainabledevelopment.un.org/topics/chemicalsandwaste [accessed 12.11.2021] [↩](#SDGKPchem)
 
-<a id="f18"></a> The Global Health Observatory. (n.d.). *Average of 13 International Health Regulations core capacity scores, SPAR version*. World Health Organization. https://www.who.int/data/gho/data/indicators/indicator-details/GHO/-average-of-13-international-health-regulations-core-capacity-scores-spar-version [accessed 11.11.2021] [↩](#WHOGHO)
+<a id="f18"></a> The Global Health Observatory. (n.d.). _Average of 13 International Health Regulations core capacity scores, SPAR version_. World Health Organization. https://www.who.int/data/gho/data/indicators/indicator-details/GHO/-average-of-13-international-health-regulations-core-capacity-scores-spar-version [accessed 11.11.2021] [↩](#WHOGHO)
 
-<a id="f22"></a> United Nations. (2016, 2017, 2018, 2019, 2020, 2021). *World Economic Situation and Prospects; Statistical Annex*. https://www.un.org/development/desa/dpad/document_gem/global-economic-monitoring-unit/world-economic-situation-and-prospects-wesp-report/. [↩](#UNLDCs)
+<a id="f22"></a> United Nations. (2016, 2017, 2018, 2019, 2020, 2021). _World Economic Situation and Prospects; Statistical Annex_. https://www.un.org/development/desa/dpad/document_gem/global-economic-monitoring-unit/world-economic-situation-and-prospects-wesp-report/. [↩](#UNLDCs)
 
-<a id="f16"></a> World Health Organization. (1981). *Global Strategy for health for all by the year 2000*. "Health for all" series, 3. http://apps.who.int/iris/bitstream/handle/10665/38893/9241800038.pdf [↩](#WHOhealthforall)
+<a id="f16"></a> World Health Organization. (1981). _Global Strategy for health for all by the year 2000_. "Health for all" series, 3. http://apps.who.int/iris/bitstream/handle/10665/38893/9241800038.pdf [↩](#WHOhealthforall)
 
-<a id="f4"></a> World Health Organization. (2018). *Noncommunicable diseases*. [Fact sheet]. https://www.who.int/en/news-room/fact-sheets/detail/noncommunicable-diseases [accessed 15.11.2019] [↩](#WHOFSnoncomm)
+<a id="f4"></a> World Health Organization. (2018). _Noncommunicable diseases_. [Fact sheet]. https://www.who.int/en/news-room/fact-sheets/detail/noncommunicable-diseases [accessed 15.11.2019] [↩](#WHOFSnoncomm)
 
-<a id="f7"></a> World Health Organization. (2019a). *Mental disorders*. [Fact sheet]. https://www.who.int/en/news-room/fact-sheets/detail/mental-disorders [accessed 29.11.2019] [↩](#WHOFSmental)
+<a id="f7"></a> World Health Organization. (2019a). _Mental disorders_. [Fact sheet]. https://www.who.int/en/news-room/fact-sheets/detail/mental-disorders [accessed 29.11.2019] [↩](#WHOFSmental)
 
-<a id="f19"></a> World Health Organization. (2019b). *WHO Benchmarks for International Health Regulation (IHR) Capacities*. https://apps.who.int/iris/handle/10665/311158 [↩](#WHOJEE)
+<a id="f19"></a> World Health Organization. (2019b). _WHO Benchmarks for International Health Regulation (IHR) Capacities_. https://apps.who.int/iris/handle/10665/311158 [↩](#WHOJEE)
 
-<a id="f3"></a> World Health Organization. (2020a). *Ending the neglect to attain the Sustainable Development Goals: a road map for neglected tropical diseases 2021–2030*. https://apps.who.int/iris/handle/10665/338565  [↩](#WHONTD)
+<a id="f3"></a> World Health Organization. (2020a). _Ending the neglect to attain the Sustainable Development Goals: a road map for neglected tropical diseases 2021–2030_. https://apps.who.int/iris/handle/10665/338565 [↩](#WHONTD)
 
-<a id="f11"></a> World Health Organization. (2020b, June 20). *10 chemicals of public health concern.*. [Photo story]. https://www.who.int/news-room/photo-story/photo-story-detail/10-chemicals-of-public-health-concern [accessed 15.11.2021]  [↩](#WHOchem)
+<a id="f11"></a> World Health Organization. (2020b, June 20). _10 chemicals of public health concern._. [Photo story]. https://www.who.int/news-room/photo-story/photo-story-detail/10-chemicals-of-public-health-concern [accessed 15.11.2021] [↩](#WHOchem)
 
-<a id="f23"></a> World Health Organization. (2020c, Dec 9). *The top 10 causes of death*. [Fact sheet]. https://www.who.int/news-room/fact-sheets/detail/the-top-10-causes-of-death [accessed 18.11.2021]  [↩](#WHOFStop10)
+<a id="f23"></a> World Health Organization. (2020c, Dec 9). _The top 10 causes of death_. [Fact sheet]. https://www.who.int/news-room/fact-sheets/detail/the-top-10-causes-of-death [accessed 18.11.2021] [↩](#WHOFStop10)
 
-<a id="f22"></a> World Health Organization. (2021a). *Ambient (outdoor) air pollution*. [Fact sheet]. https://www.who.int/news-room/fact-sheets/detail/ambient-(outdoor)-air-quality-and-health [accessed 12.11.2021] [↩](#WHOambientairpoll)
+<a id="f22"></a> World Health Organization. (2021a). _Ambient (outdoor) air pollution_. [Fact sheet]. https://www.who.int/news-room/fact-sheets/detail/ambient-(outdoor)-air-quality-and-health [accessed 12.11.2021] [↩](#WHOambientairpoll)
 
-<a id="f25"></a> World Health Organization. (2021b). *Household air pollution and health*. [Fact sheet]. https://www.who.int/news-room/fact-sheets/detail/household-air-pollution-and-health [accessed 12.11.2021] [↩](#WHOhouseairpoll)
+<a id="f25"></a> World Health Organization. (2021b). _Household air pollution and health_. [Fact sheet]. https://www.who.int/news-room/fact-sheets/detail/household-air-pollution-and-health [accessed 12.11.2021] [↩](#WHOhouseairpoll)
 
-<a id="f2"></a> World Health Organization. (n.d. a). *Global Health Observatory data repository: By theme*. http://apps.who.int/gho/data/node.home [accessed 15.10.2021]
+<a id="f2"></a> World Health Organization. (n.d. a). _Global Health Observatory data repository: By theme_. http://apps.who.int/gho/data/node.home [accessed 15.10.2021]
 
-<a id="f2a"></a> World Health Organization. (n.d. b). *Global Health Observatory data repository: By category: Vaccine-preventable communicable diseases*. http://apps.who.int/gho/data/node.main.170?lang=en [accessed 15.10.2021].[↩](#WHOGHO)
+<a id="f2a"></a> World Health Organization. (n.d. b). _Global Health Observatory data repository: By category: Vaccine-preventable communicable diseases_. http://apps.who.int/gho/data/node.main.170?lang=en [accessed 15.10.2021].[↩](#WHOGHO)
 
-<a id="f15"></a> World Health Organization. (n.d. c). *Abortion*. [Fact sheet]. https://www.who.int/health-topics/abortion [accessed 29.10.2021].[↩](#WHOabortion)
+<a id="f15"></a> World Health Organization. (n.d. c). _Abortion_. [Fact sheet]. https://www.who.int/health-topics/abortion [accessed 29.10.2021].[↩](#WHOabortion)
 
-<a id="f8"></a> World Health Organization. (n.d. d). *Health Equity*. https://www.who.int/topics/health_equity/en/ [accessed 29.11.2019] [↩](#WHOequity)
+<a id="f8"></a> World Health Organization. (n.d. d). _Health Equity_. https://www.who.int/topics/health_equity/en/ [accessed 29.11.2019] [↩](#WHOequity)
 
-<a id="f17"></a> World Trade Organization. (n.d.). *The Doha Declaration explained*. https://www.wto.org/english/tratop_e/dda_e/dohaexplained_e.htm [accessed 11.11.2021] [↩](#WTOdoha)
+<a id="f17"></a> World Trade Organization. (n.d.). _The Doha Declaration explained_. https://www.wto.org/english/tratop_e/dda_e/dohaexplained_e.htm [accessed 11.11.2021] [↩](#WTOdoha)

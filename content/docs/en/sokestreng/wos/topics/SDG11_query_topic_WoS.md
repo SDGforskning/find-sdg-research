@@ -1,6 +1,6 @@
 ---
-title: Search query for SDG 11 -Sustainable cities and communities, Bergen topic-approach.
----
+
+## title: Search query for SDG 11 -Sustainable cities and communities, Bergen topic-approach.
 
 **Current status**: This string is currently a finished version.
 
@@ -36,15 +36,15 @@ This target interpreted to cover research on
 
 - Access to adequate, safe and affordable housing and basic services
 
-- Slums.  
+- Slums.
 
-Search terms are partly based on definitions of basic services, housing standards and slums found in SDG indicator metadata repository for indicators 11.1.1 and 1.4.1 (<a id="SDGmetarep">[UN Statistics Division, 2022](#f2)</a>).  
+Search terms are partly based on definitions of basic services, housing standards and slums found in SDG indicator metadata repository for indicators 11.1.1 and 1.4.1 (<a id="SDGmetarep">[UN Statistics Division, 2022](#f2)</a>).
 
 This query consists of 3 phrases.
 
 #### Phrase 1
 
-This phrase covers research about access, affordability, safety etc. of housing. The basic structure is *access + safe/affordable + housing*.
+This phrase covers research about access, affordability, safety etc. of housing. The basic structure is _access + safe/affordable + housing_.
 
 "homes" is not included as a search term as it mostly adds noise from health research about care homes/nursing homes.
 
@@ -66,7 +66,7 @@ TS=
 
 #### Phrase 2
 
-Phrase 2 covers access to basic services. The basic structure is *access + basic services + housing*.
+Phrase 2 covers access to basic services. The basic structure is _access + basic services + housing_.
 
 Basic services terms were gathered from documentation for indicator 1.4.1 in the SDG Indicators Metadata Repository (<a id="SDGmetarep">[UN Statistics Division, 2022](#f2)</a>) and a presentation from UNESCAP/UN Habitat (<a id="UNhabitat">[Njiru, 2018](#f3)</a>).
 
@@ -108,7 +108,7 @@ TS=
 
 #### Phrase 3
 
-This phrase covers research about upgrading slums. The basic structure is *slums*.
+This phrase covers research about upgrading slums. The basic structure is _slums_.
 
 ```py
 TS=
@@ -127,7 +127,7 @@ This query consists of 2 phrases.
 
 #### Phrase 1
 
-The basic structure is *safe + transport systems + cities*
+The basic structure is _safe + transport systems + cities_
 
 Challenge: The term "transport system" is used in several subjects as biology, chemistry and transport of oil. This is solved by limiting the search with terms concerning land transport. It is also difficult to exclude freight transport. (We could focus on transport, not transport systems.)
 
@@ -155,7 +155,7 @@ TS=
 
 #### Phrase 2
 
-This phrase covers research about road safety. The basic structure is *safety + road*.
+This phrase covers research about road safety. The basic structure is _safety + road_.
 
 ```py
 TS=
@@ -189,7 +189,7 @@ This query consists of two phrases.
 
 #### Phrase 1
 
-This phrase covers urbanization. The basic structure is *sustainble/inclusive + urbanization*.
+This phrase covers urbanization. The basic structure is _sustainble/inclusive + urbanization_.
 
 ```py
 TS=
@@ -201,7 +201,7 @@ TS=
 
 #### Phrase 2
 
-This phrase covers settlement planning. The basic structure is *settlement planning + process terms*.
+This phrase covers settlement planning. The basic structure is _settlement planning + process terms_.
 
 ```py
 TS=
@@ -223,7 +223,7 @@ TS=
 
 This target is interpreted to cover research on the protection of cultural and natural heritage. There are a few challenges in determining scope and detail level, as cultural and natural heritage consists of a myriad of categories (churches, castles, rock art…) and also individual objects and sites (Notre Dame, Great Barrier Reef…). The search strings are initially focusing on top level terms, partly based on UNESCO Framework for Cultural Statistics (<a id="unescoculturalstats">[UNESCO Institute for Statistics, 2009](#f4)</a>). The indicator focuses on expenditure, but “strengthening efforts” also includes aspects like policy making, increasing knowledge and awareness, etc.
 
-This query consists of 1 phrase. The basic structure is *management/protection + cultural heritage*.
+This query consists of 1 phrase. The basic structure is _management/protection + cultural heritage_.
 
 ```py
 TS=
@@ -257,7 +257,7 @@ This query consists of 3 phrases.
 
 #### Phrase 1
 
-This phrase covers research about reducing mortality/increasing survival and disasters. The basic structure is *disasters + mortality + humans/settlements*. Disaster terms to do with disease (`pandemic$`, `epidemic$`, `outbreak$`) were not included as the results were dominated by these, and these are more related to SDG3 (or animal health, in the case of `outbreak`). The *human/settlement* terms are generic terms for humans and settlements, plus terms from the lists of vulnerable peoples created for SDG 1 (see documentation there). Terms such as `communit*`are not included to try and avoid ecological works (e.g. plant communities and forest fires).
+This phrase covers research about reducing mortality/increasing survival and disasters. The basic structure is _disasters + mortality + humans/settlements_. Disaster terms to do with disease (`pandemic$`, `epidemic$`, `outbreak$`) were not included as the results were dominated by these, and these are more related to SDG3 (or animal health, in the case of `outbreak`). The _human/settlement_ terms are generic terms for humans and settlements, plus terms from the lists of vulnerable peoples created for SDG 1 (see documentation there). Terms such as `communit*`are not included to try and avoid ecological works (e.g. plant communities and forest fires).
 
 ```py
 TS=
@@ -318,7 +318,7 @@ TS=
 
 #### Phrase 2
 
-This phrase covers research about disasters and GDP. The general structure is *disasters + GDP*. 
+This phrase covers research about disasters and GDP. The general structure is _disasters + GDP_.
 
 ```py
 TS=
@@ -368,7 +368,7 @@ This query consists of 4 phrases: 1 phrase for "environmental impact of cities",
 
 #### Phrase 1
 
-This phrase covers research about the general environmental impact of cities. The basic structure is *environmental impact + cities*.
+This phrase covers research about the general environmental impact of cities. The basic structure is _environmental impact + cities_.
 
 ```py
 TS=
@@ -380,7 +380,7 @@ TS=
 
 #### Phrase 2
 
-This phrase finds research about air quality in cities. The basic structure is *air pollution + cities // clean air + cities*.
+This phrase finds research about air quality in cities. The basic structure is _air pollution + cities // clean air + cities_.
 
 ```py
 TS=
@@ -398,7 +398,7 @@ TS=
 
 #### Phrase 3
 
-The basic structure is *waste*.
+The basic structure is _waste_.
 
 This phrase finds research about waste, while phrase 4 deals with waste collection/management and uses some different action terms, as waste management and waste are different concepts. These are related to other indicators (1.4.1, 6.3.1, 12.3.1.b, 12.5.1). Terms were gathered from the SDG indicator metadata repository for indicator 11.6.1 (<a id="SDGmetarep">[UN Statistics Division, 2022](#f2)</a>).
 
@@ -416,7 +416,7 @@ TS=
 
 #### Phrase 4
 
-The basic structure is *environmental impact + waste management*.
+The basic structure is _environmental impact + waste management_.
 
 This phrase finds research about waste collection/management, while phrase 3 is about waste in general. These are related to other indicators (1.4.1, 6.3.1, 12.3.1.b, 12.5.1). Terms were gathered from the SDG indicator metadata repository for indicator 11.6.1 (<a id="SDGmetarep">[UN Statistics Division, 2022](#f2)</a>).
 
@@ -436,12 +436,13 @@ TS=
 >
 > 11.7.2 Proportion of persons victim of physical or sexual harassment, by sex, age, disability status and place of occurrence, in the previous 12 months
 
-This target is interpreted as to cover research on universally available green and public spaces, including safe areas, inclusive and universally accessible areas. SDG11 focuses on urban and built-up areas, so natural parks and recreational areas in general are not included. 
+This target is interpreted as to cover research on universally available green and public spaces, including safe areas, inclusive and universally accessible areas. SDG11 focuses on urban and built-up areas, so natural parks and recreational areas in general are not included.
 
 This query consists of 2 phrases.
 
 #### Phrase 1
-This phrase is about safe/accessible spaces and access to spaces. The basic structure is *safety/access + public spaces*.
+
+This phrase is about safe/accessible spaces and access to spaces. The basic structure is _safety/access + public spaces_.
 
 ```py
 TS=
@@ -456,7 +457,8 @@ TS=
 ```
 
 #### Phrase 2
-This phrase is about exclusion or justice and public spaces. The basic structure is *exclusion/justice terms + public spaces*.
+
+This phrase is about exclusion or justice and public spaces. The basic structure is _exclusion/justice terms + public spaces_.
 
 ```py
 TS=
@@ -481,7 +483,7 @@ TS=
 
 This target is interpreted as to cover research on national and regional planning related to cities and rural development. Different approaches possible, but main focus is on planning and cooperation. Indicator is partly included in search string.
 
-This query consists of 1 phrase. The basic structure is *planning*.
+This query consists of 1 phrase. The basic structure is _planning_.
 
 Limited truncation of `planning` to avoid e.g. "plants".
 
@@ -510,7 +512,7 @@ TS=
 
 This target is interpreted to cover research about disaster/climate change planning and human settlements/cities. One could consider if it should strictly be interpreted as plans, or if research about vulnerability and preparedness should be included too. The target focuses on implementation of plans so we retain this at the moment.
 
-This query consists of 1 phrase. The basic structure is *disaster/climate plans + cities*.
+This query consists of 1 phrase. The basic structure is _disaster/climate plans + cities_.
 
 ```py
 TS=
@@ -540,9 +542,9 @@ TS=
 
 This target is interpreted to cover research about a) LDCs (least developed countries) and local building materials or b) LDCs and sustainable or resilient construction. We interpret "local materials" to be local building materials, i.e. materials where the entire production process takes place within the region.
 
-The basic structure is: *local materials/sustainable buildings/resilient construction + LEDCs*.
+The basic structure is: _local materials/sustainable buildings/resilient construction + LEDCs_.
 
-Terms were taken from the SDG 11 Synthesis Report from the 2018 High Level Political Forum (<a id="hlpf2018">[United Nations, 2018](#f7)</a>). "Construction" and "building" are widely used to describe other activities than construction materials, or the building industry, thus they had to be combined with other terms. 
+Terms were taken from the SDG 11 Synthesis Report from the 2018 High Level Political Forum (<a id="hlpf2018">[United Nations, 2018](#f7)</a>). "Construction" and "building" are widely used to describe other activities than construction materials, or the building industry, thus they had to be combined with other terms.
 
 ```py
 TS=
@@ -608,9 +610,9 @@ NOT
 
 ## 4. Contributions
 
-* v1.0.0: Håkon Magne Bjerkan, Inger Gåsemyr (Oct 2021-Oct 2022), Kari Hølland (Oct 2021-Mar 2022)
+- v1.0.0: Håkon Magne Bjerkan, Inger Gåsemyr (Oct 2021-Oct 2022), Kari Hølland (Oct 2021-Mar 2022)
 
-* Internal review: Eli Heldaas Seland, Caroline S. Armitage (Mar 2022), Caroline S. Armitage (minor review Oct 2022)
+- Internal review: Eli Heldaas Seland, Caroline S. Armitage (Mar 2022), Caroline S. Armitage (minor review Oct 2022)
 
 Specialist input: Awaiting
 
@@ -618,16 +620,16 @@ Specialist input: Awaiting
 
 <a id="f5"></a> Murray, V. et al. (2021) Hazard Information Profiles: Supplement to UNDRR-ISC Hazard Definition & Classification Review: Technical Report: Geneva, Switzerland, United Nations Office for Disaster Risk Reduction; Paris, France, International Science Council. https://council.science/publications/hazard-information-profiles/. [↩](#disasters)
 
-<a id="f3"></a> Njiru, E. (March 2018) *Introducing indicator 1.4.1*. UNESCAP, UN Habitat Global Urban Observatory. https://www.unescap.org/sites/default/files/Indicator%201.4.1_Basic%20Services.pdf (accessed Jun 2022). [↩](#UNhabitat)
+<a id="f3"></a> Njiru, E. (March 2018) _Introducing indicator 1.4.1_. UNESCAP, UN Habitat Global Urban Observatory. https://www.unescap.org/sites/default/files/Indicator%201.4.1_Basic%20Services.pdf (accessed Jun 2022). [↩](#UNhabitat)
 
-<a id="f4"></a> UNESCO Institute for Statistics (2009). *2009 UNESCO Framework for Cultural Statistics*. UNESCO. http://uis.unesco.org/sites/default/files/documents/unesco-framework-for-cultural-statistics-2009-en_0.pdf [↩](#unescoculturalstats)
+<a id="f4"></a> UNESCO Institute for Statistics (2009). _2009 UNESCO Framework for Cultural Statistics_. UNESCO. http://uis.unesco.org/sites/default/files/documents/unesco-framework-for-cultural-statistics-2009-en_0.pdf [↩](#unescoculturalstats)
 
-<a id="f7"></a> United Nations (2018). *Tracking progress towards inclusive, safe, resilient and sustainable cities and human settlements*. High Level Political Forum 2018. http://uis.unesco.org/sites/default/files/documents/sdg11-synthesis-report-2018-en.pdf
+<a id="f7"></a> United Nations (2018). _Tracking progress towards inclusive, safe, resilient and sustainable cities and human settlements_. High Level Political Forum 2018. http://uis.unesco.org/sites/default/files/documents/sdg11-synthesis-report-2018-en.pdf
 
-<a id="f22"></a> United Nations. (2016, 2017, 2018, 2019, 2020, 2021). *World Economic Situation and Prospects; Statistical Annex*. https://www.un.org/development/desa/dpad/document_gem/global-economic-monitoring-unit/world-economic-situation-and-prospects-wesp-report/ [↩](#UNLDCs)
+<a id="f22"></a> United Nations. (2016, 2017, 2018, 2019, 2020, 2021). _World Economic Situation and Prospects; Statistical Annex_. https://www.un.org/development/desa/dpad/document_gem/global-economic-monitoring-unit/world-economic-situation-and-prospects-wesp-report/ [↩](#UNLDCs)
 
-<a id="f6"></a> UN Office for Disaster Risk Reduction (n.d.). *Sendai Framework at a Glance*. PreventionWeb. https://www.preventionweb.net/sendai-framework/sendai-framework-at-a-glance [↩](#sendai)
+<a id="f6"></a> UN Office for Disaster Risk Reduction (n.d.). _Sendai Framework at a Glance_. PreventionWeb. https://www.preventionweb.net/sendai-framework/sendai-framework-at-a-glance [↩](#sendai)
 
-<a id="f1"></a> UN Statistics Division (2021). *Global indicator framework for the Sustainable Development Goals and targets of the 2030 Agenda for Sustainable Development*. A/RES/71/313, E/CN.3/2018/2, E/CN.3/2019/2, E/CN.3/2020/2, E/CN.3/2021/2. Department of Economic and Social Affairs, United Nations. https://unstats.un.org/sdgs/indicators/Global%20Indicator%20Framework%20after%202021%20refinement_Eng.pdf [accessed 8 August 2021] [↩](#SDGT+Is)
+<a id="f1"></a> UN Statistics Division (2021). _Global indicator framework for the Sustainable Development Goals and targets of the 2030 Agenda for Sustainable Development_. A/RES/71/313, E/CN.3/2018/2, E/CN.3/2019/2, E/CN.3/2020/2, E/CN.3/2021/2. Department of Economic and Social Affairs, United Nations. https://unstats.un.org/sdgs/indicators/Global%20Indicator%20Framework%20after%202021%20refinement_Eng.pdf [accessed 8 August 2021] [↩](#SDGT+Is)
 
 <a id="f2"></a> UN Statistics Division (2022). SDG Indicators Metadata Repository. https://unstats.un.org/sdgs/metadata

@@ -1,15 +1,17 @@
-import * as React from 'react'
-const SvgBaerekraftsforskningEnLinjeHvitNo = props => (
+import * as React from "react";
+
+const SvgBaerekraftsforskningEnLinjeHvitNo = (props) => (
   <svg
     id="Baerekraftsforskning_en-linje_hvit_NO_svg__B\xE6rekraftsforskning_en_linje_hvit(NO)_svg__Layer_2"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="1 0 799 122"
     {...props}
   >
+    <title>Finn bærekraftsforskning</title>
     <defs>
       <style>
         {
-          '.B\xE6rekraftsforskning_en_linje_hvit(NO) _svg__cls-13{stroke-width:0px}.B\xE6rekraftsforskning_en_linje_hvit(NO) _svg__cls-13{fill:#fff}'
+          ".B\xE6rekraftsforskning_en_linje_hvit(NO) _svg__cls-13{stroke-width:0px}.B\xE6rekraftsforskning_en_linje_hvit(NO) _svg__cls-13{fill:#fff}"
         }
       </style>
     </defs>
@@ -109,7 +111,8 @@ const SvgBaerekraftsforskningEnLinjeHvitNo = props => (
         strokeWidth=".75px"
       />
     </g>
-    <g id="Baerekraftsforskning_en-linje_hvit_NO_svg__B\xE6rekraftsforskning_en_linje_hvit(NO)_svg__Layer_2-2"
+    <g
+      id="Baerekraftsforskning_en-linje_hvit_NO_svg__B\xE6rekraftsforskning_en_linje_hvit(NO)_svg__Layer_2-2"
       style={{
         fill: "currentcolor",
       }}
@@ -308,5 +311,5 @@ const SvgBaerekraftsforskningEnLinjeHvitNo = props => (
       />
     </g>
   </svg>
-)
-export default SvgBaerekraftsforskningEnLinjeHvitNo
+);
+export default SvgBaerekraftsforskningEnLinjeHvitNo;

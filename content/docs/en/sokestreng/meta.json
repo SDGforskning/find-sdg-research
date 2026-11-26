@@ -1,9 +1,5 @@
 {
   "title": "Search strings",
-  "pages": [
-    "introduksjon",
-    "wos",
-    "jupyter"
-  ],
+  "pages": ["introduksjon", "wos", "jupyter"],
   "root": true
 }

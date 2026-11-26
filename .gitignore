@@ -10,6 +10,10 @@
 /out/
 /build
 *.tsbuildinfo
+/playwright-report/
+/test-results/
+/gl-code-quality-report.json
+/blob-report/
 
 # misc
 .DS_Store
@@ -27,3 +31,8 @@ yarn-error.log*
 .env.keys
 .vercel
 next-env.d.ts
+
+# Lefthook local overrides
+lefthook-local.yml
+.lefthook-local.yml
+.lefthook-local.yaml

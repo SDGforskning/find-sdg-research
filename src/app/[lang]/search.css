@@ -8,7 +8,7 @@ input[type="checkbox"]:checked {
 }
 
 .home-content a {
-  --tw-ring-color: hsl(var(--nextra-primary-hue) 100% 50%/0.3);
+  --tw-ring-color: hsl(var(--nextra-primary-hue) 100% 50% / 0.3);
   --tw-text-opacity: 1;
   text-underline-position: under;
   text-decoration-line: underline;
@@ -16,7 +16,7 @@ input[type="checkbox"]:checked {
   color: hsl(var(--nextra-primary-hue) 100% 50% / var(--tw-text-opacity));
 }
 
-figurecaption {
+figcaption {
   font-size: 0.85rem;
   line-height: 1.5rem;
   display: block;
@@ -129,8 +129,6 @@ code.text-\[\.9em\] {
   border-color: rgb(25, 72, 106);
   border-width: 2px;
 }
-
-
 
 /* Search UI */
 
@@ -246,7 +244,6 @@ code.text-\[\.9em\] {
     padding: 10px;
 
     line-height: 1.5;
-    font-weight: 400;
     font-size: 14px;
     font-weight: 700;
     color: #3a56e4;
@@ -327,11 +324,11 @@ code.text-\[\.9em\] {
   border: 0;
 }
 
-.sui-facet+.sui-facet {
+.sui-facet + .sui-facet {
   margin-top: 32px;
 }
 
-.sui-sorting+.sui-facet {
+.sui-sorting + .sui-facet {
   margin-top: 32px;
 }
 
@@ -526,7 +523,7 @@ code.text-\[\.9em\] {
   padding: 0;
 }
 
-.rc-pagination>li {
+.rc-pagination > li {
   list-style: none;
 }
 
@@ -864,14 +861,13 @@ code.text-\[\.9em\] {
 }
 
 @media only screen and (max-width: 1024px) {
-
   .rc-pagination-item-after-jump-prev,
   .rc-pagination-item-before-jump-next {
     display: none;
   }
 }
 
-.sui-paging>li {
+.sui-paging > li {
   border: none;
   background: transparent;
   outline: none;
@@ -979,7 +975,7 @@ code.text-\[\.9em\] {
   overflow: hidden;
 }
 
-.sui-result+.sui-result {
+.sui-result + .sui-result {
   margin-top: 32px;
 }
 
@@ -1128,7 +1124,9 @@ code.text-\[\.9em\] {
   margin-left: 10px;
   cursor: pointer;
   border-radius: 4px;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 0px 1px inset, rgba(59, 69, 79, 0.3) 0px 2px 4px;
+  box-shadow:
+    rgba(0, 0, 0, 0.3) 0px 0px 0px 1px inset,
+    rgba(59, 69, 79, 0.3) 0px 2px 4px;
 }
 
 .dark .sui-search-box__submit {
@@ -1137,7 +1135,9 @@ code.text-\[\.9em\] {
 }
 
 .sui-search-box__submit:hover {
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 0px 1px inset, rgba(59, 69, 79, 0.3) 0px 4px 6px;
+  box-shadow:
+    rgba(0, 0, 0, 0.3) 0px 0px 0px 1px inset,
+    rgba(59, 69, 79, 0.3) 0px 4px 6px;
 }
 
 .live-filtering .sui-search-box__submit {
@@ -1242,12 +1242,12 @@ code.text-\[\.9em\] {
   color: #ffffff;
 }
 
-.sui-search-box__autocomplete-container li[aria-selected=true] {
+.sui-search-box__autocomplete-container li[aria-selected="true"] {
   background: #3a56e4;
   color: #ffffff;
 }
 
-.sui-search-box__autocomplete-container li[aria-selected=true] em {
+.sui-search-box__autocomplete-container li[aria-selected="true"] em {
   background: transparent;
   color: #ffffff;
 }

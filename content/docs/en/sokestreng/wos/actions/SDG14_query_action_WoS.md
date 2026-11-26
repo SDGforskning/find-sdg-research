@@ -1,6 +1,6 @@
 ---
-title: Search query for SDG 14 - Life below water, Bergen action-approach.
----
+
+## title: Search query for SDG 14 - Life below water, Bergen action-approach.
 
 Conserve and sustainably use the oceans, seas and marine resources for sustainable development.
 
@@ -23,7 +23,7 @@ Results of the full search in its current state can be viewed on Web of Science 
 
 This document contains search strings for finding publications related to the actions in the SDG 14 targets and indicators ("action approach"; focus on precision, smaller result set). We also have a version which finds publications related to the topics in the SDG 14 targets and indicators ("topic approach"; focus on recall, larger result set), provided in the same repository as this file. For more explanation, see the Readme in this repository.
 
-This SDG is interpreted to be about the marine environment; however, certain topics are difficult to limit to only this environment without missing large numbers of works. In particular, fisheries research may not always use clear marine words, or may concern both marine and freshwater environments. Some important species move between freshwater and marine habitats (e.g. eel, salmon). Thus, the fishery-related targets (14.4, 14.6 and 14.b) are currently not limited using the *marine terms* below. Most other phrases are (see notes on individual phrases).
+This SDG is interpreted to be about the marine environment; however, certain topics are difficult to limit to only this environment without missing large numbers of works. In particular, fisheries research may not always use clear marine words, or may concern both marine and freshwater environments. Some important species move between freshwater and marine habitats (e.g. eel, salmon). Thus, the fishery-related targets (14.4, 14.6 and 14.b) are currently not limited using the _marine terms_ below. Most other phrases are (see notes on individual phrases).
 
 A source of keywords for several targets was OECDs "Marine Protected Areas: Economics, Management and Effective Policy Mixes" (<a id="OECD">[OECD, 2017](#f5)</a>), and FAOs "State of World Fisheries and Aquaculture" (<a id="FAOfish">[FAO, 2018](#f8)</a>). In addition, during editing of this string (2021), we have consulted two other sets of queries for reference: <a id="Aurora">[Aurora Universities network (2020)](#f5)</a> and <a id="Els">[Rivest et al. (2021)](#f6)</a>.
 
@@ -169,7 +169,7 @@ It consists of 3 phrases.
 
 #### Phrase 1
 
-The general structure is *action + pollution*. **This phrase should be combined with [marine terms](https://github.com/SDGforskning/SDGstrings_wos/blob/main/SDG14_query_action_WoS.md#3-marine-terms-string-for-limiting-certain-phrases-to-the-marine-environment) with `AND`**.
+The general structure is _action + pollution_. **This phrase should be combined with [marine terms](https://github.com/SDGforskning/SDGstrings_wos/blob/main/SDG14_query_action_WoS.md#3-marine-terms-string-for-limiting-certain-phrases-to-the-marine-environment) with `AND`**.
 
 The pollution terms and structure are mostly the same between the three phrases; the difference is the action terms, and how closely they are combined with these (closely combined terms in phrase 1 (`NEAR/5`), medium in phrase 2 (`NEAR/15`), and loosely in phrase 3 (`AND`)). In this phrase, the action terms consist of general actions.
 
@@ -220,7 +220,7 @@ TS=
 
 #### Phrase 2
 
-The general structure is *action + pollution tech/treatments + pollution*. **This phrase should be combined with [marine terms](https://github.com/SDGforskning/SDGstrings_wos/blob/main/SDG14_query_action_WoS.md#3-marine-terms-string-for-limiting-certain-phrases-to-the-marine-environment) with `AND`**.
+The general structure is _action + pollution tech/treatments + pollution_. **This phrase should be combined with [marine terms](https://github.com/SDGforskning/SDGstrings_wos/blob/main/SDG14_query_action_WoS.md#3-marine-terms-string-for-limiting-certain-phrases-to-the-marine-environment) with `AND`**.
 
 The pollution terms and structure are mostly the same between the three phrases; the difference is the action terms, and how closely they are combined with these (closely combined terms in phrase 1 (`NEAR/5`), medium in phrase 2 (`NEAR/15`), and loosely in phrase 3 (`AND`)). In this phrase, the action terms consist of general actions and "pollution actions".
 
@@ -282,15 +282,16 @@ TS=
 
 #### Phrase 3
 
-The general structure is *action + pollution*. **This phrase should be combined with [marine terms](https://github.com/SDGforskning/SDGstrings_wos/blob/main/SDG14_query_action_WoS.md#3-marine-terms-string-for-limiting-certain-phrases-to-the-marine-environment) with `AND`**.
+The general structure is _action + pollution_. **This phrase should be combined with [marine terms](https://github.com/SDGforskning/SDGstrings_wos/blob/main/SDG14_query_action_WoS.md#3-marine-terms-string-for-limiting-certain-phrases-to-the-marine-environment) with `AND`**.
 
 The pollution terms and structure are mostly the same between the three phrases; the difference is the action terms, and how closely they are combined with these (closely combined terms in phrase 1 (`NEAR/5`), medium in phrase 2 (`NEAR/15`), and loosely in phrase 3 (`AND`)). In this phrase, the action terms consist of frameworks and specific phrases that indicate action. While these frameworks are not actions in themselves, we consider works mentioning them likely to be action-oriented.
 
 `limit pollution` was specified to avoid "pollution limits".
-* The OSPAR convention is the Convention for the protection of the marine environment of the North-East Atlantic, and covers the prevention and elimination of pollution.
-* The Water Framework Directive and Marine Strategy Framework Directives from the EU, and covers pollution and marine litter (respectively) as one of their topics. The Barcelona convention refers to the Mediterranean.
-* Global Programme of Action for the Protection of the Marine Environment from Land-based Activities is hosted by the UN environment program, and is an intergovernmental action program.
-* MARPOL is the International convention for the prevention of pollution from ships (International Maritime Organization)
+
+- The OSPAR convention is the Convention for the protection of the marine environment of the North-East Atlantic, and covers the prevention and elimination of pollution.
+- The Water Framework Directive and Marine Strategy Framework Directives from the EU, and covers pollution and marine litter (respectively) as one of their topics. The Barcelona convention refers to the Mediterranean.
+- Global Programme of Action for the Protection of the Marine Environment from Land-based Activities is hosted by the UN environment program, and is an intergovernmental action program.
+- MARPOL is the International convention for the prevention of pollution from ships (International Maritime Organization)
 
 `pollution` covers various kinds (e.g. noise pollution). In this phrase, specific pollutants (e.g. `mercury`) do not need to be combined with `pollution or contamination`, because the action terms are all related to pollution.
 
@@ -339,17 +340,18 @@ TS=
 >
 > 14.2.1 Number of countries using ecosystem-based approaches to managing marine areas
 
-Target 14.2 is interpreted to cover research about 
-* improving management of marine/coastal ecosystems
-* increasing/improving protection of these ecosystems, which would include establishment and management of marine protected areas (MPAs)
-* restoring these ecosystems
-Note, interpreting "protect" to include establishment of MPAs means that relevant research for this target includes research considered relevant to target 14.5.
+Target 14.2 is interpreted to cover research about
+
+- improving management of marine/coastal ecosystems
+- increasing/improving protection of these ecosystems, which would include establishment and management of marine protected areas (MPAs)
+- restoring these ecosystems
+  Note, interpreting "protect" to include establishment of MPAs means that relevant research for this target includes research considered relevant to target 14.5.
 
 This query consists of 3 phrases. Phrase 1 covers the establishment/management of protected areas. Phrase 2 covers the establishment/improvement of specific sustainable management approaches. Phrase 3 covers research about restoring, protecting, conserving or managing marine ecosystems.
 
 #### Phrase 1
 
-This phrase covers the establishment/management of protected areas. The general structure is *action + protected areas*. **This phrase should be combined with [marine terms](https://github.com/SDGforskning/SDGstrings_wos/blob/main/SDG14_query_action_WoS.md#3-marine-terms-string-for-limiting-certain-phrases-to-the-marine-environment) with `AND`**.
+This phrase covers the establishment/management of protected areas. The general structure is _action + protected areas_. **This phrase should be combined with [marine terms](https://github.com/SDGforskning/SDGstrings_wos/blob/main/SDG14_query_action_WoS.md#3-marine-terms-string-for-limiting-certain-phrases-to-the-marine-environment) with `AND`**.
 
 For our interpretation of "protection" we include several types of protected areas (which have different degrees of protection); for example, `no take zone$`, `conservation zone$`, `marine protected area$`. The phrase `"protect*" OR "conservation" NEAR/3 "area*" or "zone"` will cover "marine protected areas" and "marine conservation zones".
 
@@ -379,7 +381,7 @@ TS=
 
 #### Phrase 2
 
-Phrase 2 covers the establishment/improvement of sustainable management approaches.  The general structure is *action + sustainable management*. **This phrase should be combined with [marine terms](https://github.com/SDGforskning/SDGstrings_wos/blob/main/SDG14_query_action_WoS.md#3-marine-terms-string-for-limiting-certain-phrases-to-the-marine-environment) with `AND`**.
+Phrase 2 covers the establishment/improvement of sustainable management approaches. The general structure is _action + sustainable management_. **This phrase should be combined with [marine terms](https://github.com/SDGforskning/SDGstrings_wos/blob/main/SDG14_query_action_WoS.md#3-marine-terms-string-for-limiting-certain-phrases-to-the-marine-environment) with `AND`**.
 
 ```py
 TS=
@@ -411,11 +413,11 @@ TS=
 
 #### Phrase 3
 
-Phrase 3 covers research about restoring, protecting, conserving or managing marine ecosystems. The general structure is *action + marine ecosystems or elements*. **This phrase should be combined with [marine terms](https://github.com/SDGforskning/SDGstrings_wos/blob/main/SDG14_query_action_WoS.md#3-marine-terms-string-for-limiting-certain-phrases-to-the-marine-environment) with `AND`**.
+Phrase 3 covers research about restoring, protecting, conserving or managing marine ecosystems. The general structure is _action + marine ecosystems or elements_. **This phrase should be combined with [marine terms](https://github.com/SDGforskning/SDGstrings_wos/blob/main/SDG14_query_action_WoS.md#3-marine-terms-string-for-limiting-certain-phrases-to-the-marine-environment) with `AND`**.
 
-The *action terms* for this string are challenging because one can talk about "how to conserve the marine environment" (relevant), but could also just mention "the study was carried out in a conservation area" (less relevant). Therefore, verbs for manage/protect etc. are used alone, but other forms of these words are combined with other actions (e.g. establishing management, improving protection etc).
+The _action terms_ for this string are challenging because one can talk about "how to conserve the marine environment" (relevant), but could also just mention "the study was carried out in a conservation area" (less relevant). Therefore, verbs for manage/protect etc. are used alone, but other forms of these words are combined with other actions (e.g. establishing management, improving protection etc).
 
-Under the *marine ecosystems/elements*, we include habitats, elements of ocean health, elements of production, and some specific pieces of legislation to do with conservation/protection. Terms to do with ocean health include various terms to do with functioning ecosystems and services for humans, diversity at various levels (important for ecosystem functioning, resilience and services),  `key species` and `foundation species` (whose presence is important for ecosystem maintenance), and `water quality` (can be a driver of species loss).`BBNJ` is a concept most often used to highlight the difficulties conserving biodiversity beyond national waters, so any publications mentioning it are assumed to be about protection/management.
+Under the _marine ecosystems/elements_, we include habitats, elements of ocean health, elements of production, and some specific pieces of legislation to do with conservation/protection. Terms to do with ocean health include various terms to do with functioning ecosystems and services for humans, diversity at various levels (important for ecosystem functioning, resilience and services), `key species` and `foundation species` (whose presence is important for ecosystem maintenance), and `water quality` (can be a driver of species loss).`BBNJ` is a concept most often used to highlight the difficulties conserving biodiversity beyond national waters, so any publications mentioning it are assumed to be about protection/management.
 
 ```py
 TS=
@@ -473,13 +475,13 @@ TS=
 >
 > 14.3.1 Average marine acidity (pH) measured at agreed suite of representative sampling stations
 
-The target is interpreted to cover research that focuses on minimising the impacts of ocean acidification (OA). We interpret "address" also as a term meaning to limit/combat, and consider research about improving resilience/reducing vulnerability to OA as relevant, as well as research about what decreases resilience. Note that this is quite a strict interpretation - there is much research about understanding and documenting the effects of ocean acidification, but research about *reducing* these effects may be much less. The topic approach covers a wider interpretation. 
+The target is interpreted to cover research that focuses on minimising the impacts of ocean acidification (OA). We interpret "address" also as a term meaning to limit/combat, and consider research about improving resilience/reducing vulnerability to OA as relevant, as well as research about what decreases resilience. Note that this is quite a strict interpretation - there is much research about understanding and documenting the effects of ocean acidification, but research about _reducing_ these effects may be much less. The topic approach covers a wider interpretation.
 
-The general structure is *action + impacts + acidification*.
+The general structure is _action + impacts + acidification_.
 
-*Acidification terms*: `ph` returns results from industrial processes, thus is combined in phrases. `OA` is a common abbreviation (e.g. osteoarthritis) and will find "okadeic acid" (shellfish poisoning) if used alone, hence the `AND ocean$` term (marine is not included, as often use "marine toxin"). Using all the marine terms (minus "marine") vs. just using `AND ocean$` adds almost no extra results (last 5 years); likely because "ocean acidification" is such a well-established term.  
+_Acidification terms_: `ph` returns results from industrial processes, thus is combined in phrases. `OA` is a common abbreviation (e.g. osteoarthritis) and will find "okadeic acid" (shellfish poisoning) if used alone, hence the `AND ocean$` term (marine is not included, as often use "marine toxin"). Using all the marine terms (minus "marine") vs. just using `AND ocean$` adds almost no extra results (last 5 years); likely because "ocean acidification" is such a well-established term.
 
-*Impact terms*: In this action-approach, only general impact terms are included (e.g. `impact*`) as these work best with action terms (e.g. `reduc*`). Terms for specific processes that can be affected are not really needed and can cause noise if trying to limit to research talking about how to *minimise* impacts (e.g. "this can reduce effects of OA on calcification" = minimising impact, but "OA reduces calcification" = just an impact). However, for the topic approach, terms for major biological processes that can be impacted are added (`"calcif*" OR "decalcif*" OR "calcium carbonate" OR "dissol*" OR "aragonite" OR "calcite" OR "carbonate saturation" OR "extinction" OR "adaptation" OR "adaptive capacity" OR "competition" OR "recruitment" OR "survival" OR "reproduction"`). 
+_Impact terms_: In this action-approach, only general impact terms are included (e.g. `impact*`) as these work best with action terms (e.g. `reduc*`). Terms for specific processes that can be affected are not really needed and can cause noise if trying to limit to research talking about how to _minimise_ impacts (e.g. "this can reduce effects of OA on calcification" = minimising impact, but "OA reduces calcification" = just an impact). However, for the topic approach, terms for major biological processes that can be impacted are added (`"calcif*" OR "decalcif*" OR "calcium carbonate" OR "dissol*" OR "aragonite" OR "calcite" OR "carbonate saturation" OR "extinction" OR "adaptation" OR "adaptive capacity" OR "competition" OR "recruitment" OR "survival" OR "reproduction"`).
 
 ```py
 TS =
@@ -513,7 +515,7 @@ TS =
   )
   AND "ocean$"
 )
-```   
+```
 
 ### Target 14.4
 
@@ -522,8 +524,9 @@ TS =
 > 14.4.1 Proportion of fish stocks within biologically sustainable levels
 
 This target is interpreted to cover research about:
-* ending overfishing, illegal/unreported fishing (IUU fishing) and destructive fishing  (phrase 1 & 2)
-* implementation of science-based fisheries management (phrase 3)
+
+- ending overfishing, illegal/unreported fishing (IUU fishing) and destructive fishing (phrase 1 & 2)
+- implementation of science-based fisheries management (phrase 3)
 
 Whether specific fishing types should be included as a "destructive" practice is difficult as the meaning and scope of this term varies - see discussion in <a id="destructive">[Willer et al. (2022)](#f10)</a>. In general, we focus in our strings on including terms for "destructive", leaving the classification up to the authors themselves. However, Willer et al. did find that blast and poison fishing are practices mentioned very often in conjunction with "destructive", and thus we include these concepts in our strings. Bottom trawling is a more difficult and debated type to place, although commonly linked to destructive fishing, particularly with variations in terminology (see discussion in the paper). We therefore combine trawling with terms for damage or destruction.
 
@@ -533,7 +536,7 @@ Specific fish species as search terms are not needed in this query because the f
 
 #### Phrase 1
 
-The basic structure is *generic action + overfishing/illegal/destructive fishing*. The *overfishing* terms are the same in phrase 1 and phrase 2, but the action terms differ and are added at a closer distance in phrase 1.
+The basic structure is _generic action + overfishing/illegal/destructive fishing_. The _overfishing_ terms are the same in phrase 1 and phrase 2, but the action terms differ and are added at a closer distance in phrase 1.
 
 ```py
 TS=
@@ -563,7 +566,7 @@ TS=
 
 #### Phrase 2
 
-The basic structure is *instrument actions + overfishing/illegal/destructive fishing*. The *overfishing* terms are the same in phrase 1 and phrase 2, but the action terms differ and are added at a closer distance in phrase 1.
+The basic structure is _instrument actions + overfishing/illegal/destructive fishing_. The _overfishing_ terms are the same in phrase 1 and phrase 2, but the action terms differ and are added at a closer distance in phrase 1.
 
 In this phrase, relevant legislation and organisations which have a focus on reducing illegal/overfishing included as actions, as legislation is a way of inducing action. <a id="FAOfish">[FAO (2018)](#f8)</a> was used as a source of relevant legislation.
 
@@ -598,13 +601,13 @@ TS=
       OR ("trawl*" NEAR/15 ("degrad*" OR "damag*"))
       )       
 )
-```  
+```
 
 #### Phrase 3
 
-The basic structure is *action + management/restoration + fisheries*. This phrase differs to phrases 1 and 2 in that it focuses on sustainable management, rather than overfishing or IUU fishing.
+The basic structure is _action + management/restoration + fisheries_. This phrase differs to phrases 1 and 2 in that it focuses on sustainable management, rather than overfishing or IUU fishing.
 
-`management` will find a number of terms, e.g. "science-based management", "ecosystem based (fisheries) management" (EBFM), "area based management", "fisheries management policy" etc. Policies and frameworks which call for good management are included among the *management* terms; <a id="FAOfish">[FAO (2018)](#f8)</a> was used as a source of relevant legislation. Research about both the establishment and avoidance of fishery closures is considered to be relevant to implementing good management, as is research about the max. sustainable yield.
+`management` will find a number of terms, e.g. "science-based management", "ecosystem based (fisheries) management" (EBFM), "area based management", "fisheries management policy" etc. Policies and frameworks which call for good management are included among the _management_ terms; <a id="FAOfish">[FAO (2018)](#f8)</a> was used as a source of relevant legislation. Research about both the establishment and avoidance of fishery closures is considered to be relevant to implementing good management, as is research about the max. sustainable yield.
 
 ```py
 TS=
@@ -646,9 +649,9 @@ TS=
 >
 > 14.5.1 Coverage of protected areas in relation to marine areas
 
-The target is interpreted to cover research about the establishment and management of marine protected areas. This interpretation overlaps with  our interpretation of 14.2 - while 14.2 is not explicitly about marine protected areas, "protect" is stated as one of the actions, so we consider research on the establishment/maintenance of MPAs to fall under 14.2 as well as 14.5.
+The target is interpreted to cover research about the establishment and management of marine protected areas. This interpretation overlaps with our interpretation of 14.2 - while 14.2 is not explicitly about marine protected areas, "protect" is stated as one of the actions, so we consider research on the establishment/maintenance of MPAs to fall under 14.2 as well as 14.5.
 
-This query consists of 1 phrase. The general structure is *action + protected areas*. **This phrase should be combined with [marine terms](https://github.com/SDGforskning/SDGstrings_wos/blob/main/SDG14_query_action_WoS.md#3-marine-terms-string-for-limiting-certain-phrases-to-the-marine-environment) with `AND`**. The phrase is identical to 14.2 phrase 1.
+This query consists of 1 phrase. The general structure is _action + protected areas_. **This phrase should be combined with [marine terms](https://github.com/SDGforskning/SDGstrings_wos/blob/main/SDG14_query_action_WoS.md#3-marine-terms-string-for-limiting-certain-phrases-to-the-marine-environment) with `AND`**. The phrase is identical to 14.2 phrase 1.
 
 Conserving areas of the ocean is considered widely to include several types of protected areas (which have different degrees of protection); for example, `no take zone$`, `conservation zone$`, `marine protected area$`. The phrase `"protect*" OR "conservation" NEAR/3 "area*" or "zone"` will cover "marine protected areas" and "marine conservation zones". For the action terms, I tested with `("increas*" NEAR/3 ("cover" OR "area" OR "size" OR "extent" OR "coverage"))` but it mostly gave noise.
 
@@ -680,16 +683,17 @@ TS=
 
 > **14.6 By 2020, prohibit certain forms of fisheries subsidies which contribute to overcapacity and overfishing, eliminate subsidies that contribute to illegal, unreported and unregulated fishing and refrain from introducing new such subsidies, recognizing that appropriate and effective special and differential treatment for developing and least developed countries should be an integral part of the World Trade Organization fisheries subsidies negotiation***
 >
-><sup>*Taking into account ongoing World Trade Organization negotiations, the Doha Development Agenda and the Hong Kong ministerial mandate.</sup>
+> <sup>*Taking into account ongoing World Trade Organization negotiations, the Doha Development Agenda and the Hong Kong ministerial mandate.</sup>
 >
 >  14.6.1 Degree of implementation of international instruments aiming to combat illegal, unreported and unregulated fishing
 
 This target is interpreted to cover research about reducing/eliminating fisheries subsidies that contribute to negative outcomes (overcapacity, overfishing, and IUU finishing). We also consider research about fisheries and development assistance, fisheries and the WTO, or fisheries and the mandates mentioned in the target to be relevant.
 
-This query consists of 2 phrases. 
+This query consists of 2 phrases.
 
 #### Phrase 1
-The general structure is *action + subsidies + fisheries*. 
+
+The general structure is _action + subsidies + fisheries_.
 
 The generic trm `fishing` will find "IUU fishing". `"larval subsidi*" OR "recruitment subsidi*"` are terms to do with fish population dynamics and are excluded.
 
@@ -716,7 +720,7 @@ TS =
 
 #### Phrase 2
 
-The general structure is *ODA/mandates/WTO + fisheries*. Note that this does not include an explicit action - we considered adding action terms too restrictive, as we assume that works on policy/ODA and fisheries are likely to be action-orientated anyway. 
+The general structure is _ODA/mandates/WTO + fisheries_. Note that this does not include an explicit action - we considered adding action terms too restrictive, as we assume that works on policy/ODA and fisheries are likely to be action-orientated anyway.
 
 ```py
 TS=
@@ -737,9 +741,9 @@ TS=
 
 This target is interpreted to include research about increasing economic benefits to LDCs and SIDS via sustainable use of marine resources. This target specifically only concerns least-developed countries and SIDS, but this is inconsistent with the indicator which concerns all countries. This makes a large difference to the results. As the target is clearly focused on SIDS and LDCs, we follow this interpretation, and limit the relevant research to that which mentions these countries.
 
-This query consists of 1 phrase. The general structure is *action + economic benefits + sustainability/management instruments + LDCs/SIDS*. **This phrase should be combined with [marine terms](https://github.com/SDGforskning/SDGstrings_wos/blob/main/SDG14_query_action_WoS.md#3-marine-terms-string-for-limiting-certain-phrases-to-the-marine-environment) with `AND`**.
+This query consists of 1 phrase. The general structure is _action + economic benefits + sustainability/management instruments + LDCs/SIDS_. **This phrase should be combined with [marine terms](https://github.com/SDGforskning/SDGstrings_wos/blob/main/SDG14_query_action_WoS.md#3-marine-terms-string-for-limiting-certain-phrases-to-the-marine-environment) with `AND`**.
 
-*economic benefits* is interpreted to also include e.g. livelihoods, blue growth, and ecosystem services. The `Nairobi Convention` is included, which refers to the Nairobi Convention for the Protection, Management, and Development of the Coastal and Marine Environment of the Eastern Africa region, as well as other instruments to do with sustainable use/fisheries.
+_economic benefits_ is interpreted to also include e.g. livelihoods, blue growth, and ecosystem services. The `Nairobi Convention` is included, which refers to the Nairobi Convention for the Protection, Management, and Development of the Coastal and Marine Environment of the Eastern Africa region, as well as other instruments to do with sustainable use/fisheries.
 
 The terms for Senegal and Anguilla here are truncated differently than standard due to salmon bacteria names including these terms.
 
@@ -797,15 +801,16 @@ TS =
 > 14.a.1 Proportion of total research budget allocated to research in the field of marine technology
 
 This target is difficult to interpret, particularly as "increase scientific knowledge to [...]" could be interpreted to mean that all marine research is relevant. However we take a more meta-interpretation, and interpret it to cover:
-* research about transfer of marine technology and sharing (phrase 1 and phrase 2)
-* research about developing and sharing marine research capacity/infrastructure (phrase 2)
-* research about use/benefits of biodiversity in developing countries, LDCs and SIDS (phrase 3)
+
+- research about transfer of marine technology and sharing (phrase 1 and phrase 2)
+- research about developing and sharing marine research capacity/infrastructure (phrase 2)
+- research about use/benefits of biodiversity in developing countries, LDCs and SIDS (phrase 3)
 
 This query consists of 3 phrases.
 
 #### Phrase 1
 
-The general structure is *transfer of technology*. This is such a specific term that any publications using it are likely to be highly relevant to the target.
+The general structure is _transfer of technology_. This is such a specific term that any publications using it are likely to be highly relevant to the target.
 
 ```py
 TS= ("transfer of marine technolog*" OR "marine technology transfer")
@@ -815,9 +820,9 @@ TS= ("transfer of marine technolog*" OR "marine technology transfer")
 
 This phrase covers research about improving, sharing, collaboration or funding for marine scientific knowledge, research capacity & technology. Research about advancing marine science in considered enough to be included.
 
-The general structure is *action/sharing/funding + marine science*. **This phrase should be combined with [marine terms](https://github.com/SDGforskning/SDGstrings_wos/blob/main/SDG14_query_action_WoS.md#3-marine-terms-string-for-limiting-certain-phrases-to-the-marine-environment) with `AND`**.
+The general structure is _action/sharing/funding + marine science_. **This phrase should be combined with [marine terms](https://github.com/SDGforskning/SDGstrings_wos/blob/main/SDG14_query_action_WoS.md#3-marine-terms-string-for-limiting-certain-phrases-to-the-marine-environment) with `AND`**.
 
-The *marine science* terms include generic terms for ocean science, terms for research knowledge/tools++, terms for data infrastructures, and terms for citizen science and monitoring. The IOC Criteria and Guidelines on Transfer of Marine Technology are relevant for this target, wherein marine technology includes information and data, guidelines, equipment for sampling, study and observation (both remote and in the lab), computer and modelling equipment/software, and expertise/skills in marine research (<a id="SDGindmetadata">[Statistics Division, 2021b (Indicator 14.a.1)](#f9)</a>).
+The _marine science_ terms include generic terms for ocean science, terms for research knowledge/tools++, terms for data infrastructures, and terms for citizen science and monitoring. The IOC Criteria and Guidelines on Transfer of Marine Technology are relevant for this target, wherein marine technology includes information and data, guidelines, equipment for sampling, study and observation (both remote and in the lab), computer and modelling equipment/software, and expertise/skills in marine research (<a id="SDGindmetadata">[Statistics Division, 2021b (Indicator 14.a.1)](#f9)</a>).
 
 The terms `build* OR develop*` in the first section will find capacity building/development.
 
@@ -876,9 +881,9 @@ TS=
 
 #### Phrase 3
 
-The general structure is *(blue growth / bioresources/biodiversity + bioeconomy/uses) + developing countries*. **This phrase should be combined with [marine terms](https://github.com/SDGforskning/SDGstrings_wos/blob/main/SDG14_query_action_WoS.md#3-marine-terms-string-for-limiting-certain-phrases-to-the-marine-environment) with `AND`**.
+The general structure is _(blue growth / bioresources/biodiversity + bioeconomy/uses) + developing countries_. **This phrase should be combined with [marine terms](https://github.com/SDGforskning/SDGstrings_wos/blob/main/SDG14_query_action_WoS.md#3-marine-terms-string-for-limiting-certain-phrases-to-the-marine-environment) with `AND`**.
 
-This phrase covers research about the "use/benefits of biodiversity". However, this is difficult to build an accurate string for, particularly an "action approach" string. A good number of publications talk about biodiversity together with sustainable development, usage or ecosystem services, without necessarily being about how biodiversity contributes to these (for example, "sustainable use can protect biodiversity", or generic statements about fisheries and biodiversity, but not about how it can contribute). Therefore we keep this string at a topic level, but narrow in this action-approach verison by focusing on terms clearly related to the bioeconomy or bioresources. In the topic approach, we broaden it out slightly with a wider range of terms for uses (under the *bioeconomy/uses* terms), combined with biodiversity. 
+This phrase covers research about the "use/benefits of biodiversity". However, this is difficult to build an accurate string for, particularly an "action approach" string. A good number of publications talk about biodiversity together with sustainable development, usage or ecosystem services, without necessarily being about how biodiversity contributes to these (for example, "sustainable use can protect biodiversity", or generic statements about fisheries and biodiversity, but not about how it can contribute). Therefore we keep this string at a topic level, but narrow in this action-approach verison by focusing on terms clearly related to the bioeconomy or bioresources. In the topic approach, we broaden it out slightly with a wider range of terms for uses (under the _bioeconomy/uses_ terms), combined with biodiversity.
 
 `blue growth`, `blue economy` and `marine economy` are used alone with `sustainable` because these terms indicate a use of marine resources for development/economic benefit. `development` is not used alone because it is used in many other contexts (e.g. developmental biology). The `Nagoya protocol` is related to the convention on biological diversity (Nagoya Protocol on Access to Genetic Resources and the Fair and Equitable Sharing of Benefits Arising from their Utilization to the Convention on Biological Diversity).
 
@@ -940,11 +945,11 @@ TS=
 
 This target is interpreted to cover research about ensuring access to small scale fisheries (SSF) resources/markets. We interpret this to include the fishing grounds themselves, with concepts such as SSF control and rights, as "access" is controlled by many structures (e.g. territorial control, common property; phrase 1). We also consider it to cover governance and legislation for SSFs (phrase 2). This interpretation is supported as "Appropriate legal, regulatory and policy frameworks" are included as a key feature of an enabling environment for this indicator in the indicator metadata (<a id="SDGindmetadata">[Statistics Division, 2021b (Indicator 14.b.1)](#f9)</a>).
 
-This query consists of 2 phrases.  Again, here, specific fish species as search terms are not needed because the focus is on fisheries (fisherpeople, fishermen, fishing, fishery, fisheries), not the biology of individual fish species.
+This query consists of 2 phrases. Again, here, specific fish species as search terms are not needed because the focus is on fisheries (fisherpeople, fishermen, fishing, fishery, fisheries), not the biology of individual fish species.
 
 #### Phrase 1
 
-The general structure is *action + access/rights/control + small scale + fishing*. `right$` covers "territorial use rights in fisheries" (TURFs), "territorial rights", "usage rights" etc.. `resource$` (under `access`) covers "marine resources". We do not include `traditional` alone because "traditional fisheries management" normally refers to the management traditions, rather than traditional fisheries.
+The general structure is _action + access/rights/control + small scale + fishing_. `right$` covers "territorial use rights in fisheries" (TURFs), "territorial rights", "usage rights" etc.. `resource$` (under `access`) covers "marine resources". We do not include `traditional` alone because "traditional fisheries management" normally refers to the management traditions, rather than traditional fisheries.
 
 ```py
 TS =
@@ -992,7 +997,7 @@ TS =
 
 #### Phrase 2
 
-The general structure is *regulation + fishing + small scale*.
+The general structure is _regulation + fishing + small scale_.
 
 ```py
 TS =
@@ -1021,7 +1026,8 @@ This target is interpreted to cover research about the implementation and develo
 This query consists of 2 phrases. Phrase 1 contains specific instruments, while phrase 2 contains generic terms for international law.
 
 #### Phrase 1
-The general structure is *action + international law*. **This phrase should be combined with [marine terms](https://github.com/SDGforskning/SDGstrings_wos/blob/main/SDG14_query_action_WoS.md#3-marine-terms-string-for-limiting-certain-phrases-to-the-marine-environment) with `AND`**.
+
+The general structure is _action + international law_. **This phrase should be combined with [marine terms](https://github.com/SDGforskning/SDGstrings_wos/blob/main/SDG14_query_action_WoS.md#3-marine-terms-string-for-limiting-certain-phrases-to-the-marine-environment) with `AND`**.
 
 This phrase contains specific international laws relevant to conservation and sustainable use. These terms were taken from 14.1, 14.2 and 14.4. <a id="FAOfish">[FAO (2018)](#f8)</a> was used as a source of relevant legislation. `CITES` is not included as it is also a verb.
 
@@ -1062,9 +1068,9 @@ TS =
 
 #### Phrase 2
 
-The general structure is *action + international law + sustainable use/conservation*. **This phrase should be combined with [marine terms](https://github.com/SDGforskning/SDGstrings_wos/blob/main/SDG14_query_action_WoS.md#3-marine-terms-string-for-limiting-certain-phrases-to-the-marine-environment) with `AND`**.
+The general structure is _action + international law + sustainable use/conservation_. **This phrase should be combined with [marine terms](https://github.com/SDGforskning/SDGstrings_wos/blob/main/SDG14_query_action_WoS.md#3-marine-terms-string-for-limiting-certain-phrases-to-the-marine-environment) with `AND`**.
 
-Phrase 2 includes general phrases for international law, where sustainable use and conservation must be specified to prevent results about e.g. shipping/territory disputes.  
+Phrase 2 includes general phrases for international law, where sustainable use and conservation must be specified to prevent results about e.g. shipping/territory disputes.
 
 ```py
 TS =
@@ -1100,32 +1106,32 @@ TS =
 
 ## 5. Contributions
 
-* v2019.12: Marta Lorenz, Caroline S. Armitage, Susanne Mikki
+- v2019.12: Marta Lorenz, Caroline S. Armitage, Susanne Mikki
 
-* v1.0.0 Caroline S. Armitage (Nov 2021-Sep 2022)
+- v1.0.0 Caroline S. Armitage (Nov 2021-Sep 2022)
 
-* Internal review: Marta Lorenz, Håkon Magne Bjerkan (March 2022)
+- Internal review: Marta Lorenz, Håkon Magne Bjerkan (March 2022)
 
 Specialist input: Katja Enberg (Associate professor of fisheries at UiB; review of v2019.12 in 2019), Caroline S. Armitage (PhD in marine ecology).
 
 ## 6. Footnotes
 
-<a id="f6"></a> Aurora Universities Network. (2020). *Search Queries for “Mapping Research Output to the Sustainable Development Goals (SDGs)”* v5.0. [Dataset]. doi:10.5281/zenodo.3817445. [↩](#Aurora)
+<a id="f6"></a> Aurora Universities Network. (2020). _Search Queries for “Mapping Research Output to the Sustainable Development Goals (SDGs)”_ v5.0. [Dataset]. doi:10.5281/zenodo.3817445. [↩](#Aurora)
 
-<a id="f8"></a> FAO. (2018). *The State of World Fisheries and Aquaculture 2018 - Meeting the sustainable development goals*. The State of World Fisheries and Agriculture. https://www.fao.org/documents/card/en/c/I9540EN/ [Accessed 03 December 2021].
+<a id="f8"></a> FAO. (2018). _The State of World Fisheries and Aquaculture 2018 - Meeting the sustainable development goals_. The State of World Fisheries and Agriculture. https://www.fao.org/documents/card/en/c/I9540EN/ [Accessed 03 December 2021].
 
-<a id="f3"></a> Lloyd-Smith and Immig. (2018). *Ocean Pollutants Guide: Toxic Threats to Human Health and Marine Life*. International Pollutants Elimination Network/National Toxics Network.  https://ipen.org/sites/default/files/documents/ipen-ocean-pollutants-v2_1-en-web.pdf. [↩](#Marinepoll)
+<a id="f3"></a> Lloyd-Smith and Immig. (2018). _Ocean Pollutants Guide: Toxic Threats to Human Health and Marine Life_. International Pollutants Elimination Network/National Toxics Network. https://ipen.org/sites/default/files/documents/ipen-ocean-pollutants-v2_1-en-web.pdf. [↩](#Marinepoll)
 
-<a id="f5"></a> OECD. (2017). "Marine biodiversity, the role of marine protected areas and good practice insights" in *Marine protected areas: Economics, management and effective policy mixes*. https://doi.org/10.1787/9789264276208-en. [↩](#OECD)
+<a id="f5"></a> OECD. (2017). "Marine biodiversity, the role of marine protected areas and good practice insights" in _Marine protected areas: Economics, management and effective policy mixes_. https://doi.org/10.1787/9789264276208-en. [↩](#OECD)
 
-<a id="f7"></a> Rivest, Maxime; Kashnitsky, Yury; Bédard-Vallée, Alexandre; Campbell, David; Khayat, Paul; Labrosse, Isabelle; Pinheiro, Henrique; Provençal, Simon; Roberge, Guillaume; James, Chris. (2021). *Improving the Scopus and Aurora queries to identify research that supports the United Nations Sustainable Development Goals (SDGs) 2021* V3. [Dataset]. doi: 10.17632/9sxdykm8s4.3 [↩](#Els)
+<a id="f7"></a> Rivest, Maxime; Kashnitsky, Yury; Bédard-Vallée, Alexandre; Campbell, David; Khayat, Paul; Labrosse, Isabelle; Pinheiro, Henrique; Provençal, Simon; Roberge, Guillaume; James, Chris. (2021). _Improving the Scopus and Aurora queries to identify research that supports the United Nations Sustainable Development Goals (SDGs) 2021_ V3. [Dataset]. doi: 10.17632/9sxdykm8s4.3 [↩](#Els)
 
-<a id="f1"></a> Statistics Division. (2021a). *Global indicator framework for the Sustainable Development Goals and targets of the 2030 Agenda for Sustainable Development*. A/RES/71/313, E/CN.3/2018/2, E/CN.3/2019/2, E/CN.3/2020/2, E/CN.3/2021/2. Department of Economic and Social Affairs, United Nations. https://unstats.un.org/sdgs/indicators/Global%20Indicator%20Framework%20after%202021%20refinement_Eng.pdf [accessed 8 August 2021] [↩](#SDGT+Is)
+<a id="f1"></a> Statistics Division. (2021a). _Global indicator framework for the Sustainable Development Goals and targets of the 2030 Agenda for Sustainable Development_. A/RES/71/313, E/CN.3/2018/2, E/CN.3/2019/2, E/CN.3/2020/2, E/CN.3/2021/2. Department of Economic and Social Affairs, United Nations. https://unstats.un.org/sdgs/indicators/Global%20Indicator%20Framework%20after%202021%20refinement_Eng.pdf [accessed 8 August 2021] [↩](#SDGT+Is)
 
-<a id="f9"></a> Statistics Division. (2021b). *SDG Indicators Metadata Repository*. Department of Economic and Social Affairs, United Nations. https://unstats.un.org/sdgs/metadata/ [accessed 8 December 2021] [↩](#SDGindmetadata)
+<a id="f9"></a> Statistics Division. (2021b). _SDG Indicators Metadata Repository_. Department of Economic and Social Affairs, United Nations. https://unstats.un.org/sdgs/metadata/ [accessed 8 December 2021] [↩](#SDGindmetadata)
 
-<a id="f2"></a> United Nations. (2016, 2017, 2018, 2019, 2020, 2021). *World Economic Situation and Prospects; Statistical Annex*. https://www.un.org/development/desa/dpad/document_gem/global-economic-monitoring-unit/world-economic-situation-and-prospects-wesp-report/. [↩](#UNLDCs)
+<a id="f2"></a> United Nations. (2016, 2017, 2018, 2019, 2020, 2021). _World Economic Situation and Prospects; Statistical Annex_. https://www.un.org/development/desa/dpad/document_gem/global-economic-monitoring-unit/world-economic-situation-and-prospects-wesp-report/. [↩](#UNLDCs)
 
-<a id="f4"></a> UN Environment Programme. (n.d.). *Addressing Land-Based Pollution*. United Nations. https://www.unep.org/explore-topics/oceans-seas/what-we-do/addressing-land-based-pollution [Accessed 22 November 2021]. [↩](#marinepollUN)
+<a id="f4"></a> UN Environment Programme. (n.d.). _Addressing Land-Based Pollution_. United Nations. https://www.unep.org/explore-topics/oceans-seas/what-we-do/addressing-land-based-pollution [Accessed 22 November 2021]. [↩](#marinepollUN)
 
 <a id="f10"></a> Willer, D. F., Brian, J. I., Derrick, C. J., Hicks, M., Pacay, A., McCarthy, A. H., Benbow, S., Brooks, H., Hazin, C., Mukherjee, N., McOwen, C. J., Walker, J., & Steadman, D. (2022). ‘Destructive fishing’—A ubiquitously used but vague term? Usage and impacts across academic research, media and policy. Fish and Fisheries, 00, 1– 16. https://doi.org/10.1111/faf.12668 . [↩](#destructive)

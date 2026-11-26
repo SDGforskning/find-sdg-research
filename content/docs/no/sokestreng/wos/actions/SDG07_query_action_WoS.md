@@ -1,6 +1,6 @@
 ---
-title: Search query for SDG 7 - Affordable and clean energy, Bergen action-approach.
----
+
+## title: Search query for SDG 7 - Affordable and clean energy, Bergen action-approach.
 
 **Current status**: This string is currently a finished version.
 
@@ -22,27 +22,28 @@ This document contains search strings for finding publications related to the ac
 
 This target uses various terms for categories of energy services, technologies and fuels (e.g. "renewable", "clean", "modern"). This presents two challenges: 1) Interpreting exactly what types of services/technologies these refer to, and 2) matching this up with how researchers actually use these terms in their work. Our understanding is that researchers from different traditions, subject areas or political alignments may prefer/avoid certain terms, or define them differently (for example, some might say nuclear is "renewable" while others would disagree; whether natural gas is "green"; whether one prefers the term "low carbon" to "renewable"). For the latter challenge, we try to use a range of terms, but without going too far outside what we consider most people to mean by the term. For the first challenge, we have used sources from large international agencies/the UN to interpret the language of the SDG, and we are using the following definitions:
 
-* **Modern energy services**: We consider this to refer to services which meet energy needs based on **clean fuels/technology** (see below for definition of this). Electrification is an important type. <a id="IEAaccess">[IEA (2020)](#f5)</a> was used as a reference for understanding "modern energy access":
->"There is no single internationally-accepted and internationally-adopted definition of modern energy access. Yet significant commonality exists across definitions, including: Household access to a minimum level of electricity; Household access to safer and more sustainable (i.e. minimum harmful effects on health and the environment as possible) cooking and heating fuels and stoves; Access to modern energy that enables productive economic activity, e.g. mechanical power for agriculture, textile and other industries; Access to modern energy for public services, e.g. electricity for health facilities, schools and street lighting." (IEA 2020)
+- **Modern energy services**: We consider this to refer to services which meet energy needs based on **clean fuels/technology** (see below for definition of this). Electrification is an important type. <a id="IEAaccess">[IEA (2020)](#f5)</a> was used as a reference for understanding "modern energy access":
+> "There is no single internationally-accepted and internationally-adopted definition of modern energy access. Yet significant commonality exists across definitions, including: Household access to a minimum level of electricity; Household access to safer and more sustainable (i.e. minimum harmful effects on health and the environment as possible) cooking and heating fuels and stoves; Access to modern energy that enables productive economic activity, e.g. mechanical power for agriculture, textile and other industries; Access to modern energy for public services, e.g. electricity for health facilities, schools and street lighting." (IEA 2020)
 
-* **Renewable energy**: We consider this to cover energy (e.g. electricity, heating) from sources that are renewable. We do not include "low-carbon" finite sources, "cleaner fossil fuel technology" or nuclear energy in this category. This decision is based on information from the UN SDG Indicators metadata repository, which for 7.2.1 (which concerns "renewable energy") does not include any of these types, and says the following:
+- **Renewable energy**: We consider this to cover energy (e.g. electricity, heating) from sources that are renewable. We do not include "low-carbon" finite sources, "cleaner fossil fuel technology" or nuclear energy in this category. This decision is based on information from the UN SDG Indicators metadata repository, which for 7.2.1 (which concerns "renewable energy") does not include any of these types, and says the following:
 > "A number of definitions of renewable energy exist; what they have in common is highlighting as renewable all forms of energy that their consumption does not deplete their availability in the future. These include solar, wind, ocean, hydropower, geothermal sources, and bioenergy (in the case of bioenergy, which can be depleted, sources of bioenergy can be replaced within a short to medium-term frame)". (<a id="SDGindmetadata">[indicator 7.2.1, Statistics Division, 2021b](#f4)</a>).
 
-* **Clean fuels/technology**: We consider this to cover fuels and technology that do not release, or reduce the release of, pollution that directly harms humans. This could include cleaner fossil-fuel or non-renewable sources, as well as renewable energy (but not e.g. biomass burning that produces household air pollution). It does not automatically include decarbonised technologies. These decisions are based on the 7.1.2 indicator metadata, which links the term  "clean" to indoor air quality, and the examples given in target 7.a which include "cleaner fossil-fuel technology":
+- **Clean fuels/technology**: We consider this to cover fuels and technology that do not release, or reduce the release of, pollution that directly harms humans. This could include cleaner fossil-fuel or non-renewable sources, as well as renewable energy (but not e.g. biomass burning that produces household air pollution). It does not automatically include decarbonised technologies. These decisions are based on the 7.1.2 indicator metadata, which links the term "clean" to indoor air quality, and the examples given in target 7.a which include "cleaner fossil-fuel technology":
 > “Clean” is defined by the emission rate targets and specific fuel recommendations (i.e. against unprocessed coal and kerosene) included in the normative guidance WHO guidelines for indoor air quality: household fuel combustion. (<a id="SDGindmetadata">[indicator 7.1.2, Statistics Division, 2021b](#f4)</a>).
 
 > "[...] access to clean energy research and technology, including renewable energy, energy efficiency and advanced and cleaner fossil-fuel technology [...]" (target 7.a)
 
-* **Sustainable energy services**: These are only mentioned in 7.b, and we interpret this to be the same as "modern".
+- **Sustainable energy services**: These are only mentioned in 7.b, and we interpret this to be the same as "modern".
 
 Targets and Indicators were found from the UN Statistics Division (<a id="SDGT+Is">[Statistics Division, 2021a](#f1)</a>). This list includes "the global indicator framework as contained in A/RES/71/313, the refinements agreed by the Statistical Commission at its 49th session in March 2018 (E/CN.3/2018/2, Annex II) and 50th session in March 2019 (E/CN.3/2019/2, Annex II), changes from the 2020 Comprehensive Review (E/CN.3/2020/2, Annex II) and refinements (E/CN.3/2020/2, Annex III) from the 51st session in March 2020, and refinements from the 52nd session in March 2021 (E/CN.3/2021/2, Annex)". (https://unstats.un.org/sdgs/indicators/indicators-list/)
 
 Our classification of countries as least developed countries (LDCs), small island developing states (SIDS) and landlocked developing states (LDS) is taken from the Statistical Annex of United Nations World Economic Situation and Prospects (tables F, H and I) (<a id="UNLDCs">[United Nations, 2016, 2017, 2018, 2019, 2020, 2021](#f2)</a>). Additional terms for these countries, generic terms for country groups, and terms for low and middle income countries (LMICs) were gathered from the LMIC 2020 filter from the Norwegian Satellite of Cochrane Effective Practice and Organisation of Care (EPOC), developed by the Norwegian Institute of Public Heath (https://epoc.cochrane.org/lmic-filters).
 
 Other abbreviations:
-* IEA - International Energy Agency
-* EEA - European Environment Agency
-* WHO - World Health Organization
+
+- IEA - International Energy Agency
+- EEA - European Environment Agency
+- WHO - World Health Organization
 
 ## 3. Targets
 
@@ -55,15 +56,17 @@ Other abbreviations:
 > 7.1.2 Proportion of population with primary reliance on clean fuels and technology
 
 This target is interpreted to cover research about:
-* Increasing access to and primary use of clean fuels and clean technology in households (phrases 1 & 2). Clean cooking is a central part of clean fuels/tech in this context (<a id="HLPF2018">[UN High level political forum on Sustainable Development, 2018](#f3)</a>). In v2019.11 this target was interpreted more broadly to cover clean technologies generally, but the indicator metadata is about households, with focus on heating, lighting and cooking technologies (<a id="SDGindmetadata">[indicator 7.1.2, Statistics Division, 2021b](#f4)</a>).
-* Reducing the use of non-clean fuels in households (phrase 3)
-* Improving access to modern energy services, including electricity. This includes concepts such as energy justice, energy security and fuel poverty (phrases 4 & 5)
-* Improving the affordability, stability, and reliability of energy services (phrase 6)
+
+- Increasing access to and primary use of clean fuels and clean technology in households (phrases 1 & 2). Clean cooking is a central part of clean fuels/tech in this context (<a id="HLPF2018">[UN High level political forum on Sustainable Development, 2018](#f3)</a>). In v2019.11 this target was interpreted more broadly to cover clean technologies generally, but the indicator metadata is about households, with focus on heating, lighting and cooking technologies (<a id="SDGindmetadata">[indicator 7.1.2, Statistics Division, 2021b](#f4)</a>).
+- Reducing the use of non-clean fuels in households (phrase 3)
+- Improving access to modern energy services, including electricity. This includes concepts such as energy justice, energy security and fuel poverty (phrases 4 & 5)
+- Improving the affordability, stability, and reliability of energy services (phrase 6)
 
 <a id="IEAaccess">[IEA (2020)](#f5)</a> and <a id="UNThemereport">[UN (2021)](#f9)</a> were used as a source of terms for this target. This query consists of 6 phrases.
 
 #### Phrase 1
-The basic structure is *energy transitions/clean fuels/tech + action + households*. The action part of this phrase contains terms for various aspects to do with increasing reliance, access and uptake, e.g. increasing reliance, interventions, policy, investing and reducing barriers. *Household terms* are included as terms such as `fuel$` are broad. "Clean technology" in household contexts should be covered by the terms for `cooking`, `stove$`, `fuels` etc. or by the general term `energy transition$`.
+
+The basic structure is _energy transitions/clean fuels/tech + action + households_. The action part of this phrase contains terms for various aspects to do with increasing reliance, access and uptake, e.g. increasing reliance, interventions, policy, investing and reducing barriers. _Household terms_ are included as terms such as `fuel$` are broad. "Clean technology" in household contexts should be covered by the terms for `cooking`, `stove$`, `fuels` etc. or by the general term `energy transition$`.
 
 ```py
 TS=
@@ -107,7 +110,7 @@ TS=
 ```
 #### Phrase 2
 
-The basic structure is *clean household energy activities + action*. It is similar to phrase 1, but the terms used here are more specific (e.g. `solar cookers`) so do not require "household" terms.
+The basic structure is _clean household energy activities + action_. It is similar to phrase 1, but the terms used here are more specific (e.g. `solar cookers`) so do not require "household" terms.
 
 ```py
 TS=
@@ -139,7 +142,7 @@ TS=
 
 #### Phrase 3
 
-The basic structure is *"dirty" fuels + action + households*. It is similar to phrase 1, but the negative side (e.g. phasing out). Within the WHO guidelines for indoor air quality (<a id="WHOair">[WHO, 2014, Executive summary and p.34-35](#f3)</a>), PM2.5 and carbon monoxide are identified in emissions targets, and unprocessed coal and kerosene should be avoided as fuels. Searching for coal + heating is challenging as lots of industrial results, hence the two parts of this phrase.
+The basic structure is _"dirty" fuels + action + households_. It is similar to phrase 1, but the negative side (e.g. phasing out). Within the WHO guidelines for indoor air quality (<a id="WHOair">[WHO, 2014, Executive summary and p.34-35](#f3)</a>), PM2.5 and carbon monoxide are identified in emissions targets, and unprocessed coal and kerosene should be avoided as fuels. Searching for coal + heating is challenging as lots of industrial results, hence the two parts of this phrase.
 
 ```py
 TS=
@@ -184,7 +187,7 @@ TS=
 
 This phrase finds works about improving energy access and security. This phrase uses established phrases for these concepts; other phrases use broader terms for affordability and access.
 
-The general structure is *energy security/access phrases + action*. `increas*` is not used alone as there are many results using it talking about the results of e.g. energy poverty. `energy NEAR/3 (dignity OR care)` was tested but there were few relevant results at this time in this combination.
+The general structure is _energy security/access phrases + action_. `increas*` is not used alone as there are many results using it talking about the results of e.g. energy poverty. `energy NEAR/3 (dignity OR care)` was tested but there were few relevant results at this time in this combination.
 
 ```py
 TS=
@@ -204,7 +207,7 @@ OR TS=("increas* energy security")
 
 #### Phrase 5
 
-This phrase is about improving access to energy services and electricity. The general structure is *electrification / action + access + energy + households / action + access + energy + regions*. The reason for the two part approach is that `energy services` is specialised enough to stand alone with `access`, while `electricity` and `energy` are too broad (can be used in many contexts, e.g. an industrial process). Thus these terms are combined either in phrases, or with regions, or with certain technologies (e.g. `microgrids`). For *regions*, we include generic terms for developing, least developed countries and rural areas, as well as specific least developed countries, SIDS, landlocked developing countries.
+This phrase is about improving access to energy services and electricity. The general structure is _electrification / action + access + energy + households / action + access + energy + regions_. The reason for the two part approach is that `energy services` is specialised enough to stand alone with `access`, while `electricity` and `energy` are too broad (can be used in many contexts, e.g. an industrial process). Thus these terms are combined either in phrases, or with regions, or with certain technologies (e.g. `microgrids`). For _regions_, we include generic terms for developing, least developed countries and rural areas, as well as specific least developed countries, SIDS, landlocked developing countries.
 
 ```py
 TS= ("universal electrification" OR "rural electrification" OR "national electrification")
@@ -267,7 +270,7 @@ TS=
 
 #### Phrase 6
 
-This phrase finds works about improving affordability and reliability of energy services. The general structure is *action + afford/stable + energy*. in the action terms, `reduce` is not truncated due to chemical reduction. In the energy terms, `energy` and `power` are combined with other terms to avoid results from other subject areas (biological energy, mechanical power). `microgrids` etc. are included as these are specific technologies used in areas which may not have access to a centralised power grid system.
+This phrase finds works about improving affordability and reliability of energy services. The general structure is _action + afford/stable + energy_. in the action terms, `reduce` is not truncated due to chemical reduction. In the energy terms, `energy` and `power` are combined with other terms to avoid results from other subject areas (biological energy, mechanical power). `microgrids` etc. are included as these are specific technologies used in areas which may not have access to a centralised power grid system.
 
 ```py
 TS=
@@ -317,7 +320,7 @@ This query consists of 3 phrases.
 
 #### Phrase 1
 
-This phrase covers the general terms of transitioning and transforming to renewable energy. The elements of the phrase are: *renwables + energy transitions/transformations/substitutions*. "energy transition" is not used alone as this does not necessarily mean renewables (e.g. one can talk about historical energy transitions from wood to steam). While there are no typical action terms, the term "energy transition" itself relates to the shift, so we assume works talking about this are related to the change in the share of renewables. 
+This phrase covers the general terms of transitioning and transforming to renewable energy. The elements of the phrase are: _renwables + energy transitions/transformations/substitutions_. "energy transition" is not used alone as this does not necessarily mean renewables (e.g. one can talk about historical energy transitions from wood to steam). While there are no typical action terms, the term "energy transition" itself relates to the shift, so we assume works talking about this are related to the change in the share of renewables.
 
 ```py
 TS=
@@ -329,13 +332,13 @@ TS=
 
 #### Phrase 2
 
-This phrase covers specific terms for increasing the share of renewable energy, including a wider set of terms for renewables. The general structure is *(action + use/share/adoption/investing/barriers OR promotional actions) + renewable energy*.
+This phrase covers specific terms for increasing the share of renewable energy, including a wider set of terms for renewables. The general structure is _(action + use/share/adoption/investing/barriers OR promotional actions) + renewable energy_.
 
-The *promotional actions* include several terms that work alone and we assume, when referred to in a scientific work, indicate an action-like orientation, such as policies, subsidies, commercialisation, rollout, or sustainable development. 
+The _promotional actions_ include several terms that work alone and we assume, when referred to in a scientific work, indicate an action-like orientation, such as policies, subsidies, commercialisation, rollout, or sustainable development.
 
-Some terms are truncated specifically -  `adopting OR adoption` is used as "adopted" is used often as a verb in methods; `increase` is used rather than "increas*" as a number of technical works begin with the technical issue of "increasing proportions of renewables in the power grid".
+Some terms are truncated specifically - `adopting OR adoption` is used as "adopted" is used often as a verb in methods; `increase` is used rather than "increas*" as a number of technical works begin with the technical issue of "increasing proportions of renewables in the power grid".
 
-In the *renewable energy terms*, `biomass`, `wind` and `solar` are generally combined with other terms to prevent results from other subject areas (e.g. astronomy). Energy storage and smart grids to deal with fluctuations in supply can be considered part of renewable energy transition (<a id="HLPF2018">[UN High level political forum on Sustainable Development, 2018](#f3)</a>). We include the term `green` energy/power etc. - a potential problem is that some may use this term very widely to include non-renewables (see discussion under "General Notes"). However a test demonstrated that this is not a large issue - of over 1200 results refering to green energy/power/electricity, only around 35 referred to "natural gas" and 30 to "nuclear".
+In the _renewable energy terms_, `biomass`, `wind` and `solar` are generally combined with other terms to prevent results from other subject areas (e.g. astronomy). Energy storage and smart grids to deal with fluctuations in supply can be considered part of renewable energy transition (<a id="HLPF2018">[UN High level political forum on Sustainable Development, 2018](#f3)</a>). We include the term `green` energy/power etc. - a potential problem is that some may use this term very widely to include non-renewables (see discussion under "General Notes"). However a test demonstrated that this is not a large issue - of over 1200 results refering to green energy/power/electricity, only around 35 referred to "natural gas" and 30 to "nuclear".
 
 ```py
 TS=
@@ -406,7 +409,7 @@ TS=
 
 #### Phrase 3
 
-This phrase covers reduction in fossil fuels. The general structure is *action + fossil fuels + reliance/energy mix*. `consumption` is used in phrases as in combination with "oil" it causes issues (e.g. fish oil).
+This phrase covers reduction in fossil fuels. The general structure is _action + fossil fuels + reliance/energy mix_. `consumption` is used in phrases as in combination with "oil" it causes issues (e.g. fish oil).
 
 ```py
 TS=
@@ -435,18 +438,19 @@ TS=
 >
 > 7.3.1 Energy intensity measured in terms of primary energy and GDP
 
-This target is interpreted to cover research about improving energy intensity (phrase 1,2), and research about improving energy efficiency (phrase 3). While some might consider a reduction in energy consumption, or degrowth, to be essential to sustainable energy, the target is quite specifically about energy efficiency. Therefore we hold our interpretation within this theme for the action approach. The topic approach takes a slightly wider interpretation (see respective documentation). 
+This target is interpreted to cover research about improving energy intensity (phrase 1,2), and research about improving energy efficiency (phrase 3). While some might consider a reduction in energy consumption, or degrowth, to be essential to sustainable energy, the target is quite specifically about energy efficiency. Therefore we hold our interpretation within this theme for the action approach. The topic approach takes a slightly wider interpretation (see respective documentation).
 
 Energy intensity definition from the European Environment Agency:
->"Energy intensity is the ratio between gross inland energy consumption (GIEC) and gross domestic product (GDP), calculated for a calendar year. GIEC is calculated as the sum of the gross inland consumption of the five sources of energy: solid fuels, oil, gas, nuclear and renewable sources" (<a id="EEA2016">[EEA, 2016](#f6)</a>).
+
+> "Energy intensity is the ratio between gross inland energy consumption (GIEC) and gross domestic product (GDP), calculated for a calendar year. GIEC is calculated as the sum of the gross inland consumption of the five sources of energy: solid fuels, oil, gas, nuclear and renewable sources" (<a id="EEA2016">[EEA, 2016](#f6)</a>).
 
 This query consists of 3 phrases.
 
 #### Phrase 1
 
-This phrase finds research about improving energy intensity. The general structure is *energy intensity + action + energy terms*.
+This phrase finds research about improving energy intensity. The general structure is _energy intensity + action + energy terms_.
 
-The *energy terms* contains terms that help avoid publications using "energy intensity" in other contexts. The *action terms* include a number of mechanisms by which changes can be brought about, such as investments and incentives (as in other targets of this SDG), but also terms for mechanisms specific for energy efficiency, such as `energy labelling` (<a id="IEAenergylabelling">[IEA, 2021](#f7)</a>).
+The _energy terms_ contains terms that help avoid publications using "energy intensity" in other contexts. The _action terms_ include a number of mechanisms by which changes can be brought about, such as investments and incentives (as in other targets of this SDG), but also terms for mechanisms specific for energy efficiency, such as `energy labelling` (<a id="IEAenergylabelling">[IEA, 2021](#f7)</a>).
 
 ```py
 TS=
@@ -474,7 +478,8 @@ TS=
 ```
 
 #### Phrase 2
-This phrase covers research about energy intensity via the decoupling of energy consumption and economic growth. The general structure is *energy consumption + action + economy*.
+
+This phrase covers research about energy intensity via the decoupling of energy consumption and economic growth. The general structure is _energy consumption + action + economy_.
 
 ```py
 TS=
@@ -488,11 +493,11 @@ TS=
 
 #### Phrase 3
 
-This phrase finds research about increasing energy efficiency. The general structure is *energy efficiency/loss + action + sectors* OR *energy efficiency + action*. As "energy efficiency" can be used in other subject areas (e.g. biology, medicine) it is either a) combined with various sectors/items processes that account for energy use (first part), or b) used only with action terms that are relevant to the energy sector (second part, with varying NEAR distances).
+This phrase finds research about increasing energy efficiency. The general structure is _energy efficiency/loss + action + sectors_ OR _energy efficiency + action_. As "energy efficiency" can be used in other subject areas (e.g. biology, medicine) it is either a) combined with various sectors/items processes that account for energy use (first part), or b) used only with action terms that are relevant to the energy sector (second part, with varying NEAR distances).
 
-*sector terms* were built around generic terms (e.g. `residential` will find "residential water heating"), and supplemented with terms from the IEA webpages and IEAs energy efficiency indicators manual (<a id="IEAmanual">[IEA, 2014](#f8)</a>). Household consumption sources (p. 40), service sector terms (p. 69) and transport terms (p. 128) were taken from this manual, but not all (e.g. `buses` removed due to being used in context with voltages; including specific industries (e.g. steel) did not improve results). `lighting`, `applicances`, `data centres` and `data networks` were added as they have their own recent efficiency tracking reports from the IEA (https://www.iea.org/analysis/all?topic=energy-efficiency&type=report). `smart` is a very general term, but when paired with energy efficiency finds many different types of system/device (smart windows, grids, thermostats etc.).
+_sector terms_ were built around generic terms (e.g. `residential` will find "residential water heating"), and supplemented with terms from the IEA webpages and IEAs energy efficiency indicators manual (<a id="IEAmanual">[IEA, 2014](#f8)</a>). Household consumption sources (p. 40), service sector terms (p. 69) and transport terms (p. 128) were taken from this manual, but not all (e.g. `buses` removed due to being used in context with voltages; including specific industries (e.g. steel) did not improve results). `lighting`, `applicances`, `data centres` and `data networks` were added as they have their own recent efficiency tracking reports from the IEA (https://www.iea.org/analysis/all?topic=energy-efficiency&type=report). `smart` is a very general term, but when paired with energy efficiency finds many different types of system/device (smart windows, grids, thermostats etc.).
 
-The *action terms* include a number of mechanisms by which changes can be brought about, such as investments and incentives (as in other targets of this SDG), but also terms for mechanisms specific for energy efficiency, such as `energy labelling` (<a id="IEAenergylabelling">[IEA, 2021](#f7)</a>). `increase$ OR increasing` is used to avoid "increasingly".
+The _action terms_ include a number of mechanisms by which changes can be brought about, such as investments and incentives (as in other targets of this SDG), but also terms for mechanisms specific for energy efficiency, such as `energy labelling` (<a id="IEAenergylabelling">[IEA, 2021](#f7)</a>). `increase$ OR increasing` is used to avoid "increasingly".
 
 ```py
 TS=
@@ -543,10 +548,11 @@ TS=
 > 7.a.1 International financial flows to developing countries in support of clean energy research and development and renewable energy production, including in hybrid systems
 
 This target is interpreted to cover research about:
-* increasing international cooperation for clean energy research and technology (phrase 1)
-* improving access to clean energy research and technology, in part via transfers of technology between sectors/actors (phrase 1)
-* promoting investment in clean energy research and technology, here we include development assistance (phrase 1)
-* promoting investment in energy infrastructure (phrase 2).
+
+- increasing international cooperation for clean energy research and technology (phrase 1)
+- improving access to clean energy research and technology, in part via transfers of technology between sectors/actors (phrase 1)
+- promoting investment in clean energy research and technology, here we include development assistance (phrase 1)
+- promoting investment in energy infrastructure (phrase 2).
 
 Here, "clean" is interpreted to include also low-carbon due to the specific mention of cleaner fossil fuel technologies in the target. All phrases also include `energy transition$` as this term incorporates many of the aspects around modernised and cleaner energy supplies/infrastructure/tech.
 
@@ -554,7 +560,7 @@ This target consists of 2 phrases.
 
 #### Phrase 1
 
-The general structure is *action + sharing/investing/cooperation + clean energy research/tech*.
+The general structure is _action + sharing/investing/cooperation + clean energy research/tech_.
 
 ```py
 TS=
@@ -602,7 +608,7 @@ TS=
 
 #### Phrase 2
 
-The general structure is *action + investment + energy infrastructure/renewable energy*.
+The general structure is _action + investment + energy infrastructure/renewable energy_.
 
 ```py
 TS=
@@ -649,7 +655,7 @@ TS=
 >
 > 7.b.1 Installed renewable energy-generating capacity in developing countries (in watts per capita)
 
-This target is interpreted to cover research about improving infrastructure for sustainable and modern energy services in developing countries. The focus is on infrastructure and supply. We interpret this to cover electricity generation, power grids, storage, and energy services. The general structure is *action + infrastructure/technology/modern services + developing countries*.
+This target is interpreted to cover research about improving infrastructure for sustainable and modern energy services in developing countries. The focus is on infrastructure and supply. We interpret this to cover electricity generation, power grids, storage, and energy services. The general structure is _action + infrastructure/technology/modern services + developing countries_.
 
 ```py
 TS=
@@ -698,31 +704,31 @@ TS=
 
 ## 4. Contributions
 
-* v2019.12: Marta Lorenz, Caroline S. Armitage, Susanne Mikki
+- v2019.12: Marta Lorenz, Caroline S. Armitage, Susanne Mikki
 
-* v1.0.0: Caroline S. Armitage (Oct 2021-Oct 2022), Marta Lorenz (Oct 2021-Apr 2022)
+- v1.0.0: Caroline S. Armitage (Oct 2021-Oct 2022), Marta Lorenz (Oct 2021-Apr 2022)
 
-* Internal review: Håkon Magne Bjerkan, Marta Lorenz (March 2022)
+- Internal review: Håkon Magne Bjerkan, Marta Lorenz (March 2022)
 
 Specialist input: Shayan Shokrgozar (PhD candidate in energy transitions research, Jul 2022)
 
 ## 5. Footnotes
 
-<a id="f6"></a> EEA .(2016). *Energy intensity*. https://www.eea.europa.eu/data-and-maps/indicators/total-primary-energy-intensity-3 [↩](#EEA2016)
+<a id="f6"></a> EEA .(2016). _Energy intensity_. https://www.eea.europa.eu/data-and-maps/indicators/total-primary-energy-intensity-3 [↩](#EEA2016)
 
-<a id="f8"></a> IEA. (2014). *Energy Efficiency Indicators: Fundamentals on Statistics*. https://www.iea.org/reports/energy-efficiency-indicators-fundamentals-on-statistics [accessed 7th Jan 2022] [↩](#IEAmanual)
+<a id="f8"></a> IEA. (2014). _Energy Efficiency Indicators: Fundamentals on Statistics_. https://www.iea.org/reports/energy-efficiency-indicators-fundamentals-on-statistics [accessed 7th Jan 2022] [↩](#IEAmanual)
 
-<a id="f5"></a> IEA. (2020, 13th October). *Defining energy access: 2020 methodology*. https://www.iea.org/articles/defining-energy-access-2020-methodology [accessed 7th Jan 2022] [↩](#IEAaccess)
+<a id="f5"></a> IEA. (2020, 13th October). _Defining energy access: 2020 methodology_. https://www.iea.org/articles/defining-energy-access-2020-methodology [accessed 7th Jan 2022] [↩](#IEAaccess)
 
-<a id="f7"></a> IEA. (2021). *Appliances and Equipment*. https://www.iea.org/reports/appliances-and-equipment [accessed 7th Jan 2022] [↩](#IEAenergylabelling)
+<a id="f7"></a> IEA. (2021). _Appliances and Equipment_. https://www.iea.org/reports/appliances-and-equipment [accessed 7th Jan 2022] [↩](#IEAenergylabelling)
 
-<a id="f1"></a> Statistics Division. (2021a). *Global indicator framework for the Sustainable Development Goals and targets of the 2030 Agenda for Sustainable Development*. A/RES/71/313, E/CN.3/2018/2, E/CN.3/2019/2, E/CN.3/2020/2, E/CN.3/2021/2. Department of Economic and Social Affairs, United Nations. https://unstats.un.org/sdgs/indicators/Global%20Indicator%20Framework%20after%202021%20refinement_Eng.pdf [accessed 8 August 2021] [↩](#SDGT+Is)
+<a id="f1"></a> Statistics Division. (2021a). _Global indicator framework for the Sustainable Development Goals and targets of the 2030 Agenda for Sustainable Development_. A/RES/71/313, E/CN.3/2018/2, E/CN.3/2019/2, E/CN.3/2020/2, E/CN.3/2021/2. Department of Economic and Social Affairs, United Nations. https://unstats.un.org/sdgs/indicators/Global%20Indicator%20Framework%20after%202021%20refinement_Eng.pdf [accessed 8 August 2021] [↩](#SDGT+Is)
 
-<a id="f4"></a> Statistics Division. (2021b). *SDG Indicators Metadata Repository*. Department of Economic and Social Affairs, United Nations. https://unstats.un.org/sdgs/metadata/ [accessed 8 December 2021] [↩](#SDGindmetadata)
+<a id="f4"></a> Statistics Division. (2021b). _SDG Indicators Metadata Repository_. Department of Economic and Social Affairs, United Nations. https://unstats.un.org/sdgs/metadata/ [accessed 8 December 2021] [↩](#SDGindmetadata)
 
-<a id="f2"></a> United Nations. (2016, 2017, 2018, 2019, 2020, 2021). *World Economic Situation and Prospects; Statistical Annex*. https://www.un.org/development/desa/dpad/document_gem/global-economic-monitoring-unit/world-economic-situation-and-prospects-wesp-report/. [↩](#UNLDCs)
+<a id="f2"></a> United Nations. (2016, 2017, 2018, 2019, 2020, 2021). _World Economic Situation and Prospects; Statistical Annex_. https://www.un.org/development/desa/dpad/document_gem/global-economic-monitoring-unit/world-economic-situation-and-prospects-wesp-report/. [↩](#UNLDCs)
 
-<a id="f9"></a> United Nations. (2021). *Theme Report on Energy Access* [Executive summary, Background document]. High-level Dialogue on Energy
+<a id="f9"></a> United Nations. (2021). _Theme Report on Energy Access_ [Executive summary, Background document]. High-level Dialogue on Energy
 New York, September 2021. https://www.un.org/en/conferences/energy2021/RESOURCES [Accessed 03.03.2022]. [↩](#UNThemereport)
 
-<a id="f3"></a> UN High level political forum on Sustainable Development. (2018). *2018 HLPF Review of SDG implementation: SDG 7- Ensure access to affordable, reliable, sustainable and modern energy for all*. https://sustainabledevelopment.un.org/content/documents/195532018_background_notes_SDG_7Final1.pdf [Accessed 06.01.2022]
+<a id="f3"></a> UN High level political forum on Sustainable Development. (2018). _2018 HLPF Review of SDG implementation: SDG 7- Ensure access to affordable, reliable, sustainable and modern energy for all_. https://sustainabledevelopment.un.org/content/documents/195532018_background_notes_SDG_7Final1.pdf [Accessed 06.01.2022]

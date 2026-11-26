@@ -1,28 +1,29 @@
-const shortString = (s, l, reverse) => {
-  var stop_chars = [' ', '/', '&'];
-  var acceptable_shortness = l * 0.80; // When to start looking for stop characters
-  var reverse = typeof (reverse) != "undefined" ? reverse : false;
-  var s = reverse ? s.split("").reverse().join("") : s;
-  var short_s = "";
+const shortString = (value, length, reverse = false) => {
+  const stopChars = [" ", "/", "&"];
+  const acceptableShortness = length * 0.8;
+  const text = reverse ? value.split("").reverse().join("") : value;
+  let short = "";
 
-  for (var i = 0; i < l - 1; i++) {
-    short_s += s[i];
-    if (i >= acceptable_shortness && stop_chars.indexOf(s[i]) >= 0) {
+  for (let index = 0; index < length - 1; index++) {
+    short += text[index];
+    if (index >= acceptableShortness && stopChars.indexOf(text[index]) >= 0) {
       break;
     }
   }
-  if (reverse) { return short_s.split("").reverse().join(""); }
-  return short_s;
-}
 
-export const truncateUrl = (url, l) => {
-  var l = typeof (l) != "undefined" ? l : 50;
-  var chunk_l = (l / 2);
-  //var url = url.replace("http://","").replace("https://","");
+  if (reverse) {
+    return short.split("").reverse().join("");
+  }
+  return short;
+};
 
-  if (url.length <= l) { return url; }
+export const truncateUrl = (url, length = 50) => {
+  if (url.length <= length) {
+    return url;
+  }
 
-  var start_chunk = shortString(url, chunk_l, false);
-  var end_chunk = shortString(url, chunk_l, true);
-  return start_chunk + "..." + end_chunk;
-}
+  const chunkLength = length / 2;
+  const startChunk = shortString(url, chunkLength, false);
+  const endChunk = shortString(url, chunkLength, true);
+  return `${startChunk}...${endChunk}`;
+};

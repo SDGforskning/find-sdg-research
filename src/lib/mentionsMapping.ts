@@ -6,5 +6,5 @@ export const mentionsMapping = {
   mentionsSDG: {
     en: "Mentions the SDGs",
     no: "Nevner bærekraftsmålene",
-  }
-}
+  },
+};

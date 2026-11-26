@@ -1,6 +1,6 @@
 ---
-title: Search query for SDG 01 - No Poverty, Bergen topic-approach.
----
+
+## title: Search query for SDG 01 - No Poverty, Bergen topic-approach.
 
 **Current status**: This string is currently a finished version.
 
@@ -36,7 +36,7 @@ During editing of this string (2021), we have also consulted of queries from the
 
 This target is interpreted as to cover research about extreme poverty. Here we consider relevance limited to research about absolute poverty, vs. target 1.2 which is about poverty generally.
 
-This query consists of 1 phrase. The elements of the phrase are: *extreme/global poverty*.
+This query consists of 1 phrase. The elements of the phrase are: _extreme/global poverty_.
 
 `(("liv*" OR "surviv*" ) NEAR/5 "$1.25 "))` was taken out as adds irrelevant hits (picks up random numbers from abstracts). `international poverty` will cover international poverty line.
 
@@ -55,9 +55,9 @@ OR "global poverty" OR "international poverty"
 >
 > 1.2.2 Proportion of men, women and children of all ages living in poverty in all its dimensions according to national definitions
 
-This target is interpreted as to cover research about poverty and poor communities/groups. Research about `decent work` was considered for inclusion, as this is highlighted as a route out of poverty in the High level political forum document <a id="HLPF2017">([UN 2017](#f2))</a>. However we have not included it - it is not necessarily linked to poverty, and articles linking this topic with poverty reduction can be expected to be covered by the phrase below. 
+This target is interpreted as to cover research about poverty and poor communities/groups. Research about `decent work` was considered for inclusion, as this is highlighted as a route out of poverty in the High level political forum document <a id="HLPF2017">([UN 2017](#f2))</a>. However we have not included it - it is not necessarily linked to poverty, and articles linking this topic with poverty reduction can be expected to be covered by the phrase below.
 
-This query consists of 1 phrase. The elements of the phrase are: *poverty/the poor*. 
+This query consists of 1 phrase. The elements of the phrase are: _poverty/the poor_.
 
 We have added the term `NOT species poor` to remove biology results found by the combination of `poor` with `communit*`.
 
@@ -86,9 +86,9 @@ This query consists of 2 phrases. Some of the terms for services/systems work we
 
 #### Phrase 1
 
-This phrase is about floors, protection systems and welfare systems. The elements of the phrase are: *social protection systems*.
+This phrase is about floors, protection systems and welfare systems. The elements of the phrase are: _social protection systems_.
 
-As the *social protection* terms include a systemic element (systems, services) they do not need to be combined with groups of people. `welfare state` was considered but excluded as it leads mostly to papers about early welfare states and the history of those.
+As the _social protection_ terms include a systemic element (systems, services) they do not need to be combined with groups of people. `welfare state` was considered but excluded as it leads mostly to papers about early welfare states and the history of those.
 
 ```py
 TS=
@@ -97,15 +97,13 @@ TS=
   OR "basic social service$" OR "social assistance service$" OR "social floor$"
   OR "social protection program*" OR "social insurance program*" OR "social safety net$" OR "safety net program*"
 )
-```  
-
+```
 
 #### Phrase 2
 
-This phrase is also about social floors and systems, but includes the terms which work better when combined with groups of people. The elements of the phrase are:*social protection/social floors + poor/vulnerable*.
+This phrase is also about social floors and systems, but includes the terms which work better when combined with groups of people. The elements of the phrase are:_social protection/social floors + poor/vulnerable_.
 
-For the *poor and vulnerable* terms, we use general terms for poverty/low income, plus terms for "vulnerable" groups from indicator 1.3.1. We used UN sources to find additional terms and groups that can be considered "vulnerable" (<a id="Blanchard">[Blanchard et al., 2017](#f12)</a>; <a id="UNOHC">[Office of the High Commissioner, n.d.](#f13)</a>; <a id="UNracism">[United Nations, n.d.](#f14)</a>). `"social care service$" OR "social service$"` are sometimes considered a part of social protection <a id="gsdrc">([Carter et al. 2019](#f9))</a> - we include them here, although they do introduce noise as there are many works which mention them as a factor (e.g. a health study that discusses whether participants had access to social care).
-
+For the _poor and vulnerable_ terms, we use general terms for poverty/low income, plus terms for "vulnerable" groups from indicator 1.3.1. We used UN sources to find additional terms and groups that can be considered "vulnerable" (<a id="Blanchard">[Blanchard et al., 2017](#f12)</a>; <a id="UNOHC">[Office of the High Commissioner, n.d.](#f13)</a>; <a id="UNracism">[United Nations, n.d.](#f14)</a>). `"social care service$" OR "social service$"` are sometimes considered a part of social protection <a id="gsdrc">([Carter et al. 2019](#f9))</a> - we include them here, although they do introduce noise as there are many works which mention them as a factor (e.g. a health study that discusses whether participants had access to social care).
 
 ```py
 TS=
@@ -149,22 +147,25 @@ TS=
 > 1.4.2 Proportion of total adult population with secure tenure rights to land, (a) with legally recognized documentation, and (b) who perceive their rights to land as secure, by sex and type of tenure
 
 This target is interpreted to cover research about:
-* Access and rights to financial services ("financial inclusion"). We interpret this as money-based resources. For this we include research about microfinance, and access to digital finance and mobile money, plus other more traditional financial products/financial services. Includes credit, savings, payment services, fund transfers and insurance.
-* Rights and access to economic resources and land/property/inheritance/natural resources (including rights for tenure, ownership and control, and security). We interpret "economic resources" to include mentioned elements such as land, natural resources and technology, but could also include human capital/labour (e.g. access to employment).
-* Access to basic services
+
+- Access and rights to financial services ("financial inclusion"). We interpret this as money-based resources. For this we include research about microfinance, and access to digital finance and mobile money, plus other more traditional financial products/financial services. Includes credit, savings, payment services, fund transfers and insurance.
+- Rights and access to economic resources and land/property/inheritance/natural resources (including rights for tenure, ownership and control, and security). We interpret "economic resources" to include mentioned elements such as land, natural resources and technology, but could also include human capital/labour (e.g. access to employment).
+- Access to basic services
 
 We based this interpretation of financial and economic resources on <a id="DESA">[Department of Economic and Social Affairs (2009)](#f7)</a> (p1), which states:
+
 > Economic resources refer to the direct factors of production such as “immoveable” assets, including land, housing, common pool resources and infrastructure, as well as “moveable” assets, such as productive equipment, technology and livestock. Financial resources refer to money-based resources, including government expenditures, private financial flows and official development assistance, as well as income, credit, savings and remittances. [...] Labour is the primary resource available to the vast majority of people, particularly
-those from low-income households [...]
+> those from low-income households [...]
 
 Although the target states for "all men and women", we target the results to this SDG by combining the phrases also to an element about "the poor and the vulnerable". We do this because a) some of the search terms are quite general (for example, appear in general economic research), and b) because other SDGs refer to access to specific basic services (e.g. modern energy in SDG 7, essential healthcare in SDG 3); thus we assume that the most relevant research for this target should also be somewhat related to poverty/poor/vulnerable.
 
 #### Phrase 1
-This phrase covers access and rights to financial services. The elements of the phrase are: *inclusion/microfinance // access + financial services + poor/vulnerable*.
 
-Sources of terms for *financial services* included <a id="DESA">[Department of Economic and Social Affairs (2009)](#f7)</a> and a digital financial inclusion report from the <a id="sgsa">[UNSGSA et al. (2018)](#f8)</a>. For the topic approach, we allow some terms which are already closely related to the idea of access to stand alone without being connected to access or rights explicitly; this includes microfinance types (where access is a primary objective) and `financial inclusion`. 
+This phrase covers access and rights to financial services. The elements of the phrase are: _inclusion/microfinance // access + financial services + poor/vulnerable_.
 
-For the *poor and vulnerable* terms, we use general terms for poverty/low income, plus terms for "vulnerable" groups from indicator 1.3.1. We used UN sources to find additional terms and groups that can be considered "vulnerable" (<a id="Blanchard">[Blanchard et al., 2017](#f12)</a>; <a id="UNOHC">[Office of the High Commissioner, n.d.](#f13)</a>; <a id="UNracism">[United Nations, n.d.](#f14)</a>). We include least developed countries also (on the assumption that the population there as a whole can, on a global scale, be considered poorer or more vulnerable).   
+Sources of terms for _financial services_ included <a id="DESA">[Department of Economic and Social Affairs (2009)](#f7)</a> and a digital financial inclusion report from the <a id="sgsa">[UNSGSA et al. (2018)](#f8)</a>. For the topic approach, we allow some terms which are already closely related to the idea of access to stand alone without being connected to access or rights explicitly; this includes microfinance types (where access is a primary objective) and `financial inclusion`.
+
+For the _poor and vulnerable_ terms, we use general terms for poverty/low income, plus terms for "vulnerable" groups from indicator 1.3.1. We used UN sources to find additional terms and groups that can be considered "vulnerable" (<a id="Blanchard">[Blanchard et al., 2017](#f12)</a>; <a id="UNOHC">[Office of the High Commissioner, n.d.](#f13)</a>; <a id="UNracism">[United Nations, n.d.](#f14)</a>). We include least developed countries also (on the assumption that the population there as a whole can, on a global scale, be considered poorer or more vulnerable).
 
 ```py
 TS= ("financial inclusion" OR "microfinanc*" OR "micro-financ*" OR "microinsurance" OR "micro-insurance" OR "microcredit" OR "micro-credit" OR "microloan$" OR "micro-loan$")
@@ -208,9 +209,9 @@ OR TS=
 
 #### Phrase 2
 
-This phrase covers access and rights to economic resources, natural resources, land, property and inheritance. The elements of the phrase are: *access/rights + resources + poor/vulnerable*.
+This phrase covers access and rights to economic resources, natural resources, land, property and inheritance. The elements of the phrase are: _access/rights + resources + poor/vulnerable_.
 
-"security" is used in phrases because otherwise there are many results about food security. For the *poor and vulnerable* terms, we use general terms for poverty/low income, plus terms for "vulnerable" groups from indicator 1.3.1. We used UN sources to find additional terms and groups that can be considered "vulnerable" (<a id="Blanchard">[Blanchard et al., 2017](#f12)</a>; <a id="UNOHC">[Office of the High Commissioner, n.d.](#f13)</a>; <a id="UNracism">[United Nations, n.d.](#f14)</a>). We include least developed countries also (on the assumption that the population there as a whole can, on a global scale, be considered poorer or more vulnerable).   
+"security" is used in phrases because otherwise there are many results about food security. For the _poor and vulnerable_ terms, we use general terms for poverty/low income, plus terms for "vulnerable" groups from indicator 1.3.1. We used UN sources to find additional terms and groups that can be considered "vulnerable" (<a id="Blanchard">[Blanchard et al., 2017](#f12)</a>; <a id="UNOHC">[Office of the High Commissioner, n.d.](#f13)</a>; <a id="UNracism">[United Nations, n.d.](#f14)</a>). We include least developed countries also (on the assumption that the population there as a whole can, on a global scale, be considered poorer or more vulnerable).
 
 ```py
 TS=
@@ -253,11 +254,11 @@ TS=
 
 #### Phrase 3
 
-Phrase 3 covers access to basic services. The elements of the phrase are: *access + basic services + poor/vulnerable*.
+Phrase 3 covers access to basic services. The elements of the phrase are: _access + basic services + poor/vulnerable_.
 
-*Basic services* terms were gathered from documentation for indicator 1.4.1 in the SDG Indicators Metadata Repository (<a id="SDGmetarep">[UN Statistics Division, 2022](#f11)</a>) and a presentation from UNESCAP/UN Habitat (<a id="UNhabitat">[Njiru, 2018](#f15)</a>).
+_Basic services_ terms were gathered from documentation for indicator 1.4.1 in the SDG Indicators Metadata Repository (<a id="SDGmetarep">[UN Statistics Division, 2022](#f11)</a>) and a presentation from UNESCAP/UN Habitat (<a id="UNhabitat">[Njiru, 2018](#f15)</a>).
 
-For the *poor and vulnerable* terms, we use general terms for poverty/low income, plus terms for "vulnerable" groups from indicator 1.3.1. We used UN sources to find additional terms and groups that can be considered "vulnerable" (<a id="Blanchard">[Blanchard et al., 2017](#f12)</a>; <a id="UNOHC">[Office of the High Commissioner, n.d.](#f13)</a>; <a id="UNracism">[United Nations, n.d.](#f14)</a>).
+For the _poor and vulnerable_ terms, we use general terms for poverty/low income, plus terms for "vulnerable" groups from indicator 1.3.1. We used UN sources to find additional terms and groups that can be considered "vulnerable" (<a id="Blanchard">[Blanchard et al., 2017](#f12)</a>; <a id="UNOHC">[Office of the High Commissioner, n.d.](#f13)</a>; <a id="UNracism">[United Nations, n.d.](#f14)</a>).
 
 ```py
 TS=
@@ -323,11 +324,11 @@ TS=
 
 This target is interpreted to cover research about resilience and impacts of disasters for the poor and those in vulnerable situations. We consider "climate-related extreme events and other economic, social and environmental shocks and disasters" to cover all kinds of disasters.
 
-The target is limited to "the poor and those in vulnerable situations". For the *poor and vulnerable* terms, we use general terms for poverty/low income, plus terms for "vulnerable" groups from indicator 1.3.1. We used UN sources to find additional terms and groups that can be considered "vulnerable" (<a id="Blanchard">[Blanchard et al., 2017](#f12)</a>; <a id="UNOHC">[Office of the High Commissioner, n.d.](#f13)</a>; <a id="UNracism">[United Nations, n.d.](#f14)</a>). We have also included terms for least-developed countries and small-island developing states, based on the assumption that these populations may be considered more vulnerable when it comes to disasters.
+The target is limited to "the poor and those in vulnerable situations". For the _poor and vulnerable_ terms, we use general terms for poverty/low income, plus terms for "vulnerable" groups from indicator 1.3.1. We used UN sources to find additional terms and groups that can be considered "vulnerable" (<a id="Blanchard">[Blanchard et al., 2017](#f12)</a>; <a id="UNOHC">[Office of the High Commissioner, n.d.](#f13)</a>; <a id="UNracism">[United Nations, n.d.](#f14)</a>). We have also included terms for least-developed countries and small-island developing states, based on the assumption that these populations may be considered more vulnerable when it comes to disasters.
 
 We have used the hazards listed in <a id="disasters">[Murray et al., (2021)](#f4)</a> to make a list of disasters based on their classification of hazards into hydrological/meteorological, geohazards, environmental, chemical, biological, technological, and societal.
 
-This query consists of 1 phrase. The elements of the phrase are: *disaster + poor/vulnerable*.
+This query consists of 1 phrase. The elements of the phrase are: _disaster + poor/vulnerable_.
 
 ```py
 TS=
@@ -403,7 +404,7 @@ TS=
 >
 > 1.a.2 Proportion of total government spending on essential services (education, health and social protection)
 
-This target is interpreted to cover research about international investment and poverty in developing countries. This query consists of 1 phrase. The elements of the phrase are: *international financing/cooperation + poverty + developing countries*. 
+This target is interpreted to cover research about international investment and poverty in developing countries. This query consists of 1 phrase. The elements of the phrase are: _international financing/cooperation + poverty + developing countries_.
 
 ```py
 TS=
@@ -438,7 +439,7 @@ TS=
       OR "albania*" OR "algeria*" OR "angola*" OR "argentina*" OR "azerbaijan*" OR "bahrain*" OR "belarus*" OR "byelarus*" OR "belorussia" OR "belize*" OR "honduras" OR "honduran" OR "dahomey" OR "bosnia*" OR "herzegovina*" OR "botswana*" OR "bechuanaland" OR "brazil*" OR "brasil*" OR "bulgaria*" OR "upper volta" OR "kampuchea" OR "khmer republic" OR "cameroon*" OR "cameroun" OR "ubangi shari" OR "chile*" OR "china" OR "chinese" OR "colombia*" OR "costa rica*" OR "cote d’ivoire" OR "cote divoire" OR "cote d ivoire" OR "ivory coast" OR "croatia*" OR "cyprus" OR "cypriot" OR "czech" OR "ecuador*" OR "egypt*" OR "united arab republic" OR "el salvador*" OR "estonia*" OR "eswatini" OR "swaziland" OR "swazi" OR "gabon" OR "gabonese" OR "gabonaise" OR "gambia*" OR "ghana*" OR "gibralta*" OR "greece" OR "greek" OR "honduras" OR "honduran$" OR "hungary" OR "hungarian$" OR "india" OR "indian$" OR "indonesia*" OR "iran" OR "iranian$" OR "iraq" OR "iraqi$" OR "isle of man" OR "jordan" OR "jordanian$" OR "kenya*" OR "korea*" OR "kosovo" OR "kosovan$" OR "latvia*" OR "lebanon" OR "lebanese" OR "libya*" OR "lithuania*" OR "macau" OR "macao" OR "macanese" OR "malagasy" OR "malaysia*" OR "malay federation" OR "malaya federation" OR "malta" OR "maltese" OR "mauritania" OR "mauritanian$" OR "mexico" OR "mexican$" OR "montenegr*" OR "morocco" OR "moroccan$" OR "namibia*" OR "netherlands antilles" OR "nicaragua*" OR "nigeria*" OR "oman" OR "omani$" OR "muscat" OR "pakistan*" OR "panama*" OR "papua new guinea*" OR "peru" OR "peruvian$" OR "philippine$" OR "philipine$" OR "phillipine$" OR "phillippine$" OR "filipino$" OR "filipina$" OR "poland" OR "polish" OR "portugal" OR "portugese" OR "romania*" OR "russia" OR "russian$" OR "polynesia*" OR "saudi arabia*" OR "serbia*" OR "slovakia*" OR "slovak republic" OR "slovenia*" OR "melanesia*" OR "south africa*" OR "sri lanka*" OR "dutch guiana" OR "netherlands guiana" OR "syria" OR "syrian$" OR "thailand" OR "thai" OR "tunisia*" OR "ukraine" OR "ukrainian$" OR "uruguay*" OR "venezuela*" OR "vietnam*" OR "west bank" OR "gaza" OR "palestine" OR "palestinian$" OR "yugoslavia*" OR "turkish" OR "turkey" OR "georgia*"
       )
 )
-```  
+```
 
 ### Target 1.b
 
@@ -446,9 +447,9 @@ TS=
 >
 > 1.b.1 Pro-poor public social spending
 
-This target is interpreted to cover research about policies that can stimulate investment in antipoverty actions. This is however very difficult to build a search string for, as the terms are used for more than one aspect (*policy* to encourage investment in anti-poverty *policies*). Therefore we expanded the interpretation to include research about international and national policies and poverty reduction.
+This target is interpreted to cover research about policies that can stimulate investment in antipoverty actions. This is however very difficult to build a search string for, as the terms are used for more than one aspect (_policy_ to encourage investment in anti-poverty _policies_). Therefore we expanded the interpretation to include research about international and national policies and poverty reduction.
 
-The elements of the phrase are: *policy + antipoverty*. Note that this phrase is the same as the action approach.
+The elements of the phrase are: _policy + antipoverty_. Note that this phrase is the same as the action approach.
 
 ```py
 TS=
@@ -502,21 +503,21 @@ NOT
 
 ## 4. Contributions
 
-* v2019.12: Marta Lorenz, Caroline S. Armitage, Susanne Mikki
+- v2019.12: Marta Lorenz, Caroline S. Armitage, Susanne Mikki
 
-* v1.0.0: Marta Lorenz (Sep 2021-Apr 2022), Caroline S. Armitage (May 2022-Oct 2022)
+- v1.0.0: Marta Lorenz (Sep 2021-Apr 2022), Caroline S. Armitage (May 2022-Oct 2022)
 
-* Internal review: Håkon Magne Bjerkan, Caroline S. Armitage (March 2022); Inger Gåsemyr (minor review Oct 2022)
+- Internal review: Håkon Magne Bjerkan, Caroline S. Armitage (March 2022); Inger Gåsemyr (minor review Oct 2022)
 
 Specialist input: Awaiting specialist input.
 
 ## 5. Footnotes
 
-<a id="f29"></a> Aurora Universities Network. (2020). *Search Queries for “Mapping Research Output to the Sustainable Development Goals (SDGs)”* v5.0. [Dataset]. doi:10.5281/zenodo.3817445. [↩](#Aurora)
+<a id="f29"></a> Aurora Universities Network. (2020). _Search Queries for “Mapping Research Output to the Sustainable Development Goals (SDGs)”_ v5.0. [Dataset]. doi:10.5281/zenodo.3817445. [↩](#Aurora)
 
-<a id="f12"></a> Blanchard et al. (2017). *Words into action guidelines: National Disaster Risk Assessment. Special Topics: K. Consideration of Marginalized and Minority Groups in a National Disaster Risk Assessment*. United Nations Office for Disaster Risk Reduction. https://www.undrr.org/publication/marginalized-and-minority-groups-consideration-ndra. [↩](#Blanchard)
+<a id="f12"></a> Blanchard et al. (2017). _Words into action guidelines: National Disaster Risk Assessment. Special Topics: K. Consideration of Marginalized and Minority Groups in a National Disaster Risk Assessment_. United Nations Office for Disaster Risk Reduction. https://www.undrr.org/publication/marginalized-and-minority-groups-consideration-ndra. [↩](#Blanchard)
 
-<a id="f7"></a> Department of Economic and Social Affairs (2009) *2009 World Survey on the Role of Women in Development: Women’s Control over Economic Resources and Access to Financial Resources, including Microfinance*. United Nations. https://www.un.org/womenwatch/daw/public/WorldSurvey2009.pdf [↩](#DESA)
+<a id="f7"></a> Department of Economic and Social Affairs (2009) _2009 World Survey on the Role of Women in Development: Women’s Control over Economic Resources and Access to Financial Resources, including Microfinance_. United Nations. https://www.un.org/womenwatch/daw/public/WorldSurvey2009.pdf [↩](#DESA)
 
 <a id="f9"></a> Carter, Roelen, Enfield & Avis (2019) Types of social protection. Governance and Social Development Resource Centre. (https://gsdrc.org/topic-guides/social-protection/types-of-social-protection/) [Accessed May 2022].[↩](#gsdrc)
 
@@ -524,18 +525,18 @@ Specialist input: Awaiting specialist input.
 
 <a id="f4"></a> Murray, V. et al. (2021) Hazard Information Profiles: Supplement to UNDRR-ISC Hazard Definition & Classification Review: Technical Report: Geneva, Switzerland, United Nations Office for Disaster Risk Reduction; Paris, France, International Science Council. (https://council.science/publications/hazard-information-profiles/).[↩](#disasters)
 
-<a id="f15"></a> Njiru, E. (March 2018) *Introducing indicator 1.4.1*. UNESCAP, UN Habitat Global Urban Observatory. https://www.unescap.org/sites/default/files/Indicator%201.4.1_Basic%20Services.pdf (accessed Jun 2022). [↩](#UNhabitat)
+<a id="f15"></a> Njiru, E. (March 2018) _Introducing indicator 1.4.1_. UNESCAP, UN Habitat Global Urban Observatory. https://www.unescap.org/sites/default/files/Indicator%201.4.1_Basic%20Services.pdf (accessed Jun 2022). [↩](#UNhabitat)
 
-<a id="f13"></a> Office of the High Commissioner (n.d.) *Non-discrimination: Groups in vulnerable situations. Special Rapporteur on the right to health*. United Nations Human Rights. https://www.ohchr.org/en/special-procedures/sr-health/non-discrimination-groups-vulnerable-situations (accessed Jun 2022). [↩](#UNOHC)
+<a id="f13"></a> Office of the High Commissioner (n.d.) _Non-discrimination: Groups in vulnerable situations. Special Rapporteur on the right to health_. United Nations Human Rights. https://www.ohchr.org/en/special-procedures/sr-health/non-discrimination-groups-vulnerable-situations (accessed Jun 2022). [↩](#UNOHC)
 
-<a id="f8"></a> UNSGSA (Office of the United Nations Secretary-General’s Special Advocate for Inclusive Finance for Development, Her Majesty Queen Máxima of the Netherlands), the Better Than Cash Alliance, the United Nations Capital Development (UNCDF), and the World Bank. (2018). *Igniting SDG Progress through Digital Financial Inclusion*. https://www.betterthancash.org/explore-resources/igniting-sdg-progress-through-digital-financial-inclusion [accessed 30.04.2022] [↩](#sgsa)
+<a id="f8"></a> UNSGSA (Office of the United Nations Secretary-General’s Special Advocate for Inclusive Finance for Development, Her Majesty Queen Máxima of the Netherlands), the Better Than Cash Alliance, the United Nations Capital Development (UNCDF), and the World Bank. (2018). _Igniting SDG Progress through Digital Financial Inclusion_. https://www.betterthancash.org/explore-resources/igniting-sdg-progress-through-digital-financial-inclusion [accessed 30.04.2022] [↩](#sgsa)
 
-<a id="f1"></a> UN Statistics Division. (2021). *Global indicator framework for the Sustainable Development Goals and targets of the 2030 Agenda for Sustainable Development*. A/RES/71/313, E/CN.3/2018/2, E/CN.3/2019/2, E/CN.3/2020/2, E/CN.3/2021/2. Department of Economic and Social Affairs, United Nations. https://unstats.un.org/sdgs/indicators/Global%20Indicator%20Framework%20after%202021%20refinement_Eng.pdf [accessed 8 August 2021] [↩](#SDGT+Is)
+<a id="f1"></a> UN Statistics Division. (2021). _Global indicator framework for the Sustainable Development Goals and targets of the 2030 Agenda for Sustainable Development_. A/RES/71/313, E/CN.3/2018/2, E/CN.3/2019/2, E/CN.3/2020/2, E/CN.3/2021/2. Department of Economic and Social Affairs, United Nations. https://unstats.un.org/sdgs/indicators/Global%20Indicator%20Framework%20after%202021%20refinement_Eng.pdf [accessed 8 August 2021] [↩](#SDGT+Is)
 
 <a id="f11"></a> UN Statistics Division (2022). SDG Indicators Metadata Repository. https://unstats.un.org/sdgs/metadata [↩](#SDGmetarep)
 
-<a id="f2"></a> United Nations (2017) *2017 HLPF Thematic Review of SDG 1: End Poverty in All its Forms Everywhere.*  https://sustainabledevelopment.un.org/content/documents/14379SDG1format-final_OD.pdf [↩](#HLPF2017)
+<a id="f2"></a> United Nations (2017) _2017 HLPF Thematic Review of SDG 1: End Poverty in All its Forms Everywhere._ https://sustainabledevelopment.un.org/content/documents/14379SDG1format-final_OD.pdf [↩](#HLPF2017)
 
-<a id="f3"></a> United Nations. (2016, 2017, 2018, 2019, 2020, 2021). *World Economic Situation and Prospects; Statistical Annex*. https://www.un.org/development/desa/dpad/document_gem/global-economic-monitoring-unit/world-economic-situation-and-prospects-wesp-report/ [↩](#UNLDCs)
+<a id="f3"></a> United Nations. (2016, 2017, 2018, 2019, 2020, 2021). _World Economic Situation and Prospects; Statistical Annex_. https://www.un.org/development/desa/dpad/document_gem/global-economic-monitoring-unit/world-economic-situation-and-prospects-wesp-report/ [↩](#UNLDCs)
 
-<a id="f14"></a> United Nations (n.d.) *Fight racism. Vulnerable groups, who are they?*. https://www.un.org/en/fight-racism/vulnerable-groups?gclid=EAIaIQobChMI9ODI_PvC9wIVV53VCh3pQgZCEAAYASAAEgInB_D_BwE (accessed Jun 2022). [↩](#UNracism)
+<a id="f14"></a> United Nations (n.d.) _Fight racism. Vulnerable groups, who are they?_. https://www.un.org/en/fight-racism/vulnerable-groups?gclid=EAIaIQobChMI9ODI_PvC9wIVV53VCh3pQgZCEAAYASAAEgInB_D_BwE (accessed Jun 2022). [↩](#UNracism)

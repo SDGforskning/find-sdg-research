@@ -1,10 +1,10 @@
-import { getPageImage, source } from '@/lib/source';
-import { getMDXComponents } from '@/components/mdx';
-import { createRelativeLink } from 'fumadocs-ui/mdx';
-import type { Metadata } from 'next';
-import { notFound } from 'next/navigation';
+import { createRelativeLink } from "fumadocs-ui/mdx";
+import type { Metadata } from "next";
+import { notFound } from "next/navigation";
+import { getMDXComponents } from "@/components/mdx";
+import { getPageImage, source } from "@/lib/source";
 
-export default async function HomePage(props: PageProps<'/[lang]'>) {
+export default async function HomePage(props: PageProps<"/[lang]">) {
   const { lang } = await props.params;
   const page = source.getPage([], lang);
   if (!page) notFound();
@@ -22,7 +22,9 @@ export default async function HomePage(props: PageProps<'/[lang]'>) {
   );
 }
 
-export async function generateMetadata(props: PageProps<'/[lang]'>): Promise<Metadata> {
+export async function generateMetadata(
+  props: PageProps<"/[lang]">,
+): Promise<Metadata> {
   const { lang } = await props.params;
   const page = source.getPage([], lang);
   if (!page) notFound();

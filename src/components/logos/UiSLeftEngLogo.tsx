@@ -1,4 +1,4 @@
-import { SVGProps } from "react"
+import type { SVGProps } from "react";
 
 export const UiSLeftEngLogo = (props: SVGProps<SVGSVGElement>) => (
   <svg
@@ -467,4 +467,4 @@ export const UiSLeftEngLogo = (props: SVGProps<SVGSVGElement>) => (
       d="M1473.088 219.86c.84 3.702 1.526 7.084 1.786 10.499.08 1.058-.918 3.105-1.56 3.162-3.922.349-7.887.34-11.83.208-.511-.017-1.354-1.404-1.395-2.19-.153-2.969-.445-6.036.148-8.894.292-1.408 2.287-3.264 3.717-3.466 2.864-.403 5.869.192 9.134.681z"
     />
   </svg>
-)
+);

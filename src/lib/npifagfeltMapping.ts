@@ -1,334 +1,334 @@
 export const npifagfeltMapping = {
-  'Anvendt geologi og petroleumsfag': {
+  "Anvendt geologi og petroleumsfag": {
     en: "Applied geology and petroleum",
     no: "Anvendt geologi og petroleumsfag",
   },
-  'Arkeologi og konservering': {
+  "Arkeologi og konservering": {
     en: "Archaeology and conservation",
     no: "Arkeologi og konservering",
   },
-  'Arkitektur og design': {
+  "Arkitektur og design": {
     en: "Architecture and design",
     no: "Arkitektur og design",
   },
-  'Asiatiske og afrikanske studier': {
+  "Asiatiske og afrikanske studier": {
     en: "Asian and African studies",
     no: "Asiatiske og afrikanske studier",
   },
-  'Biblioteks- og informasjonsvitenskap': {
+  "Biblioteks- og informasjonsvitenskap": {
     en: "Library and information science",
     no: "Biblioteks- og informasjonsvitenskap",
   },
-  'Biologi': {
+  Biologi: {
     en: "Biology",
     no: "Biologi",
   },
-  'Biomedisin': {
+  Biomedisin: {
     en: "Biomedicine",
     no: "Biomedisin",
   },
-  'Bioteknologi': {
+  Bioteknologi: {
     en: "Biotechnology",
     no: "Bioteknologi",
   },
-  'Bygg og konstruksjonsteknikk': {
+  "Bygg og konstruksjonsteknikk": {
     en: "Construction",
     no: "Bygg og konstruksjonsteknikk",
   },
-  'Dans': {
+  Dans: {
     en: "Dance",
     no: "Dans",
   },
-  'Dermatologi og venerologi': {
+  "Dermatologi og venerologi": {
     en: "Dermatology and venerology",
     no: "Dermatologi og venerologi",
   },
-  'Elektronikk og kybernetikk': {
+  "Elektronikk og kybernetikk": {
     en: "Electronics and cybernetics",
     no: "Elektronikk og kybernetikk",
   },
-  'Elkraft og elektrotekniske fag': {
+  "Elkraft og elektrotekniske fag": {
     en: "Electrical engineering",
     no: "Elkraft og elektrotekniske fag",
   },
-  'Endokrinologi': {
+  Endokrinologi: {
     en: "Endocrinology",
     no: "Endokrinologi",
   },
-  'Energi': {
+  Energi: {
     en: "Energy",
     no: "Energi",
   },
-  'Engelsk': {
+  Engelsk: {
     en: "English",
     no: "Engelsk",
   },
-  'Ernæring': {
+  Ernæring: {
     en: "Nutrition",
     no: "Ernæring",
   },
-  'Farmasi, farmakologi og toksikologi': {
+  "Farmasi, farmakologi og toksikologi": {
     en: "Pharmacology and toxicology",
     no: "Farmasi, farmakologi og toksikologi",
   },
-  'Filosofi og idéhistorie': {
+  "Filosofi og idéhistorie": {
     en: "Philosophy and history of ideas",
     no: "Filosofi og idéhistorie",
   },
-  'Fysikk': {
+  Fysikk: {
     en: "Physics",
     no: "Fysikk",
   },
-  'Gastroenterologi og hepatologi': {
+  "Gastroenterologi og hepatologi": {
     en: "Gastroenterology and hepatology",
     no: "Gastroenterologi og hepatologi",
   },
-  'Generell medisin': {
+  "Generell medisin": {
     en: "General medicine",
     no: "Generell medisin",
   },
-  'Generell teknologi': {
+  "Generell teknologi": {
     en: "General technology",
     no: "Generell teknologi",
   },
-  'Geofag': {
+  Geofag: {
     en: "Geosciences",
     no: "Geofag",
   },
-  'Geografi': {
+  Geografi: {
     en: "Geography",
     no: "Geografi",
   },
-  'Geriatri': {
+  Geriatri: {
     en: "Geriatrics",
     no: "Geriatri",
   },
-  'Gresk og latin': {
+  "Gresk og latin": {
     en: "Greek and Latin",
     no: "Gresk og latin",
   },
-  'Gynekologi og obstetrikk': {
+  "Gynekologi og obstetrikk": {
     en: "Gynecology and obstetrics",
     no: "Gynekologi og obstetrikk",
   },
-  'Hematologi': {
+  Hematologi: {
     en: "Haematology",
     no: "Hematologi",
   },
-  'Historie': {
+  Historie: {
     en: "History",
     no: "Historie",
   },
-  'Hjerte, kar og luftveier': {
+  "Hjerte, kar og luftveier": {
     en: "Cardiovascular and respiratory systems",
     no: "Hjerte, kar og luftveier",
   },
-  'Idrettsforskning': {
+  Idrettsforskning: {
     en: "Sports science",
     no: "Idrettsforskning",
   },
-  'Industriell økonomi': {
+  "Industriell økonomi": {
     en: "Industrial economics",
     no: "Industriell økonomi'",
   },
-  'Infeksjoner': {
+  Infeksjoner: {
     en: "Infectious diseases",
     no: "Infeksjoner",
   },
-  'Informatikk og datateknikk': {
+  "Informatikk og datateknikk": {
     en: "ICT",
     no: "Informatikk og datateknikk",
   },
-  'Kirurgiske fag': {
+  "Kirurgiske fag": {
     en: "Surgical sciences",
     no: "Kirurgiske fag",
   },
-  'Kjemi': {
+  Kjemi: {
     en: "Chemistry",
     no: "Kjemi",
   },
-  'Kjemisk teknologi': {
+  "Kjemisk teknologi": {
     en: "Chemical technology",
     no: "Kjemisk teknologi",
   },
-  'Kjønnsforskning': {
+  Kjønnsforskning: {
     en: "Gender studies",
     no: "Kjønnsforskning",
   },
-  'Kulturvitenskap': {
+  Kulturvitenskap: {
     en: "Cultural studies",
     no: "Kulturvitenskap",
   },
-  'Kunsthistorie': {
+  Kunsthistorie: {
     en: "Art history",
     no: "Kunsthistorie",
   },
-  'Lingvistikk': {
+  Lingvistikk: {
     en: "Linguistics",
     no: "Lingvistikk",
   },
-  'Litteraturvitenskap': {
+  Litteraturvitenskap: {
     en: "Literature",
     no: "Litteraturvitenskap",
   },
-  'Marin og maritim teknologi': {
+  "Marin og maritim teknologi": {
     en: "Marine technology",
     no: "Marin og maritim teknologi",
   },
-  'Maskinteknikk': {
+  Maskinteknikk: {
     en: "Mechanical cngineering",
     no: "Maskinteknikk",
   },
-  'Matematikk': {
+  Matematikk: {
     en: "Mathematics",
     no: "Matematikk",
   },
-  'Materialteknologi': {
+  Materialteknologi: {
     en: "Materials",
     no: "Materialteknologi",
   },
-  'Medier og kommunikasjon': {
+  "Medier og kommunikasjon": {
     en: "Media and communication",
     no: "Medier og kommunikasjon",
   },
-  'Miljøteknologi og industriell økologi': {
+  "Miljøteknologi og industriell økologi": {
     en: "Environmental Analysis and Industrial Ecology",
     no: "Miljøteknologi og industriell økologi",
   },
-  'Musikkvitenskap': {
+  Musikkvitenskap: {
     en: "Music",
     no: "Musikkvitenskap",
   },
-  'Nefrologi': {
+  Nefrologi: {
     en: "Nephrology",
     no: "Nefrologi",
   },
-  'Nevrologi': {
+  Nevrologi: {
     en: "Neurology",
     no: "Nevrologi",
   },
-  'Nordisk': {
+  Nordisk: {
     en: "Scandinavian studies",
     no: "Nordisk",
   },
-  'Odontologi': {
+  Odontologi: {
     en: "Dentistry",
     no: "Odontologi",
   },
-  'Onkologi': {
+  Onkologi: {
     en: "Oncology",
     no: "Onkologi",
   },
-  'Pedagogikk og utdanning': {
+  "Pedagogikk og utdanning": {
     en: "Education and educational research",
     no: "Pedagogikk og utdanning",
   },
-  'Pediatri': {
+  Pediatri: {
     en: "Pediatrics",
     no: "Pediatri",
   },
-  'Psykiatri': {
+  Psykiatri: {
     en: "Psychiatry",
     no: "Psykiatri",
   },
-  'Psykologi': {
+  Psykologi: {
     en: "Psychology",
     no: "Psykologi",
   },
-  'Radiologi og billeddiagnostikk': {
+  "Radiologi og billeddiagnostikk": {
     en: "Radiology and medical imaging",
     no: "Radiologi og billeddiagnostikk",
   },
-  'Rettsvitenskap': {
+  Rettsvitenskap: {
     en: "Law",
     no: "Rettsvitenskap",
   },
-  'Revmatologi': {
+  Revmatologi: {
     en: "Rheumatology",
     no: "Revmatologi",
   },
-  'Romansk': {
+  Romansk: {
     en: "Romance studies",
     no: "Romansk",
   },
-  'Samfunnsmedisin': {
+  Samfunnsmedisin: {
     en: "Public, environmental and occupational health",
     no: "Samfunnsmedisin",
   },
-  'Samfunnsøkonomi': {
+  Samfunnsøkonomi: {
     en: "Economics",
     no: "Samfunnsøkonomi",
   },
-  'Slavisk-baltisk': {
+  "Slavisk-baltisk": {
     en: "Slavonic studies",
     no: "Slavisk-baltisk",
   },
-  'Sosialantropologi': {
+  Sosialantropologi: {
     en: "Social anthropology",
     no: "Sosialantropologi",
   },
-  'Sosialforskning': {
+  Sosialforskning: {
     en: "Social research",
     no: "Sosialforskning",
   },
-  'Sosiologi': {
+  Sosiologi: {
     en: "Sociology",
     no: "Sosiologi",
   },
-  'Statsvitenskap': {
+  Statsvitenskap: {
     en: "Political science",
     no: "Statsvitenskap",
   },
-  'Sykepleie': {
+  Sykepleie: {
     en: "Nursing",
     no: "Sykepleie",
   },
-  'Teatervitenskap og drama': {
+  "Teatervitenskap og drama": {
     en: "Theatre and drama",
     no: "Teatervitenskap og drama",
   },
-  'Teologi og religionsvitenskap': {
+  "Teologi og religionsvitenskap": {
     en: "Theology and religion",
     no: "Teologi og religionsvitenskap",
   },
-  'Tverrfaglig humanistisk forskning': {
+  "Tverrfaglig humanistisk forskning": {
     en: "Interdisciplinary humanities",
     no: "Tverrfaglig humanistisk forskning",
   },
-  'Tverrfaglig naturvitenskap og medisin': {
+  "Tverrfaglig naturvitenskap og medisin": {
     en: "Interdisciplinary natural sciences and medicine",
     no: "Tverrfaglig naturvitenskap og medisin",
   },
-  'Tverrfaglig samfunnsforskning': {
+  "Tverrfaglig samfunnsforskning": {
     en: "Interdisciplinary social sciences",
     no: "Tverrfaglig samfunnsforskning",
   },
-  'Tverrfaglig teknologi': {
+  "Tverrfaglig teknologi": {
     en: "Interdisciplinary technology",
     no: "Tverrfaglig teknologi",
   },
-  'Tysk og nederlandsk': {
+  "Tysk og nederlandsk": {
     en: "Germanic studies",
     no: "Tysk og nederlandsk",
   },
-  'Utviklingsstudier': {
+  Utviklingsstudier: {
     en: "Development studies",
     no: "Utviklingsstudier",
   },
-  'Veterinærmedisin': {
+  Veterinærmedisin: {
     en: "Veterinary medicine",
     no: "Veterinærmedisin",
   },
-  'Økonomisk-administrative fag': {
+  "Økonomisk-administrative fag": {
     en: "Business and finance",
     no: "Økonomisk-administrative fag",
   },
-  'Øre-nese-hals': {
+  "Øre-nese-hals": {
     en: "Otorhinolaryngology (ENT)",
     no: "Øre-nese-hals",
   },
-  'Øyesykdommer': {
+  Øyesykdommer: {
     en: "Ophthalmology",
     no: "Øyesykdommer",
-  }
-}
+  },
+};

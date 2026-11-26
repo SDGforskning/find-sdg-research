@@ -1,6 +1,3 @@
 {
-  "pages": [
-    "actions",
-    "topics"
-  ]
+  "pages": ["actions", "topics"]
 }

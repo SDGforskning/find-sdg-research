@@ -2,8 +2,7 @@ import React from "react";
 
 function getFilterValueDisplay(filterValue: any) {
   if (filterValue === undefined || filterValue === null) return "";
-  if (Object.prototype.hasOwnProperty.call(filterValue, "name"))
-    return filterValue.name;
+  if (Object.hasOwn(filterValue, "name")) return filterValue.name;
   return String(filterValue);
 }
 
@@ -13,10 +12,7 @@ function getNewClassName(newClassName: any) {
   return newClassName.filter((name) => name).join(" ");
 }
 
-function appendClassName(
-  baseClassName: any,
-  newClassName: any
-) {
+function appendClassName(baseClassName: any, newClassName: any) {
   if (!newClassName)
     return (
       (Array.isArray(baseClassName)
@@ -28,8 +24,8 @@ function appendClassName(
 }
 
 import type { FieldValue } from "@elastic/search-ui";
-import { usePathname } from 'next/navigation';
-import { getLocaleFromPathname } from '../../lib/locale';
+import { usePathname } from "next/navigation";
+import { getLocaleFromPathname } from "../../lib/locale";
 
 function MappedLabelsFacet({
   className,
@@ -42,21 +38,21 @@ function MappedLabelsFacet({
   showSearch,
   onSearch,
   searchPlaceholder,
-  mapping
+  mapping,
 }: {
-  className: string,
-  label: string,
-  onMoreClick: () => void,
-  onRemove: (value: any) => void,
-  onSelect: (value: any) => void,
-  options: any[],
-  showMore: boolean,
-  showSearch: boolean,
-  onSearch: (value: string) => void,
-  searchPlaceholder: string,
-  mapping: Record<string, Record<string, string>>
+  className: string;
+  label: string;
+  onMoreClick: () => void;
+  onRemove: (value: any) => void;
+  onSelect: (value: any) => void;
+  options: any[];
+  showMore: boolean;
+  showSearch: boolean;
+  onSearch: (value: string) => void;
+  searchPlaceholder: string;
+  mapping: Record<string, Record<string, string>>;
 }) {
-  const locale = getLocaleFromPathname(usePathname())
+  const locale = getLocaleFromPathname(usePathname());
 
   return (
     <fieldset className={appendClassName("sui-facet", className)}>
@@ -80,14 +76,20 @@ function MappedLabelsFacet({
         {options.map((option) => {
           const checked = option.selected;
           const value = option.value as FieldValue;
-          const hasMapping = mapping[getFilterValueDisplay(option.value)][locale] != '' ? true : false
-          const label = mapping[getFilterValueDisplay(option.value)][hasMapping === true ? locale : 'en']
+          const hasMapping =
+            mapping[getFilterValueDisplay(option.value)][locale] !== ""
+              ? true
+              : false;
+          const label =
+            mapping[getFilterValueDisplay(option.value)][
+              hasMapping === true ? locale : "en"
+            ];
 
           return (
             <label
               key={`${getFilterValueDisplay(option.value)}`}
               htmlFor={`example_facet_${label}${getFilterValueDisplay(
-                option.value
+                option.value,
               )}`}
               className="sui-multi-checkbox-facet__option-label"
             >
@@ -95,7 +97,7 @@ function MappedLabelsFacet({
                 <input
                   data-transaction-name={`facet - ${label}`}
                   id={`example_facet_${label}${getFilterValueDisplay(
-                    option.value
+                    option.value,
                   )}`}
                   type="checkbox"
                   className="sui-multi-checkbox-facet__checkbox"
