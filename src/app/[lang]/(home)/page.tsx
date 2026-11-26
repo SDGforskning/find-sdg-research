@@ -29,8 +29,10 @@ export async function generateMetadata(
   const page = source.getPage([], lang);
   if (!page) notFound();
 
+  const site = lang === "en" ? "Find SDG research" : "Finn bærekraftsforskning";
+
   return {
-    title: page.data.title,
+    title: { absolute: site },
     description: page.data.description,
     openGraph: {
       images: getPageImage(page).url,

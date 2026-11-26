@@ -1,6 +1,6 @@
 ---
-
-## title: About this service
+title: About this service
+---
 
 The aim of **Find SDG Research** is to allow anyone – those working in academia, public and private sectors, students, and the general public – to find Norwegian publications related to the UN’s Sustainable Development Goals, and, when possible, access to the full text. It primarily covers literature that is related to the targets of the SDGs. Read more about the Sustainable Development Goals (SDGs) and their targets under [About the SDGs](/en/om/om-baerekraftsmalene)
 

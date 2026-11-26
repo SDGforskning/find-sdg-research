@@ -1,6 +1,6 @@
 ---
-
-## title: Sustainable Development Goals
+title: Sustainable Development Goals
+---
 
 The UN sustainable development goals (SDGs) are
 

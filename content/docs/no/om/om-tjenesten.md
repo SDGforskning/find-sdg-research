@@ -1,6 +1,6 @@
 ---
-
-## title: Om denne tjenesten
+title: Om denne tjenesten
+---
 
 Målet med **Finn Bærekraftsforskning** er at alle – allmennheten, offentlig sektor, næringslivet, forskere, studenter – enkelt kan få oversikt over forskningspublikasjoner som er knyttet til FNs bærekraftsmål (også kjent som "Sustainable development goals" eller "SDGs"). Der det er mulig gir tjenesten også tilgang til publikasjonene i fulltekst. Primært dekker tjenesten litteratur knyttet til delmålene under bærekraftsmålene. Les mer om bærekraftsmålene og delmålene under [Om Bærekraftsmålene](/om/om-baerekraftsmalene).
 

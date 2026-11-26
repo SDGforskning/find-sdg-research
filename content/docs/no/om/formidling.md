@@ -1,6 +1,6 @@
 ---
-
-## title: Formidlingspakke
+title: Formidlingspakke
+---
 
 På denne siden finner du tekster og bilder som kan brukes til å markedsføre baerekraftsforskning.no, for eksempel i en epost eller nyhetssak, i sosiale medier, eller på et fysisk sted som et bibliotek.
 

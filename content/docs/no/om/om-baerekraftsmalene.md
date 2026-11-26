@@ -1,6 +1,6 @@
 ---
-
-## title: Bærekraftsmålene
+title: Bærekraftsmålene
+---
 
 FNs 17 bærekraftsmål omtales som «verdens felles arbeidsplan for å utrydde fattigdom, bekjempe ulikhet og stoppe klimaendringene innen 2030» (https://www.fn.no/om-fn/fns-baerekraftsmaal). De 17 målene, med sine 169 delmål og 232 indikatorer ble vedtatt av generalforsamlingen i 2015. De utgjør en plan som alle verdens land har sagt de vil jobbe for å oppfylle: [2030-agendaen](https://sdgs.un.org/2030agenda).
 

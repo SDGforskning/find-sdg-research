@@ -23,7 +23,7 @@ export function Footer({ lang }: { lang: string }) {
                 <a href="https://uustatus.no/nb/erklaringer/publisert/20b383fa-3a0f-4835-98c4-44ccf0a1bcb7">
                   {lang === "en"
                     ? "Accessibility statement"
-                    : "Tilgjengelighetserklaering"}
+                    : "Tilgjengelighetserklæring"}
                 </a>
               </li>
             </ul>
@@ -39,13 +39,13 @@ export function Footer({ lang }: { lang: string }) {
               />
               {lang === "en"
                 ? "Find SDG Research supports the Sustainable Development Goals"
-                : "Finn Baerekraftsforskning stotter FNs baerekraftsmal"}
+                : "Finn bærekraftsforskning støtter FNs bærekraftsmål"}
             </div>
             <div className="flex items-center gap-2 text-sm">
               <NBIcon height={32} />
               {lang === "en"
                 ? "The project is supported by the National Library of Norway"
-                : "Prosjektet er stottet av Nasjonalbiblioteket"}
+                : "Prosjektet er støttet av Nasjonalbiblioteket"}
             </div>
           </div>
         </div>

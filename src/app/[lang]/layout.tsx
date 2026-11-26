@@ -1,5 +1,6 @@
 import { RootProvider } from "fumadocs-ui/provider/next";
 import "./global.css";
+import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Script from "next/script";
 import { i18nUI } from "@/lib/layout.shared";
@@ -7,6 +8,20 @@ import { i18nUI } from "@/lib/layout.shared";
 const inter = Inter({
   subsets: ["latin"],
 });
+
+export async function generateMetadata({
+  params,
+}: LayoutProps<"/[lang]">): Promise<Metadata> {
+  const { lang } = await params;
+  const site = lang === "en" ? "Find SDG research" : "Finn bærekraftsforskning";
+
+  return {
+    title: {
+      default: site,
+      template: `%s | ${site}`,
+    },
+  };
+}
 
 export default async function Layout({
   children,

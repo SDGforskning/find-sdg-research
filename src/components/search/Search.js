@@ -11,8 +11,6 @@ import {
   /* SingleLinksFacet, */
   BooleanFacet,
   /* SingleSelectFacet, */
-  MultiCheckboxFacet,
-  Layout as SearchLayout,
   /* Sorting */
 } from "@elastic/react-search-ui-views";
 import { InfoIcon } from "lucide-react";
@@ -21,28 +19,47 @@ import { usePathname } from "next/navigation";
 import { getLocaleFromPathname } from "../../lib/locale";
 import ClearFilter from "./ClearFilter";
 import config from "./config";
+import { LabeledMultiCheckboxFacet } from "./LabeledMultiCheckboxFacet";
+import SearchLayout from "./SearchLayout";
 import SearchResultsPanel from "./SearchResultsPanel";
 
 const Search = () => {
   const locale = getLocaleFromPathname(usePathname());
+  const pageIcon = (label) => (
+    <button
+      type="button"
+      aria-label={label}
+      className="rc-pagination-item-link"
+    />
+  );
   return (
     <div className="w-full">
       <SearchProvider
         config={{
+          ...config,
           a11yNotificationMessages: {
             searchResults: ({ start, end, totalResults, searchTerm }) => {
               if (locale === "en") {
                 return `Searching for "${searchTerm}". Showing ${start} to ${end} results out of ${totalResults}.`;
               }
-              if (locale === "no") {
-                return `Søker for "${searchTerm}". Viser ${start} til ${end} resultat av totalt ${totalResults} treff.`;
+              return `Søker etter "${searchTerm}". Viser ${start} til ${end} av ${totalResults} treff.`;
+            },
+            moreFilters: ({ visibleOptionsCount, showingAll }) => {
+              if (locale === "en") {
+                return showingAll
+                  ? `All ${visibleOptionsCount} options shown.`
+                  : `${visibleOptionsCount} options shown.`;
               }
+              return showingAll
+                ? `Alle ${visibleOptionsCount} valg vises.`
+                : `${visibleOptionsCount} valg vises.`;
             },
           },
-          ...config,
         }}
       >
         <SearchLayout
+          showFiltersLabel={locale === "en" ? "Show filters" : "Vis filter"}
+          hideFiltersLabel={locale === "en" ? "Hide filters" : "Skjul filter"}
           bodyHeader={
             <>
               <PagingInfo
@@ -83,6 +100,18 @@ const Search = () => {
                         page_size: "sidestørrelse",
                       }
                 }
+                prevIcon={pageIcon(
+                  locale === "en" ? "Previous page" : "Forrige side",
+                )}
+                nextIcon={pageIcon(
+                  locale === "en" ? "Next page" : "Neste side",
+                )}
+                jumpPrevIcon={pageIcon(
+                  locale === "en" ? "Previous 5 pages" : "5 forrige sider",
+                )}
+                jumpNextIcon={pageIcon(
+                  locale === "en" ? "Next 5 pages" : "5 neste sider",
+                )}
               />
             </>
           }
@@ -122,18 +151,18 @@ const Search = () => {
                   <Facet
                     field="language_en.keyword"
                     label="Language"
-                    view={MultiCheckboxFacet}
+                    view={LabeledMultiCheckboxFacet}
                   />
                   <Facet
                     field="mentions_en.keyword"
                     label="Mentions"
-                    view={MultiCheckboxFacet}
+                    view={LabeledMultiCheckboxFacet}
                   />
                   <Facet
                     field="SDG_topic_en.keyword"
                     label="SDG"
                     show={20}
-                    view={MultiCheckboxFacet}
+                    view={LabeledMultiCheckboxFacet}
                     filterType="any"
                     //isFilterable={true}
                   />
@@ -151,7 +180,7 @@ const Search = () => {
                     field="SDG_target_topic_en.keyword"
                     label={"SDG targets"}
                     show={10}
-                    view={MultiCheckboxFacet}
+                    view={LabeledMultiCheckboxFacet}
                     filterType="any"
                     isFilterable={true}
                   />
@@ -165,7 +194,7 @@ const Search = () => {
                         field="SDG_action_en.keyword"
                         label={"SDG, action"}
                         show={20}
-                        view={MultiCheckboxFacet}
+                        view={LabeledMultiCheckboxFacet}
                         filterType="any"
                         //isFilterable={true}
                       />
@@ -173,7 +202,7 @@ const Search = () => {
                         field="SDG_target_action_en.keyword"
                         label={"SDG targets, action"}
                         show={10}
-                        view={MultiCheckboxFacet}
+                        view={LabeledMultiCheckboxFacet}
                         filterType="any"
                         isFilterable={true}
                       />
@@ -193,24 +222,28 @@ const Search = () => {
                   <Facet
                     field="publication_type_en.keyword"
                     label={"Publication type"}
-                    view={MultiCheckboxFacet}
+                    view={LabeledMultiCheckboxFacet}
                   />
                   <Facet
                     field="publication_subtype_en.keyword"
                     label={"Publication subtype"}
-                    view={MultiCheckboxFacet}
+                    view={LabeledMultiCheckboxFacet}
                     show={5}
                   />
-                  <Facet field="year.keyword" label={"Year"} />
+                  <Facet
+                    field="year.keyword"
+                    label={"Year"}
+                    view={LabeledMultiCheckboxFacet}
+                  />
                   <Facet
                     field="nvi_level_en.keyword"
                     label={"NVI level"}
-                    view={MultiCheckboxFacet}
+                    view={LabeledMultiCheckboxFacet}
                   />
                   <Facet
                     field="scientific_field_NPI_en.keyword"
                     label={"Scientific field"}
-                    view={MultiCheckboxFacet}
+                    view={LabeledMultiCheckboxFacet}
                     show={10}
                     filterType="any"
                     isFilterable={true}
@@ -242,18 +275,18 @@ const Search = () => {
                   <Facet
                     field="language_no.keyword"
                     label="Språk"
-                    view={MultiCheckboxFacet}
+                    view={LabeledMultiCheckboxFacet}
                   />
                   <Facet
                     field="mentions_no.keyword"
                     label="Nevner"
-                    view={MultiCheckboxFacet}
+                    view={LabeledMultiCheckboxFacet}
                   />
                   <Facet
                     field="SDG_topic_no.keyword"
                     label="Bærekraftsmål"
                     show={20}
-                    view={MultiCheckboxFacet}
+                    view={LabeledMultiCheckboxFacet}
                     filterType="any"
                     //isFilterable={true}
                   />
@@ -271,7 +304,7 @@ const Search = () => {
                     field="SDG_target_topic_no.keyword"
                     label={"Delmål"}
                     show={10}
-                    view={MultiCheckboxFacet}
+                    view={LabeledMultiCheckboxFacet}
                     filterType="any"
                     isFilterable={true}
                   />
@@ -284,7 +317,7 @@ const Search = () => {
                         field="SDG_action_no.keyword"
                         label={"Bærekraftsmål, handling"}
                         show={20}
-                        view={MultiCheckboxFacet}
+                        view={LabeledMultiCheckboxFacet}
                         filterType="any"
                         //isFilterable={true}
                       />
@@ -292,7 +325,7 @@ const Search = () => {
                         field="SDG_target_action_no.keyword"
                         label={"Delmål, handling"}
                         show={10}
-                        view={MultiCheckboxFacet}
+                        view={LabeledMultiCheckboxFacet}
                         filterType="any"
                         isFilterable={true}
                       />
@@ -311,27 +344,31 @@ const Search = () => {
                   <Facet
                     field="publication_type_no.keyword"
                     label={"Publikasjonstype"}
-                    view={MultiCheckboxFacet}
+                    view={LabeledMultiCheckboxFacet}
                   />
                   <Facet
                     field="publication_subtype_no.keyword"
                     label={
                       locale === "en" ? "Publication subtype" : "Underkategori"
                     }
-                    view={MultiCheckboxFacet}
+                    view={LabeledMultiCheckboxFacet}
                     show={5}
                   />
-                  <Facet field="year.keyword" label={"År"} />
+                  <Facet
+                    field="year.keyword"
+                    label={"År"}
+                    view={LabeledMultiCheckboxFacet}
+                  />
                   <Facet
                     field="nvi_level_historical.keyword"
                     label={"NVI nivå"}
-                    view={MultiCheckboxFacet}
+                    view={LabeledMultiCheckboxFacet}
                   />
                   <Facet
                     field="scientific_field_NPI_no.keyword"
                     label={"Fagfelt (NPI)"}
                     show={10}
-                    view={MultiCheckboxFacet}
+                    view={LabeledMultiCheckboxFacet}
                     filterType="any"
                     isFilterable={true}
                   />
@@ -455,6 +492,18 @@ const Search = () => {
                         page_size: "sidestørrelse",
                       }
                 }
+                prevIcon={pageIcon(
+                  locale === "en" ? "Previous page" : "Forrige side",
+                )}
+                nextIcon={pageIcon(
+                  locale === "en" ? "Next page" : "Neste side",
+                )}
+                jumpPrevIcon={pageIcon(
+                  locale === "en" ? "Previous 5 pages" : "5 forrige sider",
+                )}
+                jumpNextIcon={pageIcon(
+                  locale === "en" ? "Next 5 pages" : "5 neste sider",
+                )}
               />
             </>
           }

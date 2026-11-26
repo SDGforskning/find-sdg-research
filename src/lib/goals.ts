@@ -146,7 +146,7 @@ export const goals = [
   {
     label: {
       en: "Responsible consumption and production (SDG-12)",
-      no: "(SDG-12)",
+      no: "Ansvarlig forbruk og produksjon (SDG-12)",
     },
     disabled: false,
     image: {

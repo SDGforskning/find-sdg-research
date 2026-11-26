@@ -1,6 +1,6 @@
 ---
-
-## title: Search query for SDG 7 - Affordable and clean energy, Bergen action-approach.
+title: Search query for SDG 7 - Affordable and clean energy, Bergen action-approach.
+---
 
 **Current status**: This string is currently a finished version.
 

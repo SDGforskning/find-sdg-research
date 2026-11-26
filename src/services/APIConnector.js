@@ -19,7 +19,11 @@ class APIConnector {
         queryConfig,
       }),
     });
-    return response.json();
+    const body = await response.json().catch(() => null);
+    if (!response.ok || body?.error) {
+      throw new Error("search-failed");
+    }
+    return body;
   }
 
   async onAutocomplete(requestState, queryConfig) {

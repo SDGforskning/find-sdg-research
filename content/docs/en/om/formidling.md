@@ -1,6 +1,6 @@
 ---
-
-## title: Communication materials
+title: Communication materials
+---
 
 On this page you will find a collection of texts and images that can be used to advertise for baerekraftsforskning.no, for example in an email, for a news story, on a social media account, or in a physical location such as a public library.
 

@@ -1,6 +1,6 @@
 ---
-
-## title: Search query for SDG 11 -Sustainable cities and communities, Bergen action-approach.
+title: Search query for SDG 11 -Sustainable cities and communities, Bergen action-approach.
+---
 
 **Current status**: This string is currently a finished version.
 

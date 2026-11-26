@@ -31,7 +31,7 @@ export const a11yRoutes: A11yRoute[] = [
 ];
 
 export const skipLinkRoutes = [
-  { path: "/om/om-tjenesten", label: "Skip to Content" },
+  { path: "/om/om-tjenesten", label: "Hopp til innhold" },
   { path: "/en/om/om-tjenesten", label: "Skip to Content" },
-  { path: "/hjelp/sokehjelp", label: "Skip to Content" },
+  { path: "/hjelp/sokehjelp", label: "Hopp til innhold" },
 ] as const;

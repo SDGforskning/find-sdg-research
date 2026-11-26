@@ -24,7 +24,7 @@ GitHub Actions job **`a11y`** (`.github/workflows/ci.yml`) runs `npm run build` 
 
 Panopto iframes are excluded from axe. Docs search is turned off in `RootProvider`, so these tests do not cover a Fumadocs search dialog. Publication search is the page at `/sok`.
 
-Fumadocs UI strings (`Skip to Content`, `Toggle Theme`, `Open Sidebar`) stay in English because this app only customizes `displayName` and the search label.
+Norwegian pages use Norwegian names for the Fumadocs chrome (`Hopp til innhold`, `Bytt tema`, `Åpne sidemeny`). English pages keep the English names.
 
 ## Adding a page scan
 

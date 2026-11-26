@@ -1,6 +1,6 @@
 ---
-
-## title: Search query for SDG 15 - Life on Land, Bergen topic-approach.
+title: Search query for SDG 15 - Life on Land, Bergen topic-approach.
+---
 
 Protect, restore and promote sustainable use of terrestrial ecosystems, sustainably manage forests, combat desertification, and halt and reverse land degradation and halt biodiversity loss.
 

@@ -1,6 +1,6 @@
 ---
-
-## title: Search query for SDG 14 - Life below water, Bergen topic-approach.
+title: Search query for SDG 14 - Life below water, Bergen topic-approach.
+---
 
 Conserve and sustainably use the oceans, seas and marine resources for sustainable development.
 

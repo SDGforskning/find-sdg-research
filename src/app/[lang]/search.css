@@ -236,6 +236,10 @@ code.text-\[\.9em\] {
   animation: fadein 0.2s ease-out;
 }
 
+button.sui-layout-sidebar-toggle {
+  display: none;
+}
+
 @media (max-width: 800px) {
   button.sui-layout-sidebar-toggle {
     display: block !important;

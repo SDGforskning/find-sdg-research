@@ -41,7 +41,7 @@ test.describe("Keyboard and interaction accessibility", {
     await gotoThemed(page, "/om/om-tjenesten", "light");
 
     const toggle = page.locator("#nd-subnav [data-theme-toggle]");
-    await expect(toggle).toHaveAccessibleName("Toggle Theme");
+    await expect(toggle).toHaveAccessibleName("Bytt tema");
     await expect(toggle.locator(".bg-fd-accent")).toBeVisible();
     await toggle.click();
     await expect(page.locator("html")).toHaveClass(/dark/);
@@ -60,12 +60,12 @@ test.describe("Mobile sidebar accessibility", { tag: "@a11y" }, () => {
       exact: true,
     });
     const header = page.locator("#nd-subnav");
-    const openButton = header.getByRole("button", { name: /open sidebar/i });
+    const openButton = header.getByRole("button", { name: /åpne sidemeny/i });
 
     // Notebook drawer starts open below the `md` breakpoint.
     // The drawer covers the header control, so close it from inside the sidebar.
     const sidebarClose = mobileSidebar.getByRole("button", {
-      name: /close sidebar/i,
+      name: /lukk sidemeny/i,
     });
 
     if (await sidebarClose.isVisible()) {

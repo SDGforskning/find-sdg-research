@@ -1,6 +1,6 @@
 ---
-
-## title: Search query for SDG13 - Climate Action, Bergen topic-approach.
+title: Search query for SDG13 - Climate Action, Bergen topic-approach.
+---
 
 Take urgent action to combat climate change and its impacts.
 

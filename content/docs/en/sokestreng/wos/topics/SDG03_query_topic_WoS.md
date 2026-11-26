@@ -1,6 +1,6 @@
 ---
-
-## title: Search query for SDG 3 - Good health and well-being, Bergen topic-approach.
+title: Search query for SDG 3 - Good health and well-being, Bergen topic-approach.
+---
 
 Ensure healthy lives and promote well-being for all at all ages.
 

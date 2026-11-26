@@ -25,9 +25,10 @@ function SkeletonRow() {
 }
 
 export default function SearchResultsPanel({ locale }) {
-  const { isLoading, wasSearched } = useSearch((state) => ({
+  const { isLoading, wasSearched, error } = useSearch((state) => ({
     isLoading: state.isLoading,
     wasSearched: state.wasSearched,
+    error: state.error,
   }));
 
   const initialLoadingMessage =
@@ -38,6 +39,16 @@ export default function SearchResultsPanel({ locale }) {
   const showInitialSkeleton = isLoading && !wasSearched;
   const showResults = wasSearched || !isLoading;
   const showRefinementOverlay = isLoading && wasSearched;
+
+  if (error) {
+    return (
+      <p role="alert" className="mt-6 text-sm">
+        {locale === "en"
+          ? "Search failed. Please try again in a moment."
+          : "Søket feilet. Prøv igjen om litt."}
+      </p>
+    );
+  }
 
   return (
     <div className="relative min-h-[12rem]">

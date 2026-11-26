@@ -1,6 +1,6 @@
 ---
-
-## title: Search query for SDG 4 - Quality Education, Bergen topic-approach.
+title: Search query for SDG 4 - Quality Education, Bergen topic-approach.
+---
 
 Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all.
 

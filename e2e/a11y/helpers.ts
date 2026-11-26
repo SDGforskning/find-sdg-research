@@ -141,7 +141,7 @@ export async function expectNoA11yViolations(
 
 export function languageSwitcher(page: Page): Locator {
   return page.locator("#nd-nav, #nd-subnav").getByRole("button", {
-    name: /choose a language/i,
+    name: /choose a language|velg språk/i,
   });
 }
 
