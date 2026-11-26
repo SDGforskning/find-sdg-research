@@ -11,11 +11,11 @@ import {
   type UrlMeta,
   validateFiles,
 } from "next-validate-link";
-import { i18n } from "../src/lib/i18n.ts";
+import { i18n } from "../src/lib/i18n";
 import {
   CODE_QUALITY_REPORT_PATH,
   toCodeQualityReport,
-} from "./code-quality-report.ts";
+} from "./code-quality-report";
 
 const docsUrl = createGetUrl("/", i18n);
 
